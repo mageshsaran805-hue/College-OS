@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed":"#c9e6ff","on-tertiary-fixed":"#001e2f","on-tertiary-container":"#008cc7","surface-bright":"#f8f9ff","on-secondary-container":"#fffbff","tertiary":"#000000","inverse-on-surface":"#eaf1ff","on-error":"#ffffff","error-container":"#ffdad6","on-secondary-fixed-variant":"#3323cc","tertiary-container":"#001e2f","surface-container-low":"#eff4ff","tertiary-fixed-dim":"#89ceff","surface":"#f8f9ff","primary-container":"#131b2e","secondary-container":"#645efb","on-background":"#0b1c30","background":"#f8f9ff","surface-tint":"#565e74","on-primary":"#ffffff","on-primary-fixed-variant":"#3f465c","on-secondary":"#ffffff","primary-fixed-dim":"#bec6e0","surface-container":"#e5eeff","inverse-primary":"#bec6e0","outline-variant":"#c6c6cd","on-secondary-fixed":"#0f0069","surface-variant":"#d3e4fe","surface-container-lowest":"#ffffff","error":"#ba1a1a","outline":"#76777d","on-surface":"#0b1c30","surface-container-high":"#dce9ff","inverse-surface":"#213145","secondary":"#4b41e1","on-tertiary-fixed-variant":"#004c6e","secondary-fixed":"#e2dfff","on-error-container":"#93000a","primary-fixed":"#dae2fd","on-primary-fixed":"#131b2e","secondary-fixed-dim":"#c3c0ff","on-tertiary":"#ffffff","surface-container-highest":"#d3e4fe","on-primary-container":"#7c839b","on-surface-variant":"#45464d","primary":"#000000","surface-dim":"#cbdbf5"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-desktop":"2rem","space-lg":"1.25rem","gutter-desktop":"1.5rem","space-md":"0.75rem","space-xl":"2rem","gutter":"1rem","space-xs":"0.25rem","space-sm":"0.5rem","margin":"1rem"},"fontFamily":{"body-sm":["Geist"],"label-sm":["Geist"],"body-lg":["Geist"],"label-md":["Geist"],"headline-sm":["Geist"],"headline-xl-mobile":["Geist"],"headline-lg":["Geist"],"code-metric":["Geist"],"body-md":["Geist"],"headline-xl":["Geist"]},"fontSize":{"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0em","fontWeight":"400"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.04em","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"-0.011em","fontWeight":"400"}],"label-md":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"-0.005em","fontWeight":"500"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-xl-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.02em","fontWeight":"600"}],"code-metric":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.02em","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.006em","fontWeight":"400"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.025em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-50 flex items-center justify-between px-margin-desktop shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[20px]">hub</span></div><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">College OS</span><span class="px-space-sm py-space-xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider">Platform Admin</span></div><div class="hidden xl:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">public</span><span>Global Multi-Tenant • US-EAST / EU-CENTRAL</span></div></div><div class="flex-1 max-w-xl mx-space-xl hidden md:block"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-[18px] text-on-surface-variant">search</span><input class="w-full h-9 pl-10 pr-12 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-secondary transition-all" placeholder="Search colleges, tenant IDs, subscriptions, audit logs..." type="text"/><kbd class="absolute right-space-md font-code-metric text-code-metric text-on-surface-variant bg-surface-container-highest px-space-xs py-0.5 rounded">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low font-label-sm text-label-sm text-on-surface"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span>Health: 99.98% Operational</span></div><button class="hidden sm:flex items-center gap-space-xs h-9 px-space-md rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Register College</span></button><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Documentation" type="button"><span class="material-symbols-outlined text-[20px]">menu_book</span></button><button class="relative w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Notifications" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm border-l border-outline-variant/30"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-none">Sarah Jenkins</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Chief Systems Admin</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant hidden xl:block">expand_more</span></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex flex-col justify-between"><div class="p-space-md flex flex-col gap-space-md overflow-y-auto"><div class="p-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-sm"><div class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[16px]">vpn_key</span></div><div class="flex flex-col"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Context</span><span class="font-label-md text-label-md text-on-surface">Master Console</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-secondary-fixed text-on-secondary-fixed font-label-md rounded-lg"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="super-admin-dashboard" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Overview</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="college-directory" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">account_balance</span><span class="font-body-md text-body-md">Colleges</span></div><span class="px-space-xs py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">142</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="college-onboarding" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">rocket_launch</span><span class="font-body-md text-body-md">Onboarding</span></div><span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed-dim text-on-secondary-fixed-variant font-label-sm text-label-sm">4 Pending</span></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-secondary-fixed text-on-secondary-fixed font-label-md rounded-lg" data-path="subscription-management" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">credit_card</span><span class="font-body-md text-body-md">Subscriptions</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="billing-and-payments" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-body-md text-body-md">Billing & Payments</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="support-center" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">support</span><span class="font-body-md text-body-md">Support Center</span></div><span class="px-space-xs py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">12</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="platform-analytics" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="font-body-md text-body-md">Platform Analytics</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="system-health" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">ecg_heart</span><span class="font-body-md text-body-md">System Health</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="audit-logs" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">security</span><span class="font-body-md text-body-md">Audit Logs</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="platform-settings" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Platform Settings</span></div></a></nav></div><div class="p-space-md flex flex-col gap-space-sm bg-surface-container-low"><div class="flex flex-col gap-0.5"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">SLA Tier</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Global Enterprise</span></div><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Engine</span><span class="font-code-metric text-code-metric text-on-surface-variant">v4.18.2</span></div></div><a class="flex items-center justify-between pt-space-xs text-secondary hover:text-secondary-container transition-colors" href="#"><span class="font-label-sm text-label-sm">Switch to College Workspace</span><span class="material-symbols-outlined text-[14px]">open_in_new</span></a></div></aside><div class="pl-64"><main class="w-full pt-16 px-gutter-desktop min-h-screen bg-surface"><div class="flex flex-col w-full pb-space-xl">
+<!-- Page Header -->
+<section class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md py-space-md">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider">Revenue Control</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Live Sync v4.19
+        </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Subscription & SaaS Revenue Management</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">
+        Manage institutional subscription plans, student seat quotas, recurring billing cycles, tier upgrades, and automated payment enforcement across 142 provisioned educational clusters.
+      </p>
+</div>
+<!-- Top Action Toolbar -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="h-9 px-space-md rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md shadow-sm flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">download</span>
+<span>Export Revenue Report</span>
+</button>
+<button class="h-9 px-space-md rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md shadow-sm flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">payments</span>
+<span>Configure Stripe Gateway</span>
+</button>
+<button class="h-9 px-space-md rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container font-label-md text-label-md shadow-sm flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Create Custom Plan</span>
+</button>
+</div>
+</section>
+<!-- Platform Revenue KPI Ribbon (5 Cards) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md my-space-md">
+<!-- KPI 1 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Total Platform ARR</span>
+<div class="w-7 h-7 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+</div>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-xl text-headline-xl text-on-surface tracking-tight">$5,791,200</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant mt-0.5">
+<span class="flex items-center text-secondary font-semibold"><span class="material-symbols-outlined text-[14px]">arrow_upward</span>+14.8%</span>
+<span>vs previous fiscal year</span>
+</div>
+</div>
+<div class="h-1.5 w-full bg-surface-container-low rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 82%;"></div>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Active Subscriptions</span>
+<div class="w-7 h-7 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">layers</span>
+</div>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-xl text-headline-xl text-on-surface tracking-tight">128</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 truncate">
+<span class="font-semibold text-on-surface">58</span> Ent • <span class="font-semibold text-on-surface">62</span> Pro • <span class="font-semibold text-on-surface">8</span> Starter
+        </div>
+</div>
+<div class="flex gap-1 h-1.5 w-full bg-surface-container-low rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container" style="width: 45%;"></div>
+<div class="h-full bg-secondary" style="width: 48%;"></div>
+<div class="h-full bg-secondary-fixed" style="width: 7%;"></div>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Trial Subscriptions</span>
+<div class="w-7 h-7 rounded-lg bg-surface-container-low text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">timelapse</span>
+</div>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-xl text-headline-xl text-on-surface tracking-tight">11</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant mt-0.5">
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-semibold">4 converting</span>
+<span>this week</span>
+</div>
+</div>
+<div class="h-1.5 w-full bg-surface-container-low rounded-full overflow-hidden">
+<div class="h-full bg-on-tertiary-container rounded-full" style="width: 36%;"></div>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Renewals < 30 Days</span>
+<div class="w-7 h-7 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">event_repeat</span>
+</div>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-xl text-headline-xl text-on-surface tracking-tight">18</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+<span class="font-semibold text-secondary">$84.2k</span> pending renewals
+        </div>
+</div>
+<div class="h-1.5 w-full bg-surface-container-low rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full" style="width: 64%;"></div>
+</div>
+</div>
+<!-- KPI 5 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Churn Rate (Net)</span>
+<div class="w-7 h-7 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-xl text-headline-xl text-on-surface tracking-tight">0.8%</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant mt-0.5">
+<span>Benchmark: 3.2%</span>
+<span class="text-secondary font-semibold font-code-metric">-2.4%</span>
+</div>
+</div>
+<div class="h-1.5 w-full bg-surface-container-low rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 25%;"></div>
+</div>
+</div>
+</section>
+<!-- Plan Management Hero Matrix Section -->
+<section class="mt-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Tier Architectures & Quota Constraints</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live billing engines enforce hard student caps, concurrent storage tiers, and modular API bridges.</p>
+</div>
+<!-- Segmented Billing Toggle -->
+<div class="inline-flex items-center p-1 rounded-full bg-surface-container-low shadow-sm">
+<button class="px-space-md py-1.5 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" id="toggleMonthly" type="button">
+          Monthly Billing
+        </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-lowest text-secondary font-label-sm text-label-sm shadow-sm transition-all flex items-center gap-1" id="toggleAnnual" type="button">
+<span>Annual Billing</span>
+<span class="px-1.5 py-0.2 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[10px] font-bold">SAVE 20%</span>
+</button>
+</div>
+</div>
+<!-- 3-Tier Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Tier 1: Starter -->
+<div class="relative rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-semibold">Starter Tier</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Standard</span>
+</div>
+<div class="flex items-baseline gap-1 my-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-semibold tier-price" data-annual="$950" data-monthly="$1,180">$950</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ month</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic mb-space-md">Billed annually ($11,400 / yr)</p>
+<p class="font-body-sm text-body-sm text-on-surface mb-space-md">
+            Engineered for specialized trade programs, community institutes, and emerging technical colleges.
+          </p>
+<!-- Quota Metrics Block -->
+<div class="rounded-lg bg-surface-container-low p-space-sm mb-space-md space-y-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">groups</span> Student Cap:</span>
+<span class="font-code-metric text-on-surface font-semibold">2,000 Seats</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">badge</span> Faculty Seats:</span>
+<span class="font-code-metric text-on-surface font-semibold">150 Quota</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">database</span> Cloud Vault:</span>
+<span class="font-code-metric text-on-surface font-semibold">1 TB Encrypted</span>
+</div>
+</div>
+<!-- Modules Checklist -->
+<div class="space-y-2 mb-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Included System Engines:</span>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Core Academic Curriculum & Courses</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Student Lifecycle Directory</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Basic Daily Attendance Registers</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Standard Accreditation Exports</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md rounded-b-xl flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Fleet</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">22 Colleges • $20.9k MRR</span>
+</div>
+<button class="h-8 px-space-md rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md shadow-sm transition-colors" type="button">
+            Edit Tier Config
+          </button>
+</div>
+</div>
+<!-- Tier 2: Professional (Most Popular) -->
+<div class="relative rounded-xl bg-surface-container-lowest p-space-lg shadow-md flex flex-col justify-between group hover:shadow-lg transition-all ring-2 ring-secondary/20">
+<!-- Badge -->
+<div class="absolute -top-3 right-6 px-space-sm py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm tracking-wide uppercase shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">stars</span> Most Popular
+        </div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider font-semibold">Professional Tier</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">High Volume</span>
+</div>
+<div class="flex items-baseline gap-1 my-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-semibold tier-price" data-annual="$2,400" data-monthly="$2,950">$2,400</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ month</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic mb-space-md">Billed annually ($28,800 / yr)</p>
+<p class="font-body-sm text-body-sm text-on-surface mb-space-md">
+            Optimized for mid-tier polytechnics, regional institutes, and multi-disciplinary academic centers.
+          </p>
+<!-- Quota Metrics Block -->
+<div class="rounded-lg bg-surface-container-low p-space-sm mb-space-md space-y-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">groups</span> Student Cap:</span>
+<span class="font-code-metric text-on-surface font-semibold">8,000 Seats</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">badge</span> Faculty Seats:</span>
+<span class="font-code-metric text-on-surface font-semibold">600 Quota</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">database</span> Cloud Vault:</span>
+<span class="font-code-metric text-on-surface font-semibold">5 TB Dedicated SSD</span>
+</div>
+</div>
+<!-- Modules Checklist -->
+<div class="space-y-2 mb-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Starter Modules Plus:</span>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Finance, Tuition & Online Fee Gateways</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Exam Controller & Transcript Generator</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>LMS Bridge (Canvas, Moodle, Blackboard)</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Hardware Biometrics & Turnstile Ingestion</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Automated Push & SMS Broadcast Engine</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-secondary-fixed/30 -mx-space-lg -mb-space-lg p-space-md rounded-b-xl flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Fleet</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">62 Colleges • $148.8k MRR</span>
+</div>
+<button class="h-8 px-space-md rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container font-label-md text-label-md shadow-sm transition-colors" type="button">
+            Edit Tier Config
+          </button>
+</div>
+</div>
+<!-- Tier 3: Enterprise (Crown) -->
+<div class="relative rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+<!-- Crown / High Value Badge -->
+<div class="absolute -top-3 right-6 px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm tracking-wide uppercase shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">diamond</span> Multi-Campus Flagship
+        </div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-semibold">Enterprise Tier</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">High Value</span>
+</div>
+<div class="flex items-baseline gap-1 my-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-semibold tier-price" data-annual="$4,500" data-monthly="$5,400">$4,500</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ month</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic mb-space-md">Billed annually ($54,000 / yr)</p>
+<p class="font-body-sm text-body-sm text-on-surface mb-space-md">
+            Purpose-built for massive state collegiate systems, distributed campuses, and medical trust conglomerates.
+          </p>
+<!-- Quota Metrics Block -->
+<div class="rounded-lg bg-surface-container-low p-space-sm mb-space-md space-y-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">groups</span> Student Cap:</span>
+<span class="font-code-metric text-on-surface font-semibold">25,000+ Seats</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">badge</span> Faculty Seats:</span>
+<span class="font-code-metric text-secondary font-semibold">Unlimited Quota</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">dns</span> Isolated DB:</span>
+<span class="font-code-metric text-on-surface font-semibold">20 TB Vault + Multi-AZ Replica</span>
+</div>
+</div>
+<!-- Modules Checklist -->
+<div class="space-y-2 mb-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Full Suite & Enterprise Governance:</span>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Corporate Placements & Career CRM Hub</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Trust Board Executive Dashboards</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Full REST API + Custom Webhooks</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Custom Subdomains & White-label Mobile App</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>99.99% Financially-Backed SLA Guarantee</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md rounded-b-xl flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Fleet</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">58 Colleges • $261k MRR</span>
+</div>
+<button class="h-8 px-space-md rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md shadow-sm transition-colors" type="button">
+            Edit Tier Config
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Data Filter & Tenant Subscriptions Table -->
+<section class="mt-space-xl flex flex-col gap-space-md">
+<!-- Table Title + Control Panel -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Active Tenant Subscriptions & Recurring Invoicing</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live audit ledger of contract commitments, renewals, gateway tokens, and collection statuses.</p>
+</div>
+<!-- Quick Metrics Counter Badges -->
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest shadow-sm text-on-surface flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> 128 Active
+        </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest shadow-sm text-on-surface flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span> 3 Failed Attempts
+        </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest shadow-sm text-on-surface flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span> 14 Net-30 Invoices
+        </span>
+</div>
+</div>
+<!-- Search & Filter Bar -->
+<div class="p-space-sm rounded-xl bg-surface-container-lowest shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-sm">
+<div class="relative flex-1 w-full">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-on-surface-variant">filter_alt</span>
+<input class="w-full h-9 pl-9 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-secondary transition-all" id="collegeSearch" placeholder="Filter by college name, tenant ID (#TEN-), plan, billing status, or renewal window..." type="text"/>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto overflow-x-auto pb-1 md:pb-0">
+<select class="h-9 px-space-md rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm focus:outline-none focus:ring-1 focus:ring-secondary">
+<option value="all">All Plans (128)</option>
+<option value="enterprise">Enterprise (58)</option>
+<option value="pro">Professional (62)</option>
+<option value="starter">Starter (8)</option>
+</select>
+<select class="h-9 px-space-md rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm focus:outline-none focus:ring-1 focus:ring-secondary">
+<option value="all">Payment Status: Any</option>
+<option value="paid">Active / Paid</option>
+<option value="pending">Renewal Pending</option>
+<option value="grace">Grace Period</option>
+<option value="failed">Payment Failed</option>
+</select>
+<button class="h-9 px-space-sm rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface flex items-center justify-center" title="Refresh Subscriptions" type="button">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+</button>
+</div>
+</div>
+<!-- Tabular Surface -->
+<div class="overflow-x-auto rounded-xl bg-surface-container-lowest shadow-sm">
+<table class="w-full text-left font-body-sm text-body-sm text-on-surface whitespace-nowrap">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider h-10 select-none">
+<th class="px-space-md">College / Tenant Identifier</th>
+<th class="px-space-md">Current Plan</th>
+<th class="px-space-md">Billing Frequency</th>
+<th class="px-space-md">Start Date</th>
+<th class="px-space-md">Next Renewal</th>
+<th class="px-space-md">Contract Value (ARR)</th>
+<th class="px-space-md">Disbursement Gateway</th>
+<th class="px-space-md">Billing Status</th>
+<th class="px-space-md text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low">
+<!-- Row 1: Apex Institute -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed flex items-center justify-center font-bold text-on-secondary-fixed font-code-metric">
+                  AP
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Apex Institute of Technology</span>
+<span class="font-code-metric text-[11px] text-on-surface-variant font-medium">#TEN-0001 • us-east-1a</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm">Enterprise</span>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Annual Pre-paid</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Net-30 Invoice</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm font-code-metric text-code-metric text-on-surface-variant">
+              Nov 01, 2023
+            </td>
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">Nov 01, 2024</span>
+<span class="font-label-sm text-[11px] text-secondary font-medium">In 8 Days (Pending auto-charge)</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric text-code-metric font-semibold text-on-surface">$54,000 / yr</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">$4,500/mo run-rate</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-1.5 font-code-metric text-code-metric text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">account_balance</span>
+<span>ACH • BofA ••••4821</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Renewal Pending
+              </span>
+</td>
+<td class="px-space-md py-space-sm text-right relative">
+<div class="inline-flex items-center gap-1">
+<button class="h-7 px-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                  Manage
+                </button>
+<button class="w-7 h-7 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface" title="More Operations" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Oxford Academic Trust -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center font-bold text-on-surface font-code-metric">
+                  OX
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Oxford Academic Trust</span>
+<span class="font-code-metric text-[11px] text-on-surface-variant font-medium">#TEN-0042 • eu-central-1</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm">Enterprise Multi-Node</span>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Annual Contract</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Wire Transfer</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm font-code-metric text-code-metric text-on-surface-variant">
+              Jan 15, 2024
+            </td>
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">Jan 15, 2025</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">84 Days remaining</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric text-code-metric font-semibold text-on-surface">$108,000 / yr</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">2 Master Clusters</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-1.5 font-code-metric text-code-metric text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">swap_horiz</span>
+<span>SEPA Wire • Barclays</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Active / Paid
+              </span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<div class="inline-flex items-center gap-1">
+<button class="h-7 px-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                  Manage
+                </button>
+<button class="w-7 h-7 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Harvard Annex Technical -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold font-code-metric">
+                  HA
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Harvard Annex Technical</span>
+<span class="font-code-metric text-[11px] text-on-surface-variant font-medium">#TEN-0019 • us-east-1</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">Professional</span>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Monthly Auto</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Stripe Card Recurring</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm font-code-metric text-code-metric text-on-surface-variant">
+              May 10, 2024
+            </td>
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric text-code-metric text-error font-semibold">Oct 28, 2024</span>
+<span class="font-label-sm text-[11px] text-error font-medium">Declined 2 days ago</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric text-code-metric font-semibold text-on-surface">$28,800 / yr</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">$2,400 monthly due</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-1.5 font-code-metric text-code-metric text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-error">credit_card_off</span>
+<span>Visa Corp ••••9912</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span> Payment Failed
+              </span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<div class="inline-flex items-center gap-1">
+<button class="h-7 px-2.5 rounded-lg bg-error text-on-error font-label-sm text-label-sm shadow-sm hover:opacity-90 transition-opacity" type="button">
+                  Retry Charge
+                </button>
+<button class="w-7 h-7 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: St. Jude Medical College -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center font-bold text-on-surface font-code-metric">
+                  SJ
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">St. Jude Medical College</span>
+<span class="font-code-metric text-[11px] text-on-surface-variant font-medium">#TEN-0088 • us-central-1</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm">Enterprise</span>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Annual Pre-paid</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Net-60 State Purchase Order</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm font-code-metric text-code-metric text-on-surface-variant">
+              Aug 01, 2023
+            </td>
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">Aug 01, 2025</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">2-Year locked commitment</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric text-code-metric font-semibold text-on-surface">$54,000 / yr</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">$108,000 2-yr TCV</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-1.5 font-code-metric text-code-metric text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">account_balance</span>
+<span>FedWire • Chase ••••1102</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Active / Paid
+              </span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<div class="inline-flex items-center gap-1">
+<button class="h-7 px-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                  Manage
+                </button>
+<button class="w-7 h-7 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Pacific Coast Polytechnic -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed flex items-center justify-center font-bold text-on-secondary-fixed font-code-metric">
+                  PC
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Pacific Coast Polytechnic</span>
+<span class="font-code-metric text-[11px] text-on-surface-variant font-medium">#TEN-0104 • us-west-2</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">Professional</span>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Annual Billing</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Credit Card Monthly</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm font-code-metric text-code-metric text-on-surface-variant">
+              Oct 14, 2023
+            </td>
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric text-code-metric text-on-surface-variant font-semibold">Oct 14, 2024</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Past due: 14 days grace</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric text-code-metric font-semibold text-on-surface">$28,800 / yr</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">8,000 Seat Plan</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-1.5 font-code-metric text-code-metric text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">credit_card</span>
+<span>Mastercard ••••6543</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> Grace Period
+              </span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<div class="inline-flex items-center gap-1">
+<button class="h-7 px-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                  Manage
+                </button>
+<button class="w-7 h-7 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Horizon State College -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface flex items-center justify-center font-bold font-code-metric">
+                  HS
+                </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Horizon State College</span>
+<span class="font-code-metric text-[11px] text-on-surface-variant font-medium">#TEN-0131 • us-east-2</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">Starter</span>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Annual Pre-paid</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Stripe Invoice ACH</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm font-code-metric text-code-metric text-on-surface-variant">
+              Feb 01, 2024
+            </td>
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">Feb 01, 2025</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Active subscription</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric text-code-metric font-semibold text-on-surface">$11,400 / yr</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">2,000 Seat Cap</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-1.5 font-code-metric text-code-metric text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">account_balance</span>
+<span>ACH • Wells Fargo ••••7721</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Active / Paid
+              </span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<div class="inline-flex items-center gap-1">
+<button class="h-7 px-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                  Manage
+                </button>
+<button class="w-7 h-7 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Table Footer / Pagination -->
+<div class="p-space-md bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+          Showing <span class="font-semibold text-on-surface">1 - 6</span> of <span class="font-semibold text-on-surface">128</span> institutional contracts
+        </span>
+<div class="flex items-center gap-space-xs">
+<button class="h-8 px-2.5 rounded-lg bg-surface-container-low text-on-surface-variant disabled:opacity-50 font-label-sm text-label-sm" disabled="" type="button">
+            Previous
+          </button>
+<button class="h-8 w-8 rounded-lg bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold" type="button">
+            1
+          </button>
+<button class="h-8 w-8 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container" type="button">
+            2
+          </button>
+<button class="h-8 w-8 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container" type="button">
+            3
+          </button>
+<span class="px-1 text-on-surface-variant font-code-metric">...</span>
+<button class="h-8 w-8 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container" type="button">
+            22
+          </button>
+<button class="h-8 px-2.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm" type="button">
+            Next
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Client Behavior Script -->
+<script>
+    (function initSubscriptionInteractions() {
+      const toggleMonthly = document.getElementById('toggleMonthly');
+      const toggleAnnual = document.getElementById('toggleAnnual');
+      const priceElements = document.querySelectorAll('.tier-price');
+
+      if (toggleMonthly && toggleAnnual) {
+        toggleMonthly.addEventListener('click', () => {
+          toggleMonthly.className = 'px-space-md py-1.5 rounded-full bg-surface-container-lowest text-secondary font-label-sm text-label-sm shadow-sm transition-all';
+          toggleAnnual.className = 'px-space-md py-1.5 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1';
+          
+          priceElements.forEach(el => {
+            el.textContent = el.getAttribute('data-monthly');
+          });
+        });
+
+        toggleAnnual.addEventListener('click', () => {
+          toggleAnnual.className = 'px-space-md py-1.5 rounded-full bg-surface-container-lowest text-secondary font-label-sm text-label-sm shadow-sm transition-all flex items-center gap-1';
+          toggleMonthly.className = 'px-space-md py-1.5 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all';
+          
+          priceElements.forEach(el => {
+            el.textContent = el.getAttribute('data-annual');
+          });
+        });
+      }
+
+      // Simple Table Search Filter
+      const searchInput = document.getElementById('collegeSearch');
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const val = e.target.value.toLowerCase();
+          const rows = document.querySelectorAll('tbody tr');
+          rows.forEach(row => {
+            const text = row.innerText.toLowerCase();
+            row.style.display = text.includes(val) ? '' : 'none';
+          });
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

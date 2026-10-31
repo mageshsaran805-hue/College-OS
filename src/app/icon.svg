@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="College OS">
+  <rect width="64" height="64" rx="14" fill="#131b2e" />
+  <path d="M17 44V20h6.5l8.5 12 8.5-12H47v24h-6V30.5L32 42l-9-11.5V44z" fill="#ffffff" />
+</svg>

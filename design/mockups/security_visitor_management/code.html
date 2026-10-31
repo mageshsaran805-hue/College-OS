@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#000000", "on-tertiary": "#ffffff", "tertiary-container": "#001e2f", "outline": "#76777d", "surface-container-low": "#eff4ff", "surface-container": "#e5eeff", "surface-variant": "#d3e4fe", "error-container": "#ffdad6", "secondary-fixed-dim": "#c3c0ff", "on-secondary-fixed": "#0f0069", "background": "#f8f9ff", "on-tertiary-fixed-variant": "#004c6e", "surface-container-highest": "#d3e4fe", "inverse-surface": "#213145", "surface-bright": "#f8f9ff", "error": "#ba1a1a", "tertiary": "#000000", "secondary-container": "#645efb", "on-surface": "#0b1c30", "secondary": "#4b41e1", "surface-tint": "#565e74", "primary-fixed": "#dae2fd", "on-primary-fixed": "#131b2e", "on-secondary": "#ffffff", "on-background": "#0b1c30", "surface": "#f8f9ff", "on-error-container": "#93000a", "on-secondary-container": "#fffbff", "on-surface-variant": "#45464d", "surface-dim": "#cbdbf5", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#008cc7", "on-primary-fixed-variant": "#3f465c", "on-primary": "#ffffff", "tertiary-fixed": "#c9e6ff", "tertiary-fixed-dim": "#89ceff", "primary-fixed-dim": "#bec6e0", "on-tertiary-fixed": "#001e2f", "primary-container": "#131b2e", "outline-variant": "#c6c6cd", "on-error": "#ffffff", "on-secondary-fixed-variant": "#3323cc", "surface-container-high": "#dce9ff", "on-primary-container": "#7c839b", "inverse-primary": "#bec6e0", "secondary-fixed": "#e2dfff", "inverse-on-surface": "#eaf1ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1rem", "space-sm": "0.5rem", "margin-desktop": "2rem", "space-md": "0.75rem", "gutter-desktop": "1.5rem", "space-lg": "1.25rem", "space-xs": "0.25rem", "margin": "1rem", "space-xl": "2rem" }, "fontFamily": { "body-md": ["Geist"], "label-sm": ["Geist"], "headline-xl-mobile": ["Geist"], "headline-xl": ["Geist"], "label-md": ["Geist"], "body-lg": ["Geist"], "headline-sm": ["Geist"], "body-sm": ["Geist"], "code-metric": ["Geist"], "headline-lg": ["Geist"] }, "fontSize": { "body-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.006em", "fontWeight": "400" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-xl": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600" }], "label-md": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "-0.005em", "fontWeight": "500" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.011em", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "400" }], "code-metric": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.02em", "fontWeight": "500" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col h-full overflow-hidden"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Apex Institute</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-lg bg-surface-container text-on-surface font-semibold shrink-0">#US-01</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Institutional Workspace • AY 2024-25</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container text-on-surface font-semibold rounded-lg"><div class="px-space-sm pt-space-xs pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Academic Operations</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="academics" href="#">Academics</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="students" href="#">Students</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="faculty-staff" href="#">Faculty &amp; Staff</a><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">fact_check</span><span class="font-label-md text-label-md font-semibold text-on-surface">Attendance</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-overview" href="#">Attendance Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="mark-attendance" href="#">Mark Attendance</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-records" href="#">Attendance Records</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="shortage-defaulters" href="#">Shortage &amp; Defaulters</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-settings" href="#">Attendance Settings</a></div></div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">assignment</span><span class="font-label-md text-label-md font-semibold text-on-surface">Examinations</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="examination-overview" href="#">Examination Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="exam-management" href="#">Exam Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="exam-timetable" href="#">Exam Timetable</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="hall-tickets" href="#">Hall Tickets</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="seating-arrangement" href="#">Seating Arrangement</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="marks-entry" href="#">Marks Entry</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="results-grades" href="#">Results &amp; Grades</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="revaluation-supplementary" href="#">Revaluation &amp; Supplementary</a></div></div><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Campus Operations &amp; Facilities</div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">domain</span><span class="font-label-md text-label-md font-semibold text-on-surface">Campus Operations</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="campus-overview" href="#">Campus Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="buildings-facilities" href="#">Buildings &amp; Facilities</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="room-booking" href="#">Room Booking</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="maintenance-management" href="#">Maintenance Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="hostel-management" href="#">Hostel Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="transport-management" href="#">Transport Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="security-visitor-management" href="#">Security &amp; Visitor Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="housekeeping-assets" href="#">Housekeeping &amp; Assets</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="operations-reports-settings" href="#">Operations Reports &amp; Settings</a></div></div><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Institutional Services</div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">payments</span><span class="font-label-md text-label-md font-semibold text-on-surface">Finance</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="finance-overview" href="#">Finance Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fee-structures" href="#">Fee Structures</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="student-fees" href="#">Student Fees</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fee-collection" href="#">Fee Collection</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="scholarships-aid" href="#">Scholarships &amp; Aid</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="expenses-vendors" href="#">Expenses &amp; Vendors</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="accounting-ledger" href="#">Accounting &amp; Ledger</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="financial-reports" href="#">Financial Reports</a></div></div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">local_library</span><span class="font-label-md text-label-md font-semibold text-on-surface">Library</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="library-overview" href="#">Library Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="book-catalogue" href="#">Book Catalogue</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="book-inventory" href="#">Book Inventory</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="circulation" href="#">Circulation</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="reservations-requests" href="#">Reservations &amp; Requests</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fines-payments" href="#">Fines &amp; Payments</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="digital-library" href="#">Digital Library</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="library-reports-settings" href="#">Library Reports &amp; Settings</a></div></div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-life" href="#">Student Life</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="placements" href="#">Placements</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="communication" href="#">Communication</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports-analytics" href="#">Reports &amp; Analytics</a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">System Governance</div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="administration" href="#">Administration</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-sm bg-surface-container-low shrink-0"><div class="flex items-center justify-between text-on-surface-variant mb-space-xs"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-semibold text-on-surface">Apex Core 98.4% uptime</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v4.2</span></div><a class="flex items-center justify-between font-label-sm text-label-sm text-secondary hover:text-on-secondary-fixed transition-colors" data-path="institutional-support" href="#">Institutional Support Desk</a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="relative flex items-center w-80"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-on-surface-variant pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-14 bg-surface rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search students, facilities, staff..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-code-metric">⌘K</span></div><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container"><span class="material-symbols-outlined text-[16px] text-secondary">event_available</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">AY 2024–2025 • Semester 1 Fall</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary font-semibold uppercase">Active Term</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div></div><div class="flex items-center gap-space-md"><button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Action</span></button><div class="flex items-center gap-space-xs"><button class="relative w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-label-sm flex items-center justify-center font-code-metric">3</span></button><button class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button></div><div class="h-6 w-px bg-surface-container"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Alistair Finch</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Dean of Academic Affairs</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter-desktop pb-space-xl flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- Command Toolbar & Perimeter Status Bar -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg mb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm mb-1">
+<span class="font-headline-lg text-headline-lg text-on-surface">Campus Security &amp; Visitor Management</span>
+<span class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+            LIVE RADAR ACTIVE
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">
+          Perimeter gate logs, digital visitor passes, vehicle entry permits, incident dispatch records, and patrol logs across collegiate boundaries.
+        </p>
+</div>
+<!-- Perimeter Switchers & Key Actions -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-1 bg-surface-container-low px-space-sm py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[18px]">location_on</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Apex Central Campus (North Wing)</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-space-sm py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[18px]">meeting_room</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Gate 1 (Main Entrance &amp; Visitor Gate)</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Cluster -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="h-9 px-space-md bg-secondary text-on-secondary rounded-lg font-label-md text-label-md font-semibold flex items-center gap-space-xs hover:bg-secondary-container transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_moderator</span>
+<span>Issue Digital Visitor Pass</span>
+</button>
+<button class="h-9 px-space-md bg-surface-container text-on-surface rounded-lg font-label-md text-label-md font-semibold flex items-center gap-space-xs hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">report_problem</span>
+<span>Log Security Incident</span>
+</button>
+<button class="h-9 px-space-md bg-surface-container text-on-surface rounded-lg font-label-md text-label-md font-semibold flex items-center gap-space-xs hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Export Daily Gate Manifest</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="h-9 px-space-md bg-error text-on-error rounded-lg font-label-md text-label-md font-semibold flex items-center gap-space-xs hover:opacity-90 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span>Emergency Lockdown Protocol</span>
+</button>
+</div>
+</div>
+</div>
+<!-- KPI Telemetry Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md mb-space-lg">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-24 h-24 bg-secondary/5 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Visitors On-Campus</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">badge</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">142 <span class="font-label-md text-label-md text-on-surface-variant font-normal">Active</span></div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>104 Inside</span>
+<span>38 Logged Out</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-24 h-24 bg-surface-container/60 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Pre-Approved Visits</span>
+<span class="material-symbols-outlined text-on-surface text-[20px]">how_to_reg</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">68 <span class="font-label-md text-label-md text-on-surface-variant font-normal">Expected</span></div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Faculty • Vendors</span>
+<span class="font-code-metric text-secondary font-semibold">24 Checked-In</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-24 h-24 bg-surface-container-high/40 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Active Vehicle Permits</span>
+<span class="material-symbols-outlined text-on-surface text-[20px]">directions_car</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">412 <span class="font-label-md text-label-md text-on-surface-variant font-normal">Passes</span></div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant font-code-metric">
+<span>380 Two-Wheelers</span>
+<span>32 Four-Wheelers</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-24 h-24 bg-error-container/40 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Security Incidents</span>
+<span class="material-symbols-outlined text-error text-[20px]">shield_with_heart</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">2 <span class="font-label-md text-label-md text-error font-semibold">Investigating</span></div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="text-on-surface font-semibold">0 Critical Breach</span>
+<span class="text-secondary">Level 1 Log</span>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-24 h-24 bg-surface-container/60 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Guard Patrol Synced</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">98.4% <span class="font-label-md text-label-md text-on-surface-variant font-normal">On Track</span></div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant font-code-metric">
+<span>32 NFC Gates Active</span>
+<span>4 Sectors</span>
+</div>
+</div>
+</div>
+<!-- Primary Workspace Layout: 8-Col Data Stream & 4-Col Contextual Gate Inspector -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg mb-space-lg items-start">
+<!-- Left Column: Gate Entry Stream & High Density Visitor Roster -->
+<div class="xl:col-span-8 flex flex-col gap-space-md">
+<!-- Interactive Tab & Search Header -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<!-- Segmented Filter Tabs -->
+<div class="inline-flex p-1 bg-surface-container-low rounded-lg gap-1 overflow-x-auto max-w-full">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-lowest shadow-sm text-on-surface font-label-md text-label-md font-semibold whitespace-nowrap" type="button">
+              Active Visitors (104)
+            </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+              Pre-Approved (68)
+            </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+              Contractors &amp; Delivery (46)
+            </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+              Vehicle Passes (412)
+            </button>
+<button class="px-space-sm py-1.5 rounded-lg text-error hover:bg-error-container/20 font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+              Blacklist / Holds (4)
+            </button>
+</div>
+<!-- Quick Filters -->
+<div class="flex items-center gap-space-xs">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-2 text-[18px] text-on-surface-variant pointer-events-none">search</span>
+<input class="h-8 pl-8 pr-3 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg outline-none w-56 placeholder:text-on-surface-variant" placeholder="Filter by Pass ID, Name, Vehicle..." type="text"/>
+</div>
+<button class="h-8 w-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Filter Records" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Table Stream -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-md text-body-md border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider h-9">
+<th class="py-2 px-space-sm font-semibold rounded-l-lg">Pass ID &amp; Identity</th>
+<th class="py-2 px-space-sm font-semibold">Host / Clearance Dept</th>
+<th class="py-2 px-space-sm font-semibold">Purpose of Visit</th>
+<th class="py-2 px-space-sm font-semibold">Vehicle</th>
+<th class="py-2 px-space-sm font-semibold">Gate &amp; In-Time</th>
+<th class="py-2 px-space-sm font-semibold">Status</th>
+<th class="py-2 px-space-sm font-semibold rounded-r-lg text-right">Gate Action</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<!-- Record 1 (Active/Selected in Inspector) -->
+<tr class="bg-surface-container/60 hover:bg-surface-container transition-colors cursor-pointer group">
+<td class="py-space-sm px-space-sm align-middle">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Indian executive male professional in formal navy suit wearing corporate credential lanyard at college campus entrance, bright daylight corporate photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVINi5FKf0NKTTzKlVQ5nrepw7_TjM_HWaytdPF_-OYmZ7M4dCjRy0WRdT3z2fx5DCTUUcppOT_Rars4fep1710DRGeb_mRT_7w524gRM47P29irnbmtFXiglIdwxCEQGvH2QvbVf8OB157eAthc3M9DtEVRLoM0jqaaVGKjjjbETaRsbNBbI-H3akh_GPHuOvO1AvJ0cAqXuIcxgTd8Ry-M9GmKFmfFOfw4f-BV0"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-label-md font-semibold text-on-surface truncate">Rajesh K. Verma</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+</div>
+<span class="font-code-metric text-body-sm text-secondary font-semibold">#VP-2024-9182</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Director, L&amp;T Infotech</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dr. Alistair Finch</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dean, Academic Affairs</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Host Notified
+                    </span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<span class="font-body-sm text-body-sm text-on-surface block max-w-xs truncate">Campus Recruitment MoU Discussion &amp; Industry Advisory Board</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Conf. Room Apex-N201</span>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<div class="flex flex-col font-code-metric">
+<span class="font-label-md text-label-md text-on-surface font-semibold">TN-07-CS-8921</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sedan • VIP Lot B2</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface font-code-metric">09:15 AM</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gate 1 (Visitor Main)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    Verified Active
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm align-middle text-right">
+<button class="h-7 px-space-sm bg-primary text-on-primary rounded font-label-sm text-label-sm font-semibold hover:bg-on-surface transition-colors shadow-sm" type="button">
+                    Check-Out
+                  </button>
+</td>
+</tr>
+<!-- Record 2 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-sm align-middle">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="South Indian parents couple smiling politely, waiting at academic institution security lobby with visitor badges, warm institutional lighting portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTLMn7ABExitlv53VQ9Oa96WlQvdeo5uLNnP08TI1tczxWBya3p7yocyl3fHwdkzWzHsj7Cs3SWxCK5-I18RWd5Lpb3WvBIJsa7E1CmCTefGq9EkBVmnU4SUgY7_X9Pv3ikM0C2UtKVtgfJStnGCnilF26xMqqvFp8iCPU0SUScSOCOts66PCtBB25DeI9nWN6KuS48mM_JgE9I6HK7CTDJ71qidWKGaL6Y0N8MEQ"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">S. Meenakshi &amp; K. Sundaram</span>
+<span class="font-code-metric text-body-sm text-on-surface-variant font-semibold">#VP-2024-9180</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Parents: STU-2024-042</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dr. Sunita Mehra</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mandakini Hostel Warden</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+                      Hostel Out-Pass Signed
+                    </span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<span class="font-body-sm text-body-sm text-on-surface block max-w-xs truncate">Hostel Out-Pass Verification &amp; Ward Weekend Leave</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Girls Hostel Block 3</span>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<div class="flex flex-col font-code-metric">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">Walk-in</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Prepaid Taxi</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface font-code-metric">09:40 AM</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gate 1 (Visitor Main)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    Checked-In
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm align-middle text-right">
+<button class="h-7 px-space-sm bg-surface-container text-on-surface rounded font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors" type="button">
+                    Check-Out
+                  </button>
+</td>
+</tr>
+<!-- Record 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-sm align-middle">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Technical engineer specialist in medical instrumentation attire with protective electrostatic badge standing in college engineering wing corridor, professional documentary lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1uoegmqq4qS3_zOjt4HktLPB9QlDLSUVG8luu0K0i6tO4sO2oCYgZ9x6Muj_FtwWDxTi1b9lDdAH-dk8I7KHOBMNHEXohJHltE4eTn9j5eTbvQ4QvsALwlDKNjqZAhldMfmV_FjE6Bj_djvUmL4u-vxkla4yvWCt6JaAMNiFs7l9BUTYmXZOUX01Qhu1sY3tuj2x4Kbm9y0cfKHGpuR_VARp6-ystjVdwjBT-UcY"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Dinesh Kumar</span>
+<span class="font-code-metric text-body-sm text-on-surface-variant font-semibold">#VP-2024-9175</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Siemens Healthcare AMC</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dr. P. Ramanathan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Biomedical Engineering Lab</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1 mt-0.5">
+                      Tool Permit #EQ-88 Approved
+                    </span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<span class="font-body-sm text-body-sm text-on-surface block max-w-xs truncate">MRI Simulator Calibration &amp; Quarterly Diagnostics</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lab Cluster 04 (Basement)</span>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<div class="flex flex-col font-code-metric">
+<span class="font-label-md text-label-md text-on-surface font-semibold">KA-05-MH-1092</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Service Van • Loading Dock</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface font-code-metric">08:30 AM</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gate 3 (Service Gate)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    Work In Progress
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm align-middle text-right">
+<button class="h-7 px-space-sm bg-surface-container text-on-surface rounded font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors" type="button">
+                    Check-Out
+                  </button>
+</td>
+</tr>
+<!-- Record 4 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-sm align-middle">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[24px]">moped</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Swiggy Courier Partner</span>
+<span class="font-code-metric text-body-sm text-on-surface-variant font-semibold">#VP-2024-9168</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Order #SW-99120-Faculty</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Prof. K. Venkatesh</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dept. of Computer Science</span>
+<span class="font-label-sm text-label-sm text-error font-semibold flex items-center gap-1 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Hold At Gate 2 Booth
+                    </span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<span class="font-body-sm text-body-sm text-on-surface block max-w-xs truncate">Food Delivery to Faculty Quarter Staff Lobby</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Gate Drop Locker #08</span>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<div class="flex flex-col font-code-metric">
+<span class="font-label-md text-label-md text-on-surface font-semibold">TN-09-EV-3184</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">EV Two-Wheeler</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface font-code-metric">10:02 AM</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gate 2 (Pedestrian/Courier)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm align-middle">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+                    Temp 10-Min Pass
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm align-middle text-right">
+<button class="h-7 px-space-sm bg-surface-container text-on-surface rounded font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors" type="button">
+                    Release Hold
+                  </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Bulk Dispatch Info -->
+<div class="flex items-center justify-between pt-space-sm font-body-sm text-body-sm text-on-surface-variant border-t border-surface-container-low">
+<span>Showing 4 of 104 currently active on-campus physical passes</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" disabled="" type="button">Previous</button>
+<span class="font-code-metric px-space-xs font-semibold text-on-surface">Page 1 of 26</span>
+<button class="px-space-sm py-1 rounded bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button">Next</button>
+</div>
+</div>
+</div>
+<!-- Security Patrol & NFC Checkpoint Status Module -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">policy</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Automated Guard Patrol Log • Live NFC Sweep</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time status of periodic rounds across institutional clusters</p>
+</div>
+</div>
+<span class="font-code-metric font-label-sm text-label-sm text-secondary bg-surface-container-high px-space-sm py-0.5 rounded-full font-semibold">
+            Next Beat Sweep: 10:30 AM
+          </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-space-sm">
+<!-- Sector 1 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Sector 1 (Admin &amp; Library)</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Havildar T. Rao</span>
+<span class="font-code-metric text-secondary font-semibold">10/10 NFC Synced</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<!-- Sector 2 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Sector 2 (Science &amp; Labs)</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Officer K. Selvam</span>
+<span class="font-code-metric text-secondary font-semibold">8/8 NFC Synced</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<!-- Sector 3 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Sector 3 (Hostels &amp; Mess)</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">schedule</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Guard S. Anthony</span>
+<span class="font-code-metric text-on-surface-variant font-semibold">6/8 NFC Scanned</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 75%;"></div>
+</div>
+</div>
+<!-- Sector 4 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Sector 4 (Perimeter Wall)</span>
+<span class="material-symbols-outlined text-error text-[16px]">warning</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Sub-Insp S. Murthy</span>
+<span class="font-code-metric text-error font-semibold">Drone Alert Hold</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 60%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Gate Pass Inspector & Security Incident Dispatch Register -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<!-- Digital Gate Pass Inspector Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-low mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">qr_code_scanner</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Digital Gate Pass Inspector</span>
+</div>
+<span class="font-label-sm text-label-sm font-code-metric bg-surface-container px-2 py-0.5 rounded text-on-surface font-semibold">
+            SEAL VERIFIED
+          </span>
+</div>
+<!-- Selected Visitor Identity Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-md relative overflow-hidden">
+<div class="flex items-start gap-space-md">
+<!-- Cryptographic QR Container -->
+<div class="w-28 h-28 bg-surface-container-lowest rounded-lg p-2 flex flex-col items-center justify-center shrink-0 shadow-sm relative">
+<svg class="w-full h-full text-primary" fill="currentColor" viewbox="0 0 100 100">
+<!-- QR Code Pattern Simulation -->
+<rect fill="currentColor" height="30" width="30" x="0" y="0"></rect>
+<rect fill="white" height="18" width="18" x="6" y="6"></rect>
+<rect fill="currentColor" height="10" width="10" x="10" y="10"></rect>
+<rect fill="currentColor" height="30" width="30" x="70" y="0"></rect>
+<rect fill="white" height="18" width="18" x="76" y="6"></rect>
+<rect fill="currentColor" height="10" width="10" x="80" y="10"></rect>
+<rect fill="currentColor" height="30" width="30" x="0" y="70"></rect>
+<rect fill="white" height="18" width="18" x="6" y="76"></rect>
+<rect fill="currentColor" height="10" width="10" x="10" y="80"></rect>
+<rect fill="currentColor" height="16" width="8" x="36" y="10"></rect>
+<rect fill="currentColor" height="8" width="12" x="50" y="6"></rect>
+<rect fill="currentColor" height="24" width="24" x="38" y="36"></rect>
+<rect fill="white" height="12" width="16" x="42" y="42"></rect>
+<rect fill="currentColor" height="8" width="18" x="10" y="44"></rect>
+<rect fill="currentColor" height="10" width="16" x="72" y="40"></rect>
+<rect fill="currentColor" height="10" width="24" x="70" y="64"></rect>
+<rect fill="currentColor" height="20" width="10" x="36" y="72"></rect>
+<rect fill="currentColor" height="14" width="16" x="52" y="80"></rect>
+</svg>
+<span class="font-code-metric text-[9px] text-on-surface-variant font-bold mt-1 tracking-tighter">SEC-VP-9182</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">VIP Institutional Pass</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Rajesh K. Verma</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Director, Larsen &amp; Toubro</span>
+<div class="mt-2 pt-2 border-t border-surface-container flex flex-col gap-0.5">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Clearance Window:</span>
+<span class="font-code-metric font-semibold text-on-surface">09:00 AM - 05:00 PM</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Auth By:</span>
+<span class="font-semibold text-on-surface truncate">Dean Finch (Biometric)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pass Attributes Checklist -->
+<div class="mt-space-md grid grid-cols-2 gap-space-xs text-body-sm font-body-sm pt-space-sm border-t border-surface-container">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span>Speed limit 20km/h: Agreed</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span>No-Photo Lab Zones: Yes</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span>Vehicle Plate: Verified</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span>Guest Escort: Authorized</span>
+</div>
+</div>
+</div>
+<!-- Inspector Action Buttons -->
+<div class="flex flex-col gap-space-xs">
+<button class="w-full h-9 bg-primary text-on-primary rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center gap-space-xs hover:bg-on-surface transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+<span>Log Visitor Check-Out</span>
+</button>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="h-8 bg-surface-container text-on-surface rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center gap-1 hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Print Badge</span>
+</button>
+<button class="h-8 bg-surface-container text-error rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center gap-1 hover:bg-error-container hover:text-on-error-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">flag</span>
+<span>Flag Violation</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Incident Dispatch & Escalation Register -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-low mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[20px]">warning_amber</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Live Incident Register</span>
+</div>
+<span class="font-code-metric font-label-sm text-label-sm text-error bg-error-container px-2 py-0.5 rounded font-semibold">
+            2 DISPATCHES
+          </span>
+</div>
+<!-- Incident Item 1 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg mb-space-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-code-metric font-label-md text-label-md font-semibold text-on-surface">#INC-2024-41</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-semibold">Severity: Low</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface leading-snug">Minor Two-Wheeler Collision near Mechanical Workshop Turn</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Reported at 08:45 AM • Handled by Havildar R. Palanivel (Chief Security Guard). No injuries; campus estate settlement logged.</p>
+<div class="flex items-center justify-between pt-1 border-t border-surface-container mt-1">
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">done_all</span> Case Resolved
+            </span>
+<span class="font-code-metric text-body-sm text-on-surface-variant">Gate 4 Junction</span>
+</div>
+</div>
+<!-- Incident Item 2 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-code-metric font-label-md text-label-md font-semibold text-error">#INC-2024-39</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-semibold">Severity: Moderate</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface leading-snug">Unauthorized Drone Flight near South Perimeter Wall</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Reported at 09:12 AM • Sector 4 Boundary. Officer Dispatched: Sub-Inspector S. Murthy. Anti-drone RF jammer protocol primed.</p>
+<div class="flex items-center justify-between pt-1 border-t border-surface-container mt-1">
+<span class="font-label-sm text-label-sm text-error font-semibold flex items-center gap-1 animate-pulse">
+<span class="material-symbols-outlined text-[14px]">sensors</span> Investigating
+            </span>
+<span class="font-code-metric text-body-sm text-on-surface-variant">Boundary Radar #03</span>
+</div>
+</div>
+<!-- Emergency Dial Quick-Connect Strip -->
+<div class="mt-space-md pt-space-md border-t border-surface-container-low flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Direct Perimeter Dispatch Lines</span>
+<div class="grid grid-cols-3 gap-space-xs text-center font-code-metric">
+<a class="p-1.5 rounded bg-surface-container hover:bg-surface-container-high transition-colors flex flex-col items-center" href="#">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Ext 100</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Security Control</span>
+</a>
+<a class="p-1.5 rounded bg-surface-container hover:bg-surface-container-high transition-colors flex flex-col items-center" href="#">
+<span class="font-label-md text-label-md font-semibold text-error">Ext 101</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Fire Safety Unit</span>
+</a>
+<a class="p-1.5 rounded bg-surface-container hover:bg-surface-container-high transition-colors flex flex-col items-center" href="#">
+<span class="font-label-md text-label-md font-semibold text-secondary">Ext 112</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Police Liaison</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Guard Note Strip -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-sm flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>All entry logs are cryptographically sealed and comply with Apex Campus Safety Policy 2024 • Gate biometric cameras active</span>
+</div>
+<div class="flex items-center gap-space-md font-code-metric">
+<span>Perimeter Guard Duty: Shift 01 (06:00 - 14:00 IST)</span>
+<span>Terminal: Gate-1-Station-02</span>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-sm px-gutter-desktop shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-space-sm font-label-sm text-label-sm"><span>Apex Institute of Technology • Institutional OS System</span><span>•</span><span>Enterprise Tier • 98.4% uptime</span></div><div class="flex items-center gap-space-md font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" data-path="institutional-support" href="#">Institutional Support</a><a class="hover:text-on-surface transition-colors" data-path="privacy-compliance" href="#">FERPA &amp; Privacy</a><span class="font-code-metric text-on-surface-variant">Apex-Node #US-CAMPUS-01</span></div></div></footer></div></body></html>

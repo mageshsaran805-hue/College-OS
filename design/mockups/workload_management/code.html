@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-container":"#001e2f","primary-fixed-dim":"#bec6e0","error":"#ba1a1a","secondary-fixed-dim":"#c3c0ff","on-error-container":"#93000a","background":"#f8f9ff","on-primary-fixed":"#131b2e","on-primary-fixed-variant":"#3f465c","primary":"#000000","outline-variant":"#c6c6cd","on-tertiary":"#ffffff","outline":"#76777d","surface-dim":"#cbdbf5","on-error":"#ffffff","on-secondary-fixed-variant":"#3323cc","on-tertiary-container":"#008cc7","surface-container-lowest":"#ffffff","surface":"#f8f9ff","surface-container-high":"#dce9ff","primary-fixed":"#dae2fd","on-tertiary-fixed":"#001e2f","inverse-on-surface":"#eaf1ff","on-secondary-container":"#fffbff","primary-container":"#131b2e","on-background":"#0b1c30","on-surface":"#0b1c30","surface-container-highest":"#d3e4fe","on-surface-variant":"#45464d","secondary-fixed":"#e2dfff","inverse-surface":"#213145","surface-bright":"#f8f9ff","surface-container-low":"#eff4ff","on-primary-container":"#7c839b","surface-variant":"#d3e4fe","tertiary-fixed-dim":"#89ceff","on-secondary":"#ffffff","surface-container":"#e5eeff","error-container":"#ffdad6","inverse-primary":"#bec6e0","on-secondary-fixed":"#0f0069","tertiary":"#000000","surface-tint":"#565e74","tertiary-fixed":"#c9e6ff","secondary":"#4b41e1","on-primary":"#ffffff","on-tertiary-fixed-variant":"#004c6e","secondary-container":"#645efb"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-md":"0.75rem","margin-desktop":"2rem","gutter":"1rem","space-lg":"1.25rem","margin":"1rem","space-xs":"0.25rem","gutter-desktop":"1.5rem","space-xl":"2rem","space-sm":"0.5rem"},fontFamily:{"headline-xl":["Geist"],"body-md":["Geist"],"body-sm":["Geist"],"code-metric":["Geist"],"body-lg":["Geist"],"label-sm":["Geist"],"headline-sm":["Geist"],"headline-xl-mobile":["Geist"],"label-md":["Geist"],"headline-lg":["Geist"]},fontSize:{"headline-xl":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.025em",fontWeight:"600"}],"body-md":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"-0.006em",fontWeight:"400"}],"body-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0em",fontWeight:"400"}],"code-metric":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"-0.02em",fontWeight:"500"}],"body-lg":["1rem",{lineHeight:"1.5rem",letterSpacing:"-0.011em",fontWeight:"400"}],"label-sm":["0.6875rem",{lineHeight:"0.875rem",letterSpacing:"0.04em",fontWeight:"600"}],"headline-sm":["1.125rem",{lineHeight:"1.5rem",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-xl-mobile":["1.75rem",{lineHeight:"2.25rem",letterSpacing:"-0.02em",fontWeight:"600"}],"label-md":["0.8125rem",{lineHeight:"1.125rem",letterSpacing:"-0.005em",fontWeight:"500"}],"headline-lg":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.02em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-hidden"><div class="flex flex-col flex-1 min-h-0"><div class="p-space-md pb-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs"><div class="flex items-center gap-space-sm"><img alt="College OS Brandmark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WvnlED1hU_M01PSO-1qyRpzBvkV84x7ViBFZQB5yKW-NwD75asiUHXNbwETf5DS5Bsd7AnUF3ffGaf9yE-s8GCUeHYzBYdzY57Wfz3A35MjIli7B6CqiIKcHCHGmw9klEmRNePyPGpmJ_1lOslWIlgP1VavS2gkS_MiNFOEh-YJJueoXdPJp9f3AXDyl246ophiOE8yuWLyGMNCp9gpgTnmT63nGfey8QLD6T4fNw"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">College OS</span></div><span class="px-space-xs py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase rounded">Enterprise</span></div><div class="mt-space-sm p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between cursor-pointer hover:bg-surface-container transition-colors"><div class="flex flex-col truncate"><span class="font-label-md text-label-md text-on-surface truncate font-medium">Apex Institute of Technology</span><div class="flex items-center gap-space-xs mt-0.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-code-metric text-label-sm text-on-surface-variant">#US-CAMPUS-01 • AY 2024-25</span></div></div><span class="material-symbols-outlined text-on-surface-variant text-base">unfold_more</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-xs"><div class="px-space-xs py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Institutional Modules</div><div class="flex flex-col gap-0.5"><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a></nav><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors cursor-pointer"><nav class="flex items-center" data-active-classes="text-secondary font-medium"><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" data-path="academics" href="#">Academics</a></nav><span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-code-metric text-label-sm rounded-full">48</span></div><div class="flex flex-col gap-0.5"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors cursor-pointer"><div class="flex items-center gap-space-xs"><span class="font-label-md text-label-md">Students</span><span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-code-metric text-label-sm rounded-full">14,820</span></div><span class="material-symbols-outlined text-base text-on-surface-variant">expand_more</span></div><div class="ml-space-sm pl-space-xs border-l border-surface-container-high flex flex-col gap-0.5 mt-0.5"><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-overview" href="#">Student Overview</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-directory" href="#">Student Directory</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admissions" href="#">Admissions</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="enrollment" href="#">Enrollment</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="id-cards" href="#">ID Cards</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-documents" href="#">Student Documents</a></nav></div></div><div class="flex flex-col gap-0.5 mt-0.5"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md"><div class="flex items-center gap-space-xs"><span class="font-medium">Faculty &amp; Staff</span><span class="px-1.5 py-0.5 bg-surface-container-high text-secondary font-code-metric text-label-sm rounded-full">842</span></div><span class="material-symbols-outlined text-base text-secondary">expand_more</span></div><div class="ml-space-sm pl-space-xs border-l border-surface-container-high flex flex-col gap-0.5 mt-0.5"><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="faculty-directory" href="#">Faculty Directory</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="staff-directory" href="#">Staff Directory</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="faculty-profile" href="#">Faculty Profile</a><a aria-current="page" class="px-space-sm py-1 transition-colors bg-surface-container text-secondary font-medium rounded-lg" data-path="workload-management" href="#">Workload Management</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="leave-management" href="#">Leave Management</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="payroll" href="#">Payroll</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="performance-management" href="#">Performance Management</a></nav></div></div><nav class="flex flex-col gap-0.5 mt-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" data-path="finance" href="#">Finance</a><span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-code-metric text-label-sm rounded-full">$2.4M</span></div><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="campus-management" href="#">Campus Management</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-life" href="#">Student Life</a><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" data-path="placements" href="#">Placements</a><span class="px-1.5 py-0.5 bg-secondary-fixed text-on-secondary-fixed font-code-metric text-label-sm rounded-full">Live</span></div><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="communication" href="#">Communication</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports-and-analytics" href="#">Reports &amp; Analytics</a></nav></div><div class="mt-space-md px-space-xs py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">System Governance</div><div class="flex flex-col gap-0.5"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md"><span class="font-medium">Administration</span><span class="material-symbols-outlined text-base text-on-surface-variant">expand_more</span></div><div class="ml-space-sm pl-space-xs border-l border-surface-container-high flex flex-col gap-0.5 mt-0.5"><div class="px-space-xs py-0.5 font-label-sm text-label-sm text-on-surface-variant">College Setup</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="college-profile" href="#">College Profile</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="campuses-and-facilities" href="#">Campuses &amp; Facilities</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="departments" href="#">Departments</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="academic-years-and-terms" href="#">Academic Years &amp; Terms</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="degree-programs" href="#">Degree Programs</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="courses-and-subjects" href="#">Courses &amp; Subjects</a></nav></div><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#">Settings</a></nav></div></div></div><div class="p-space-sm bg-surface-container-low mx-space-sm mb-space-sm rounded-xl"><div class="flex items-center justify-between mb-1.5"><span class="font-label-sm text-label-sm text-on-surface font-medium">Enterprise Tier</span><span class="font-code-metric text-label-sm text-secondary font-medium">98.4% uptime</span></div><div class="w-full bg-surface-container rounded-full h-1 overflow-hidden"><div class="bg-secondary h-1 rounded-full w-[98.4%]"></div></div><a class="mt-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors pt-space-xs" href="#"><span>Institutional Support</span><span class="material-symbols-outlined text-sm">open_in_new</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-lg pointer-events-none">search</span><input class="w-72 h-9 pl-9 pr-14 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-secondary transition-all" placeholder="Search students, faculty, staff, courses..." type="text"/><div class="absolute right-2.5 flex items-center pointer-events-none"><kbd class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-code-metric text-label-sm rounded">⌘K</kbd></div></div><nav class="hidden lg:flex items-center gap-space-xs ml-space-sm" data-active-classes="bg-surface-container-high text-on-surface font-semibold"><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="overview" href="#">Console</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="academics" href="#">Curriculum</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="reports-and-analytics" href="#">Accreditation BI</a></nav></div><div class="flex items-center gap-space-sm"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low rounded-full"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-md text-label-md text-on-surface font-medium">AY 2024–2025 • Semester 1 (Fall)</span><span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase rounded-full ml-1">Active Term</span></div><button class="flex items-center gap-1.5 px-space-sm py-1.5 bg-secondary text-on-secondary rounded-lg font-label-md text-label-md shadow-sm hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-base">add</span><span>Quick Action</span></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 bg-error text-on-error font-label-sm text-[0.625rem] flex items-center justify-center rounded-full">3</span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-xl">help_outline</span></button><div class="flex items-center gap-space-sm pl-space-xs ml-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgcnWk88Z5jMRXj0iv_dPWo3T7MrUH_81r_r7Cic1FPbgD5hbY4j7S4gEdT7Xv0WOh4qSn9IqwCfhEcq1Q8HJeal_gVWzGe3eRulvU3HgFTJfHhj_v51Jr6zrCqQH_lwSqbCTuO26BJL0LuiEEr5hGWBEj6N6_DheZ1oSfI3dzfrBVG6tJn_TZzdGKDm_T9rOSww_V0G8BkgMzRCHWYKePvT8sow2SqRSESXpRGIM"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-medium leading-none">Dr. Alistair Finch</span><span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5 leading-none">Dean of Academic Affairs</span></div><span class="hidden md:inline px-1.5 py-0.5 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm rounded uppercase font-semibold">Dean</span></div></div></header><main class="w-full pt-16 bg-surface px-gutter-desktop py-space-lg min-h-screen"><div class="flex flex-col w-full">
+<!-- Breadcrumb & Status Marker Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Institutional Modules</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span>Faculty &amp; Staff</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-secondary font-semibold">Workload Management</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container font-code-metric text-label-sm text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span>AUDIT VERIFIED: AY 2024-25 TERM 1 (SYNCED 4M AGO)</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+<span>AAU/ABET Compliant Slates</span>
+</div>
+</div>
+</div>
+<!-- Page Header & Action Center -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-md mb-space-lg">
+<div class="max-w-3xl">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm tracking-wide uppercase">Faculty Logistics Core</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">• Ledger ID #WL-2024-F</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Faculty Workload Allocation &amp; Schedule Governance</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+        Balance instructional contact hours, laboratory practicums, research releases, and administrative governance slates across 412 faculty members with zero clash tolerance.
+      </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs shrink-0">
+<button class="flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-low transition-colors font-label-md text-label-md">
+<span class="material-symbols-outlined text-base">picture_as_pdf</span>
+<span>Export Census (PDF)</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-low transition-colors font-label-md text-label-md">
+<span class="material-symbols-outlined text-base text-secondary">tune</span>
+<span>Optimize Balancing</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container transition-colors font-label-md text-label-md">
+<span class="material-symbols-outlined text-base text-secondary">flaky</span>
+<span>Conflict Audit</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-secondary text-on-secondary shadow-md hover:bg-secondary-container transition-colors font-label-md text-label-md font-medium">
+<span class="material-symbols-outlined text-base">assignment_add</span>
+<span>Assign Subject Slate</span>
+</button>
+</div>
+</div>
+<!-- Telemetry Ribbon (6 Key Workload Vectors) -->
+<div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-space-sm mb-space-lg">
+<!-- Stat 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="uppercase tracking-wider">Instructional Volume</span>
+<span class="material-symbols-outlined text-base">schedule</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">5,680</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span>hrs/wk campus-wide</span>
+<span class="font-code-metric text-secondary font-medium">+2.1%</span>
+</div>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1 mt-space-sm overflow-hidden">
+<div class="bg-secondary h-1 rounded-full w-[84%]"></div>
+</div>
+</div>
+<!-- Stat 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="uppercase tracking-wider">Avg Faculty Load</span>
+<span class="material-symbols-outlined text-base">balance</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">13.8 <span class="text-body-md font-normal text-on-surface-variant">hrs</span></div>
+<div class="text-on-surface-variant font-body-sm text-body-sm mt-0.5">Norm: 12.0 – 16.0 hrs/wk</div>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1 mt-space-sm overflow-hidden">
+<div class="bg-secondary h-1 rounded-full w-[72%]"></div>
+</div>
+</div>
+<!-- Stat 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="uppercase tracking-wider">Overloaded (&gt;16h)</span>
+<span class="material-symbols-outlined text-base text-error">warning</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-lg text-headline-lg text-error font-semibold tracking-tight">18 <span class="text-body-md font-normal text-on-surface-variant">profs</span></div>
+<div class="text-on-surface-variant font-body-sm text-body-sm mt-0.5">Overtime / Adjunct alert</div>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1 mt-space-sm overflow-hidden">
+<div class="bg-error h-1 rounded-full w-[24%]"></div>
+</div>
+</div>
+<!-- Stat 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="uppercase tracking-wider">Optimal Capacity</span>
+<span class="material-symbols-outlined text-base text-secondary">verified</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">362 <span class="text-body-md font-normal text-on-surface-variant">staff</span></div>
+<div class="text-on-surface-variant font-body-sm text-body-sm mt-0.5">87.9% compliant slate</div>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1 mt-space-sm overflow-hidden">
+<div class="bg-secondary h-1 rounded-full w-[88%]"></div>
+</div>
+</div>
+<!-- Stat 5 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="uppercase tracking-wider">Underload (&lt;12h)</span>
+<span class="material-symbols-outlined text-base">biotech</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">32 <span class="text-body-md font-normal text-on-surface-variant">staff</span></div>
+<div class="text-on-surface-variant font-body-sm text-body-sm mt-0.5">Grant &amp; medical waivers</div>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1 mt-space-sm overflow-hidden">
+<div class="bg-on-tertiary-container h-1 rounded-full w-[38%]"></div>
+</div>
+</div>
+<!-- Stat 6 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="uppercase tracking-wider">Timetable Clashes</span>
+<span class="material-symbols-outlined text-base text-secondary">check_circle</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">0 <span class="text-body-md font-normal text-secondary font-medium">Clashes</span></div>
+<div class="text-on-surface-variant font-body-sm text-body-sm mt-0.5">Spatial &amp; hall conflicts 0%</div>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1 mt-space-sm overflow-hidden">
+<div class="bg-secondary h-1 rounded-full w-full"></div>
+</div>
+</div>
+</div>
+<!-- Bento Section: Departmental Workload Gauge + Quick Audit Snapshot -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md mb-space-lg">
+<!-- Left: Departmental Distribution Bar / Gauge (8 cols) -->
+<div class="lg:col-span-8 p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex flex-wrap items-center justify-between gap-space-xs pb-space-sm border-b border-surface-container">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Collegiate Benchmarks</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Departmental Load Density &amp; Utilization Gauges</h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="w-2.5 h-2.5 rounded-sm bg-secondary"></span> Lecture
+            <span class="w-2.5 h-2.5 rounded-sm bg-secondary-fixed-dim ml-2"></span> Lab/Studio
+            <span class="w-2.5 h-2.5 rounded-sm bg-surface-container-highest ml-2"></span> Admin/Thesis
+          </div>
+<span class="px-2 py-0.5 bg-surface-container-low rounded text-on-surface-variant font-code-metric text-label-sm">Max Cap: 16.0h</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md my-space-md">
+<!-- School 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">terminal</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">School of Computing</span>
+</div>
+<div class="text-right">
+<span class="font-code-metric text-label-md font-semibold text-on-surface">14.8 hrs/wk</span>
+<span class="font-label-sm text-label-sm text-secondary ml-1">(92.5%)</span>
+</div>
+</div>
+<!-- Stacked Bar Representation -->
+<div class="w-full bg-surface-container-highest rounded-full h-2.5 overflow-hidden flex">
+<div class="bg-secondary h-2.5" style="width: 58%;" title="Lecture: 8.6h"></div>
+<div class="bg-secondary-fixed-dim h-2.5" style="width: 24%;" title="Lab: 3.6h"></div>
+<div class="bg-surface-tint h-2.5" style="width: 10.5%;" title="Research/Admin: 1.6h"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>114 Faculty Members</span>
+<span>8 Overloaded • 0 Underload</span>
+</div>
+</div>
+<!-- School 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">precision_manufacturing</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">School of Engineering</span>
+</div>
+<div class="text-right">
+<span class="font-code-metric text-label-md font-semibold text-on-surface">14.2 hrs/wk</span>
+<span class="font-label-sm text-label-sm text-secondary ml-1">(88.7%)</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2.5 overflow-hidden flex">
+<div class="bg-secondary h-2.5" style="width: 52%;" title="Lecture: 7.4h"></div>
+<div class="bg-secondary-fixed-dim h-2.5" style="width: 28%;" title="Lab: 4.0h"></div>
+<div class="bg-surface-tint h-2.5" style="width: 8.7%;" title="Research/Admin: 1.2h"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>128 Faculty Members</span>
+<span>6 Overloaded • 4 Underload</span>
+</div>
+</div>
+<!-- School 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">query_stats</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">School of Business</span>
+</div>
+<div class="text-right">
+<span class="font-code-metric text-label-md font-semibold text-on-surface">13.1 hrs/wk</span>
+<span class="font-label-sm text-label-sm text-secondary ml-1">(81.8%)</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2.5 overflow-hidden flex">
+<div class="bg-secondary h-2.5" style="width: 62%;" title="Lecture: 8.1h"></div>
+<div class="bg-secondary-fixed-dim h-2.5" style="width: 10%;" title="Lab: 1.3h"></div>
+<div class="bg-surface-tint h-2.5" style="width: 9.8%;" title="Research/Admin: 1.3h"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>92 Faculty Members</span>
+<span>2 Overloaded • 11 Underload</span>
+</div>
+</div>
+<!-- School 4 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">science</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Applied Sciences &amp; Math</span>
+</div>
+<div class="text-right">
+<span class="font-code-metric text-label-md font-semibold text-on-surface">12.6 hrs/wk</span>
+<span class="font-label-sm text-label-sm text-secondary ml-1">(78.8%)</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2.5 overflow-hidden flex">
+<div class="bg-secondary h-2.5" style="width: 48%;" title="Lecture: 6.0h"></div>
+<div class="bg-secondary-fixed-dim h-2.5" style="width: 22%;" title="Lab: 2.8h"></div>
+<div class="bg-surface-tint h-2.5" style="width: 8.8%;" title="Research/Admin: 1.1h"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>78 Faculty Members</span>
+<span>2 Overloaded • 17 Underload</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-secondary">info</span>
+<span>Instructional cap limits: 16 contact hours per collective faculty union agreement 2023-2027.</span>
+</div>
+<a class="text-secondary font-label-md text-label-md hover:underline font-medium" href="#">Configure Department Weights →</a>
+</div>
+</div>
+<!-- Right: Automated Audit & Balancing Assistant (4 cols) -->
+<div class="lg:col-span-4 p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Engine AI</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-code-metric text-label-sm">Active Engine 4.2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Auto Balancing Queue</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Machine-generated schedule recommendations ready for Dean approval to alleviate overloaded computing chairs.
+        </p>
+<!-- Suggested Action Item 1 -->
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Split CS-301 Section C</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container font-code-metric text-label-sm text-error">+3.0h delta</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Reassign 3h lab module from Prof. Elena Rostova to Adjunct Fellow Dr. Mark Vance.
+          </p>
+<div class="flex items-center justify-end gap-2 mt-1">
+<button class="px-space-xs py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">Ignore</button>
+<button class="px-space-sm py-1 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-medium hover:bg-secondary-container">Apply Swap</button>
+</div>
+</div>
+<!-- Suggested Action Item 2 -->
+<div class="mt-space-xs p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Underload Grant Reallocation</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container font-code-metric text-label-sm text-secondary">Balanced</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Assign Math 201 recitation (2h) to Dr. Julian Thorne (currently at 9.0 hrs).
+          </p>
+<div class="flex items-center justify-end gap-2 mt-1">
+<button class="px-space-xs py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">Ignore</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium hover:bg-surface-container">Review</button>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>18 conflicts auto-resolved in draft</span>
+<button class="text-secondary font-medium hover:underline">View Engine Logs</button>
+</div>
+</div>
+</div>
+<!-- Search, Department & Workload Status Filter Console -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm mb-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs flex-1">
+<!-- Search bar -->
+<div class="relative min-w-[240px] flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-base pointer-events-none">search</span>
+<input class="w-full h-9 pl-9 pr-4 bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-secondary transition-all" placeholder="Search by professor name, faculty ID, course code..." type="text"/>
+</div>
+<!-- Department select -->
+<div class="relative">
+<select class="h-9 pl-3 pr-8 bg-surface-container-low rounded-lg text-on-surface font-label-md text-label-md appearance-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-secondary">
+<option>All Departments (4)</option>
+<option>Computer Science &amp; AI</option>
+<option>Mechanical &amp; Aerospace</option>
+<option>Electrical Engineering</option>
+<option>Finance &amp; Analytics</option>
+<option>Pure &amp; Applied Math</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2 text-on-surface-variant text-base pointer-events-none">expand_more</span>
+</div>
+<!-- Workload Status Chips Segmented -->
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-lg">
+<button class="px-space-sm py-1 rounded-md bg-surface-container-lowest text-on-surface font-label-md text-label-md font-medium shadow-sm">All (412)</button>
+<button class="px-space-sm py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>Overloaded (18)
+          </button>
+<button class="px-space-sm py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Optimal (362)
+          </button>
+<button class="px-space-sm py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>Underload (32)
+          </button>
+</div>
+</div>
+<!-- Semester & View Density -->
+<div class="flex items-center gap-space-xs shrink-0">
+<div class="flex items-center gap-1.5 px-space-sm py-1.5 bg-surface-container-low rounded-lg text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-base text-secondary">date_range</span>
+<span class="font-medium">Fall 2024 (Active)</span>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface" title="Filter Preset Settings">
+<span class="material-symbols-outlined text-base">filter_list</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface" title="Customize Columns">
+<span class="material-symbols-outlined text-base">view_column</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Faculty Workload Allocation Ledger Table -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden mb-space-lg">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b border-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 w-10 text-center">
+<input class="w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</th>
+<th class="py-3 px-4">Faculty Member &amp; Rank</th>
+<th class="py-3 px-4">Department</th>
+<th class="py-3 px-3 text-center">Lec (L)</th>
+<th class="py-3 px-3 text-center">Lab (P)</th>
+<th class="py-3 px-3 text-center">Admin / Res</th>
+<th class="py-3 px-4 min-w-[190px]">Weekly Workload Progress</th>
+<th class="py-3 px-4">Assigned Course Sections</th>
+<th class="py-3 px-3">Conflict State</th>
+<th class="py-3 px-3">Load Status</th>
+<th class="py-3 px-4 text-right">Quick Governance</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-md text-body-md text-on-surface">
+<!-- Row 1: Selected Faculty (Dr. Elena Rostova - Overloaded) -->
+<tr class="bg-secondary-fixed/20 hover:bg-secondary-fixed/30 transition-colors">
+<td class="py-3.5 px-4 text-center">
+<input checked="" class="w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shrink-0" data-alt="Close up photographic headshot portrait of Dr. Elena Rostova, a prominent female computer science professor with glasses in an architectural university environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOh6dxyPEy-4d6fn_9h_jJLIbGoln4cRB3xufV8MXK-yE4mHUZMt0HDbRpZCVbndntiD0mFT9pEXKv-7Q429NfnmXvK17hoZ-ap_WaCUVkl6gJUmP8wFjqZj1iwaTdwqM0dbhD5BdY6hzpmZkFRGHfjY84lmwBqYGHaqpnEhYzO0lng6ZN7t_c4-dr301BafnHZYgjglZN5ByJqWly--hVDv-0bLGSW00w5SkL3zE"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-label-md font-semibold text-on-surface">Dr. Elena Rostova</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high text-secondary font-label-sm text-[0.625rem] font-bold uppercase">Focus</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">#FAC-2089 • Full Professor</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-md text-label-md font-medium">Computer Science &amp; AI</span>
+</td>
+<td class="py-3.5 px-3 text-center font-code-metric font-medium text-on-surface">8.0h</td>
+<td class="py-3.5 px-3 text-center font-code-metric font-medium text-on-surface">3.0h</td>
+<td class="py-3.5 px-3 text-center font-code-metric font-medium text-on-surface">5.0h</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-label-sm font-code-metric">
+<span class="font-bold text-error">16.0 / 16.0 hrs</span>
+<span class="text-error font-semibold">+2.5h Ovt</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden flex">
+<div class="bg-secondary h-2" style="width: 50%;"></div>
+<div class="bg-secondary-fixed-dim h-2" style="width: 18.75%;"></div>
+<div class="bg-surface-tint h-2" style="width: 31.25%;"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-metric text-label-sm">AI-301 [Sec A]</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-metric text-label-sm">CS-490 [Sec B]</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric text-label-sm">+1 Lab</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-base">check_circle</span>
+<span>Verified</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                Overloaded
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-secondary hover:bg-surface-container transition-colors" title="Quick Balance / Delegate">
+<span class="material-symbols-outlined text-base">swap_horiz</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="View Full Timetable">
+<span class="material-symbols-outlined text-base">calendar_view_week</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Dr. Marcus Vance - Optimal -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4 text-center">
+<input class="w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shrink-0" data-alt="Portrait photo of Dr. Marcus Vance, middle-aged male associate professor in mechanical engineering with navy blazer and pleasant demeanor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn_bpDGfyT5-gZ-t6Nod_Q-kETYg3fJvwVmu2MlM5mA5ylXSJ1Ldfv_TZRoJm_RbV2zPFWFmyVCqhRQrXQ9VWIknfVI2_rq75uPsoBS5DU4EcySfesM9Kn80djbVSNMM3lFR-pII1my2ZudGFs1iaGPkYDBBG2C1mvaTiXoZE9mVMymYhqNlPuYEOoGk1F0RGeE6JfYh7aba140nQ1yK5bgzvwHjx1S3G1TWXznJ8"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-md font-semibold text-on-surface">Dr. Marcus Vance</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">#FAC-1142 • Assoc. Professor</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-md text-label-md font-medium">Mechanical Engineering</span>
+</td>
+<td class="py-3.5 px-3 text-center font-code-metric font-medium text-on-surface">7.5h</td>
+<td class="py-3.5 px-3 text-center font-code-metric font-medium text-on-surface">4.0h</td>
+<td class="py-3.5 px-3 text-center font-code-metric font-medium text-on-surface">3.0h</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-label-sm font-code-metric">
+<span class="font-medium text-on-surface">14.5 / 16.0 hrs</span>
+<span class="text-on-surface-variant">90.6%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden flex">
+<div class="bg-secondary h-2" style="width: 51.7%;"></div>
+<div class="bg-secondary-fixed-dim h-2" style="width: 27.5%;"></div>
+<div class="bg-surface-tint h-2" style="width: 20.8%;"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-metric text-label-sm">ME-210 [Sec 1]</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-metric text-label-sm">ME-405 [Lab B]</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-base">check_circle</span>
+<span>Verified</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Optimal
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-base">swap_horiz</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-base">calendar_view_week</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Prof. Julian Thorne - Underload Exemption -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4 text-center">
+<input class="w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shrink-0" data-alt="Academic portrait of Prof. Julian Thorne, senior research fellow in mathematics with wire-framed glasses and tweed coat in an institutional library setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXZzjLQmfizrJHHV7i9XRrIQRPgNrugatLactGC65VOYLcgyB7MGibUITEa-MUB1hP3TWqMV6TB1d-JC9oD65th8GRFxafTLRP0tq-fxUYmpZYq26l1XyeS6oYuVgilydHkgY2_6696M6_585maO9GbNN6gEu3vP5ffRpNL1hAwbEGvhMmE2eTBh4NULGcxXIMS76FvNOcTllnXB7LYpNc3fpUiwvTNVRwm_pLY38"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-md font-semibold text-on-surface">Prof. Julian Thorne</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">#FAC-0842 • Chaired Research Fellow</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-md text-label-md font-medium">Applied Mathematics</span>
+</td>
+<td class="py-3.5 px-3 text-center font-code-metric font-medium text-on-surface">4.0h</td>
+<td class="py-3.5 px-3 text-center font-code-metric font-medium text-on-surface">0.0h</td>
+<td class="py-3.5 px-3 text-center font-code-metric font-medium text-on-surface">5.0h</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-label-sm font-code-metric">
+<span class="font-medium text-on-surface">9.0 / 16.0 hrs</span>
+<span class="text-on-surface-variant">Grant Approved</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden flex">
+<div class="bg-secondary h-2" style="width: 44.4%;"></div>
+<div class="bg-surface-tint h-2" style="width: 55.6%;"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-metric text-label-sm">MATH-502 [Grad Seminar]</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-base">check_circle</span>
+<span>Verified</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+                Research Grant
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-base">swap_horiz</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-base">calendar_view_week</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Dr. Priya Sengupta - Optimal -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4 text-center">
+<input class="w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shrink-0" data-alt="Portrait photo of Dr. Priya Sengupta, female electrical engineering lecturer in laboratory setting with safety goggles resting around neck." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC494sqHtLgTYNft4WPDCnNgzr_ZPE4lvkA-vuw65P576G5WijVsuHqiIkxjWu_N5Ac9Vc6c2GkG87TAfv0Qi3m6tqBMZGkUnI-aV34pOJbbM8YFdYiK8mogD5EL5oOKvXD0yH6-ceaRKsJYVbWaN3E4-OFMa8XivUiy95crA6vJ7LNkPKvGIe1TB3VezBbsMS4RZmX2G8KMFuFLi9r7BVwZihmQYpOIkus8uN3v_Y"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-md font-semibold text-on-surface">Dr. Priya Sengupta</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">#FAC-3310 • Senior Lecturer</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-md text-label-md font-medium">Electrical Engineering</span>
+</td>
+<td class="py-3.5 px-3 text-center font-code-metric font-medium text-on-surface">6.0h</td>
+<td class="py-3.5 px-3 text-center font-code-metric font-medium text-on-surface">6.0h</td>
+<td class="py-3.5 px-3 text-center font-code-metric font-medium text-on-surface">2.0h</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-label-sm font-code-metric">
+<span class="font-medium text-on-surface">14.0 / 16.0 hrs</span>
+<span class="text-on-surface-variant">87.5%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden flex">
+<div class="bg-secondary h-2" style="width: 42.8%;"></div>
+<div class="bg-secondary-fixed-dim h-2" style="width: 42.8%;"></div>
+<div class="bg-surface-tint h-2" style="width: 14.4%;"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-metric text-label-sm">EE-204 [Sec A]</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-metric text-label-sm">EE-204L [Lab 1-2]</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-base">check_circle</span>
+<span>Verified</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Optimal
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-base">swap_horiz</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-base">calendar_view_week</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Bulk Action Bar -->
+<div class="px-space-md py-3 bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span>Showing <strong>1–4</strong> of 412 faculty members</span>
+<span class="text-surface-container-highest">|</span>
+<button class="text-secondary font-medium hover:underline">Batch Select Overloaded (18)</button>
+<span class="text-surface-container-highest">|</span>
+<button class="hover:text-on-surface">Reset Sorting</button>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant cursor-not-allowed">Previous</button>
+<button class="px-2.5 py-1 rounded bg-secondary text-on-secondary font-medium">1</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container">2</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container">3</button>
+<span class="px-1 text-on-surface-variant">...</span>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container">26</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container">Next</button>
+</div>
+</div>
+</div>
+<!-- Detailed Workload Schedule Inspection Panel (Deep Dive for Selected Faculty) -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm mb-space-lg">
+<!-- Inspector Header Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pb-space-sm border-b border-surface-container">
+<div class="flex items-center gap-space-md">
+<img class="w-12 h-12 rounded-xl object-cover" data-alt="Studio portrait of Dr. Elena Rostova, professor of computing and artificial intelligence, Apex Institute." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6PGNPODYn-HCodkTq-t5fv-quaF5tq6Z0evrJD5PjpYEi52WwIGG6MEYTSKdxB8ObnGqk2ZXKlLO_5auPgWilCpdy6q3WBV42O4a9GKqydQa521kBeo3SuL2hnCcwm-esLWofR7Wljb_ewYwNFV3KMu-1DZucNiaIlYOwNhx0DN87XBvpICZBWHhnp8o14Bilx31l8pakWw8GDE6REQsf_FFrAC7vAieFhYFaZ_g"/>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Weekly Schedule &amp; Slate Blueprint: Dr. Elena Rostova</h2>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">Overload State (+2.5h)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Department of Computer Science &amp; AI • Senior Tenured Chair • Active Teaching Office: Turing Hall Room 402
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-1 px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-base">print</span>
+<span>Print Syllabus Ledger</span>
+</button>
+<button class="flex items-center gap-1 px-space-sm py-1.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-base">edit_calendar</span>
+<span>Edit Timetable Matrix</span>
+</button>
+</div>
+</div>
+<!-- Layout: Heatmap (Left 8 cols) + Workload Composition Card (Right 4 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md pt-space-md">
+<!-- Left: Interactive Weekly Timetable Heatmap (Mon-Fri 08:00 to 18:00) -->
+<div class="lg:col-span-8 flex flex-col">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface uppercase tracking-wider">Weekly Schedule Heatmap</span>
+<span class="text-on-surface-variant">• Term 1 (Standard 50-Min Periods)</span>
+</div>
+<div class="flex items-center gap-space-sm font-body-sm text-body-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-secondary"></span>
+<span class="text-on-surface-variant">Lecture</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-secondary-fixed-dim"></span>
+<span class="text-on-surface-variant">Lab</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-on-tertiary-container"></span>
+<span class="text-on-surface-variant">Office Hours</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-surface-tint"></span>
+<span class="text-on-surface-variant">Senate/Committees</span>
+</div>
+</div>
+</div>
+<!-- Timetable Matrix Grid -->
+<div class="overflow-x-auto rounded-lg bg-surface-container-low p-2">
+<div class="min-w-[640px]">
+<!-- Grid Header Days -->
+<div class="grid grid-cols-6 gap-1 mb-1 text-center font-label-sm text-label-sm font-semibold text-on-surface uppercase">
+<div class="text-left pl-2 text-on-surface-variant">Time</div>
+<div class="py-1 bg-surface-container-lowest rounded">Monday</div>
+<div class="py-1 bg-surface-container-lowest rounded">Tuesday</div>
+<div class="py-1 bg-surface-container-lowest rounded">Wednesday</div>
+<div class="py-1 bg-surface-container-lowest rounded">Thursday</div>
+<div class="py-1 bg-surface-container-lowest rounded">Friday</div>
+</div>
+<!-- Hour Row 08:00 - 10:00 -->
+<div class="grid grid-cols-6 gap-1 mb-1 min-h-[46px]">
+<div class="font-code-metric text-label-sm text-on-surface-variant flex items-center pl-2">08:00 - 10:00</div>
+<div class="p-1 rounded bg-secondary text-on-secondary text-label-sm flex flex-col justify-center">
+<span class="font-semibold">AI-301: Lecture</span>
+<span class="text-[0.625rem] opacity-90">Turing Aud. 101</span>
+</div>
+<div class="p-1 rounded bg-surface-container-lowest/60 text-on-surface-variant text-label-sm flex items-center justify-center italic text-[0.6875rem]">
+                Free Slot
+              </div>
+<div class="p-1 rounded bg-secondary text-on-secondary text-label-sm flex flex-col justify-center">
+<span class="font-semibold">AI-301: Lecture</span>
+<span class="text-[0.625rem] opacity-90">Turing Aud. 101</span>
+</div>
+<div class="p-1 rounded bg-surface-container-lowest/60 text-on-surface-variant text-label-sm flex items-center justify-center italic text-[0.6875rem]">
+                Free Slot
+              </div>
+<div class="p-1 rounded bg-surface-container-lowest/60 text-on-surface-variant text-label-sm flex items-center justify-center italic text-[0.6875rem]">
+                Research Focus
+              </div>
+</div>
+<!-- Hour Row 10:00 - 12:00 -->
+<div class="grid grid-cols-6 gap-1 mb-1 min-h-[46px]">
+<div class="font-code-metric text-label-sm text-on-surface-variant flex items-center pl-2">10:00 - 12:00</div>
+<div class="p-1 rounded bg-surface-container-lowest/60 text-on-surface-variant text-label-sm flex items-center justify-center italic text-[0.6875rem]">
+                Free Slot
+              </div>
+<div class="p-1 rounded bg-secondary-fixed-dim text-on-surface text-label-sm flex flex-col justify-center">
+<span class="font-semibold">CS-490L: Lab Sup.</span>
+<span class="text-[0.625rem]">GPU Cluster 4B</span>
+</div>
+<div class="p-1 rounded bg-surface-container-lowest/60 text-on-surface-variant text-label-sm flex items-center justify-center italic text-[0.6875rem]">
+                Thesis Review
+              </div>
+<div class="p-1 rounded bg-secondary-fixed-dim text-on-surface text-label-sm flex flex-col justify-center">
+<span class="font-semibold">CS-490L: Lab Sup.</span>
+<span class="text-[0.625rem]">GPU Cluster 4B</span>
+</div>
+<div class="p-1 rounded bg-surface-container-lowest/60 text-on-surface-variant text-label-sm flex items-center justify-center italic text-[0.6875rem]">
+                Free Slot
+              </div>
+</div>
+<!-- Hour Row 12:00 - 14:00 (Break & Consult) -->
+<div class="grid grid-cols-6 gap-1 mb-1 min-h-[38px]">
+<div class="font-code-metric text-label-sm text-on-surface-variant flex items-center pl-2">12:00 - 14:00</div>
+<div class="p-1 rounded bg-surface-container text-on-surface-variant text-label-sm flex items-center justify-center text-[0.6875rem]">
+                Collegiate Lunch
+              </div>
+<div class="p-1 rounded bg-surface-container text-on-surface-variant text-label-sm flex items-center justify-center text-[0.6875rem]">
+                Lunch / Rest
+              </div>
+<div class="p-1 rounded bg-surface-container text-on-surface-variant text-label-sm flex items-center justify-center text-[0.6875rem]">
+                Collegiate Lunch
+              </div>
+<div class="p-1 rounded bg-surface-container text-on-surface-variant text-label-sm flex items-center justify-center text-[0.6875rem]">
+                Lunch / Rest
+              </div>
+<div class="p-1 rounded bg-surface-container text-on-surface-variant text-label-sm flex items-center justify-center text-[0.6875rem]">
+                Faculty Lunch
+              </div>
+</div>
+<!-- Hour Row 14:00 - 16:00 -->
+<div class="grid grid-cols-6 gap-1 mb-1 min-h-[46px]">
+<div class="font-code-metric text-label-sm text-on-surface-variant flex items-center pl-2">14:00 - 16:00</div>
+<div class="p-1 rounded bg-secondary text-on-secondary text-label-sm flex flex-col justify-center">
+<span class="font-semibold">CS-490: Lecture</span>
+<span class="text-[0.625rem] opacity-90">Dirac Hall 202</span>
+</div>
+<div class="p-1 rounded bg-on-tertiary-container text-white text-label-sm flex flex-col justify-center">
+<span class="font-semibold">Office Hours</span>
+<span class="text-[0.625rem] opacity-90">Open Bookings (Turing 402)</span>
+</div>
+<div class="p-1 rounded bg-secondary text-on-secondary text-label-sm flex flex-col justify-center">
+<span class="font-semibold">CS-490: Lecture</span>
+<span class="text-[0.625rem] opacity-90">Dirac Hall 202</span>
+</div>
+<div class="p-1 rounded bg-on-tertiary-container text-white text-label-sm flex flex-col justify-center">
+<span class="font-semibold">Office Hours</span>
+<span class="text-[0.625rem] opacity-90">Open Bookings (Turing 402)</span>
+</div>
+<div class="p-1 rounded bg-surface-tint text-on-tertiary text-label-sm flex flex-col justify-center">
+<span class="font-semibold">Academic Senate</span>
+<span class="text-[0.625rem] opacity-90">Council Chamber A</span>
+</div>
+</div>
+<!-- Hour Row 16:00 - 18:00 -->
+<div class="grid grid-cols-6 gap-1 min-h-[46px]">
+<div class="font-code-metric text-label-sm text-on-surface-variant flex items-center pl-2">16:00 - 18:00</div>
+<div class="p-1 rounded bg-surface-container-lowest/60 text-on-surface-variant text-label-sm flex items-center justify-center italic text-[0.6875rem]">
+                Lab Prep
+              </div>
+<div class="p-1 rounded bg-surface-container-lowest/60 text-on-surface-variant text-label-sm flex items-center justify-center italic text-[0.6875rem]">
+                Free Slot
+              </div>
+<div class="p-1 rounded bg-surface-container-lowest/60 text-on-surface-variant text-label-sm flex items-center justify-center italic text-[0.6875rem]">
+                Grad Thesis Desk
+              </div>
+<div class="p-1 rounded bg-surface-container-lowest/60 text-on-surface-variant text-label-sm flex items-center justify-center italic text-[0.6875rem]">
+                Free Slot
+              </div>
+<div class="p-1 rounded bg-surface-tint text-on-tertiary text-label-sm flex flex-col justify-center">
+<span class="font-semibold">Curriculum Board</span>
+<span class="text-[0.625rem] opacity-90">Advisory Room 3</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Workload Composition Breakdown Card (4 cols) -->
+<div class="lg:col-span-4 p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface">Composition Slate</span>
+<span class="font-code-metric text-headline-sm font-bold text-on-surface">16.0 <span class="text-label-md font-normal text-on-surface-variant">hrs</span></span>
+</div>
+<!-- Breakdown list -->
+<div class="flex flex-col gap-space-xs mt-space-sm">
+<!-- Item 1: Lecture -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<div>
+<div class="font-label-md text-label-md font-medium text-on-surface">Instructional Lecture</div>
+<div class="text-[0.6875rem] text-on-surface-variant font-code-metric">AI-301 (4h) • CS-490 (4h)</div>
+</div>
+</div>
+<span class="font-code-metric text-label-md font-bold text-on-surface">8.0 hrs</span>
+</div>
+<!-- Item 2: Lab -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim"></span>
+<div>
+<div class="font-label-md text-label-md font-medium text-on-surface">Laboratory Practicum</div>
+<div class="text-[0.6875rem] text-on-surface-variant font-code-metric">CS-490L Supervisions</div>
+</div>
+</div>
+<span class="font-code-metric text-label-md font-bold text-on-surface">3.0 hrs</span>
+</div>
+<!-- Item 3: Admin -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-tint"></span>
+<div>
+<div class="font-label-md text-label-md font-medium text-on-surface">Senate Governance / HOD</div>
+<div class="text-[0.6875rem] text-on-surface-variant font-code-metric">Curriculum Board &amp; Senate</div>
+</div>
+</div>
+<span class="font-code-metric text-label-md font-bold text-on-surface">3.0 hrs</span>
+</div>
+<!-- Item 4: Thesis -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-on-tertiary-container"></span>
+<div>
+<div class="font-label-md text-label-md font-medium text-on-surface">Thesis &amp; Office Mentoring</div>
+<div class="text-[0.6875rem] text-on-surface-variant font-code-metric">5 Ph.D. Scholars + Open Desk</div>
+</div>
+</div>
+<span class="font-code-metric text-label-md font-bold text-on-surface">2.0 hrs</span>
+</div>
+</div>
+</div>
+<!-- Overtime Calculation Banner -->
+<div class="mt-space-md p-space-sm rounded-lg bg-surface-container-highest flex flex-col gap-1">
+<div class="flex items-center justify-between text-label-sm font-semibold">
+<span class="text-on-surface">Overload Relief Compensation</span>
+<span class="text-error font-code-metric">Tier 1 Honorarium</span>
+</div>
+<p class="text-body-sm text-on-surface-variant">
+            Dr. Rostova has accumulated 2.5 overtime instructional credits for the Fall Semester. Eligible for stipend or graduate TA assignment.
+          </p>
+<div class="flex items-center gap-2 mt-1">
+<button class="w-full py-1.5 rounded-md bg-secondary text-on-secondary font-label-sm text-label-sm font-medium hover:bg-secondary-container transition-colors">
+              Dispatch Graduate TA (Relief)
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Metadata & Compliance Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs text-on-surface-variant font-body-sm text-body-sm pb-space-lg">
+<div class="flex items-center gap-space-md">
+<span>Apex Institute of Technology • Academic Operations ERP v5.2.0</span>
+<span class="hidden md:inline">•</span>
+<span class="hidden md:inline font-code-metric">Institutional Load Standards: Standard 12.0 - 16.0 SCH</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<a class="hover:text-on-surface text-secondary font-medium" href="#">Download Governance By-laws</a>
+<span>•</span>
+<a class="hover:text-on-surface" href="#">Faculty Union Portal</a>
+</div>
+</div>
+</div></main></div></body></html>

@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-surface":"#213145","tertiary-fixed-dim":"#89ceff","on-secondary-container":"#fffbff","tertiary-container":"#001e2f","surface-variant":"#d3e4fe","surface-dim":"#cbdbf5","surface-tint":"#565e74","on-error-container":"#93000a","on-tertiary":"#ffffff","primary-container":"#131b2e","outline-variant":"#c6c6cd","on-error":"#ffffff","surface-container-low":"#eff4ff","on-tertiary-container":"#008cc7","error-container":"#ffdad6","background":"#f8f9ff","surface-bright":"#f8f9ff","secondary":"#4b41e1","on-primary-container":"#7c839b","primary-fixed":"#dae2fd","primary-fixed-dim":"#bec6e0","surface-container-high":"#dce9ff","on-secondary-fixed":"#0f0069","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#3323cc","on-primary-fixed-variant":"#3f465c","error":"#ba1a1a","surface-container":"#e5eeff","secondary-container":"#645efb","inverse-primary":"#bec6e0","on-surface":"#0b1c30","on-surface-variant":"#45464d","surface-container-highest":"#d3e4fe","secondary-fixed":"#e2dfff","on-primary":"#ffffff","tertiary":"#000000","on-background":"#0b1c30","tertiary-fixed":"#c9e6ff","surface":"#f8f9ff","on-primary-fixed":"#131b2e","primary":"#000000","secondary-fixed-dim":"#c3c0ff","outline":"#76777d","on-tertiary-fixed":"#001e2f","on-tertiary-fixed-variant":"#004c6e","on-secondary":"#ffffff","inverse-on-surface":"#eaf1ff"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-sm":"0.5rem","gutter-desktop":"1.5rem","space-xs":"0.25rem",margin:"1rem","space-lg":"1.25rem","space-xl":"2rem","space-md":"0.75rem",gutter:"1rem","margin-desktop":"2rem"},fontFamily:{"headline-xl-mobile":["Geist"],"body-sm":["Geist"],"body-lg":["Geist"],"label-md":["Geist"],"code-metric":["Geist"],"headline-lg":["Geist"],"headline-sm":["Geist"],"headline-xl":["Geist"],"body-md":["Geist"],"label-sm":["Geist"]},fontSize:{"headline-xl-mobile":["1.75rem",{lineHeight:"2.25rem",letterSpacing:"-0.02em",fontWeight:"600"}],"body-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0em",fontWeight:"400"}],"body-lg":["1rem",{lineHeight:"1.5rem",letterSpacing:"-0.011em",fontWeight:"400"}],"label-md":["0.8125rem",{lineHeight:"1.125rem",letterSpacing:"-0.005em",fontWeight:"500"}],"code-metric":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"-0.02em",fontWeight:"500"}],"headline-lg":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-sm":["1.125rem",{lineHeight:"1.5rem",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-xl":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.025em",fontWeight:"600"}],"body-md":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"-0.006em",fontWeight:"400"}],"label-sm":["0.6875rem",{lineHeight:"0.875rem",letterSpacing:"0.04em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-gutter-desktop flex items-center justify-between border-b border-surface-container bg-surface-container-lowest"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">account_balance</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface leading-none">Apex OS</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold mt-0.5">PARENT PORTAL</span></div></div></div><div class="px-gutter-desktop py-space-sm"><div class="px-space-sm py-space-xs mb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">WARD ACADEMICS & LIFE</span></div><nav class="space-y-1 mb-space-lg" data-active-classes="bg-surface-container-high text-on-surface font-semibold"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="parent-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="parent-academic-monitoring" href="#"><span class="material-symbols-outlined text-[20px]">school</span><span>Academic Progress</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg transition-all bg-surface-container-high text-on-surface font-semibold" data-path="parent-fees-&-communication" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Fees & Receipts</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="parent-profile-&-linked-students" href="#"><span class="material-symbols-outlined text-[20px]">supervised_user_circle</span><span>Linked Students & Account</span></a></nav><div class="px-space-sm py-space-xs mb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">CAMPUS SERVICES</span></div><nav class="space-y-1" data-active-classes="bg-surface-container-high text-on-surface font-semibold"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="college-notices-&-ptms" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span>College Notices & PTMs</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="hostel-&-transport-status" href="#"><span class="material-symbols-outlined text-[20px]">commute</span><span>Hostel & Transport Status</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="helpdesk-&-counseling-contact" href="#"><span class="material-symbols-outlined text-[20px]">contact_support</span><span>Helpdesk & Counseling</span></a></nav></div></div><div class="p-space-md m-space-md bg-surface-container-low rounded-lg border border-surface-container"><div class="flex items-center gap-space-xs mb-1.5"><span class="material-symbols-outlined text-error text-[18px]">emergency</span><span class="font-label-sm text-label-sm font-semibold text-on-surface">EMERGENCY & SUPPORT</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Campus Security: +1 (800) 555-0199</p><a class="font-label-sm text-label-sm text-secondary hover:text-on-secondary-fixed-variant font-medium flex items-center gap-1" href="#"><span>Institutional Helpdesk</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span></a></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-surface-container shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-2xl"><div class="hidden sm:flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-full"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-medium text-on-surface">AY 2024–2025 · Sem 1 Fall</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full h-9 pl-9 pr-4 bg-surface-container-low hover:bg-surface-container text-on-surface placeholder:text-on-surface-variant rounded-lg font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-secondary transition-all" placeholder="Quick search grades, invoices, faculty..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-sm bg-surface-container-low hover:bg-surface-container px-space-md py-1.5 rounded-lg border border-surface-container cursor-pointer transition-colors"><span class="material-symbols-outlined text-secondary text-[20px]">face</span><div class="flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Active Ward</span><span class="font-body-sm text-body-sm font-semibold text-on-surface leading-snug">Elena Rostova (B.Tech CSE Sem 5)</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></div><button class="relative w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="h-8 w-px bg-surface-container"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col items-end text-right hidden lg:flex"><span class="font-body-sm text-body-sm font-semibold text-on-surface leading-tight">Dr. Konstantin S. Rostova</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Parent/Guardian</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 flex-1 px-gutter-desktop py-space-lg bg-background"><div class="flex flex-col w-full space-y-space-xl">
+<!-- Header Bar with Quick Action Badges -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm uppercase tracking-wider mb-1">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+<span>Institutional Financial Services</span>
+<span>/</span>
+<span class="text-on-surface font-semibold">Ledger & Communication</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Tuition Fees, Payment Ledger & Institutional Inquiries</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+        Account records for <strong class="text-on-surface font-semibold">Elena Rostova</strong> (Reg. #CSE-2022-8419) • Faculty Mentor: Prof. Rajesh Nambiar
+      </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs h-9 px-space-md bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg shadow-sm transition-all" onclick="alert('Downloading digitally verified Fee Clearance Certificate...')" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+<span>Clearance Certificate (Signed PDF)</span>
+</button>
+<button class="inline-flex items-center gap-space-xs h-9 px-space-md bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-label-md text-label-md rounded-lg shadow-sm transition-all" onclick="openPaymentModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+<span>Make Advance Payment</span>
+</button>
+</div>
+</div>
+<!-- KPI Metrics Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Total AY 2024–25 Fee</span>
+<div class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1">₹3,70,000</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm bg-surface-container-low/50 px-2.5 py-1 rounded">
+<span class="material-symbols-outlined text-[16px] text-secondary">info</span>
+<span>Includes Tuition, Labs, Hostel & Amenities</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Amount Paid (AY 2024–25)</span>
+<div class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1">₹1,85,000</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="font-medium text-on-surface">Sem 1 Fall</span>
+<span class="text-on-surface-variant">Paid in Full (100%)</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Outstanding Overdue Dues</span>
+<div class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1">₹0.00</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center gap-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container-high text-on-surface">Clear</span>
+<span>No penalty charges or hold tags</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Upcoming Installment</span>
+<div class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1">₹1,85,000</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">event_repeat</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Due Date:</span>
+<span class="font-semibold text-error bg-error-container/30 px-2 py-0.5 rounded text-label-sm">Jan 15, 2025 (Sem 2 Spring)</span>
+</div>
+</div>
+</div>
+<!-- Fee Structure Breakdown & Merit Endorsement -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left: Component Ledger -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-lg pb-space-md flex flex-wrap items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Semester 5 Component Ledger & Adjustments</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Itemized institutional charges billed for Academic Session July–Dec 2024</p>
+</div>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 bg-surface-container-low text-on-surface rounded font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">domain</span>
+          B.Tech Comp. Science & Engg.
+        </span>
+</div>
+<!-- Itemized Table -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-md text-body-md">
+<thead class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<tr>
+<th class="py-2.5 px-space-lg">Fee Head / Component</th>
+<th class="py-2.5 px-space-md">Allocation Code</th>
+<th class="py-2.5 px-space-md">Status</th>
+<th class="py-2.5 px-space-lg text-right">Gross Amount</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-lg">
+<div class="font-medium text-on-surface">Tuition & Curricular Instruction</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Core semester 5 engineering instructional faculty credits</div>
+</td>
+<td class="py-3 px-space-md font-code-metric text-code-metric text-on-surface-variant">FEE-TUI-S5</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm bg-surface-container text-secondary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Paid (Txn #TXN-882194)
+                </span>
+</td>
+<td class="py-3 px-space-lg text-right font-code-metric text-code-metric text-on-surface font-semibold">₹1,20,000.00</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-lg">
+<div class="font-medium text-on-surface">High Performance Computing Lab Consumable</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">NVIDIA A100 GPU Cluster cluster node compute access</div>
+</td>
+<td class="py-3 px-space-md font-code-metric text-code-metric text-on-surface-variant">LAB-HPC-E5</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm bg-surface-container text-secondary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Paid
+                </span>
+</td>
+<td class="py-3 px-space-lg text-right font-code-metric text-code-metric text-on-surface font-semibold">₹25,000.00</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-lg">
+<div class="font-medium text-on-surface">Hostel Residence & Boarding</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Block Theta AC Room 402 (Dual Occupancy) + Dining Hall A</div>
+</td>
+<td class="py-3 px-space-md font-code-metric text-code-metric text-on-surface-variant">HST-THETA-402</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm bg-surface-container text-secondary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Paid
+                </span>
+</td>
+<td class="py-3 px-space-lg text-right font-code-metric text-code-metric text-on-surface font-semibold">₹35,000.00</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-lg">
+<div class="font-medium text-on-surface">Library & Digital Journal Access</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">IEEE Xplore, ACM Digital Library & Physical Repository</div>
+</td>
+<td class="py-3 px-space-md font-code-metric text-code-metric text-on-surface-variant">LIB-DIG-S5</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm bg-surface-container text-secondary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Paid
+                </span>
+</td>
+<td class="py-3 px-space-lg text-right font-code-metric text-code-metric text-on-surface font-semibold">₹5,000.00</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-lg">
+<div class="font-medium text-on-surface">End-Semester University Evaluation & Exam</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Continuous Assessment + Central Board Hall Ticket</div>
+</td>
+<td class="py-3 px-space-md font-code-metric text-code-metric text-on-surface-variant">EXM-DEC24</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-label-sm bg-surface-container-low text-on-surface-variant">
+                  Inclusive (Tuition)
+                </span>
+</td>
+<td class="py-3 px-space-lg text-right font-code-metric text-code-metric text-on-surface font-semibold">₹0.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Concession Banner Inside Component Card -->
+<div class="p-space-md m-space-lg bg-surface-container-low rounded-lg flex items-start gap-space-sm">
+<div class="p-2 rounded bg-surface-container-highest text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">military_tech</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface text-[0.95rem]">Dean's Merit Scholarship Concession Ratified</span>
+<span class="font-code-metric text-code-metric font-semibold text-secondary">- ₹20,000 Applied</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            10% Academic Excellence waiver approved by the Dean of Academic Affairs (Ref #DOA-SCH-2024-918) for maintaining CGPA > 9.40 across Semesters 1 through 4.
+          </p>
+</div>
+</div>
+</div>
+<!-- Right: Payment Method & Account Summary Card -->
+<div class="lg:col-span-4 space-y-space-md flex flex-col justify-between">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Installment Schedule</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">AY 2024–2025</span>
+</div>
+<!-- Timeline Steps -->
+<div class="space-y-space-md">
+<div class="flex gap-space-sm items-start">
+<div class="flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="w-0.5 h-10 bg-secondary/30"></div>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Semester 1 (Fall)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">₹1,85,000 Settled on July 14, 2024</div>
+<span class="inline-block mt-1 font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded">Receipt #RCP-2024-8841</span>
+</div>
+</div>
+<div class="flex gap-space-sm items-start">
+<div class="flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-code-metric text-label-sm font-semibold">
+                2
+              </div>
+<div class="w-0.5 h-10 bg-surface-container-high"></div>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Semester 2 (Spring)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">₹1,85,000 Due before Jan 15, 2025</div>
+<span class="inline-block mt-1 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-2 py-0.5 rounded">Scheduled Invoice</span>
+</div>
+</div>
+<div class="flex gap-space-sm items-start">
+<div class="flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-code-metric text-label-sm font-semibold">
+                3
+              </div>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Convocation & Alumni Endowment</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Billed upon final clearance in AY 2025–26</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg p-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-body-sm text-body-sm flex items-center justify-between">
+<span>Registered Pan: <strong>AAACR8821P</strong></span>
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+</div>
+<!-- Virtual Account Details for NEFT/RTGS -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs mb-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">account_balance</span>
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Dedicated Student Virtual Escrow (VAN)</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+          Direct NEFT/RTGS payments auto-reconcile within 10 minutes to this student profile:
+        </p>
+<div class="bg-surface-container-low p-space-sm rounded space-y-1 font-code-metric text-code-metric">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Virtual A/C:</span>
+<span class="font-semibold text-on-surface">HDFC0001099ELENAROSTOVA</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">IFSC Code:</span>
+<span class="font-semibold text-on-surface">HDFC0000003</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Beneficiary:</span>
+<span class="text-on-surface truncate">APEX INSTITUTE OF TECHNOLOGY - FEES</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Historical Payment Ledger & Tax Invoices (Form 80E Ready) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-lg pb-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Payment History & Official Tax Receipts</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Download certified receipts recognized for Indian IT Act Section 80E tax deductions.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" onclick="alert('Exporting full ledger in Excel format...')" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Export Excel</span>
+</button>
+</div>
+</div>
+<!-- Ledger Table -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-md text-body-md">
+<thead class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<tr>
+<th class="py-2.5 px-space-lg">Receipt Number</th>
+<th class="py-2.5 px-space-md">Date</th>
+<th class="py-2.5 px-space-md">Academic Term / Description</th>
+<th class="py-2.5 px-space-md">Payment Mode</th>
+<th class="py-2.5 px-space-md text-right">Amount (₹)</th>
+<th class="py-2.5 px-space-md">Ledger State</th>
+<th class="py-2.5 px-space-lg text-center">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm">
+<!-- Sem 5 Fall -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-lg font-code-metric font-semibold text-secondary">RCP-2024-8841</td>
+<td class="py-3 px-space-md text-on-surface-variant">14 Jul 2024</td>
+<td class="py-3 px-space-md font-medium text-on-surface">B.Tech CSE - Semester 5 Tuition + Hostel (Installment 1)</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">account_balance</span>
+<span>HDFC NetBanking (NEFT)</span>
+</span>
+</td>
+<td class="py-3 px-space-md text-right font-code-metric font-semibold text-on-surface">₹1,85,000.00</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-label-sm font-semibold bg-surface-container text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Settled & Verified
+              </span>
+</td>
+<td class="py-3 px-space-lg text-center">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface transition-colors inline-flex items-center gap-1" onclick="alert('Downloading Receipt #RCP-2024-8841 (Digital Signatures Valid)')" title="Download Official PDF" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="text-label-sm">PDF</span>
+</button>
+</td>
+</tr>
+<!-- Sem 4 Spring -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-lg font-code-metric font-semibold text-secondary">RCP-2024-3112</td>
+<td class="py-3 px-space-md text-on-surface-variant">08 Jan 2024</td>
+<td class="py-3 px-space-md font-medium text-on-surface">B.Tech CSE - Semester 4 Tuition & Exam Term</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">credit_card</span>
+<span>SBI Corporate Credit Card</span>
+</span>
+</td>
+<td class="py-3 px-space-md text-right font-code-metric font-semibold text-on-surface">₹1,60,000.00</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-label-sm font-semibold bg-surface-container text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Settled & Verified
+              </span>
+</td>
+<td class="py-3 px-space-lg text-center">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface transition-colors inline-flex items-center gap-1" onclick="alert('Downloading Receipt #RCP-2024-3112')" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="text-label-sm">PDF</span>
+</button>
+</td>
+</tr>
+<!-- Sem 3 Fall -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-lg font-code-metric font-semibold text-secondary">RCP-2023-7440</td>
+<td class="py-3 px-space-md text-on-surface-variant">11 Jul 2023</td>
+<td class="py-3 px-space-md font-medium text-on-surface">B.Tech CSE - Semester 3 Tuition + Special Labs</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">qr_code_2</span>
+<span>UPI / QR Intent</span>
+</span>
+</td>
+<td class="py-3 px-space-md text-right font-code-metric font-semibold text-on-surface">₹1,55,000.00</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-label-sm font-semibold bg-surface-container text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Settled & Verified
+              </span>
+</td>
+<td class="py-3 px-space-lg text-center">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface transition-colors inline-flex items-center gap-1" onclick="alert('Downloading Receipt #RCP-2023-7440')" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="text-label-sm">PDF</span>
+</button>
+</td>
+</tr>
+<!-- Sem 2 Spring -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-lg font-code-metric font-semibold text-secondary">RCP-2023-0199</td>
+<td class="py-3 px-space-md text-on-surface-variant">04 Jan 2023</td>
+<td class="py-3 px-space-md font-medium text-on-surface">B.Tech CSE - Semester 2 Composite Tuition</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">account_balance</span>
+<span>ICICI RTGS Transfer</span>
+</span>
+</td>
+<td class="py-3 px-space-md text-right font-code-metric font-semibold text-on-surface">₹1,50,000.00</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-label-sm font-semibold bg-surface-container text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Settled & Verified
+              </span>
+</td>
+<td class="py-3 px-space-lg text-center">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface transition-colors inline-flex items-center gap-1" onclick="alert('Downloading Receipt #RCP-2023-0199')" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="text-label-sm">PDF</span>
+</button>
+</td>
+</tr>
+<!-- Sem 1 Fall (Admission term) -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-lg font-code-metric font-semibold text-secondary">RCP-2022-9011</td>
+<td class="py-3 px-space-md text-on-surface-variant">25 Jun 2022</td>
+<td class="py-3 px-space-md font-medium text-on-surface">B.Tech Admission Fee, Security Deposit & Sem 1 Tuition</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">account_balance</span>
+<span>Demand Draft / Escrow Clear</span>
+</span>
+</td>
+<td class="py-3 px-space-md text-right font-code-metric font-semibold text-on-surface">₹2,10,000.00</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-label-sm font-semibold bg-surface-container text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Settled & Verified
+              </span>
+</td>
+<td class="py-3 px-space-lg text-center">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface transition-colors inline-flex items-center gap-1" onclick="alert('Downloading Receipt #RCP-2022-9011')" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="text-label-sm">PDF</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Two-Way Official Communication & Faculty Messages -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Messages & Inquiries Feed (8 cols) -->
+<div class="lg:col-span-8 space-y-space-md">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md border-b border-surface-container">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Official Faculty & Academic Communication</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct correspondence with Dean of Academics, Faculty Mentors, and Bursar Office</p>
+</div>
+<button class="inline-flex items-center gap-space-xs h-9 px-space-md bg-secondary text-on-secondary rounded-lg font-label-md text-label-md hover:bg-on-secondary-fixed-variant transition-all self-start sm:self-auto" onclick="openQueryModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+<span>New Inquiry / Ticket</span>
+</button>
+</div>
+<!-- Thread 1: Dean's Office -->
+<div class="py-space-md border-b border-surface-container">
+<div class="flex items-start justify-between gap-space-sm mb-2">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface font-semibold text-label-md">
+                DA
+              </div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Office of the Dean of Academic Affairs</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container-high text-secondary">BoS Council</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Prof. Dr. Aris Thorne • Official Circular #DOA-2024-44</div>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Yesterday at 15:42</span>
+<span class="inline-flex items-center gap-1 text-[11px] text-secondary font-medium">
+<span class="material-symbols-outlined text-[14px]">done_all</span> Responded
+              </span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg space-y-2 text-on-surface font-body-md text-body-md">
+<p class="font-medium text-on-surface">
+              Subject: Invitation to Board of Studies (BoS) Parent Advisory Council (AY 2024–25)
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Dear Dr. Konstantin S. Rostova, in recognition of Elena's consistent academic excellence in Computer Science & Engineering, you have been nominated as a Parent Representative on the Institutional Curriculum Advisory Board for Semester 6 electives (Specialization: AI & High-Throughput Systems). The hybrid meeting convenes Nov 12 at 14:00 IST.
+            </p>
+<div class="pt-2 flex items-center gap-space-sm border-t border-surface-container text-body-sm">
+<span class="text-on-surface-variant font-medium">Your Response:</span>
+<span class="text-on-surface italic">"Confirmed attendance via video conference link. Thank you Dean Thorne."</span>
+</div>
+</div>
+</div>
+<!-- Thread 2: Faculty Mentor Chat History -->
+<div class="pt-space-md">
+<div class="flex items-start justify-between gap-space-sm mb-3">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-secondary font-semibold text-label-md">
+                RN
+              </div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Prof. Rajesh Nambiar</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container-low text-on-surface">Faculty Mentor</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Dept. of Computer Science • Sub: Academic Progress & Elective Orientation</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 19, 2024</span>
+</div>
+<!-- Chat dialogue preview -->
+<div class="space-y-space-sm bg-surface-container-low/40 p-space-md rounded-lg">
+<!-- Mentor message -->
+<div class="flex flex-col items-start max-w-xl">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm text-body-sm text-on-surface">
+                Greetings Dr. Rostova. Elena completed her mid-term Distributed Systems capstone proposal with 96/100 points. She has expressed interest in taking the advanced Quantum Computing elective next semester. We encourage your approval for the preparatory lab slot.
+              </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5 px-1">Prof. Nambiar • 10:14 AM</span>
+</div>
+<!-- Parent reply -->
+<div class="flex flex-col items-end ml-auto max-w-xl">
+<div class="bg-secondary text-on-secondary p-space-sm rounded-lg shadow-sm text-body-sm">
+                Thank you Professor Nambiar. I have reviewed the syllabus draft with Elena and fully consent to the lab enrollment. Is there any supplementary fee ledger required for the Quantum computing sandbox?
+              </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5 px-1">Dr. Rostova • 11:02 AM</span>
+</div>
+<!-- Mentor follow-up -->
+<div class="flex flex-col items-start max-w-xl">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm text-body-sm text-on-surface">
+                The core credits are fully covered under her merit scholarship concession. No out-of-pocket tuition adjustment is required for the lab.
+              </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5 px-1">Prof. Nambiar • 11:20 AM</span>
+</div>
+</div>
+<!-- Quick reply field -->
+<div class="mt-space-md flex gap-space-sm">
+<input class="flex-1 h-9 px-space-md bg-surface-container-low rounded-lg text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-1 focus:ring-secondary transition-all" placeholder="Type a message to Prof. Rajesh Nambiar..." type="text"/>
+<button class="h-9 px-space-md bg-primary text-on-primary rounded-lg font-label-md text-label-md hover:bg-inverse-surface transition-all flex items-center gap-1" onclick="alert('Message delivered to Prof. Rajesh Nambiar')" type="button">
+<span>Send</span>
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Notification Preferences & Direct SMS Alert Channels (4 cols) -->
+<div class="lg:col-span-4 space-y-space-md">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">SMS & Emergency Alerts</h3>
+<span class="material-symbols-outlined text-secondary text-[22px]">sms</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Live automated telemetry dispatched directly to verified guardian contact.
+        </p>
+<!-- Phone badge -->
+<div class="flex items-center justify-between bg-surface-container-low p-space-sm rounded-lg mb-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">phone_iphone</span>
+<span class="font-code-metric text-code-metric font-medium text-on-surface">+91 98401-83921</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">check</span>
+            Verified
+          </span>
+</div>
+<!-- Toggles -->
+<div class="space-y-space-md">
+<!-- Toggle 1 -->
+<label class="flex items-start justify-between cursor-pointer gap-space-sm">
+<div class="flex-1">
+<div class="font-label-md text-label-md text-on-surface font-semibold">Campus Gate Attendance</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Instant SMS dispatch when student biometric scans entry/exit turnstiles</div>
+</div>
+<input checked="" class="mt-1 w-4 h-4 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</label>
+<!-- Toggle 2 -->
+<label class="flex items-start justify-between cursor-pointer gap-space-sm">
+<div class="flex-1">
+<div class="font-label-md text-label-md text-on-surface font-semibold">Fee Due & Invoice Reminders</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">7-day advance advisory before semester installment deadlines</div>
+</div>
+<input checked="" class="mt-1 w-4 h-4 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</label>
+<!-- Toggle 3 -->
+<label class="flex items-start justify-between cursor-pointer gap-space-sm">
+<div class="flex-1">
+<div class="font-label-md text-label-md text-on-surface font-semibold">Exam Results & GPA Publishing</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Instant alert when Controller of Examinations validates semester transcripts</div>
+</div>
+<input checked="" class="mt-1 w-4 h-4 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</label>
+<!-- Toggle 4 -->
+<label class="flex items-start justify-between cursor-pointer gap-space-sm">
+<div class="flex-1">
+<div class="font-label-md text-label-md text-on-surface font-semibold">Campus Emergency Broadcasts</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">High-priority SMS & automated robocalls for institutional weather or safety incidents</div>
+</div>
+<input checked="" class="mt-1 w-4 h-4 accent-secondary rounded cursor-not-allowed" disabled="" type="checkbox"/>
+</label>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-surface-container flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Carrier: Jio National Priority</span>
+<button class="font-label-sm text-label-sm text-secondary hover:underline font-semibold" onclick="alert('SMS Test ping sent to +91 98401-83921')" type="button">Send Test Ping</button>
+</div>
+</div>
+<!-- Institutional Helpdesk Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-xs text-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">account_balance</span>
+<span class="font-label-md text-label-md font-semibold">Bursar & Student Accounts Desk</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Administrative Block Room 104 • Mon–Fri 09:00–17:00 IST
+        </p>
+<div class="pt-1 flex flex-col gap-1 font-body-sm text-body-sm text-on-surface">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">mail</span> accounts@apex-institute.edu</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">call</span> +91 (80) 4122-8090 (Ext. 204)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Hidden Interactive Modals (Vanilla JS driven) -->
+<!-- Advance Payment Modal -->
+<div class="fixed inset-0 z-50 hidden bg-on-surface/40 backdrop-blur-sm flex items-center justify-center p-4" id="paymentModal">
+<div class="bg-surface-container-lowest max-w-lg w-full rounded-2xl shadow-xl overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+<div class="p-space-lg border-b border-surface-container flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Make Advance Payment</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Semester 2 Spring Fee Clearance (AY 2024–25)</p>
+</div>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant" onclick="closePaymentModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg space-y-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1">Select Amount</label>
+<div class="grid grid-cols-2 gap-space-sm mb-2">
+<button class="p-2.5 rounded-lg border-2 border-secondary bg-surface-container-low text-left" onclick="selectAmount('185000')" type="button">
+<span class="block font-label-sm text-label-sm text-secondary font-semibold">Full Sem 2 Installment</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">₹1,85,000</span>
+</button>
+<button class="p-2.5 rounded-lg border border-surface-container bg-surface-container-lowest text-left hover:bg-surface-container-low" onclick="selectAmount('50000')" type="button">
+<span class="block font-label-sm text-label-sm text-on-surface-variant font-semibold">Advance Token</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">₹50,000</span>
+</button>
+</div>
+<input class="w-full h-10 px-space-md bg-surface-container-low rounded-lg font-code-metric text-code-metric text-on-surface font-semibold focus:outline-none focus:ring-1 focus:ring-secondary" id="payAmountInput" type="text" value="₹1,85,000"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1">Payment Method</label>
+<div class="space-y-1.5">
+<label class="flex items-center gap-space-sm p-2 rounded-lg bg-surface-container-low cursor-pointer">
+<input checked="" class="accent-secondary" name="payMethod" type="radio"/>
+<span class="material-symbols-outlined text-[20px] text-secondary">account_balance</span>
+<span class="font-body-md text-body-md text-on-surface font-medium flex-1">NetBanking / NEFT Virtual Escrow</span>
+</label>
+<label class="flex items-center gap-space-sm p-2 rounded-lg bg-surface-container-low cursor-pointer">
+<input class="accent-secondary" name="payMethod" type="radio"/>
+<span class="material-symbols-outlined text-[20px] text-secondary">qr_code_2</span>
+<span class="font-body-md text-body-md text-on-surface font-medium flex-1">Instant UPI (Google Pay, PhonePe, BHIM)</span>
+</label>
+<label class="flex items-center gap-space-sm p-2 rounded-lg bg-surface-container-low cursor-pointer">
+<input class="accent-secondary" name="payMethod" type="radio"/>
+<span class="material-symbols-outlined text-[20px] text-secondary">credit_card</span>
+<span class="font-body-md text-body-md text-on-surface font-medium flex-1">Institutional Credit / Debit Card</span>
+</label>
+</div>
+</div>
+</div>
+<div class="p-space-lg bg-surface-container flex items-center justify-end gap-space-sm">
+<button class="h-9 px-space-md text-on-surface font-label-md text-label-md hover:bg-surface-container-high rounded-lg transition-colors" onclick="closePaymentModal()" type="button">Cancel</button>
+<button class="h-9 px-space-lg bg-secondary text-on-secondary font-label-md text-label-md font-semibold rounded-lg hover:bg-on-secondary-fixed-variant transition-colors flex items-center gap-1" onclick="executePaymentMock()" type="button">
+<span>Proceed to Gateway</span>
+<span class="material-symbols-outlined text-[16px]">lock</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Inquiry Ticket Modal -->
+<div class="fixed inset-0 z-50 hidden bg-on-surface/40 backdrop-blur-sm flex items-center justify-center p-4" id="queryModal">
+<div class="bg-surface-container-lowest max-w-lg w-full rounded-2xl shadow-xl overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+<div class="p-space-lg border-b border-surface-container flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Submit Inquiry to College Office</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bursar, Registrar & Campus Logistics</p>
+</div>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant" onclick="closeQueryModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg space-y-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1">Target Department</label>
+<select class="w-full h-10 px-space-md bg-surface-container-low rounded-lg text-body-md text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary" id="queryDept">
+<option value="tuition">Tuition Fees & Scholarship Adjustments</option>
+<option value="hostel">Hostel Residence & Dining Hall</option>
+<option value="transport">Campus Bus & Transit Pass</option>
+<option value="academic">Academic Transcripts & Controller of Examinations</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1">Subject</label>
+<input class="w-full h-10 px-space-md bg-surface-container-low rounded-lg text-body-md text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-1 focus:ring-secondary" placeholder="e.g. Request for Section 80E Certified Tax Certificate" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1">Message Description</label>
+<textarea class="w-full p-space-md bg-surface-container-low rounded-lg text-body-md text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-1 focus:ring-secondary resize-none" placeholder="Detail your administrative inquiry or document request..." rows="4"></textarea>
+</div>
+</div>
+<div class="p-space-lg bg-surface-container flex items-center justify-end gap-space-sm">
+<button class="h-9 px-space-md text-on-surface font-label-md text-label-md hover:bg-surface-container-high rounded-lg transition-colors" onclick="closeQueryModal()" type="button">Cancel</button>
+<button class="h-9 px-space-lg bg-secondary text-on-secondary font-label-md text-label-md font-semibold rounded-lg hover:bg-on-secondary-fixed-variant transition-colors flex items-center gap-1" onclick="submitQueryMock()" type="button">
+<span>Dispatch Ticket</span>
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+    function openPaymentModal() {
+      document.getElementById('paymentModal').classList.remove('hidden');
+    }
+    function closePaymentModal() {
+      document.getElementById('paymentModal').classList.add('hidden');
+    }
+    function selectAmount(val) {
+      const input = document.getElementById('payAmountInput');
+      if (val === '185000') {
+        input.value = '₹1,85,000';
+      } else {
+        input.value = '₹50,000';
+      }
+    }
+    function executePaymentMock() {
+      alert('Simulating gateway handshake with HDFC PG for ' + document.getElementById('payAmountInput').value + '... Transaction token generated.');
+      closePaymentModal();
+    }
+
+    function openQueryModal() {
+      document.getElementById('queryModal').classList.remove('hidden');
+    }
+    function closeQueryModal() {
+      document.getElementById('queryModal').classList.add('hidden');
+    }
+    function submitQueryMock() {
+      alert('Official query logged under Ticket #TKT-2024-9912. Target office will reply within 24 working hours.');
+      closeQueryModal();
+    }
+  </script>
+</div></main></div></body></html>

@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed":"#c9e6ff","on-tertiary-fixed":"#001e2f","on-tertiary-container":"#008cc7","surface-bright":"#f8f9ff","on-secondary-container":"#fffbff","tertiary":"#000000","inverse-on-surface":"#eaf1ff","on-error":"#ffffff","error-container":"#ffdad6","on-secondary-fixed-variant":"#3323cc","tertiary-container":"#001e2f","surface-container-low":"#eff4ff","tertiary-fixed-dim":"#89ceff","surface":"#f8f9ff","primary-container":"#131b2e","secondary-container":"#645efb","on-background":"#0b1c30","background":"#f8f9ff","surface-tint":"#565e74","on-primary":"#ffffff","on-primary-fixed-variant":"#3f465c","on-secondary":"#ffffff","primary-fixed-dim":"#bec6e0","surface-container":"#e5eeff","inverse-primary":"#bec6e0","outline-variant":"#c6c6cd","on-secondary-fixed":"#0f0069","surface-variant":"#d3e4fe","surface-container-lowest":"#ffffff","error":"#ba1a1a","outline":"#76777d","on-surface":"#0b1c30","surface-container-high":"#dce9ff","inverse-surface":"#213145","secondary":"#4b41e1","on-tertiary-fixed-variant":"#004c6e","secondary-fixed":"#e2dfff","on-error-container":"#93000a","primary-fixed":"#dae2fd","on-primary-fixed":"#131b2e","secondary-fixed-dim":"#c3c0ff","on-tertiary":"#ffffff","surface-container-highest":"#d3e4fe","on-primary-container":"#7c839b","on-surface-variant":"#45464d","primary":"#000000","surface-dim":"#cbdbf5"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-desktop":"2rem","space-lg":"1.25rem","gutter-desktop":"1.5rem","space-md":"0.75rem","space-xl":"2rem","gutter":"1rem","space-xs":"0.25rem","space-sm":"0.5rem","margin":"1rem"},"fontFamily":{"body-sm":["Geist"],"label-sm":["Geist"],"body-lg":["Geist"],"label-md":["Geist"],"headline-sm":["Geist"],"headline-xl-mobile":["Geist"],"headline-lg":["Geist"],"code-metric":["Geist"],"body-md":["Geist"],"headline-xl":["Geist"]},"fontSize":{"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0em","fontWeight":"400"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.04em","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"-0.011em","fontWeight":"400"}],"label-md":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"-0.005em","fontWeight":"500"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-xl-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.02em","fontWeight":"600"}],"code-metric":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.02em","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.006em","fontWeight":"400"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.025em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-50 flex items-center justify-between px-margin-desktop shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[20px]">hub</span></div><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">College OS</span><span class="px-space-sm py-space-xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider">Platform Admin</span></div><div class="hidden xl:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">public</span><span>Global Multi-Tenant • US-EAST / EU-CENTRAL</span></div></div><div class="flex-1 max-w-xl mx-space-xl hidden md:block"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-[18px] text-on-surface-variant">search</span><input class="w-full h-9 pl-10 pr-12 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-secondary transition-all" placeholder="Search colleges, tenant IDs, subscriptions, audit logs..." type="text"/><kbd class="absolute right-space-md font-code-metric text-code-metric text-on-surface-variant bg-surface-container-highest px-space-xs py-0.5 rounded">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low font-label-sm text-label-sm text-on-surface"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span>Health: 99.98% Operational</span></div><button class="hidden sm:flex items-center gap-space-xs h-9 px-space-md rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Register College</span></button><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Documentation" type="button"><span class="material-symbols-outlined text-[20px]">menu_book</span></button><button class="relative w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Notifications" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm border-l border-outline-variant/30"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-none">Sarah Jenkins</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Chief Systems Admin</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant hidden xl:block">expand_more</span></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex flex-col justify-between"><div class="p-space-md flex flex-col gap-space-md overflow-y-auto"><div class="p-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-sm"><div class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[16px]">vpn_key</span></div><div class="flex flex-col"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Context</span><span class="font-label-md text-label-md text-on-surface">Master Console</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-secondary-fixed text-on-secondary-fixed font-label-md rounded-lg"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="super-admin-dashboard" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Overview</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="college-directory" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">account_balance</span><span class="font-body-md text-body-md">Colleges</span></div><span class="px-space-xs py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">142</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="college-onboarding" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">rocket_launch</span><span class="font-body-md text-body-md">Onboarding</span></div><span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed-dim text-on-secondary-fixed-variant font-label-sm text-label-sm">4 Pending</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="subscription-management" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">credit_card</span><span class="font-body-md text-body-md">Subscriptions</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="billing-and-payments" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-body-md text-body-md">Billing & Payments</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="support-center" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">support</span><span class="font-body-md text-body-md">Support Center</span></div><span class="px-space-xs py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">12</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="platform-analytics" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="font-body-md text-body-md">Platform Analytics</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="system-health" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">ecg_heart</span><span class="font-body-md text-body-md">System Health</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="audit-logs" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">security</span><span class="font-body-md text-body-md">Audit Logs</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-secondary-fixed text-on-secondary-fixed font-label-md rounded-lg" data-path="platform-settings" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Platform Settings</span></div></a></nav></div><div class="p-space-md flex flex-col gap-space-sm bg-surface-container-low"><div class="flex flex-col gap-0.5"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">SLA Tier</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Global Enterprise</span></div><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Engine</span><span class="font-code-metric text-code-metric text-on-surface-variant">v4.18.2</span></div></div><a class="flex items-center justify-between pt-space-xs text-secondary hover:text-secondary-container transition-colors" href="#"><span class="font-label-sm text-label-sm">Switch to College Workspace</span><span class="material-symbols-outlined text-[14px]">open_in_new</span></a></div></aside><div class="pl-64"><main class="w-full pt-16 px-gutter-desktop min-h-screen bg-surface"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-space-lg mb-space-xl">
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Governance & Environment</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">NODE_ENV: production (cluster-east-01)</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Platform Configuration & System Governance</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl mt-0.5">
+          Global multi-tenant settings, custom domain routing, security policies, authentication providers, and infrastructure telemetry.
+        </p>
+</div>
+<div class="flex items-center flex-wrap gap-space-sm">
+<button class="flex items-center gap-space-xs h-9 px-space-md rounded-lg bg-surface-container-low text-on-surface hover:bg-error-container hover:text-on-error-container transition-all shadow-sm" id="maintenance-toggle-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">build_circle</span>
+<span class="font-label-md text-label-md">Emergency Maintenance</span>
+<span class="w-2 h-2 rounded-full bg-outline-variant ml-1" id="maint-indicator"></span>
+</button>
+<button class="flex items-center gap-space-xs h-9 px-space-md rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container hover:text-on-surface transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span class="font-label-md text-label-md">Audit Changes History</span>
+</button>
+<button class="flex items-center gap-space-xs h-9 px-space-lg rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container transition-all shadow-sm" id="save-all-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span class="font-label-md text-label-md">Save All Changes</span>
+</button>
+</div>
+</div>
+<!-- Telemetry Bar -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Security Posture</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">SOC-2 Type II</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">domain</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active Tenants</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">142 Inst.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">cloud_sync</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Auto Snapshot</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">T-02:18:00</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">dns</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">DB Latency</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">1.4ms (p95)</span>
+</div>
+</div>
+</div>
+<!-- Navigation Pills -->
+<div class="flex items-center gap-space-xs p-1 bg-surface-container-low rounded-xl overflow-x-auto shadow-sm">
+<button class="tab-btn px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm transition-all whitespace-nowrap" data-target="general-section" type="button">
+        General
+      </button>
+<button class="tab-btn px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all whitespace-nowrap" data-target="branding-section" type="button">
+        Branding & White-Label
+      </button>
+<button class="tab-btn px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all whitespace-nowrap" data-target="security-section" type="button">
+        Security & Compliance
+      </button>
+<button class="tab-btn px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all whitespace-nowrap" data-target="sso-section" type="button">
+        Authentication & SSO
+      </button>
+<button class="tab-btn px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all whitespace-nowrap" data-target="gateways-section" type="button">
+        Notifications & Gateways
+      </button>
+<button class="tab-btn px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all whitespace-nowrap" data-target="integrations-section" type="button">
+        Integrations & API
+      </button>
+<button class="tab-btn px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all whitespace-nowrap" data-target="infra-section" type="button">
+        Storage & Infrastructure
+      </button>
+</div>
+</div>
+<!-- Content Workspace -->
+<div class="flex flex-col gap-space-xl">
+<!-- SECTION 1: General Platform Configuration -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg" id="general-section">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">General Platform Configuration</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Core multi-tenant root identification, internationalization, and administrative communication</p>
+</div>
+</div>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Tier-0 Core</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Platform Name</label>
+<input class="h-9 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest transition-all" type="text" value="College OS – Enterprise Education Cloud"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Global header label and identity string</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Platform Master URL</label>
+<div class="relative flex items-center">
+<input class="w-full h-9 pl-space-md pr-10 rounded-lg bg-surface-container-low text-on-surface font-code-metric text-code-metric focus:outline-none focus:bg-surface-container-lowest transition-all" type="text" value="https://app.collegeos.cloud"/>
+<span class="material-symbols-outlined absolute right-space-sm text-[16px] text-on-surface-variant">lock</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Top-level routing domain for all multi-tenants</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Support Desk Routing Email</label>
+<div class="relative flex items-center">
+<input class="w-full h-9 pl-space-md pr-10 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest transition-all" type="email" value="superadmin@collegeos.cloud"/>
+<span class="material-symbols-outlined absolute right-space-sm text-[16px] text-on-surface-variant">mail</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">System notifications & ticket fallback channel</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Default Institutional Language</label>
+<select class="h-9 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none">
+<option selected="">English (US)</option>
+<option>Spanish (ES / LATAM)</option>
+<option>French (FR / CA)</option>
+<option>German (DE)</option>
+<option>Japanese (JA)</option>
+</select>
+<div class="flex items-center justify-between mt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Multi-language localization</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Default Time Zone</label>
+<select class="h-9 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none">
+<option selected="">UTC-05:00 Eastern Time (US & Canada)</option>
+<option>UTC-08:00 Pacific Time (US & Canada)</option>
+<option>UTC+00:00 Greenwich Mean Time (London)</option>
+<option>UTC+01:00 Central European Time (Berlin)</option>
+<option>UTC+05:30 India Standard Time (New Delhi)</option>
+</select>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Affects master timestamps, backups, & logs</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Date & Academic Format</label>
+<input class="h-9 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest transition-all" type="text" value="MM/DD/YYYY • AY Semester Cadence"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Global term scheduling mask syntax</span>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Global Branding Defaults & White-Label -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg" id="branding-section">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">palette</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Global Branding & White-Label Defaults</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Institutional aesthetic presets, emblem assets, and tenant overrides</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>White-Label Engine Active</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Logo & Favicon Managers -->
+<div class="flex flex-col gap-space-md p-space-md bg-surface-container-low rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Master SVG Logo</span>
+<span class="font-label-sm text-label-sm text-secondary cursor-pointer hover:underline">Replace Vector</span>
+</div>
+<div class="flex items-center gap-space-md p-space-sm bg-surface-container-lowest rounded-lg">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[24px]">hub</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">college_os_primary.svg</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">14.2 KB • Vectorized RGB</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-md text-label-md text-on-surface">Favicon & App Icon</span>
+<span class="font-label-sm text-label-sm text-secondary cursor-pointer hover:underline">Upload 64x64</span>
+</div>
+<div class="flex items-center gap-space-md p-space-sm bg-surface-container-lowest rounded-lg">
+<div class="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">school</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">favicon-production.ico</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">4.8 KB • 32x32 / 64x64 bundle</span>
+</div>
+</div>
+</div>
+<!-- Palette Configuration -->
+<div class="flex flex-col gap-space-md p-space-md bg-surface-container-low rounded-xl">
+<span class="font-label-md text-label-md text-on-surface">Primary Color Spectrum</span>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between p-space-sm bg-surface-container-lowest rounded-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-6 h-6 rounded-md bg-[#0F172A] shadow-sm"></div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Slate Navy (Structural Base)</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">#0F172A</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">colorize</span>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container-lowest rounded-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-6 h-6 rounded-md bg-[#4F46E5] shadow-sm"></div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Indigo Accent (Primary Interactive)</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">#4F46E5</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">colorize</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg flex items-center justify-between mt-auto">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Tenant Custom CSS Injection</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Allow collegiate portals to load custom CSS seals & SSL certs</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer ml-space-sm">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+<!-- Email Templates Defaults -->
+<div class="flex flex-col gap-space-sm p-space-md bg-surface-container-low rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Default Transactional Email Frame</span>
+<span class="font-label-sm text-label-sm text-secondary cursor-pointer hover:underline">Preview Render</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">HTML Header Block</span>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-code-metric text-code-metric focus:outline-none resize-none" rows="3"><header style="background:#0F172A; padding:24px; border-bottom:3px solid #4F46E5;">
+  <img src="{{college_logo_url}}" height="32" />
+</header></textarea>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">HTML Footer & Compliance Block</span>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-code-metric text-code-metric focus:outline-none resize-none" rows="3"><footer style="background:#F8FAFC; color:#64748B; font-size:12px; padding:18px;">
+  <p>FERPA Compliant • College OS Cloud Security Infrastructure</p>
+</footer></textarea>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 3: Enterprise Security & Access Policies -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg" id="security-section">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Enterprise Security & Access Policies</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Global perimeter defenses, password complexity criteria, session timers, and lockout rules</p>
+</div>
+</div>
+<span class="px-space-sm py-space-xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Strict Enforcement</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Password Complexity Card -->
+<div class="flex flex-col gap-space-md p-space-md bg-surface-container-low rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Master Password Complexity</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">key</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Minimum Length:</span>
+<span class="font-code-metric text-code-metric font-semibold text-on-surface">14 Characters</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Uppercase & Lowercase:</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Enforced [A-Z, a-z]</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Numeric & Symbols:</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Mandatory [0-9, #@$!]</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Password Expiration Cadence:</span>
+<span class="font-code-metric text-code-metric text-on-surface">90 Days</span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Require Previous 5 Pass Uniqueness</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+<!-- MFA & Session Limits -->
+<div class="flex flex-col gap-space-md p-space-md bg-surface-container-low rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">MFA & Session Controls</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">phonelink_lock</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="p-space-sm bg-surface-container-lowest rounded-lg flex items-center justify-between">
+<div class="flex flex-col pr-2">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Mandatory 2FA / MFA</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Enforce for all College Admins & Superadmins</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container-lowest rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface">Session Inactivity Timeout</span>
+<select class="h-8 px-space-sm rounded bg-surface-container-low text-on-surface font-code-metric text-code-metric focus:outline-none">
+<option>15 Minutes</option>
+<option selected="">30 Minutes (Recommended)</option>
+<option>60 Minutes</option>
+</select>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container-lowest rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface">Failed Login Lockout</span>
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">5 attempts → 15 min lock</span>
+</div>
+</div>
+</div>
+<!-- IP Whitelisting / CIDR -->
+<div class="flex flex-col gap-space-sm p-space-md bg-surface-container-low rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">CIDR & Admin IP Whitelist</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">lan</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Restrict superadmin master console access to corporate and campus VPN blocks:</span>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-code-metric text-code-metric focus:outline-none resize-none" rows="3">192.168.1.0/24 # Campus Headquarters
+10.240.0.0/16  # Cloudflare Zero Trust Mesh
+172.16.42.12/32 # Emergency Ops Gateway</textarea>
+<div class="flex items-center justify-between mt-auto pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Block untrusted subnets immediately</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 4: Authentication & SSO Providers -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg" id="sso-section">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">passkey</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Authentication & Institutional SSO Providers</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Federated identity brokers, SCIM provisioning engines, and enterprise OAuth connectors</p>
+</div>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add_moderator</span>
+<span>Add Custom IdP</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- SAML 2.0 / Okta -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">security</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">SAML 2.0 / Okta / Azure AD</span>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Configured & Live</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Tenant federation via entity ID XML metadata. Supports seamless auto-provisioning with SAML assertion mapping.
+            </p>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Active Institutions:</span>
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">89 Campuses</span>
+</div>
+<button class="w-full mt-2 h-8 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md shadow-sm transition-colors" type="button">
+              Inspect Certificate & SP Metadata
+            </button>
+</div>
+</div>
+<!-- Google Workspace for Education -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">domain_verification</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Google Workspace for Ed</span>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Active • OAuth2</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Instant login for faculty and student bodies through Google Classroom & Google Workspace single sign-on tokens.
+            </p>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Daily Authentications:</span>
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">412,890 auth/day</span>
+</div>
+<button class="w-full mt-2 h-8 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md shadow-sm transition-colors" type="button">
+              Manage Client Secrets & Scopes
+            </button>
+</div>
+</div>
+<!-- Microsoft 365 Education Directory -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">sync_alt</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Microsoft 365 Education</span>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">SCIM v2 Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Automated roster provisioning from Entra ID (formerly Azure AD). Bi-directional group syncing and attribute mapping.
+            </p>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Sync Health:</span>
+<span class="font-code-metric text-code-metric text-secondary font-semibold">100% In Sync (0 errors)</span>
+</div>
+<button class="w-full mt-2 h-8 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md shadow-sm transition-colors" type="button">
+              SCIM Pipeline Logs & Schema
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 5: Notifications & Delivery Gateways -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg" id="gateways-section">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Integrations & Delivery Gateways</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Payment rails, high-volume transactional email, and campus SMS emergency broadcaster</p>
+</div>
+</div>
+<span class="font-code-metric text-code-metric text-on-surface-variant">Cluster: Global-Anycast</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Stripe / Payment Rails -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">payments</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Stripe & Razorpay Rails</span>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Stripe Connect:</span>
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">Platform Live Mode</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Razorpay Enterprise:</span>
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">Active (APAC Nodes)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Tuition Auto-Disbursement:</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">T+1 Automated</span>
+</div>
+</div>
+</div>
+<button class="w-full h-8 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md shadow-sm transition-colors" type="button">
+            Manage Webhooks & Keys
+          </button>
+</div>
+<!-- AWS SES / Email -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">forward_to_inbox</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">AWS SES / SendGrid Cluster</span>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Deliverability Score:</span>
+<span class="font-code-metric text-code-metric text-secondary font-semibold">99.8% (Warm Pool)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">DKIM / SPF / DMARC:</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Pass / 100% Valid</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Throughput Quota:</span>
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">1,200 emails / sec</span>
+</div>
+</div>
+</div>
+<button class="w-full h-8 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md shadow-sm transition-colors" type="button">
+            Configure SMTP Relay IP
+          </button>
+</div>
+<!-- Twilio SMS Gateway -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">sms</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Twilio Carrier Gateway</span>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Shortcode Carrier Pool:</span>
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">10DLC Tier-4 Verified</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Emergency Broadcast:</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Priority Queued</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Latency:</span>
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">420ms Avg Delivery</span>
+</div>
+</div>
+</div>
+<button class="w-full h-8 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md shadow-sm transition-colors" type="button">
+            Manage Shortcodes & Toll-Free
+          </button>
+</div>
+</div>
+</div>
+<!-- SECTION 6: Storage & Infrastructure Telemetry -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg mb-space-xl" id="infra-section">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">database</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Infrastructure & System Storage Quotas</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Storage clustering, multi-AZ database telemetry, scheduled automated snapshots, and uptime governors</p>
+</div>
+</div>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container-low font-code-metric text-code-metric text-on-surface font-semibold">AWS Aurora + S3 Multi-Region</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Aurora Postgres Cluster & S3 -->
+<div class="lg:col-span-8 flex flex-col gap-space-md p-space-md bg-surface-container-low rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Cloud Clusters & Storage Quotas</span>
+<span class="font-code-metric text-code-metric text-secondary font-semibold">99.99% Uptime Target</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="p-space-sm bg-surface-container-lowest rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Object Store (AWS S3)</span>
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">41.8 TB / 100 TB</span>
+</div>
+<div class="w-full bg-surface-container-low h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 41.8%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Encrypted at rest (AES-256 GCM)</span>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Relational Store (Aurora multi-AZ)</span>
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">3.2 TB / 10 TB</span>
+</div>
+<div class="w-full bg-surface-container-low h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 32%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Auto-scaling IOPS enabled</span>
+</div>
+</div>
+<!-- Backup Policy -->
+<div class="p-space-md bg-surface-container-lowest rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">cloud_sync</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Global Scheduled Automated Backups</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cadence: Every 6 hours • 30-day cross-region snapshot retention</span>
+</div>
+</div>
+<button class="h-8 px-space-md rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+              Trigger Manual Snapshot Now
+            </button>
+</div>
+</div>
+<!-- System Governance & Maintenance Switch -->
+<div class="lg:col-span-4 flex flex-col justify-between p-space-md bg-surface-container-low rounded-xl">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Maintenance Window Governance</span>
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Operational</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              System operational state. Triggering maintenance mode redirects institutional users to a branded holding screen.
+            </p>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg flex items-center justify-between mt-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Maintenance Mode Switch</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="maint-status-text">Disabled (All nodes live)</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" id="maint-checkbox" type="checkbox"/>
+<div class="w-9 h-5 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-error"></div>
+</label>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-md">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Preferred Maintenance Window</label>
+<input class="h-8 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-code-metric text-code-metric focus:outline-none" type="text" value="Sundays 02:00 AM – 04:00 AM EST"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Campus admins will be notified 72h prior</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initPlatformSettings() {
+    // Navigation Tabs Switching
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabButtons.forEach(b => {
+          b.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+          b.classList.add('text-on-surface-variant');
+        });
+        btn.classList.remove('text-on-surface-variant');
+        btn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+
+        const targetId = btn.getAttribute('data-target');
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Emergency Maintenance Mode Interactivity
+    const maintToggleBtn = document.getElementById('maintenance-toggle-btn');
+    const maintCheckbox = document.getElementById('maint-checkbox');
+    const maintIndicator = document.getElementById('maint-indicator');
+    const maintStatusText = document.getElementById('maint-status-text');
+
+    function syncMaintenance(state) {
+      if (state) {
+        maintCheckbox.checked = true;
+        maintIndicator.classList.remove('bg-outline-variant');
+        maintIndicator.classList.add('bg-error');
+        maintStatusText.textContent = 'Active (Holding screen active)';
+        maintStatusText.classList.add('text-error', 'font-semibold');
+      } else {
+        maintCheckbox.checked = false;
+        maintIndicator.classList.remove('bg-error');
+        maintIndicator.classList.add('bg-outline-variant');
+        maintStatusText.textContent = 'Disabled (All nodes live)';
+        maintStatusText.classList.remove('text-error', 'font-semibold');
+      }
+    }
+
+    if (maintToggleBtn && maintCheckbox) {
+      maintToggleBtn.addEventListener('click', () => {
+        const nextState = !maintCheckbox.checked;
+        syncMaintenance(nextState);
+      });
+
+      maintCheckbox.addEventListener('change', (e) => {
+        syncMaintenance(e.target.checked);
+      });
+    }
+
+    // Save All Changes Feedback
+    const saveBtn = document.getElementById('save-all-btn');
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        const origText = saveBtn.innerHTML;
+        saveBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span class="font-label-md text-label-md">Applying Changes...</span>';
+        saveBtn.disabled = true;
+
+        setTimeout(() => {
+          saveBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span><span class="font-label-md text-label-md">Changes Saved!</span>';
+          setTimeout(() => {
+            saveBtn.innerHTML = origText;
+            saveBtn.disabled = false;
+          }, 2000);
+        }, 800);
+      });
+    }
+  })();
+</script></main></div></body></html>

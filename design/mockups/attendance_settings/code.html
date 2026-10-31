@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#000000", "on-tertiary": "#ffffff", "tertiary-container": "#001e2f", "outline": "#76777d", "surface-container-low": "#eff4ff", "surface-container": "#e5eeff", "surface-variant": "#d3e4fe", "error-container": "#ffdad6", "secondary-fixed-dim": "#c3c0ff", "on-secondary-fixed": "#0f0069", "background": "#f8f9ff", "on-tertiary-fixed-variant": "#004c6e", "surface-container-highest": "#d3e4fe", "inverse-surface": "#213145", "surface-bright": "#f8f9ff", "error": "#ba1a1a", "tertiary": "#000000", "secondary-container": "#645efb", "on-surface": "#0b1c30", "secondary": "#4b41e1", "surface-tint": "#565e74", "primary-fixed": "#dae2fd", "on-primary-fixed": "#131b2e", "on-secondary": "#ffffff", "on-background": "#0b1c30", "surface": "#f8f9ff", "on-error-container": "#93000a", "on-secondary-container": "#fffbff", "on-surface-variant": "#45464d", "surface-dim": "cbdbf5", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#008cc7", "on-primary-fixed-variant": "#3f465c", "on-primary": "#ffffff", "tertiary-fixed": "#c9e6ff", "tertiary-fixed-dim": "#89ceff", "primary-fixed-dim": "#bec6e0", "on-tertiary-fixed": "#001e2f", "primary-container": "#131b2e", "outline-variant": "#c6c6cd", "on-error": "#ffffff", "on-secondary-fixed-variant": "#3323cc", "surface-container-high": "#dce9ff", "on-primary-container": "#7c839b", "inverse-primary": "#bec6e0", "secondary-fixed": "#e2dfff", "inverse-on-surface": "#eaf1ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1rem", "space-sm": "0.5rem", "margin-desktop": "2rem", "space-md": "0.75rem", "gutter-desktop": "1.5rem", "space-lg": "1.25rem", "space-xs": "0.25rem", "margin": "1rem", "space-xl": "2rem" }, "fontFamily": { "body-md": ["Geist"], "label-sm": ["Geist"], "headline-xl-mobile": ["Geist"], "headline-xl": ["Geist"], "label-md": ["Geist"], "body-lg": ["Geist"], "headline-sm": ["Geist"], "body-sm": ["Geist"], "code-metric": ["Geist"], "headline-lg": ["Geist"] }, "fontSize": { "body-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.006em", "fontWeight": "400" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-xl": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600" }], "label-md": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "-0.005em", "fontWeight": "500" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.011em", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "400" }], "code-metric": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.02em", "fontWeight": "500" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col h-full overflow-hidden"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Apex Institute</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-lg bg-surface-container text-on-surface font-semibold shrink-0">#US-01</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Institutional Workspace • AY 2024-25</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container text-on-surface font-semibold rounded-lg"><div class="px-space-sm pt-space-xs pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Academic Operations</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="overview" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">grid_view</span><span class="font-label-md text-label-md">Overview</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="academics" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">school</span><span class="font-label-md text-label-md">Academics</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface font-code-metric">48</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="students" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">group</span><span class="font-label-md text-label-md">Students</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface font-code-metric">14,820</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="faculty-staff" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">badge</span><span class="font-label-md text-label-md">Faculty & Staff</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface font-code-metric">842</span></a><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">fact_check</span><span class="font-label-md text-label-md font-semibold text-on-surface">Attendance</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-overview" href="#">Attendance Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="mark-attendance" href="#">Mark Attendance</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-records" href="#">Attendance Records</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="shortage-defaulters" href="#">Shortage & Defaulters</a><a aria-current="page" class="px-space-sm py-1 transition-colors bg-surface-container text-on-surface font-semibold rounded-lg" data-path="attendance-settings" href="#">Attendance Settings</a></div></div><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Institutional Services</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="finance" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">payments</span><span class="font-label-md text-label-md">Finance</span></div><span class="font-code-metric text-code-metric text-on-surface font-semibold">$2.4M</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="campus-management" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">corporate_fare</span><span class="font-label-md text-label-md">Campus Management</span></div></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-life" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">diversity_3</span><span class="font-label-md text-label-md">Student Life</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="placements" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">work</span><span class="font-label-md text-label-md">Placements</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold uppercase">Live</span></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="communication" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">forum</span><span class="font-label-md text-label-md">Communication</span></div></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports-analytics" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">analytics</span><span class="font-label-md text-label-md">Reports & Analytics</span></div></a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">System Governance</div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="administration" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">shield_person</span><span class="font-label-md text-label-md">Administration</span></div></a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">tune</span><span class="font-label-md text-label-md">Settings</span></div></a></nav></div><div class="p-space-sm bg-surface-container-low shrink-0"><div class="flex items-center justify-between text-on-surface-variant mb-space-xs"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-semibold text-on-surface">Apex Core 98.4% uptime</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v4.2</span></div><a class="flex items-center justify-between font-label-sm text-label-sm text-secondary hover:text-on-secondary-fixed transition-colors" data-path="institutional-support" href="#"><span>Institutional Support Desk</span><span class="material-symbols-outlined text-[14px]">open_in_new</span></a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="relative flex items-center w-80"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-on-surface-variant pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-14 bg-surface rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search students, courses, staff..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-code-metric">⌘K</span></div><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container"><span class="material-symbols-outlined text-[16px] text-secondary">event_available</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">AY 2024–2025 • Semester 1 Fall</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary font-semibold uppercase">Active Term</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div></div><div class="flex items-center gap-space-md"><button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Action</span></button><div class="flex items-center gap-space-xs"><button class="relative w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-label-sm flex items-center justify-center font-code-metric">3</span></button><button class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button></div><div class="h-6 w-px bg-surface-container"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Alistair Finch</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Dean of Academic Affairs</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter-desktop pb-space-xl flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Governance Banner & Page Action Bar -->
+<section class="flex flex-col gap-space-md mb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-space-xs max-w-4xl">
+<div class="flex flex-wrap items-center gap-space-xs text-on-surface">
+<span class="font-headline-lg text-headline-lg tracking-tight">Institutional Attendance Policy & Rules Governance</span>
+<span class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded-lg bg-surface-container text-secondary font-label-sm text-label-sm font-semibold tracking-wider uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Senate Ordinance 2024-ATT-09
+          </span>
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-lg bg-surface-container-high text-on-surface-variant font-code-metric text-label-sm font-semibold">
+            Status: Enforced Active
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Configure statutory attendance thresholds, faculty submission windows, correction approval workflows, notification triggers, and hardware biometric integrations across collegiate departments.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-auto shrink-0">
+<button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span>Discard Changes</span>
+</button>
+<button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-secondary hover:bg-secondary/90 text-on-secondary font-label-md text-label-md transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Policy Configuration (v4.2)</span>
+</button>
+</div>
+</div>
+<!-- Grouped Settings Navigation Tabs -->
+<div class="flex items-center gap-space-xs p-1 bg-surface-container-low rounded-xl overflow-x-auto shadow-sm">
+<button class="policy-tab flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold shadow-sm transition-all whitespace-nowrap" id="tab-statutory" onclick="switchTab('statutory')" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">gavel</span>
+<span>General Policy & Thresholds</span>
+</button>
+<button class="policy-tab flex items-center gap-space-xs px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all whitespace-nowrap" id="tab-types" onclick="switchTab('types')" type="button">
+<span class="material-symbols-outlined text-[18px]">category</span>
+<span>Attendance Types & Weights</span>
+</button>
+<button class="policy-tab flex items-center gap-space-xs px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all whitespace-nowrap" id="tab-marking" onclick="switchTab('marking')" type="button">
+<span class="material-symbols-outlined text-[18px]">rule</span>
+<span>Marking & Submission Rules</span>
+</button>
+<button class="policy-tab flex items-center gap-space-xs px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all whitespace-nowrap" id="tab-workflows" onclick="switchTab('workflows')" type="button">
+<span class="material-symbols-outlined text-[18px]">account_tree</span>
+<span>Rectification & Approval Workflow</span>
+</button>
+<button class="policy-tab flex items-center gap-space-xs px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all whitespace-nowrap" id="tab-notifications" onclick="switchTab('notifications')" type="button">
+<span class="material-symbols-outlined text-[18px]">notifications_active</span>
+<span>Automated Notifications</span>
+</button>
+<button class="policy-tab flex items-center gap-space-xs px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all whitespace-nowrap" id="tab-hardware" onclick="switchTab('hardware')" type="button">
+<span class="material-symbols-outlined text-[18px]">fingerprint</span>
+<span>Hardware & Biometric Integrations</span>
+</button>
+</div>
+</section>
+<!-- TAB CONTENT PANELS -->
+<!-- 1. General Policy & Statutory Attendance Thresholds -->
+<section class="tab-panel flex flex-col gap-space-lg" id="panel-statutory">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Statutory Matrix Controls -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">balance</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Senate Mandate Thresholds (AY 2024-25)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Statutory limits defining exam clearance, probationary flags, and condonations.</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-code-metric">SEC-ORD-9A</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<!-- Metric 1: Statutory Requirement -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Statutory Exam Floor</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Min. Attendance Requirement</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant my-space-xs">Mandatory percentage required for End-Semester Examination hall ticket generation.</p>
+<div class="flex items-center justify-between mt-space-xs">
+<div class="flex items-center gap-2">
+<input class="w-24 h-9 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-code-metric text-headline-sm font-semibold outline-none text-right" step="0.5" type="number" value="75.0"/>
+<span class="font-code-metric text-body-lg text-on-surface">%</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant">Non-Negotiable</span>
+</div>
+</div>
+<!-- Metric 2: At-Risk Warning Band -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Early Warning Band</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">At-Risk Notification Trigger</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">crisis_alert</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant my-space-xs">Pushes automated warning banners to student portal and faculty mentor desk.</p>
+<div class="flex items-center justify-between mt-space-xs">
+<div class="flex items-center gap-2">
+<input class="w-24 h-9 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-code-metric text-headline-sm font-semibold outline-none text-right" step="0.5" type="number" value="80.0"/>
+<span class="font-code-metric text-body-lg text-on-surface">%</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-surface-container text-secondary font-semibold">Active Watchlist</span>
+</div>
+</div>
+<!-- Metric 3: Critical Debarment -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Absolute Cut-Off</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Critical Debarment Floor</span>
+</div>
+<span class="material-symbols-outlined text-error text-[20px]">block</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant my-space-xs">Below this floor, condonation is prohibited without direct Provost Senate exemption.</p>
+<div class="flex items-center justify-between mt-space-xs">
+<div class="flex items-center gap-2">
+<input class="w-24 h-9 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-code-metric text-headline-sm font-semibold outline-none text-right" step="0.5" type="number" value="65.0"/>
+<span class="font-code-metric text-body-lg text-on-surface">%</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-error-container text-on-error-container font-semibold">Debarment Bound</span>
+</div>
+</div>
+<!-- Metric 4: Medical Condonation Allowance -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Medical Exemption Delta</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Max Condonation Allowance</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">medical_services</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant my-space-xs">Maximum recoverable margin eligible for authenticated clinical hospitalization slips.</p>
+<div class="flex items-center justify-between mt-space-xs">
+<div class="flex items-center gap-2">
+<input class="w-24 h-9 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-code-metric text-headline-sm font-semibold outline-none text-right" step="0.5" type="number" value="10.0"/>
+<span class="font-code-metric text-body-lg text-on-surface">%</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-code-metric">Delta: 65% – 74.9%</span>
+</div>
+</div>
+</div>
+<!-- Formula & Calculation Method Card -->
+<div class="flex flex-col gap-space-sm pt-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Calculation Formula Model</span>
+<!-- Toggle switch for subject vs program -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-lg">
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest font-label-sm text-label-sm font-semibold text-on-surface shadow-sm" type="button">Subject-wise (Default)</button>
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" type="button">Aggregate Program-wide</button>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[22px]">functions</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Active Algorithmic Method</span>
+<span class="font-code-metric text-code-metric font-semibold text-on-surface">((Attended Sessions + Approved On-Duty Sessions) / Total Conducted Sessions) × 100</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Condonation Subject Fee</span>
+<span class="font-code-metric text-body-lg font-semibold text-on-surface">$120.00 / course</span>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Distribution Spectrum -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Attendance Compliance Spectrum</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live visual threshold allocation for academic session AY 2024-25.</p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">N=14,820 Active Roster</span>
+</div>
+<!-- Threshold Bar Visualizer -->
+<div class="relative w-full h-12 bg-surface-container-low rounded-xl overflow-hidden flex items-center p-1.5">
+<!-- Debarment zone: 0 to 65% -->
+<div class="h-full bg-error-container rounded-l-lg flex items-center justify-center text-on-error-container font-label-sm text-label-sm font-code-metric px-2" style="width: 65%;">
+<span class="truncate">Debarred Zone (<65%)</span>
+</div>
+<!-- Condonable zone: 65 to 75% -->
+<div class="h-full bg-surface-container-highest flex items-center justify-center text-on-surface font-label-sm text-label-sm font-code-metric px-2" style="width: 10%;">
+<span class="truncate">Condonable (10%)</span>
+</div>
+<!-- Warning buffer: 75 to 80% -->
+<div class="h-full bg-surface-container flex items-center justify-center text-on-surface-variant font-label-sm text-label-sm font-code-metric px-2" style="width: 5%;">
+<span class="truncate">Watch</span>
+</div>
+<!-- Safe & Compliant: 80 to 100% -->
+<div class="h-full bg-surface-container-low text-on-surface font-label-sm text-label-sm font-code-metric rounded-r-lg flex items-center justify-center px-2" style="width: 20%;">
+<span class="truncate">Exemplary Standing (≥80%)</span>
+</div>
+</div>
+<!-- Legend -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm pt-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">0 - 64.9% Debarred</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-surface-tint"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">65 - 74.9% Condonation</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">75 - 79.9% At-Risk Watch</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">80 - 100% Good Standing</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Institutional Impact Metrics -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Senate Policy Information Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Academic Senate Seal</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ratified Sep 14, 2024</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Attendance requirements apply uniformly across all undergraduate (B.Tech, B.S., B.A.) and postgraduate degree frameworks. No faculty or department chair possesses independent authority to waive statutory percentages below the 65.0% threshold.
+          </p>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Policy Custodian:</span>
+<span class="text-on-surface font-semibold">Office of the Registrar</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Enforcement Cycle:</span>
+<span class="text-on-surface font-semibold">Bi-Weekly Census</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Next Senate Review:</span>
+<span class="text-on-surface font-semibold">Dec 18, 2024</span>
+</div>
+</div>
+<!-- Impact projection SVG donut -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-center gap-space-md">
+<svg class="w-16 h-16 shrink-0" viewbox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.8"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="88, 100" stroke-linecap="round" stroke-width="3.8"></path>
+<text class="font-code-metric text-[8px] font-semibold text-on-surface" fill="currentColor" text-anchor="middle" x="18" y="20.5">88.4%</text>
+</svg>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Projected Eligibility</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">13,100 Students</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Meeting >75% statutory bar today</span>
+</div>
+</div>
+</div>
+<!-- Campus Regulatory Documentation Preview -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Reference Annexures</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+</div>
+<a class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low transition-colors text-on-surface" href="#">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">description</span>
+<span class="font-body-sm text-body-sm font-medium">Senate-Ordinance-2024-ATT09.pdf</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">384 KB</span>
+</a>
+<a class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low transition-colors text-on-surface" href="#">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">description</span>
+<span class="font-body-sm text-body-sm font-medium">Provost_Condonation_Guidelines.pdf</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">192 KB</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Attendance Classification & Weightage Rules -->
+<section class="tab-panel hidden flex-col gap-space-lg" id="panel-types">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-xs">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Attendance Types, Credit Weights & Status Criteria</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Specify system weight multipliers and clearance requirements for session markers.</p>
+</div>
+<button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all self-start md:self-auto" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add Custom Category</span>
+</button>
+</div>
+<!-- Attendance Table Cards -->
+<div class="flex flex-col gap-space-sm">
+<!-- Row 1: Present (P) -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md min-w-[220px]">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center font-headline-sm font-bold text-on-surface">
+              P
+            </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Present</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Credit 1.0
+                </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Standard in-session full attendance credit</span>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-md flex-1 px-0 md:px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Weight Multiplier</span>
+<span class="font-code-metric text-code-metric font-semibold text-on-surface">1.0 (Full credit)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Clearance Slip</span>
+<span class="font-label-md text-label-md text-on-surface">None Required</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Auto Conversion</span>
+<span class="font-label-md text-label-md text-on-surface">Permanent</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="px-space-sm py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-secondary font-semibold uppercase">System Default</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</button>
+</div>
+</div>
+<!-- Row 2: Absent (A) -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md min-w-[220px]">
+<div class="w-10 h-10 rounded-xl bg-error-container flex items-center justify-center font-headline-sm font-bold text-on-error-container">
+              A
+            </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Absent</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  Credit 0.0
+                </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Unexcused physical absence from class</span>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-md flex-1 px-0 md:px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Weight Multiplier</span>
+<span class="font-code-metric text-code-metric font-semibold text-on-surface">0.0 (Zero credit)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Immediate Trigger</span>
+<span class="font-label-md text-label-md text-on-surface">Parent SMS & Portal Flag</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Debarment Contribution</span>
+<span class="font-label-md text-label-md text-error font-semibold">+1 Deficit Count</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="px-space-sm py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-secondary font-semibold uppercase">System Default</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</button>
+</div>
+</div>
+<!-- Row 3: Late Arrival (L) -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md min-w-[220px]">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center font-headline-sm font-bold text-on-surface">
+              L
+            </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Late Arrival</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">
+                  Adjustable
+                </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tardy entrance within authorized window</span>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-md flex-1 px-0 md:px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant mb-1">Weight Value</span>
+<div class="flex items-center bg-surface-container p-0.5 rounded-md w-fit">
+<button class="px-2 py-0.5 rounded bg-surface-container-lowest font-code-metric text-label-sm font-bold text-on-surface shadow-sm" type="button">0.75</button>
+<button class="px-2 py-0.5 rounded font-code-metric text-label-sm text-on-surface-variant hover:text-on-surface" type="button">0.50</button>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Grace Period Cut-Off</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<input class="w-14 h-7 text-center rounded bg-surface-container-lowest font-code-metric text-body-sm outline-none text-on-surface" type="number" value="15"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">minutes</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Auto Absent Shift</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold mt-1">After 25 min elapsed</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="h-8 px-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm" type="button">
+              Configure Grace
+            </button>
+</div>
+</div>
+<!-- Row 4: On Duty (OD) -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md min-w-[220px]">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center font-headline-sm font-bold text-secondary">
+              OD
+            </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">On Duty (OD)</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+                  Institutional Credit
+                </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Official sports, symposium, or research travel</span>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-md flex-1 px-0 md:px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Weight Multiplier</span>
+<span class="font-code-metric text-code-metric font-semibold text-on-surface">1.0 (Full credit)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mandatory Clearance</span>
+<span class="font-label-md text-label-md text-on-surface">Prior HOD Approval Slip</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Capping Limit</span>
+<span class="font-label-md text-label-md text-on-surface">Max 15 days/Semester</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="h-8 px-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm" type="button">
+              Edit Prerequisites
+            </button>
+</div>
+</div>
+<!-- Row 5: Medical Leave (ML) -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md min-w-[220px]">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center font-headline-sm font-bold text-on-surface">
+              ML
+            </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Medical Leave</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+                  Exempted / Condoned
+                </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Inpatient admission or verified outpatient illness</span>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-md flex-1 px-0 md:px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Credit Treatment</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Exempted from Denominator</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mandatory Clearance</span>
+<span class="font-label-md text-label-md text-on-surface">Campus Clinic CMO Sign-Off</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Max Allowance Cap</span>
+<span class="font-label-md text-label-md text-on-surface">10% Statutory Delta</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="h-8 px-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm" type="button">
+              Edit Verification
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Faculty Marking Permissions & Submission Enforcement -->
+<section class="tab-panel hidden flex-col gap-space-lg" id="panel-marking">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Marking Roles Permitted -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Permitted Attendance Marking Roles</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select authorized personnel roles granted live roll-call and ledger entry rights.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+<label class="flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="mt-1 w-4 h-4 rounded text-secondary focus:ring-0" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Course Lead Faculty</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Primary tenure professor assigned to course syllabus.</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-1">Default Mandatory</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="mt-1 w-4 h-4 rounded text-secondary focus:ring-0" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Assigned Lab Instructors</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Technical specialists managing split laboratory batches.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Batch Roster Only</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="mt-1 w-4 h-4 rounded text-secondary focus:ring-0" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Authorized Teaching Assistants</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Graduate TAs with explicit instructor delegation.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Requires Faculty Co-Sign</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="mt-1 w-4 h-4 rounded text-secondary focus:ring-0" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Department Dean / HOD</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Administrative executive override and emergency marking.</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-1">Full Ledger Scope</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Submission Deadlines & Cryptographic Lock -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Submission Window & Cryptographic Lock</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Timers governing faculty submission limits and retroactive modification locks.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Submission Deadline Window</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">schedule</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Faculty must submit lecture attendance rosters within this timeframe post-period.</p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<input class="w-20 h-9 px-space-sm rounded-lg bg-surface-container-lowest font-code-metric text-headline-sm font-semibold text-on-surface text-center outline-none" type="number" value="24"/>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Hours from slot completion</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Retroactive Editing Window</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">lock_clock</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Post-lock revisions strictly require Academic Dean electronic unlock request.</p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<input class="w-20 h-9 px-space-sm rounded-lg bg-surface-container-lowest font-code-metric text-headline-sm font-semibold text-on-surface text-center outline-none" type="number" value="48"/>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Hours before ledger freeze</span>
+</div>
+</div>
+</div>
+<!-- Enforcement Toggle -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-secondary text-[22px]">notification_important</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dean's Delinquency Auto-Flagging</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Automatically notify Academic Dean when instructors breach the 24-hour mark.</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Right Column: Faculty Adherence Rate Preview -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Submission Compliance Index</h3>
+<span class="font-label-sm text-label-sm font-code-metric text-on-surface-variant">Current AY (AY 24-25)</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-semibold">96.2%</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">On-Time Submissions</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Within 6 Hours (Rapid)</span>
+<span class="text-on-surface font-semibold font-code-metric">78.4%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 78.4%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Within 24 Hours (Compliant)</span>
+<span class="text-on-surface font-semibold font-code-metric">17.8%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary-fixed-dim rounded-full" style="width: 17.8%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Late (>24 Hours / Dean Flagged)</span>
+<span class="text-error font-semibold font-code-metric">3.8%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 3.8%;"></div>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-sm mt-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">security_update_good</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ledger locks are digitally sealed with SHA-256 faculty private signing tokens.</span>
+</div>
+</div>
+<!-- Faculty Guidelines Digest -->
+<div class="relative rounded-xl overflow-hidden shadow-sm h-48">
+<div class="bg-cover bg-center w-full h-full flex flex-col justify-end p-space-md" data-alt="A clean, minimalist university computer laboratory and modern academic hall in natural daylight with soft shadows and calm architecture." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBVF9gft8FxFf-M59-2bLu9woK7eRBY_7tis2GGSOiwppXoRP29lw9J1g6iioZ8CTN7Oakffha3eLVdaKTJT7c_k9D2MVu5qH5_1mfu4Ia7syjtRjWKaOqhYO9ha-WpoHtu6HL-813bxkj7XCUDquCwL9qfuIL3niqJyLzL-jtvYS42YI73ib7ew48yNsO82PyDq5Ghu_baJD6GLucv20UbIurDTekagPQOoVfEnwY')">
+<div class="bg-surface-container-lowest/90 backdrop-blur-md p-space-sm rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Faculty Handbook 2024</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">arrow_forward</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Section 4.1: Guidelines on Roll Call Fidelity</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Multi-Tier Attendance Correction & Approval Workflow -->
+<section class="tab-panel hidden flex-col gap-space-lg" id="panel-workflows">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-xs">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Correction & Rectification Approval Pipeline</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Three-tier verification protocol required for retroactive corrections and medical endorsements.</p>
+</div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-surface-container font-code-metric text-label-sm font-semibold text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          Immutable Audit Trail Active
+        </span>
+</div>
+<!-- Visual Multi-Tier Flow Diagram -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md relative">
+<!-- Stage 0: Trigger -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md shadow-sm relative">
+<div class="flex items-center justify-between">
+<span class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center font-code-metric text-label-sm font-bold text-on-surface">00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Initiation</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Request Filed</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Student raises dispute or faculty self-identifies marking oversight.</p>
+</div>
+<div class="p-2 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold">
+            Dispute Limit: 5 Days
+          </div>
+</div>
+<!-- Stage 1: Tier 1 Faculty Endorsement -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<span class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-code-metric text-label-sm font-bold">01</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Tier 1</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Course Instructor</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Assigned faculty validates lecture physical roster records.</p>
+</div>
+<div class="p-2 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold flex items-center justify-between">
+<span>SLA Window:</span>
+<span class="font-code-metric">48 Hours</span>
+</div>
+</div>
+<!-- Stage 2: Tier 2 Department HOD -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<span class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-code-metric text-label-sm font-bold">02</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Tier 2</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Department HOD</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Verifies attached proofs (OD slip, medical clinic stamp).</p>
+</div>
+<div class="p-2 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold flex items-center justify-between">
+<span>SLA Window:</span>
+<span class="font-code-metric">72 Hours</span>
+</div>
+</div>
+<!-- Stage 3: Tier 3 Academic Registrar Seal -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<span class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-code-metric text-label-sm font-bold">03</span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-semibold">Tier 3 Final</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Registrar's Seal</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Cryptographic commit updates the master student attendance ledger.</p>
+</div>
+<div class="p-2 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center justify-between">
+<span>Seal Status:</span>
+<span class="font-code-metric text-secondary font-bold">Auto SHA-256</span>
+</div>
+</div>
+</div>
+<!-- Workflow Control Parameters -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dispute Filing Limit for Students</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">calendar_month</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Maximum days allowed after session timestamp for a student to raise an official dispute ticket.</p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<input class="w-20 h-9 px-space-sm rounded-lg bg-surface-container-lowest font-code-metric text-headline-sm font-semibold text-on-surface text-center outline-none" type="number" value="5"/>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Calendar Days</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Mandatory Artifact Attachment</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Require mandatory PDF/JPG document upload for all On-Duty and Medical Leave rectification claims.</p>
+<div class="font-label-sm text-label-sm text-secondary font-semibold">Strict OCR Verification Enabled</div>
+</div>
+</div>
+<!-- Immutable Ledger Inspection Row -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[22px]">history_edu</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Immutable Regulatory Ledger</span>
+<span class="font-body-sm text-body-sm text-on-surface">Every single status change generates a hash recording: <span class="font-code-metric text-on-surface font-semibold">[Prior Value] → [Revised Value] + [Officer ID] + [Epoch Timestamp]</span></span>
+</div>
+</div>
+<button class="h-9 px-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold shrink-0 transition-colors" type="button">
+          View Audit Logs
+        </button>
+</div>
+</div>
+</section>
+<!-- 5. Automated Alert & Notification Engines -->
+<section class="tab-panel hidden flex-col gap-space-lg" id="panel-notifications">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">cell_tower</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Automated Alert Triggers & Channels</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dispatch multi-channel alerts across SMS, institutional email, and mobile push notifications.</p>
+</div>
+</div>
+<!-- Alert Item 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary mt-0.5 shrink-0">
+<span class="material-symbols-outlined text-[20px]">sms</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Instant Student Absence Push/SMS</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">Real-Time</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Dispatches notice to student device immediately upon unexcused session marking.</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Alert Item 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary mt-0.5 shrink-0">
+<span class="material-symbols-outlined text-[20px]">family_restroom</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Parent / Guardian Deficit Escalation</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">Threshold: 75.0%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Sends automated formal letter via SMS & Email when aggregate drops into examination risk.</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Alert Item 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary mt-0.5 shrink-0">
+<span class="material-symbols-outlined text-[20px]">alarm</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Faculty 30-Minute Period Nudge</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">Staff Push</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Micro-notification on faculty mobile app 30 mins after bell schedule to prompt roll completion.</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Alert Item 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary mt-0.5 shrink-0">
+<span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Weekly Academic Dean Summary Digest</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">Mondays 08:00 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Executive PDF compilation highlighting departmental defaulters and faculty delinquencies.</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Gateway Health & Quotas</h3>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Twilio SMS Gateway</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">99.98% Latency 420ms</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Firebase Cloud Messaging</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Active (14.2k tokens)</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">SendGrid Institutional SMTP</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Tier-1 Relayed</span>
+</div>
+<div class="pt-space-xs flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Monthly Dispatch Consumption</span>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 44%;"></div>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant text-right">44,120 / 100,000 quota</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Hardware & Biometric Integrations -->
+<section class="tab-panel hidden flex-col gap-space-lg" id="panel-hardware">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">router</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Configured Hardware Interfaces & Edge Pods</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Physical infrastructure synchronization for turnstiles, optical sensors, and BLE beacons.</p>
+</div>
+</div>
+<button class="h-8 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold transition-all" type="button">
+              Scan Network
+            </button>
+</div>
+<!-- Hardware Device 1: Turnstile RFID -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[28px]">sensor_door</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Campus RFID & Turnstile Array</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Connected
+                  </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Provider: <strong class="text-on-surface font-medium">Lenel OnGuard / HID Global</strong> • Turnstiles Gate 1–8 Active</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric mt-0.5">IP: 10.12.80.14 - Port 443 TCP/TLS</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto shrink-0">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Auto-populate</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Roster Drafts</span>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[18px]">settings</span>
+</button>
+</div>
+</div>
+<!-- Hardware Device 2: Face Recognition AI Pods -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[28px]">face</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Classroom Face Recognition Camera Pods</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">
+                    Ready for Pairing
+                  </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Provider: <strong class="text-on-surface font-medium">Hikvision AI Edge</strong> • Turing Hall 102 & 201 Beta Array</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric mt-0.5">RTSP: rtsp://10.12.82.20/live/ch0</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto shrink-0">
+<button class="h-8 px-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold" type="button">
+                Pair Pods
+              </button>
+</div>
+</div>
+<!-- Hardware Device 3: Mobile Crypto Dynamic QR -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[28px]">qr_code_2</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Mobile Dynamic QR Code Engine</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+                    Active Rolling Token
+                  </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Provider: <strong class="text-on-surface font-medium">College OS Native Crypto QR</strong></span>
+<div class="flex items-center gap-space-md mt-1 font-label-sm text-label-sm text-on-surface-variant">
+<span>Refresh: <strong class="text-on-surface font-code-metric">15 Seconds</strong></span>
+<span>Geofence: <strong class="text-on-surface font-code-metric">Radius 25m</strong></span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto shrink-0">
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Fallback Manual Override Policy -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-secondary text-[22px]">published_with_changes</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Hardware Outage Manual Override</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Permit lead faculty traditional roster marking if local IoT controllers become unreachable.</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Right Column: Hardware Health Card & Classroom Map Mockup -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Sensor Node Latency & Mesh</h3>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Turnstile Gateway Mesh</span>
+<span class="font-code-metric font-semibold text-on-surface">12ms • 100% Online</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container">
+<div class="h-full bg-secondary rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Turing Hall AI Cameras</span>
+<span class="font-code-metric font-semibold text-on-surface">68ms • Beta Sync</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container">
+<div class="h-full bg-secondary rounded-full" style="width: 85%;"></div>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1 mt-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-semibold">Security Token Salt</span>
+<span class="font-code-metric text-body-sm text-on-surface truncate">SHA256: 7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1f</span>
+<span class="font-label-sm text-label-sm text-secondary">Rotating automatically every 180s</span>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden shadow-sm h-52">
+<div class="bg-cover bg-center w-full h-full flex flex-col justify-end p-space-md" data-alt="High tech modern university campus entrance with electronic turnstile barriers and architectural clean glass facade in bright corporate day illumination." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWUwzCLEJqjuJpJWISOJwJ5H3eKr-PIQJD-5Dtc6c_DjjTrMFKFL0_QOjiT3wLFtkzNzWUm6g2bdqSsMiSOlJ-Mw-KQ0QVvhqAUPoN1-uMEe7ulM9brn8A236_MsuOhLk4bk65LMQ3-KJ5tW0mgkQpUkr-UsQoXYx4jR1zG-d6ikS9fpf3w-bL382QYSUHxsGWqkH5uuTO08l0Ie_P4l_28qn7vmXm-7kfoHIK7ec')">
+<div class="bg-surface-container-lowest/90 backdrop-blur-md p-space-sm rounded-lg">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Main Quad Gateway Node</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">8 Biometric Optical Turnstiles Synchronized</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function switchTab(tabKey) {
+    const tabs = ['statutory', 'types', 'marking', 'workflows', 'notifications', 'hardware'];
+    tabs.forEach(key => {
+      const panel = document.getElementById('panel-' + key);
+      const tabBtn = document.getElementById('tab-' + key);
+      if (key === tabKey) {
+        if (panel) panel.classList.remove('hidden');
+        if (tabBtn) {
+          tabBtn.className = 'policy-tab flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold shadow-sm transition-all whitespace-nowrap';
+          const icon = tabBtn.querySelector('.material-symbols-outlined');
+          if (icon) icon.classList.add('text-secondary');
+        }
+      } else {
+        if (panel) panel.classList.add('hidden');
+        if (tabBtn) {
+          tabBtn.className = 'policy-tab flex items-center gap-space-xs px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all whitespace-nowrap';
+          const icon = tabBtn.querySelector('.material-symbols-outlined');
+          if (icon) icon.classList.remove('text-secondary');
+        }
+      }
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-lowest py-space-sm px-gutter-desktop shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-space-sm font-label-sm text-label-sm"><span>Apex Institute of Technology • Institutional OS System</span><span>•</span><span>Enterprise Tier • 98.4% uptime</span></div><div class="flex items-center gap-space-md font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" data-path="institutional-support" href="#">Institutional Support</a><a class="hover:text-on-surface transition-colors" data-path="privacy-compliance" href="#">FERPA & Privacy</a><span class="font-code-metric text-on-surface-variant">Apex-Node #US-CAMPUS-01</span></div></div></footer></div></body></html>

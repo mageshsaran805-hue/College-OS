@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed-dim":"#c3c0ff","primary-fixed":"#dae2fd","surface-container-highest":"#d3e4fe","surface":"#f8f9ff","surface-variant":"#d3e4fe","tertiary":"#000000","surface-bright":"#f8f9ff","surface-tint":"#565e74","on-primary":"#ffffff","on-background":"#0b1c30","on-secondary-container":"#fffbff","outline-variant":"#c6c6cd","tertiary-container":"#001e2f","tertiary-fixed":"#c9e6ff","on-primary-fixed":"#131b2e","on-error-container":"#93000a","on-surface":"#0b1c30","secondary-container":"#645efb","outline":"#76777d","surface-dim":"#cbdbf5","on-surface-variant":"#45464d","inverse-surface":"#213145","surface-container-low":"#eff4ff","secondary-fixed":"#e2dfff","on-tertiary-container":"#008cc7","error-container":"#ffdad6","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#3323cc","error":"#ba1a1a","secondary":"#4b41e1","on-tertiary-fixed-variant":"#004c6e","on-primary-container":"#7c839b","on-tertiary-fixed":"#001e2f","surface-container":"#e5eeff","inverse-primary":"#bec6e0","on-secondary":"#ffffff","background":"#f8f9ff","on-primary-fixed-variant":"#3f465c","primary-container":"#131b2e","primary":"#000000","inverse-on-surface":"#eaf1ff","on-tertiary":"#ffffff","tertiary-fixed-dim":"#89ceff","on-error":"#ffffff","on-secondary-fixed":"#0f0069","primary-fixed-dim":"#bec6e0","surface-container-high":"#dce9ff"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-lg":"1.25rem",margin:"1rem",gutter:"1rem","space-xl":"2rem","space-md":"0.75rem","space-xs":"0.25rem","gutter-desktop":"1.5rem","margin-desktop":"2rem","space-sm":"0.5rem"},fontFamily:{"body-lg":["Geist"],"headline-lg":["Geist"],"body-sm":["Geist"],"code-metric":["Geist"],"headline-xl":["Geist"],"label-sm":["Geist"],"headline-xl-mobile":["Geist"],"headline-sm":["Geist"],"label-md":["Geist"],"body-md":["Geist"]},fontSize:{"body-lg":["1rem",{lineHeight:"1.5rem",letterSpacing:"-0.011em",fontWeight:"400"}],"headline-lg":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.02em",fontWeight:"600"}],"body-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0em",fontWeight:"400"}],"code-metric":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"-0.02em",fontWeight:"500"}],"headline-xl":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.025em",fontWeight:"600"}],"label-sm":["0.6875rem",{lineHeight:"0.875rem",letterSpacing:"0.04em",fontWeight:"600"}],"headline-xl-mobile":["1.75rem",{lineHeight:"2.25rem",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-sm":["1.125rem",{lineHeight:"1.5rem",letterSpacing:"-0.015em",fontWeight:"600"}],"label-md":["0.8125rem",{lineHeight:"1.125rem",letterSpacing:"-0.005em",fontWeight:"500"}],"body-md":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"-0.006em",fontWeight:"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between"><header class="w-full py-space-md px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 bg-primary flex items-center justify-center rounded"><span class="material-symbols-outlined text-on-primary text-[18px]">terminal</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">COLLEGE<span class="text-secondary">OS</span></span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Institutional Gateway</span></div></div><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[16px]">verified_user</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Apex Single Sign-On (SSO)</span></div></header><main class="w-full flex-1 flex items-center justify-center px-gutter"><div class="flex flex-col w-full max-w-7xl mx-auto py-space-md pb-space-xl">
+<!-- Status & Header Meta Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-lg px-space-xs">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[22px]">admin_panel_settings</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Account Recovery & Identity Assertion</span>
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Tier-4 Cryptographic Reset
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Self-service NIST SP 800-63B compliant credential re-issuance for faculty, staff, and enrolled scholars.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Node Instance</span>
+<span class="font-code-metric text-code-metric text-on-surface">ap-south-1.sec-gw02</span>
+</div>
+<div class="h-8 w-px bg-surface-container-highest"></div>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">help_outline</span>
+        Protocol Docs
+      </button>
+</div>
+</div>
+<!-- Recovery Stepper Workflow Indicator -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md relative">
+<!-- Step 1 -->
+<div class="flex items-center gap-space-sm group cursor-pointer">
+<div class="w-8 h-8 rounded-lg bg-secondary text-on-secondary flex items-center justify-center font-code-metric text-code-metric shadow-sm">
+          01
+        </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Identity Verification</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">In Progress (Active)</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-center gap-space-sm opacity-70 group cursor-not-allowed">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface-variant flex items-center justify-center font-code-metric text-code-metric">
+          02
+        </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Multi-Factor Challenge</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">SMS / TOTP / Condonation</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-center gap-space-sm opacity-50 group cursor-not-allowed">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center font-code-metric text-code-metric">
+          03
+        </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">New Credential</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Passkey & NIST Password</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex items-center gap-space-sm opacity-50 group cursor-not-allowed">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center font-code-metric text-code-metric">
+          04
+        </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Session Invalidation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Revocation & Clearance</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Workspace Split Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT PANEL: Recovery Flow & Configuration (Cols 8) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Primary Card: Step 1 & 2 Combined Interaction Workspace -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Institutional Entity Verification</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Validate your academic or faculty credentials through the central directory service (LDAP/Azure AD sync).</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+</div>
+<!-- Verification Input Matrix -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Registration / PRN / Emp ID</label>
+<div class="relative">
+<input class="w-full h-[36px] bg-surface-container-low px-space-md text-on-surface font-code-metric text-code-metric rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all" type="text" value="APEX-2023-CS-8910"/>
+<span class="material-symbols-outlined absolute right-2.5 top-2 text-[18px] text-on-surface-variant pointer-events-none">badge</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Apex Central Ledger ID</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Institutional Email</label>
+<div class="relative">
+<input class="w-full h-[36px] bg-surface-container-low px-space-md text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all" type="email" value="ananya.sharma@apex.edu.in"/>
+<span class="material-symbols-outlined absolute right-2.5 top-2 text-[18px] text-on-surface-variant pointer-events-none">alternate_email</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Domain must be @apex.edu.in</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Date of Birth</label>
+<div class="relative">
+<input class="w-full h-[36px] bg-surface-container-low px-space-md text-on-surface font-code-metric text-code-metric rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all" type="date" value="2002-09-14"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">DD/MM/YYYY records</span>
+</div>
+</div>
+<div class="h-px bg-surface-container-high w-full"></div>
+<!-- Section 2: Multi-Factor Channel Dispatch -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Stage 02 • Verification Rail</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Select Multifactor Challenge Channel</h3>
+</div>
+<span class="inline-flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">lock_reset</span>
+              Rate limited: 3/hr
+            </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md" id="channel-selector">
+<!-- Channel Option 1 -->
+<label class="flex flex-col p-space-md rounded-xl bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container relative">
+<input checked="" class="absolute top-space-md right-space-md accent-secondary" name="mfa_channel" type="radio"/>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">sms</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Secure SMS OTP</span>
+<span class="font-code-metric text-code-metric text-on-surface mt-1">+91 98401-XXXXX</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-2">Delivers 6-digit cryptographic seed via Telecom Gateway</span>
+</label>
+<!-- Channel Option 2 -->
+<label class="flex flex-col p-space-md rounded-xl bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container relative">
+<input class="absolute top-space-md right-space-md accent-secondary" name="mfa_channel" type="radio"/>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">security_update_good</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Authenticator (TOTP)</span>
+<span class="font-code-metric text-code-metric text-on-surface mt-1">RFC 6238 Standard</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-2">Time-based soft token from Google, Duo, or Microsoft Authenticator</span>
+</label>
+<!-- Channel Option 3 -->
+<label class="flex flex-col p-space-md rounded-xl bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container relative">
+<input class="absolute top-space-md right-space-md accent-secondary" name="mfa_channel" type="radio"/>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">emergency</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Registrar Condonation</span>
+<span class="font-code-metric text-code-metric text-on-surface mt-1">In-Person One-Time</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-2">Counter-signed hardware slip from Central Academic Dean Office</span>
+</label>
+</div>
+<!-- Code Entry Sub-Box -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="flex gap-2">
+<input class="w-10 h-11 text-center font-headline-sm text-headline-sm rounded-lg bg-surface-container-lowest text-on-surface shadow-sm focus:outline-none" maxlength="1" type="text" value="7"/>
+<input class="w-10 h-11 text-center font-headline-sm text-headline-sm rounded-lg bg-surface-container-lowest text-on-surface shadow-sm focus:outline-none" maxlength="1" type="text" value="4"/>
+<input class="w-10 h-11 text-center font-headline-sm text-headline-sm rounded-lg bg-surface-container-lowest text-on-surface shadow-sm focus:outline-none" maxlength="1" type="text" value="9"/>
+<input class="w-10 h-11 text-center font-headline-sm text-headline-sm rounded-lg bg-surface-container-lowest text-on-surface shadow-sm focus:outline-none" maxlength="1" type="text" value="2"/>
+<input class="w-10 h-11 text-center font-headline-sm text-headline-sm rounded-lg bg-surface-container-lowest text-on-surface shadow-sm focus:outline-none" maxlength="1" placeholder="•" type="text"/>
+<input class="w-10 h-11 text-center font-headline-sm text-headline-sm rounded-lg bg-surface-container-lowest text-on-surface shadow-sm focus:outline-none" maxlength="1" placeholder="•" type="text"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Time Remaining</span>
+<span class="font-code-metric text-code-metric text-secondary font-semibold" id="timer-text">04:42</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md shadow-sm" type="button">
+                Resend SMS (58s)
+              </button>
+<button class="px-space-md py-2 rounded-lg bg-secondary text-on-secondary hover:opacity-90 transition-opacity font-label-md text-label-md shadow-sm flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+                Confirm Passcode
+              </button>
+</div>
+</div>
+</div>
+<div class="h-px bg-surface-container-high w-full"></div>
+<!-- Section 3: Hardware FIDO2 & WebAuthn Provisioning -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md max-w-lg">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">key</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Faculty Hardware FIDO2 Passkey Provisioning</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">YubiKey / Bio</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Faculty, Lab In-Charges, and Dept Admins can register a physical FIDO2 NFC or USB-C token in lieu of static master passwords.</p>
+</div>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-highest text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1.5 shrink-0" type="button">
+<span class="material-symbols-outlined text-[18px]">usb</span>
+            Register Security Key
+          </button>
+</div>
+<div class="h-px bg-surface-container-high w-full"></div>
+<!-- Section 4: Interactive Password Creation & NIST-800-63B Policy Meter -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Stage 03 • Cryptographic Anchor</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Create Master Campus Credential</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIST SP 800-63B Compliant</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">New Password</label>
+<div class="relative">
+<input class="w-full h-[38px] bg-surface-container-low px-space-md pr-10 text-on-surface font-code-metric text-code-metric rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all" id="pwd-input" type="password" value="K7#xM9$vLq2@98P"/>
+<button class="absolute right-2.5 top-2.5 text-on-surface-variant hover:text-on-surface" onclick="const p=document.getElementById('pwd-input'); p.type = p.type==='password'?'text':'password';" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Confirm New Password</label>
+<div class="relative">
+<input class="w-full h-[38px] bg-surface-container-low px-space-md pr-10 text-on-surface font-code-metric text-code-metric rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all" type="password" value="K7#xM9$vLq2@98P"/>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-[18px] text-secondary">check_circle</span>
+</div>
+</div>
+<!-- Password Strength Visual Indicator -->
+<div class="flex flex-col gap-1.5 mt-2">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Entropy Score (89 bits)</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Institutional Grade (Very High)</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden flex gap-1">
+<div class="h-full w-1/4 bg-secondary rounded-full"></div>
+<div class="h-full w-1/4 bg-secondary rounded-full"></div>
+<div class="h-full w-1/4 bg-secondary rounded-full"></div>
+<div class="h-full w-1/4 bg-secondary rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- NIST 800-63B Policy Checklist -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Identity Assurance Guidelines</span>
+<ul class="flex flex-col gap-2 my-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Minimum 12 characters length (15 detected)</span>
+</li>
+<li class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Mixed uppercase, lowercase & numerals</span>
+</li>
+<li class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>High-entropy non-alphanumeric punctuation</span>
+</li>
+<li class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>No dictionary words or roll numbers in substring</span>
+</li>
+<li class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Does not match previously used 5 history records</span>
+</li>
+</ul>
+<span class="font-body-sm text-body-sm text-on-surface-variant italic">Automated HIBP compromised credential API check: Passed.</span>
+</div>
+</div>
+</div>
+<div class="h-px bg-surface-container-high w-full"></div>
+<!-- Master Submit Action & Session Options -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-xs">
+<label class="flex items-center gap-2.5 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded accent-secondary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Immediately purge all active JWT tokens & SSO sessions on mobile / campus WiFi</span>
+</label>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" type="button">
+              Cancel Recovery
+            </button>
+<button class="px-space-lg py-2 rounded-lg bg-secondary text-on-secondary hover:opacity-90 transition-opacity font-label-md text-label-md shadow-md flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">lock_reset</span>
+              Commit Credential & Sign In
+            </button>
+</div>
+</div>
+</div>
+<!-- Informational Footer Callout: Device Bound Cryptography -->
+<div class="bg-surface-container rounded-xl p-space-md flex items-center gap-space-md">
+<span class="material-symbols-outlined text-secondary text-[24px]">terminal</span>
+<div class="flex-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Zero Trust Device Context Binding Active</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Your browser session has generated a cryptographic client challenge signed against TLS 1.3 ECDSA P-256 certificate.</p>
+</div>
+<span class="font-code-metric text-code-metric text-on-surface-variant uppercase">FIPS 140-3</span>
+</div>
+</div>
+<!-- RIGHT PANEL: Security Advisory & Incident Killswitch (Cols 4) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Incident Killswitch Card -->
+<div class="bg-error-container text-on-error-container rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-error">gpp_maybe</span>
+<span class="font-label-md text-label-md font-semibold tracking-wide uppercase">Emergency Shield</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm">High Priority</span>
+</div>
+<p class="font-body-sm text-body-sm leading-relaxed">Suspect unauthorized access to your grade transcripts, campus cloud storage, or research repository?</p>
+<button class="w-full mt-1 py-2 px-space-md rounded-lg bg-error text-on-error hover:opacity-90 transition-opacity font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">power_settings_new</span>
+          Trigger Immediate Portal Freeze
+        </button>
+<span class="font-body-sm text-body-sm opacity-80 text-center">Locks all SSO logins, smart gate RFID cards, and lab terminals.</span>
+</div>
+<!-- Recent Sign-in Audit Stream -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-label-md text-label-md text-on-surface font-semibold">Recent Identity Invocations</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Last 3 recorded sign-in attempts</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">history</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Sign-in Attempt 1: Valid -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Authorized • Current Session
+              </span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">10m ago</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<span class="font-label-md text-label-md font-semibold truncate">Chrome 122 • macOS Sonoma</span>
+<span class="font-code-metric text-code-metric">172.16.42.88</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Bengaluru North Campus (Academic Block 4)</span>
+</div>
+</div>
+<!-- Sign-in Attempt 2: Valid mobile -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                SSO Auth Token Sync
+              </span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">Yesterday, 19:40</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<span class="font-label-md text-label-md font-semibold truncate">Apex Mobile App • iOS 17.4</span>
+<span class="font-code-metric text-code-metric">103.24.112.5</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">wifi</span>
+<span>Hostel Block C • AP-WIFI-EXT-09</span>
+</div>
+</div>
+<!-- Sign-in Attempt 3: Flagged Location -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-error font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                Geo-Anomaly Blocked
+              </span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">02 Mar, 03:12</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<span class="font-label-md text-label-md font-semibold truncate">Firefox ESR • Linux x86_64</span>
+<span class="font-code-metric text-code-metric">185.220.101.4</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-error">
+<span class="material-symbols-outlined text-[14px]">wrong_location</span>
+<span>Unknown Location (TOR Exit Relay Node)</span>
+</div>
+</div>
+</div>
+<button class="w-full py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm text-center" type="button">
+          Download Raw Security Audit Log (.JSON)
+        </button>
+</div>
+<!-- Campus Identity Desk & Support Hotline -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Campus Security Control Desk</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Physical ID validation & hardware issues</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-2.5 rounded-lg bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Internal Intercom</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Ext. 4411</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">24/7 Security NOC</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">DPDP Officer</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-0.5">dpo@apex.edu.in</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Compliance & Legal</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<button class="w-full py-2 px-space-md rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">confirmation_number</span>
+            Open Registrar Expedited Ticket
+          </button>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-center">Physical desk located at Administrative Block, Ground Floor, Room 104.</span>
+</div>
+</div>
+<!-- Cryptographic Trust Seal -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">enhanced_encryption</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">SHA-384 Fingerprinted</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant text-[11px]">e2a8-f910-bc11-a83d</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">verified</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Dynamic timer decrement for SMS challenge code
+  (function() {
+    let timeLeft = 282; // 4 minutes 42 seconds
+    const timerElem = document.getElementById('timer-text');
+    if (!timerElem) return;
+
+    setInterval(function() {
+      if (timeLeft <= 0) {
+        timerElem.textContent = 'Expired';
+        return;
+      }
+      timeLeft--;
+      const minutes = Math.floor(timeLeft / 60);
+      const seconds = timeLeft % 60;
+      timerElem.textContent = (minutes < 10 ? '0' : '') + minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+    }, 1000);
+  })();
+</script></main><footer class="w-full py-space-md px-margin-desktop text-center text-on-surface-variant font-label-sm text-label-sm">© 2025 Apex Institute of Technology • College OS Enterprise Identity Framework • TLS 1.3 End-to-End Encrypted</footer></body></html>

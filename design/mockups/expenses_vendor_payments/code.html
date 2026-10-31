@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#000000", "on-tertiary": "#ffffff", "tertiary-container": "#001e2f", "outline": "#76777d", "surface-container-low": "#eff4ff", "surface-container": "#e5eeff", "surface-variant": "#d3e4fe", "error-container": "#ffdad6", "secondary-fixed-dim": "#c3c0ff", "on-secondary-fixed": "#0f0069", "background": "#f8f9ff", "on-tertiary-fixed-variant": "#004c6e", "surface-container-highest": "#d3e4fe", "inverse-surface": "#213145", "surface-bright": "#f8f9ff", "error": "#ba1a1a", "tertiary": "#000000", "secondary-container": "#645efb", "on-surface": "#0b1c30", "secondary": "#4b41e1", "surface-tint": "#565e74", "primary-fixed": "#dae2fd", "on-primary-fixed": "#131b2e", "on-secondary": "#ffffff", "on-background": "#0b1c30", "surface": "#f8f9ff", "on-error-container": "#93000a", "on-secondary-container": "#fffbff", "on-surface-variant": "#45464d", "surface-dim": "cbdbf5", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#008cc7", "on-primary-fixed-variant": "#3f465c", "on-primary": "#ffffff", "tertiary-fixed": "#c9e6ff", "tertiary-fixed-dim": "#89ceff", "primary-fixed-dim": "#bec6e0", "on-tertiary-fixed": "#001e2f", "primary-container": "#131b2e", "outline-variant": "#c6c6cd", "on-error": "#ffffff", "on-secondary-fixed-variant": "#3323cc", "surface-container-high": "#dce9ff", "on-primary-container": "#7c839b", "inverse-primary": "#bec6e0", "secondary-fixed": "#e2dfff", "inverse-on-surface": "#eaf1ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1rem", "space-sm": "0.5rem", "margin-desktop": "2rem", "space-md": "0.75rem", "gutter-desktop": "1.5rem", "space-lg": "1.25rem", "space-xs": "0.25rem", "margin": "1rem", "space-xl": "2rem" }, "fontFamily": { "body-md": ["Geist"], "label-sm": ["Geist"], "headline-xl-mobile": ["Geist"], "headline-xl": ["Geist"], "label-md": ["Geist"], "body-lg": ["Geist"], "headline-sm": ["Geist"], "body-sm": ["Geist"], "code-metric": ["Geist"], "headline-lg": ["Geist"] }, "fontSize": { "body-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.006em", "fontWeight": "400" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-xl": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600" }], "label-md": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "-0.005em", "fontWeight": "500" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.011em", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "400" }], "code-metric": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.02em", "fontWeight": "500" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col h-full overflow-hidden"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Apex Institute</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-lg bg-surface-container text-on-surface font-semibold shrink-0">#US-01</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Institutional Workspace • AY 2024-25</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container text-on-surface font-semibold rounded-lg"><div class="px-space-sm pt-space-xs pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Academic Operations</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="academics" href="#">Academics</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="students" href="#">Students</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="faculty-staff" href="#">Faculty &amp; Staff</a><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">fact_check</span><span class="font-label-md text-label-md font-semibold text-on-surface">Attendance</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-overview" href="#">Attendance Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="mark-attendance" href="#">Mark Attendance</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-records" href="#">Attendance Records</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="shortage-defaulters" href="#">Shortage &amp; Defaulters</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-settings" href="#">Attendance Settings</a></div></div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">assignment</span><span class="font-label-md text-label-md font-semibold text-on-surface">Examinations</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="examination-overview" href="#">Examination Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="exam-management" href="#">Exam Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="exam-timetable" href="#">Exam Timetable</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="hall-tickets" href="#">Hall Tickets</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="seating-arrangement" href="#">Seating Arrangement</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="marks-entry" href="#">Marks Entry</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="results-grades" href="#">Results &amp; Grades</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="revaluation-supplementary" href="#">Revaluation &amp; Supplementary</a></div></div><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Institutional Services</div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">payments</span><span class="font-label-md text-label-md font-semibold text-on-surface">Finance</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-xs transition-colors bg-surface-container text-on-surface font-semibold rounded-lg" data-path="finance-overview" href="#">Finance Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fee-structures" href="#">Fee Structures</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="student-fees" href="#">Student Fees</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fee-collection" href="#">Fee Collection</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="scholarships-aid" href="#">Scholarships &amp; Aid</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="expenses-vendors" href="#">Expenses &amp; Vendors</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="accounting-ledger" href="#">Accounting &amp; Ledger</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="financial-reports" href="#">Financial Reports</a></div></div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="campus-management" href="#">Campus Management</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-life" href="#">Student Life</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="placements" href="#">Placements</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="communication" href="#">Communication</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports-analytics" href="#">Reports &amp; Analytics</a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">System Governance</div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="administration" href="#">Administration</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-sm bg-surface-container-low shrink-0"><div class="flex items-center justify-between text-on-surface-variant mb-space-xs"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-semibold text-on-surface">Apex Core 98.4% uptime</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v4.2</span></div><a class="flex items-center justify-between font-label-sm text-label-sm text-secondary hover:text-on-secondary-fixed transition-colors" data-path="institutional-support" href="#">Institutional Support Desk</a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="relative flex items-center w-80"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-on-surface-variant pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-14 bg-surface rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search students, courses, staff..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-code-metric">⌘K</span></div><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container"><span class="material-symbols-outlined text-[16px] text-secondary">event_available</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">AY 2024–2025 • Semester 1 Fall</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary font-semibold uppercase">Active Term</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div></div><div class="flex items-center gap-space-md"><button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Action</span></button><div class="flex items-center gap-space-xs"><button class="relative w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-label-sm flex items-center justify-center font-code-metric">3</span></button><button class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button></div><div class="h-6 w-px bg-surface-container"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Alistair Finch</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Dean of Academic Affairs</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter-desktop pb-space-xl flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Level Command & Workspace Title -->
+<div class="flex flex-col gap-space-lg mb-space-xl">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-code-metric">Institutional Ledger / Section 04B</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Realtime Statutory Audit Enabled</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Expenses &amp; Vendor Payments</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Institutional accounts payable, operational expenses, capital projects, and vendor procurement lifecycle.
+        </p>
+</div>
+<!-- Action Suite -->
+<div class="flex items-center flex-wrap gap-space-sm">
+<button class="h-9 px-space-md bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-lg shadow-sm transition-all flex items-center gap-space-xs" id="btn-export" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export Payables</span>
+</button>
+<button class="h-9 px-space-md bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-lg shadow-sm transition-all flex items-center gap-space-xs" id="btn-add-vendor" type="button">
+<span class="material-symbols-outlined text-[18px]">storefront</span>
+<span>+ Add Vendor</span>
+</button>
+<button class="h-9 px-space-md bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-label-md text-label-md rounded-lg shadow-md transition-all flex items-center gap-space-xs" id="btn-record-expense" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Record Expense</span>
+</button>
+</div>
+</div>
+<!-- Filter Ribbon & Governance Indicators -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-xs bg-surface px-space-sm py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">calendar_today</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">FY 2024–25 (Active)</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">expand_more</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface px-space-sm py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">domain</span>
+<span class="font-label-sm text-label-sm text-on-surface">Department: <strong class="font-semibold text-on-surface">All Departments</strong></span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">expand_more</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface px-space-sm py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">sell</span>
+<span class="font-label-sm text-label-sm text-on-surface">Category: <strong class="font-semibold text-on-surface">All Categories</strong></span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">expand_more</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface px-space-sm py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">tune</span>
+<span class="font-label-sm text-label-sm text-on-surface">Audit Gate: Tier 3 Bursar</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant">
+<span class="font-label-sm text-label-sm font-code-metric">Last Ledger Sync: 11:42 AM IST</span>
+<button class="w-7 h-7 flex items-center justify-center rounded-lg hover:bg-surface transition-colors" title="Sync Ledger">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+</button>
+</div>
+</div>
+</div>
+<!-- KPI Metric Stream (5 Metric Tiles) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md mb-space-xl">
+<!-- Tile 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-3 -top-3 w-16 h-16 bg-surface-container rounded-full opacity-40 group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Total Expenses</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">account_balance_wallet</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg font-code-metric font-semibold text-on-surface">₹18.45 Cr</span>
+<div class="flex items-center gap-1.5 mt-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold font-code-metric">+11.2%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">FY 2024–25 YTD</span>
+</div>
+</div>
+<div class="w-full h-1 bg-surface-container rounded-full mt-space-sm overflow-hidden">
+<div class="h-full bg-secondary w-[78%]"></div>
+</div>
+</div>
+<!-- Tile 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-3 -top-3 w-16 h-16 bg-error-container rounded-full opacity-40 group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-error uppercase tracking-wider font-semibold">Pending Approvals</span>
+<span class="material-symbols-outlined text-error text-[18px]">pending_actions</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg font-code-metric font-semibold text-on-surface">₹64.20 L</span>
+<div class="flex items-center gap-1.5 mt-space-xs">
+<span class="w-2 h-2 rounded-full bg-error shrink-0"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">14 invoices awaiting sign-off</span>
+</div>
+</div>
+<div class="w-full h-1 bg-surface-container rounded-full mt-space-sm overflow-hidden">
+<div class="h-full bg-error w-[42%]"></div>
+</div>
+</div>
+<!-- Tile 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-3 -top-3 w-16 h-16 bg-surface-container-high rounded-full opacity-40 group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Approved Expenses</span>
+<span class="material-symbols-outlined text-secondary-container text-[18px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg font-code-metric font-semibold text-on-surface">₹14.20 Cr</span>
+<div class="flex items-center gap-1.5 mt-space-xs">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Cleared for disbursement</span>
+</div>
+</div>
+<div class="w-full h-1 bg-surface-container rounded-full mt-space-sm overflow-hidden">
+<div class="h-full bg-secondary-container w-[86%]"></div>
+</div>
+</div>
+<!-- Tile 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-3 -top-3 w-16 h-16 bg-surface-container-highest rounded-full opacity-40 group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Vendor Payables</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">receipt_long</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg font-code-metric font-semibold text-on-surface">₹3.61 Cr</span>
+<div class="flex items-center gap-1.5 mt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface font-code-metric font-semibold">T-30 Days</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Disbursement due</span>
+</div>
+</div>
+<div class="w-full h-1 bg-surface-container rounded-full mt-space-sm overflow-hidden">
+<div class="h-full bg-on-surface w-[65%]"></div>
+</div>
+</div>
+<!-- Tile 5 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-3 -top-3 w-16 h-16 bg-surface-variant rounded-full opacity-40 group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Payments Made</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">currency_rupee</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg font-code-metric font-semibold text-on-surface">₹14.84 Cr</span>
+<div class="flex items-center gap-1.5 mt-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold font-code-metric">98.2%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Direct RTGS/NEFT</span>
+</div>
+</div>
+<div class="w-full h-1 bg-surface-container rounded-full mt-space-sm overflow-hidden">
+<div class="h-full bg-secondary w-[94%]"></div>
+</div>
+</div>
+</div>
+<!-- Expense Categories Overview Quick Ribbon -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Departmental Procurement Categories &amp; Quick Budget Allocation</span>
+<span class="font-label-sm text-label-sm text-secondary font-code-metric cursor-pointer hover:underline">View All 18 Sub-Heads</span>
+</div>
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1 shrink-0 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[16px] text-secondary">apartment</span>
+<span>Infrastructure</span>
+<span class="font-code-metric text-label-sm font-semibold ml-1">₹4.12 Cr</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface hover:bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center gap-1 shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span>Utilities</span>
+<span class="font-code-metric text-label-sm font-semibold ml-1">₹1.88 Cr</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface hover:bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center gap-1 shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[16px]">build</span>
+<span>Maintenance</span>
+<span class="font-code-metric text-label-sm font-semibold ml-1">₹95.4 L</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface hover:bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center gap-1 shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>Academic Supplies</span>
+<span class="font-code-metric text-label-sm font-semibold ml-1">₹2.45 Cr</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface hover:bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center gap-1 shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[16px]">biotech</span>
+<span>Laboratory Equipment</span>
+<span class="font-code-metric text-label-sm font-semibold ml-1">₹3.18 Cr</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface hover:bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center gap-1 shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[16px]">group</span>
+<span>Staff Expenses</span>
+<span class="font-code-metric text-label-sm font-semibold ml-1">₹1.15 Cr</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface hover:bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center gap-1 shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[16px]">celebration</span>
+<span>Events &amp; Symposia</span>
+<span class="font-code-metric text-label-sm font-semibold ml-1">₹78.0 L</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface hover:bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center gap-1 shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[16px]">directions_bus</span>
+<span>Transportation Fleet</span>
+<span class="font-code-metric text-label-sm font-semibold ml-1">₹1.42 Cr</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface hover:bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center gap-1 shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[16px]">cloud</span>
+<span>IT &amp; Cloud Software</span>
+<span class="font-code-metric text-label-sm font-semibold ml-1">₹2.52 Cr</span>
+</button>
+</div>
+</div>
+<!-- Primary Analytic Visualizations Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- OpEx Monthly Burn Trend Chart (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Monthly OpEx Burn Rate vs. Allocation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Figures tracked in Crores (INR) over Academic Fiscal Cycles</span>
+</div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm">
+<div class="flex items-center gap-1 text-secondary font-semibold">
+<span class="w-3 h-1 bg-secondary rounded-full"></span> Actual OpEx
+          </div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="w-3 h-1 bg-surface-variant rounded-full"></span> Budget Target
+          </div>
+</div>
+</div>
+<!-- Compact SVG Data Line & Fill Chart -->
+<div class="w-full h-48 relative flex flex-col justify-end">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 700 160">
+<!-- Grids -->
+<line stroke="#eff4ff" stroke-width="1.5" x1="0" x2="700" y1="20" y2="20"></line>
+<line stroke="#eff4ff" stroke-width="1.5" x1="0" x2="700" y1="65" y2="65"></line>
+<line stroke="#eff4ff" stroke-width="1.5" x1="0" x2="700" y1="110" y2="110"></line>
+<line stroke="#e5eeff" stroke-width="1.5" x1="0" x2="700" y1="150" y2="150"></line>
+<!-- Target Budget Dotted Run -->
+<polyline fill="none" points="20,110 95,95 170,100 245,85 320,70 395,75 470,60 545,55 620,50 680,48" stroke="#94a3b8" stroke-dasharray="4,4" stroke-width="2"></polyline>
+<!-- Gradient Area -->
+<defs>
+<lineargradient id="opexGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#4b41e1" stop-opacity="0.22"></stop>
+<stop offset="100%" stop-color="#4b41e1" stop-opacity="0.00"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#opexGrad)" points="20,125 95,115 170,105 245,78 320,62 395,84 470,45 545,52 620,38 680,26 680,150 20,150"></polygon>
+<!-- Actual Expenditure Solid Stroke -->
+<polyline fill="none" points="20,125 95,115 170,105 245,78 320,62 395,84 470,45 545,52 620,38 680,26" stroke="#4b41e1" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></polyline>
+<!-- Hotspot Data Markers -->
+<circle cx="470" cy="45" fill="#4b41e1" r="4.5" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="620" cy="38" fill="#4b41e1" r="4.5" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="680" cy="26" fill="#131b2e" r="5" stroke="#ffffff" stroke-width="2"></circle>
+</svg>
+<!-- X Axis labels -->
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-2">
+<span>May</span>
+<span>Jun</span>
+<span>Jul</span>
+<span>Aug</span>
+<span>Sep</span>
+<span>Oct</span>
+<span>Nov</span>
+<span>Dec</span>
+<span>Jan</span>
+<span class="font-bold text-on-surface">Feb (Est)</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm border-t border-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span>Average Burn Velocity: <strong class="font-code-metric text-on-surface">₹1.84 Cr / mo</strong></span>
+<span>Burn Delta vs Last Quarter: <span class="text-secondary font-code-metric font-semibold">+3.4% controlled</span></span>
+</div>
+</div>
+<!-- Departmental Expenditure Distribution (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Department Allocations</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Top operational units by gross disbursements</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface font-code-metric">8 Depts</span>
+</div>
+<div class="flex flex-col gap-space-sm py-space-xs">
+<!-- Dept 1 -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">Computer Science &amp; AI</span>
+<span class="font-code-metric text-on-surface font-semibold">₹4.85 Cr <span class="text-on-surface-variant font-normal">(26.2%)</span></span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 78%"></div>
+</div>
+</div>
+<!-- Dept 2 -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">Central Campus Infrastructure &amp; Works</span>
+<span class="font-code-metric text-on-surface font-semibold">₹3.92 Cr <span class="text-on-surface-variant font-normal">(21.2%)</span></span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-on-surface rounded-full" style="width: 65%"></div>
+</div>
+</div>
+<!-- Dept 3 -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">Biomedical &amp; Molecular Research</span>
+<span class="font-code-metric text-on-surface font-semibold">₹2.88 Cr <span class="text-on-surface-variant font-normal">(15.6%)</span></span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full" style="width: 48%"></div>
+</div>
+</div>
+<!-- Dept 4 -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">Mechanical &amp; Aerospace Labs</span>
+<span class="font-code-metric text-on-surface font-semibold">₹2.10 Cr <span class="text-on-surface-variant font-normal">(11.3%)</span></span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-on-tertiary-container rounded-full" style="width: 36%"></div>
+</div>
+</div>
+<!-- Dept 5 -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">Institutional Fleet &amp; Logistics</span>
+<span class="font-code-metric text-on-surface font-semibold">₹1.42 Cr <span class="text-on-surface-variant font-normal">(7.7%)</span></span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-surface-tint rounded-full" style="width: 25%"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Contingency Reserve: ₹1.28 Cr Allocated</span>
+<a class="text-secondary hover:underline font-semibold" href="#">Deep Dive Audit →</a>
+</div>
+</div>
+</div>
+<!-- Primary Interactive Split: Data Engine & Right Contextual Authorization Inspector -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start mb-space-xl">
+<!-- Left Operations Column (7 cols on large desktop) -->
+<div class="xl:col-span-7 flex flex-col gap-space-xl">
+<!-- Section 1: Operational Expense Table Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-lg bg-surface-container-lowest flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Institutional Ledger Entries</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-code-metric">1,248 Records</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Live audit ledger of claims, vouchers, and procurement invoices</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant absolute left-2">filter_alt</span>
+<input class="h-8 pl-7 pr-3 bg-surface rounded-lg font-body-sm text-body-sm text-on-surface outline-none w-36 focus:w-48 transition-all" placeholder="Filter voucher ID..." type="text"/>
+</div>
+</div>
+</div>
+<!-- Dense Enterprise Data Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider h-9">
+<th class="px-space-md py-2 font-semibold">Voucher / Desc</th>
+<th class="px-space-sm py-2 font-semibold">Category / Dept</th>
+<th class="px-space-sm py-2 font-semibold">Vendor Entity</th>
+<th class="px-space-sm py-2 font-semibold text-right">Amount (₹)</th>
+<th class="px-space-sm py-2 font-semibold">Approval Chain</th>
+<th class="px-space-sm py-2 font-semibold">Status</th>
+<th class="px-space-md py-2 font-semibold text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-body-sm font-body-sm text-on-surface">
+<!-- Row 1: Active Focus Item -->
+<tr class="hover:bg-surface-container-low transition-colors bg-secondary-fixed/20">
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric font-semibold text-on-surface">#EXP-24-1042</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate max-w-[200px]" title="NVIDIA GPU Cluster Node Maintenance - Tech Lab 4">NVIDIA GPU Cluster Node Maint.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sub: Dr. A. Finch</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-medium inline-block w-fit">IT &amp; Cloud</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm mt-0.5">CS &amp; AI Dept</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface truncate max-w-[150px]">Velox Supercomputing</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">29AABCU9603R1ZM</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm text-right">
+<div class="flex flex-col items-end">
+<span class="font-code-metric font-semibold text-on-surface">₹5,72,300</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">GST: ₹87,300</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-label-sm font-semibold bg-surface-container-high text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Finance Review
+                  </span>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold bg-error-container text-on-error-container">Pending</span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<button class="h-7 px-2 bg-secondary text-on-secondary rounded-lg font-label-sm text-label-sm hover:bg-on-secondary-fixed-variant transition-colors">
+                    Review
+                  </button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric font-semibold text-on-surface">#EXP-24-1039</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate max-w-[200px]" title="Campus High-Voltage Transformer Servicing">Transformer Servicing Substation</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sub: Eng. K. Rao</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-medium inline-block w-fit">Utilities</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm mt-0.5">Estates &amp; Power</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface truncate max-w-[150px]">Tata Power SED</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">27AAACT2727Q1ZW</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm text-right">
+<div class="flex flex-col items-end">
+<span class="font-code-metric font-semibold text-on-surface">₹2,83,200</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">GST: ₹43,200</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-label-sm font-semibold bg-surface-variant text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface"></span>
+                    Dean Approved
+                  </span>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold bg-surface-container-high text-on-surface">Scheduled</span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<button class="h-7 px-2 bg-surface hover:bg-surface-container text-on-surface rounded-lg font-label-sm text-label-sm transition-colors">
+                    Inspect
+                  </button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric font-semibold text-on-surface">#EXP-24-1035</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate max-w-[200px]" title="Annual Springer Nature Journal Consortium">Springer Nature Journal Sub</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sub: Dr. M. Iyer</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-medium inline-block w-fit">Academic Supplies</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm mt-0.5">Central Library</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface truncate max-w-[150px]">Springer Nature Ind.</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">07AABCS2911L1ZN</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm text-right">
+<div class="flex flex-col items-end">
+<span class="font-code-metric font-semibold text-on-surface">₹14,50,000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">Exempt (0%)</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-label-sm font-semibold bg-surface-container text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Disbursed
+                  </span>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold bg-surface-container-high text-secondary">Paid</span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<button class="h-7 px-2 bg-surface hover:bg-surface-container text-on-surface rounded-lg font-label-sm text-label-sm transition-colors">
+                    Receipt
+                  </button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric font-semibold text-on-surface">#EXP-24-1028</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate max-w-[200px]" title="Convocation Hall Acoustic Refit">Convocation Hall Refit</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sub: Prof. S. Sen</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-medium inline-block w-fit">Infrastructure</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm mt-0.5">Capital Projects</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface truncate max-w-[150px]">Acoustica Systems</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">29AAHCA5540N1ZF</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm text-right">
+<div class="flex flex-col items-end">
+<span class="font-code-metric font-semibold text-on-surface">₹9,67,600</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">GST: ₹1,47,600</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-label-sm font-semibold bg-surface-variant text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface"></span>
+                    Dean Approved
+                  </span>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold bg-surface-container-high text-on-surface">Scheduled</span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<button class="h-7 px-2 bg-surface hover:bg-surface-container text-on-surface rounded-lg font-label-sm text-label-sm transition-colors">
+                    Inspect
+                  </button>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric font-semibold text-on-surface">#EXP-24-1021</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate max-w-[200px]" title="Campus Bus Fleet Diesel &amp; Maintenance">Bus Fleet Diesel &amp; Service</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sub: T. Verma</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-medium inline-block w-fit">Transportation</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm mt-0.5">Campus Logistics</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface truncate max-w-[150px]">IOCL Bulk Services</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">29AAACI1681G1ZM</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm text-right">
+<div class="flex flex-col items-end">
+<span class="font-code-metric font-semibold text-on-surface">₹3,10,000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">Statutory Net</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-label-sm font-semibold bg-surface-container text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Disbursed
+                  </span>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold bg-surface-container-high text-secondary">Paid</span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<button class="h-7 px-2 bg-surface hover:bg-surface-container text-on-surface rounded-lg font-label-sm text-label-sm transition-colors">
+                    Receipt
+                  </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-space-sm bg-surface-container-low flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Showing 5 of 14 active cycle invoices</span>
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 rounded bg-surface hover:bg-surface-container text-on-surface disabled:opacity-40">Previous</button>
+<span class="px-2 py-1 bg-surface-container text-on-surface font-semibold rounded">1</span>
+<button class="px-2 py-1 rounded hover:bg-surface-container text-on-surface">2</button>
+<button class="px-2 py-1 rounded hover:bg-surface-container text-on-surface">3</button>
+<button class="px-2 py-1 rounded bg-surface hover:bg-surface-container text-on-surface">Next</button>
+</div>
+</div>
+</div>
+<!-- Section 2: Vendor Registry & Management Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Verified Institutional Vendors</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-code-metric">142 Active Vendors</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Compliance KYC, GSTIN validations, and vendor payment records</span>
+</div>
+<button class="h-8 px-space-sm bg-surface hover:bg-surface-container text-on-surface font-label-sm text-label-sm rounded-lg flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>KYC Compliance Registry</span>
+</button>
+</div>
+<!-- Vendor List Grid -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider h-9">
+<th class="px-space-md py-2 font-semibold">Vendor Entity</th>
+<th class="px-space-sm py-2 font-semibold">Contact &amp; GSTIN</th>
+<th class="px-space-sm py-2 font-semibold text-right">Total YTD Spend</th>
+<th class="px-space-sm py-2 font-semibold text-right">Outstanding Due</th>
+<th class="px-space-sm py-2 font-semibold">Status</th>
+<th class="px-space-md py-2 font-semibold text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-body-sm font-body-sm text-on-surface">
+<!-- Vendor 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-bold text-secondary text-label-md">VS</div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Velox Supercomputing Systems LLP</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Vendor ID: #VND-042</span>
+</div>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">R. K. Singhal (Account Dir)</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">GST: 29AABCU9603R1ZM</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm text-right">
+<span class="font-code-metric font-semibold text-on-surface">₹42.50 L</span>
+</td>
+<td class="px-space-sm py-space-sm text-right">
+<span class="font-code-metric font-semibold text-error">₹5.72 L</span>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-label-sm font-semibold bg-surface-container text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Active &amp; Verified
+                  </span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<button class="w-7 h-7 flex items-center justify-center rounded-lg hover:bg-surface transition-colors ml-auto text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Vendor 2 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-bold text-on-tertiary-container text-label-md">LB</div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">LabEquip Biotech Instruments</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Vendor ID: #VND-088</span>
+</div>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Dr. Neha Sen (Tech Rep)</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">GST: 29BBLPA4431F1ZS</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm text-right">
+<span class="font-code-metric font-semibold text-on-surface">₹28.40 L</span>
+</td>
+<td class="px-space-sm py-space-sm text-right">
+<span class="font-code-metric font-semibold text-error">₹1.80 L</span>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-label-sm font-semibold bg-surface-container text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Active &amp; Verified
+                  </span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<button class="w-7 h-7 flex items-center justify-center rounded-lg hover:bg-surface transition-colors ml-auto text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Vendor 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-bold text-on-surface text-label-md">TP</div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Tata Power SED Facilities</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Vendor ID: #VND-012</span>
+</div>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Anand Varma (Zonal Lead)</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">GST: 27AAACT2727Q1ZW</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm text-right">
+<span class="font-code-metric font-semibold text-on-surface">₹64.10 L</span>
+</td>
+<td class="px-space-sm py-space-sm text-right">
+<span class="font-code-metric font-semibold text-error">₹3.40 L</span>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-label-sm font-semibold bg-surface-container text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Active &amp; Verified
+                  </span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<button class="w-7 h-7 flex items-center justify-center rounded-lg hover:bg-surface transition-colors ml-auto text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Right Contextual Authorization Inspector Panel (5 cols) -->
+<div class="xl:col-span-5 bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col gap-space-lg sticky top-20">
+<!-- Inspector Header -->
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">assignment_turned_in</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Payment Authorization</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Voucher Docket: <strong class="font-code-metric text-on-surface">#EXP-24-1042</strong></span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-error-container text-on-error-container font-semibold">Priority 1 High</span>
+<button class="w-7 h-7 flex items-center justify-center rounded-lg hover:bg-surface text-on-surface-variant" title="Pop Out Modal">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Description & Institutional Justification -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Expense Description &amp; Academic Justification</label>
+<div class="p-space-sm bg-surface rounded-lg flex flex-col gap-1">
+<span class="font-body-md text-body-md text-on-surface font-medium">NVIDIA GPU Cluster Node Maintenance - Tech Lab 4</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Quarterly preventive thermal servicing and DGX station firmware updates supporting Post-Graduate Deep Learning &amp; Computer Vision research workloads.
+          </p>
+</div>
+</div>
+<!-- Department, Campus, Category Dropdowns (Read/Edit Form) -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Procurement Head</label>
+<div class="h-9 px-space-sm bg-surface rounded-lg flex items-center justify-between text-body-sm text-on-surface">
+<span>IT &amp; Cloud Software</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Department / Unit</label>
+<div class="h-9 px-space-sm bg-surface rounded-lg flex items-center justify-between text-body-sm text-on-surface">
+<span>CS &amp; AI Department</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</div>
+</div>
+<div class="col-span-2 flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Campus Location</label>
+<div class="h-9 px-space-sm bg-surface rounded-lg flex items-center justify-between text-body-sm text-on-surface">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+              Main Green Campus (Advanced Computing Facility)
+            </span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Vendor Selector with Disclosed Statutory & Bank Coordinates -->
+<div class="p-space-sm bg-surface-container rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold uppercase text-on-surface">Vendor &amp; Remittance Coordinates</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary font-code-metric">Verified MSME</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Legal Name:</span>
+<strong class="text-on-surface">Velox Supercomputing Systems LLP</strong>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">GSTIN:</span>
+<span class="font-code-metric text-on-surface">29AABCU9603R1ZM (State: 29 KA)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Remittance A/C:</span>
+<span class="font-code-metric font-semibold text-on-surface">Axis Bank •••• 9012 (Current A/C)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">IFSC Routing Code:</span>
+<span class="font-code-metric text-on-surface">UTIB000104 (RTGS Instant Direct)</span>
+</div>
+</div>
+<!-- Invoice Reference & Uploaded PDF Attachment Preview -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Vendor Invoice Voucher</label>
+<span class="font-label-sm text-label-sm text-secondary font-code-metric">INV-2024-8849.pdf</span>
+</div>
+<!-- Document preview frame -->
+<div class="flex items-center gap-space-md p-space-sm bg-surface rounded-lg">
+<div class="w-12 h-14 bg-surface-container flex flex-col items-center justify-center rounded text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">description</span>
+<span class="font-label-sm text-[9px] uppercase font-bold">PDF</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">INV-2024-8849-Velox-Signed.pdf</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tax Invoice • 1.4 MB • Cryptographically Signed</span>
+<div class="flex items-center gap-space-sm mt-1">
+<a class="font-label-sm text-label-sm text-secondary hover:underline flex items-center gap-0.5" href="#">
+<span class="material-symbols-outlined text-[14px]">visibility</span> Preview
+              </a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:underline flex items-center gap-0.5" href="#">
+<span class="material-symbols-outlined text-[14px]">file_download</span> Download
+              </a>
+</div>
+</div>
+</div>
+</div>
+<!-- Financial Calculations Breakdown -->
+<div class="p-space-md bg-surface rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Base Taxable Value:</span>
+<span class="font-code-metric font-semibold text-on-surface">₹4,85,000.00</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">CGST (9.0%):</span>
+<span class="font-code-metric text-on-surface">₹43,650.00</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">SGST (9.0%):</span>
+<span class="font-code-metric text-on-surface">₹43,650.00</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Total GST (18.0%):</span>
+<span class="font-code-metric text-on-surface">₹87,300.00</span>
+</div>
+<div class="h-px bg-surface-container my-1"></div>
+<div class="flex items-center justify-between text-body-md font-semibold">
+<span class="text-on-surface">Gross Payable (INR):</span>
+<span class="font-code-metric font-headline-sm text-headline-sm text-secondary">₹5,72,300.00</span>
+</div>
+</div>
+<!-- Multi-tier Approval Stepper Pipeline -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Institutional Governance Gate</span>
+<div class="flex flex-col gap-space-xs p-space-sm bg-surface rounded-lg font-label-sm text-label-sm">
+<!-- Step 1 -->
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0">check_circle</span>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Submitted by Faculty In-Charge</span>
+<span class="text-on-surface-variant">Dr. Alistair Finch • 24 Jan, 09:14 AM</span>
+</div>
+</div>
+<!-- Line -->
+<div class="w-0.5 h-3 bg-secondary ml-2"></div>
+<!-- Step 2 -->
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0">check_circle</span>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Dept Head Endorsement</span>
+<span class="text-on-surface-variant">Prof. Ramanathan (CS &amp; AI) • 24 Jan, 02:40 PM</span>
+</div>
+</div>
+<!-- Line -->
+<div class="w-0.5 h-3 bg-secondary ml-2"></div>
+<!-- Step 3 Active -->
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary animate-pulse shrink-0">radio_button_checked</span>
+<div class="flex flex-col">
+<span class="font-semibold text-secondary">Finance Auditor Review (Active Gate)</span>
+<span class="text-on-surface">Accounts Desk 02 • Pending Verification</span>
+</div>
+</div>
+<!-- Line -->
+<div class="w-0.5 h-3 bg-surface-container ml-2"></div>
+<!-- Step 4 -->
+<div class="flex items-start gap-space-sm opacity-50">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant shrink-0">radio_button_unchecked</span>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Bursar &amp; Finance Dean Clearance</span>
+<span class="text-on-surface-variant">Institutional Sign-off</span>
+</div>
+</div>
+<!-- Line -->
+<div class="w-0.5 h-3 bg-surface-container ml-2"></div>
+<!-- Step 5 -->
+<div class="flex items-start gap-space-sm opacity-50">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant shrink-0">radio_button_unchecked</span>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Direct Bank Settlement (RTGS Dispatched)</span>
+<span class="text-on-surface-variant">Automated CMS Gateway</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Panel -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full h-10 bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-label-md text-label-md font-semibold rounded-lg shadow-sm transition-all flex items-center justify-center gap-space-xs" id="btn-authorize" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Authorize Payment (Direct RTGS)</span>
+</button>
+<button class="w-full h-9 bg-surface hover:bg-error-container hover:text-on-error-container text-on-surface-variant font-label-md text-label-md rounded-lg transition-colors flex items-center justify-center gap-space-xs" id="btn-reject" type="button">
+<span class="material-symbols-outlined text-[18px]">block</span>
+<span>Reject / Request PO Revision</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Slide-Over Modal for "Record New Institutional Expense" -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 hidden transition-opacity flex items-center justify-center p-space-md" id="record-modal-backdrop">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-2xl max-h-[921px] flex flex-col overflow-hidden animate-in fade-in zoom-in-95">
+<!-- Modal Header -->
+<div class="p-space-lg bg-surface flex items-center justify-between border-b border-surface-container">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">add_card</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Record Institutional Expense</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Post a new invoice or expenditure claim to the college general ledger</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant" id="modal-close">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-lg overflow-y-auto flex flex-col gap-space-md">
+<div class="grid grid-cols-2 gap-space-md">
+<div class="col-span-2 flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface">Expense Title &amp; Description</label>
+<input class="h-9 px-space-sm bg-surface rounded-lg text-body-md text-on-surface outline-none border border-surface-container focus:border-secondary" placeholder="e.g., Annual Campus High-Speed Fiber Leased Line Renewal" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface">Category</label>
+<select class="h-9 px-space-sm bg-surface rounded-lg text-body-md text-on-surface outline-none border border-surface-container">
+<option>IT &amp; Cloud Software</option>
+<option>Infrastructure &amp; Capital</option>
+<option>Laboratory Equipment</option>
+<option>Academic Supplies</option>
+<option>Utilities &amp; Power</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface">Allocated Department</label>
+<select class="h-9 px-space-sm bg-surface rounded-lg text-body-md text-on-surface outline-none border border-surface-container">
+<option>CS &amp; AI Department</option>
+<option>Mechanical Engineering</option>
+<option>Biomedical Research</option>
+<option>Estates &amp; Facilities</option>
+<option>Dean of Academic Affairs</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface">Select Vendor</label>
+<select class="h-9 px-space-sm bg-surface rounded-lg text-body-md text-on-surface outline-none border border-surface-container">
+<option>Velox Supercomputing (#VND-042)</option>
+<option>LabEquip Biotech (#VND-088)</option>
+<option>Tata Power SED Facilities (#VND-012)</option>
+<option>+ Add New Vendor Partner</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface">Invoice Ref Number</label>
+<input class="h-9 px-space-sm bg-surface rounded-lg text-body-md text-on-surface outline-none border border-surface-container" placeholder="INV-2024-XXXX" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface">Base Amount (₹)</label>
+<input class="h-9 px-space-sm bg-surface rounded-lg text-body-md text-on-surface outline-none border border-surface-container font-code-metric" placeholder="250000" type="number"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface">GST Rate</label>
+<select class="h-9 px-space-sm bg-surface rounded-lg text-body-md text-on-surface outline-none border border-surface-container">
+<option>18% (Standard GST)</option>
+<option>12% (Scientific Equipment)</option>
+<option>5% (Books/Consortiums)</option>
+<option>0% (Exempt)</option>
+</select>
+</div>
+<div class="col-span-2 flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface">Attach Digital Tax Invoice / PO Voucher</label>
+<div class="p-space-lg rounded-xl border-2 border-dashed border-surface-container flex flex-col items-center justify-center gap-1 hover:bg-surface transition-colors cursor-pointer text-center">
+<span class="material-symbols-outlined text-[32px] text-secondary">cloud_upload</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Drag &amp; drop PDF voucher, or browse files</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Supported formats: PDF, PNG, TIFF up to 25 MB</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-space-md bg-surface flex items-center justify-between border-t border-surface-container">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Will route to Stage 1: Department Chair Review</span>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md h-9 rounded-lg hover:bg-surface-container font-label-md text-label-md text-on-surface transition-colors" id="modal-cancel">Cancel</button>
+<button class="px-space-md h-9 bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-label-md text-label-md font-semibold rounded-lg shadow-sm transition-colors" id="modal-submit">Commit to Ledger</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interactions for demo state toggles
+  (function() {
+    const modal = document.getElementById('record-modal-backdrop');
+    const btnRecord = document.getElementById('btn-record-expense');
+    const btnClose = document.getElementById('modal-close');
+    const btnCancel = document.getElementById('modal-cancel');
+    const btnSubmit = document.getElementById('modal-submit');
+    const btnAuthorize = document.getElementById('btn-authorize');
+
+    const toggleModal = (show) => {
+      if (!modal) return;
+      if (show) {
+        modal.classList.remove('hidden');
+      } else {
+        modal.classList.add('hidden');
+      }
+    };
+
+    if (btnRecord) btnRecord.addEventListener('click', () => toggleModal(true));
+    if (btnClose) btnClose.addEventListener('click', () => toggleModal(false));
+    if (btnCancel) btnCancel.addEventListener('click', () => toggleModal(false));
+
+    if (btnSubmit) {
+      btnSubmit.addEventListener('click', () => {
+        btnSubmit.innerHTML = 'Committing...';
+        setTimeout(() => {
+          btnSubmit.innerHTML = 'Commit to Ledger';
+          toggleModal(false);
+        }, 600);
+      });
+    }
+
+    if (btnAuthorize) {
+      btnAuthorize.addEventListener('click', () => {
+        btnAuthorize.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> Authorizing RTGS...';
+        btnAuthorize.classList.add('opacity-80');
+        setTimeout(() => {
+          btnAuthorize.innerHTML = '<span class="material-symbols-outlined text-[18px]">done_all</span> RTGS Dispatched (₹5,72,300)';
+          btnAuthorize.classList.remove('bg-secondary');
+          btnAuthorize.classList.add('bg-primary');
+        }, 800);
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest py-space-sm px-gutter-desktop shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-space-sm font-label-sm text-label-sm"><span>Apex Institute of Technology • Institutional OS System</span><span>•</span><span>Enterprise Tier • 98.4% uptime</span></div><div class="flex items-center gap-space-md font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" data-path="institutional-support" href="#">Institutional Support</a><a class="hover:text-on-surface transition-colors" data-path="privacy-compliance" href="#">FERPA &amp; Privacy</a><span class="font-code-metric text-on-surface-variant">Apex-Node #US-CAMPUS-01</span></div></div></footer></div></body></html>

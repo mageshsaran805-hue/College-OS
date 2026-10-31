@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#000000", "on-tertiary": "#ffffff", "tertiary-container": "#001e2f", "outline": "#76777d", "surface-container-low": "#eff4ff", "surface-container": "#e5eeff", "surface-variant": "#d3e4fe", "error-container": "#ffdad6", "secondary-fixed-dim": "#c3c0ff", "on-secondary-fixed": "#0f0069", "background": "#f8f9ff", "on-tertiary-fixed-variant": "#004c6e", "surface-container-highest": "#d3e4fe", "inverse-surface": "#213145", "surface-bright": "#f8f9ff", "error": "#ba1a1a", "tertiary": "#000000", "secondary-container": "#645efb", "on-surface": "#0b1c30", "secondary": "#4b41e1", "surface-tint": "#565e74", "primary-fixed": "#dae2fd", "on-primary-fixed": "#131b2e", "on-secondary": "#ffffff", "on-background": "#0b1c30", "surface": "#f8f9ff", "on-error-container": "#93000a", "on-secondary-container": "#fffbff", "on-surface-variant": "#45464d", "surface-dim": "#cbdbf5", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#008cc7", "on-primary-fixed-variant": "#3f465c", "on-primary": "#ffffff", "tertiary-fixed": "#c9e6ff", "tertiary-fixed-dim": "#89ceff", "primary-fixed-dim": "#bec6e0", "on-tertiary-fixed": "#001e2f", "primary-container": "#131b2e", "outline-variant": "#c6c6cd", "on-error": "#ffffff", "on-secondary-fixed-variant": "#3323cc", "surface-container-high": "#dce9ff", "on-primary-container": "#7c839b", "inverse-primary": "#bec6e0", "secondary-fixed": "#e2dfff", "inverse-on-surface": "#eaf1ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1rem", "space-sm": "0.5rem", "margin-desktop": "2rem", "space-md": "0.75rem", "gutter-desktop": "1.5rem", "space-lg": "1.25rem", "space-xs": "0.25rem", "margin": "1rem", "space-xl": "2rem" }, "fontFamily": { "body-md": ["Geist"], "label-sm": ["Geist"], "headline-xl-mobile": ["Geist"], "headline-xl": ["Geist"], "label-md": ["Geist"], "body-lg": ["Geist"], "headline-sm": ["Geist"], "body-sm": ["Geist"], "code-metric": ["Geist"], "headline-lg": ["Geist"] }, "fontSize": { "body-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.006em", "fontWeight": "400" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-xl": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600" }], "label-md": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "-0.005em", "fontWeight": "500" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.011em", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "400" }], "code-metric": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.02em", "fontWeight": "500" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col h-full overflow-hidden"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Apex Institute</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-lg bg-surface-container text-on-surface font-semibold shrink-0">#US-01</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Institutional Workspace • AY 2024-25</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container text-on-surface font-semibold rounded-lg"><div class="px-space-sm pt-space-xs pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Academic Operations</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="academics" href="#">Academics</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="students" href="#">Students</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="faculty-staff" href="#">Faculty &amp; Staff</a><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">fact_check</span><span class="font-label-md text-label-md font-semibold text-on-surface">Attendance</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-overview" href="#">Attendance Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="mark-attendance" href="#">Mark Attendance</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-records" href="#">Attendance Records</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="shortage-defaulters" href="#">Shortage &amp; Defaulters</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-settings" href="#">Attendance Settings</a></div></div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">assignment</span><span class="font-label-md text-label-md font-semibold text-on-surface">Examinations</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="examination-overview" href="#">Examination Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="exam-management" href="#">Exam Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="exam-timetable" href="#">Exam Timetable</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="hall-tickets" href="#">Hall Tickets</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="seating-arrangement" href="#">Seating Arrangement</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="marks-entry" href="#">Marks Entry</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="results-grades" href="#">Results &amp; Grades</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="revaluation-supplementary" href="#">Revaluation &amp; Supplementary</a></div></div><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Institutional Services</div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">payments</span><span class="font-label-md text-label-md font-semibold text-on-surface">Finance</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="finance-overview" href="#">Finance Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fee-structures" href="#">Fee Structures</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="student-fees" href="#">Student Fees</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="fee-collection" href="#">Fee Collection</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="scholarships-aid" href="#">Scholarships &amp; Aid</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="expenses-vendors" href="#">Expenses &amp; Vendors</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="accounting-ledger" href="#">Accounting &amp; Ledger</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="financial-reports" href="#">Financial Reports</a></div></div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">local_library</span><span class="font-label-md text-label-md font-semibold text-on-surface">Library</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="library-overview" href="#">Library Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="book-catalogue" href="#">Book Catalogue</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="book-inventory" href="#">Book Inventory</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="circulation" href="#">Circulation</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="reservations-requests" href="#">Reservations &amp; Requests</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fines-payments" href="#">Fines &amp; Payments</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="digital-library" href="#">Digital Library</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="library-reports-settings" href="#">Library Reports &amp; Settings</a></div></div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">domain</span><span class="font-label-md text-label-md font-semibold text-on-surface">Campus Operations</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="campus-overview" href="#">Campus Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="buildings-facilities" href="#">Buildings &amp; Facilities</a><a aria-current="page" class="px-space-sm py-1 transition-colors bg-surface-container text-on-surface font-semibold rounded-lg" data-path="room-booking" href="#">Room Booking</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="maintenance" href="#">Maintenance</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="hostel-management" href="#">Hostel Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="transport-management" href="#">Transport Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="security-visitors" href="#">Security &amp; Visitors</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="housekeeping-assets" href="#">Housekeeping &amp; Assets</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="operations-reports-settings" href="#">Operations Reports &amp; Settings</a></div></div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="campus-management" href="#">Campus Management</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-life" href="#">Student Life</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="placements" href="#">Placements</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="communication" href="#">Communication</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports-analytics" href="#">Reports &amp; Analytics</a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">System Governance</div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="administration" href="#">Administration</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-sm bg-surface-container-low shrink-0"><div class="flex items-center justify-between text-on-surface-variant mb-space-xs"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-semibold text-on-surface">Apex Core 98.4% uptime</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v4.2</span></div><a class="flex items-center justify-between font-label-sm text-label-sm text-secondary hover:text-on-secondary-fixed transition-colors" data-path="institutional-support" href="#">Institutional Support Desk</a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="relative flex items-center w-80"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-on-surface-variant pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-14 bg-surface rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search students, courses, staff..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-code-metric">⌘K</span></div><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container"><span class="material-symbols-outlined text-[16px] text-secondary">event_available</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">AY 2024–2025 • Semester 1 Fall</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary font-semibold uppercase">Active Term</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div></div><div class="flex items-center gap-space-md"><button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Action</span></button><div class="flex items-center gap-space-xs"><button class="relative w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-label-sm flex items-center justify-center font-code-metric">3</span></button><button class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button></div><div class="h-6 w-px bg-surface-container"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Alistair Finch</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Dean of Academic Affairs</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter-desktop pb-space-xl flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- Micro Top Context Header -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<!-- Breadcrumb with monospaced tracking -->
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span>Institutional Modules</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Campus Operations</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-secondary font-semibold">Room Booking</span>
+</div>
+<!-- Main Title & Operational Status Strip -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Campus Room &amp; Space Reservation Studio</h1>
+<span class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+            Sync Active (v4.2)
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl mt-1">
+          Reserve lecture theaters, specialized computer labs, seminar halls, and auditoriums with automated clash detection and dean approval workflows.
+        </p>
+</div>
+<!-- Action Cluster -->
+<div class="flex items-center gap-space-sm shrink-0 flex-wrap">
+<button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>View Space Calendar</span>
+</button>
+<button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Download Schedule (PDF)</span>
+</button>
+<button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-secondary text-on-secondary font-label-md text-label-md shadow-sm hover:bg-secondary-container transition-all" id="openReservationBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Instant Space Reservation</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Operational Metric Tiles & Collision Guard -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Stat 1 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Allocated Spaces</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">meeting_room</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface">328</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">/ 412 units</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-space-sm overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 79.6%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1.5">79.6% peak utilization (Active Term)</span>
+</div>
+<!-- Stat 2 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Active Holds &amp; Approvals</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">pending_actions</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface">14</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-semibold font-code-metric">Urgent (4)</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-space-sm overflow-hidden">
+<div class="bg-on-tertiary-container h-full rounded-full" style="width: 60%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1.5">Avg turnaround 4.2h under Senate SLA</span>
+</div>
+<!-- Stat 3 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Automated Clash Rate</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface">0.00%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-space-sm overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 100%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1.5">Zero overlaps across 1,842 calendar slots</span>
+</div>
+<!-- Stat 4 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">HVAC &amp; Energy Automation</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">bolt</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface">94.8%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Optimal</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-space-sm overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 94.8%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1.5">Pre-cooling queued 45m prior to events</span>
+</div>
+</div>
+<!-- Conflict Shield Strip -->
+<div class="flex items-center justify-between px-space-md py-space-sm rounded-xl bg-surface-container-low shadow-sm mb-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">format_image_left</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Zero Scheduling Clashes Detected across 84 Active Sessions for Selected Window</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary font-code-metric font-semibold">ABET Verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Senate Academic Guidelines 2024-25 • Automatic buffer periods of 15 minutes applied between back-to-back bookings.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Auto-Sync Realtime</span>
+</div>
+<button class="h-7 px-space-sm rounded bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>Audit Rules</span>
+</button>
+</div>
+</div>
+<!-- Workspace Controls: Mode Tabs & Filter Ribbon -->
+<div class="flex flex-col gap-space-sm mb-space-md">
+<!-- Primary View Switcher Pills -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<div class="flex items-center p-1 rounded-xl bg-surface-container-low w-fit">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold shadow-sm transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">grid_view</span>
+<span>Weekly Master Timetable Grid</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">view_timeline</span>
+<span>Space Availability Matrix</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">hourglass_top</span>
+<span>Booking Requests &amp; Approvals Queue</span>
+<span class="px-1.5 py-0.2 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-code-metric">14</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">history</span>
+<span>Historical Bookings</span>
+</button>
+</div>
+<!-- Date Interval Selector & Operational Day Filter -->
+<div class="flex items-center gap-space-xs self-start lg:self-auto">
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<div class="flex items-center gap-space-xs px-space-md h-8 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">calendar_today</span>
+<span class="font-semibold">November 18 – November 24, 2024</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-low text-secondary uppercase font-semibold font-code-metric">Week 12</span>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+<button class="h-8 px-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold transition-colors" type="button">
+          Today
+        </button>
+</div>
+</div>
+<!-- Space Taxonomy Filter Pills -->
+<div class="flex items-center gap-space-xs overflow-x-auto py-1 scrollbar-none">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mr-2 shrink-0">Category:</span>
+<button class="px-space-sm py-1 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold shrink-0 transition-colors" type="button">
+        All Spaces (412)
+      </button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold shrink-0 transition-colors" type="button">
+        Classrooms (180)
+      </button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold shrink-0 transition-colors" type="button">
+        Computer &amp; AI Labs (48)
+      </button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold shrink-0 transition-colors" type="button">
+        Seminar Halls (16)
+      </button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold shrink-0 transition-colors" type="button">
+        Auditoriums (4)
+      </button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold shrink-0 transition-colors" type="button">
+        Conference Rooms (24)
+      </button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold shrink-0 transition-colors" type="button">
+        Sports Facilities (8)
+      </button>
+<div class="ml-auto flex items-center gap-space-xs shrink-0">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">filter_list</span>
+<button class="font-label-sm text-label-sm text-secondary font-semibold hover:underline" type="button">Clear Filters</button>
+</div>
+</div>
+</div>
+<!-- Schedule Matrix: 08:00 to 20:00 Horizontal Grid -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest shadow-sm mb-space-lg overflow-hidden">
+<!-- Header of the Grid with Timeline Axis -->
+<div class="p-space-md bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Wednesday Schedule Master</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface font-code-metric">Nov 20, 2024</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">• High-demand academic venues</span>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-secondary"></span>
+<span>Academic Lectures</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-primary-container"></span>
+<span>Institutional / Senate</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-surface-container-high"></span>
+<span>Student Clubs / Rehearsals</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-surface-container-low"></span>
+<span>Open / Available</span>
+</div>
+</div>
+</div>
+<!-- Timeline Grid Area -->
+<div class="overflow-x-auto">
+<div class="min-w-[1020px] flex flex-col">
+<!-- Time Axis Marks (08:00 - 20:00 = 12 Hours) -->
+<div class="grid grid-cols-12 bg-surface-container-low/60 py-2 text-center font-label-sm text-label-sm text-on-surface-variant font-code-metric pl-72 pr-4">
+<div>08:00</div>
+<div>09:00</div>
+<div>10:00</div>
+<div>11:00</div>
+<div>12:00</div>
+<div>13:00</div>
+<div>14:00</div>
+<div>15:00</div>
+<div>16:00</div>
+<div>17:00</div>
+<div>18:00</div>
+<div>19:00</div>
+</div>
+<!-- Row 1: Tagore Memorial Auditorium -->
+<div class="flex items-stretch hover:bg-surface transition-colors py-2 px-space-sm">
+<!-- Space Metadata Column (Width 280px) -->
+<div class="w-72 shrink-0 pr-space-md flex flex-col justify-center">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Tagore Memorial Auditorium</span>
+<span class="material-symbols-outlined text-[14px] text-secondary" title="Air-conditioned • Stage 40x24ft">theater_comedy</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>Main Quadrangle, Bldg A</span>
+<span>•</span>
+<span class="font-code-metric">Cap: 800</span>
+<span class="px-1 rounded bg-surface-container text-on-surface font-code-metric text-[10px]">Tier 1</span>
+</div>
+</div>
+<!-- Slot Tracks (12 Columns = 12 Hours: 08:00 to 20:00) -->
+<div class="flex-1 grid grid-cols-12 gap-1 relative h-16 bg-surface-container-low/40 rounded-lg p-1 items-center">
+<!-- 08:00 - 09:00 Available -->
+<div class="col-span-1 h-full rounded flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant/40 group hover:bg-surface-container transition-colors cursor-pointer">
+<span class="group-hover:opacity-100 opacity-0 text-[10px] font-semibold text-secondary">+ Reserve</span>
+</div>
+<!-- 09:00 - 13:00 (4 cols): Apex Annual Tech Colloquium -->
+<div class="col-span-4 h-full rounded-lg bg-secondary text-on-secondary p-2 flex flex-col justify-between shadow-sm overflow-hidden cursor-pointer hover:brightness-105 transition-all">
+<div class="flex items-center justify-between gap-1">
+<span class="font-label-sm text-label-sm font-semibold truncate leading-tight">Apex Annual Tech Colloquium</span>
+<span class="material-symbols-outlined text-[14px] shrink-0">lock</span>
+</div>
+<div class="flex items-center justify-between text-[10px] text-on-secondary-container">
+<span class="font-code-metric">09:00 – 13:00</span>
+<span>Dean Academic Endorsed</span>
+</div>
+</div>
+<!-- 13:00 - 15:00 (2 cols): Available -->
+<div class="col-span-2 h-full rounded-lg bg-surface-container/60 hover:bg-surface-container p-2 flex flex-col justify-center items-center cursor-pointer transition-colors text-center">
+<span class="font-label-sm text-label-sm font-semibold text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">add_circle</span> Available Window
+              </span>
+<span class="text-[10px] text-on-surface-variant font-code-metric">13:00 – 15:00 (2.0 hrs)</span>
+</div>
+<!-- 15:00 - 19:00 (4 cols): Cultural Troupe Rehearsal -->
+<div class="col-span-4 h-full rounded-lg bg-surface-container-high text-on-surface p-2 flex flex-col justify-between shadow-sm overflow-hidden cursor-pointer hover:bg-surface-variant transition-all">
+<div class="flex items-center justify-between gap-1">
+<span class="font-label-sm text-label-sm font-semibold truncate leading-tight">Cultural Troupe Rehearsal (Annual Gala)</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant shrink-0">music_note</span>
+</div>
+<div class="flex items-center justify-between text-[10px] text-on-surface-variant">
+<span class="font-code-metric">15:00 – 19:00</span>
+<span>Student Affairs • Reserved</span>
+</div>
+</div>
+<!-- 19:00 - 20:00 (1 col): Maintenance/Sanitize -->
+<div class="col-span-1 h-full rounded flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant/40 bg-surface-container-low/80">
+<span class="text-[10px] font-code-metric">Sanitize</span>
+</div>
+</div>
+</div>
+<!-- Row 2: Turing Hall 102 -->
+<div class="flex items-stretch hover:bg-surface transition-colors py-2 px-space-sm">
+<div class="w-72 shrink-0 pr-space-md flex flex-col justify-center">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Turing Hall 102</span>
+<span class="material-symbols-outlined text-[14px] text-secondary" title="Smart AV Podiums • Recorders">videocam</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>CS Complex, Ground Fl</span>
+<span>•</span>
+<span class="font-code-metric">Cap: 120</span>
+<span class="px-1 rounded bg-surface-container text-on-surface font-code-metric text-[10px]">Tier 2</span>
+</div>
+</div>
+<div class="flex-1 grid grid-cols-12 gap-1 relative h-16 bg-surface-container-low/40 rounded-lg p-1 items-center">
+<!-- 08:00 - 09:00 Open -->
+<div class="col-span-1 h-full rounded flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant/40 group hover:bg-surface-container transition-colors cursor-pointer">
+<span class="group-hover:opacity-100 opacity-0 text-[10px] font-semibold text-secondary">+ Reserve</span>
+</div>
+<!-- 09:00 - 11:00 (2 cols): CS-301 Lecture -->
+<div class="col-span-2 h-full rounded-lg bg-secondary text-on-secondary p-2 flex flex-col justify-between shadow-sm overflow-hidden cursor-pointer hover:brightness-105 transition-all">
+<span class="font-label-sm text-label-sm font-semibold truncate leading-tight">CS-301: Algorithms &amp; Data</span>
+<span class="text-[10px] text-on-secondary-container font-code-metric">09:00 – 11:00 • Regular</span>
+</div>
+<!-- 11:00 - 11:30 gap + 11:30 - 13:00 IEEE Student Chapter (Approx 2 cols) -->
+<div class="col-span-2 h-full rounded-lg bg-surface-container-high text-on-surface p-2 flex flex-col justify-between shadow-sm overflow-hidden cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold truncate leading-tight">IEEE Student Chapter Meeting</span>
+<span class="text-[10px] text-on-surface-variant font-code-metric">11:30 – 13:00 (Req #449)</span>
+</div>
+<!-- 13:00 - 14:00 (1 col): Lunch Buffer -->
+<div class="col-span-1 h-full rounded flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant/40 hover:bg-surface-container cursor-pointer transition-colors">
+<span class="text-[10px] font-code-metric">Open</span>
+</div>
+<!-- 14:00 - 17:00 (3 cols): Mid-term Make-up Test -->
+<div class="col-span-3 h-full rounded-lg bg-primary-container text-on-primary p-2 flex flex-col justify-between shadow-sm overflow-hidden cursor-pointer hover:bg-primary transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold truncate leading-tight">Mid-Term Make-up Test (Proctored)</span>
+<span class="material-symbols-outlined text-[14px]">assignment_turned_in</span>
+</div>
+<span class="text-[10px] text-on-primary-container font-code-metric">14:00 – 17:00 • Dean Clearance</span>
+</div>
+<!-- 17:00 - 20:00 (3 cols): Open Slots -->
+<div class="col-span-3 h-full rounded-lg bg-surface-container/60 hover:bg-surface-container p-2 flex flex-col justify-center items-center cursor-pointer transition-colors text-center">
+<span class="font-label-sm text-label-sm font-semibold text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">add_circle</span> Available Evening Block
+              </span>
+<span class="text-[10px] text-on-surface-variant font-code-metric">17:00 – 20:00 (3.0 hrs)</span>
+</div>
+</div>
+</div>
+<!-- Row 3: Babbage Lab 101 (GPU Cluster) -->
+<div class="flex items-stretch hover:bg-surface transition-colors py-2 px-space-sm">
+<div class="w-72 shrink-0 pr-space-md flex flex-col justify-center">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Babbage Lab 101 (GPU)</span>
+<span class="material-symbols-outlined text-[14px] text-secondary" title="NVIDIA RTX Clusters • Dual 10GbE">memory</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>Engineering North, 1st Fl</span>
+<span>•</span>
+<span class="font-code-metric">Cap: 40</span>
+<span class="px-1 rounded bg-surface-container text-on-surface font-code-metric text-[10px]">High Spec</span>
+</div>
+</div>
+<div class="flex-1 grid grid-cols-12 gap-1 relative h-16 bg-surface-container-low/40 rounded-lg p-1 items-center">
+<!-- 08:00 - 10:00 (2 cols): Open -->
+<div class="col-span-2 h-full rounded-lg bg-surface-container/60 hover:bg-surface-container p-2 flex flex-col justify-center items-center cursor-pointer transition-colors text-center">
+<span class="font-label-sm text-label-sm font-semibold text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">add_circle</span> Open Lab
+              </span>
+<span class="text-[10px] text-on-surface-variant font-code-metric">08:00 – 10:00</span>
+</div>
+<!-- 10:00 - 13:00 (3 cols): AI-301 Practicum -->
+<div class="col-span-3 h-full rounded-lg bg-secondary text-on-secondary p-2 flex flex-col justify-between shadow-sm overflow-hidden cursor-pointer hover:brightness-105 transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold truncate leading-tight">AI-301 Deep Learning Practicum</span>
+<span class="material-symbols-outlined text-[14px]">terminal</span>
+</div>
+<span class="text-[10px] text-on-secondary-container font-code-metric">10:00 – 13:00 • Prof. Chang</span>
+</div>
+<!-- 13:00 - 14:00 (1 col): System Cool-down -->
+<div class="col-span-1 h-full rounded flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant/40 bg-surface-container-low/80">
+<span class="text-[10px] font-code-metric">Cluster Sync</span>
+</div>
+<!-- 14:00 - 18:00 (4 cols): Autonomous Robotics Club Hackathon -->
+<div class="col-span-4 h-full rounded-lg bg-surface-container-high text-on-surface p-2 flex flex-col justify-between shadow-sm overflow-hidden cursor-pointer hover:bg-surface-variant transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold truncate leading-tight">Autonomous Robotics Club Hackathon</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">smart_toy</span>
+</div>
+<span class="text-[10px] text-on-surface-variant font-code-metric">14:00 – 18:00 • 38 Workstations Booked</span>
+</div>
+<!-- 18:00 - 20:00 (2 cols): Open -->
+<div class="col-span-2 h-full rounded flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant/40 hover:bg-surface-container cursor-pointer transition-colors">
+<span class="text-[10px] font-code-metric font-semibold text-secondary">+ Evening Slot Available</span>
+</div>
+</div>
+</div>
+<!-- Row 4: Ramanujan Executive Senate Chamber -->
+<div class="flex items-stretch hover:bg-surface transition-colors py-2 px-space-sm">
+<div class="w-72 shrink-0 pr-space-md flex flex-col justify-center">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Ramanujan Senate Chamber</span>
+<span class="material-symbols-outlined text-[14px] text-secondary" title="Classified Audio Scramble • Presidential Suite">gavel</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>Admin Building, Floor 4</span>
+<span>•</span>
+<span class="font-code-metric">Cap: 35</span>
+<span class="px-1 rounded bg-error-container text-on-error-container font-code-metric text-[10px]">Restricted</span>
+</div>
+</div>
+<div class="flex-1 grid grid-cols-12 gap-1 relative h-16 bg-surface-container-low/40 rounded-lg p-1 items-center">
+<!-- 08:00 - 11:00 (3 cols): Open Restricted -->
+<div class="col-span-3 h-full rounded flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant/40">
+<span class="text-[10px] font-code-metric">Available (Dean Authorization Req.)</span>
+</div>
+<!-- 11:00 - 12:30 (approx 2 cols): Dean Academic Council Meeting -->
+<div class="col-span-2 h-full rounded-lg bg-primary text-on-primary p-2 flex flex-col justify-between shadow-sm overflow-hidden cursor-pointer">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold truncate leading-tight">Dean Academic Council</span>
+<span class="material-symbols-outlined text-[14px]">shield</span>
+</div>
+<span class="text-[10px] text-on-primary-fixed-variant font-code-metric">11:00 – 12:30 • AY-24 Policy</span>
+</div>
+<!-- 12:30 - 15:00 (2 cols): Recess -->
+<div class="col-span-2 h-full rounded flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant/40">
+<span class="text-[10px] font-code-metric">Buffer Window</span>
+</div>
+<!-- 15:00 - 16:30 (2 cols): Finance Committee Audit -->
+<div class="col-span-2 h-full rounded-lg bg-primary-container text-on-primary p-2 flex flex-col justify-between shadow-sm overflow-hidden cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold truncate leading-tight">Finance Committee Audit</span>
+<span class="text-[10px] text-on-primary-container font-code-metric">15:00 – 16:30 • Internal Auditors</span>
+</div>
+<!-- 16:30 - 20:00 (3 cols): Locked -->
+<div class="col-span-3 h-full rounded flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant/40">
+<span class="text-[10px] font-code-metric">Locked for Operations</span>
+</div>
+</div>
+</div>
+<!-- Row 5: Dirac Seminar Hall 201 -->
+<div class="flex items-stretch hover:bg-surface transition-colors py-2 px-space-sm">
+<div class="w-72 shrink-0 pr-space-md flex flex-col justify-center">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dirac Seminar Hall 201</span>
+<span class="material-symbols-outlined text-[14px] text-secondary" title="Acoustically Treated • Dual Projection">podium</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>Science Block, 2nd Fl</span>
+<span>•</span>
+<span class="font-code-metric">Cap: 150</span>
+<span class="px-1 rounded bg-surface-container text-on-surface font-code-metric text-[10px]">Tier 2</span>
+</div>
+</div>
+<div class="flex-1 grid grid-cols-12 gap-1 relative h-16 bg-surface-container-low/40 rounded-lg p-1 items-center">
+<!-- 08:00 - 13:00 (5 cols): Available Morning Slot -->
+<div class="col-span-5 h-full rounded-lg bg-surface-container/60 hover:bg-surface-container p-2 flex flex-col justify-center items-center cursor-pointer transition-colors text-center">
+<span class="font-label-sm text-label-sm font-semibold text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">add_circle</span> Available for Seminars &amp; Defenses
+              </span>
+<span class="text-[10px] text-on-surface-variant font-code-metric">08:00 – 13:00 (5.0 hrs total)</span>
+</div>
+<!-- 13:00 - 16:00 (3 cols): Guest Lecture Dr. K. Radhakrishnan, ISRO -->
+<div class="col-span-3 h-full rounded-lg bg-secondary text-on-secondary p-2 flex flex-col justify-between shadow-sm overflow-hidden cursor-pointer hover:brightness-105 transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold truncate leading-tight">Keynote: Dr. K. Radhakrishnan (ISRO)</span>
+<span class="material-symbols-outlined text-[14px]">stars</span>
+</div>
+<span class="text-[10px] text-on-secondary-container font-code-metric">13:00 – 16:00 • Physics &amp; Aerospace Dept</span>
+</div>
+<!-- 16:00 - 20:00 (4 cols): Open Evening -->
+<div class="col-span-4 h-full rounded-lg bg-surface-container/60 hover:bg-surface-container p-2 flex flex-col justify-center items-center cursor-pointer transition-colors text-center">
+<span class="font-label-sm text-label-sm font-semibold text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">add_circle</span> Open Evening Slot
+              </span>
+<span class="text-[10px] text-on-surface-variant font-code-metric">16:00 – 20:00 (4.0 hrs)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Timeline Footer with Legend and Micro Telemetry -->
+<div class="p-space-sm bg-surface-container-low flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span>Click any open block to initiate quick instant booking reservation.</span>
+<span>•</span>
+<span class="font-code-metric text-secondary">Grid Refresh Frequency: 30s</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="hover:text-on-surface transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">refresh</span>
+<span>Force Sync</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom Workspace Split: Approval Queue & Detailed Space Ledger -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- Left Column: Pending Space Approval Queue Table (Span 8) -->
+<div class="lg:col-span-8 flex flex-col rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<!-- Table Header Bar -->
+<div class="p-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Space Reservation Approval Ledger</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Requires operations endorsement or dean clearance under AY 24-25 provisions.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sort by:</span>
+<select class="h-8 px-space-sm bg-surface-container-low rounded-lg font-label-sm text-label-sm text-on-surface outline-none cursor-pointer">
+<option>Highest Urgency / Earliest Start</option>
+<option>Headcount Capacity (High-to-Low)</option>
+<option>Pending Clearance Duration</option>
+</select>
+</div>
+</div>
+<!-- High-Density Reservation Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider h-9">
+<th class="py-2 px-space-md font-semibold">Booking ID &amp; Space</th>
+<th class="py-2 px-space-md font-semibold">Requester &amp; Dept</th>
+<th class="py-2 px-space-md font-semibold">Time Window</th>
+<th class="py-2 px-space-md font-semibold">Purpose &amp; Requisition</th>
+<th class="py-2 px-space-md font-semibold">Status</th>
+<th class="py-2 px-space-md font-semibold text-right">Clearance Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-code-metric text-secondary font-semibold">#RSV-2024-8841</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Tagore Memorial Auditorium</span>
+<span class="text-on-surface-variant text-[11px]">Main Quad • Floor 1</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dr. Elena Rostova</span>
+<span class="text-on-surface-variant text-[11px]">Dept of Computer Science</span>
+<span class="font-code-metric text-[10px] text-on-surface-variant">Est. Headcount: 450</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface font-code-metric">Nov 22, 2024</span>
+<span class="font-code-metric text-[12px] text-on-surface-variant">14:00 – 18:00 (4 hrs)</span>
+<span class="text-[10px] text-secondary font-semibold">One-time Event</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col max-w-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">National AI Hackathon Final Presentations</span>
+<span class="text-on-surface-variant text-[11px] truncate">Dual 4K Projectors, 4x Cordless Mics, HVAC Pre-cooling</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Pending Dean
+                </span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="h-7 px-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" title="Automated Clash Diagnostics" type="button">
+                    Check
+                  </button>
+<button class="h-7 px-2.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold hover:bg-secondary-container transition-colors shadow-sm" type="button">
+                    Approve
+                  </button>
+<button class="w-7 h-7 rounded hover:bg-surface-container text-error flex items-center justify-center transition-colors" title="Decline Request" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-low/20">
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-code-metric text-secondary font-semibold">#RSV-2024-8846</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dirac Seminar Hall 201</span>
+<span class="text-on-surface-variant text-[11px]">Science Block • Floor 2</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Prof. Sean Callahan</span>
+<span class="text-on-surface-variant text-[11px]">Quantum Information Lab</span>
+<span class="font-code-metric text-[10px] text-on-surface-variant">Est. Headcount: 85</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface font-code-metric">Nov 23, 2024</span>
+<span class="font-code-metric text-[12px] text-on-surface-variant">10:00 – 12:30 (2.5 hrs)</span>
+<span class="text-[10px] text-on-surface-variant">Doctoral Defense</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col max-w-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">PhD Thesis Defense: Qubit Decoherence</span>
+<span class="text-on-surface-variant text-[11px] truncate">Zoom Room Bridge + Laser Pointer + Recording</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Confirmed
+                </span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="h-7 px-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                    Passcode
+                  </button>
+<button class="h-7 px-2.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors" type="button">
+                    Manage
+                  </button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-code-metric text-secondary font-semibold">#RSV-2024-8850</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Ramanujan Senate Chamber</span>
+<span class="text-on-surface-variant text-[11px]">Admin Quad • Floor 4</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Office of the Provost</span>
+<span class="text-on-surface-variant text-[11px]">Executive Secretariat</span>
+<span class="font-code-metric text-[10px] text-on-surface-variant">Est. Headcount: 22</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface font-code-metric">Nov 25, 2024</span>
+<span class="font-code-metric text-[12px] text-on-surface-variant">14:00 – 16:30 (2.5 hrs)</span>
+<span class="text-[10px] text-secondary font-semibold">Executive Session</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col max-w-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">AY 2025 Budget Allocation Review</span>
+<span class="text-on-surface-variant text-[11px] truncate">Secure Transcription Hub • Encrypted Mesh Link</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Pending Clearance
+                </span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="h-7 px-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                    Audit
+                  </button>
+<button class="h-7 px-2.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold hover:bg-secondary-container transition-colors shadow-sm" type="button">
+                    Endorse
+                  </button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Ledger Footnote & Pagination -->
+<div class="p-space-sm bg-surface-container-low flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Showing 3 of 14 outstanding bookings • All reservations subject to ABET fire capacity thresholds</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-2 py-1 rounded bg-surface-container-lowest hover:bg-surface-container text-on-surface transition-colors font-semibold" type="button">1</button>
+<button class="px-2 py-1 rounded hover:bg-surface-container text-on-surface-variant transition-colors" type="button">2</button>
+<button class="px-2 py-1 rounded hover:bg-surface-container text-on-surface-variant transition-colors" type="button">Next &gt;</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Quick Reservation Studio Form Panel (Span 4) -->
+<div class="lg:col-span-4 flex flex-col rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden" id="quickReservationDrawer">
+<!-- Form Header -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">edit_calendar</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">New Space Reservation Form</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold font-code-metric">
+          Step 1 of 2
+        </span>
+</div>
+<!-- Form Body Container -->
+<div class="p-space-md flex flex-col gap-space-md flex-1">
+<!-- Input: Select Space -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">
+            Select Space Venue
+          </label>
+<div class="relative">
+<select class="w-full h-9 px-space-sm bg-surface rounded-lg font-body-sm text-body-sm text-on-surface outline-none appearance-none cursor-pointer focus:bg-surface-container-lowest transition-colors pr-8">
+<option selected="">Tagore Memorial Auditorium (Cap: 800)</option>
+<option>Turing Hall 102 (Cap: 120)</option>
+<option>Babbage Lab 101 [GPU Cluster] (Cap: 40)</option>
+<option>Ramanujan Executive Senate Chamber (Cap: 35)</option>
+<option>Dirac Seminar Hall 201 (Cap: 150)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2 pointer-events-none text-on-surface-variant text-[18px]">unfold_more</span>
+</div>
+</div>
+<!-- Input: Date & Recurring -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">
+              Reservation Date
+            </label>
+<input class="h-9 px-space-sm bg-surface rounded-lg font-body-sm text-body-sm text-on-surface outline-none font-code-metric focus:bg-surface-container-lowest transition-colors" type="text" value="Nov 22, 2024"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">
+              Recurrence Type
+            </label>
+<select class="h-9 px-space-sm bg-surface rounded-lg font-body-sm text-body-sm text-on-surface outline-none cursor-pointer">
+<option>One-time Booking</option>
+<option>Weekly (Full Term)</option>
+<option>Bi-weekly Academic</option>
+</select>
+</div>
+</div>
+<!-- Input: Time Slot -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">
+            Time Slot Window
+          </label>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex items-center gap-1 bg-surface px-space-sm rounded-lg h-9">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">From:</span>
+<input class="w-full bg-transparent font-code-metric text-body-sm text-on-surface outline-none font-semibold" type="text" value="14:00"/>
+</div>
+<div class="flex items-center gap-1 bg-surface px-space-sm rounded-lg h-9">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">To:</span>
+<input class="w-full bg-transparent font-code-metric text-body-sm text-on-surface outline-none font-semibold" type="text" value="18:00"/>
+</div>
+</div>
+</div>
+<!-- Input: Purpose & Justification -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">
+            Purpose &amp; Academic Justification
+          </label>
+<textarea class="w-full p-space-sm bg-surface rounded-lg font-body-sm text-body-sm text-on-surface outline-none focus:bg-surface-container-lowest transition-colors resize-none" rows="2">National AI Hackathon Final Presentations</textarea>
+</div>
+<!-- Headcount & Equipment Requirements -->
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="flex flex-col gap-1 col-span-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold truncate">
+              Headcount
+            </label>
+<input class="h-9 px-space-sm bg-surface rounded-lg font-body-sm text-body-sm text-on-surface outline-none font-code-metric" type="number" value="450"/>
+</div>
+<div class="flex flex-col gap-1 col-span-2">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold truncate">
+              HVAC Trigger
+            </label>
+<div class="flex items-center h-9 px-space-sm rounded-lg bg-surface text-on-surface text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary mr-1.5">ac_unit</span>
+<span class="font-code-metric text-[12px]">Pre-cool @ 13:00</span>
+</div>
+</div>
+</div>
+<!-- Equipment Selection Badges -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">
+            Equipment Requisitions
+          </label>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+              PA System (4 Mics)
+              <span class="material-symbols-outlined text-[14px] cursor-pointer">close</span>
+</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+              Stage Lighting Rig
+              <span class="material-symbols-outlined text-[14px] cursor-pointer">close</span>
+</span>
+<span class="px-2 py-1 rounded bg-surface text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container cursor-pointer flex items-center gap-1">
+              + Add Rig
+            </span>
+</div>
+</div>
+<!-- Realtime Collision Engine Indicator -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Conflict Check Result: Verified Free</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Slot completely free with 60m clearance from next scheduled event. Ready for operations clearance dispatch.</p>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="p-space-md bg-surface-container-low flex flex-col gap-space-xs mt-auto">
+<button class="w-full h-10 rounded-lg bg-secondary hover:bg-secondary-container text-on-secondary font-label-md text-label-md font-semibold transition-all shadow-sm flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Submit for Operations Clearance</span>
+</button>
+<button class="w-full h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors text-center" type="button">
+          Cancel &amp; Reset
+        </button>
+</div>
+</div>
+</div>
+<!-- Venue Spec Gallery Mosaic (Visual Richness Pillar) -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest shadow-sm p-space-lg mb-space-lg">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">High-Capacity Venue Architecture &amp; AV Inventory</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Verified campus spaces equipped with synchronized lecture capture and dynamic stage configurations.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold cursor-pointer hover:underline">View Architectural Floorplans (DWG/PDF)</span>
+</div>
+</div>
+<!-- Image Mosaic: 3 Bespoke Campus Venues -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Venue 1: Tagore Memorial Auditorium -->
+<div class="group relative rounded-xl overflow-hidden bg-surface-container flex flex-col shadow-sm">
+<div class="h-44 w-full relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A grand university auditorium interior featuring rich warm acoustic wood paneling, steep amphitheater seating with dark ergonomic chairs, a large proscenium presentation stage with crisp theatrical spotlights, and dual massive projection screens displaying technological diagrams under elegant recessed architectural ceiling lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG7cSQKROYMpL2XaEgFOgN46VqPsJscNCwMPxxGFASicWJFoOfAEANN4ZIu4gVh4VKpJ5qXFKcz_Y3ycomU_h-fXIhuXleXBGSr3GCjb8ChvdGK4ydCybSlvK7gbgCRKH59wbn8C3YFCWiwOnF4SiMZSM04dGgv935ODAwgIKgLouqcGU5iji3oLLOIIhJ5f3kCiwX1gEa34zBOtYU0zC-FUPif2jS3JbJ73uJ0pk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<span class="absolute top-space-sm left-space-sm px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-semibold">
+            Tagore Auditorium
+          </span>
+<span class="absolute bottom-space-sm left-space-sm text-on-primary font-headline-sm text-headline-sm">
+            800 Capacity
+          </span>
+</div>
+<div class="p-space-sm flex flex-col justify-between flex-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span>Stage 40x24ft • 4K Laser Christie</span>
+<span class="font-code-metric font-semibold text-secondary">Status: Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Equipped for symposia, convocation ceremonies, and university-wide hackathons.</p>
+</div>
+</div>
+<!-- Venue 2: Turing Computational Lecture Hall -->
+<div class="group relative rounded-xl overflow-hidden bg-surface-container flex flex-col shadow-sm">
+<div class="h-44 w-full relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A state-of-the-art modern university lecture theater with tiered seating, curved oak student desks, integrated laptop power points, high-contrast digital smartboards, clean minimalist Scandinavian architectural design, and cool white LED cove illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-6pSKJlPb9MnHer-pX8D5goKVKJZclQ4uGoccdSHGLLGO20dlLMImoS3bT-75LDrj36qpoeXrRYHyuZO6aV1onjawolUIKjNcARXKDH8J5sUuoQxtql8rrvST6TM7N9aD4uIfz-Yt2IfNDxDtrsN-_vFfpz4og6FF7qc53btY2-cVxAG3M22nkNp4n2tYtdQ364gtFJe2QQ07-XN1-3IJnrsY2Xq22w7NU7db8vE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<span class="absolute top-space-sm left-space-sm px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-semibold">
+            Turing Hall 102
+          </span>
+<span class="absolute bottom-space-sm left-space-sm text-on-primary font-headline-sm text-headline-sm">
+            120 Capacity
+          </span>
+</div>
+<div class="p-space-sm flex flex-col justify-between flex-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span>Dual Smartboards • HD PTZ Cam</span>
+<span class="font-code-metric font-semibold text-secondary">Status: Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Ideal for STEM lectures, computer vision seminars, and hybrid multi-campus symposia.</p>
+</div>
+</div>
+<!-- Venue 3: Babbage GPU AI Research Lab -->
+<div class="group relative rounded-xl overflow-hidden bg-surface-container flex flex-col shadow-sm">
+<div class="h-44 w-full relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A futuristic university AI research laboratory and computer cluster room with dual-monitor workstation desks, glowing blue server rack glass enclosure in the background, sleek concrete floors, ergonomic task chairs, and collaborative glass brainstorming boards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjxMeJC7M9kZSiPdNeW4DVyGvyKdBweDBGtLa7AbMlh9P8gKQ-AgQvl_y7xqE1lH_BXJdJ9F6mtMhEiJLV3TADf9E8iwAvFM55YOH_WKO_HtjwJ9iDQsB4-Dlif-GBEA6rrdu3KXuyuojhuVyWg2FUSiPeyM02PkzvTFWsnssjSA3xcAXfV7gm0S3jz_Vptqk2iWDTdpLc_dbPvzmcMxbTjiwQrUJzD7jZOM_PwBA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<span class="absolute top-space-sm left-space-sm px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-semibold">
+            Babbage Lab 101
+          </span>
+<span class="absolute bottom-space-sm left-space-sm text-on-primary font-headline-sm text-headline-sm">
+            40 GPU Nodes
+          </span>
+</div>
+<div class="p-space-sm flex flex-col justify-between flex-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span>RTX 4090 Rigs • 10GbE Switch</span>
+<span class="font-code-metric font-semibold text-secondary">Status: Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Configured for intensive AI model fine-tuning, robotics simulations, and student codethons.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple Micro-interaction script for instant reservation scroll-focus
+  const openReservationBtn = document.getElementById('openReservationBtn');
+  const reservationDrawer = document.getElementById('quickReservationDrawer');
+
+  if (openReservationBtn && reservationDrawer) {
+    openReservationBtn.addEventListener('click', () => {
+      reservationDrawer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      reservationDrawer.classList.add('ring-2', 'ring-secondary');
+      setTimeout(() => {
+        reservationDrawer.classList.remove('ring-2', 'ring-secondary');
+      }, 1500);
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-lowest py-space-sm px-gutter-desktop shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-space-sm font-label-sm text-label-sm"><span>Apex Institute of Technology • Institutional OS System</span><span>•</span><span>Enterprise Tier • 98.4% uptime</span></div><div class="flex items-center gap-space-md font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" data-path="institutional-support" href="#">Institutional Support</a><a class="hover:text-on-surface transition-colors" data-path="privacy-compliance" href="#">FERPA &amp; Privacy</a><span class="font-code-metric text-on-surface-variant">Apex-Node #US-CAMPUS-01</span></div></div></footer></div></body></html>

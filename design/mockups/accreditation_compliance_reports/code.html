@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-variant":"#d3e4fe","on-error-container":"#93000a","primary-fixed":"#dae2fd","secondary-fixed":"#e2dfff","surface-container-lowest":"#ffffff","inverse-surface":"#213145","background":"#f8f9ff","tertiary":"#000000","surface-container":"#e5eeff","on-tertiary-fixed":"#001e2f","secondary":"#4b41e1","outline":"#76777d","on-secondary":"#ffffff","on-tertiary-fixed-variant":"#004c6e","on-tertiary":"#ffffff","surface-tint":"#565e74","surface-dim":"#cbdbf5","on-secondary-fixed":"#0f0069","tertiary-fixed":"#c9e6ff","inverse-on-surface":"#eaf1ff","on-background":"#0b1c30","primary-fixed-dim":"#bec6e0","error":"#ba1a1a","surface":"#f8f9ff","on-primary":"#ffffff","on-tertiary-container":"#008cc7","on-secondary-fixed-variant":"#3323cc","surface-container-high":"#dce9ff","error-container":"#ffdad6","on-primary-fixed-variant":"#3f465c","surface-container-highest":"#d3e4fe","outline-variant":"#c6c6cd","tertiary-container":"#001e2f","on-error":"#ffffff","on-surface-variant":"#45464d","surface-container-low":"#eff4ff","secondary-fixed-dim":"#c3c0ff","on-surface":"#0b1c30","inverse-primary":"#bec6e0","primary":"#000000","tertiary-fixed-dim":"#89ceff","secondary-container":"#645efb","primary-container":"#131b2e","on-primary-fixed":"#131b2e","on-primary-container":"#7c839b","on-secondary-container":"#fffbff","surface-bright":"#f8f9ff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-md":"0.75rem","space-lg":"1.25rem","gutter":"1rem","margin":"1rem","space-xl":"2rem","gutter-desktop":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","margin-desktop":"2rem"},fontFamily:{"label-sm":["Geist"],"code-metric":["Geist"],"body-md":["Geist"],"headline-lg":["Geist"],"label-md":["Geist"],"headline-xl-mobile":["Geist"],"body-sm":["Geist"],"body-lg":["Geist"],"headline-sm":["Geist"],"headline-xl":["Geist"]},fontSize:{"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.04em","fontWeight":"600"}],"code-metric":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.02em","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.006em","fontWeight":"400"}],"headline-lg":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.02em","fontWeight":"600"}],"label-md":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"-0.005em","fontWeight":"500"}],"headline-xl-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.02em","fontWeight":"600"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"-0.011em","fontWeight":"400"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.025em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-low flex flex-col z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)] overflow-y-auto"><div class="px-space-lg pt-space-lg pb-space-md flex items-center gap-space-sm bg-surface-container-low"><div class="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center shadow-[0_1px_3px_rgba(0,0,0,0.08)]"><span class="material-symbols-outlined text-on-secondary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface truncate">Apex OS</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric">#US-01</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Apex Institute of Technology</span></div></div><div class="px-space-md py-space-xs"><div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04)] flex items-center justify-between"><div class="flex items-center gap-space-xs min-w-0"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface truncate font-semibold">AY 2024–2025</span><span class="text-outline text-label-sm">•</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Sem 1 Fall</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-secondary font-semibold">LIVE</span></div></div><nav class="flex-1 px-space-md py-space-sm space-y-space-md" data-active-classes="bg-secondary-container text-on-secondary-container font-semibold rounded-lg"><div class="space-y-space-xs"><div class="px-space-sm py-1 flex items-center justify-between font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold"><span>Reports &amp; Analytics</span><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span></div><div class="pl-space-sm space-y-0.5"><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="academic-analytics" href="#"><span class="truncate">Academic Analytics</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="student-analytics" href="#"><span class="truncate">Student Analytics</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="faculty-hr-analytics" href="#"><span class="truncate">Faculty &amp; HR Analytics</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="finance-analytics" href="#"><span class="truncate">Finance Analytics</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="attendance-exam-analytics" href="#"><span class="truncate">Attendance &amp; Examination Analytics</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="placement-and-alumni-analytics" href="#"><span class="truncate">Placement &amp; Alumni Analytics</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="custom-report-builder" href="#"><span class="truncate">Custom Report Builder</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="scheduled-reports-and-data-exports" href="#"><span class="truncate">Scheduled Reports &amp; Data Exports</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="accreditation-and-compliance-reports" href="#"><span class="truncate">Accreditation &amp; Compliance Reports</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="data-quality-and-insights" href="#"><span class="truncate">Data Quality &amp; Insights</span></a></div></div><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Academic Operations</div><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="overview" href="#"><span class="truncate">Overview</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="academics" href="#"><span class="truncate">Academics</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="students" href="#"><span class="truncate">Students</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="faculty-and-staff" href="#"><span class="truncate">Faculty &amp; Staff</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="attendance" href="#"><span class="truncate">Attendance</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="examinations" href="#"><span class="truncate">Examinations</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Institutional Services</div><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="finance" href="#"><span class="truncate">Finance</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="campus-operations" href="#"><span class="truncate">Campus Operations</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="student-life-and-activities" href="#"><span class="truncate">Student Life &amp; Activities</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="placements-and-alumni" href="#"><span class="truncate">Placements &amp; Alumni</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Communication</div><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="sms-management" href="#"><span class="truncate">SMS Management</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="announcements-and-circulars" href="#"><span class="truncate">Announcements &amp; Circulars</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="email-management" href="#"><span class="truncate">Email Management</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">System Governance</div><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="administration" href="#"><span class="truncate">Administration</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="settings" href="#"><span class="truncate">Settings</span></a></div></nav><div class="p-space-md bg-surface-container-low mt-auto"><div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Core 98.4% uptime</span></div><span class="font-code-metric text-label-sm text-on-surface-variant font-medium">v4.2</span></div></div></aside><div class="pl-72 flex flex-col min-h-screen bg-background"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full h-16 px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-xl"><nav aria-label="Breadcrumb" class="hidden md:flex items-center gap-space-xs text-label-sm font-label-sm text-on-surface-variant shrink-0"><span class="text-on-surface-variant">Apex Institute of Technology</span><span class="text-outline">/</span><span class="text-on-surface font-semibold">Reports &amp; Analytics</span></nav><div class="relative w-full max-w-sm"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full h-9 pl-9 pr-16 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant outline-none focus:ring-1 focus:ring-secondary transition-all shadow-[0_1px_2px_rgba(0,0,0,0.02)]" placeholder="Search reports, metrics, KPIs..." type="text"/><kbd class="absolute right-2.5 top-1/2 -translate-y-1/2 px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric text-label-sm">Cmd+K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-semibold text-on-surface">AY 2024–2025</span><span class="text-outline text-label-sm">•</span><span class="font-label-sm text-label-sm">Sem 1 Fall</span><span class="ml-1 font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-surface-container-highest text-secondary font-medium">ACTIVE</span></div><a class="h-9 px-space-md rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container transition-colors flex items-center gap-space-xs font-label-md text-label-md shadow-[0_1px_3px_rgba(75,65,225,0.25)]" data-path="custom-report-builder" href="#"><span class="material-symbols-outlined text-[16px]">analytics</span><span class="font-medium">Generate Report</span></a><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative w-9 h-9 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center justify-center font-bold">3</span></button><button aria-label="Help &amp; Knowledge Base" class="w-9 h-9 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">help</span></button></div><div class="h-6 w-[1px] bg-surface-container-highest"></div><div class="flex items-center gap-space-sm"><div class="text-right hidden sm:block"><div class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Alistair Finch</div><div class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Dean of Academic Affairs</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_1px_2px_rgba(0,0,0,0.1)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="flex-1 w-full pt-16 bg-background px-gutter-desktop py-space-lg"><div class="flex flex-col w-full space-y-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Institutional Governance</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">DOC-REF: #APEX-SSR-2025-C3</span>
+</div>
+<div class="flex flex-wrap items-baseline gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">Accreditation &amp; Statutory Compliance</h1>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">NAAC Cycle 3 (2024–2029)</span>
+<span class="text-outline text-label-sm">|</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NBA Tier-1 Accredited</span>
+<span class="text-outline text-label-sm">|</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">NIRF 2025 Pending</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Central statutory dossier tracker, self-study automated metrics, criterion audits, and verified quantitative data (QnM/QlM) pipeline.</p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap shrink-0">
+<button class="h-9 px-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">download_for_offline</span>
+<span>Export Audit Pack (.ZIP)</span>
+</button>
+<button class="h-9 px-space-md rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container transition-colors font-label-md text-label-md flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">article</span>
+<span>Generate SSR Dossier</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low p-1 rounded-xl shadow-sm overflow-x-auto">
+<div class="flex items-center gap-1 min-w-max">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold shadow-sm flex items-center gap-2 transition-all" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>NAAC Autonomous Cycle 3</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-secondary text-label-sm font-code-metric">3.78 A++ Proj.</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md transition-colors flex items-center gap-2" type="button">
+<span>NBA (Washington Accord Tier-1)</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant text-label-sm">6 UG Validated</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md transition-colors flex items-center gap-2" type="button">
+<span>NIRF 2025 Data Capture</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant text-label-sm">Rank #28 Engg</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md transition-colors flex items-center gap-2" type="button">
+<span>AICTE Mandatory &amp; UGC Section 2(f)/12(B)</span>
+</button>
+</div>
+<div class="hidden md:flex items-center gap-2 pr-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>Autonomous Engineering Tier-1 Template Active</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-space-sm relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Institutional CGPA Target</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface font-code-metric">3.78</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/ 4.00</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold">Grade A++</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Benchmarked Target: 3.82</span>
+<span class="text-secondary font-semibold font-code-metric">98.9% Alignment</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 94.5%"></div>
+</div>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">trending_up</span>
+<span>+0.16 uplift over NAAC Cycle 2 (3.62 A+)</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-space-sm">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Metric Verification</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface font-code-metric">94.2%</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Ready</span>
+</div>
+</div>
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">fact_check</span>
+</div>
+</div>
+<div class="space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Validated Records</span>
+<span class="font-code-metric text-on-surface font-medium">6,420 / 6,810</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full" style="width: 94.2%"></div>
+</div>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">390 Quantitative Metrics flagged in audit check</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-space-sm">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Pending Review Dockets</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface font-code-metric">28</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">Sign-off Req.</span>
+</div>
+</div>
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[20px]">signature</span>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Dean Sign-off: <strong class="text-on-surface font-code-metric">19</strong></span>
+<span>Registrar: <strong class="text-on-surface font-code-metric">9</strong></span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-error">notification_important</span>
+<span>Urgent: Criterion 3 Seed Money Gazettes</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-space-sm">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Final SSR Submission</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface font-code-metric">42</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Days Left</span>
+</div>
+</div>
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">calendar_clock</span>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Window Closes:</span>
+<span class="font-code-metric text-on-surface font-semibold">15 Jan 2025 • 23:59 IST</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Pre-qualifier DVV validation passes: 98.1%</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-8 space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">NAAC 7-Criteria Compliance Engine</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time Quantitative Metrics (QnM) + Qualitative Matrix (QlM) evaluation breakdown</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline">Aggregate Weightage: 1,000</span>
+<button class="h-8 px-space-sm rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Refresh ERP Feed</span>
+</button>
+</div>
+</div>
+<div class="space-y-space-sm" id="criteria-accordion">
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<div class="p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-sm cursor-pointer hover:bg-surface-container-low transition-colors" onclick="this.nextElementSibling.classList.toggle('hidden')">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex flex-col items-center justify-center shrink-0">
+<span class="font-label-sm text-label-sm font-bold text-secondary font-code-metric">C-1</span>
+<span class="text-[9px] font-label-sm text-on-surface-variant leading-none">100 W</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="font-label-md text-label-md font-semibold text-on-surface truncate">Criterion 1: Curricular Aspects</h3>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-secondary text-label-sm font-semibold">100% Verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">CBCS implementation, curriculum revision index (38.4%), stakeholder feedback looped.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<div class="text-right">
+<div class="font-label-md text-label-md font-semibold text-on-surface font-code-metric">96.5% Score</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Proj. 96.5 / 100</div>
+</div>
+<div class="w-16 h-2 bg-surface-container rounded-full overflow-hidden hidden sm:block">
+<div class="h-full bg-secondary" style="width: 96.5%"></div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low border-t border-surface-container space-y-space-sm text-body-sm text-on-surface-variant">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">1.1 Curriculum Design (Autonomy)</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold font-code-metric">48/50 Marks</span>
+<span class="text-[11px] text-secondary block mt-0.5">BoS Minutes attached with Bloom's Taxonomy</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">1.2 Academic Flexibility &amp; Electives</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold font-code-metric">28/30 Marks</span>
+<span class="text-[11px] text-secondary block mt-0.5">82 Value-added courses &gt; 30 contact hrs</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">1.4 Feedback Mechanism (ATR)</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold font-code-metric">20/20 Marks</span>
+<span class="text-[11px] text-secondary block mt-0.5">Action Taken Report signed by Academic Council</span>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<div class="p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-sm cursor-pointer hover:bg-surface-container-low transition-colors" onclick="this.nextElementSibling.classList.toggle('hidden')">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex flex-col items-center justify-center shrink-0">
+<span class="font-label-sm text-label-sm font-bold text-secondary font-code-metric">C-2</span>
+<span class="text-[9px] font-label-sm text-on-surface-variant leading-none">350 W</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="font-label-md text-label-md font-semibold text-on-surface truncate">Criterion 2: Teaching-Learning and Evaluation</h3>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-secondary text-label-sm font-semibold font-code-metric">SFR 1:17.9</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Full-time faculty 100% sanctioned, CO-PO attainment automated, Pass rate 94.6%.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<div class="text-right">
+<div class="font-label-md text-label-md font-semibold text-on-surface font-code-metric">94.2% Score</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Proj. 329.7 / 350</div>
+</div>
+<div class="w-16 h-2 bg-surface-container rounded-full overflow-hidden hidden sm:block">
+<div class="h-full bg-secondary" style="width: 94.2%"></div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low border-t border-surface-container space-y-space-sm text-body-sm text-on-surface-variant">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">2.2 Catering to Diversity</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold font-code-metric">48/50 Marks</span>
+<span class="text-[11px] text-on-surface-variant block mt-0.5">Slow &amp; Advanced learner rubric verified</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">2.4 Faculty Profile &amp; Quality</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold font-code-metric">78/80 Marks</span>
+<span class="text-[11px] text-on-surface-variant block mt-0.5">74.2% Faculty holding Ph.D. degrees</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">2.6 Outcome-Based Education (OBE)</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold font-code-metric">114/120 Marks</span>
+<span class="text-[11px] text-secondary block mt-0.5">Direct + Indirect CO-PO matrices in Apex OS</span>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<div class="p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-sm cursor-pointer hover:bg-surface-container-low transition-colors" onclick="this.nextElementSibling.classList.toggle('hidden')">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex flex-col items-center justify-center shrink-0">
+<span class="font-label-sm text-label-sm font-bold text-secondary font-code-metric">C-3</span>
+<span class="text-[9px] font-label-sm text-on-surface-variant leading-none">120 W</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="font-label-md text-label-md font-semibold text-on-surface truncate">Criterion 3: Research, Innovations and Extension</h3>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-error text-label-sm font-semibold">12 Dockets Pending</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">412 Scopus/WoS indexed articles, ₹8.4 Cr sponsored grants, 19 Patents published.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<div class="text-right">
+<div class="font-label-md text-label-md font-semibold text-on-surface font-code-metric">88.0% Score</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Proj. 105.6 / 120</div>
+</div>
+<div class="w-16 h-2 bg-surface-container rounded-full overflow-hidden hidden sm:block">
+<div class="h-full bg-secondary" style="width: 88%"></div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low border-t border-surface-container space-y-space-sm text-body-sm text-on-surface-variant">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">3.1 Resource Mobilization</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold font-code-metric">18/20 Marks</span>
+<span class="text-[11px] text-on-surface-variant block mt-0.5">₹8.4 Cr extramural from DST, SERB, DRDO</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">3.4 Research Publications (Scopus)</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold font-code-metric">42/50 Marks</span>
+<span class="text-[11px] text-error block mt-0.5">Need Dean sign-off on 14 conference papers</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">3.6 Extension Activities &amp; NSS</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold font-code-metric">45/50 Marks</span>
+<span class="text-[11px] text-secondary block mt-0.5">48 Village outreach reports geo-tagged</span>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<div class="p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-sm cursor-pointer hover:bg-surface-container-low transition-colors" onclick="this.nextElementSibling.classList.toggle('hidden')">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex flex-col items-center justify-center shrink-0">
+<span class="font-label-sm text-label-sm font-bold text-secondary font-code-metric">C-4</span>
+<span class="text-[9px] font-label-sm text-on-surface-variant leading-none">100 W</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="font-label-md text-label-md font-semibold text-on-surface truncate">Criterion 4: Infrastructure and Learning Resources</h3>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-secondary text-label-sm font-semibold">98.0% Score</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Kohli OPAC Integrated Digital Library, 1 Gbps NKN Bandwidth, 92 Smart Labs.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<div class="text-right">
+<div class="font-label-md text-label-md font-semibold text-on-surface font-code-metric">98.0 / 100</div>
+<div class="font-label-sm text-label-sm text-secondary font-semibold">Ready for DVV</div>
+</div>
+<div class="w-16 h-2 bg-surface-container rounded-full overflow-hidden hidden sm:block">
+<div class="h-full bg-secondary" style="width: 98%"></div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+</div>
+<div class="hidden p-space-md bg-surface-container-low border-t border-surface-container space-y-space-sm text-body-sm text-on-surface-variant">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">4.1 Physical Infrastructure</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold font-code-metric">30/30 Marks</span>
+<span class="text-[11px] text-secondary block mt-0.5">Floor plans &amp; geo-tagged lab geotags intact</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">4.2 Library as a Learning Resource</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold font-code-metric">20/20 Marks</span>
+<span class="text-[11px] text-secondary block mt-0.5">e-ShodhSindhu &amp; IEEE Xplore subscriptions</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">4.3 IT Infrastructure &amp; Bandwidth</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold font-code-metric">30/30 Marks</span>
+<span class="text-[11px] text-secondary block mt-0.5">1 Gbps National Knowledge Network verified</span>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<div class="p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-sm cursor-pointer hover:bg-surface-container-low transition-colors" onclick="this.nextElementSibling.classList.toggle('hidden')">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex flex-col items-center justify-center shrink-0">
+<span class="font-label-sm text-label-sm font-bold text-secondary font-code-metric">C-5</span>
+<span class="text-[9px] font-label-sm text-on-surface-variant leading-none">130 W</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="font-label-md text-label-md font-semibold text-on-surface truncate">Criterion 5: Student Support and Progression</h3>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-secondary text-label-sm font-semibold">92.5% Score</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">84.6% Verified Placements, ₹4.85 Cr Institutional/State Scholarships, Active Alumni.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<div class="text-right">
+<div class="font-label-md text-label-md font-semibold text-on-surface font-code-metric">120.3 / 130</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">92.5% Alignment</div>
+</div>
+<div class="w-16 h-2 bg-surface-container rounded-full overflow-hidden hidden sm:block">
+<div class="h-full bg-secondary" style="width: 92.5%"></div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+</div>
+<div class="hidden p-space-md bg-surface-container-low border-t border-surface-container space-y-space-sm text-body-sm text-on-surface-variant">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">5.1 Student Support &amp; Scholarships</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold font-code-metric">48/50 Marks</span>
+<span class="text-[11px] text-secondary block mt-0.5">Government &amp; Merit Freeships certified</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">5.2 Student Progression &amp; Placements</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold font-code-metric">42/45 Marks</span>
+<span class="text-[11px] text-secondary block mt-0.5">Offer letters and Higher Study roll numbers</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">5.4 Alumni Engagement</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold font-code-metric">10/10 Marks</span>
+<span class="text-[11px] text-secondary block mt-0.5">Registered Alumni Chapter #MH-REG-1049</span>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex flex-col items-center justify-center shrink-0">
+<span class="font-label-sm text-label-sm font-bold text-secondary font-code-metric">C-6</span>
+<span class="text-[9px] font-label-sm text-on-surface-variant leading-none">100 W</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<h4 class="font-label-md text-label-md font-semibold text-on-surface truncate">Criterion 6: Governance</h4>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">95.0%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Full ERP automated governance, IQAC audits, audited balances.</p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex flex-col items-center justify-center shrink-0">
+<span class="font-label-sm text-label-sm font-bold text-secondary font-code-metric">C-7</span>
+<span class="text-[9px] font-label-sm text-on-surface-variant leading-none">100 W</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<h4 class="font-label-md text-label-md font-semibold text-on-surface truncate">Criterion 7: Institutional Values</h4>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">96.0%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">450 kW Solar arrays, ISO 14001 Green Audit, Gender audits.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 space-y-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">SSR Readiness Radar</h2>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">QnM + QlM</span>
+</div>
+<div class="relative flex items-center justify-center py-2">
+<svg class="w-56 h-56" viewbox="0 0 200 200">
+<polygon class="text-surface-variant" fill="none" points="100,20 176,57 176,143 100,180 24,143 24,57" stroke="currentColor" stroke-dasharray="2,2" stroke-width="1"></polygon>
+<polygon class="text-surface-variant" fill="none" points="100,45 152,70 152,130 100,155 48,130 48,70" stroke="currentColor" stroke-width="1"></polygon>
+<polygon class="text-surface-variant" fill="none" points="100,70 128,83 128,117 100,130 72,117 72,83" stroke="currentColor" stroke-dasharray="2,2" stroke-width="1"></polygon>
+<line class="text-surface-variant" stroke="currentColor" stroke-width="1" x1="100" x2="100" y1="100" y2="20"></line>
+<line class="text-surface-variant" stroke="currentColor" stroke-width="1" x1="100" x2="176" y1="100" y2="57"></line>
+<line class="text-surface-variant" stroke="currentColor" stroke-width="1" x1="100" x2="176" y1="100" y2="143"></line>
+<line class="text-surface-variant" stroke="currentColor" stroke-width="1" x1="100" x2="100" y1="100" y2="180"></line>
+<line class="text-surface-variant" stroke="currentColor" stroke-width="1" x1="100" x2="24" y1="100" y2="143"></line>
+<line class="text-surface-variant" stroke="currentColor" stroke-width="1" x1="100" x2="24" y1="100" y2="57"></line>
+<polygon class="text-secondary" fill="currentColor" fill-opacity="0.15" points="100,24 170,62 165,138 100,172 32,139 30,62" stroke="currentColor" stroke-width="2"></polygon>
+<circle class="fill-secondary" cx="100" cy="24" r="3.5"></circle>
+<circle class="fill-secondary" cx="170" cy="62" r="3.5"></circle>
+<circle class="fill-secondary" cx="165" cy="138" r="3.5"></circle>
+<circle class="fill-secondary" cx="100" cy="172" r="3.5"></circle>
+<circle class="fill-secondary" cx="32" cy="139" r="3.5"></circle>
+<circle class="fill-secondary" cx="30" cy="62" r="3.5"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface font-code-metric">94.8%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Index</span>
+</div>
+</div>
+<div class="space-y-2 border-t border-surface-container pt-3">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Quantitative Metrics (QnM - 65%)</span>
+<span class="font-code-metric font-semibold text-on-surface">95.4% Validated</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Qualitative Metrics (QlM - 35%)</span>
+<span class="font-code-metric font-semibold text-on-surface">93.2% Approved</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Student Satisfaction Survey (SSS)</span>
+<span class="font-code-metric font-semibold text-secondary">3.72 / 4.00</span>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low space-y-1">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm font-semibold text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span>Data Validation &amp; Verification (DVV)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pre-qualifier threshold is 25%. Current institutional preparedness score stands comfortably at 89.2%.</p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-label-md text-label-md font-semibold text-on-surface uppercase tracking-wider">Campus Statutory Visuals</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">GEO-SYNCED</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="space-y-1">
+<div class="h-24 w-full rounded-lg overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="An expansive modern engineering laboratory in an Indian higher education institute featuring precision testing equipment, computer workstations, and clean slate architectural lighting with students and faculty in lab coats" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrgoUCPlxFN3LAZWp_BMztTgvvn0xL4ctOC7Az9ERZj49npvoUHOqLY-kVE_0LFpXZ9w36tR8DJzB9BpjOSq5hTsmsElT1wS9TRKx2vqUMgWy2xIZtJXwieJFTxLpWhyyvtv7uhFK4RxmUY12ad4Ru-9coLBpbS8lgcExbM_DBzy7jVYqNcsgSitSIzvjB6gFnx1_R9MCzl6MlcFIKdIgUTiBxR_hbuJVn6isKqg8"/>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface/90 text-[10px] font-code-metric font-semibold text-on-surface">Geo: 18.52°N</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate block">Advanced Robotics Lab</span>
+</div>
+<div class="space-y-1">
+<div class="h-24 w-full rounded-lg overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Rooftop solar photovoltaic panels installed across the terrace of an institutional university building under bright daylight with green campus landscape in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM-ZUDYVX9eopOFYTAjmjZOsvNS6MDvtZoA6HSLr2mK4YcV7AjwUQ5AcOSQXbJIn2F0rdlC9TWx_PMfgX9hLw0UE9Tl5HBTtFL1LrkeItjeduhfvkEnG7JZT2LREiFXSjvnLNhJ3towKAACdr8qouaDaKSF_Ux3L6MUfHDaZPcn9-fneB_5ED0Jv21OVJBBTg6tZKQ1ez9ZlTKRjB5YRmE5kiww6rkg9zkvw5zYfE"/>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface/90 text-[10px] font-code-metric font-semibold text-on-surface">Geo: 73.85°E</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate block">450kW Solar Infrastructure</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Evidence Repository &amp; Document Verification Queue</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time audit track of evidentiary artifacts submitted by Departmental NAAC Coordinators</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[16px]">filter_list</span>
+<select class="h-8 pl-8 pr-4 rounded bg-surface-container text-on-surface font-label-sm text-label-sm outline-none">
+<option>All Criteria (1–7)</option>
+<option>Criterion 2 (Teaching-Learning)</option>
+<option>Criterion 3 (Research)</option>
+<option>Criterion 5 (Student Support)</option>
+</select>
+</div>
+<button class="h-8 px-space-sm rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">upload_file</span>
+<span>Upload Proof</span>
+</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-3 rounded-l">Metric ID</th>
+<th class="py-2.5 px-3">Evidence Artifact Description</th>
+<th class="py-2.5 px-3">Department</th>
+<th class="py-2.5 px-3">Uploaded</th>
+<th class="py-2.5 px-3">File Specs</th>
+<th class="py-2.5 px-3">Verification Status</th>
+<th class="py-2.5 px-3 rounded-r text-right">Reviewer Seal</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-3 font-code-metric font-semibold text-secondary">QnM 2.4.2</td>
+<td class="py-3 px-3">
+<div class="font-medium text-on-surface">Faculty Ph.D. Degree Gazettes &amp; Service Books</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Validated against UGC recognized university registry</div>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">CSE &amp; AI-DS</td>
+<td class="py-3 px-3 text-on-surface-variant font-code-metric">14 Nov 2024</td>
+<td class="py-3 px-3 font-code-metric text-on-surface-variant">PDF (14.2 MB)</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Verified &amp; Sealed
+              </span>
+</td>
+<td class="py-3 px-3 text-right">
+<span class="font-label-sm text-label-sm font-code-metric text-on-surface">Dr. S. Kulkarni (Dean HR)</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-3 font-code-metric font-semibold text-secondary">QnM 5.2.1</td>
+<td class="py-3 px-3">
+<div class="font-medium text-on-surface">Placement Offer Letters &amp; Joining Slips (2023-24)</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">846 Student Appointment documents compiled</div>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">Training &amp; Placement</td>
+<td class="py-3 px-3 text-on-surface-variant font-code-metric">12 Nov 2024</td>
+<td class="py-3 px-3 font-code-metric text-on-surface-variant">PDF (42.8 MB)</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Verified &amp; Sealed
+              </span>
+</td>
+<td class="py-3 px-3 text-right">
+<span class="font-label-sm text-label-sm font-code-metric text-on-surface">Prof. M. Verma (TPO Head)</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-3 font-code-metric font-semibold text-error">QnM 3.1.1</td>
+<td class="py-3 px-3">
+<div class="font-medium text-on-surface">Extramural Research Grants Sanction Letters (DST/SERB)</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Audited statement of accounts and UC letters pending</div>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">R&amp;D Cell</td>
+<td class="py-3 px-3 text-on-surface-variant font-code-metric">09 Nov 2024</td>
+<td class="py-3 px-3 font-code-metric text-on-surface-variant">PDF (8.1 MB)</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-error font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                Sign-off Pending
+              </span>
+</td>
+<td class="py-3 px-3 text-right">
+<span class="font-label-sm text-label-sm font-code-metric text-error">Dean R&amp;D Required</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-3 font-code-metric font-semibold text-secondary">QnM 1.4.1</td>
+<td class="py-3 px-3">
+<div class="font-medium text-on-surface">Stakeholder Curriculum Feedback Analysis &amp; ATR</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Students, Alumni, Employers, and Faculty analysis report</div>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">IQAC Central</td>
+<td class="py-3 px-3 text-on-surface-variant font-code-metric">02 Nov 2024</td>
+<td class="py-3 px-3 font-code-metric text-on-surface-variant">PDF (6.4 MB)</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Verified &amp; Sealed
+              </span>
+</td>
+<td class="py-3 px-3 text-right">
+<span class="font-label-sm text-label-sm font-code-metric text-on-surface">Dr. A. Finch (Dean Academics)</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-3 font-code-metric font-semibold text-secondary">Statutory AICTE</td>
+<td class="py-3 px-3">
+<div class="font-medium text-on-surface">AICTE Extension of Approval (EoA) Letter 2024–25</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Sanctioned intake 1,260 UG + 180 PG across approved disciplines</div>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">Registrar Office</td>
+<td class="py-3 px-3 text-on-surface-variant font-code-metric">28 Oct 2024</td>
+<td class="py-3 px-3 font-code-metric text-on-surface-variant">PDF (2.1 MB)</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Statutory Verified
+              </span>
+</td>
+<td class="py-3 px-3 text-right">
+<span class="font-label-sm text-label-sm font-code-metric text-on-surface">Registrar Office</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center text-on-secondary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Internal Quality Assurance Cell (IQAC) Cryptographic Seal</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary text-label-sm font-code-metric">SHA-256 VALID</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          This dossier has been reviewed in compliance with NAAC Institutional Assessment Manual (Autonomy 2024). Certified by 
+          <strong class="text-on-surface">Dr. Meera Nambiar</strong> (Director, IQAC) &amp; <strong class="text-on-surface">Dr. Alistair Finch</strong> (Dean of Academic Affairs).
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="text-right hidden xl:block font-code-metric text-label-sm text-on-surface-variant">
+<div>DIGITAL SIGNATURE HASH</div>
+<div class="text-on-surface font-semibold">0x8F92...D44E</div>
+</div>
+<button class="h-9 px-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md font-medium transition-colors shadow-sm flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>View Dossier Log</span>
+</button>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-space-md px-gutter-desktop shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex flex-col md:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-label-sm text-label-sm"><div class="flex items-center gap-space-sm flex-wrap"><span>Apex Core <strong class="text-on-surface font-semibold">98.4% uptime</strong></span><span>•</span><span>Release <strong class="font-code-metric text-on-surface">v4.2-enterprise</strong></span><span>•</span><span>Node: <code class="font-code-metric text-on-surface">#US-CAMPUS-01</code></span></div><div class="flex items-center gap-space-md flex-wrap"><a class="hover:text-on-surface transition-colors" data-path="administration" href="#">Institutional Support Desk</a><a class="hover:text-on-surface transition-colors" data-path="settings" href="#">FERPA &amp; Privacy Policy</a><span>© 2025 Apex Institute of Technology</span></div></div></footer></div></body></html>

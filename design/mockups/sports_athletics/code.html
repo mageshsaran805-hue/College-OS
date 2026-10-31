@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#000000", "on-tertiary": "#ffffff", "tertiary-container": "#001e2f", "outline": "#76777d", "surface-container-low": "#eff4ff", "surface-container": "#e5eeff", "surface-variant": "#d3e4fe", "error-container": "#ffdad6", "secondary-fixed-dim": "#c3c0ff", "on-secondary-fixed": "#0f0069", "background": "#f8f9ff", "on-tertiary-fixed-variant": "#004c6e", "surface-container-highest": "#d3e4fe", "inverse-surface": "#213145", "surface-bright": "#f8f9ff", "error": "#ba1a1a", "tertiary": "#000000", "secondary-container": "#645efb", "on-surface": "#0b1c30", "secondary": "#4b41e1", "surface-tint": "#565e74", "primary-fixed": "#dae2fd", "on-primary-fixed": "#131b2e", "on-secondary": "#ffffff", "on-background": "#0b1c30", "surface": "#f8f9ff", "on-error-container": "#93000a", "on-secondary-container": "#fffbff", "on-surface-variant": "#45464d", "surface-dim": "#cbdbf5", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#008cc7", "on-primary-fixed-variant": "#3f465c", "on-primary": "#ffffff", "tertiary-fixed": "#c9e6ff", "tertiary-fixed-dim": "#89ceff", "primary-fixed-dim": "#bec6e0", "on-tertiary-fixed": "#001e2f", "primary-container": "#131b2e", "outline-variant": "#c6c6cd", "on-error": "#ffffff", "on-secondary-fixed-variant": "#3323cc", "surface-container-high": "#dce9ff", "on-primary-container": "#7c839b", "inverse-primary": "#bec6e0", "secondary-fixed": "#e2dfff", "inverse-on-surface": "#eaf1ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1rem", "space-sm": "0.5rem", "margin-desktop": "2rem", "space-md": "0.75rem", "gutter-desktop": "1.5rem", "space-lg": "1.25rem", "space-xs": "0.25rem", "margin": "1rem", "space-xl": "2rem" }, "fontFamily": { "body-md": ["Geist"], "label-sm": ["Geist"], "headline-xl-mobile": ["Geist"], "headline-xl": ["Geist"], "label-md": ["Geist"], "body-lg": ["Geist"], "headline-sm": ["Geist"], "body-sm": ["Geist"], "code-metric": ["Geist"], "headline-lg": ["Geist"] }, "fontSize": { "body-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.006em", "fontWeight": "400" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-xl": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600" }], "label-md": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "-0.005em", "fontWeight": "500" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.011em", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "400" }], "code-metric": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.02em", "fontWeight": "500" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col h-full overflow-hidden"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Apex Institute</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-lg bg-surface-container text-on-surface font-semibold shrink-0">#US-01</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Institutional Workspace • AY 2024-25</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container text-on-surface font-semibold rounded-lg"><div class="px-space-sm pt-space-xs pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Academic Operations</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="academics" href="#">Academics</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="students" href="#">Students</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="faculty-staff" href="#">Faculty &amp; Staff</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="attendance-overview" href="#">Attendance</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="examination-overview" href="#">Examinations</a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Institutional Services</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="finance-overview" href="#">Finance</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="campus-overview" href="#">Campus Operations</a><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">celebration</span><span class="font-label-md text-label-md font-semibold text-on-surface">Student Life</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="student-life-overview" href="#">Student Life Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="clubs-organizations" href="#">Clubs &amp; Organizations</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="events-activities" href="#">Events &amp; Activities</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="sports-athletics" href="#">Sports &amp; Athletics</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="student-counseling" href="#">Student Counseling</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="grievance-management" href="#">Grievance Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="achievements-certificates" href="#">Achievements &amp; Certificates</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="engagement-wellbeing" href="#">Engagement &amp; Wellbeing</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="student-life-reports-settings" href="#">Student Life Reports &amp; Settings</a></div></div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="placements" href="#">Placements</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="communication" href="#">Communication</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports-analytics" href="#">Reports &amp; Analytics</a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">System Governance</div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="administration" href="#">Administration</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-sm bg-surface-container-low shrink-0"><div class="flex items-center justify-between text-on-surface-variant mb-space-xs"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-semibold text-on-surface">Apex Core 98.4% uptime</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v4.2</span></div><a class="flex items-center justify-between font-label-sm text-label-sm text-secondary hover:text-on-secondary-fixed transition-colors" data-path="institutional-support" href="#">Institutional Support Desk</a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="relative flex items-center w-80"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-on-surface-variant pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-14 bg-surface rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search students, courses, staff..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-code-metric">⌘K</span></div><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container"><span class="material-symbols-outlined text-[16px] text-secondary">event_available</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">AY 2024–2025 • Semester 1 Fall</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary font-semibold uppercase">Active Term</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div></div><div class="flex items-center gap-space-md"><button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Action</span></button><div class="flex items-center gap-space-xs"><button class="relative w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-label-sm flex items-center justify-center font-code-metric">3</span></button><button class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button></div><div class="h-6 w-px bg-surface-container"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Alistair Finch</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Dean of Academic Affairs</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter-desktop pb-space-xl flex-1 bg-surface"><div class="flex flex-col w-full gap-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-xs">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">
+<span>Institutional Services</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Student Life</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-secondary font-semibold">Sports &amp; Athletics</span>
+</div>
+<div class="flex items-center gap-space-md mt-1">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Inter-Collegiate Athletics &amp; Sports Directorate</h1>
+<span class="px-space-xs py-0.5 rounded-lg bg-surface-container-high text-secondary font-label-sm text-label-sm font-code-metric uppercase">AY 2024–25 NCAA/AIU Tier-1</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Centralized governing console for collegiate rosters, academic eligibility quotas, multi-arena telemetry, and inter-varsity fixture records.</p>
+</div>
+<div class="flex items-center flex-wrap gap-space-xs shrink-0">
+<button class="h-9 px-space-md rounded-lg bg-surface-container-lowest shadow-sm hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">stadium</span>
+<span>Reserve Sports Facility</span>
+</button>
+<button class="h-9 px-space-md rounded-lg bg-surface-container-lowest shadow-sm hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">picture_as_pdf</span>
+<span>Tournament Schedule (PDF)</span>
+</button>
+<button class="h-9 px-space-md rounded-lg bg-secondary text-on-secondary shadow-md hover:bg-on-secondary-fixed transition-colors font-label-md text-label-md flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Register Varsity Squad</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-full bg-secondary/5 group-hover:scale-125 transition-transform pointer-events-none"></div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Varsity Teams</span>
+<span class="material-symbols-outlined text-[20px] text-secondary">groups</span>
+</div>
+<div class="my-space-xs">
+<div class="font-headline-lg text-headline-lg text-on-surface font-code-metric">16</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Chartered Squads (Active)</div>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>100% Accredited by AIU</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-full bg-surface-container/60 group-hover:scale-125 transition-transform pointer-events-none"></div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Student Athletes</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface">sprint</span>
+</div>
+<div class="my-space-xs">
+<div class="font-headline-lg text-headline-lg text-on-surface font-code-metric">640</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Registered Scholars</div>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="text-secondary font-semibold font-code-metric">+42</span>
+<span>enrolled this term</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-full bg-secondary-container/10 group-hover:scale-125 transition-transform pointer-events-none"></div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Upcoming Fixtures</span>
+<span class="material-symbols-outlined text-[20px] text-secondary">event_upcoming</span>
+</div>
+<div class="my-space-xs">
+<div class="font-headline-lg text-headline-lg text-on-surface font-code-metric">8</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Inter-University &amp; Zonal</div>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="font-code-metric font-semibold text-secondary">3</span>
+<span>Campus Home Fixtures</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-full bg-surface-variant/40 group-hover:scale-125 transition-transform pointer-events-none"></div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Active Arenas</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface">fitness_center</span>
+</div>
+<div class="my-space-xs">
+<div class="font-headline-lg text-headline-lg text-on-surface font-code-metric">6</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Vivekananda, Turf, Courts</div>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-code-metric">89.2%</span>
+<span>slot utilization</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-full bg-secondary/10 group-hover:scale-125 transition-transform pointer-events-none"></div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Medals Won (AY 24)</span>
+<span class="material-symbols-outlined text-[20px] text-secondary">emoji_events</span>
+</div>
+<div class="my-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-code-metric">24</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total Podiums</span>
+</div>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-code-metric text-on-surface font-semibold">9G</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-code-metric text-on-surface-variant">8S</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-code-metric text-on-surface-variant">7B</span>
+</div>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+4 over AY 2023</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-sm bg-surface-container-lowest p-space-xs rounded-xl shadow-sm">
+<div class="flex items-center gap-1 overflow-x-auto p-0.5">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold whitespace-nowrap shadow-sm" type="button">Varsity Teams &amp; Roster</button>
+<button class="px-space-md py-1.5 rounded-lg hover:bg-surface-container-low text-on-surface-variant font-label-md text-label-md whitespace-nowrap transition-colors" type="button">Athlete Directory &amp; Eligibility</button>
+<button class="px-space-md py-1.5 rounded-lg hover:bg-surface-container-low text-on-surface-variant font-label-md text-label-md whitespace-nowrap transition-colors" type="button">Tournament Calendar &amp; Fixtures</button>
+<button class="px-space-md py-1.5 rounded-lg hover:bg-surface-container-low text-on-surface-variant font-label-md text-label-md whitespace-nowrap transition-colors" type="button">Sports Facilities &amp; Equipment Registry</button>
+</div>
+<div class="flex items-center gap-space-xs pr-space-xs">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-2 text-[18px] text-on-surface-variant">filter_list</span>
+<input class="h-8 pl-8 pr-3 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none focus:bg-surface-container transition-colors w-64" placeholder="Filter squad, sport, or captain..." type="text"/>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<div class="xl:col-span-8 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">sports_soccer</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Chartered Varsity Squads Directory</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-code-metric">5 Active Focus Teams</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Sorted by Ranking Standings</span>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-space-md font-semibold">Squad Name &amp; Sport</th>
+<th class="py-2.5 px-space-sm font-semibold">Coach / Physical Director</th>
+<th class="py-2.5 px-space-sm font-semibold">Team Captain</th>
+<th class="py-2.5 px-space-sm font-semibold text-center">Squad Size</th>
+<th class="py-2.5 px-space-sm font-semibold">Tournament Standing</th>
+<th class="py-2.5 px-space-sm font-semibold">Assigned Arena</th>
+<th class="py-2.5 px-space-md font-semibold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface divide-y divide-transparent">
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">sports_cricket</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Men's Cricket Varsity</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Red Ball &amp; T20 • Division I</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Coach R. Solanki</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sr. Athletics Fellow</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-1.5 cursor-pointer group" onclick="document.getElementById('athleteDrawer').classList.remove('hidden')">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container text-label-sm font-code-metric flex items-center justify-center font-semibold">RM</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-secondary font-semibold group-hover:underline">Rohan Mehta</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">B.Tech ME Sem 5</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-metric font-label-md text-label-md text-on-surface">22</span>
+</td>
+<td class="py-3 px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    AIU Zonal Finalist
+                  </span>
+</td>
+<td class="py-3 px-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Olympic Turf Oval</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-7 h-7 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant" title="View Squad Roster" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<button class="w-7 h-7 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant" title="Manage Squad" type="button">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">sports_basketball</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Women's Basketball</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5v5 All-Collegiate</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Coach Anita Rao</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">FIBA Level-2 Director</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-1.5">
+<div class="w-6 h-6 rounded-full bg-surface-variant text-on-surface text-label-sm font-code-metric flex items-center justify-center font-semibold">PS</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Priya Sharma</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">B.Sc Data Sem 7</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-metric font-label-md text-label-md text-on-surface">15</span>
+</td>
+<td class="py-3 px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    State Champions
+                  </span>
+</td>
+<td class="py-3 px-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Vivekananda Arena A</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-7 h-7 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<button class="w-7 h-7 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">sports_soccer</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Men's Football (Soccer)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">11v11 Premier Inter-College</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Coach D. D'Souza</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">AFC 'B' License</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-1.5">
+<div class="w-6 h-6 rounded-full bg-surface-variant text-on-surface text-label-sm font-code-metric flex items-center justify-center font-semibold">MC</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Marcus Chen</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">B.A. Econ Sem 3</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-metric font-label-md text-label-md text-on-surface">24</span>
+</td>
+<td class="py-3 px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+                    Quarter-Finals (AIU)
+                  </span>
+</td>
+<td class="py-3 px-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Olympic Turf Main</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-7 h-7 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<button class="w-7 h-7 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">sports_tennis</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Badminton Mixed Varsity</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Singles &amp; Doubles Tier-A</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Coach S. Sen</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Former National Player</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-1.5">
+<div class="w-6 h-6 rounded-full bg-surface-variant text-on-surface text-label-sm font-code-metric flex items-center justify-center font-semibold">KV</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Kevin Vance</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">B.Tech ECE Sem 5</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-metric font-label-md text-label-md text-on-surface">12</span>
+</td>
+<td class="py-3 px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Semi-Final Seed #2
+                  </span>
+</td>
+<td class="py-3 px-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Indoor Courts complex</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-7 h-7 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<button class="w-7 h-7 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">directions_run</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Athletics Track &amp; Field</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sprint, Relay &amp; Decathlon</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Coach K. Singh</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lead Track Director</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-1.5">
+<div class="w-6 h-6 rounded-full bg-surface-variant text-on-surface text-label-sm font-code-metric flex items-center justify-center font-semibold">AM</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Ananya Misra</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">B.Sc Bio Sem 5</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-metric font-label-md text-label-md text-on-surface">35</span>
+</td>
+<td class="py-3 px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    14 Medals in State Meet
+                  </span>
+</td>
+<td class="py-3 px-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Synthetic 400m Oval</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-7 h-7 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<button class="w-7 h-7 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="px-space-md py-space-xs bg-surface-container-low flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Showing 5 of 16 Chartered Squads</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-2 py-1 rounded bg-surface-container text-on-surface font-semibold" type="button">1</button>
+<button class="px-2 py-1 rounded hover:bg-surface-container" type="button">2</button>
+<button class="px-2 py-1 rounded hover:bg-surface-container" type="button">3</button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">calendar_month</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Next 7 Days Fixtures</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold cursor-pointer hover:underline">Full Schedule</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container font-code-metric text-secondary font-semibold">OCT 24</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Apex Cricket vs St. Xavier's</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">AIU Quarter-Final • Oval Turf 10:00 AM</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-secondary font-semibold">Home</span>
+</div>
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container font-code-metric text-on-surface-variant">OCT 26</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Women's Basketball vs National Tech</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Zonal League • City Sports Hub 03:30 PM</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-semibold">Away</span>
+</div>
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container font-code-metric text-on-surface-variant">OCT 28</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Badminton Mixed Doubles Invitational</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Apex Indoor Court Complex 09:00 AM</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-secondary font-semibold">Home</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">sports_score</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Arena Telemetry &amp; Slots</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">Active Shift: 14:00-18:00</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="p-space-xs bg-surface-container-low rounded-lg flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Vivekananda Arena Multi-Court</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Booked: Women's Basketball Drills</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">Occupied</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Olympic Turf Ground</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Booked: Men's Football Tactical Session</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">Occupied</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Indoor Court #3 &amp; #4 (Badminton)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Open for Intramural Free Play</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">Available</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="xl:col-span-4 bg-surface-container-lowest rounded-xl shadow-md p-space-md flex flex-col gap-space-md" id="athleteDrawer">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<img class="w-12 h-12 rounded-xl object-cover shadow-sm" data-alt="Headshot of Rohan Mehta, collegiate cricket varsity captain in white athletics jersey, professional athletic portrait, clean studio lighting, calm focused expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUe5SKQdwV3Z13Mk5_vjqpl8ilrawMGXIIXJTZTCEjRQpRZitqTdYzNZlIMmt6n_EA4k7tgIsc_kOgxGr9YHEo0F5boC4gdmXtq7HN4FU2hXDJ5zVRGQ5V61t7N7-lfNC9Jd1cg-QAeO9lab08VWpPp98XQsJfPw_2svR6AuyD8dkUxrZD8Dm2Q555uO7axgYO0216fF_ks5QX23-kikhEvKf5VSBq_zRhuXcPQg8"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[10px] font-semibold">✓</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Rohan Mehta</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-surface-container text-secondary font-semibold uppercase">Captain</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">B.Tech Mechanical Eng. • Semester 5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">Roll ID: #MECH-2022-048</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant flex items-center justify-center" onclick="document.getElementById('athleteDrawer').classList.toggle('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-semibold">Academic Attendance Sports Quota</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold">Exam Clearance Valid</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Classroom (78%) + AIU On-Duty Waiver (12%)</span>
+<span class="font-code-metric font-semibold text-on-surface">90.0% / 100%</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 78%;" title="Regular Attendance: 78%"></div>
+<div class="h-full bg-secondary" style="width: 12%;" title="AIU On-Duty Approved Waiver: 12%"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm pt-0.5">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary inline-block"></span> 78% Attended
+            </span>
+<span class="text-secondary font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary inline-block"></span> 12% AIU OD Verified
+            </span>
+<span class="text-on-surface-variant font-code-metric">Min: 75% req</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-space-xs bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Medical Fitness Cert</span>
+<div class="flex items-center gap-1 mt-1 text-secondary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Cleared (Grade A1)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Valid thru Dec 2025</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">CGPA Academic Standing</span>
+<div class="flex items-center gap-1 mt-1 font-headline-sm text-headline-sm text-on-surface font-code-metric">
+<span>8.42</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Good</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Zero backlogs</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Tournament Scoring &amp; Stats (AY 24)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">AIU Zonal Red Ball</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex flex-col text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Innings</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-code-metric">7</span>
+</div>
+<div class="h-6 w-px bg-surface-container"></div>
+<div class="flex flex-col text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Runs</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-code-metric">486</span>
+</div>
+<div class="h-6 w-px bg-surface-container"></div>
+<div class="flex flex-col text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Average</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-code-metric">69.4</span>
+</div>
+<div class="h-6 w-px bg-surface-container"></div>
+<div class="flex flex-col text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Strike Rate</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-code-metric">138.2</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Equipment Requisition Log</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold cursor-pointer hover:underline">+ New Req</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="p-space-xs bg-surface-container-low rounded-lg flex items-center justify-between font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">sports_cricket</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">SS Ton Elite English Willow (x2)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Issued: 12 Aug 2024 • Vault Tag #EQ-881</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-semibold">Issued</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg flex items-center justify-between font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">shield</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Titanium Lightweight Batting Helmet</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Safety Audited: Sept 2024</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-semibold">Active</span>
+</div>
+</div>
+</div>
+<div class="pt-space-xs flex items-center gap-space-xs">
+<button class="flex-1 h-9 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-semibold hover:bg-on-secondary-fixed transition-colors flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">assignment_turned_in</span>
+<span>Approve Exam Exemption</span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant" title="Download Full Bio &amp; Dossier" type="button">
+<span class="material-symbols-outlined text-[18px]">contact_page</span>
+</button>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-sm px-gutter-desktop shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-space-sm font-label-sm text-label-sm"><span>Apex Institute of Technology • Institutional OS System</span><span>•</span><span>Enterprise Tier • 98.4% uptime</span></div><div class="flex items-center gap-space-md font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" data-path="institutional-support" href="#">Institutional Support</a><a class="hover:text-on-surface transition-colors" data-path="privacy-compliance" href="#">FERPA &amp; Privacy</a><span class="font-code-metric text-on-surface-variant">Apex-Node #US-CAMPUS-01</span></div></div></footer></div></body></html>

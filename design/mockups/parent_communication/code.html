@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-error-container":"#93000a","primary-fixed":"#dae2fd","surface-variant":"#d3e4fe","tertiary-fixed-dim":"#89ceff","tertiary-fixed":"#c9e6ff","surface-container-low":"#eff4ff","on-tertiary-fixed-variant":"#004c6e","surface-bright":"#f8f9ff","surface-dim":"#cbdbf5","on-tertiary-fixed":"#001e2f","error-container":"#ffdad6","inverse-surface":"#213145","secondary-fixed":"#e2dfff","surface-container-high":"#dce9ff","on-tertiary":"#ffffff","on-error":"#ffffff","on-tertiary-container":"#008cc7","tertiary":"#000000","on-primary":"#ffffff","primary-container":"#131b2e","surface-container":"#e5eeff","inverse-primary":"#bec6e0","on-secondary-container":"#fffbff","on-primary-fixed-variant":"#3f465c","secondary-container":"#645efb","inverse-on-surface":"#eaf1ff","outline":"#76777d","on-secondary":"#ffffff","outline-variant":"#c6c6cd","on-secondary-fixed-variant":"#3323cc","error":"#ba1a1a","on-secondary-fixed":"#0f0069","tertiary-container":"#001e2f","surface-container-lowest":"#ffffff","on-primary-container":"#7c839b","secondary-fixed-dim":"#c3c0ff","on-surface":"#0b1c30","background":"#f8f9ff","on-background":"#0b1c30","secondary":"#4b41e1","on-primary-fixed":"#131b2e","primary":"#000000","surface-tint":"#565e74","surface-container-highest":"#d3e4fe","primary-fixed-dim":"#bec6e0","surface":"#f8f9ff","on-surface-variant":"#45464d"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xs":"0.25rem","margin-desktop":"2rem","space-xl":"2rem","gutter-desktop":"1.5rem","space-sm":"0.5rem","space-md":"0.75rem","space-lg":"1.25rem","margin":"1rem","gutter":"1rem"},fontFamily:{"label-sm":["Geist"],"label-md":["Geist"],"body-lg":["Geist"],"headline-sm":["Geist"],"code-metric":["Geist"],"headline-lg":["Geist"],"body-md":["Geist"],"body-sm":["Geist"],"headline-xl":["Geist"],"headline-xl-mobile":["Geist"]},fontSize:{"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.04em","fontWeight":"600"}],"label-md":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"-0.005em","fontWeight":"500"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"-0.011em","fontWeight":"400"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"-0.015em","fontWeight":"600"}],"code-metric":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.02em","fontWeight":"500"}],"headline-lg":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.006em","fontWeight":"400"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0em","fontWeight":"400"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.025em","fontWeight":"600"}],"headline-xl-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.02em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-low flex flex-col z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)] overflow-y-auto"><div class="px-space-lg pt-space-lg pb-space-md flex items-center gap-space-sm bg-surface-container-low"><div class="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center shadow-[0_1px_3px_rgba(0,0,0,0.08)]"><span class="material-symbols-outlined text-on-secondary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface truncate">Apex OS</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric">#US-01</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Apex Institute of Technology</span></div></div><div class="px-space-md py-space-xs"><div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04)] flex items-center justify-between"><div class="flex items-center gap-space-xs min-w-0"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface truncate font-semibold">AY 2024–2025</span><span class="text-outline text-label-sm">•</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Sem 1 Fall</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-secondary font-semibold">LIVE</span></div></div><nav class="flex-1 px-space-md py-space-sm space-y-space-md" data-active-classes="bg-secondary-container text-on-secondary-container font-semibold rounded-lg"><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Academic Operations</div><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="academic-programs" href="#"><span class="truncate">Academic Programs</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="courses-and-curriculum" href="#"><span class="truncate">Courses &amp; Curriculum</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="faculty-workload" href="#"><span class="truncate">Faculty Workload</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Attendance</div><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="student-attendance" href="#"><span class="truncate">Student Attendance</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="faculty-logs" href="#"><span class="truncate">Faculty Daily Logs</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Examinations</div><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="exam-schedules" href="#"><span class="truncate">Exam Schedules</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="grading-and-transcripts" href="#"><span class="truncate">Grading &amp; Transcripts</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Placements &amp; Alumni</div><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="campus-drives" href="#"><span class="truncate">Campus Drives</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="alumni-directory" href="#"><span class="truncate">Alumni Directory</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Campus Operations &amp; Facilities</div><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="hostels-and-housing" href="#"><span class="truncate">Hostels &amp; Housing</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="transport-and-fleet" href="#"><span class="truncate">Transport &amp; Fleet</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Finance</div><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="fee-collections" href="#"><span class="truncate">Fee Collections</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="payroll-and-disbursements" href="#"><span class="truncate">Payroll &amp; Disbursements</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Library</div><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="digital-catalog" href="#"><span class="truncate">Digital Catalog</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="circulation-desk" href="#"><span class="truncate">Circulation Desk</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-1 flex items-center justify-between font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold"><span>Communication</span><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span></div><div class="pl-space-sm space-y-0.5"><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="communication-overview" href="#"><span class="truncate">Communication Overview</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="announcements-and-circulars" href="#"><span class="truncate">Announcements &amp; Circulars</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="email-management" href="#"><span class="truncate">Email Management</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="sms-management" href="#"><span class="truncate">SMS Management</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="push-notifications" href="#"><span class="truncate">Push Notifications</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="messaging-and-conversations" href="#"><span class="truncate">Messaging &amp; Conversations</span></a><a aria-current="page" class="flex items-center px-space-sm py-1.5 transition-colors bg-secondary-container text-on-secondary-container font-semibold rounded-lg" data-path="parent-communication" href="#"><span class="truncate">Parent Communication</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="templates-and-automation" href="#"><span class="truncate">Templates &amp; Automation</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="communication-reports-and-settings" href="#"><span class="truncate">Communication Reports &amp; Settings</span></a></div></div><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Institutional Intelligence</div><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="executive-dashboards" href="#"><span class="truncate">Executive Dashboards</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="compliance-and-accreditation" href="#"><span class="truncate">Compliance &amp; Accreditation</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Access Control</div><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="roles-and-permissions" href="#"><span class="truncate">Roles &amp; Permissions</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="audit-logs" href="#"><span class="truncate">Audit Logs</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Portals</div><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="student-self-service" href="#"><span class="truncate">Student Self-Service</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="faculty-portal" href="#"><span class="truncate">Faculty Portal</span></a></div></nav><div class="p-space-md bg-surface-container-low mt-auto"><div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Core 98.4% uptime</span></div><span class="font-code-metric text-label-sm text-on-surface-variant font-medium">v4.2</span></div></div></aside><div class="pl-72 flex flex-col min-h-screen bg-background"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full h-16 px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full h-9 pl-9 pr-16 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant outline-none focus:ring-1 focus:ring-secondary transition-all shadow-[0_1px_2px_rgba(0,0,0,0.02)]" placeholder="Search students, faculty, circulars, dispatch logs..." type="text"/><kbd class="absolute right-2.5 top-1/2 -translate-y-1/2 px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric text-label-sm">Cmd+K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-semibold text-on-surface">AY 2024–2025</span><span class="text-outline text-label-sm">•</span><span class="font-label-sm text-label-sm">Sem 1 Fall</span><span class="ml-1 font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-surface-container-highest text-secondary font-medium">ACTIVE</span></div><a class="h-9 px-space-md rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container transition-colors flex items-center gap-space-xs font-label-md text-label-md shadow-[0_1px_3px_rgba(75,65,225,0.25)]" data-path="announcements-and-circulars" href="#"><span class="material-symbols-outlined text-[16px]">send</span><span class="font-medium">Dispatch Broadcast</span></a><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative w-9 h-9 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center justify-center font-bold">3</span></button><button aria-label="Help &amp; Knowledge Base" class="w-9 h-9 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">help</span></button></div><div class="h-6 w-[1px] bg-surface-container-highest"></div><div class="flex items-center gap-space-sm"><div class="text-right hidden sm:block"><div class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Alistair Finch</div><div class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Dean of Academic Affairs</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_1px_2px_rgba(0,0,0,0.1)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="flex-1 w-full pt-16 bg-background px-gutter-desktop py-space-lg"><div class="flex flex-col w-full space-y-space-lg">
+<!-- Top Breadcrumb & Executive Header Section -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="hover:text-on-surface transition-colors cursor-pointer">Institutional Services</span>
+<span class="text-outline-variant">/</span>
+<span class="hover:text-on-surface transition-colors cursor-pointer">Communication</span>
+<span class="text-outline-variant">/</span>
+<span class="text-secondary font-semibold">Parent &amp; Guardian Engagement</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="space-y-1 max-w-3xl">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold">
+          Parent Communication &amp; Guardian Portal
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Institutional outreach, student progress updates, PTM scheduling, statutory fee notices, and verified guardian consent management.
+        </p>
+</div>
+<!-- Action Group -->
+<div class="flex items-center gap-space-sm flex-wrap self-start lg:self-auto">
+<button class="h-9 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">download</span>
+<span>Export Guardian Directory</span>
+</button>
+<button class="h-9 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">calendar_add_on</span>
+<span>Schedule PTM Conclave</span>
+</button>
+<button class="h-9 px-space-md rounded-lg bg-secondary text-on-secondary font-label-md text-label-md shadow hover:bg-secondary-container transition-all flex items-center gap-1.5 font-semibold" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Broadcast Parent Notice</span>
+</button>
+</div>
+</div>
+</div>
+<!-- KPI Metrics Strip: 5 Balanced Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- KPI 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Linked Guardians</span>
+<span class="w-7 h-7 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">how_to_reg</span>
+</span>
+</div>
+<div class="my-space-xs">
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight font-code-metric">
+          6,042 <span class="text-label-sm font-label-sm text-on-surface-variant font-normal">/ 6,130</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">98.5% Verified Phone &amp; Email</span>
+</div>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full overflow-hidden mt-1">
+<div class="bg-secondary h-full rounded-full" style="width: 98.5%;"></div>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Messages Dispatched</span>
+<span class="w-7 h-7 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">forward_to_inbox</span>
+</span>
+</div>
+<div class="my-space-xs">
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight font-code-metric">
+          24,850
+        </div>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">AY 2024-25 Fall Semester</span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-1 text-label-sm font-label-sm text-on-surface-variant">
+<span class="text-secondary font-semibold">SMS (64%)</span>
+<span>•</span>
+<span>WhatsApp (28%)</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Pending Acks</span>
+<span class="w-7 h-7 rounded-lg bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">assignment_late</span>
+</span>
+</div>
+<div class="my-space-xs">
+<div class="font-headline-lg text-headline-lg font-bold text-error tracking-tight font-code-metric">
+          186
+        </div>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm text-error font-semibold">Mandatory notices awaiting sign-off</span>
+</div>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full overflow-hidden mt-1">
+<div class="bg-error h-full rounded-full" style="width: 3.1%;"></div>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Upcoming PTM Meetings</span>
+<span class="w-7 h-7 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">groups</span>
+</span>
+</div>
+<div class="my-space-xs">
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight font-code-metric">
+          48 <span class="text-label-sm font-label-sm text-on-surface-variant font-normal">Sessions</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Scheduled for 28–30 Nov</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mt-1">
+<span>78.8% Slots Booked</span>
+<span class="font-semibold text-on-surface">380 left</span>
+</div>
+</div>
+<!-- KPI 5 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Unresolved Queries</span>
+<span class="w-7 h-7 rounded-lg bg-surface-container-low text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">support_agent</span>
+</span>
+</div>
+<div class="my-space-xs">
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight font-code-metric">
+          9
+        </div>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Avg SLA: 4.2 hrs</span>
+<span class="text-on-surface-variant">• Normal</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm text-on-surface-variant mt-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Parent desk operating live</span>
+</div>
+</div>
+</div>
+<!-- Primary Sub-Navigation / Segmented Tabs -->
+<div class="flex items-center justify-between bg-surface-container-low p-1.5 rounded-xl overflow-x-auto shadow-sm">
+<div class="flex items-center gap-1">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold shadow-sm flex items-center gap-2 whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">badge</span>
+<span>Guardian Directory &amp; Relationship Linkage</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md transition-colors flex items-center gap-2 whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[16px]">troubleshoot</span>
+<span>Academic Progress &amp; Defaulter Bulletins</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-secondary font-code-metric text-label-sm">12 Alerts</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md transition-colors flex items-center gap-2 whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[16px]">event_seat</span>
+<span>Parent-Teacher Meetings (PTM) Scheduler</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md transition-colors flex items-center gap-2 whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>Statutory Notices &amp; Acknowledgement Ledger</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md transition-colors flex items-center gap-2 whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[16px]">contact_support</span>
+<span>Parent Feedback &amp; Query Desk</span>
+</button>
+</div>
+<div class="hidden xl:flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm px-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Sync Live: Central Guardian Hub</span>
+</div>
+</div>
+<!-- Two-Card Top Highlight Section -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md">
+<!-- Card A: Upcoming Mid-Semester PTM Conclave -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+              SCHEDULED CONCLAVE
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">#PTM-FA24-MID</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+            Upcoming Mid-Semester PTM Conclave (AY 2024-25)
+          </h2>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">meeting_room</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md my-space-sm p-space-md rounded-lg bg-surface-container-low">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Schedule &amp; Mode</span>
+<div class="font-body-md text-body-md font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">date_range</span>
+<span>Nov 28–30, 2024</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Hybrid (Campus Aud B &amp; MS Teams Enclave)
+          </p>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Target Cohorts</span>
+<div class="font-body-md text-body-md font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">school</span>
+<span>B.Tech CSE/ECE/Mech &amp; MBA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Semesters 1, 3, 5 &amp; MBA Sem 1 (2,100 Candidates)
+          </p>
+</div>
+</div>
+<div class="space-y-space-xs mt-space-xs">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface font-semibold">Total Booked Slots: 1,420 / 1,800 Parents</span>
+<span class="font-code-metric text-secondary font-bold">380 Slots Remaining</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full" style="width: 78.8%;"></div>
+<div class="bg-surface-variant h-full" style="width: 21.2%;"></div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-label-sm font-label-sm text-on-surface-variant">
+<span>In-Person: 920 slots</span>
+<span>Virtual Teams: 500 slots</span>
+<span>Room Allocations: 16 Rooms Prepared</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<div class="flex items-center -space-x-2">
+<div class="w-7 h-7 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-label-sm text-label-sm font-bold">AK</div>
+<div class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface font-label-sm text-label-sm font-bold">RM</div>
+<div class="w-7 h-7 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-label-sm text-label-sm font-bold">PS</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant pl-3 font-medium">+42 Faculty Coordinators</span>
+</div>
+<button class="h-8 px-space-md rounded-lg bg-surface-container-low text-secondary hover:bg-surface-container font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_calendar</span>
+<span>Manage PTM Slots &amp; Room Allocations</span>
+</button>
+</div>
+</div>
+<!-- Card B: Statutory Mandatory Acknowledgement Status -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+              STATUTORY COMPLIANCE
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">#CIR-2024-118</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+            Statutory Mandatory Acknowledgement Status
+          </h2>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low my-space-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-body-md text-body-md font-semibold text-on-surface">
+            Term 1 Final Examination Eligibility &amp; Attendance Cutoff
+          </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-code-metric text-label-sm">
+            Due Nov 25
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Affidavit requiring parental consent acknowledging minimum 75% biometric attendance benchmark required under UGC Section 12-B regulations.
+        </p>
+</div>
+<!-- Donut & Metric Stats Layout -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm items-center py-space-xs">
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-outline font-semibold">TOTAL DISPATCHED</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface font-code-metric mt-1">6,130</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">100% of Guardians</span>
+</div>
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">ACKNOWLEDGED</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary font-code-metric mt-1">5,944</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">96.9% Verified OTP</span>
+</div>
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-error font-semibold">OUTSTANDING</span>
+<span class="font-headline-sm text-headline-sm font-bold text-error font-code-metric mt-1">186</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3.1% Pending Sign-off</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">mark_chat_read</span>
+<span>Auto-digest configured via Twilio &amp; Gupshup API</span>
+</div>
+<button class="h-8 px-space-md rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">send_time_extension</span>
+<span>Trigger Reminder SMS &amp; WhatsApp</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Verified Guardian Directory & Communication Table -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden flex flex-col">
+<!-- Table Controls and Filters -->
+<div class="p-space-lg flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md bg-surface-container-lowest">
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Verified Guardian Directory</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-code-metric text-label-sm font-semibold">
+            6,042 Records
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Real-time parental relationship graph, authenticated telephonic channels, and statutory circular audit history.
+        </p>
+</div>
+<!-- Filter Controls Strip -->
+<div class="flex items-center gap-space-sm flex-wrap w-full lg:w-auto">
+<div class="relative min-w-[200px] flex-1 sm:flex-initial">
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">filter_alt</span>
+<select class="w-full h-8 pl-8 pr-7 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md outline-none cursor-pointer hover:bg-surface-container transition-colors appearance-none">
+<option>All Student Batches (2021–2024)</option>
+<option>Batch 2024 (1st Year)</option>
+<option>Batch 2023 (2nd Year)</option>
+<option>Batch 2022 (3rd Year)</option>
+<option>Batch 2021 (4th Year)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-on-surface-variant text-[16px] pointer-events-none">expand_more</span>
+</div>
+<div class="relative min-w-[160px] flex-1 sm:flex-initial">
+<select class="w-full h-8 px-2.5 pr-7 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md outline-none cursor-pointer hover:bg-surface-container transition-colors appearance-none">
+<option>All Departments</option>
+<option>Computer Science &amp; Engg</option>
+<option>Mechanical Engg</option>
+<option>Electrical &amp; Electronics</option>
+<option>School of Management</option>
+<option>School of Economics</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-on-surface-variant text-[16px] pointer-events-none">expand_more</span>
+</div>
+<div class="relative min-w-[150px] flex-1 sm:flex-initial">
+<select class="w-full h-8 px-2.5 pr-7 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md outline-none cursor-pointer hover:bg-surface-container transition-colors appearance-none">
+<option>Contact Preference</option>
+<option>All Channels</option>
+<option>SMS Only</option>
+<option>Email &amp; Portal</option>
+<option>WhatsApp Direct</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-on-surface-variant text-[16px] pointer-events-none">expand_more</span>
+</div>
+<div class="relative min-w-[140px] flex-1 sm:flex-initial">
+<select class="w-full h-8 px-2.5 pr-7 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md outline-none cursor-pointer hover:bg-surface-container transition-colors appearance-none">
+<option>Verification Status</option>
+<option>Verified (Biometric/Aadhaar)</option>
+<option>Pending Auth</option>
+<option>Restricted / Flagged</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-on-surface-variant text-[16px] pointer-events-none">expand_more</span>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container flex items-center justify-center transition-colors" title="Reload Records" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- Data Table Container -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-space-md font-semibold">Guardian Name &amp; Relation</th>
+<th class="py-2.5 px-space-md font-semibold">Linked Student &amp; Roll ID</th>
+<th class="py-2.5 px-space-md font-semibold">Dept &amp; Cohort</th>
+<th class="py-2.5 px-space-md font-semibold">Verified Contact Coordinates</th>
+<th class="py-2.5 px-space-md font-semibold">Last Communication</th>
+<th class="py-2.5 px-space-md font-semibold">Consent &amp; Channel Status</th>
+<th class="py-2.5 px-space-md font-semibold">Recent Notice Ack</th>
+<th class="py-2.5 px-space-md font-semibold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-md font-body-md">
+<!-- Row 1: S. Meenakshi & K. Sundaram -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-secondary font-label-md text-label-md font-bold">
+                  SM
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-on-surface truncate">S. Meenakshi &amp; K. Sundaram</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Mother &amp; Father (Co-Guardians)</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Elena Rostova</span>
+<span class="font-code-metric text-label-sm font-label-sm text-secondary">STU-2024-042</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">B.Tech CSE</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Year 3 • Section B</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col text-label-sm font-label-sm">
+<div class="flex items-center gap-1 text-on-surface font-code-metric">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+<span>+91 98401-XXXXX</span>
+</div>
+<span class="text-on-surface-variant truncate max-w-[180px]">meenakshi.s@gmail.com</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-code-metric text-label-sm font-label-sm text-on-surface">20 Nov 2024</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant truncate max-w-[140px]">Fee Tranche 2 Receipt</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-label-sm font-label-sm font-semibold text-secondary">All Channels Active</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+<span>Ack: #CIR-118</span>
+</span>
+</td>
+<td class="py-space-sm px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="h-7 px-2 rounded bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors" title="View Communication History" type="button">
+                  History
+                </button>
+<button class="h-7 px-2 rounded bg-secondary text-on-secondary hover:bg-secondary-container font-label-sm text-label-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[13px]">chat</span>
+<span>Message</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Rajesh V. Mehta -->
+<tr class="bg-surface-container-low/30 hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface font-label-md text-label-md font-bold">
+                  RM
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-on-surface truncate">Rajesh V. Mehta</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Father (Primary Contact)</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Rohan Mehta</span>
+<span class="font-code-metric text-label-sm font-label-sm text-secondary">STU-2022-048</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">B.Tech Mech</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Year 3 • Section A</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col text-label-sm font-label-sm">
+<div class="flex items-center gap-1 text-on-surface font-code-metric">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+<span>+91 98200-XXXXX</span>
+</div>
+<span class="text-on-surface-variant">rvmehta.ind@corp.in</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-code-metric text-label-sm font-label-sm text-on-surface">18 Nov 2024</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant truncate max-w-[140px]">Hostel Medical Advisory</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-label-sm font-label-sm font-semibold text-on-surface">Email &amp; Portal</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+<span>Ack: Yes</span>
+</span>
+</td>
+<td class="py-space-sm px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="h-7 px-2 rounded bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors" type="button">
+                  History
+                </button>
+<button class="h-7 px-2 rounded bg-surface-container-highest text-secondary hover:bg-secondary hover:text-on-secondary font-label-sm text-label-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[13px]">mail</span>
+<span>Dispatch</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Dr. Sunita & Arvind Sharma -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-secondary font-label-md text-label-md font-bold">
+                  SS
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-on-surface truncate">Dr. Sunita &amp; Arvind Sharma</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Guardians (Grandparents/Affiant)</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Ananya Sharma</span>
+<span class="font-code-metric text-label-sm font-label-sm text-secondary">STU-2024-098</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">M.Tech AI</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Year 1 • Research Batch</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col text-label-sm font-label-sm">
+<div class="flex items-center gap-1 text-on-surface font-code-metric">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+<span>+91 94440-XXXXX</span>
+</div>
+<span class="text-on-surface-variant">sunita.sharma@aims.edu</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-code-metric text-label-sm font-label-sm text-on-surface">15 Nov 2024</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant truncate max-w-[140px]">Merit Fellowship Sanction</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-label-sm font-label-sm font-semibold text-secondary">All Channels</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+<span>Ack: Yes</span>
+</span>
+</td>
+<td class="py-space-sm px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="h-7 px-2 rounded bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors" type="button">
+                  History
+                </button>
+<button class="h-7 px-2 rounded bg-secondary text-on-secondary hover:bg-secondary-container font-label-sm text-label-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[13px]">chat</span>
+<span>Message</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Manjit Deshmukh -->
+<tr class="bg-surface-container-low/30 hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface font-label-md text-label-md font-bold">
+                  MD
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-on-surface truncate">Manjit Deshmukh</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Mother (Sole Legal Signatory)</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Kabir Deshmukh</span>
+<span class="font-code-metric text-label-sm font-label-sm text-secondary">STU-2023-112</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">B.A. Econ</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Year 2 • Section C</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col text-label-sm font-label-sm">
+<div class="flex items-center gap-1 text-on-surface font-code-metric">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+<span>+91 98110-XXXXX</span>
+</div>
+<span class="text-on-surface-variant">manjit.d@outlook.com</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-code-metric text-label-sm font-label-sm text-error font-semibold">14 Nov 2024</span>
+<span class="text-label-sm font-label-sm text-error truncate max-w-[140px]">Attendance Notice 76.2%</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-label-sm font-label-sm font-medium text-on-surface">SMS Only</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="px-2 py-0.5 rounded bg-error-container text-error font-label-sm text-label-sm font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">pending</span>
+<span>Pending (6d ago)</span>
+</span>
+</td>
+<td class="py-space-sm px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="h-7 px-2 rounded bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors" type="button">
+                  History
+                </button>
+<button class="h-7 px-2 rounded bg-error text-on-error hover:bg-on-error-container font-label-sm text-label-sm transition-colors flex items-center gap-1 shadow-sm font-semibold" type="button">
+<span class="material-symbols-outlined text-[13px]">phone_in_talk</span>
+<span>Trigger Call</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Deepak Joshi -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface font-label-md text-label-md font-bold">
+                  DJ
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-on-surface truncate">Deepak Joshi</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Father</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Tanmay Joshi</span>
+<span class="font-code-metric text-label-sm font-label-sm text-secondary">STU-2024-518</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">MBA</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Year 1 • Executive Div</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col text-label-sm font-label-sm">
+<div class="flex items-center gap-1 text-on-surface font-code-metric">
+<span class="material-symbols-outlined text-[14px] text-outline">pending_actions</span>
+<span>+91 97230-XXXXX</span>
+</div>
+<span class="text-on-surface-variant font-code-metric text-[10px]">Pending Biometric</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-code-metric text-label-sm font-label-sm text-on-surface">10 Nov 2024</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant truncate max-w-[140px]">Convocation Reg</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-label-sm font-label-sm font-medium text-on-surface">Email Only</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+<span>Ack: Yes</span>
+</span>
+</td>
+<td class="py-space-sm px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="h-7 px-2 rounded bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors" type="button">
+                  History
+                </button>
+<button class="h-7 px-2 rounded bg-surface-container-highest text-secondary hover:bg-secondary hover:text-on-secondary font-label-sm text-label-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[13px]">mail</span>
+<span>Dispatch</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Bulk Status Footer -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span>Displaying records <strong class="text-on-surface font-code-metric">1–5</strong> of <strong class="text-on-surface font-code-metric">6,042</strong></span>
+<span>•</span>
+<span class="text-secondary font-semibold">186 Require Manual Attention</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="h-7 px-2.5 rounded bg-surface-container text-on-surface font-medium hover:bg-surface-container-highest transition-colors disabled:opacity-50" disabled="" type="button">
+          Previous
+        </button>
+<button class="h-7 w-7 rounded bg-secondary text-on-secondary font-bold flex items-center justify-center" type="button">
+          1
+        </button>
+<button class="h-7 w-7 rounded bg-surface-container text-on-surface font-medium hover:bg-surface-container-highest transition-colors flex items-center justify-center" type="button">
+          2
+        </button>
+<button class="h-7 w-7 rounded bg-surface-container text-on-surface font-medium hover:bg-surface-container-highest transition-colors flex items-center justify-center" type="button">
+          3
+        </button>
+<span class="px-1 text-outline">...</span>
+<button class="h-7 px-2.5 rounded bg-surface-container text-on-surface font-medium hover:bg-surface-container-highest transition-colors" type="button">
+          Next
+        </button>
+</div>
+</div>
+</div>
+<!-- Bottom Panel: Privacy, Statutory Safeguards & Gateway Telemetry -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md max-w-4xl">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[22px]">security</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">
+            FERPA / DPDP ACT 2023 COMPLIANCE ENCLAVE
+          </span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-code-metric text-label-sm text-on-surface-variant font-medium">CRYPT-SHA256 AUDIT LOGGED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Guardian access is strictly restricted to their legally verified ward. Cross-student data exposure is prevented via cryptographic tenant isolation. All SMS, OTPs, and WhatsApp outbound channels operate over end-to-end encrypted DLT gateways registered with TRAI.
+        </p>
+</div>
+</div>
+<!-- Right Quick Actions & Gateway Indicator -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm shrink-0 w-full md:w-auto">
+<a class="h-9 px-space-md rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors flex items-center justify-center gap-1.5 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined text-[18px] text-secondary">install_mobile</span>
+<span>Guardian App Gateway</span>
+</a>
+<div class="h-9 px-space-sm rounded-lg bg-surface-container-low flex items-center justify-center gap-1.5 text-label-sm font-label-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-code-metric font-semibold text-on-surface">DLT Nodes 100% OK</span>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-space-md px-gutter-desktop shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex flex-col md:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-label-sm text-label-sm"><div class="flex items-center gap-space-sm flex-wrap"><span>Apex Core <strong class="text-on-surface font-semibold">98.4% uptime</strong></span><span>•</span><span>Release <strong class="font-code-metric text-on-surface">v4.2-enterprise</strong></span><span>•</span><span>Node: <code class="font-code-metric text-on-surface">#US-CAMPUS-01</code></span></div><div class="flex items-center gap-space-md flex-wrap"><a class="hover:text-on-surface transition-colors" data-path="compliance-and-accreditation" href="#">Institutional Support Desk</a><a class="hover:text-on-surface transition-colors" data-path="audit-logs" href="#">FERPA &amp; Privacy Policy</a><span>© 2025 Apex Institute of Technology</span></div></div></footer></div></body></html>

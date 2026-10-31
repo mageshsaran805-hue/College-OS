@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline":"#76777d","on-tertiary":"#ffffff","secondary-fixed":"#e2dfff","surface-bright":"#f8f9ff","on-secondary-fixed-variant":"#3323cc","on-error-container":"#93000a","on-secondary-container":"#fffbff","on-surface-variant":"#45464d","surface-container":"#e5eeff","on-background":"#0b1c30","on-surface":"#0b1c30","background":"#f8f9ff","on-secondary":"#ffffff","surface-variant":"#d3e4fe","tertiary-fixed-dim":"#89ceff","on-tertiary-fixed-variant":"#004c6e","on-primary-fixed":"#131b2e","on-primary-fixed-variant":"#3f465c","surface-container-low":"#eff4ff","on-secondary-fixed":"#0f0069","error-container":"#ffdad6","secondary-fixed-dim":"#c3c0ff","tertiary":"#000000","error":"#ba1a1a","outline-variant":"#c6c6cd","on-tertiary-container":"#008cc7","on-tertiary-fixed":"#001e2f","surface-container-high":"#dce9ff","primary-fixed":"#dae2fd","on-error":"#ffffff","secondary-container":"#645efb","inverse-on-surface":"#eaf1ff","surface-tint":"#565e74","on-primary":"#ffffff","primary-fixed-dim":"#bec6e0","tertiary-container":"#001e2f","tertiary-fixed":"#c9e6ff","secondary":"#4b41e1","inverse-primary":"#bec6e0","surface":"#f8f9ff","primary-container":"#131b2e","primary":"#000000","surface-dim":"#cbdbf5","inverse-surface":"#213145","surface-container-highest":"#d3e4fe","on-primary-container":"#7c839b","surface-container-lowest":"#ffffff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-md":"0.75rem","margin":"1rem","margin-desktop":"2rem","space-lg":"1.25rem","space-xl":"2rem","gutter-desktop":"1.5rem","gutter":"1rem","space-xs":"0.25rem","space-sm":"0.5rem"},fontFamily:{"headline-sm":["Geist"],"body-lg":["Geist"],"label-md":["Geist"],"body-sm":["Geist"],"headline-xl-mobile":["Geist"],"code-metric":["Geist"],"body-md":["Geist"],"headline-lg":["Geist"],"headline-xl":["Geist"],"label-sm":["Geist"]},fontSize:{"headline-sm":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"-0.011em","fontWeight":"400"}],"label-md":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"-0.005em","fontWeight":"500"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0em","fontWeight":"400"}],"headline-xl-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.02em","fontWeight":"600"}],"code-metric":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.02em","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.006em","fontWeight":"400"}],"headline-lg":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.025em","fontWeight":"600"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.04em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-low flex flex-col z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)] overflow-y-auto"><div class="px-space-lg pt-space-lg pb-space-md flex items-center gap-space-sm bg-surface-container-low"><div class="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center shadow-[0_1px_3px_rgba(0,0,0,0.08)]"><span class="material-symbols-outlined text-on-secondary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface truncate">Apex OS</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric">#US-01</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Apex Institute of Technology</span></div></div><div class="px-space-md py-space-xs"><div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04)] flex items-center justify-between"><div class="flex items-center gap-space-xs min-w-0"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface truncate font-semibold">AY 2024–2025</span><span class="text-outline text-label-sm">•</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Sem 1 Fall</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-secondary font-semibold">LIVE</span></div></div><nav class="flex-1 px-space-md py-space-sm space-y-space-md" data-active-classes="bg-secondary-container text-on-secondary-container font-semibold rounded-lg"><div class="space-y-space-xs"><div class="px-space-sm py-1 flex items-center justify-between font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold"><span>Administration &amp; Settings</span><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span></div><div class="pl-space-sm space-y-0.5"><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="user-management" href="#"><span class="truncate">User Management</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="roles-and-permissions" href="#"><span class="truncate">Roles &amp; Permissions</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="permission-matrix" href="#"><span class="truncate">Permission Matrix</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="authentication-and-security" href="#"><span class="truncate">Authentication &amp; Security</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="approval-workflow-builder" href="#"><span class="truncate">Approval Workflow Builder</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="audit-logs-and-activity-monitoring" href="#"><span class="truncate">Audit Logs &amp; Activity Monitoring</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="integration-and-api-management" href="#"><span class="truncate">Integration &amp; API Management</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="data-import-and-export-management" href="#"><span class="truncate">Data Import &amp; Export Management</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="college-branding-and-configuration" href="#"><span class="truncate">College Branding &amp; Configuration</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="system-preferences-and-notifications" href="#"><span class="truncate">System Preferences &amp; Notifications</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="backup-retention-and-data-management" href="#"><span class="truncate">Backup, Retention &amp; Data Management</span></a></div></div><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Reports &amp; Analytics</div><div class="pl-space-sm space-y-0.5"><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="institutional-intelligence" href="#"><span class="truncate">Institutional Intelligence</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="academic-analytics" href="#"><span class="truncate">Academic Analytics</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="student-analytics" href="#"><span class="truncate">Student Analytics</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="finance-analytics" href="#"><span class="truncate">Finance Analytics</span></a></div></div><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Academic Operations</div><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="overview" href="#"><span class="truncate">Overview</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="academics" href="#"><span class="truncate">Academics</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="students" href="#"><span class="truncate">Students</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="faculty-and-staff" href="#"><span class="truncate">Faculty &amp; Staff</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Institutional Services</div><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="finance" href="#"><span class="truncate">Finance</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="campus-operations" href="#"><span class="truncate">Campus Operations</span></a></div></nav><div class="p-space-md bg-surface-container-low mt-auto"><div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Core 98.4% uptime</span></div><span class="font-code-metric text-label-sm text-on-surface-variant font-medium">v4.2</span></div></div></aside><div class="pl-72 flex flex-col min-h-screen bg-background"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full h-16 px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-xl"><nav aria-label="Breadcrumb" class="hidden md:flex items-center gap-space-xs text-label-sm font-label-sm text-on-surface-variant shrink-0"><span class="text-on-surface-variant">Apex Institute of Technology</span><span class="text-outline">/</span><span class="text-on-surface font-semibold">Administration &amp; Settings</span></nav><div class="relative w-full max-w-sm"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full h-9 pl-9 pr-16 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant outline-none focus:ring-1 focus:ring-secondary transition-all shadow-[0_1px_2px_rgba(0,0,0,0.02)]" placeholder="Search administration, users, security, policies..." type="text"/><kbd class="absolute right-2.5 top-1/2 -translate-y-1/2 px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric text-label-sm">Cmd+K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-semibold text-on-surface">AY 2024–2025</span><span class="text-outline text-label-sm">•</span><span class="font-label-sm text-label-sm">Sem 1 Fall</span><span class="ml-1 font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-surface-container-highest text-secondary font-medium">ACTIVE</span></div><a class="h-9 px-space-md rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container transition-colors flex items-center gap-space-xs font-label-md text-label-md shadow-[0_1px_3px_rgba(75,65,225,0.25)]" data-path="authentication-and-security" href="#"><span class="material-symbols-outlined text-[16px]">shield</span><span class="font-medium">Security Center</span></a><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative w-9 h-9 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center justify-center font-bold">3</span></button><button aria-label="Help &amp; Knowledge Base" class="w-9 h-9 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">help</span></button></div><div class="h-6 w-[1px] bg-surface-container-highest"></div><div class="flex items-center gap-space-sm"><div class="text-right hidden sm:block"><div class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Alistair Finch</div><div class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Dean of Academic Affairs</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_1px_2px_rgba(0,0,0,0.1)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="flex-1 w-full pt-16 bg-background px-gutter-desktop py-space-lg"><div class="flex flex-col w-full space-y-space-xl">
+<!-- Micro Breadcrumb & Executive Command Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col space-y-space-xs">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Settings &amp; Administration</span>
+<span class="text-outline">/</span>
+<span>Preferences</span>
+<span class="text-outline">/</span>
+<span class="font-code-metric text-secondary font-semibold">SYS-CONF-CORE</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">System Preferences &amp; Notification Governance</h1>
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+          Cluster Sync: Active
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Institute-wide locale orchestration, multi-channel carrier governance, and strict communications compliance for Apex Institute of Technology.
+      </p>
+</div>
+<!-- Action Toolbar -->
+<div class="flex items-center flex-wrap gap-space-sm shrink-0">
+<button class="h-9 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors flex items-center gap-space-xs font-label-md text-label-md" id="btnReset" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Reset Changes</span>
+</button>
+<button class="h-9 px-space-md rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-space-xs font-label-md text-label-md" id="btnTestNotification" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">cell_tower</span>
+<span>Send Test Broadcast</span>
+</button>
+<button class="h-9 px-space-lg rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container transition-all flex items-center gap-space-xs font-label-md text-label-md shadow-sm" id="btnSavePreferences" type="button">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Save Global Preferences</span>
+</button>
+</div>
+</div>
+<!-- Real-Time Gateway Status Ribbon -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">SES Endpoint</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">ap-south-1 (Mumbai)</div>
+</div>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-secondary font-semibold">99.98%</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">sms</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">DLT SMS Header</div>
+<div class="font-code-metric text-code-metric font-semibold text-on-surface">APEXIN-TRX</div>
+</div>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-secondary font-semibold">CERTIFIED</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">notifications_active</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">FCM / APNs Sync</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">42,891 Tokens</div>
+</div>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-secondary font-semibold">HEALTHY</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">bedtime</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Quiet Hours Lock</div>
+<div class="font-code-metric text-code-metric font-semibold text-on-surface">21:30 - 07:00 IST</div>
+</div>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold">QUEUED</span>
+</div>
+</div>
+<!-- Bento Grid Main Config -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Column 1: Academic Engine, Regionalization & Landing Routes (5 cols) -->
+<div class="lg:col-span-5 flex flex-col space-y-space-lg">
+<!-- Academic & Regional Defaults Card -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">account_balance</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Academic &amp; Financial Formatters</h2>
+</div>
+<span class="font-code-metric text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">AY-CORE-V4</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Establishes canonical date windows, ledger rounding algorithms, and multi-tier institutional localization.
+        </p>
+<div class="space-y-space-md pt-space-xs">
+<!-- Academic Term Selection -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="academicYearSelect">Active Academic Year / Cycle</label>
+<div class="relative">
+<select class="w-full h-9 pl-3 pr-8 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:ring-1 focus:ring-secondary appearance-none cursor-pointer" id="academicYearSelect">
+<option selected="">AY 2024–2025 (Semester 1 Fall) [CURRENT ACTIVE]</option>
+<option>AY 2024–2025 (Semester 2 Spring) [PROVISIONAL]</option>
+<option>AY 2025–2026 (Annual Admissions Cycle)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant px-1 pt-1">
+<span>Term Start: 12 Aug 2024</span>
+<span>Census Date: 15 Sep 2024</span>
+</div>
+</div>
+<!-- Financial Notation & Number Grouping -->
+<div class="p-space-md rounded-lg bg-surface-container-low space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Currency &amp; Ledger Grouping</span>
+<span class="font-code-metric text-label-sm text-secondary font-bold">INR (₹) Lacs / Cr</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-xs rounded bg-surface-container-lowest">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Specimen Ledger View</div>
+<div class="font-code-metric text-code-metric font-semibold text-on-surface">₹64,80,45,200.00</div>
+<div class="font-body-sm text-body-sm text-secondary">Formatted: ₹64.80 Cr</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Fee Installment Mode</div>
+<div class="font-code-metric text-code-metric font-semibold text-on-surface">₹1,85,000.00</div>
+<div class="font-body-sm text-body-sm text-secondary">Formatted: ₹1.85 Lakh</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs pt-1">
+<input checked="" class="w-4 h-4 rounded bg-surface-container text-secondary accent-secondary cursor-pointer" id="chkLakhGrouping" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface" for="chkLakhGrouping">Mandate Reserve Bank of India (RBI) financial notation across campus finance portals</label>
+</div>
+</div>
+<!-- Multilingual Framework -->
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Multilingual Campus Support</label>
+<div class="grid grid-cols-3 gap-space-xs">
+<div class="p-space-sm rounded-lg bg-secondary-fixed text-on-secondary-fixed flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold">English</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<span class="font-code-metric text-label-sm pt-2">Default (en-IN)</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low text-on-surface flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold">हिन्दी (Hindi)</span>
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+</div>
+<span class="font-code-metric text-label-sm pt-2 text-on-surface-variant">Secondary (hi-IN)</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low text-on-surface flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold">தமிழ் (Tamil)</span>
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+</div>
+<span class="font-code-metric text-label-sm pt-2 text-on-surface-variant">Regional Ext. (ta-IN)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Role-Based Dashboard Routing Registry -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">alt_route</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Default Role Landing Matrix</h2>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">verified_user</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Initial route resolution post-SSO authentication according to authenticated JWT claim scopes.
+        </p>
+<div class="space-y-space-sm">
+<!-- Super Admin -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-7 h-7 rounded bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">SA</span>
+<div class="min-w-0">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Super Admin</div>
+<div class="font-code-metric text-label-sm text-on-surface-variant truncate">role:sys_super_admin</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-label-sm text-label-sm font-semibold text-secondary">Super Admin Dashboard</div>
+<div class="font-code-metric text-label-sm text-on-surface-variant">/admin/executive-core</div>
+</div>
+</div>
+<!-- HOD -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-7 h-7 rounded bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">HD</span>
+<div class="min-w-0">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Head of Dept (HOD)</div>
+<div class="font-code-metric text-label-sm text-on-surface-variant truncate">role:academic_hod</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-label-sm text-label-sm font-semibold text-secondary">Departmental Analytics</div>
+<div class="font-code-metric text-label-sm text-on-surface-variant">/dept/intelligence</div>
+</div>
+</div>
+<!-- Faculty -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-7 h-7 rounded bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">FA</span>
+<div class="min-w-0">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Faculty &amp; Teaching Fellows</div>
+<div class="font-code-metric text-label-sm text-on-surface-variant truncate">role:faculty_tenure</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-label-sm text-label-sm font-semibold text-secondary">Faculty Workload Workspace</div>
+<div class="font-code-metric text-label-sm text-on-surface-variant">/faculty/schedule-grading</div>
+</div>
+</div>
+<!-- Student -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-7 h-7 rounded bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">ST</span>
+<div class="min-w-0">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Enrolled Student / Scholar</div>
+<div class="font-code-metric text-label-sm text-on-surface-variant truncate">role:student_active</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-label-sm text-label-sm font-semibold text-secondary">Student Self-Service Portal</div>
+<div class="font-code-metric text-label-sm text-on-surface-variant">/student/launchpad</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Campus Visual Environment Preview Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Institutional Infrastructure Hub</span>
+<span class="font-code-metric text-label-sm text-secondary">CAMPUS-01 / NOC</span>
+</div>
+<div class="relative rounded-lg overflow-hidden h-44 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Modern Indian university computational research center and smart campus technology hub with high-tech interior lighting, glass partitioned control rooms, subtle blue and deep navy tones, architectural clean lines and servers visible." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfx1dHhMB-d-qQl4EVTIc8djEdka28EY2kc8lm2dvDIUJouf9J9tCup806VN77V2BOkQRTt6tcEJjsE_alDC8ykzTCrYBgyTAkBY4QE4zgSxgXN4PHQIVdkfVY6k-ertQ5oXaKOmZqkakrTbMPbIMFEWc0vcwJKb_svE2xkKzyWQYoC70vleTOLauk0Ep4WoknBhGVcfpNptVLhaY6_B5lhybB09SP54y0U7sTiXc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/30 to-transparent flex items-end p-space-md">
+<div>
+<div class="font-label-md text-label-md font-bold text-on-primary">Apex Central Operations Command</div>
+<div class="font-body-sm text-body-sm text-surface-variant">Main Campus Bangalore &amp; Chennai Hybrid Edge</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 2: Notification Governance & Dispatch Engine Matrix (7 cols) -->
+<div class="lg:col-span-7 flex flex-col space-y-space-lg">
+<!-- Carrier & Channel Gateway Matrix -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">podcasts</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Campus Notification Governance &amp; Routing Matrix</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Traffic priority tiers, DLT telemetry headers, and strict institutional quiet hours exemption laws.
+            </p>
+</div>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high font-label-sm text-label-sm text-secondary font-semibold transition-colors" type="button">
+            Audit DLT Headers
+          </button>
+</div>
+<!-- Notification Category Table -->
+<div class="overflow-x-auto rounded-lg">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-3">Classification &amp; Trigger</th>
+<th class="py-2.5 px-3">Priority</th>
+<th class="py-2.5 px-3">Carriers Allowed</th>
+<th class="py-2.5 px-3">Schedule Window</th>
+<th class="py-2.5 px-3 text-right">Quiet Exemption</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-sm font-body-sm">
+<!-- Academic Emergency -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-3">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Academic Emergency</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Weather warnings, exam postponement, security lockouts</div>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm font-label-sm font-bold bg-error-container text-on-error-container">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                    Tier P1
+                  </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1 font-code-metric text-label-sm text-on-surface">
+<span class="px-1.5 py-0.5 rounded bg-surface-container">SES</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container">DLT-SMS</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container">FCM</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container">MODAL</span>
+</div>
+</td>
+<td class="py-3 px-3 font-code-metric text-label-sm text-on-surface">Immediate Blast (0ms lag)</td>
+<td class="py-3 px-3 text-right">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">EXEMPT</span>
+</td>
+</tr>
+<!-- Fee Payment Due & Receipts -->
+<tr class="bg-surface-container-low/50 hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-3">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Fee Payment &amp; Receipts</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Semester dues, fine notices, counter receipts</div>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm font-label-sm font-medium bg-surface-container text-on-surface">
+                    Tier P2
+                  </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1 font-code-metric text-label-sm text-on-surface">
+<span class="px-1.5 py-0.5 rounded bg-surface-container">Email (SES)</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container">SMS</span>
+</div>
+</td>
+<td class="py-3 px-3 font-code-metric text-label-sm text-on-surface">09:00 – 18:00 IST</td>
+<td class="py-3 px-3 text-right">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Subject to Lock</span>
+</td>
+</tr>
+<!-- Daily Attendance Defaulters -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-3">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Attendance Defaulter Alert</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Sub-75% daily threshold triggers sent to parents</div>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm font-label-sm font-medium bg-surface-container text-on-surface">
+                    Tier P3
+                  </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1 font-code-metric text-label-sm text-on-surface">
+<span class="px-1.5 py-0.5 rounded bg-surface-container">Parent SMS</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container">Push</span>
+</div>
+</td>
+<td class="py-3 px-3 font-code-metric text-label-sm text-on-surface">CRON 16:30 IST</td>
+<td class="py-3 px-3 text-right">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Standard</span>
+</td>
+</tr>
+<!-- General Circulars & Cultural Events -->
+<tr class="bg-surface-container-low/50 hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-3">
+<div class="font-label-md text-label-md font-semibold text-on-surface">General Circulars &amp; Fests</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Annual fest, club meets, guest speaker notices</div>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm font-label-sm font-medium bg-surface-container text-on-surface">
+                    Tier P4
+                  </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-1 font-code-metric text-label-sm text-on-surface">
+<span class="px-1.5 py-0.5 rounded bg-surface-container">Digest / In-App Only</span>
+</div>
+</td>
+<td class="py-3 px-3 font-code-metric text-label-sm text-on-surface">Daily Digest 20:00 IST</td>
+<td class="py-3 px-3 text-right">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Queued</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Institutional Quiet Hours & Anti-Spam Guardrails -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">night_shelter</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Quiet Hours &amp; Anti-Spam Guardrails</h2>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container text-on-surface font-code-metric text-label-sm">
+            TRAI TCCCPR Regulations
+          </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Quiet Window Slider Visualizer -->
+<div class="p-space-md rounded-lg bg-surface-container-low space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Quiet Period Window</span>
+<span class="font-code-metric text-label-sm text-secondary font-bold">21:30 → 07:00 IST</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              All promotional, digest, and billing reminder traffic enters a paused queue until next morning 07:00 IST.
+            </p>
+<!-- Visual Timeline Track -->
+<div class="pt-2">
+<div class="relative w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="absolute left-0 w-[29%] h-full bg-secondary-fixed"></div>
+<div class="absolute left-[29%] w-[60%] h-full bg-surface-container-highest"></div>
+<div class="absolute left-[89%] w-[11%] h-full bg-secondary-fixed"></div>
+</div>
+<div class="flex justify-between font-code-metric text-label-sm text-on-surface-variant mt-1.5">
+<span>00:00</span>
+<span class="text-secondary font-semibold">07:00 (Wake)</span>
+<span>12:00</span>
+<span class="text-secondary font-semibold">21:30 (Lock)</span>
+<span>23:59</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<label class="font-body-sm text-body-sm text-on-surface" for="exemptHOD">Allow Dean/Director manual override</label>
+<input checked="" class="w-4 h-4 rounded bg-surface-container text-secondary accent-secondary cursor-pointer" id="exemptHOD" type="checkbox"/>
+</div>
+</div>
+<!-- Recipient Frequency Limiter -->
+<div class="p-space-md rounded-lg bg-surface-container-low space-y-space-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Daily Recipient SMS Velocity</span>
+<span class="font-code-metric text-label-sm px-2 py-0.5 rounded bg-surface-container-lowest text-secondary font-bold">Max 3 / 24 hrs</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Hard quota on cellular notifications per unique mobile number across both parent and student portals.
+              </p>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Exceeded Attempt Handling:</span>
+<span class="font-semibold text-on-surface">Fallback to In-App Push</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">DLT Registered Entity ID:</span>
+<span class="font-code-metric text-on-surface">1401294820000318</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Opt-Out Keywords:</span>
+<span class="font-code-metric text-on-surface">STOP, UNITECH</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- UI Display & Table Density Controls -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">tune</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">UI Presentation &amp; Accessibility Defaults</h2>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">CLIENT-RENDER</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Density Mode -->
+<div class="p-space-sm rounded-lg bg-surface-container-low space-y-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Default Table Density</span>
+<div class="flex items-center gap-space-xs pt-1">
+<button class="flex-1 py-1.5 px-2 rounded-lg bg-surface-container-lowest shadow-sm text-on-surface font-label-md text-label-md font-semibold text-center" type="button">
+                Compact (48px)
+              </button>
+<button class="flex-1 py-1.5 px-2 rounded-lg text-on-surface-variant hover:bg-surface-container font-label-md text-label-md text-center transition-colors" type="button">
+                Standard (56px)
+              </button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+              Optimized for high-volume academic records and fee register views.
+            </p>
+</div>
+<!-- Pagination Default -->
+<div class="p-space-sm rounded-lg bg-surface-container-low space-y-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Rows Per Page</span>
+<div class="flex items-center gap-space-xs pt-1">
+<span class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-code-metric text-label-md">10</span>
+<span class="px-2.5 py-1.5 rounded-lg bg-surface-container-lowest shadow-sm text-secondary font-bold font-code-metric text-label-md">25 (Default)</span>
+<span class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-code-metric text-label-md">50</span>
+<span class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-code-metric text-label-md">100</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+              Balances network payload against continuous scroll latency.
+            </p>
+</div>
+<!-- Accessibility -->
+<div class="p-space-sm rounded-lg bg-surface-container-low space-y-space-xs flex flex-col justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Accessibility Engine</span>
+<div class="space-y-1.5 pt-1">
+<label class="flex items-center justify-between text-body-sm font-body-sm cursor-pointer">
+<span>High-contrast hairline borders</span>
+<input checked="" class="w-4 h-4 rounded bg-surface-container text-secondary accent-secondary cursor-pointer" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between text-body-sm font-body-sm cursor-pointer">
+<span>ARIA compliance screen reader</span>
+<input checked="" class="w-4 h-4 rounded bg-surface-container text-secondary accent-secondary cursor-pointer" type="checkbox"/>
+</label>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Notification Channel Gateway Diagnostics & Telemetry Bar -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Telecommunications &amp; Provider Pulse</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Telemetry over the last 24-hour cycle across Apex campus nodes.</div>
+</div>
+<div class="flex items-center gap-space-sm font-code-metric text-label-sm">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span>SES: 0.12s latency</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span>DLT: 99.4% Delivery</span>
+</div>
+</div>
+<!-- Telemetry Strip -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md pt-space-xs">
+<div class="p-space-md rounded-lg bg-surface-container-low">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Total SMS Dispatched (Today)</div>
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">18,429</div>
+<div class="font-body-sm text-body-sm text-secondary mt-0.5">Quota Remaining: 81,571</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Transactional SES Volume</div>
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">94,204</div>
+<div class="font-body-sm text-body-sm text-secondary mt-0.5">Bounce Rate: 0.04%</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Push Deliverability (FCM/APNs)</div>
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">98.92%</div>
+<div class="font-body-sm text-body-sm text-secondary mt-0.5">Active Devices: 38,110</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Quiet Hours Backpressure Queue</div>
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">1,208</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Dispatches resume at 07:00 IST</div>
+</div>
+</div>
+</div>
+<!-- Interactive Feedback Banner (Hidden by default, driven by JS) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<div class="bg-primary text-on-primary p-space-md rounded-xl shadow-xl flex items-center gap-space-md max-w-md">
+<span class="material-symbols-outlined text-secondary text-[24px]">task_alt</span>
+<div>
+<div class="font-label-md text-label-md font-semibold" id="toastTitle">Configuration Saved</div>
+<div class="font-body-sm text-body-sm text-surface-variant" id="toastDesc">Global campus parameters propagated to all 4 cluster nodes.</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    const btnSave = document.getElementById('btnSavePreferences');
+    const btnTest = document.getElementById('btnTestNotification');
+    const btnReset = document.getElementById('btnReset');
+    const toast = document.getElementById('toastNotification');
+    const toastTitle = document.getElementById('toastTitle');
+    const toastDesc = document.getElementById('toastDesc');
+
+    let toastTimer;
+
+    function showToast(title, desc) {
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTitle.textContent = title;
+      toastDesc.textContent = desc;
+      toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      toastTimer = setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3500);
+    }
+
+    if (btnSave) {
+      btnSave.addEventListener('click', function () {
+        showToast('Preferences Synchronized', 'AY 2024-2025 defaults and DLT rules updated across all API gateways.');
+      });
+    }
+
+    if (btnTest) {
+      btnTest.addEventListener('click', function () {
+        showToast('Test Notification Dispatched', 'Sample simulated payload sent through SES and DLT Sandbox.');
+      });
+    }
+
+    if (btnReset) {
+      btnReset.addEventListener('click', function () {
+        showToast('Values Reverted', 'Current session values rolled back to institutional campus defaults.');
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-low py-space-md px-gutter-desktop shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex flex-col md:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-label-sm text-label-sm"><div class="flex items-center gap-space-sm flex-wrap"><span>Apex Core <strong class="text-on-surface font-semibold">98.4% uptime</strong></span><span>•</span><span>Release <strong class="font-code-metric text-on-surface">v4.2-enterprise</strong></span><span>•</span><span>Node: <code class="font-code-metric text-on-surface">#US-CAMPUS-01</code></span></div><div class="flex items-center gap-space-md flex-wrap"><a class="hover:text-on-surface transition-colors" data-path="audit-logs-and-activity-monitoring" href="#">Institutional Support Desk</a><a class="hover:text-on-surface transition-colors" data-path="authentication-and-security" href="#">FERPA &amp; Privacy Policy</a><span>© 2025 Apex Institute of Technology</span></div></div></footer></div></body></html>

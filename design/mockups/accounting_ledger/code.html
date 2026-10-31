@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#000000", "on-tertiary": "#ffffff", "tertiary-container": "#001e2f", "outline": "#76777d", "surface-container-low": "#eff4ff", "surface-container": "#e5eeff", "surface-variant": "#d3e4fe", "error-container": "#ffdad6", "secondary-fixed-dim": "#c3c0ff", "on-secondary-fixed": "#0f0069", "background": "#f8f9ff", "on-tertiary-fixed-variant": "#004c6e", "surface-container-highest": "#d3e4fe", "inverse-surface": "#213145", "surface-bright": "#f8f9ff", "error": "#ba1a1a", "tertiary": "#000000", "secondary-container": "#645efb", "on-surface": "#0b1c30", "secondary": "#4b41e1", "surface-tint": "#565e74", "primary-fixed": "#dae2fd", "on-primary-fixed": "#131b2e", "on-secondary": "#ffffff", "on-background": "#0b1c30", "surface": "#f8f9ff", "on-error-container": "#93000a", "on-secondary-container": "#fffbff", "on-surface-variant": "#45464d", "surface-dim": "cbdbf5", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#008cc7", "on-primary-fixed-variant": "#3f465c", "on-primary": "#ffffff", "tertiary-fixed": "#c9e6ff", "tertiary-fixed-dim": "#89ceff", "primary-fixed-dim": "#bec6e0", "on-tertiary-fixed": "#001e2f", "primary-container": "#131b2e", "outline-variant": "#c6c6cd", "on-error": "#ffffff", "on-secondary-fixed-variant": "#3323cc", "surface-container-high": "#dce9ff", "on-primary-container": "#7c839b", "inverse-primary": "#bec6e0", "secondary-fixed": "#e2dfff", "inverse-on-surface": "#eaf1ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1rem", "space-sm": "0.5rem", "margin-desktop": "2rem", "space-md": "0.75rem", "gutter-desktop": "1.5rem", "space-lg": "1.25rem", "space-xs": "0.25rem", "margin": "1rem", "space-xl": "2rem" }, "fontFamily": { "body-md": ["Geist"], "label-sm": ["Geist"], "headline-xl-mobile": ["Geist"], "headline-xl": ["Geist"], "label-md": ["Geist"], "body-lg": ["Geist"], "headline-sm": ["Geist"], "body-sm": ["Geist"], "code-metric": ["Geist"], "headline-lg": ["Geist"] }, "fontSize": { "body-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.006em", "fontWeight": "400" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-xl": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600" }], "label-md": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "-0.005em", "fontWeight": "500" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.011em", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "400" }], "code-metric": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.02em", "fontWeight": "500" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col h-full overflow-hidden"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Apex Institute</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-lg bg-surface-container text-on-surface font-semibold shrink-0">#US-01</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Institutional Workspace • AY 2024-25</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container text-on-surface font-semibold rounded-lg"><div class="px-space-sm pt-space-xs pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Academic Operations</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="academics" href="#">Academics</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="students" href="#">Students</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="faculty-staff" href="#">Faculty &amp; Staff</a><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">fact_check</span><span class="font-label-md text-label-md font-semibold text-on-surface">Attendance</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-overview" href="#">Attendance Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="mark-attendance" href="#">Mark Attendance</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-records" href="#">Attendance Records</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="shortage-defaulters" href="#">Shortage &amp; Defaulters</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-settings" href="#">Attendance Settings</a></div></div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">assignment</span><span class="font-label-md text-label-md font-semibold text-on-surface">Examinations</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="examination-overview" href="#">Examination Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="exam-management" href="#">Exam Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="exam-timetable" href="#">Exam Timetable</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="hall-tickets" href="#">Hall Tickets</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="seating-arrangement" href="#">Seating Arrangement</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="marks-entry" href="#">Marks Entry</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="results-grades" href="#">Results &amp; Grades</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="revaluation-supplementary" href="#">Revaluation &amp; Supplementary</a></div></div><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Institutional Services</div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">payments</span><span class="font-label-md text-label-md font-semibold text-on-surface">Finance</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-xs transition-colors bg-surface-container text-on-surface font-semibold rounded-lg" data-path="finance-overview" href="#">Finance Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fee-structures" href="#">Fee Structures</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="student-fees" href="#">Student Fees</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fee-collection" href="#">Fee Collection</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="scholarships-aid" href="#">Scholarships &amp; Aid</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="expenses-vendors" href="#">Expenses &amp; Vendors</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="accounting-ledger" href="#">Accounting &amp; Ledger</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="financial-reports" href="#">Financial Reports</a></div></div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="campus-management" href="#">Campus Management</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-life" href="#">Student Life</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="placements" href="#">Placements</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="communication" href="#">Communication</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports-analytics" href="#">Reports &amp; Analytics</a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">System Governance</div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="administration" href="#">Administration</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-sm bg-surface-container-low shrink-0"><div class="flex items-center justify-between text-on-surface-variant mb-space-xs"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-semibold text-on-surface">Apex Core 98.4% uptime</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v4.2</span></div><a class="flex items-center justify-between font-label-sm text-label-sm text-secondary hover:text-on-secondary-fixed transition-colors" data-path="institutional-support" href="#">Institutional Support Desk</a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="relative flex items-center w-80"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-on-surface-variant pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-14 bg-surface rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search students, courses, staff..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-code-metric">⌘K</span></div><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container"><span class="material-symbols-outlined text-[16px] text-secondary">event_available</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">AY 2024–2025 • Semester 1 Fall</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary font-semibold uppercase">Active Term</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div></div><div class="flex items-center gap-space-md"><button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Action</span></button><div class="flex items-center gap-space-xs"><button class="relative w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-label-sm flex items-center justify-center font-code-metric">3</span></button><button class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button></div><div class="h-6 w-px bg-surface-container"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Alistair Finch</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Dean of Academic Affairs</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter-desktop pb-space-xl flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Command Context Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between pb-space-lg gap-space-md">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Institutional Financial Operations</span>
+<span class="text-outline-variant">•</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant font-medium">SYS_LEDGER_CORE v4.18</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Accounting &amp; Ledger</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl mt-0.5">
+        Double-entry institutional general ledger, chart of accounts, journal validation, and trial balance reconciliation.
+      </p>
+</div>
+<!-- Header Actions & Scope Filtering -->
+<div class="flex flex-wrap items-center gap-space-sm self-start lg:self-center">
+<div class="flex items-center bg-surface-container-lowest shadow-sm rounded-lg px-space-sm py-1 gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">calendar_month</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">FY:</span>
+<select class="bg-transparent font-label-md text-label-md text-on-surface font-semibold outline-none cursor-pointer">
+<option selected="">FY 2024–25 (Active)</option>
+<option>FY 2023–24 (Audited)</option>
+<option>FY 2022–23 (Archived)</option>
+</select>
+</div>
+<div class="flex items-center bg-surface-container-lowest shadow-sm rounded-lg px-space-sm py-1 gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">account_balance_wallet</span>
+<select class="bg-transparent font-label-md text-label-md text-on-surface font-medium outline-none cursor-pointer">
+<option selected="">All Ledger Accounts (Consolidated)</option>
+<option>1000 - Assets Only</option>
+<option>2000 - Liabilities Only</option>
+<option>3000 - Institutional Reserves</option>
+<option>4000 - Income Ledgers</option>
+<option>5000 - Expenditure Ledgers</option>
+</select>
+</div>
+<button class="h-9 px-space-md bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md shadow-sm rounded-lg flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Reconcile Accounts</span>
+</button>
+<button class="h-9 px-space-md bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md shadow-sm rounded-lg flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Export Ledger</span>
+</button>
+<button class="h-9 px-space-md bg-secondary hover:bg-secondary-container text-on-secondary font-label-md text-label-md shadow-sm rounded-lg flex items-center gap-space-xs transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>+ New Journal Entry</span>
+</button>
+</div>
+</div>
+<!-- Key Institutional Metrics: 5 KPI Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md mb-space-lg">
+<!-- Total Income -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Total Income</span>
+<span class="w-6 h-6 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-code-metric">₹54.80 Cr</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant truncate mt-0.5">Tuition, grants, research &amp; endowments</div>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<span class="font-code-metric font-label-sm text-label-sm text-secondary bg-surface-container px-1 rounded font-semibold">+18.4%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">vs audited FY23-24</span>
+</div>
+</div>
+<!-- Total Expenses -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Total Expenses</span>
+<span class="w-6 h-6 rounded-lg bg-surface-container flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[14px]">payments</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-code-metric">₹40.75 Cr</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant truncate mt-0.5">CapEx, OpEx, payroll, lab infra</div>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 74.3%;"></div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Budget Utilized</span>
+<span class="font-code-metric font-label-sm text-label-sm text-on-surface font-semibold">74.3%</span>
+</div>
+</div>
+<!-- Net Balance / Operating Surplus -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute right-0 top-0 bottom-0 w-1 bg-secondary"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Operating Surplus</span>
+<span class="w-6 h-6 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">savings</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-lg text-headline-lg text-secondary tracking-tight font-code-metric">₹14.05 Cr</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant truncate mt-0.5">Net ledger surplus retained</div>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<span class="font-code-metric font-label-sm text-label-sm text-on-primary bg-secondary px-1.5 py-0.5 rounded font-semibold">+25.6%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Operating Margin</span>
+</div>
+</div>
+<!-- Accounts Receivable -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Receivables (A/R)</span>
+<span class="w-6 h-6 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">call_received</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-code-metric">₹3.78 Cr</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant truncate mt-0.5">Term 2 student arrears &amp; grants</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fee Defaulters</span>
+<span class="font-code-metric font-label-sm text-label-sm text-error font-semibold">142 Cases</span>
+</div>
+</div>
+<!-- Accounts Payable -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Payables (A/P)</span>
+<span class="w-6 h-6 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">call_made</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-code-metric">₹3.61 Cr</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant truncate mt-0.5">Vendor invoices &amp; contractor retention</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pending Vouchers</span>
+<span class="font-code-metric font-label-sm text-label-sm text-on-surface font-semibold">38 Invoices</span>
+</div>
+</div>
+</div>
+<!-- Micro-Navigation Sub-Tabs & Filter Strip -->
+<div class="flex items-center justify-between bg-surface-container-lowest shadow-sm rounded-xl p-space-xs mb-space-lg overflow-x-auto">
+<div class="flex items-center gap-1 min-w-max">
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md font-semibold bg-surface-container text-on-surface shadow-sm transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">account_tree</span>
+<span>Chart of Accounts</span>
+<span class="font-code-metric font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-surface-container-lowest text-on-surface-variant ml-1">42</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>General Ledger</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+<span>Journal Entries (Engine)</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">balance</span>
+<span>Trial Balance</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+<span>Bank &amp; Account Reconciliation</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 pl-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Compliance Mode:</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-secondary font-semibold uppercase tracking-wider">CAG / NAAC Accredited</span>
+</div>
+</div>
+<!-- Primary Ledger Engine Workspace: Split Layout -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Left Column: Double-Entry Journal Entry Engine & Live Validator (5 cols) -->
+<div class="xl:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">edit_note</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Journal Entry Engine</h2>
+</div>
+<span class="font-label-sm text-label-sm font-code-metric px-2 py-0.5 rounded bg-surface-container-low text-secondary font-semibold">JV-2024-1182</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Dual-legged transaction generator. Automatic real-time ledger balance validation before write commits.
+        </p>
+<!-- Form Metadata Row -->
+<div class="grid grid-cols-2 gap-space-sm mb-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Entry Date</label>
+<input class="w-full h-8 px-space-sm bg-surface-container-low rounded-lg font-code-metric text-body-sm text-on-surface outline-none cursor-default font-medium" readonly="" type="text" value="Nov 21, 2024"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Voucher Type</label>
+<div class="h-8 px-space-sm bg-surface-container-low rounded-lg font-label-md text-label-md text-on-surface flex items-center justify-between">
+<span>Receipt &amp; Recovery</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</div>
+</div>
+<div class="col-span-2 flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Narration / Description</label>
+<input class="w-full h-8 px-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface outline-none focus:bg-surface-container transition-colors" type="text" value="Term 2 Fee Realization &amp; Late Penalty Transfer to Treasury"/>
+</div>
+</div>
+<!-- Line Items: Debits & Credits Matrix -->
+<div class="flex flex-col gap-space-xs mb-space-md">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider px-space-xs">
+<span>Leg &amp; Target Account</span>
+<span>Allocated Amount (₹)</span>
+</div>
+<!-- Leg 1: Debit -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-secondary uppercase bg-secondary-fixed px-1.5 py-0.5 rounded">DEBIT [+]</span>
+<span class="font-code-metric text-body-sm font-semibold text-on-surface">₹48,50,000.00</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">1010 - SBI Treasury Operating A/c</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Asset Increase</span>
+</div>
+</div>
+<!-- Leg 2: Credit -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant uppercase bg-surface-container px-1.5 py-0.5 rounded">CREDIT [-]</span>
+<span class="font-code-metric text-body-sm font-semibold text-on-surface">₹45,00,000.00</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">1020 - Student Tuition Fee Receivables</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Receivable Cleared</span>
+</div>
+</div>
+<!-- Leg 3: Credit -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant uppercase bg-surface-container px-1.5 py-0.5 rounded">CREDIT [-]</span>
+<span class="font-code-metric text-body-sm font-semibold text-on-surface">₹3,50,000.00</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">4080 - Late Registration Fine Revenue</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Direct Income Gain</span>
+</div>
+</div>
+</div>
+<!-- Live Double-Entry Balancing Card & Statutory Proof -->
+<div class="bg-surface-container p-space-md rounded-xl mb-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-semibold">Zero-Delta Verification</span>
+</div>
+<span class="font-code-metric font-label-sm text-label-sm text-secondary font-bold">Δ = ₹0.00</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-lowest p-space-xs rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total Debits</span>
+<span class="font-code-metric text-headline-sm font-semibold text-on-surface">₹48,50,000</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total Credits</span>
+<span class="font-code-metric text-headline-sm font-semibold text-on-surface">₹48,50,000</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest p-space-xs rounded-lg mt-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Journal Perfectly Balanced (Zero Discrepancy) • Ready for Posting</span>
+</div>
+</div>
+<!-- Statutory Enforcement Alert -->
+<div class="flex items-start gap-space-xs bg-surface-container-low p-space-sm rounded-lg mb-space-lg">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant shrink-0 mt-0.5">lock</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            Unbalanced journal entries are strictly blocked from ledger posting by statutory institutional double-entry rules.
+          </span>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-xs pt-space-xs mt-auto">
+<button class="h-9 flex-1 bg-secondary hover:bg-secondary-container text-on-secondary rounded-lg font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-space-xs shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">publish</span>
+<span>Post to General Ledger</span>
+</button>
+<button class="h-9 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg font-label-md text-label-md transition-colors" type="button">
+            Save Draft
+          </button>
+<button class="h-9 px-space-sm bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg font-label-md text-label-md transition-colors flex items-center" title="Attach Voucher Scan" type="button">
+<span class="material-symbols-outlined text-[18px]">attachment</span>
+</button>
+</div>
+</div>
+<!-- Quick Institutional Audit Status Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">policy</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Ledger Immutability Active</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cryptographic SHA-256 block hash on all posted entries</span>
+</div>
+</div>
+<span class="font-code-metric font-label-sm text-label-sm bg-surface-container-low text-on-surface px-2 py-1 rounded">BLOCK #82109</span>
+</div>
+</div>
+<!-- Right Column: Chart of Accounts Hierarchical View (7 cols) -->
+<div class="xl:col-span-7 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm flex flex-col h-full">
+<!-- Card Header & Tree Filter Controls -->
+<div class="p-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm bg-surface-container-lowest rounded-t-xl">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Institutional Chart of Accounts (COA)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hierarchical account codes across 5 master institutional ledger classes</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="h-8 px-space-sm bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">unfold_more</span>
+<span>Expand All</span>
+</button>
+<button class="h-8 px-space-sm bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+<span>Filter Class</span>
+</button>
+</div>
+</div>
+<!-- Table View -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-md text-body-md">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-space-md font-semibold">Account Code</th>
+<th class="py-2.5 px-space-md font-semibold">Account Name</th>
+<th class="py-2.5 px-space-md font-semibold">Account Type</th>
+<th class="py-2.5 px-space-md font-semibold text-right">Opening (₹)</th>
+<th class="py-2.5 px-space-md font-semibold text-right">Current Balance (₹)</th>
+<th class="py-2.5 px-space-md font-semibold text-center">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<!-- Category Header: 1000 Assets -->
+<tr class="bg-surface-container/60 font-semibold">
+<td class="py-2 px-space-md font-label-sm text-label-sm text-on-surface uppercase tracking-wider" colspan="6">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">folder_open</span>
+<span>1000s • Institutional Assets (Current, Liquid, Fixed)</span>
+</div>
+</td>
+</tr>
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-space-md font-code-metric font-label-md text-label-md text-on-surface font-semibold">1010</td>
+<td class="py-2.5 px-space-md font-label-md text-label-md text-on-surface font-medium">State Bank of India Main Treasury</td>
+<td class="py-2.5 px-space-md font-body-sm text-body-sm text-on-surface-variant">Current / Bank</td>
+<td class="py-2.5 px-space-md font-code-metric text-body-sm text-right text-on-surface-variant">14,20,50,000</td>
+<td class="py-2.5 px-space-md font-code-metric text-body-sm text-right font-semibold text-on-surface">18,65,20,000</td>
+<td class="py-2.5 px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface font-medium">Active</span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-space-md font-code-metric font-label-md text-label-md text-on-surface font-semibold">1020</td>
+<td class="py-2.5 px-space-md font-label-md text-label-md text-on-surface font-medium">Student Tuition Fee Receivables</td>
+<td class="py-2.5 px-space-md font-body-sm text-body-sm text-on-surface-variant">Accounts Receivable</td>
+<td class="py-2.5 px-space-md font-code-metric text-body-sm text-right text-on-surface-variant">6,50,00,000</td>
+<td class="py-2.5 px-space-md font-code-metric text-body-sm text-right font-semibold text-on-surface">3,78,00,000</td>
+<td class="py-2.5 px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface font-medium">Active</span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-space-md font-code-metric font-label-md text-label-md text-on-surface font-semibold">1050</td>
+<td class="py-2.5 px-space-md font-label-md text-label-md text-on-surface font-medium">Fixed Assets: Lab Computing Equipment</td>
+<td class="py-2.5 px-space-md font-body-sm text-body-sm text-on-surface-variant">Capital / Property</td>
+<td class="py-2.5 px-space-md font-code-metric text-body-sm text-right text-on-surface-variant">22,10,00,000</td>
+<td class="py-2.5 px-space-md font-code-metric text-body-sm text-right font-semibold text-on-surface">24,50,00,000</td>
+<td class="py-2.5 px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface font-medium">Active</span>
+</td>
+</tr>
+<!-- Category Header: 2000 Liabilities -->
+<tr class="bg-surface-container/60 font-semibold">
+<td class="py-2 px-space-md font-label-sm text-label-sm text-on-surface uppercase tracking-wider" colspan="6">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">folder_open</span>
+<span>2000s • Liabilities &amp; Accounts Payable</span>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-space-md font-code-metric font-label-md text-label-md text-on-surface font-semibold">2010</td>
+<td class="py-2.5 px-space-md font-label-md text-label-md text-on-surface font-medium">Sundry Creditors &amp; Campus Vendors</td>
+<td class="py-2.5 px-space-md font-body-sm text-body-sm text-on-surface-variant">Accounts Payable</td>
+<td class="py-2.5 px-space-md font-code-metric text-body-sm text-right text-on-surface-variant">4,12,00,000</td>
+<td class="py-2.5 px-space-md font-code-metric text-body-sm text-right font-semibold text-on-surface">3,61,40,000</td>
+<td class="py-2.5 px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface font-medium">Active</span>
+</td>
+</tr>
+<!-- Category Header: 3000 Equity / Institutional Funds -->
+<tr class="bg-surface-container/60 font-semibold">
+<td class="py-2 px-space-md font-label-sm text-label-sm text-on-surface uppercase tracking-wider" colspan="6">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">folder_open</span>
+<span>3000s • University Endowment &amp; Corpus Reserve</span>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-space-md font-code-metric font-label-md text-label-md text-on-surface font-semibold">3010</td>
+<td class="py-2.5 px-space-md font-label-md text-label-md text-on-surface font-medium">University Endowment Reserve Fund</td>
+<td class="py-2.5 px-space-md font-body-sm text-body-sm text-on-surface-variant">Institutional Capital</td>
+<td class="py-2.5 px-space-md font-code-metric text-body-sm text-right text-on-surface-variant">18,00,00,000</td>
+<td class="py-2.5 px-space-md font-code-metric text-body-sm text-right font-semibold text-on-surface">22,50,00,000</td>
+<td class="py-2.5 px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface font-medium">Active</span>
+</td>
+</tr>
+<!-- Category Header: 4000 Income -->
+<tr class="bg-surface-container/60 font-semibold">
+<td class="py-2 px-space-md font-label-sm text-label-sm text-on-surface uppercase tracking-wider" colspan="6">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">folder_open</span>
+<span>4000s • Institutional Revenues &amp; Grants</span>
+</div>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-space-md font-code-metric font-label-md text-label-md text-on-surface font-semibold">4010</td>
+<td class="py-2.5 px-space-md font-label-md text-label-md text-on-surface font-medium">Undergraduate Academic Tuition Fees</td>
+<td class="py-2.5 px-space-md font-body-sm text-body-sm text-on-surface-variant">Operating Revenue</td>
+<td class="py-2.5 px-space-md font-code-metric text-body-sm text-right text-on-surface-variant">0</td>
+<td class="py-2.5 px-space-md font-code-metric text-body-sm text-right font-semibold text-on-surface">36,80,00,000</td>
+<td class="py-2.5 px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface font-medium">Active</span>
+</td>
+</tr>
+<!-- Category Header: 5000 Expenses -->
+<tr class="bg-surface-container/60 font-semibold">
+<td class="py-2 px-space-md font-label-sm text-label-sm text-on-surface uppercase tracking-wider" colspan="6">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">folder_open</span>
+<span>5000s • Operating &amp; Academic Expenditures</span>
+</div>
+</td>
+</tr>
+<!-- Row 7 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-space-md font-code-metric font-label-md text-label-md text-on-surface font-semibold">5010</td>
+<td class="py-2.5 px-space-md font-label-md text-label-md text-on-surface font-medium">Faculty &amp; Academic Staff Salaries</td>
+<td class="py-2.5 px-space-md font-body-sm text-body-sm text-on-surface-variant">Payroll &amp; Benefits</td>
+<td class="py-2.5 px-space-md font-code-metric text-body-sm text-right text-on-surface-variant">0</td>
+<td class="py-2.5 px-space-md font-code-metric text-body-sm text-right font-semibold text-on-surface">24,30,00,000</td>
+<td class="py-2.5 px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface font-medium">Active</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-auto p-space-sm bg-surface-container-low rounded-b-xl flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Showing 7 key parent ledgers of 42 sub-accounts</span>
+<button class="text-secondary font-semibold hover:underline">Download Master Chart of Accounts (CSV)</button>
+</div>
+</div>
+</div>
+</div>
+<!-- General Ledger Stream & Trial Balance Snapshot -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Real-time Posted Transactions Ledger Stream (8 cols) -->
+<div class="xl:col-span-8 flex flex-col gap-space-sm">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm flex flex-col">
+<div class="p-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">receipt</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">General Ledger Live Transaction Stream</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Continuous chronological ledger journal postings with audit seals</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">Realtime Stream</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+</div>
+<!-- Ledger Table -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-md text-body-md">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-space-sm font-semibold">Date &amp; ID</th>
+<th class="py-2.5 px-space-sm font-semibold">Ledger Account</th>
+<th class="py-2.5 px-space-sm font-semibold">Description</th>
+<th class="py-2.5 px-space-sm font-semibold text-right">Debit (₹)</th>
+<th class="py-2.5 px-space-sm font-semibold text-right">Credit (₹)</th>
+<th class="py-2.5 px-space-sm font-semibold text-right">Running Net (₹)</th>
+<th class="py-2.5 px-space-sm font-semibold text-center">Audit Seal</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<!-- Item 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-space-sm">
+<div class="font-code-metric font-label-md text-label-md text-on-surface font-semibold">21 Nov 2024</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">TXN-90214</div>
+</td>
+<td class="py-2.5 px-space-sm">
+<div class="font-label-md text-label-md text-on-surface font-medium truncate max-w-[150px]">1010 - SBI Treasury</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Bank Asset</div>
+</td>
+<td class="py-2.5 px-space-sm font-body-sm text-body-sm text-on-surface max-w-[200px] truncate">
+                  Term 2 Fee Realization &amp; Late Fine Deposit
+                </td>
+<td class="py-2.5 px-space-sm font-code-metric text-body-sm text-right font-semibold text-on-surface">48,50,000</td>
+<td class="py-2.5 px-space-sm font-code-metric text-body-sm text-right text-on-surface-variant">-</td>
+<td class="py-2.5 px-space-sm font-code-metric text-body-sm text-right font-semibold text-on-surface">18,65,20,000</td>
+<td class="py-2.5 px-space-sm text-center">
+<span class="material-symbols-outlined text-[18px] text-secondary" title="Cryptographically Validated">verified</span>
+</td>
+</tr>
+<!-- Item 2 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-space-sm">
+<div class="font-code-metric font-label-md text-label-md text-on-surface font-semibold">20 Nov 2024</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">TXN-90188</div>
+</td>
+<td class="py-2.5 px-space-sm">
+<div class="font-label-md text-label-md text-on-surface font-medium truncate max-w-[150px]">5010 - Academic Salaries</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Payroll OpEx</div>
+</td>
+<td class="py-2.5 px-space-sm font-body-sm text-body-sm text-on-surface max-w-[200px] truncate">
+                  Faculty Month-End Remuneration Batch A
+                </td>
+<td class="py-2.5 px-space-sm font-code-metric text-body-sm text-right font-semibold text-on-surface">1,85,00,000</td>
+<td class="py-2.5 px-space-sm font-code-metric text-body-sm text-right text-on-surface-variant">-</td>
+<td class="py-2.5 px-space-sm font-code-metric text-body-sm text-right font-semibold text-on-surface">24,30,00,000</td>
+<td class="py-2.5 px-space-sm text-center">
+<span class="material-symbols-outlined text-[18px] text-secondary" title="Cryptographically Validated">verified</span>
+</td>
+</tr>
+<!-- Item 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-space-sm">
+<div class="font-code-metric font-label-md text-label-md text-on-surface font-semibold">19 Nov 2024</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">TXN-90150</div>
+</td>
+<td class="py-2.5 px-space-sm">
+<div class="font-label-md text-label-md text-on-surface font-medium truncate max-w-[150px]">2010 - Sundry Creditors</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Vendor A/P</div>
+</td>
+<td class="py-2.5 px-space-sm font-body-sm text-body-sm text-on-surface max-w-[200px] truncate">
+                  Server Rack Infralogic Settlement #INV-8812
+                </td>
+<td class="py-2.5 px-space-sm font-code-metric text-body-sm text-right text-on-surface-variant">-</td>
+<td class="py-2.5 px-space-sm font-code-metric text-body-sm text-right font-semibold text-on-surface">24,00,000</td>
+<td class="py-2.5 px-space-sm font-code-metric text-body-sm text-right font-semibold text-on-surface">3,61,40,000</td>
+<td class="py-2.5 px-space-sm text-center">
+<span class="material-symbols-outlined text-[18px] text-secondary" title="Cryptographically Validated">verified</span>
+</td>
+</tr>
+<!-- Item 4 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-space-sm">
+<div class="font-code-metric font-label-md text-label-md text-on-surface font-semibold">18 Nov 2024</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">TXN-90112</div>
+</td>
+<td class="py-2.5 px-space-sm">
+<div class="font-label-md text-label-md text-on-surface font-medium truncate max-w-[150px]">3010 - Endowment Reserve</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Institutional Fund</div>
+</td>
+<td class="py-2.5 px-space-sm font-body-sm text-body-sm text-on-surface max-w-[200px] truncate">
+                  Alumni Chair of Robotics Corpus Grant Addition
+                </td>
+<td class="py-2.5 px-space-sm font-code-metric text-body-sm text-right text-on-surface-variant">-</td>
+<td class="py-2.5 px-space-sm font-code-metric text-body-sm text-right font-semibold text-on-surface">50,00,000</td>
+<td class="py-2.5 px-space-sm font-code-metric text-body-sm text-right font-semibold text-on-surface">22,50,00,000</td>
+<td class="py-2.5 px-space-sm text-center">
+<span class="material-symbols-outlined text-[18px] text-secondary" title="Cryptographically Validated">verified</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Trial Balance Snapshot Widget (4 cols) -->
+<div class="xl:col-span-4 flex flex-col gap-space-sm">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col h-full">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">account_balance</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Trial Balance Reconciliation</h3>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-secondary font-semibold">FY 2024–25</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Summary reconciliation across asset, liability, equity, income and expense accounts.
+        </p>
+<!-- Summary Totals Comparison Box -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Trial Balance Status</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check</span> Reconciled
+            </span>
+</div>
+<div class="space-y-space-xs my-space-sm">
+<div class="flex justify-between items-center bg-surface-container-lowest p-space-xs rounded-lg">
+<span class="font-label-md text-label-md text-on-surface-variant">Total Debit Sum:</span>
+<span class="font-code-metric font-label-md text-label-md font-bold text-on-surface">₹78,42,10,000.00</span>
+</div>
+<div class="flex justify-between items-center bg-surface-container-lowest p-space-xs rounded-lg">
+<span class="font-label-md text-label-md text-on-surface-variant">Total Credit Sum:</span>
+<span class="font-code-metric font-label-md text-label-md font-bold text-on-surface">₹78,42,10,000.00</span>
+</div>
+<div class="flex justify-between items-center p-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Reconciliation Variance:</span>
+<span class="font-code-metric font-label-sm text-label-sm text-secondary font-bold">₹0.00 (Zero Drift)</span>
+</div>
+</div>
+<!-- Progress / Balance Indicator Vector -->
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full" style="width: 50%;"></div>
+<div class="bg-primary h-full" style="width: 50%;"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span>Debits (50.0%)</span>
+<span>Credits (50.0%)</span>
+</div>
+</div>
+<!-- Class Breakdown -->
+<div class="flex flex-col gap-space-xs mt-auto">
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span>Assets (1000s)</span>
+<span class="font-code-metric font-medium text-on-surface">₹46,93,20,000</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span>Liabilities (2000s)</span>
+<span class="font-code-metric font-medium text-on-surface">₹3,61,40,000</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span>Equity / Endowment (3000s)</span>
+<span class="font-code-metric font-medium text-on-surface">₹22,50,00,000</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span>Income (4000s)</span>
+<span class="font-code-metric font-medium text-on-surface">₹54,80,00,000</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span>Expenses (5000s)</span>
+<span class="font-code-metric font-medium text-on-surface">₹40,75,00,000</span>
+</div>
+<button class="w-full h-8 mt-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface rounded-lg font-label-md text-label-md transition-colors flex items-center justify-center gap-space-xs font-semibold" type="button">
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span>
+<span>Generate Full Trial Balance Statement</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-sm px-gutter-desktop shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-space-sm font-label-sm text-label-sm"><span>Apex Institute of Technology • Institutional OS System</span><span>•</span><span>Enterprise Tier • 98.4% uptime</span></div><div class="flex items-center gap-space-md font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" data-path="institutional-support" href="#">Institutional Support</a><a class="hover:text-on-surface transition-colors" data-path="privacy-compliance" href="#">FERPA &amp; Privacy</a><span class="font-code-metric text-on-surface-variant">Apex-Node #US-CAMPUS-01</span></div></div></footer></div></body></html>

@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error": "#ffffff", "on-tertiary": "#ffffff", "tertiary": "#000000", "on-surface-variant": "#45464d", "on-secondary-container": "#fffbff", "on-secondary-fixed-variant": "#3323cc", "secondary": "#4b41e1", "surface-variant": "#d3e4fe", "tertiary-container": "#001e2f", "outline-variant": "#c6c6cd", "tertiary-fixed": "#c9e6ff", "on-tertiary-container": "#008cc7", "on-primary": "#ffffff", "error-container": "#ffdad6", "inverse-surface": "#213145", "primary-container": "#131b2e", "on-secondary-fixed": "#0f0069", "on-tertiary-fixed": "#001e2f", "on-background": "#0b1c30", "error": "#ba1a1a", "surface-container": "#e5eeff", "on-tertiary-fixed-variant": "#004c6e", "tertiary-fixed-dim": "#89ceff", "surface": "#f8f9ff", "primary": "#000000", "on-secondary": "#ffffff", "primary-fixed-dim": "#bec6e0", "primary-fixed": "#dae2fd", "outline": "#76777d", "inverse-primary": "#bec6e0", "surface-dim": "#cbdbf5", "secondary-fixed-dim": "#c3c0ff", "on-primary-container": "#7c839b", "secondary-container": "#645efb", "on-primary-fixed": "#131b2e", "secondary-fixed": "#e2dfff", "inverse-on-surface": "#eaf1ff", "surface-container-low": "#eff4ff", "on-error-container": "#93000a", "surface-container-high": "#dce9ff", "background": "#f8f9ff", "surface-bright": "#f8f9ff", "on-surface": "#0b1c30", "surface-tint": "#565e74", "on-primary-fixed-variant": "#3f465c", "surface-container-lowest": "#ffffff", "surface-container-highest": "#d3e4fe" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "1rem", "space-xl": "2rem", "gutter": "1rem", "gutter-desktop": "1.5rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-lg": "1.25rem", "space-md": "0.75rem" }, "fontFamily": { "body-sm": ["Geist"], "headline-xl": ["Geist"], "headline-lg": ["Geist"], "body-lg": ["Geist"], "body-md": ["Geist"], "label-sm": ["Geist"], "headline-xl-mobile": ["Geist"], "label-md": ["Geist"], "headline-sm": ["Geist"], "code-metric": ["Geist"] }, "fontSize": { "body-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "400" }], "headline-xl": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.011em", "fontWeight": "400" }], "body-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.006em", "fontWeight": "400" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-md": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "-0.005em", "fontWeight": "500" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "code-metric": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.02em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between border-r border-outline-variant/30"><div class="flex flex-col h-full overflow-hidden"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest border-b border-outline-variant/20 shrink-0"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Apex Institute</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-lg bg-surface-container text-on-surface font-semibold shrink-0">#US-01</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Institutional Workspace • AY 2024-25</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container text-on-surface font-semibold rounded-lg"><div class="px-space-sm pt-space-xs pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Academic Operations</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="academics" href="#">Academics</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="students" href="#">Students</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="faculty-staff" href="#">Faculty &amp; Staff</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="attendance-overview" href="#">Attendance</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="examination-overview" href="#">Examinations</a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Institutional Services</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="finance-overview" href="#">Finance</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="campus-overview" href="#">Campus Operations</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="events-activities" href="#">Student Life &amp; Activities</a><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs border border-outline-variant/30"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">workspace_premium</span><span class="font-label-md text-label-md font-semibold text-on-surface">Placements &amp; Alumni</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="placement-overview" href="#">Placement Overview</a><a aria-current="page" class="px-space-sm py-1 transition-colors bg-surface-container text-on-surface font-semibold rounded-lg" data-path="student-career-profiles" href="#">Student Career Profiles</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="companies-recruiters" href="#">Companies &amp; Recruiters</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="placement-drives" href="#">Placement Drives</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="jobs-internships" href="#">Jobs &amp; Internships</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="training-development" href="#">Training &amp; Development</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="placement-results-offers" href="#">Placement Results &amp; Offers</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="alumni-directory" href="#">Alumni Directory</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="alumni-engagement" href="#">Alumni Engagement</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="placement-alumni-reports" href="#">Placement &amp; Alumni Reports</a></div></div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="communication" href="#">Communication</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports-analytics" href="#">Reports &amp; Analytics</a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">System Governance</div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="administration" href="#">Administration</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-sm bg-surface-container-low border-t border-outline-variant/20 shrink-0"><div class="flex items-center justify-between text-on-surface-variant mb-space-xs"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-semibold text-on-surface">Apex Core 98.4% uptime</span></div><span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">v4.2</span></div><a class="flex items-center justify-between font-label-sm text-label-sm text-secondary hover:text-on-secondary-fixed transition-colors" data-path="institutional-support" href="#">Institutional Support Desk</a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="relative flex items-center w-80"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-on-surface-variant pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-14 bg-surface rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none border border-outline-variant/40 focus:border-secondary focus:bg-surface-container-lowest transition-colors" placeholder="Search students, companies, drives..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-code-metric">⌘K</span></div><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container border border-outline-variant/20"><span class="material-symbols-outlined text-[16px] text-secondary">event_available</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">AY 2024–2025 • Semester 1 Fall</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary font-semibold uppercase tracking-wider">Active Term</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div></div><div class="flex items-center gap-space-md"><button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-on-surface transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Action</span></button><div class="flex items-center gap-space-xs"><button class="relative w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-label-sm flex items-center justify-center font-code-metric">3</span></button><button class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button></div><div class="h-6 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Alistair Finch</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Dean of Academic Affairs / Controller of Placements</span></div><div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter-desktop pb-space-xl flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Context Header Area -->
+<div class="flex flex-col gap-space-sm pb-space-lg">
+<!-- Breadcrumb & System Node Meta -->
+<div class="flex items-center justify-between">
+<nav class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Institutional Services</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Placements &amp; Alumni</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">Student Career Profiles</span>
+</nav>
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-lg bg-surface-container font-code-metric text-label-sm text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          REGISTRY_SYNC_LIVE • 1,536 DOSSIERS
+        </span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">BATCH: SENIORS_2025</span>
+</div>
+</div>
+<!-- Title & Action Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Student Career Profiles &amp; Placement Dossier Registry</h1>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-secondary font-code-metric text-label-sm uppercase font-semibold">Gating v4.2</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">
+          Manage verified student academic transcripts, technical competency scores, multi-track resume drafts, and placement eligibility gating under Apex Senate Regulation PL-2024-B.
+        </p>
+</div>
+<!-- Action Cluster -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">upload_file</span>
+<span>Bulk Import Resumes</span>
+</button>
+<button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+<span>Verify Selected</span>
+</button>
+<button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-on-surface transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export Filtered Pool (CSV)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Metric Ribbon -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md pb-space-lg">
+<!-- Card 1 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Total Profiles</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">group</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-sm">
+<span class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight">1,536</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Seniors</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant mt-space-xs">
+<span class="text-secondary font-semibold font-code-metric">100%</span>
+<span>Registered AY 2024-25</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Verified &amp; Approved</span>
+<span class="material-symbols-outlined text-[20px] text-secondary">verified_user</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-sm">
+<span class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight">1,420</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-secondary font-semibold font-code-metric">92.4%</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant mt-space-xs">
+<span>Cleared for campus drives</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Pending Faculty Sign</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">pending_actions</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-sm">
+<span class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight">84</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Under review</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant mt-space-xs">
+<span class="font-code-metric">~4.8h</span>
+<span>Average turnaround</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Debarred / Arrears</span>
+<span class="material-symbols-outlined text-[20px] text-error">gavel</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-sm">
+<span class="font-headline-xl text-headline-xl text-error font-semibold tracking-tight">32</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-semibold font-code-metric">Hold Active</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant mt-space-xs">
+<span>Backlogs or bursar hold</span>
+</div>
+</div>
+<!-- Card 5 (Completion Bar) -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Profile Completion</span>
+<span class="material-symbols-outlined text-[20px] text-secondary">donut_large</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-sm">
+<span class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight">96%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mean</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-space-xs overflow-hidden">
+<div class="bg-secondary h-1.5 rounded-full" style="width: 96%"></div>
+</div>
+</div>
+</div>
+<!-- Search & Multi-Factor Filters Panel -->
+<div class="flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container-lowest shadow-sm mb-space-lg">
+<!-- Search Bar Row -->
+<div class="flex flex-col md:flex-row items-center gap-space-sm">
+<div class="relative flex items-center flex-1 w-full">
+<span class="material-symbols-outlined absolute left-space-sm text-[18px] text-on-surface-variant pointer-events-none">search</span>
+<input class="w-full h-10 pl-9 pr-space-md bg-surface rounded-lg font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant outline-none focus:bg-surface-container-lowest transition-colors shadow-inner" placeholder="Search by student name, roll number, primary skill, dream company preference..." type="text" value="Elena Rostova"/>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 w-full md:w-auto">
+<button class="h-10 px-space-md flex items-center gap-space-xs rounded-lg bg-surface text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Advanced Matcher</span>
+</button>
+<button class="h-10 px-space-md flex items-center gap-space-xs rounded-lg bg-surface text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+<span>Reset Filters</span>
+</button>
+</div>
+</div>
+<!-- Filter Pills Categorized Rows -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-xs text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface-variant uppercase tracking-wider mr-1">Department:</span>
+<button class="px-space-sm py-1 rounded-lg bg-primary text-on-primary font-semibold transition-colors">Computing &amp; AI (620)</button>
+<button class="px-space-sm py-1 rounded-lg bg-surface text-on-surface hover:bg-surface-container transition-colors">ECE (340)</button>
+<button class="px-space-sm py-1 rounded-lg bg-surface text-on-surface hover:bg-surface-container transition-colors">Mechanical (280)</button>
+<button class="px-space-sm py-1 rounded-lg bg-surface text-on-surface hover:bg-surface-container transition-colors">FinTech &amp; Mgmt (296)</button>
+<span class="font-semibold text-on-surface-variant uppercase tracking-wider ml-space-sm mr-1">CGPA:</span>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container text-on-surface font-semibold">≥ 8.5 (Elite)</button>
+<button class="px-space-sm py-1 rounded-lg bg-surface text-on-surface hover:bg-surface-container transition-colors">7.5 – 8.5</button>
+<button class="px-space-sm py-1 rounded-lg bg-surface text-on-surface hover:bg-surface-container transition-colors">6.5 – 7.5</button>
+<span class="font-semibold text-on-surface-variant uppercase tracking-wider ml-space-sm mr-1">Backlog:</span>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container text-on-surface font-semibold">Zero Active</button>
+<button class="px-space-sm py-1 rounded-lg bg-surface text-on-surface hover:bg-surface-container transition-colors">Cleared Arrears</button>
+<span class="font-semibold text-on-surface-variant uppercase tracking-wider ml-space-sm mr-1">Status:</span>
+<button class="px-space-sm py-1 rounded-lg bg-surface text-on-surface hover:bg-surface-container transition-colors">Unplaced</button>
+<button class="px-space-sm py-1 rounded-lg bg-surface text-on-surface hover:bg-surface-container transition-colors">1 Offer</button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container text-on-surface font-semibold">Multiple Offers</button>
+</div>
+<!-- Skills Badges Filter -->
+<div class="flex flex-wrap items-center gap-space-xs pt-1 text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface-variant uppercase tracking-wider mr-1">Skills:</span>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container text-secondary font-code-metric">C++ <span class="material-symbols-outlined text-[12px] cursor-pointer">close</span></span>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container text-secondary font-code-metric">Python <span class="material-symbols-outlined text-[12px] cursor-pointer">close</span></span>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container text-secondary font-code-metric">PyTorch <span class="material-symbols-outlined text-[12px] cursor-pointer">close</span></span>
+<button class="px-space-xs py-0.5 rounded bg-surface text-on-surface-variant hover:text-on-surface font-code-metric">+ React</button>
+<button class="px-space-xs py-0.5 rounded bg-surface text-on-surface-variant hover:text-on-surface font-code-metric">+ System Design</button>
+<button class="px-space-xs py-0.5 rounded bg-surface text-on-surface-variant hover:text-on-surface font-code-metric">+ Distributed Systems</button>
+<span class="ml-auto text-on-surface-variant font-code-metric text-label-sm">Showing 6 matches of 1,536</span>
+</div>
+</div>
+<!-- Workspace Split Grid (Directory Table vs Dossier Inspector) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg mb-space-lg items-start">
+<!-- Left 7 Columns: High-Density Student Table -->
+<div class="xl:col-span-7 flex flex-col rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<!-- Table Meta Bar -->
+<div class="p-space-md flex items-center justify-between bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Active Matriculated Roster</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-code-metric">PAGE 1 / 256</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="w-8 h-8 flex items-center justify-center rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Data Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<th class="py-space-sm pl-space-md pr-space-xs font-semibold w-10">
+<input checked="" class="rounded accent-secondary" type="checkbox"/>
+</th>
+<th class="py-space-sm px-space-sm font-semibold">Student &amp; ID</th>
+<th class="py-space-sm px-space-sm font-semibold">Dept &amp; CGPA</th>
+<th class="py-space-sm px-space-sm font-semibold">Backlogs</th>
+<th class="py-space-sm px-space-sm font-semibold">Placement Status</th>
+<th class="py-space-sm pr-space-md pl-space-xs text-right font-semibold">Dossier</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<!-- Row 1: Elena Rostova (Selected) -->
+<tr class="bg-surface-container transition-colors cursor-pointer" onclick="selectStudent('elena')">
+<td class="py-space-sm pl-space-md pr-space-xs">
+<input checked="" class="rounded accent-secondary" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of Elena Rostova, university senior engineering student, clean institutional lighting, professional neutral background, collegiate sharp attire." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt1853euXo2KTL-7F1hd0dSNqZxkaclpL8WZ3Ex9WD6Iwd7qStLjjOVk_YeW7p6WTUqaHgufh1JFYedSFC7XUCqEc0xmdzGG4WmUYgKWbYmAIfUJmQjIn1qb8EdtX5VL7gpAPrlvn0LEta3t_rHyHr9j8KuNpuqy54-gB2Y4GY_w9JatvfBcsu5My8tOpylsmn1ajP1SUCKCeVWEwSHryWQ00o_7k9CjE9DbQTwpI"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Elena Rostova</span>
+<span class="material-symbols-outlined text-[16px] text-secondary" title="Institutional Verified">verified</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">CS-24-042 • AIT-8841</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">B.Tech CSE (AI/ML)</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">8.42 CGPA</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container-lowest text-on-surface font-code-metric text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> 0 Active
+                </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-0.5">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Placed [Microsoft IDC]
+                  </span>
+<span class="font-code-metric text-label-sm text-secondary font-semibold">₹54.0 LPA • Dream Locked</span>
+</div>
+</td>
+<td class="py-space-sm pr-space-md pl-space-xs text-right">
+<span class="px-2 py-1 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold">Inspecting</span>
+</td>
+</tr>
+<!-- Row 2: David Adebayo -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container transition-colors cursor-pointer" onclick="selectStudent('david')">
+<td class="py-space-sm pl-space-md pr-space-xs">
+<input class="rounded accent-secondary" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of David Adebayo, university robotics senior student, focused expression, sharp studio academic lighting, dark modern polo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnxRbfF4zW5yDQ5eCO__IwC8q2Ab2-Y3KMAzhVVgY5ELPl79oJX9ZywuARk0nbOcVoqVLhP5-s-Va0w5EvNZ2CTfsr0eXIEPcOpAsvifWQrLBplHxgZptO19ipXzJl9JsQlG-guFYGAdBbtM4rx2qtjqaEKdnh4IZ4OpY0l1ts5DyFGt9L5q3ZMSbRt2rK5ywyzFNz4N5qNgZgcff0hN1865F6VHaUXo9Lyp6Y338"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">David Adebayo</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">RB-24-019 • AIT-7721</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Robotics Eng</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">8.15 CGPA</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-code-metric text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> 0 Active
+                </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-0.5">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Placed [Nvidia Embedded]
+                  </span>
+<span class="font-code-metric text-label-sm text-secondary font-semibold">₹28.0 LPA • Super Dream Elig</span>
+</div>
+</td>
+<td class="py-space-sm pr-space-md pl-space-xs text-right">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Liam Gallagher -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container transition-colors cursor-pointer">
+<td class="py-space-sm pl-space-md pr-space-xs">
+<input class="rounded accent-secondary" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of Liam Gallagher, electronics engineering student, confident gaze, institutional library setting in soft focus behind him." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6GFujOBiZlPQweOaDiOorlTKH-zlaZWVYpOyXytlnWR2i0c-5pgw2v2TWmERPA1VSW4qRWsi62V7XcCJQRR2eXAmhAslMfJK3dqsOeoxTGVTE94CfvdUPvDzf3-3WGkkLrhwYisSIwgTccSVCsTNlKsXQxo_rFRdF3pFqgsls6_oCp8zFshqHAFjWx-09Lx--cfvgtjPY3--hSkg_uVJ-vlhXT_1fXeQaBjYweNc"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Liam Gallagher</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">EE-24-102 • AIT-6420</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">ECE (Hardware Systems)</span>
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">7.85 CGPA</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-code-metric text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> 0 Active
+                </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-0.5">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    3 Interviews Scheduled
+                  </span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Shortlisted: Goldman Sachs</span>
+</div>
+</td>
+<td class="py-space-sm pr-space-md pl-space-xs text-right">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: Kevin Vance -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container transition-colors cursor-pointer">
+<td class="py-space-sm pl-space-md pr-space-xs">
+<input class="rounded accent-secondary" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of Kevin Vance, senior male engineering student with spectacles, serious studious look, campus background with soft sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGdeZp_vR7Z9sON6bCODEI-3pECHmNoIfxsrbfn-Pox4yTpBu782fNd71hWHoZNfe_G56ICJ5CDzSz1VpQU5T3bip8DNw5QujDb8G0ZkqfmgG9DP0t6kV8G_DN0EbJAnt_zjjGMn8aub_KwBdz3b66Gw2VZd1NEYAprUNNVkhlmcEWqP64Tw88n-8IfT6qfGY4sEckTrfkG9Qts5KsDpqnkVCV8zWzDIXO3UmDtEU"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Kevin Vance</span>
+<span class="font-label-sm text-label-sm px-1 py-0.2 rounded bg-surface-container text-on-surface-variant font-code-metric">PROVISIONAL</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">CS-24-102 • AIT-5310</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">B.Tech CSE</span>
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">6.95 CGPA</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-code-metric text-label-sm">
+                  1 Cleared Rem.
+                </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Registered (Active Pool)</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Core Tech Drives Only</span>
+</div>
+</td>
+<td class="py-space-sm pr-space-md pl-space-xs text-right">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: Maya Kapoor -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container transition-colors cursor-pointer">
+<td class="py-space-sm pl-space-md pr-space-xs">
+<input class="rounded accent-secondary" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of Maya Kapoor, collegiate female data science scholar, neat navy blazer, crisp focus, clean modern interior lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXnOmPlnFpm34MdsLVVskcr2tJxSEIn_kV5ppAGufa4_i3quAf0SBoAwkJ26yQY0h4jryuQOToMTs42bE_aKkOUtNpZ_Z0m-FdfFoB1FUnUCdJ_1PPUIsO-I8Pz37z27T6Yb8uhOiVKkHQvnMUAdKQ-xG8cye5I9k7cDhb8mDUvOCVfKNxp6vPXek-r-1En7uuT9bv7mV5usRmQRHsLCBORGfKXyCG3ltVn0OUFe4"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Maya Kapoor</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">DS-23-011 • AIT-9012</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Data Science &amp; AI</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">9.10 CGPA</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-code-metric text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> 0 Active
+                </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-0.5">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Placed [Amazon AWS]
+                  </span>
+<span class="font-code-metric text-label-sm text-secondary font-semibold">₹44.0 LPA • Marquee Super Dream</span>
+</div>
+</td>
+<td class="py-space-sm pr-space-md pl-space-xs text-right">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 6: Julian Thorne -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container transition-colors cursor-pointer">
+<td class="py-space-sm pl-space-md pr-space-xs">
+<input class="rounded accent-secondary" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of Julian Thorne, business analytics and quantitative finance post-grad, poised demeanor, subtle gray collar, collegiate high-key setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwo0adOKw2yO4ws6jIlAk89E0yz6C9rzCyZEtJPblxhbJXc-ARH5cfQuMZNYZyq-w2qzltsFRzqPSSUpBuzfn2_mZU1XEiv0IkBLxDHrcVVF30_6ePXAxo8wFXBghLKoUR_ezQnoLI1aNSrEGtvDyGdhOinQk37Q5k5hBj9Piww2GWVxBx1NnVxynPxa2SODfRjQfOEULFOutRNjlHtM8CdeByoGKMt3tm1_IlX48"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Julian Thorne</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">MB-22-076 • AIT-8144</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">MBA FinTech</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">8.60 CGPA</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-code-metric text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> 0 Active
+                </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-0.5">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Shortlisted [JP Morgan C&amp;IB]
+                  </span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Round 2 Technical Interview</span>
+</div>
+</td>
+<td class="py-space-sm pr-space-md pl-space-xs text-right">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer Status -->
+<div class="p-space-sm px-space-md bg-surface-container flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">info</span>
+          Showing batch cohorts: Graduating Class of 2025 (4th Year B.Tech &amp; 2nd Year MBA)
+        </span>
+<span class="font-code-metric">AUDIT_LOG_TS: 2024-11-14T09:22:15Z</span>
+</div>
+</div>
+<!-- Right 5 Columns: Expanded Student Career Dossier Inspector -->
+<div class="xl:col-span-5 flex flex-col rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<!-- Dossier Header Section -->
+<div class="p-space-lg bg-surface-container-low flex flex-col gap-space-md relative">
+<!-- Floating Status Tag -->
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+            Verified Dossier
+          </span>
+<div class="flex items-center gap-space-xs">
+<button class="h-7 px-space-xs rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm flex items-center gap-1" title="Audit Log">
+<span class="material-symbols-outlined text-[14px]">history</span>
+<span>Audit Trail</span>
+</button>
+<span class="font-code-metric text-label-sm text-on-surface-variant">REC #8841-A</span>
+</div>
+</div>
+<!-- Student Master Info -->
+<div class="flex items-start gap-space-md">
+<div class="relative w-20 h-20 rounded-xl overflow-hidden bg-surface-container shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="High-resolution professional academic headshot of Elena Rostova, university student, sharp studio lighting, dark modern blazer, confident institutional portrait." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0mxO-zblmeNyvkVBeY8vhJR_O6nvejxNffcmwjh0HkiJWGZX-Kgsx8O0jVde_2OcwdlSdJMOw-hR3udXCgTxuWk0RRGemdTN-ZZifUryeNX9YoCyChpQHz7M33AtuVIB8wv-tDA7La8fwRlQnrc5-RKbfkCgGTdAhH9OY8TvCY7LzjR0c1Zb8mCcN7HihP-Mf3oAm6dGia3dvTDLV05U-JalGIPprJs6GK6YiMiU"/>
+<div class="absolute bottom-0 inset-x-0 bg-primary/80 py-0.5 text-center">
+<span class="font-label-sm text-label-sm text-on-primary font-code-metric font-semibold">98th %ILE</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Elena Rostova</h2>
+<span class="material-symbols-outlined text-[20px] text-secondary">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">B.Tech Computer Science &amp; Engineering (Honors AI)</p>
+<div class="flex flex-wrap items-center gap-space-xs pt-1 font-code-metric text-label-sm text-on-surface">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-semibold">ROLL: CS-24-042</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">REG: AIT-2024-8841</span>
+</div>
+</div>
+</div>
+<!-- Academic Rank & Gating KPI Strip -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Verified CGPA</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold font-code-metric">8.42</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Scale 10.0</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Institutional Rank</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold font-code-metric">14 <span class="font-body-sm text-body-sm text-on-surface-variant">/ 240</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Top 5.8% CSE</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">CodeTrek Score</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold font-code-metric">985 <span class="font-body-sm text-body-sm text-on-surface-variant">/ 1000</span></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Tier-1 Cleared</span>
+</div>
+</div>
+</div>
+<!-- Dossier Body Content -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<!-- Technical Competencies & Assessment Breakdown -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface-variant">Validated Technical Competencies</span>
+<span class="font-label-sm text-label-sm text-secondary font-code-metric">Proctored CodeTrek Assessment</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span> Machine Learning
+            </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span> Distributed Systems
+            </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span> Go
+            </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span> PyTorch
+            </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span> Kubernetes
+            </span>
+</div>
+</div>
+<!-- Certifications & Research Honors -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface-variant">Certifications &amp; Scholarly Projects</span>
+<div class="flex flex-col gap-1.5">
+<div class="p-space-sm rounded-lg bg-surface flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">cloud_done</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">AWS Certified Solutions Architect – Associate</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Credential ID: AWS-849202 • Valid thru 2027</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">open_in_new</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">menu_book</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">"Federated Learning on Edge Micro-Nodes"</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Published: IEEE Trans. Parallel &amp; Dist. Systems</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-secondary font-semibold font-code-metric">IEEE-XPLORE</span>
+</div>
+</div>
+</div>
+<!-- Verified Resume Versions -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface-variant">Verified Resume Repositories</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 Master PDFs</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs">
+<div class="p-space-sm rounded-lg bg-surface flex items-center justify-between hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-[18px] text-error">picture_as_pdf</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Technical_Resume_v4.pdf</span>
+<span class="font-code-metric text-label-sm text-secondary font-semibold">TPO Endorsed • SHA256</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">download</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface flex items-center justify-between hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-[18px] text-error">picture_as_pdf</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Research_Portfolio.pdf</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">R&amp;D Specialization</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">download</span>
+</div>
+</div>
+</div>
+<!-- Career Targets & Geography -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface-variant">Career Intent &amp; Geographical Preference</span>
+<div class="p-space-sm rounded-lg bg-surface flex flex-col gap-1 font-body-sm text-body-sm">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Target Functions:</span>
+<span class="font-semibold text-on-surface">Machine Learning Engineer, Systems Software Engineer</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Locations:</span>
+<span class="font-semibold text-on-surface">Bangalore / Hyderabad / Seattle, WA (US H1B Eligible)</span>
+</div>
+</div>
+</div>
+<!-- Application & Placement Offer History -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface-variant">Drive History &amp; Offer Pipeline</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-secondary font-semibold font-code-metric">1 ACCEPTED • 2 RELEASED</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Offer 1: Microsoft (Active) -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">task_alt</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Microsoft IDC (R&amp;D Center)</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary font-code-metric text-label-sm font-semibold">OFFER ACCEPTED</span>
+</div>
+<div class="flex items-center justify-between pl-6 text-on-surface">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Senior SDE Intern + Pre-Placement FTE</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-secondary font-code-metric">₹54.00 LPA</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant pl-6">DocRef: MS-IDC-OFFER-2024-0982 • Countersigned by Dean Finch</span>
+</div>
+<!-- Offer 2: Goldman Sachs (Withdrawn) -->
+<div class="p-space-sm rounded-lg bg-surface flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">turn_slight_right</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Goldman Sachs Quantitative Engineering</span>
+<span class="font-label-sm text-label-sm">Shortlisted for Super Day</span>
+</div>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Withdrawn post Tier-1 Acceptance</span>
+</div>
+<!-- Offer 3: Google India (Opted Out per Policy) -->
+<div class="p-space-sm rounded-lg bg-surface flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">lock_clock</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Google India (Cloud Infrastructure)</span>
+<span class="font-label-sm text-label-sm">Completed Round 3 (Technical Algorithms)</span>
+</div>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Gating Hold (Apex One-Dream Rule)</span>
+</div>
+</div>
+</div>
+<!-- Inspector Action Strip -->
+<div class="flex flex-col sm:flex-row items-center gap-space-xs pt-space-xs">
+<button class="w-full sm:flex-1 h-9 px-space-md flex items-center justify-center gap-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-on-surface transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+<span>Download Verified Dossier</span>
+</button>
+<button class="w-full sm:w-auto h-9 px-space-md flex items-center justify-center gap-space-xs rounded-lg bg-surface text-error hover:bg-error-container hover:text-on-error-container transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">block</span>
+<span>Revoke Clearance</span>
+</button>
+<button class="w-full sm:w-auto h-9 px-space-sm flex items-center justify-center rounded-lg bg-surface text-on-surface-variant hover:text-on-surface transition-colors" title="Update Career Flags" type="button">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Regulatory Policy Banner -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start md:items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-secondary">balance</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Institutional Placement Senate Policy #PL-2024-B (Tier Progression Rules)</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-code-metric font-semibold">MANDATORY SENATE GOVERNANCE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Students accepting a registered Dream Offer (≥ ₹20.00 LPA) are eligible to appear exclusively for Marquee Super Dream Drives (≥ ₹40.00 LPA). One candidate may secure a maximum of two concurrent offers before complete profile lockdown.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 w-full md:w-auto justify-end">
+<a class="font-label-md text-label-md text-secondary font-semibold hover:underline flex items-center gap-1" href="#">
+<span>Read Full Placement Bylaws</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+<script>
+  function selectStudent(id) {
+    // Micro-interaction handler for table row selection
+    console.log('Viewing student profile:', id);
+  }
+</script></main><footer class="w-full bg-surface-container-lowest py-space-sm px-gutter-desktop border-t border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-space-sm font-label-sm text-label-sm"><span>Apex Institute of Technology • Institutional OS System</span><span>•</span><span>Enterprise Tier • 98.4% uptime</span></div><div class="flex items-center gap-space-md font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" data-path="institutional-support" href="#">Institutional Support</a><a class="hover:text-on-surface transition-colors" data-path="privacy-compliance" href="#">FERPA &amp; Privacy</a><span class="font-code-metric text-on-surface-variant">Apex-Node #US-CAMPUS-01</span></div></div></footer></div></body></html>

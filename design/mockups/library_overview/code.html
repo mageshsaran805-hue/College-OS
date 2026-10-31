@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#000000", "on-tertiary": "#ffffff", "tertiary-container": "#001e2f", "outline": "#76777d", "surface-container-low": "#eff4ff", "surface-container": "#e5eeff", "surface-variant": "#d3e4fe", "error-container": "#ffdad6", "secondary-fixed-dim": "#c3c0ff", "on-secondary-fixed": "#0f0069", "background": "#f8f9ff", "on-tertiary-fixed-variant": "#004c6e", "surface-container-highest": "#d3e4fe", "inverse-surface": "#213145", "surface-bright": "#f8f9ff", "error": "#ba1a1a", "tertiary": "#000000", "secondary-container": "#645efb", "on-surface": "#0b1c30", "secondary": "#4b41e1", "surface-tint": "#565e74", "primary-fixed": "#dae2fd", "on-primary-fixed": "#131b2e", "on-secondary": "#ffffff", "on-background": "#0b1c30", "surface": "#f8f9ff", "on-error-container": "#93000a", "on-secondary-container": "#fffbff", "on-surface-variant": "#45464d", "surface-dim": "#cbdbf5", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#008cc7", "on-primary-fixed-variant": "#3f465c", "on-primary": "#ffffff", "tertiary-fixed": "#c9e6ff", "tertiary-fixed-dim": "#89ceff", "primary-fixed-dim": "#bec6e0", "on-tertiary-fixed": "#001e2f", "primary-container": "#131b2e", "outline-variant": "#c6c6cd", "on-error": "#ffffff", "on-secondary-fixed-variant": "#3323cc", "surface-container-high": "#dce9ff", "on-primary-container": "#7c839b", "inverse-primary": "#bec6e0", "secondary-fixed": "#e2dfff", "inverse-on-surface": "#eaf1ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1rem", "space-sm": "0.5rem", "margin-desktop": "2rem", "space-md": "0.75rem", "gutter-desktop": "1.5rem", "space-lg": "1.25rem", "space-xs": "0.25rem", "margin": "1rem", "space-xl": "2rem" }, "fontFamily": { "body-md": ["Geist"], "label-sm": ["Geist"], "headline-xl-mobile": ["Geist"], "headline-xl": ["Geist"], "label-md": ["Geist"], "body-lg": ["Geist"], "headline-sm": ["Geist"], "body-sm": ["Geist"], "code-metric": ["Geist"], "headline-lg": ["Geist"] }, "fontSize": { "body-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.006em", "fontWeight": "400" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-xl": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600" }], "label-md": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "-0.005em", "fontWeight": "500" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.011em", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "400" }], "code-metric": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.02em", "fontWeight": "500" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col h-full overflow-hidden"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Apex Institute</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-lg bg-surface-container text-on-surface font-semibold shrink-0">#US-01</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Institutional Workspace • AY 2024-25</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container text-on-surface font-semibold rounded-lg"><div class="px-space-sm pt-space-xs pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Academic Operations</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="academics" href="#">Academics</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="students" href="#">Students</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="faculty-staff" href="#">Faculty &amp; Staff</a><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">fact_check</span><span class="font-label-md text-label-md font-semibold text-on-surface">Attendance</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-overview" href="#">Attendance Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="mark-attendance" href="#">Mark Attendance</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-records" href="#">Attendance Records</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="shortage-defaulters" href="#">Shortage &amp; Defaulters</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-settings" href="#">Attendance Settings</a></div></div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">assignment</span><span class="font-label-md text-label-md font-semibold text-on-surface">Examinations</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="examination-overview" href="#">Examination Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="exam-management" href="#">Exam Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="exam-timetable" href="#">Exam Timetable</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="hall-tickets" href="#">Hall Tickets</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="seating-arrangement" href="#">Seating Arrangement</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="marks-entry" href="#">Marks Entry</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="results-grades" href="#">Results &amp; Grades</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="revaluation-supplementary" href="#">Revaluation &amp; Supplementary</a></div></div><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Institutional Services</div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">payments</span><span class="font-label-md text-label-md font-semibold text-on-surface">Finance</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="finance-overview" href="#">Finance Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fee-structures" href="#">Fee Structures</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="student-fees" href="#">Student Fees</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="fee-collection" href="#">Fee Collection</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="scholarships-aid" href="#">Scholarships &amp; Aid</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="expenses-vendors" href="#">Expenses &amp; Vendors</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="accounting-ledger" href="#">Accounting &amp; Ledger</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="financial-reports" href="#">Financial Reports</a></div></div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">local_library</span><span class="font-label-md text-label-md font-semibold text-on-surface">Library</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a aria-current="page" class="px-space-sm py-1 transition-colors bg-surface-container text-on-surface font-semibold rounded-lg" data-path="library-overview" href="#">Library Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="book-catalogue" href="#">Book Catalogue</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="book-inventory" href="#">Book Inventory</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="circulation" href="#">Circulation</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="reservations-requests" href="#">Reservations &amp; Requests</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fines-payments" href="#">Fines &amp; Payments</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="digital-library" href="#">Digital Library</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="library-reports-settings" href="#">Library Reports &amp; Settings</a></div></div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="campus-management" href="#">Campus Management</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-life" href="#">Student Life</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="placements" href="#">Placements</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="communication" href="#">Communication</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports-analytics" href="#">Reports &amp; Analytics</a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">System Governance</div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="administration" href="#">Administration</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-sm bg-surface-container-low shrink-0"><div class="flex items-center justify-between text-on-surface-variant mb-space-xs"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-semibold text-on-surface">Apex Core 98.4% uptime</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v4.2</span></div><a class="flex items-center justify-between font-label-sm text-label-sm text-secondary hover:text-on-secondary-fixed transition-colors" data-path="institutional-support" href="#">Institutional Support Desk</a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="relative flex items-center w-80"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-on-surface-variant pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-14 bg-surface rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search students, courses, staff..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-code-metric">⌘K</span></div><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container"><span class="material-symbols-outlined text-[16px] text-secondary">event_available</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">AY 2024–2025 • Semester 1 Fall</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary font-semibold uppercase">Active Term</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div></div><div class="flex items-center gap-space-md"><button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Action</span></button><div class="flex items-center gap-space-xs"><button class="relative w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-label-sm flex items-center justify-center font-code-metric">3</span></button><button class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button></div><div class="h-6 w-px bg-surface-container"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Alistair Finch</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Dean of Academic Affairs</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter-desktop pb-space-xl flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Command Context Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Institutional Modules</span>
+<span class="material-symbols-outlined text-[12px]">chevron_right</span>
+<span>Library</span>
+<span class="material-symbols-outlined text-[12px]">chevron_right</span>
+<span class="text-secondary font-semibold">Library Overview</span>
+</div>
+<div class="flex items-baseline gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Central Library Operations &amp; Circulation Analytics</h1>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-code-metric">Koha-ILS v23.11 Integrated</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">
+        Monitor real-time borrowing velocity, accession inventory, reserve queues, and inter-branch circulation across 3 campus libraries.
+      </p>
+</div>
+<!-- Actions Toolbar -->
+<div class="flex items-center gap-space-xs shrink-0 flex-wrap">
+<button class="h-9 px-space-sm flex items-center gap-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container transition-colors" onclick="this.classList.toggle('text-secondary')" type="button">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Sync ILS / Koha Feed</span>
+</button>
+<button class="h-9 px-space-sm flex items-center gap-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Export Monthly Digest (PDF)</span>
+</button>
+<button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-secondary text-on-secondary font-label-md text-label-md shadow-sm hover:bg-secondary-container transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>+ New Book Acquisition</span>
+</button>
+</div>
+</div>
+<!-- Operational Alert & Hold Notice -->
+<div class="flex flex-col md:flex-row items-center justify-between p-space-md bg-secondary-fixed/50 rounded-xl mb-space-lg shadow-sm gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center text-on-secondary shrink-0">
+<span class="material-symbols-outlined text-[18px]">lock_clock</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-secondary-fixed font-semibold">Active Turn-In Queue: 84 Pending Hold Requests</span>
+<span class="font-body-sm text-body-sm text-on-secondary-fixed-variant">Automated smart-locker RFID notifications triggered for returned reserved catalog items. Average locker hold turnaround: 4.2h.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<span class="font-code-metric text-label-sm text-on-secondary-fixed bg-surface-container-lowest/80 px-2 py-1 rounded">Next sync in 04:12m</span>
+<button class="px-space-sm py-1 rounded bg-secondary text-on-secondary font-label-sm text-label-sm hover:bg-secondary-container transition-colors" type="button">
+        Review Hold Grid
+      </button>
+</div>
+</div>
+<!-- 6 Institutional Summary KPI Metric Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-space-md mb-space-lg">
+<!-- Metric 1: Total Catalogued Titles -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Catalogued Titles</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">menu_book</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg font-code-metric text-on-surface tracking-tight">48,250</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant mt-1">
+<span class="text-secondary font-semibold">+1,240 YoY</span>
+<span>• 8 disciplines</span>
+</div>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 78%"></div>
+</div>
+</div>
+<!-- Metric 2: Total Physical Copies -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Physical Holdings</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">library_books</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg font-code-metric text-on-surface tracking-tight">142,800</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1 truncate">
+          Central + Tech Wing stacks
+        </div>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 92%"></div>
+</div>
+</div>
+<!-- Metric 3: Books Issued -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Active Borrowings</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">outbox</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg font-code-metric text-on-surface tracking-tight">18,420</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant mt-1">
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-on-surface font-code-metric text-label-sm">12.9%</span>
+<span>circulating rate</span>
+</div>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 65%"></div>
+</div>
+</div>
+<!-- Metric 4: Available Books -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">On Shelf Holdings</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">inventory_2</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg font-code-metric text-on-surface tracking-tight">121,640</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Ready for immediate issue
+        </div>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 85%"></div>
+</div>
+</div>
+<!-- Metric 5: Overdue Defaulters -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Overdue Returns</span>
+<span class="material-symbols-outlined text-[18px] text-error">notification_important</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg font-code-metric text-error tracking-tight">540</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Defaulter rate: <span class="font-semibold text-error">2.9%</span> • SMS Sent
+        </div>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 29%"></div>
+</div>
+</div>
+<!-- Metric 6: Active Registered Members -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Active Members</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">group</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg font-code-metric text-on-surface tracking-tight">12,850</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1 truncate">
+          Faculty: 412 • Scholars: 12.4k
+        </div>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 88%"></div>
+</div>
+</div>
+</div>
+<!-- Primary Analytics Deck: Trajectory & Category Breakdown -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Circulation Trajectory & Peak Chart (8 cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Circulation Velocity &amp; Monthly Trajectory</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Comparative analysis of accession checkouts vs check-ins (Jun – Nov 2024)</p>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-sm bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Issued</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-sm bg-surface-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Returned</span>
+</div>
+<div class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+            Term Peak: <span class="font-code-metric font-semibold text-secondary">22,400</span> (Nov)
+          </div>
+</div>
+</div>
+<!-- High-Density Inline SVG Histogram Visualization -->
+<div class="w-full overflow-x-auto py-space-sm">
+<div class="min-w-[540px]">
+<svg class="w-full h-52" viewbox="0 0 760 220">
+<!-- Grid Lines -->
+<line stroke="#E2E8F0" stroke-dasharray="3,3" stroke-width="1" x1="40" x2="740" y1="20" y2="20"></line>
+<line stroke="#E2E8F0" stroke-dasharray="3,3" stroke-width="1" x1="40" x2="740" y1="70" y2="70"></line>
+<line stroke="#E2E8F0" stroke-dasharray="3,3" stroke-width="1" x1="40" x2="740" y1="120" y2="120"></line>
+<line stroke="#E2E8F0" stroke-width="1" x1="40" x2="740" y1="170" y2="170"></line>
+<!-- Y Axis Labels -->
+<text class="text-[10px] fill-gray-400 font-mono" text-anchor="end" x="32" y="24">24k</text>
+<text class="text-[10px] fill-gray-400 font-mono" text-anchor="end" x="32" y="74">16k</text>
+<text class="text-[10px] fill-gray-400 font-mono" text-anchor="end" x="32" y="124">8k</text>
+<text class="text-[10px] fill-gray-400 font-mono" text-anchor="end" x="32" y="174">0</text>
+<!-- Month 1: JUN (Issued: 9,200 | Returned: 8,400) -->
+<rect fill="#4B41E1" height="58" rx="2" width="30" x="75" y="112"></rect>
+<rect fill="#D3E4FE" height="52" rx="2" width="30" x="110" y="118"></rect>
+<text class="text-[11px] fill-gray-600 font-medium" text-anchor="middle" x="107" y="192">JUN</text>
+<!-- Month 2: JUL (Issued: 11,800 | Returned: 10,100) -->
+<rect fill="#4B41E1" height="74" rx="2" width="30" x="185" y="96"></rect>
+<rect fill="#D3E4FE" height="64" rx="2" width="30" x="220" y="106"></rect>
+<text class="text-[11px] fill-gray-600 font-medium" text-anchor="middle" x="217" y="192">JUL</text>
+<!-- Month 3: AUG (Issued: 14,500 | Returned: 12,900) -->
+<rect fill="#4B41E1" height="91" rx="2" width="30" x="295" y="79"></rect>
+<rect fill="#D3E4FE" height="81" rx="2" width="30" x="330" y="89"></rect>
+<text class="text-[11px] fill-gray-600 font-medium" text-anchor="middle" x="327" y="192">AUG</text>
+<!-- Month 4: SEP (Issued: 17,200 | Returned: 15,300) -->
+<rect fill="#4B41E1" height="108" rx="2" width="30" x="405" y="62"></rect>
+<rect fill="#D3E4FE" height="96" rx="2" width="30" x="440" y="74"></rect>
+<text class="text-[11px] fill-gray-600 font-medium" text-anchor="middle" x="437" y="192">SEP</text>
+<!-- Month 5: OCT (Mid-Terms Peak: Issued: 20,800 | Returned: 18,100) -->
+<rect fill="#4B41E1" height="130" rx="2" width="30" x="515" y="40"></rect>
+<rect fill="#D3E4FE" height="113" rx="2" width="30" x="550" y="57"></rect>
+<text class="text-[11px] fill-gray-600 font-medium" text-anchor="middle" x="547" y="192">OCT</text>
+<!-- Month 6: NOV (Exams Rush: Issued: 22,400 | Returned: 19,800) -->
+<rect fill="#4B41E1" height="140" rx="2" width="30" x="625" y="30"></rect>
+<rect fill="#D3E4FE" height="124" rx="2" width="30" x="660" y="46"></rect>
+<text class="text-[11px] fill-gray-600 font-semibold fill-secondary" text-anchor="middle" x="657" y="192">NOV *</text>
+<!-- Trend Curve Overlay -->
+<path d="M 90 112 Q 200 90, 310 79 T 530 40 T 640 30" fill="none" stroke="#131B2E" stroke-linecap="round" stroke-width="2"></path>
+<circle cx="640" cy="30" fill="#000000" r="4"></circle>
+</svg>
+</div>
+</div>
+<!-- Bottom Trend Footnote & Micro KPI -->
+<div class="flex flex-wrap items-center justify-between pt-space-sm bg-surface-container-low p-space-sm rounded-lg mt-space-sm gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">trending_up</span>
+<span>Semester velocity index is <strong class="text-on-surface font-semibold">+18.4% above target</strong> due to automated self-checkout kiosk rollout.</span>
+</div>
+<div class="flex items-center gap-space-md font-code-metric text-label-sm">
+<span class="text-on-surface-variant">Check-in Efficiency: <strong class="text-on-surface">94.2%</strong></span>
+<span class="text-on-surface-variant">Avg Loan Period: <strong class="text-on-surface">14.6 days</strong></span>
+</div>
+</div>
+</div>
+<!-- Disciplinary Categories Breakdown Donut + Progress (4 cols) -->
+<div class="lg:col-span-4 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Discipline Distribution</h2>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">Active Demand</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Real-time accession circulation segmented by academic faculty department.</p>
+<!-- Circular SVG Donut + Proportions -->
+<div class="flex items-center justify-center relative my-space-xs">
+<svg class="w-36 h-36 transform -rotate-90" viewbox="0 0 36 36">
+<!-- Background Ring -->
+<circle cx="18" cy="18" fill="transparent" r="15.9155" stroke="#E5EEFF" stroke-width="3.6"></circle>
+<!-- CS & AI 38% (stroke-dasharray: 38 62, offset 0) -->
+<circle cx="18" cy="18" fill="transparent" r="15.9155" stroke="#4B41E1" stroke-dasharray="38 62" stroke-dashoffset="0" stroke-width="3.8"></circle>
+<!-- Mechanical & Robotics 24% (dasharray 24 76, offset -38) -->
+<circle cx="18" cy="18" fill="transparent" r="15.9155" stroke="#645EFB" stroke-dasharray="24 76" stroke-dashoffset="-38" stroke-width="3.8"></circle>
+<!-- Business & FinTech 18% (dasharray 18 82, offset -62) -->
+<circle cx="18" cy="18" fill="transparent" r="15.9155" stroke="#131B2E" stroke-dasharray="18 82" stroke-dashoffset="-62" stroke-width="3.8"></circle>
+<!-- Applied Sciences 12% (dasharray 12 88, offset -80) -->
+<circle cx="18" cy="18" fill="transparent" r="15.9155" stroke="#7C839B" stroke-dasharray="12 88" stroke-dashoffset="-80" stroke-width="3.8"></circle>
+<!-- Humanities & Law 8% (dasharray 8 92, offset -92) -->
+<circle cx="18" cy="18" fill="transparent" r="15.9155" stroke="#CBDBF5" stroke-dasharray="8 92" stroke-dashoffset="-92" stroke-width="3.8"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<span class="font-headline-sm text-headline-sm font-code-metric text-on-surface">38%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">CS &amp; AI Dominant</span>
+</div>
+</div>
+</div>
+<!-- Segment Stack Details -->
+<div class="flex flex-col gap-space-xs mt-space-sm">
+<div class="flex items-center justify-between text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-[#4B41E1]"></span>
+<span class="text-on-surface">Computer Science &amp; AI</span>
+</div>
+<span class="font-code-metric font-semibold text-on-surface">38% <span class="text-on-surface-variant font-normal">(6,999)</span></span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#4B41E1] h-full" style="width: 38%"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm mt-1">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-[#645EFB]"></span>
+<span class="text-on-surface">Mechanical &amp; Robotics</span>
+</div>
+<span class="font-code-metric font-semibold text-on-surface">24% <span class="text-on-surface-variant font-normal">(4,420)</span></span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#645EFB] h-full" style="width: 24%"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm mt-1">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-[#131B2E]"></span>
+<span class="text-on-surface">Business &amp; FinTech</span>
+</div>
+<span class="font-code-metric font-semibold text-on-surface">18% <span class="text-on-surface-variant font-normal">(3,315)</span></span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#131B2E] h-full" style="width: 18%"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm mt-1">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-[#7C839B]"></span>
+<span class="text-on-surface">Applied Sciences &amp; Math</span>
+</div>
+<span class="font-code-metric font-semibold text-on-surface">12% <span class="text-on-surface-variant font-normal">(2,210)</span></span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#7C839B] h-full" style="width: 12%"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm mt-1">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-[#CBDBF5]"></span>
+<span class="text-on-surface">Humanities &amp; Law</span>
+</div>
+<span class="font-code-metric font-semibold text-on-surface">8% <span class="text-on-surface-variant font-normal">(1,476)</span></span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#CBDBF5] h-full" style="width: 8%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Middle Grid: Top Borrowed Leaderboard & Live Circulation Desk -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Most Borrowed Books Leaderboard (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Most Borrowed Volumes (Semester Highs)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dynamic reserve pressure index &amp; stack utilization rates</p>
+</div>
+<button class="font-label-sm text-label-sm text-secondary hover:underline" type="button">Detailed Catalog List</button>
+</div>
+<!-- Leaderboard List Rows -->
+<div class="flex flex-col gap-space-xs mt-space-md">
+<!-- Item 1: CLRS -->
+<div class="flex items-center justify-between p-space-sm bg-surface rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-7 h-10 bg-primary-container rounded flex items-center justify-center text-on-primary font-code-metric font-bold text-label-sm shrink-0">
+                01
+              </div>
+<div class="w-9 h-12 rounded bg-surface-container overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Close up clean front cover of Introduction to Algorithms computer science textbook with minimalist abstract blue and black geometric vectors under studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8YNRHcUZKZtHffQmSONwoz6FkQajPmyJhzJu8R9IfJRHbEGV0N3HuxeJyIoNdNFd06TV7QFsWuqFDMqtCBuz4kgcQiUfWmr9DR1sIiZfyU6T6jG34X3Xe9kFhy4x4k49dOHYmwqnWaSklNFHtMdWozBIIEHKSgVMJtcyo0C0ZZZxq9Hpw9up25jWq8FdKpsJM2ucv5SzS6246nESC5ar6DLRkDaK53wywbmr45Zc"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Introduction to Algorithms (CLRS 4th Ed.)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">T. Cormen, C. Leiserson, R. Rivest, C. Stein</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<div class="text-right">
+<div class="font-code-metric font-semibold text-on-surface">342 borrows</div>
+<div class="font-label-sm text-label-sm text-error font-medium">98% stack utilization</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-error-container text-on-error-container font-semibold">Reserve Cap</span>
+</div>
+</div>
+<!-- Item 2: AI Modern Approach -->
+<div class="flex items-center justify-between p-space-sm bg-surface rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-7 h-10 bg-surface-container rounded flex items-center justify-center text-on-surface font-code-metric font-bold text-label-sm shrink-0">
+                02
+              </div>
+<div class="w-9 h-12 rounded bg-surface-container overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Cover of Artificial Intelligence textbook with clean dark futuristic network node diagram in purple and indigo tones, institutional library style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2ROybmnr4Y50qVqaC-H0VLCGNfW7ilxFUynSIUbzCgohChJXnxbB0mRF_C8oMc8hb6azXYYJiP4-VOVT8nBTJN8pl571jS47uHq9UhQGr-U8TK9m9qcuIrX8rp97suFLIpKfwpdeuE9rfxrtv5wmH118HhDmFFRmwnh5n7ppBct3x5SNq1acnU-Mu5vP38Gjp92n2axCLA5IOmdtmCTK_-HdEs__C83sEFa6MEPw"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Artificial Intelligence: A Modern Approach</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Stuart Russell &amp; Peter Norvig</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<div class="text-right">
+<div class="font-code-metric font-semibold text-on-surface">289 borrows</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">95% stack utilization</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface font-semibold">High Turn</span>
+</div>
+</div>
+<!-- Item 3: OS Concepts -->
+<div class="flex items-center justify-between p-space-sm bg-surface rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-7 h-10 bg-surface-container rounded flex items-center justify-center text-on-surface font-code-metric font-bold text-label-sm shrink-0">
+                03
+              </div>
+<div class="w-9 h-12 rounded bg-surface-container overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Clean classic dinosaur artwork of Operating System Concepts textbook cover with subtle blue accents in university lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsJhBRrpQQK1uvacdnadmbbPHlWzG4OE4iBFvBPqSTkRrC5KN3MReHmtDcOiYLUdYQpk11li3tzyn4JOSN6iL9suFncZtVWBrVU8h0hCwxo1GjVMzj-L1vxhWI6DtVjFZGAuihNqqWGKckrnbbBAwLCv0-kMY8Ovs2C0vOhrXgyL6CbRO3MbHnzAeG4gHE1Z96Fovzwxzx-J7JsQ4VU5_fDQyZ8YYzueFfjfZ6S_Y"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Operating System Concepts (10th Ed.)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Silberschatz, Galvin &amp; Gagne</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<div class="text-right">
+<div class="font-code-metric font-semibold text-on-surface">215 borrows</div>
+<div class="font-label-sm text-label-sm text-secondary font-medium">82% stack utilization</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container text-on-surface-variant">Regular</span>
+</div>
+</div>
+<!-- Item 4: Neural Science -->
+<div class="flex items-center justify-between p-space-sm bg-surface rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-7 h-10 bg-surface-container rounded flex items-center justify-center text-on-surface font-code-metric font-bold text-label-sm shrink-0">
+                04
+              </div>
+<div class="w-9 h-12 rounded bg-surface-container overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Minimalist clinical cover of Principles of Neural Science textbook with white typography and neuroscience synapse rendering" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwv1hYXudv0yWYcbPFNjAF-QRhTopySSSOsTdeB1TEJ-1tHwlb2fkYprrXSoE3bCFw98zfBYUDlp5qxNXCryCfJq6g5j7NRcn28CXEnl3PhgLUuulgf0ci5o5KHz4G0QPrB5J8yGpxUbHPavt_p_a52BgyjDl8yRtB9WZq-u6ArKQW5wvf1WCSGiqrNb2Lk0ovazfukdTUKjj8VzaniIQQKUSxkbSyQh5N2WsAmQU"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Principles of Neural Science</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Eric Kandel, James Schwartz et al.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<div class="text-right">
+<div class="font-code-metric font-semibold text-on-surface">184 borrows</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">74% stack utilization</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container text-on-surface-variant">Regular</span>
+</div>
+</div>
+<!-- Item 5: Corporate Finance -->
+<div class="flex items-center justify-between p-space-sm bg-surface rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-7 h-10 bg-surface-container rounded flex items-center justify-center text-on-surface font-code-metric font-bold text-label-sm shrink-0">
+                05
+              </div>
+<div class="w-9 h-12 rounded bg-surface-container overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Corporate Finance modern economics textbook cover with emerald geometric graphic elements and crisp typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLW0bqxjlJ50tgSYqKBzwLZ95jfN7RPQKZS7Q-ehzRQyUExOGZVYD_SVSFO9b9CMT3p8uENK8bWhS-Yot1w2AKs7hHaHMwM8lNYe7WwOkBmb0Bz6mlC10bMpow_xMc-3N_OsqbilcZUd5XFZNuVIItqH5r14BggbUOFwqT37V5r91dn5ShqhD5Df8Lg1JM5gU3t_GUxmsFlrjNm0EgJPcKpQ3w511c7VGBLezxPVM"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Corporate Finance (5th Global Edition)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Jonathan Berk &amp; Peter DeMarzo</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<div class="text-right">
+<div class="font-code-metric font-semibold text-on-surface">162 borrows</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">68% stack utilization</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container text-on-surface-variant">Regular</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm flex items-center justify-between text-body-sm text-on-surface-variant">
+<span>Reserve Threshold: Automatic requisition trigger active at &gt;90% load</span>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">
+          Reorder High Demand Titles
+        </button>
+</div>
+</div>
+<!-- Live Circulation Terminal Feed (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Live Circulation Desk Feed</h2>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Terminal ID: #APX-DESK-02</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Real-time scan logs from RFID checkout kiosks &amp; front counter.</p>
+<!-- Live Transactions Stream -->
+<div class="flex flex-col gap-space-sm">
+<!-- TX 1 -->
+<div class="p-space-sm rounded-lg bg-surface flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-metric text-label-sm text-on-surface-variant">14:38:12</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Priya Sundaram</span>
+<span class="font-code-metric text-body-sm text-on-surface-variant">(CS-22-441)</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Issued
+              </span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span class="truncate max-w-[220px]">Deep Learning with Python • Chollet</span>
+<span class="font-code-metric text-body-sm">BC: #883921-A</span>
+</div>
+</div>
+<!-- TX 2 -->
+<div class="p-space-sm rounded-lg bg-surface flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-metric text-label-sm text-on-surface-variant">14:35:48</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Prof. Liam Gallagher</span>
+<span class="font-code-metric text-body-sm text-on-surface-variant">(FAC-MECH-09)</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface"></span> Returned
+              </span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span class="truncate max-w-[220px]">Fluid Mechanics 9th Ed. • White</span>
+<span class="font-code-metric text-body-sm">BC: #771402-C</span>
+</div>
+</div>
+<!-- TX 3 -->
+<div class="p-space-sm rounded-lg bg-surface flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-metric text-label-sm text-on-surface-variant">14:32:05</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Aarav Nair</span>
+<span class="font-code-metric text-body-sm text-on-surface-variant">(BT-23-018)</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Renewed
+              </span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span class="truncate max-w-[220px]">Molecular Biology of the Cell • Alberts</span>
+<span class="font-code-metric text-body-sm">BC: #491032-B</span>
+</div>
+</div>
+<!-- TX 4 -->
+<div class="p-space-sm rounded-lg bg-surface flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-metric text-label-sm text-on-surface-variant">14:29:10</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Elena Rostova</span>
+<span class="font-code-metric text-body-sm text-on-surface-variant">(EC-21-994)</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface"></span> Returned
+              </span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span class="truncate max-w-[220px]">Signals and Systems 2nd Ed. • Oppenheim</span>
+<span class="font-code-metric text-body-sm">BC: #331908-F</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Gate RFID Antenna Scanner: <span class="text-secondary font-semibold">Active &amp; Calibrated</span></span>
+<button class="font-label-sm text-label-sm text-secondary hover:underline font-semibold" type="button">Open Terminal Console</button>
+</div>
+</div>
+</div>
+<!-- Bottom Section: Overdue Defaulter Ledger & Branch Distribution Map -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Overdue Action List Ledger (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Overdue Ledger &amp; Defaulter Interventions</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Priority fine recoveries and automated notification dispatch</p>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-error-container text-on-error-container font-semibold">
+            540 Pending Returns
+          </span>
+</div>
+<div class="overflow-x-auto mt-space-sm">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-space-sm rounded-l-lg">Borrower / Scholar</th>
+<th class="py-2.5 px-space-sm">Acc. Title</th>
+<th class="py-2.5 px-space-sm">Overdue</th>
+<th class="py-2.5 px-space-sm">Fine (INR)</th>
+<th class="py-2.5 px-space-sm text-right rounded-r-lg">Action</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm divide-y divide-surface-container">
+<!-- Defaulter 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Kevin Vance</span>
+<span class="font-code-metric text-on-surface-variant text-body-sm">CS-24-102 • Batch 24</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="truncate block max-w-[180px] font-medium text-on-surface">Pattern Recognition &amp; ML</span>
+<span class="text-on-surface-variant text-body-sm font-code-metric">Acc: #PR-09412</span>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-code-metric font-semibold text-label-sm">
+                    14 Days
+                  </span>
+</td>
+<td class="py-3 px-space-sm font-code-metric font-semibold text-error">
+                  ₹280
+                </td>
+<td class="py-3 px-space-sm text-right">
+<button class="px-2.5 py-1 rounded bg-error text-on-error font-label-sm text-label-sm hover:opacity-90 transition-opacity" type="button">
+                    Place Academic Hold
+                  </button>
+</td>
+</tr>
+<!-- Defaulter 2 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Marcus Chen</span>
+<span class="font-code-metric text-on-surface-variant text-body-sm">EE-21-1209 • Batch 21</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="truncate block max-w-[180px] font-medium text-on-surface">Digital Signal Processors</span>
+<span class="text-on-surface-variant text-body-sm font-code-metric">Acc: #EE-88201</span>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-metric font-semibold text-label-sm">
+                    8 Days
+                  </span>
+</td>
+<td class="py-3 px-space-sm font-code-metric font-semibold text-on-surface">
+                  ₹160
+                </td>
+<td class="py-3 px-space-sm text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">
+                    Send Nudge (SMS)
+                  </button>
+</td>
+</tr>
+<!-- Defaulter 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Divya Balakrishnan</span>
+<span class="font-code-metric text-on-surface-variant text-body-sm">MBA-23-402 • Finance</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="truncate block max-w-[180px] font-medium text-on-surface">Options, Futures &amp; Derivatives</span>
+<span class="text-on-surface-variant text-body-sm font-code-metric">Acc: #FN-44109</span>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-metric font-semibold text-label-sm">
+                    5 Days
+                  </span>
+</td>
+<td class="py-3 px-space-sm font-code-metric font-semibold text-on-surface">
+                  ₹100
+                </td>
+<td class="py-3 px-space-sm text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">
+                    Send Nudge (SMS)
+                  </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm mt-space-sm text-body-sm text-on-surface-variant">
+<span>Defaulter daily penalty policy: ₹20 / day after grace period.</span>
+<button class="text-secondary font-label-sm text-label-sm hover:underline font-semibold" type="button">
+          Batch SMS Nudge (540 Recipients)
+        </button>
+</div>
+</div>
+<!-- Campus Library Nodes & Branch Circulation Map (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Inter-Branch Network Status</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Circulation across 3 connected campus libraries</p>
+</div>
+<span class="material-symbols-outlined text-[20px] text-secondary">share_location</span>
+</div>
+<!-- Campus Branch Visual Cards -->
+<div class="flex flex-col gap-space-sm mt-space-md">
+<!-- Branch 1: Central Library -->
+<div class="p-space-sm rounded-lg bg-surface flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center font-bold font-code-metric text-label-sm">
+                L1
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Central Learning Commons</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Main Campus North • 88,400 Holdings</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-code-metric font-semibold text-on-surface text-label-md">11,290</span>
+<span class="block font-label-sm text-label-sm text-secondary font-medium">Active loans</span>
+</div>
+</div>
+<!-- Branch 2: Technology Wing -->
+<div class="p-space-sm rounded-lg bg-surface flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary text-on-secondary flex items-center justify-center font-bold font-code-metric text-label-sm">
+                L2
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Tech &amp; Engineering Wing</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">South Campus Block B • 41,200 Holdings</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-code-metric font-semibold text-on-surface text-label-md">5,410</span>
+<span class="block font-label-sm text-label-sm text-secondary font-medium">Active loans</span>
+</div>
+</div>
+<!-- Branch 3: Medical & Allied Sciences -->
+<div class="p-space-sm rounded-lg bg-surface flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center font-bold font-code-metric text-label-sm">
+                L3
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Bio-Tech &amp; Health Sciences Library</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">East Quad Complex • 13,200 Holdings</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-code-metric font-semibold text-on-surface text-label-md">1,720</span>
+<span class="block font-label-sm text-label-sm text-secondary font-medium">Active loans</span>
+</div>
+</div>
+</div>
+<!-- Campus Location Map Card with data-location -->
+<div class="mt-space-md rounded-lg overflow-hidden relative shadow-sm">
+<div class="w-full h-32 bg-cover bg-center rounded-lg" data-location="Apex Institute of Technology Central Library" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCYIiIo5hzerqlO5d-cLiqqnNWaCbpN8ZlD4JI47pVbKxm8wqZJTXrCew0P1aEWcLYAV-OqPGXw4dkK2ti4PZC91uiGSVJN8rAIO_Cs3baeZUdeFgA2cNwOPwT-iw67SAJxECWrKbPQW924y-GKhw30zbgSVMFSTQ1tuXdCkvVv00TfL49RAGT2Ub70rYyR6Y4VebHnDxOYAV-Aer50czdNtGy3q0teUx19naXKSbg')">
+</div>
+<div class="absolute bottom-2 left-2 right-2 bg-surface-container-lowest/90 backdrop-blur-sm p-1.5 rounded flex items-center justify-between text-body-sm">
+<span class="font-code-metric text-label-sm text-on-surface">Inter-branch courier transit: <strong>3x daily dispatch</strong></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Active Run</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Automated inter-library loan (ILL) gateway: <span class="font-semibold text-on-surface">Connected</span></span>
+<button class="font-label-sm text-label-sm text-secondary hover:underline" type="button">Manage Courier Transit</button>
+</div>
+</div>
+</div>
+<!-- Bottom Global Footnote Bar for Batch 9 Sync -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-wrap items-center justify-between gap-space-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs font-code-metric text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Z39.50 Institutional Protocol Synchronizer: ACTIVE</span>
+<span>•</span>
+<span>Apex Koha DB: 142,800 records indexed</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="text-label-sm font-code-metric text-on-surface-variant">Server Response Time: 42ms</span>
+<button class="font-label-sm text-label-sm text-secondary hover:underline font-semibold" type="button">View Circulation Ledger Audit</button>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-sm px-gutter-desktop shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-space-sm font-label-sm text-label-sm"><span>Apex Institute of Technology • Institutional OS System</span><span>•</span><span>Enterprise Tier • 98.4% uptime</span></div><div class="flex items-center gap-space-md font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" data-path="institutional-support" href="#">Institutional Support</a><a class="hover:text-on-surface transition-colors" data-path="privacy-compliance" href="#">FERPA &amp; Privacy</a><span class="font-code-metric text-on-surface-variant">Apex-Node #US-CAMPUS-01</span></div></div></footer></div></body></html>

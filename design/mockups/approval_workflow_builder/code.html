@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline":"#76777d","on-tertiary":"#ffffff","secondary-fixed":"#e2dfff","surface-bright":"#f8f9ff","on-secondary-fixed-variant":"#3323cc","on-error-container":"#93000a","on-secondary-container":"#fffbff","on-surface-variant":"#45464d","surface-container":"#e5eeff","on-background":"#0b1c30","on-surface":"#0b1c30","background":"#f8f9ff","on-secondary":"#ffffff","surface-variant":"#d3e4fe","tertiary-fixed-dim":"#89ceff","on-tertiary-fixed-variant":"#004c6e","on-primary-fixed":"#131b2e","on-primary-fixed-variant":"#3f465c","surface-container-low":"#eff4ff","on-secondary-fixed":"#0f0069","error-container":"#ffdad6","secondary-fixed-dim":"#c3c0ff","tertiary":"#000000","error":"#ba1a1a","outline-variant":"#c6c6cd","on-tertiary-container":"#008cc7","on-tertiary-fixed":"#001e2f","surface-container-high":"#dce9ff","primary-fixed":"#dae2fd","on-error":"#ffffff","secondary-container":"#645efb","inverse-on-surface":"#eaf1ff","surface-tint":"#565e74","on-primary":"#ffffff","primary-fixed-dim":"#bec6e0","tertiary-container":"#001e2f","tertiary-fixed":"#c9e6ff","secondary":"#4b41e1","inverse-primary":"#bec6e0","surface":"#f8f9ff","primary-container":"#131b2e","primary":"#000000","surface-dim":"#cbdbf5","inverse-surface":"#213145","surface-container-highest":"#d3e4fe","on-primary-container":"#7c839b","surface-container-lowest":"#ffffff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-md":"0.75rem","margin":"1rem","margin-desktop":"2rem","space-lg":"1.25rem","space-xl":"2rem","gutter-desktop":"1.5rem","gutter":"1rem","space-xs":"0.25rem","space-sm":"0.5rem"},fontFamily:{"headline-sm":["Geist"],"body-lg":["Geist"],"label-md":["Geist"],"body-sm":["Geist"],"headline-xl-mobile":["Geist"],"code-metric":["Geist"],"body-md":["Geist"],"headline-lg":["Geist"],"headline-xl":["Geist"],"label-sm":["Geist"]},fontSize:{"headline-sm":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"-0.011em","fontWeight":"400"}],"label-md":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"-0.005em","fontWeight":"500"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0em","fontWeight":"400"}],"headline-xl-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.02em","fontWeight":"600"}],"code-metric":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.02em","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.006em","fontWeight":"400"}],"headline-lg":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.025em","fontWeight":"600"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.04em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-low flex flex-col z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)] overflow-y-auto"><div class="px-space-lg pt-space-lg pb-space-md flex items-center gap-space-sm bg-surface-container-low"><div class="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center shadow-[0_1px_3px_rgba(0,0,0,0.08)]"><span class="material-symbols-outlined text-on-secondary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface truncate">Apex OS</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric">#US-01</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Apex Institute of Technology</span></div></div><div class="px-space-md py-space-xs"><div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04)] flex items-center justify-between"><div class="flex items-center gap-space-xs min-w-0"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface truncate font-semibold">AY 2024–2025</span><span class="text-outline text-label-sm">•</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Sem 1 Fall</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-secondary font-semibold">LIVE</span></div></div><nav class="flex-1 px-space-md py-space-sm space-y-space-md" data-active-classes="bg-secondary-container text-on-secondary-container font-semibold rounded-lg"><div class="space-y-space-xs"><div class="px-space-sm py-1 flex items-center justify-between font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold"><span>Administration &amp; Settings</span><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span></div><div class="pl-space-sm space-y-0.5"><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="user-management" href="#"><span class="truncate">User Management</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="roles-and-permissions" href="#"><span class="truncate">Roles &amp; Permissions</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="permission-matrix" href="#"><span class="truncate">Permission Matrix</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="authentication-and-security" href="#"><span class="truncate">Authentication &amp; Security</span></a><a aria-current="page" class="flex items-center px-space-sm py-1.5 transition-colors bg-secondary-container text-on-secondary-container font-semibold rounded-lg" data-path="approval-workflow-builder" href="#"><span class="truncate">Approval Workflow Builder</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="audit-logs-and-activity-monitoring" href="#"><span class="truncate">Audit Logs &amp; Activity Monitoring</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="integration-and-api-management" href="#"><span class="truncate">Integration &amp; API Management</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="data-import-and-export-management" href="#"><span class="truncate">Data Import &amp; Export Management</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="college-branding-and-configuration" href="#"><span class="truncate">College Branding &amp; Configuration</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="system-preferences-and-notifications" href="#"><span class="truncate">System Preferences &amp; Notifications</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="backup-retention-and-data-management" href="#"><span class="truncate">Backup, Retention &amp; Data Management</span></a></div></div><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Reports &amp; Analytics</div><div class="pl-space-sm space-y-0.5"><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="institutional-intelligence" href="#"><span class="truncate">Institutional Intelligence</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="academic-analytics" href="#"><span class="truncate">Academic Analytics</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="student-analytics" href="#"><span class="truncate">Student Analytics</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="finance-analytics" href="#"><span class="truncate">Finance Analytics</span></a></div></div><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Academic Operations</div><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="overview" href="#"><span class="truncate">Overview</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="academics" href="#"><span class="truncate">Academics</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="students" href="#"><span class="truncate">Students</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="faculty-and-staff" href="#"><span class="truncate">Faculty &amp; Staff</span></a></div><div class="space-y-space-xs"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Institutional Services</div><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="finance" href="#"><span class="truncate">Finance</span></a><a class="flex items-center px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="campus-operations" href="#"><span class="truncate">Campus Operations</span></a></div></nav><div class="p-space-md bg-surface-container-low mt-auto"><div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Core 98.4% uptime</span></div><span class="font-code-metric text-label-sm text-on-surface-variant font-medium">v4.2</span></div></div></aside><div class="pl-72 flex flex-col min-h-screen bg-background"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full h-16 px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-xl"><nav aria-label="Breadcrumb" class="hidden md:flex items-center gap-space-xs text-label-sm font-label-sm text-on-surface-variant shrink-0"><span class="text-on-surface-variant">Apex Institute of Technology</span><span class="text-outline">/</span><span class="text-on-surface font-semibold">Administration &amp; Settings</span></nav><div class="relative w-full max-w-sm"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full h-9 pl-9 pr-16 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant outline-none focus:ring-1 focus:ring-secondary transition-all shadow-[0_1px_2px_rgba(0,0,0,0.02)]" placeholder="Search administration, users, security, policies..." type="text"/><kbd class="absolute right-2.5 top-1/2 -translate-y-1/2 px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric text-label-sm">Cmd+K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-semibold text-on-surface">AY 2024–2025</span><span class="text-outline text-label-sm">•</span><span class="font-label-sm text-label-sm">Sem 1 Fall</span><span class="ml-1 font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-surface-container-highest text-secondary font-medium">ACTIVE</span></div><a class="h-9 px-space-md rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container transition-colors flex items-center gap-space-xs font-label-md text-label-md shadow-[0_1px_3px_rgba(75,65,225,0.25)]" data-path="authentication-and-security" href="#"><span class="material-symbols-outlined text-[16px]">shield</span><span class="font-medium">Security Center</span></a><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative w-9 h-9 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center justify-center font-bold">3</span></button><button aria-label="Help &amp; Knowledge Base" class="w-9 h-9 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">help</span></button></div><div class="h-6 w-[1px] bg-surface-container-highest"></div><div class="flex items-center gap-space-sm"><div class="text-right hidden sm:block"><div class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Alistair Finch</div><div class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Dean of Academic Affairs</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_1px_2px_rgba(0,0,0,0.1)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="flex-1 w-full pt-16 bg-background px-gutter-desktop py-space-lg"><div class="flex flex-col w-full">
+<!-- Top Command & Action Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-xl">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span>Administration</span>
+<span class="text-outline">/</span>
+<span>Governance Engine</span>
+<span class="text-outline">/</span>
+<span class="text-secondary font-semibold">Workflow Automation</span>
+</div>
+<div class="flex items-center gap-space-md">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Approval Workflow Builder &amp; Process Automation</h1>
+<span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-code-metric text-label-sm font-semibold">v3.8.4 Engine</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Multi-tier procedural orchestrator regulating administrative delegation, fiscal disbursements, faculty leaves, and scholastic condonations with cryptographic non-repudiation.
+      </p>
+</div>
+<!-- Global Canvas Actions -->
+<div class="flex items-center gap-space-sm flex-wrap shrink-0">
+<button class="h-9 px-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface shadow-sm transition-all flex items-center gap-space-xs font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Version History</span>
+<span class="ml-1 px-1.5 py-0.2 rounded bg-surface-container text-on-surface-variant font-code-metric text-label-sm">48 Commits</span>
+</button>
+<button class="h-9 px-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface shadow-sm transition-all flex items-center gap-space-xs font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Import Template</span>
+</button>
+<button class="h-9 px-space-md rounded-lg bg-secondary text-on-secondary shadow-md hover:bg-secondary-container transition-all flex items-center gap-space-xs font-label-md text-label-md font-semibold" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Create New Workflow</span>
+</button>
+</div>
+</div>
+<!-- Telemetry Row: 4 High-Density KPI Surfaces -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-gutter-desktop mb-space-xl">
+<!-- Metric 1: Active Workflows -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Active Institutional Workflows</span>
+<span class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1">24 Pipelines</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">account_tree</span>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          Covering 9 operational modules
+        </span>
+<span class="font-code-metric text-label-sm text-secondary font-semibold">100% SLA Coverage</span>
+</div>
+<div class="mt-3 w-full bg-surface-container h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 82%;"></div>
+</div>
+</div>
+<!-- Metric 2: In-Flight Dockets -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">In-Flight Approval Dockets</span>
+<span class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1">58 Pending</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[22px]">pending_actions</span>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">schedule</span>
+          Avg turnaround: <strong class="text-on-surface font-code-metric">18.4 hrs</strong>
+</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">42 on schedule</span>
+</div>
+<!-- Sparkline inline SVG -->
+<div class="mt-3 flex items-center gap-2">
+<svg class="w-full h-4 text-secondary" fill="none" preserveaspectratio="none" viewbox="0 0 100 16">
+<path d="M0,12 Q15,4 30,10 T60,6 T85,13 L100,5" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path>
+</svg>
+</div>
+</div>
+<!-- Metric 3: Ratified Completions -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Completed Approvals (Term)</span>
+<span class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1">1,840 Ratified</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-variant/40 flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          Audit verified via SHA-256
+        </span>
+<span class="font-code-metric text-label-sm text-on-surface font-semibold">+14.2% YoY</span>
+</div>
+<div class="mt-3 w-full bg-surface-container h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 94%;"></div>
+</div>
+</div>
+<!-- Metric 4: Escalations & Bottlenecks -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+            Overdue SLA Bottlenecks
+          </span>
+<span class="font-headline-xl text-headline-xl text-error tracking-tight mt-1">3 Escalated</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-error-container/40 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="truncate">P1 alerts auto-routed to Dean desk</span>
+<button class="text-error font-label-sm text-label-sm font-semibold hover:underline shrink-0" type="button">Review 3</button>
+</div>
+<div class="mt-3 flex items-center gap-1">
+<div class="h-1 flex-1 bg-error rounded-full"></div>
+<div class="h-1 flex-1 bg-error rounded-full"></div>
+<div class="h-1 flex-1 bg-error rounded-full"></div>
+<div class="h-1 flex-1 bg-surface-container rounded-full"></div>
+<div class="h-1 flex-1 bg-surface-container rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Primary Interactive Canvas & Workspace: Split Layout -->
+<div class="flex flex-col xl:flex-row gap-gutter-desktop mb-space-xl">
+<!-- Left Workspace: The Visual Workflow Canvas -->
+<div class="flex-1 min-w-0 flex flex-col rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<!-- Canvas Control Toolbar -->
+<div class="p-space-md bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-lg bg-secondary text-on-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Fee Concession &amp; Scholarship Waiver Workflow</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold">Active Production</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">REV: #WF-FIN-2024.11</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Routing institutional merit reductions and need-based disbursements above statutory caps.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<div class="flex items-center bg-surface-container p-0.5 rounded-lg">
+<button class="px-2.5 py-1 rounded-md bg-surface-container-lowest font-label-sm text-label-sm text-on-surface font-semibold shadow-sm" type="button">Flow View</button>
+<button class="px-2.5 py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">JSON Spec</button>
+<button class="px-2.5 py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Audit Trail</button>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" title="Zoom in" type="button">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" title="Fit to screen" type="button">
+<span class="material-symbols-outlined text-[18px]">fit_screen</span>
+</button>
+</div>
+</div>
+<!-- Canvas Graphical Surface -->
+<div class="relative p-space-xl bg-surface/50 overflow-x-auto min-h-[560px] flex flex-col justify-center">
+<!-- Grid Pattern Backdrop Overlay -->
+<div class="absolute inset-0 opacity-40 pointer-events-none" style="background-image: radial-gradient(#76777d 0.75px, transparent 0.75px); background-size: 20px 20px;"></div>
+<!-- Sequential Pipeline Flow -->
+<div class="relative z-10 flex flex-col items-center gap-8 max-w-2xl mx-auto w-full py-4">
+<!-- Node 1: Trigger -->
+<div class="w-full rounded-xl bg-surface-container-lowest shadow-md p-space-md transition-all hover:shadow-lg cursor-pointer ring-2 ring-secondary/20">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">flag</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-secondary">Node 01 • Ingestion Trigger</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-on-surface-variant font-code-metric text-label-sm">Webhook</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Student Application Submitted via Financial Aid Portal</h4>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">drag_indicator</span>
+</div>
+<div class="mt-3 pt-3 flex flex-wrap items-center justify-between gap-2 bg-surface-container-low p-2.5 rounded-lg">
+<div class="flex items-center gap-1.5 text-on-surface font-code-metric text-label-sm">
+<span class="text-on-surface-variant">Gate Expression:</span>
+<span class="font-semibold text-secondary">Concession_Amount &gt; ₹25,000</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Triggered instantly</span>
+</div>
+</div>
+<!-- Connector Path 1 -->
+<div class="w-0.5 h-8 bg-outline-variant flex flex-col items-center justify-center relative">
+<span class="material-symbols-outlined text-secondary text-[16px] absolute -bottom-2">south</span>
+</div>
+<!-- Node 2: Stage 1 Parallel Reviewers -->
+<div class="w-full rounded-xl bg-surface-container-lowest shadow-md p-space-md transition-all hover:shadow-lg">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">group_work</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-secondary">Node 02 • Stage 1 Review (Parallel)</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary/10 text-secondary font-code-metric text-label-sm">Consensus 2/2</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Dual Administrative Scrutiny</h4>
+</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-code-metric text-label-sm">
+<span class="material-symbols-outlined text-[16px]">timer</span>
+<span>SLA: 48h</span>
+</div>
+</div>
+<!-- Two Sub-Tracks: HOD + Student Affairs -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm mt-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Track A: Faculty</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Department HOD Endorsement</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Verifies academic standing &amp; CGPA ≥ 7.50</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Track B: Welfare</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Student Affairs Verification</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Income certificate &amp; institutional aid ledger validation</span>
+</div>
+</div>
+</div>
+<!-- Connector Path 2 -->
+<div class="w-0.5 h-8 bg-outline-variant flex flex-col items-center justify-center relative">
+<span class="material-symbols-outlined text-secondary text-[16px] absolute -bottom-2">south</span>
+</div>
+<!-- Node 3: Conditional Split Gate -->
+<div class="w-full rounded-xl bg-surface-container-high/60 shadow-md p-space-md transition-all hover:shadow-lg">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-[22px]">alt_route</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface-variant">Node 03 • Conditional Router</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-lowest text-on-surface font-code-metric text-label-sm">Evaluator</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Fiscal Threshold Delegation Gate</h4>
+</div>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Deterministic</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm mt-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Branch Alpha (High Value)</span>
+<p class="font-code-metric text-label-sm text-on-surface">Concession &gt; ₹1,00,000</p>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm mt-1">
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+<span>Routes directly to <strong>Bursar Board Committee</strong></span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant">Branch Beta (Standard)</span>
+<p class="font-code-metric text-label-sm text-on-surface">Concession ≤ ₹1,00,000</p>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm mt-1">
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+<span>Routes directly to <strong>Senior Accounts Officer</strong></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Connector Path 3 -->
+<div class="w-0.5 h-8 bg-outline-variant flex flex-col items-center justify-center relative">
+<span class="material-symbols-outlined text-secondary text-[16px] absolute -bottom-2">south</span>
+</div>
+<!-- Node 4: Stage 2 Final Ratification -->
+<div class="w-full rounded-xl bg-surface-container-lowest shadow-md p-space-md transition-all hover:shadow-lg">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[22px]">draw</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-secondary">Node 04 • Final Statutory Seal</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-on-surface font-code-metric text-label-sm">FIPS 140-2 Level 3</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Dean of Academic Affairs Digital Signature</h4>
+</div>
+</div>
+<div class="flex items-center gap-1 text-secondary font-code-metric text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>PKI Mandate</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Requires hardware token verification and hardware HSM cryptographic seal with legal timestamping before state commit.
+            </p>
+</div>
+<!-- Connector Path 4 -->
+<div class="w-0.5 h-8 bg-outline-variant flex flex-col items-center justify-center relative">
+<span class="material-symbols-outlined text-secondary text-[16px] absolute -bottom-2">south</span>
+</div>
+<!-- Node 5: Terminal Action -->
+<div class="w-full rounded-xl bg-surface-container-lowest shadow-md p-space-md transition-all hover:shadow-lg">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[22px]">task_alt</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface-variant">Node 05 • Terminal Side-Effects</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary/10 text-secondary font-code-metric text-label-sm">Atomicity Guaranteed</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Ledger Credit Applied &amp; Parent SMS Dispatch</h4>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">Terminal</span>
+</div>
+<div class="flex items-center gap-4 mt-3 pt-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-secondary">check_circle</span> ERP Ledger Update</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-secondary">check_circle</span> Twilio SMS Dispatch</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-secondary">check_circle</span> Student Portal Notification</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Inspector Pane: Node Config & Governance Rules -->
+<div class="w-full xl:w-96 shrink-0 flex flex-col gap-space-md">
+<!-- Node Inspector Card -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">tune</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Node Config Inspector</h3>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-code-metric text-label-sm font-semibold">Node #04 Selected</span>
+</div>
+<div class="space-y-space-md">
+<!-- Approver Role Selector -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface-variant">Assigned Role Authority</label>
+<div class="relative">
+<select class="w-full h-9 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:ring-1 focus:ring-secondary transition-all">
+<option selected="">Dean of Academic Affairs (Role #DAA-01)</option>
+<option>Associate Dean (Curriculum &amp; Aid)</option>
+<option>Controller of Examinations</option>
+<option>Director of Institutional Finance</option>
+</select>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Incumbent: Dr. Alistair Finch (FIPS SmartCard Enrolled)</span>
+</div>
+<!-- Fallback & Proxy Config -->
+<div class="p-space-sm rounded-lg bg-surface-container-low space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Substitute Approver Fallback</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">swap_horiz</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Auto-delegates to proxy if primary authority is unreachable or out-of-office &gt; 3 calendar days.
+            </p>
+<div class="pt-2 flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Designated Proxy:</span>
+<span class="font-semibold text-on-surface">Vice Dean (Prof. H. Vance)</span>
+</div>
+</div>
+<!-- SLA & Escalation Ladder -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface-variant">SLA Turnaround Limit</label>
+<span class="font-code-metric text-label-sm text-secondary font-semibold">72 Hours</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 60%;"></div>
+</div>
+<div class="pt-2 space-y-1.5">
+<div class="flex items-start gap-2 text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">notification_important</span>
+<span>T+48h: Priority WhatsApp reminder to Personal Secretary.</span>
+</div>
+<div class="flex items-start gap-2 text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-error text-[16px] shrink-0 mt-0.5">emergency</span>
+<span>T+72h: Escalation ticket tagged P1 on Chancellor Console.</span>
+</div>
+</div>
+</div>
+<!-- Cryptographic Requirements -->
+<div class="p-space-sm rounded-lg bg-surface-container space-y-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-semibold">Cryptographic Security Level</span>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hardware Signature:</span>
+<span class="font-code-metric text-label-sm text-secondary font-semibold">ED25519 PKI Required</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dual-Factor Push:</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-surface-container-highest text-secondary font-semibold">ENFORCED</span>
+</div>
+</div>
+<!-- Save/Update Node -->
+<div class="pt-2 flex items-center gap-space-xs">
+<button class="flex-1 h-9 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-semibold hover:bg-secondary-container transition-colors shadow-sm" type="button">
+              Save Node Rules
+            </button>
+<button class="h-9 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button">
+              Reset
+            </button>
+</div>
+</div>
+</div>
+<!-- Quick Pipeline Metadata Card -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm p-space-lg flex flex-col gap-space-sm">
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Institutional Ledger Hook</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          This workflow mutates table <code class="px-1 py-0.5 rounded bg-surface-container font-code-metric text-label-sm">fin_scholarship_disbursements</code> with immutable write locks.
+        </p>
+<div class="flex items-center justify-between text-label-sm font-label-sm pt-2">
+<span class="text-on-surface-variant">Rollback Protection:</span>
+<span class="text-secondary font-semibold">Enabled (2-Phase Commit)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Workflow Simulation & Sandbox Sandbox Card -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm p-space-lg mb-space-xl">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">science</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Interactive Dry-Run &amp; Sandbox Simulator</h3>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-code-metric text-label-sm font-semibold">Zero-Production Impact</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Simulate path conditions, evaluate conditional branch logic, and test escalation timers using mock student payloads.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="h-9 px-space-md rounded-lg bg-secondary text-on-secondary shadow-sm hover:bg-secondary-container transition-all flex items-center gap-space-xs font-label-md text-label-md font-semibold" id="run-simulation-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span>Execute Simulation</span>
+</button>
+</div>
+</div>
+<!-- Simulator Inputs Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md p-space-md rounded-lg bg-surface-container-low mb-space-md">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant">Student Identity</label>
+<select class="w-full h-8 px-2.5 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-secondary" id="sim-student">
+<option value="rahul">Rahul Sharma (BT/CSE/2021/042)</option>
+<option value="priya">Priya Iyer (BT/ECE/2022/118)</option>
+<option value="aarav">Aarav Patel (BT/MECH/2020/003)</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant">Waiver Amount (₹)</label>
+<input class="w-full h-8 px-2.5 rounded bg-surface-container-lowest text-on-surface font-code-metric text-body-sm outline-none focus:ring-1 focus:ring-secondary" id="sim-amount" type="number" value="125000"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant">Current CGPA Score</label>
+<input class="w-full h-8 px-2.5 rounded bg-surface-container-lowest text-on-surface font-code-metric text-body-sm outline-none focus:ring-1 focus:ring-secondary" id="sim-cgpa" type="text" value="8.92"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant">Dean Availability State</label>
+<select class="w-full h-8 px-2.5 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-secondary" id="sim-dean">
+<option value="present">Active In Office</option>
+<option value="absent">Out of Office (&gt;3 Days)</option>
+</select>
+</div>
+</div>
+<!-- Simulation Output Console -->
+<div class="p-space-md rounded-lg bg-surface-container space-y-space-xs font-code-metric text-label-md" id="sim-results">
+<div class="flex items-center justify-between pb-2 text-on-surface font-semibold font-label-md text-label-md">
+<span class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+          Simulated Execution Pipeline Diagnostics
+        </span>
+<span class="text-on-surface-variant text-label-sm">Dry-Run Duration: 14ms</span>
+</div>
+<div class="space-y-1 text-on-surface">
+<div class="flex items-center gap-2">
+<span class="text-secondary font-bold">[EVAL]</span>
+<span>Node 01 Trigger condition met: Concession ₹1,25,000 &gt; ₹25,000 statutory minimum.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-secondary font-bold">[ROUTE]</span>
+<span>Node 02 dispatched parallel tickets: HOD CSE (#TK-8941) &amp; Student Affairs (#TK-8942).</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-secondary font-bold">[GATE]</span>
+<span>Node 03 evaluated: Amount &gt; ₹1,00,000 threshold. <strong>Diverted to Branch Alpha (Bursar Board Committee).</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-secondary font-bold">[PASS]</span>
+<span>Node 04 allocated to Dr. Alistair Finch. Substitute rule standby: INACTIVE.</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-bold">
+<span class="text-secondary font-bold">[READY]</span>
+<span>End-to-end dry-run completed with 0 routing warnings. Workflow specification valid.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Workflow Catalog & Directory Table -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden mb-space-lg">
+<!-- Header of the Catalog -->
+<div class="p-space-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm bg-surface-container-low">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Institutional Workflow Catalog &amp; Directory</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">All configured campus governance and operational pipelines actively servicing Apex Institute.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[16px]">search</span>
+<input class="h-8 pl-8 pr-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-secondary w-56" placeholder="Filter workflows..." type="text"/>
+</div>
+<button class="h-8 px-3 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+<span>Filter</span>
+</button>
+</div>
+</div>
+<!-- Data Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider h-10">
+<th class="px-space-md">Workflow Title</th>
+<th class="px-space-md">Trigger Condition</th>
+<th class="px-space-md text-center">Stages</th>
+<th class="px-space-md">Owner / Department</th>
+<th class="px-space-md">SLA Target</th>
+<th class="px-space-md">Execution Rate</th>
+<th class="px-space-md">Status</th>
+<th class="px-space-md text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y divide-surface-container">
+<!-- Row 1: Student Medical Leave & Condonation -->
+<tr class="hover:bg-surface/50 transition-colors h-14">
+<td class="px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">medical_services</span>
+<div>
+<span class="font-semibold text-on-surface block leading-tight">Student Medical Leave &amp; Condonation</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">#WF-MED-04</span>
+</div>
+</div>
+</td>
+<td class="px-space-md font-code-metric text-label-sm text-on-surface">
+              Absence ≥ 3 Consecutive Days
+            </td>
+<td class="px-space-md text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-metric text-label-sm font-semibold text-on-surface">3 Stages</span>
+</td>
+<td class="px-space-md">
+<span class="font-label-md text-label-md text-on-surface block">Health Centre &amp; Dean Academic</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Student Welfare</span>
+</td>
+<td class="px-space-md font-code-metric text-label-sm text-on-surface">
+              24.0 Hours
+            </td>
+<td class="px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-code-metric text-label-sm text-on-surface font-semibold">324 / mo</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Active
+              </span>
+</td>
+<td class="px-space-md text-right">
+<div class="flex items-center justify-end gap-1 text-on-surface-variant">
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Edit Workflow" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Clone" type="button"><span class="material-symbols-outlined text-[18px]">content_copy</span></button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Test Sandbox" type="button"><span class="material-symbols-outlined text-[18px]">science</span></button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Pause" type="button"><span class="material-symbols-outlined text-[18px]">pause_circle</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Examination Revaluation Approval -->
+<tr class="hover:bg-surface/50 transition-colors h-14">
+<td class="px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">grading</span>
+<div>
+<span class="font-semibold text-on-surface block leading-tight">Examination Revaluation Approval</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">#WF-EXAM-09</span>
+</div>
+</div>
+</td>
+<td class="px-space-md font-code-metric text-label-sm text-on-surface">
+              Fee Paid &amp; Score Delta ≥ 5%
+            </td>
+<td class="px-space-md text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-metric text-label-sm font-semibold text-on-surface">4 Stages</span>
+</td>
+<td class="px-space-md">
+<span class="font-label-md text-label-md text-on-surface block">Controller of Examinations</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Academic Assessment</span>
+</td>
+<td class="px-space-md font-code-metric text-label-sm text-on-surface">
+              72.0 Hours
+            </td>
+<td class="px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-code-metric text-label-sm text-on-surface font-semibold">142 / mo</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Active
+              </span>
+</td>
+<td class="px-space-md text-right">
+<div class="flex items-center justify-end gap-1 text-on-surface-variant">
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Edit Workflow" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Clone" type="button"><span class="material-symbols-outlined text-[18px]">content_copy</span></button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Test Sandbox" type="button"><span class="material-symbols-outlined text-[18px]">science</span></button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Pause" type="button"><span class="material-symbols-outlined text-[18px]">pause_circle</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Fee Concession & Scholarship Waiver -->
+<tr class="bg-secondary/5 h-14">
+<td class="px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">currency_rupee</span>
+<div>
+<span class="font-semibold text-on-surface block leading-tight">Fee Concession &amp; Scholarship Waiver</span>
+<span class="font-code-metric text-label-sm text-secondary font-semibold">#WF-FIN-2024.11 (Currently Selected)</span>
+</div>
+</div>
+</td>
+<td class="px-space-md font-code-metric text-label-sm text-on-surface">
+              Amount &gt; ₹25,000 + Valid Aid ID
+            </td>
+<td class="px-space-md text-center">
+<span class="px-2 py-0.5 rounded bg-secondary text-on-secondary font-code-metric text-label-sm font-semibold">5 Stages</span>
+</td>
+<td class="px-space-md">
+<span class="font-label-md text-label-md text-on-surface block">Directorate of Finance &amp; Bursar</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Institutional Treasury</span>
+</td>
+<td class="px-space-md font-code-metric text-label-sm text-on-surface">
+              48.0 Hours
+            </td>
+<td class="px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-code-metric text-label-sm text-on-surface font-semibold">89 / mo</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Active
+              </span>
+</td>
+<td class="px-space-md text-right">
+<div class="flex items-center justify-end gap-1 text-on-surface-variant">
+<button class="p-1 rounded bg-secondary text-on-secondary shadow-sm" title="Active on Canvas" type="button"><span class="material-symbols-outlined text-[18px]">brush</span></button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Clone" type="button"><span class="material-symbols-outlined text-[18px]">content_copy</span></button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Test Sandbox" type="button"><span class="material-symbols-outlined text-[18px]">science</span></button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Pause" type="button"><span class="material-symbols-outlined text-[18px]">pause_circle</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Departmental Purchase Order (> ₹50,000) -->
+<tr class="hover:bg-surface/50 transition-colors h-14">
+<td class="px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">shopping_cart_checkout</span>
+<div>
+<span class="font-semibold text-on-surface block leading-tight">Departmental Purchase Order (&gt; ₹50,000)</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">#WF-PROC-12</span>
+</div>
+</div>
+</td>
+<td class="px-space-md font-code-metric text-label-sm text-on-surface">
+              Cart Value &gt; ₹50,000 INR
+            </td>
+<td class="px-space-md text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-metric text-label-sm font-semibold text-on-surface">4 Stages</span>
+</td>
+<td class="px-space-md">
+<span class="font-label-md text-label-md text-on-surface block">Central Procurement Cell</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Logistics &amp; Stores</span>
+</td>
+<td class="px-space-md font-code-metric text-label-sm text-on-surface">
+              96.0 Hours
+            </td>
+<td class="px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-code-metric text-label-sm text-on-surface font-semibold">410 / mo</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Active
+              </span>
+</td>
+<td class="px-space-md text-right">
+<div class="flex items-center justify-end gap-1 text-on-surface-variant">
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Edit Workflow" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Clone" type="button"><span class="material-symbols-outlined text-[18px]">content_copy</span></button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Test Sandbox" type="button"><span class="material-symbols-outlined text-[18px]">science</span></button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Pause" type="button"><span class="material-symbols-outlined text-[18px]">pause_circle</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Faculty Sabbatical Request -->
+<tr class="hover:bg-surface/50 transition-colors h-14">
+<td class="px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">badge</span>
+<div>
+<span class="font-semibold text-on-surface block leading-tight">Faculty Sabbatical Request</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">#WF-FAC-01</span>
+</div>
+</div>
+</td>
+<td class="px-space-md font-code-metric text-label-sm text-on-surface">
+              Duration &gt; 90 Days + Research Proposal
+            </td>
+<td class="px-space-md text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-metric text-label-sm font-semibold text-on-surface">6 Stages</span>
+</td>
+<td class="px-space-md">
+<span class="font-label-md text-label-md text-on-surface block">Dean Faculty Affairs &amp; Registrar</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Human Resources</span>
+</td>
+<td class="px-space-md font-code-metric text-label-sm text-on-surface">
+              120.0 Hours
+            </td>
+<td class="px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-code-metric text-label-sm text-on-surface font-semibold">12 / mo</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                Paused
+              </span>
+</td>
+<td class="px-space-md text-right">
+<div class="flex items-center justify-end gap-1 text-on-surface-variant">
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Edit Workflow" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Clone" type="button"><span class="material-symbols-outlined text-[18px]">content_copy</span></button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Test Sandbox" type="button"><span class="material-symbols-outlined text-[18px]">science</span></button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Resume" type="button"><span class="material-symbols-outlined text-[18px]">play_circle</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Course Registration Prerequisite Override -->
+<tr class="hover:bg-surface/50 transition-colors h-14">
+<td class="px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">school</span>
+<div>
+<span class="font-semibold text-on-surface block leading-tight">Course Registration Prerequisite Override</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">#WF-ACAD-33</span>
+</div>
+</div>
+</td>
+<td class="px-space-md font-code-metric text-label-sm text-on-surface">
+              Enrolment Block: Prereq Missing
+            </td>
+<td class="px-space-md text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-metric text-label-sm font-semibold text-on-surface">2 Stages</span>
+</td>
+<td class="px-space-md">
+<span class="font-label-md text-label-md text-on-surface block">Course Instructor &amp; Head of Dept</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Academic Operations</span>
+</td>
+<td class="px-space-md font-code-metric text-label-sm text-on-surface">
+              12.0 Hours
+            </td>
+<td class="px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-code-metric text-label-sm text-on-surface font-semibold">820 / mo</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                Draft
+              </span>
+</td>
+<td class="px-space-md text-right">
+<div class="flex items-center justify-end gap-1 text-on-surface-variant">
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Edit Workflow" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Clone" type="button"><span class="material-symbols-outlined text-[18px]">content_copy</span></button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Test Sandbox" type="button"><span class="material-symbols-outlined text-[18px]">science</span></button>
+<button class="p-1 rounded hover:bg-surface-container hover:text-on-surface" title="Publish" type="button"><span class="material-symbols-outlined text-[18px]">publish</span></button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Showing 6 of 24 Institutional Workflows across 9 departments</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface-variant text-label-sm font-label-sm shadow-sm" disabled="" type="button">Previous</button>
+<span class="px-2 font-code-metric text-label-sm text-on-surface font-semibold">1 of 4</span>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest hover:bg-surface-container text-on-surface text-label-sm font-label-sm shadow-sm" type="button">Next</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Logic for Sandbox dry-run interaction -->
+<script>
+  (function initWorkflowSandbox() {
+    const runBtn = document.getElementById('run-simulation-btn');
+    const simAmount = document.getElementById('sim-amount');
+    const simDean = document.getElementById('sim-dean');
+    const resultsContainer = document.getElementById('sim-results');
+
+    if (!runBtn || !simAmount || !simDean || !resultsContainer) return;
+
+    runBtn.addEventListener('click', () => {
+      const amount = parseFloat(simAmount.value) || 0;
+      const deanState = simDean.value;
+
+      let gateBranch = '';
+      if (amount > 100000) {
+        gateBranch = '<span class="text-secondary font-bold">[GATE]</span> <span>Node 03 evaluated: Amount > ₹1,00,000 threshold. <strong>Diverted to Branch Alpha (Bursar Board Committee).</strong></span>';
+      } else {
+        gateBranch = '<span class="text-secondary font-bold">[GATE]</span> <span>Node 03 evaluated: Amount &le; ₹1,00,000 threshold. <strong>Diverted to Branch Beta (Senior Accounts Officer).</strong></span>';
+      }
+
+      let deanResult = '';
+      if (deanState === 'absent') {
+        deanResult = '<span class="text-error font-bold">[SUBSTITUTE]</span> <span>Dean absent &gt; 3 days. <strong>Auto-delegated to designated fallback: Vice Dean Prof. H. Vance.</strong></span>';
+      } else {
+        deanResult = '<span class="text-secondary font-bold">[PASS]</span> <span>Node 04 allocated to Dr. Alistair Finch. Substitute rule standby: INACTIVE.</span>';
+      }
+
+      resultsContainer.innerHTML = `
+        <div class="flex items-center justify-between pb-2 text-on-surface font-semibold font-label-md text-label-md">
+          <span class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+            Simulated Execution Pipeline Diagnostics (Live Test)
+          </span>
+          <span class="text-on-surface-variant text-label-sm">Dry-Run Duration: 8ms</span>
+        </div>
+        <div class="space-y-1 text-on-surface">
+          <div class="flex items-center gap-2">
+            <span class="text-secondary font-bold">[EVAL]</span>
+            <span>Node 01 Trigger condition met: Concession ₹${amount.toLocaleString()} &gt; ₹25,000 statutory minimum.</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-secondary font-bold">[ROUTE]</span>
+            <span>Node 02 dispatched parallel tickets: HOD CSE &amp; Student Affairs verified.</span>
+          </div>
+          <div class="flex items-center gap-2">
+            ${gateBranch}
+          </div>
+          <div class="flex items-center gap-2">
+            ${deanResult}
+          </div>
+          <div class="flex items-center gap-2 text-on-surface font-bold">
+            <span class="text-secondary font-bold">[READY]</span>
+            <span>Terminal state simulation valid. Ledger commit and SMS dispatch verified.</span>
+          </div>
+        </div>
+      `;
+    });
+  })();
+</script></main><footer class="w-full bg-surface-container-low py-space-md px-gutter-desktop shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex flex-col md:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-label-sm text-label-sm"><div class="flex items-center gap-space-sm flex-wrap"><span>Apex Core <strong class="text-on-surface font-semibold">98.4% uptime</strong></span><span>•</span><span>Release <strong class="font-code-metric text-on-surface">v4.2-enterprise</strong></span><span>•</span><span>Node: <code class="font-code-metric text-on-surface">#US-CAMPUS-01</code></span></div><div class="flex items-center gap-space-md flex-wrap"><a class="hover:text-on-surface transition-colors" data-path="audit-logs-and-activity-monitoring" href="#">Institutional Support Desk</a><a class="hover:text-on-surface transition-colors" data-path="authentication-and-security" href="#">FERPA &amp; Privacy Policy</a><span>© 2025 Apex Institute of Technology</span></div></div></footer></div></body></html>

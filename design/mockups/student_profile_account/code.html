@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed": "#131b2e", "outline": "#76777d", "surface-tint": "#565e74", "on-primary-container": "#7c839b", "background": "#f8f9ff", "surface-container-high": "#dce9ff", "surface-container-highest": "#d3e4fe", "error": "#ba1a1a", "primary-container": "#131b2e", "on-tertiary-container": "#008cc7", "primary": "#000000", "on-primary-fixed-variant": "#3f465c", "inverse-primary": "#bec6e0", "on-tertiary-fixed-variant": "#004c6e", "inverse-on-surface": "#eaf1ff", "tertiary-fixed-dim": "#89ceff", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "outline-variant": "#c6c6cd", "surface-variant": "#d3e4fe", "on-secondary-container": "#fffbff", "primary-fixed-dim": "#bec6e0", "tertiary-fixed": "#c9e6ff", "tertiary": "#000000", "secondary-fixed": "#e2dfff", "on-surface-variant": "#45464d", "on-background": "#0b1c30", "on-surface": "#0b1c30", "on-secondary": "#ffffff", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "surface": "#f8f9ff", "primary-fixed": "#dae2fd", "tertiary-container": "#001e2f", "on-error-container": "#93000a", "surface-bright": "#f8f9ff", "on-secondary-fixed": "#0f0069", "on-primary": "#ffffff", "inverse-surface": "#213145", "on-tertiary-fixed": "#001e2f", "on-secondary-fixed-variant": "#3323cc", "surface-container": "#e5eeff", "secondary-fixed-dim": "#c3c0ff", "surface-container-low": "#eff4ff", "surface-dim": "#cbdbf5", "secondary": "#4b41e1", "secondary-container": "#645efb" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-lg": "1.25rem", "space-md": "0.75rem", "gutter": "1rem", "margin-desktop": "2rem", "margin": "1rem", "gutter-desktop": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-xl": "2rem" }, "fontFamily": { "body-lg": ["Geist"], "body-md": ["Geist"], "headline-lg": ["Geist"], "label-sm": ["Geist"], "headline-sm": ["Geist"], "code-metric": ["Geist"], "headline-xl": ["Geist"], "body-sm": ["Geist"], "headline-xl-mobile": ["Geist"], "label-md": ["Geist"] }, "fontSize": { "body-lg": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.011em", "fontWeight": "400" }], "body-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.006em", "fontWeight": "400" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "code-metric": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.02em", "fontWeight": "500" }], "headline-xl": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600" }], "body-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "400" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-md": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "-0.005em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary font-headline-sm text-headline-sm">A</div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-label-md text-on-surface truncate font-semibold">College OS</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Student Workspace</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">unfold_more</span></div><div class="px-space-md py-space-sm bg-surface-container-low"><div class="p-space-xs rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface truncate">B.Tech CSE · Sec 4</span></div><span class="font-code-metric text-code-metric text-on-surface-variant">v4.12</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Academic Operations</div><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="portal-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Portal Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="academics-and-courses" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-body-md text-body-md">Academics & Courses</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span class="font-body-md text-body-md">Attendance</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="examinations-and-results" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span><span class="font-body-md text-body-md">Examinations & Results</span></a></nav><div class="mt-space-md px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Campus Services</div><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fee-payments-and-dues" href="#"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span class="font-body-md text-body-md">Fee Payments & Dues</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="library-and-digital-resources" href="#"><span class="material-symbols-outlined text-[20px]">local_library</span><span class="font-body-md text-body-md">Library & Resources</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="communication-and-campus-life" href="#"><span class="material-symbols-outlined text-[20px]">forum</span><span class="font-body-md text-body-md">Communication & Life</span></a></nav><div class="mt-space-md px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Account & Access</div><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="student-profile-and-security" href="#"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span class="font-body-md text-body-md">Profile & Security</span></a></nav></div><div class="p-space-sm bg-surface-container"><div class="flex items-center gap-space-sm px-space-sm py-space-xs bg-surface-container-lowest rounded-lg"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-label-md text-on-surface truncate font-semibold">Elena Rostova</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">#2024-CSE-042</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">verified</span></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container"><span class="material-symbols-outlined text-secondary text-[20px]">school</span><span class="font-label-md text-label-md font-semibold text-on-surface">Apex Institute of Technology</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></div><div class="h-4 w-[1px] bg-outline-variant"></div><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px]">calendar_today</span><span class="font-body-sm text-body-sm text-on-surface-variant">AY 2024–2025 · Sem 1 Fall</span></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-sm px-space-sm py-space-xs bg-surface-container-low hover:bg-surface-container rounded-lg text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[18px]">search</span><span class="font-body-sm text-body-sm">Quick Find</span><kbd class="px-space-xs bg-surface-container-lowest font-code-metric text-code-metric text-on-surface-variant rounded shadow-[0_1px_8px_rgba(0,0,0,0.04)]">⌘K</kbd></button><div class="relative"><button class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button></div><div class="h-4 w-[1px] bg-outline-variant"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-md text-label-md font-semibold text-on-surface">Elena Rostova</span><span class="font-label-sm text-label-sm text-on-surface-variant">B.Tech CSE</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full pt-16 bg-surface px-gutter-desktop py-space-lg"><div class="flex flex-col w-full space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="space-y-space-xs">
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="hover:text-on-surface transition-colors cursor-pointer">Student Portal</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">Profile & Account</span>
+</nav>
+<div class="flex items-center gap-space-md flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Student Identity & Account Settings</h1>
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>95% Dossier Verified</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="flex items-center gap-space-xs px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md shadow-sm transition-all" id="exportIdBtn">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>Export Digital ID</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary text-on-primary hover:bg-on-primary-fixed transition-colors font-label-md text-label-md shadow-sm" id="openUpdateModalBtn">
+<span class="material-symbols-outlined text-[18px]">edit_document</span>
+<span>Request Profile Update</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-fixed/30 rounded-bl-full pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="relative group">
+<div class="w-28 h-28 rounded-full overflow-hidden shadow-md bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Official collegiate passport style portrait of Elena K. Rostova, a young female university student in computer science, clear sharp lighting, neutral slate studio background, natural expression, professional academic headshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwBAU7Bm2-Kh9tRHd2GqpWY77xqPgmz4qoqf6JJPHKWhCIVw1IcCXR5r7tfaDiKplK0Z7y-BCZFHN5-9xWMN63z9mv92VuCWzlPlKQT6fHi_iJN8E_a6K20gosc_4cGJ7OqB3oy8L3tlY-4g4EUkTUubhgzItbCycNTmsvBAuhplk-CGE-JSLPv16vLlPkFjpPMfTmIb4fot2hbAYKbjieDjDLiBXBFZU2SlLqlwU"/>
+</div>
+<span class="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+</span>
+</div>
+<h2 class="mt-space-md font-headline-sm text-headline-sm text-on-surface font-semibold">Elena K. Rostova</h2>
+<p class="font-code-metric text-code-metric text-secondary font-semibold">#2024-CSE-042</p>
+<span class="mt-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+            B.Tech Computer Science & AI
+          </span>
+<div class="w-full mt-space-md pt-space-md bg-surface-container-low/60 rounded-lg p-space-sm space-y-space-xs text-left">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Academic Cohort</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">2022 – 2026 (Sem V)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Assigned Campus</span>
+<span class="font-label-md text-label-md text-on-surface">North Campus US-01</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">RFID SmartCard</span>
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">RF-8829-X09</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Institutional Email</span>
+<span class="font-code-metric text-code-metric text-secondary truncate max-w-[160px]">elena.r@apex.edu</span>
+</div>
+</div>
+<div class="w-full mt-space-md flex items-center justify-between p-space-xs rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">contactless</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">NFC Hall Pass</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">ACTIVE</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">shield_person</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Guardian Dossier</h3>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant">FERPA/DPDP Verified</span>
+</div>
+<div class="space-y-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Primary Affiant</span>
+<div class="flex items-center justify-between">
+<span class="font-body-md text-body-md text-on-surface font-semibold">Dr. Konstantin S. Rostov</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Father</span>
+</div>
+<div class="flex items-center gap-space-xs mt-1 text-on-surface-variant font-code-metric text-code-metric">
+<span class="material-symbols-outlined text-[16px] text-secondary">call</span>
+<span>+91 98401-XXXXX</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Secondary Contact</span>
+<div class="flex items-center justify-between">
+<span class="font-body-md text-body-md text-on-surface font-semibold">Irina M. Rostova</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Mother</span>
+</div>
+<div class="flex items-center gap-space-xs mt-1 text-on-surface-variant font-code-metric text-code-metric">
+<span class="material-symbols-outlined text-[16px] text-secondary">call</span>
+<span>+91 98402-XXXXX</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs p-space-xs bg-surface-container rounded-lg text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+<span>Dual biometric authorization on file.</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col items-center">
+<div class="w-full flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Institutional Campus Badge</span>
+<span class="font-code-metric text-code-metric text-secondary">Apex OS-Secure</span>
+</div>
+<div class="w-full h-44 rounded-lg overflow-hidden relative shadow-inner">
+<img class="w-full h-full object-cover" data-alt="High-tech university smart campus building at apex institute of technology, modern glass architecture, students studying in ambient bright architectural courtyard, sunlight casting clean geometric shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_JYiGnIsZvFJxf_Ktjo7cE-5m_IliMOGThvDXF_4TB_RtqyqeULJCcCENdBjx3HecLWD8ANshksvHPlXPUKHo51Q_-nvqsQMaCBVRCl9j5sYWo9If1VqtV6wmqNcmmGqRTPo1vvUBQI5mR_z_1H-O2TB9EPVE4hLkdIKsIMWLcCx5sEBvjII_i6QaoX61ybiczFLSlKPFVcT4hXaIeAivqGtyR8LRJWn_0X8Kc4k"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent flex items-end p-space-sm">
+<div class="text-on-primary">
+<p class="font-label-md text-label-md font-semibold">Apex Central Tech Park</p>
+<p class="font-body-sm text-body-sm text-on-primary-container">Zone 4 AI Engineering Wing</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">badge</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Personal & Contact Registry</h3>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-high font-code-metric text-code-metric text-on-surface">REG-ID: IND-2024-KA</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Date of Birth</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">14 October 2004</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant mt-0.5">Age 20 Years</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Blood Group</span>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[18px]">bloodtype</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">O+ Positive</span>
+</div>
+<span class="block font-body-sm text-body-sm text-on-surface-variant mt-0.5">Verified Medical Card</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Nationality & Category</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">Indian Citizen</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant mt-0.5">General / Merit Quota</span>
+</div>
+<div class="md:col-span-2 p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Residential Address (Current)</span>
+<span class="font-label-sm text-label-sm px-space-xs rounded bg-surface-container text-on-surface">Campus Hostel</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">Room 402, Block Theta, Apex North Campus Residence, Bengaluru, Karnataka, 560064</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Emergency Hotline</span>
+<span class="font-code-metric text-code-metric text-on-surface font-semibold block">+91 98401-44221</span>
+<span class="font-body-sm text-body-sm text-secondary block mt-1">Hostel Warden · Ext 404</span>
+</div>
+<div class="md:col-span-3 p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Permanent Legal Domicile</span>
+<p class="font-body-md text-body-md text-on-surface">Flat 5B, Skyline Imperial Towers, Indiranagar 100ft Road, Bengaluru, Karnataka – 560038</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">folder_shared</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Uploaded Institutional Documents</h3>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">info</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Audit Vault DPDP-2023 Compliant</span>
+</div>
+</div>
+<div class="space-y-space-xs">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">description</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Secondary School Examination (10th Marksheet)</p>
+<p class="font-code-metric text-code-metric text-on-surface-variant">CBSE-AISSE-2020-88492.pdf · 2.4 MB</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0 self-end sm:self-auto">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Verified by Registrar</span>
+</span>
+<button class="p-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface shadow-sm transition-colors" title="Download">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">description</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Senior Secondary Certificate (12th Marksheet & Pass)</p>
+<p class="font-code-metric text-code-metric text-on-surface-variant">CBSE-AISSCE-2022-90114.pdf · 3.1 MB</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0 self-end sm:self-auto">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Verified by Registrar</span>
+</span>
+<button class="p-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface shadow-sm transition-colors" title="Download">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">assignment_turned_in</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Central Allotment Letter & Seat Acceptance Order</p>
+<p class="font-code-metric text-code-metric text-on-surface-variant">APEX-ALLOT-2022-CSE-09.pdf · 1.8 MB</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0 self-end sm:self-auto">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Verified by Registrar</span>
+</span>
+<button class="p-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface shadow-sm transition-colors" title="Download">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">fingerprint</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">National Identity Proof (Aadhaar UID Masked)</p>
+<p class="font-code-metric text-code-metric text-on-surface-variant">UID-MASKED-XXXX-XXXX-9902.pdf · 1.2 MB</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0 self-end sm:self-auto">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Verified by Registrar</span>
+</span>
+<button class="p-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface shadow-sm transition-colors" title="Download">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">medical_services</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Medical Fitness & Immunization Record Affidavit</p>
+<p class="font-code-metric text-code-metric text-on-surface-variant">HEALTH-AFFIDAVIT-FALL24.pdf · 940 KB</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0 self-end sm:self-auto">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Verified by Registrar</span>
+</span>
+<button class="p-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface shadow-sm transition-colors" title="Download">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg space-y-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">security</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Account Security & Credentials</h3>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container text-on-surface">Tier 3 Identity Protection</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Institutional Password</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Last reset 42 days ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Requires min. 14 characters, symbol, alphanumeric, and non-repeating sequence.</p>
+<div class="space-y-space-xs">
+<input class="w-full h-9 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm shadow-sm outline-none" id="currentPwdInput" placeholder="Current Institutional Passphrase" type="password"/>
+<input class="w-full h-9 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm shadow-sm outline-none" id="newPwdInput" placeholder="New Passphrase" type="password"/>
+<div class="pt-1">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Password Entropy Meter</span>
+<span class="font-code-metric text-code-metric text-secondary font-semibold" id="pwdStrengthLabel">Strong (85/100)</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary w-5/6 transition-all duration-300" id="pwdStrengthBar"></div>
+</div>
+</div>
+</div>
+</div>
+<button class="w-full py-2 rounded-lg bg-primary text-on-primary hover:bg-on-primary-fixed transition-colors font-label-md text-label-md shadow-sm" id="savePwdBtn">
+              Update Security Credentials
+            </button>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Multi-Factor Authentication (MFA)</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">ENFORCED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Institution mandates dual-layer challenge on logins from outside apex network.</p>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between p-space-xs bg-surface-container-lowest rounded-lg shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">phonelink_lock</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Google Authenticator / TOTP</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Primary authenticator · Key ID: **3992</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+</div>
+<div class="flex items-center justify-between p-space-xs bg-surface-container-lowest rounded-lg shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">sms</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Emergency SMS Fallback</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">+91 98401-*****</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+</div>
+</div>
+</div>
+<button class="w-full py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md shadow-sm" id="configMfaBtn">
+              Manage MFA Keys & Recovery Codes
+            </button>
+</div>
+</div>
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Active Hardware Sessions</span>
+<button class="font-body-sm text-body-sm text-error hover:underline flex items-center gap-1" id="revokeAllBtn">
+<span class="material-symbols-outlined text-[16px]">logout</span>
+<span>Revoke All Other Sessions</span>
+</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase">
+<th class="py-2 px-space-sm">Device & Browser</th>
+<th class="py-2 px-space-sm">IP Address & Location</th>
+<th class="py-2 px-space-sm">Issued / Last Ping</th>
+<th class="py-2 px-space-sm text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent font-body-sm text-body-sm">
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-space-xs px-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">laptop_mac</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Chrome 128 · macOS Sequoia</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Current Session</span>
+</div>
+</div>
+</td>
+<td class="py-space-xs px-space-sm font-code-metric text-code-metric text-on-surface">
+                    10.14.88.204 <span class="text-on-surface-variant font-body-sm text-body-sm">(Apex Lab WLAN)</span>
+</td>
+<td class="py-space-xs px-space-sm text-on-surface-variant">Just now</td>
+<td class="py-space-xs px-space-sm text-right">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Protected</span>
+</td>
+</tr>
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-space-xs px-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">phone_iphone</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Apex Scholar iOS App</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Apple iPhone 15 Pro</span>
+</div>
+</div>
+</td>
+<td class="py-space-xs px-space-sm font-code-metric text-code-metric text-on-surface">
+                    157.48.21.90 <span class="text-on-surface-variant font-body-sm text-body-sm">(Airtel 5G, BLR)</span>
+</td>
+<td class="py-space-xs px-space-sm text-on-surface-variant">28 mins ago</td>
+<td class="py-space-xs px-space-sm text-right">
+<button class="px-space-xs py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm hover:opacity-90 transition-opacity">Revoke</button>
+</td>
+</tr>
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-space-xs px-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">desktop_windows</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Firefox 129 · Ubuntu Linux</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Computer Vision Lab Workstation #14</span>
+</div>
+</div>
+</td>
+<td class="py-space-xs px-space-sm font-code-metric text-code-metric text-on-surface">
+                    10.14.92.14 <span class="text-on-surface-variant font-body-sm text-body-sm">(Apex Campus Intranet)</span>
+</td>
+<td class="py-space-xs px-space-sm text-on-surface-variant">Yesterday at 17:40</td>
+<td class="py-space-xs px-space-sm text-right">
+<button class="px-space-xs py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm hover:opacity-90 transition-opacity">Revoke</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm hidden items-center justify-center p-space-md" id="updateModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-xl w-full p-space-lg shadow-2xl relative space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">assignment_add</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Request Profile Amendment</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Routed to Academic Registrar & Verification Desk</p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" id="closeUpdateModalBtn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="space-y-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Target Field for Rectification</label>
+<select class="w-full h-9 px-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none">
+<option>Permanent Address & Domicile</option>
+<option>Emergency Contact Number</option>
+<option>Guardian Affiliation Details</option>
+<option>Name Spelling Correction (Govt ID Proof Required)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Proposed Correction / New Value</label>
+<input class="w-full h-9 px-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none" placeholder="Enter updated exact information..." type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Evidentiary Document Attachment (PDF/JPEG ≤ 5MB)</label>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-secondary text-[28px] mb-1">upload_file</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Drop certified legal document here</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gazette notification, updated Aadhaar card, or utility deed</span>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Justification Reason</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none" placeholder="Provide context for academic auditing records..." rows="3"></textarea>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" id="cancelModalBtn">
+          Cancel
+        </button>
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-on-primary-fixed transition-colors shadow-sm" id="submitRequestBtn">
+          Submit for Registrar Verification
+        </button>
+</div>
+</div>
+</div>
+<div class="fixed bottom-space-lg right-space-lg z-50 bg-primary-container text-on-primary px-space-md py-space-sm rounded-lg shadow-xl hidden items-center gap-space-xs transition-transform" id="toastNotification">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span class="font-body-sm text-body-sm" id="toastMsg">Action successfully executed.</span>
+</div>
+<script>
+    (function () {
+      const modal = document.getElementById('updateModal');
+      const openBtn = document.getElementById('openUpdateModalBtn');
+      const closeBtn = document.getElementById('closeUpdateModalBtn');
+      const cancelBtn = document.getElementById('cancelModalBtn');
+      const submitBtn = document.getElementById('submitRequestBtn');
+      const toast = document.getElementById('toastNotification');
+      const toastMsg = document.getElementById('toastMsg');
+      const pwdInput = document.getElementById('newPwdInput');
+      const pwdBar = document.getElementById('pwdStrengthBar');
+      const pwdLabel = document.getElementById('pwdStrengthLabel');
+      const savePwdBtn = document.getElementById('savePwdBtn');
+      const exportIdBtn = document.getElementById('exportIdBtn');
+      const revokeAllBtn = document.getElementById('revokeAllBtn');
+
+      function showToast(msg) {
+        if (!toast || !toastMsg) return;
+        toastMsg.textContent = msg;
+        toast.classList.remove('hidden');
+        toast.classList.add('flex');
+        setTimeout(() => {
+          toast.classList.add('hidden');
+          toast.classList.remove('flex');
+        }, 3200);
+      }
+
+      function toggleModal(show) {
+        if (!modal) return;
+        if (show) {
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        } else {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+      }
+
+      if (openBtn) openBtn.addEventListener('click', () => toggleModal(true));
+      if (closeBtn) closeBtn.addEventListener('click', () => toggleModal(false));
+      if (cancelBtn) cancelBtn.addEventListener('click', () => toggleModal(false));
+
+      if (submitBtn) {
+        submitBtn.addEventListener('click', () => {
+          toggleModal(false);
+          showToast('Profile amendment request submitted to Registrar ticket #REQ-8821');
+        });
+      }
+
+      if (pwdInput && pwdBar && pwdLabel) {
+        pwdInput.addEventListener('input', (e) => {
+          const val = e.target.value;
+          if (val.length === 0) {
+            pwdBar.style.width = '20%';
+            pwdLabel.textContent = 'Weak (20/100)';
+          } else if (val.length < 8) {
+            pwdBar.style.width = '45%';
+            pwdLabel.textContent = 'Moderate (45/100)';
+          } else if (val.length < 12) {
+            pwdBar.style.width = '75%';
+            pwdLabel.textContent = 'Strong (75/100)';
+          } else {
+            pwdBar.style.width = '100%';
+            pwdLabel.textContent = 'Ultra Resilient (100/100)';
+          }
+        });
+      }
+
+      if (savePwdBtn) {
+        savePwdBtn.addEventListener('click', () => {
+          showToast('Credentials updated. MFA audit log updated.');
+        });
+      }
+
+      if (exportIdBtn) {
+        exportIdBtn.addEventListener('click', () => {
+          showToast('Signed PDF Student Identity exported to downloads.');
+        });
+      }
+
+      if (revokeAllBtn) {
+        revokeAllBtn.addEventListener('click', () => {
+          showToast('Revoked all remote sessions. Only this browser remains active.');
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] py-space-md px-gutter-desktop"><div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface font-semibold">System Operational</span><span class="font-code-metric text-code-metric text-on-surface-variant">(98.4% uptime)</span></div><span class="text-outline-variant">·</span><span class="font-body-sm text-body-sm text-on-surface-variant">Node ID: <code class="font-code-metric text-code-metric text-on-surface">cluster-us-east-apex-09</code></span></div><div class="flex items-center gap-space-md"><span class="font-body-sm text-body-sm text-on-surface-variant">FERPA & DPDP Compliant Data Vault</span><span class="text-outline-variant">·</span><span class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Apex Institute of Technology. All rights reserved.</span></div></div></footer></div></body></html>

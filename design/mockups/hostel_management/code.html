@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#000000", "on-tertiary": "#ffffff", "tertiary-container": "#001e2f", "outline": "#76777d", "surface-container-low": "#eff4ff", "surface-container": "#e5eeff", "surface-variant": "#d3e4fe", "error-container": "#ffdad6", "secondary-fixed-dim": "#c3c0ff", "on-secondary-fixed": "#0f0069", "background": "#f8f9ff", "on-tertiary-fixed-variant": "#004c6e", "surface-container-highest": "#d3e4fe", "inverse-surface": "#213145", "surface-bright": "#f8f9ff", "error": "#ba1a1a", "tertiary": "#000000", "secondary-container": "#645efb", "on-surface": "#0b1c30", "secondary": "#4b41e1", "surface-tint": "#565e74", "primary-fixed": "#dae2fd", "on-primary-fixed": "#131b2e", "on-secondary": "#ffffff", "on-background": "#0b1c30", "surface": "#f8f9ff", "on-error-container": "#93000a", "on-secondary-container": "#fffbff", "on-surface-variant": "#45464d", "surface-dim": "#cbdbf5", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#008cc7", "on-primary-fixed-variant": "#3f465c", "on-primary": "#ffffff", "tertiary-fixed": "#c9e6ff", "tertiary-fixed-dim": "#89ceff", "primary-fixed-dim": "#bec6e0", "on-tertiary-fixed": "#001e2f", "primary-container": "#131b2e", "outline-variant": "#c6c6cd", "on-error": "#ffffff", "on-secondary-fixed-variant": "#3323cc", "surface-container-high": "#dce9ff", "on-primary-container": "#7c839b", "inverse-primary": "#bec6e0", "secondary-fixed": "#e2dfff", "inverse-on-surface": "#eaf1ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1rem", "space-sm": "0.5rem", "margin-desktop": "2rem", "space-md": "0.75rem", "gutter-desktop": "1.5rem", "space-lg": "1.25rem", "space-xs": "0.25rem", "margin": "1rem", "space-xl": "2rem" }, "fontFamily": { "body-md": ["Geist"], "label-sm": ["Geist"], "headline-xl-mobile": ["Geist"], "headline-xl": ["Geist"], "label-md": ["Geist"], "body-lg": ["Geist"], "headline-sm": ["Geist"], "body-sm": ["Geist"], "code-metric": ["Geist"], "headline-lg": ["Geist"] }, "fontSize": { "body-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.006em", "fontWeight": "400" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-xl": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600" }], "label-md": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "-0.005em", "fontWeight": "500" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.011em", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "400" }], "code-metric": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.02em", "fontWeight": "500" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col h-full overflow-hidden"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Apex Institute</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-lg bg-surface-container text-on-surface font-semibold shrink-0">#US-01</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Institutional Workspace • AY 2024-25</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container text-on-surface font-semibold rounded-lg"><div class="px-space-sm pt-space-xs pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Academic Operations</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="academics" href="#">Academics</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="students" href="#">Students</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="faculty-staff" href="#">Faculty &amp; Staff</a><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">fact_check</span><span class="font-label-md text-label-md font-semibold text-on-surface">Attendance</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-overview" href="#">Attendance Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="mark-attendance" href="#">Mark Attendance</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-records" href="#">Attendance Records</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="shortage-defaulters" href="#">Shortage &amp; Defaulters</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-settings" href="#">Attendance Settings</a></div></div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">assignment</span><span class="font-label-md text-label-md font-semibold text-on-surface">Examinations</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="examination-overview" href="#">Examination Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="exam-management" href="#">Exam Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="exam-timetable" href="#">Exam Timetable</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="hall-tickets" href="#">Hall Tickets</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="seating-arrangement" href="#">Seating Arrangement</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="marks-entry" href="#">Marks Entry</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="results-grades" href="#">Results &amp; Grades</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="revaluation-supplementary" href="#">Revaluation &amp; Supplementary</a></div></div><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Campus Operations &amp; Facilities</div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">domain</span><span class="font-label-md text-label-md font-semibold text-on-surface">Campus Operations</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="campus-overview" href="#">Campus Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="buildings-facilities" href="#">Buildings &amp; Facilities</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="room-booking" href="#">Room Booking</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="maintenance-management" href="#">Maintenance Management</a><a aria-current="page" class="px-space-sm py-1 transition-colors bg-surface-container text-on-surface font-semibold rounded-lg" data-path="hostel-management" href="#">Hostel Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="transport-management" href="#">Transport Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="security-visitor-management" href="#">Security &amp; Visitor Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="housekeeping-assets" href="#">Housekeeping &amp; Assets</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="operations-reports-settings" href="#">Operations Reports &amp; Settings</a></div></div><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Institutional Services</div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">payments</span><span class="font-label-md text-label-md font-semibold text-on-surface">Finance</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="finance-overview" href="#">Finance Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fee-structures" href="#">Fee Structures</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="student-fees" href="#">Student Fees</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fee-collection" href="#">Fee Collection</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="scholarships-aid" href="#">Scholarships &amp; Aid</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="expenses-vendors" href="#">Expenses &amp; Vendors</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="accounting-ledger" href="#">Accounting &amp; Ledger</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="financial-reports" href="#">Financial Reports</a></div></div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">local_library</span><span class="font-label-md text-label-md font-semibold text-on-surface">Library</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="library-overview" href="#">Library Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="book-catalogue" href="#">Book Catalogue</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="book-inventory" href="#">Book Inventory</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="circulation" href="#">Circulation</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="reservations-requests" href="#">Reservations &amp; Requests</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fines-payments" href="#">Fines &amp; Payments</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="digital-library" href="#">Digital Library</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="library-reports-settings" href="#">Library Reports &amp; Settings</a></div></div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-life" href="#">Student Life</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="placements" href="#">Placements</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="communication" href="#">Communication</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports-analytics" href="#">Reports &amp; Analytics</a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">System Governance</div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="administration" href="#">Administration</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-sm bg-surface-container-low shrink-0"><div class="flex items-center justify-between text-on-surface-variant mb-space-xs"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-semibold text-on-surface">Apex Core 98.4% uptime</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v4.2</span></div><a class="flex items-center justify-between font-label-sm text-label-sm text-secondary hover:text-on-secondary-fixed transition-colors" data-path="institutional-support" href="#">Institutional Support Desk</a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="relative flex items-center w-80"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-on-surface-variant pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-14 bg-surface rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search students, facilities, staff..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-code-metric">⌘K</span></div><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container"><span class="material-symbols-outlined text-[16px] text-secondary">event_available</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">AY 2024–2025 • Semester 1 Fall</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary font-semibold uppercase">Active Term</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div></div><div class="flex items-center gap-space-md"><button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Action</span></button><div class="flex items-center gap-space-xs"><button class="relative w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-label-sm flex items-center justify-center font-code-metric">3</span></button><button class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button></div><div class="h-6 w-px bg-surface-container"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Alistair Finch</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Dean of Academic Affairs</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter-desktop pb-space-xl flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Context Header & Actions Strip -->
+<div class="flex flex-col gap-space-lg mb-space-lg">
+<!-- Breadcrumb & Direct Authority Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Campus Operations &amp; Facilities</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Residential Infrastructure</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">Hostel Administration</span>
+<span class="ml-space-xs px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-code-metric text-label-sm">LIVE TELEMETRY</span>
+</div>
+<!-- Campus Context Selectors -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">location_on</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Apex Central Campus (North Wing)</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">keyboard_arrow_down</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">apartment</span>
+<span class="font-label-md text-label-md text-on-surface">All Residential Blocks (4 Boys, 3 Girls, 1 Intl.)</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span>
+</div>
+</div>
+</div>
+<!-- Page Title & Operational Controls -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Hostel Administration &amp; Resident Management</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Residential halls, block-level occupancy, student bed allocation, warden rosters, entry/exit logs, and hostel dues</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="h-[38px] px-space-md flex items-center gap-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">receipt_long</span>
+<span>Hostel Dues Ledger</span>
+</button>
+<button class="h-[38px] px-space-md flex items-center gap-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">print</span>
+<span>Print Gate Pass Register</span>
+</button>
+<button class="h-[38px] px-space-md flex items-center gap-space-xs rounded-lg bg-secondary text-on-secondary font-label-md text-label-md shadow-sm hover:bg-on-secondary-fixed-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>New Resident Allocation</span>
+</button>
+</div>
+</div>
+</div>
+<!-- KPI Telemetry Cards (5 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md mb-space-lg">
+<!-- KPI 1: Total Capacity -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Total Capacity</span>
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-secondary">hotel</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">3,850 <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">Beds</span></div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">8 Hostels across 24 Blocks</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center gap-1 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[14px]">domain_verification</span>
+<span>Audited for AY 2024–25</span>
+</div>
+</div>
+<!-- KPI 2: Current Occupancy -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Current Occupancy</span>
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-secondary">groups</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">3,582 <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">Beds</span></div>
+<div class="flex items-center gap-space-xs mt-1">
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 93%;"></div>
+</div>
+<span class="font-code-metric text-label-sm text-secondary font-semibold">93.0%</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+        +212 admissions this term
+      </div>
+</div>
+<!-- KPI 3: Available Beds -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Available Beds</span>
+<div class="w-7 h-7 rounded-lg bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-on-surface">door_front</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">268 <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">Vacant</span></div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant mt-0.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-semibold">112 Boys</span>
+<span>•</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-semibold">156 Girls</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+        18 quarantine reserve beds
+      </div>
+</div>
+<!-- KPI 4: Allocation Applications -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Applications</span>
+<div class="w-7 h-7 rounded-lg bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-secondary">pending_actions</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">184 <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">Pending</span></div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-error mt-0.5 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span>42 Urgent Hardship Cases</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-secondary">
+<span>Committee review today</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+<!-- KPI 5: Complaints & Dues -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Maintenance &amp; Dues</span>
+<div class="w-7 h-7 rounded-lg bg-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-error">notification_important</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">19 <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">Tickets</span></div>
+<div class="font-code-metric text-label-sm text-on-surface-variant mt-0.5">
+<span class="text-error font-semibold">₹12.40 L</span> Outstanding Dues
+        </div>
+</div>
+<div class="mt-space-sm pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+        4 critical electrical/plumbing
+      </div>
+</div>
+</div>
+<!-- Section 1: Hostel Directory & Block-Level Matrix -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm mb-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-secondary">domain</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Block &amp; Floor Occupancy Heatmap</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Real-time room availability across 4 primary resident hall clusters</span>
+</div>
+</div>
+<!-- Quick Room Category Filter Strip -->
+<div class="flex flex-wrap items-center gap-space-xs p-1 rounded-lg bg-surface-container-low">
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold shadow-xs">All Tiers</button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">Single AC (₹85k/yr)</button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">Double Non-AC (₹55k/yr)</button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">Triple Shared (₹42k/yr)</button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">Dormitory (₹30k/yr)</button>
+</div>
+</div>
+<!-- Hostel Directory Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Hostel 1: Himalaya Hall -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Himalaya Hall</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric">BH-1</span>
+</div>
+<span class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-secondary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Active
+            </span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Boys Hostel • 6 Blocks (A–F) • 4 Floors</div>
+<!-- Mini Heatmap Indicators -->
+<div class="mt-space-md">
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-medium">Occupancy</span>
+<span class="font-code-metric text-on-surface font-semibold">620 / 650 Beds (95.4%)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 95.4%;"></div>
+</div>
+</div>
+<!-- Micro Floor Matrix -->
+<div class="grid grid-cols-4 gap-1.5 mt-space-sm">
+<div class="p-1.5 rounded bg-surface-container-lowest text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fl 1</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">98%</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container-lowest text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fl 2</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">96%</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container-lowest text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fl 3</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">95%</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container-lowest text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fl 4</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">92%</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">supervisor_account</span>
+<span class="truncate">Warden: <strong class="text-on-surface">Dr. K. Radhakrishnan</strong></span>
+</div>
+<span class="font-code-metric text-secondary font-semibold shrink-0">30 Vacant</span>
+</div>
+</div>
+<!-- Hostel 2: Mandakini Hall -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Mandakini Hall</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric">GH-1</span>
+</div>
+<span class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-secondary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Active
+            </span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Girls Hostel • 5 Blocks (A–E) • 5 Floors</div>
+<!-- Mini Heatmap Indicators -->
+<div class="mt-space-md">
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-medium">Occupancy</span>
+<span class="font-code-metric text-on-surface font-semibold">580 / 600 Beds (96.6%)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 96.6%;"></div>
+</div>
+</div>
+<!-- Micro Floor Matrix -->
+<div class="grid grid-cols-4 gap-1.5 mt-space-sm">
+<div class="p-1.5 rounded bg-surface-container-lowest text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fl 1</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">100%</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container-lowest text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fl 2</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">98%</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container-lowest text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fl 3</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">97%</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container-lowest text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fl 4</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">91%</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">supervisor_account</span>
+<span class="truncate">Warden: <strong class="text-on-surface">Dr. Sunita Mehra</strong></span>
+</div>
+<span class="font-code-metric text-secondary font-semibold shrink-0">20 Vacant</span>
+</div>
+</div>
+<!-- Hostel 3: Nilgiri Hall -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Nilgiri Hall</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric">BH-2</span>
+</div>
+<span class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-secondary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Active
+            </span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Boys Hostel • 4 Blocks (A–D) • 4 Floors</div>
+<!-- Mini Heatmap Indicators -->
+<div class="mt-space-md">
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-medium">Occupancy</span>
+<span class="font-code-metric text-on-surface font-semibold">480 / 520 Beds (92.3%)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 92.3%;"></div>
+</div>
+</div>
+<!-- Micro Floor Matrix -->
+<div class="grid grid-cols-4 gap-1.5 mt-space-sm">
+<div class="p-1.5 rounded bg-surface-container-lowest text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fl 1</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">95%</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container-lowest text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fl 2</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">94%</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container-lowest text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fl 3</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">90%</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container-lowest text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fl 4</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">90%</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">supervisor_account</span>
+<span class="truncate">Warden: <strong class="text-on-surface">Prof. Rajesh Nair</strong></span>
+</div>
+<span class="font-code-metric text-secondary font-semibold shrink-0">40 Vacant</span>
+</div>
+</div>
+<!-- Hostel 4: Saraswati Hall -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Saraswati Hall</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric">GH-2</span>
+</div>
+<span class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-secondary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Active
+            </span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Girls Hostel • 4 Blocks (A–D) • 4 Floors</div>
+<!-- Mini Heatmap Indicators -->
+<div class="mt-space-md">
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-medium">Occupancy</span>
+<span class="font-code-metric text-on-surface font-semibold">450 / 500 Beds (90.0%)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 90%;"></div>
+</div>
+</div>
+<!-- Micro Floor Matrix -->
+<div class="grid grid-cols-4 gap-1.5 mt-space-sm">
+<div class="p-1.5 rounded bg-surface-container-lowest text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fl 1</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">96%</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container-lowest text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fl 2</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">92%</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container-lowest text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fl 3</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">88%</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container-lowest text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fl 4</span>
+<span class="font-code-metric text-label-sm font-semibold text-secondary">84%</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">supervisor_account</span>
+<span class="truncate">Warden: <strong class="text-on-surface">Prof. Shalini Verma</strong></span>
+</div>
+<span class="font-code-metric text-secondary font-semibold shrink-0">50 Vacant</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 2: Dual Tabbed Operational Registry -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm mb-space-lg overflow-hidden">
+<!-- Tab Controls Header -->
+<div class="p-space-md bg-surface-container-lowest flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs p-1 rounded-lg bg-surface-container-low max-w-fit">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest font-label-md text-label-md font-semibold text-on-surface shadow-xs flex items-center gap-space-xs transition-all" id="tab-btn-residents" onclick="switchHostelTab('residents')">
+<span class="material-symbols-outlined text-[18px] text-secondary">bed</span>
+<span>Resident Roster &amp; Bed Allocations</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container font-code-metric text-label-sm text-on-surface font-normal">3,582</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface flex items-center gap-space-xs transition-all" id="tab-btn-gate" onclick="switchHostelTab('gate')">
+<span class="material-symbols-outlined text-[18px]">fingerprint</span>
+<span>Night Curfew &amp; Gate Biometric Register</span>
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+</button>
+</div>
+<!-- Search & Filters Strip -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative flex items-center w-64">
+<span class="material-symbols-outlined absolute left-space-sm text-[16px] text-on-surface-variant">search</span>
+<input class="w-full h-8 pl-8 pr-3 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none focus:bg-surface-container transition-colors" placeholder="Filter by Student ID, Room, Roll No..." type="text"/>
+</div>
+<button class="h-8 px-space-sm flex items-center gap-space-xs rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+<span>Filter</span>
+</button>
+<button class="h-8 px-space-sm flex items-center gap-space-xs rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Export CSV</span>
+</button>
+</div>
+</div>
+<!-- Tab 1: Resident Roster Table -->
+<div class="block overflow-x-auto" id="tab-residents">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-low font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">
+<tr>
+<th class="py-2.5 px-space-md">Student Details &amp; Roll ID</th>
+<th class="py-2.5 px-space-md">Dept &amp; Term</th>
+<th class="py-2.5 px-space-md">Hostel &amp; Block</th>
+<th class="py-2.5 px-space-md">Room &amp; Bed</th>
+<th class="py-2.5 px-space-md">Room Tier</th>
+<th class="py-2.5 px-space-md">Fee Status</th>
+<th class="py-2.5 px-space-md">Check-In</th>
+<th class="py-2.5 px-space-md">Resident Status</th>
+<th class="py-2.5 px-space-md text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<!-- Row 1: Elena Rostova -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-code-metric font-semibold text-secondary text-label-md">ER</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Elena Rostova</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">STU-2024-042</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">B.Tech CS</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Semester 7</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="font-label-md text-label-md text-on-surface">Mandakini Hall</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Block B (Fl 3)</span>
+</td>
+<td class="py-3 px-space-md font-code-metric font-semibold text-on-surface">
+              Room 304 • Bed 1
+            </td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Double AC</span>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Cleared (₹85k)
+              </span>
+</td>
+<td class="py-3 px-space-md font-code-metric text-label-sm text-on-surface-variant">
+              12 Jul 2024
+            </td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm font-semibold">Active Resident</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="w-7 h-7 inline-flex items-center justify-center rounded hover:bg-surface-container text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: Rohan Mehta -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-low/30">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-code-metric font-semibold text-secondary text-label-md">RM</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Rohan Mehta</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">STU-2022-048</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">B.Tech Mech</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Semester 5</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="font-label-md text-label-md text-on-surface">Himalaya Hall</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Block A (Fl 1)</span>
+</td>
+<td class="py-3 px-space-md font-code-metric font-semibold text-on-surface">
+              Room 112 • Bed 2
+            </td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Double Non-AC</span>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-error-container text-error font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> ₹15,000 Due
+              </span>
+</td>
+<td class="py-3 px-space-md font-code-metric text-label-sm text-on-surface-variant">
+              10 Jul 2024
+            </td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-error font-label-sm text-label-sm font-semibold">Dues Pending</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="w-7 h-7 inline-flex items-center justify-center rounded hover:bg-surface-container text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Ananya Sharma -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-code-metric font-semibold text-secondary text-label-md">AS</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Ananya Sharma</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">STU-2024-098</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">M.Tech AI</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Semester 1</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="font-label-md text-label-md text-on-surface">Saraswati Hall</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Block C (Fl 2)</span>
+</td>
+<td class="py-3 px-space-md font-code-metric font-semibold text-on-surface">
+              Room 201 • Bed 1
+            </td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Single AC</span>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Cleared (₹85k)
+              </span>
+</td>
+<td class="py-3 px-space-md font-code-metric text-label-sm text-on-surface-variant">
+              01 Aug 2024
+            </td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm font-semibold">Active Resident</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="w-7 h-7 inline-flex items-center justify-center rounded hover:bg-surface-container text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: Kabir Deshmukh -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-code-metric font-semibold text-secondary text-label-md">KD</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Kabir Deshmukh</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">STU-2023-112</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">B.Tech ECE</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Semester 3</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="font-label-md text-label-md text-on-surface">Nilgiri Hall</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Block B (Fl 4)</span>
+</td>
+<td class="py-3 px-space-md font-code-metric font-semibold text-on-surface">
+              Room 405 • Bed 3
+            </td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Triple Shared</span>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Cleared (₹42k)
+              </span>
+</td>
+<td class="py-3 px-space-md font-code-metric text-label-sm text-on-surface-variant">
+              15 Jul 2024
+            </td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">Transfer Req.</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="w-7 h-7 inline-flex items-center justify-center rounded hover:bg-surface-container text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: Tanmay Joshi -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-code-metric font-semibold text-secondary text-label-md">TJ</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Tanmay Joshi</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">STU-2024-518</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">MBA</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Semester 1</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="font-label-md text-label-md text-on-surface">Intl. Scholars Wing</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Block IS (Fl 1)</span>
+</td>
+<td class="py-3 px-space-md font-code-metric font-semibold text-on-surface">
+              Room 102 • Bed 1
+            </td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Single Deluxe</span>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Cleared (₹1.2L)
+              </span>
+</td>
+<td class="py-3 px-space-md font-code-metric text-label-sm text-on-surface-variant">
+              05 Aug 2024
+            </td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm font-semibold">Active Resident</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="w-7 h-7 inline-flex items-center justify-center rounded hover:bg-surface-container text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Tab 2: Night Curfew & Biometric Gate Register (Initially Hidden or Toggled) -->
+<div class="hidden overflow-x-auto" id="tab-gate">
+<div class="px-space-md py-2.5 bg-surface-container-low flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-2 text-on-surface font-medium">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>Night Curfew Threshold: <strong>09:30 PM IST</strong></span>
+<span class="text-on-surface-variant">| All unreturned passes post curfew trigger an automated SMS to parents.</span>
+</div>
+<span class="font-code-metric text-secondary font-semibold">14 Students currently Out-On-Pass</span>
+</div>
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-low font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">
+<tr>
+<th class="py-2.5 px-space-md">Student &amp; Roll</th>
+<th class="py-2.5 px-space-md">Resident Hall</th>
+<th class="py-2.5 px-space-md">Exit Timestamp</th>
+<th class="py-2.5 px-space-md">Turnstile Gate</th>
+<th class="py-2.5 px-space-md">Destination &amp; Out-Pass ID</th>
+<th class="py-2.5 px-space-md">Parent SMS</th>
+<th class="py-2.5 px-space-md">Return Deadline</th>
+<th class="py-2.5 px-space-md">Biometric Status</th>
+<th class="py-2.5 px-space-md text-right">Override</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<!-- Gate Row 1: Late return alert -->
+<tr class="hover:bg-surface-container-low transition-colors bg-error-container/30">
+<td class="py-3 px-space-md font-semibold text-on-surface">
+              Devraj Chauhan <span class="block font-code-metric text-label-sm text-on-surface-variant font-normal">STU-2023-881</span>
+</td>
+<td class="py-3 px-space-md">Himalaya Hall (BH-1)</td>
+<td class="py-3 px-space-md font-code-metric text-on-surface">17:15 PM (Today)</td>
+<td class="py-3 px-space-md font-label-sm text-label-sm">Gate 02 - North Post</td>
+<td class="py-3 px-space-md">
+<span class="font-medium text-on-surface">Library Project / Off-Campus</span>
+<span class="block font-code-metric text-label-sm text-on-surface-variant">PASS-8921</span>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-[14px]">done_all</span> Dispatched
+              </span>
+</td>
+<td class="py-3 px-space-md font-code-metric text-error font-semibold">21:30 PM (Overdue)</td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-error font-label-sm text-label-sm font-semibold">Late Return Alert</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors">Notify</button>
+</td>
+</tr>
+<!-- Gate Row 2: Active on pass -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-md font-semibold text-on-surface">
+              Meera Patel <span class="block font-code-metric text-label-sm text-on-surface-variant font-normal">STU-2024-304</span>
+</td>
+<td class="py-3 px-space-md">Mandakini Hall (GH-1)</td>
+<td class="py-3 px-space-md font-code-metric text-on-surface">18:40 PM (Today)</td>
+<td class="py-3 px-space-md font-label-sm text-label-sm">Gate 04 - East Post</td>
+<td class="py-3 px-space-md">
+<span class="font-medium text-on-surface">Home Visit / Weekend Pass</span>
+<span class="block font-code-metric text-label-sm text-on-surface-variant">PASS-8934</span>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-[14px]">done_all</span> Dispatched
+              </span>
+</td>
+<td class="py-3 px-space-md font-code-metric text-on-surface">Sun, 20:00 PM</td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">Out on Pass</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors">Logs</button>
+</td>
+</tr>
+<!-- Gate Row 3: Inside Check -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-md font-semibold text-on-surface">
+              Siddharth Rao <span class="block font-code-metric text-label-sm text-on-surface-variant font-normal">STU-2022-192</span>
+</td>
+<td class="py-3 px-space-md">Nilgiri Hall (BH-2)</td>
+<td class="py-3 px-space-md font-code-metric text-on-surface">20:12 PM (Re-entry)</td>
+<td class="py-3 px-space-md font-label-sm text-label-sm">Gate 02 - North Post</td>
+<td class="py-3 px-space-md">
+<span class="font-medium text-on-surface">Gymnasium / Athletic Complex</span>
+<span class="block font-code-metric text-label-sm text-on-surface-variant">PASS-8940</span>
+</td>
+<td class="py-3 px-space-md">
+<span class="text-label-sm text-label-sm text-on-surface-variant">Not required</span>
+</td>
+<td class="py-3 px-space-md font-code-metric text-on-surface">21:30 PM</td>
+<td class="py-3 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm font-semibold">Inside Campus</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors">Logs</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Count Strip -->
+<div class="p-space-md bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+<span>Showing <strong>1–5</strong> of <strong>3,582</strong> allocated students</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-medium disabled:opacity-50">Previous</button>
+<span class="px-2 py-1 font-code-metric font-semibold text-on-surface">Page 1 of 717</span>
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-medium hover:bg-surface-container-high transition-colors">Next</button>
+</div>
+</div>
+</div>
+<!-- Section 3: Warden Duty Roster & Quick Complaint Resolution Strip -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Active Maintenance Complaints Strip -->
+<div class="lg:col-span-2 p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-secondary">handyman</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Active Facility Grievances &amp; Repairs</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live tickets dispatched to Campus Engineering &amp; IT teams</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-error font-code-metric font-semibold text-label-sm">19 Open</span>
+</div>
+<div class="flex flex-col gap-space-sm mt-space-sm">
+<!-- Ticket 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error text-[20px] mt-0.5">wifi_off</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Wi-Fi AP Failure (Ruckus AP-302)</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-surface-container text-on-surface font-code-metric">Mandakini B-3</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">3rd Floor entire corridor losing DHCP lease. Reported by 48 students.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-sm text-label-sm text-error font-semibold">Priority 1 • High</span>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors">Assign Team</button>
+</div>
+</div>
+<!-- Ticket 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">water_heater</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Hot Water Geyser Trip (Solar Hybrid)</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-surface-container text-on-surface font-code-metric">Himalaya A-2</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Wing 2 morning supply stopped due to MCB trip. Electrician notified.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">In Progress</span>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors">Status</button>
+</div>
+</div>
+<!-- Ticket 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] mt-0.5">pest_control</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Window Mosquito Mesh Damage</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-surface-container text-on-surface font-code-metric">Saraswati C-104</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Carpentry request for room sash window frame replacement.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Pending Material</span>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors">Details</button>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Average Grievance Turnaround: <strong class="text-on-surface font-code-metric">3.4 Hours</strong></span>
+<button class="text-secondary font-semibold hover:underline">View All 19 Tickets →</button>
+</div>
+</div>
+<!-- Warden Roster & Emergency Medical Desk Card -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-sm pb-space-xs mb-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-secondary">contact_phone</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Warden Duty &amp; Medical Desk</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">24/7 Residential Care &amp; First-Aid</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm mt-space-sm">
+<!-- Chief Warden -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Chief Residential Warden</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Prof. Arvind Singhal</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">+91 98450 ••••• (Ext 401)</span>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary" title="On Duty"></span>
+</div>
+<!-- 24/7 First Aid Center -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error font-semibold">Campus First-Aid &amp; Ambulance</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dr. Kavita Pillai (Resident MO)</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Dial 220 (24x7 Direct Hotline)</span>
+</div>
+<div class="w-7 h-7 rounded-lg bg-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-error">emergency</span>
+</div>
+</div>
+<!-- Night Proctor On Call -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Night Proctor on Call</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Asst. Warden Vikram Sethi</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Radio Channel #04 • Post Gate 1</span>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<button class="w-full h-9 flex items-center justify-center gap-space-xs rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span>View Full 30-Day Warden Rotation Schedule</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function switchHostelTab(tab) {
+    const residentsTab = document.getElementById('tab-residents');
+    const gateTab = document.getElementById('tab-gate');
+    const btnResidents = document.getElementById('tab-btn-residents');
+    const btnGate = document.getElementById('tab-btn-gate');
+
+    if (tab === 'residents') {
+      residentsTab.classList.remove('hidden');
+      gateTab.classList.add('hidden');
+      
+      btnResidents.className = "px-space-md py-1.5 rounded-lg bg-surface-container-lowest font-label-md text-label-md font-semibold text-on-surface shadow-xs flex items-center gap-space-xs transition-all";
+      btnGate.className = "px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface flex items-center gap-space-xs transition-all";
+    } else {
+      residentsTab.classList.add('hidden');
+      gateTab.classList.remove('hidden');
+
+      btnGate.className = "px-space-md py-1.5 rounded-lg bg-surface-container-lowest font-label-md text-label-md font-semibold text-on-surface shadow-xs flex items-center gap-space-xs transition-all";
+      btnResidents.className = "px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface flex items-center gap-space-xs transition-all";
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-lowest py-space-sm px-gutter-desktop shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-space-sm font-label-sm text-label-sm"><span>Apex Institute of Technology • Institutional OS System</span><span>•</span><span>Enterprise Tier • 98.4% uptime</span></div><div class="flex items-center gap-space-md font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" data-path="institutional-support" href="#">Institutional Support</a><a class="hover:text-on-surface transition-colors" data-path="privacy-compliance" href="#">FERPA &amp; Privacy</a><span class="font-code-metric text-on-surface-variant">Apex-Node #US-CAMPUS-01</span></div></div></footer></div></body></html>

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-surface":"#213145","tertiary-fixed-dim":"#89ceff","on-secondary-container":"#fffbff","tertiary-container":"#001e2f","surface-variant":"#d3e4fe","surface-dim":"#cbdbf5","surface-tint":"#565e74","on-error-container":"#93000a","on-tertiary":"#ffffff","primary-container":"#131b2e","outline-variant":"#c6c6cd","on-error":"#ffffff","surface-container-low":"#eff4ff","on-tertiary-container":"#008cc7","error-container":"#ffdad6","background":"#f8f9ff","surface-bright":"#f8f9ff","secondary":"#4b41e1","on-primary-container":"#7c839b","primary-fixed":"#dae2fd","primary-fixed-dim":"#bec6e0","surface-container-high":"#dce9ff","on-secondary-fixed":"#0f0069","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#3323cc","on-primary-fixed-variant":"#3f465c","error":"#ba1a1a","surface-container":"#e5eeff","secondary-container":"#645efb","inverse-primary":"#bec6e0","on-surface":"#0b1c30","on-surface-variant":"#45464d","surface-container-highest":"#d3e4fe","secondary-fixed":"#e2dfff","on-primary":"#ffffff","tertiary":"#000000","on-background":"#0b1c30","tertiary-fixed":"#c9e6ff","surface":"#f8f9ff","on-primary-fixed":"#131b2e","primary":"#000000","secondary-fixed-dim":"#c3c0ff","outline":"#76777d","on-tertiary-fixed":"#001e2f","on-tertiary-fixed-variant":"#004c6e","on-secondary":"#ffffff","inverse-on-surface":"#eaf1ff"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-sm":"0.5rem","gutter-desktop":"1.5rem","space-xs":"0.25rem",margin:"1rem","space-lg":"1.25rem","space-xl":"2rem","space-md":"0.75rem",gutter:"1rem","margin-desktop":"2rem"},fontFamily:{"headline-xl-mobile":["Geist"],"body-sm":["Geist"],"body-lg":["Geist"],"label-md":["Geist"],"code-metric":["Geist"],"headline-lg":["Geist"],"headline-sm":["Geist"],"headline-xl":["Geist"],"body-md":["Geist"],"label-sm":["Geist"]},fontSize:{"headline-xl-mobile":["1.75rem",{lineHeight:"2.25rem",letterSpacing:"-0.02em",fontWeight:"600"}],"body-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0em",fontWeight:"400"}],"body-lg":["1rem",{lineHeight:"1.5rem",letterSpacing:"-0.011em",fontWeight:"400"}],"label-md":["0.8125rem",{lineHeight:"1.125rem",letterSpacing:"-0.005em",fontWeight:"500"}],"code-metric":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"-0.02em",fontWeight:"500"}],"headline-lg":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-sm":["1.125rem",{lineHeight:"1.5rem",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-xl":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.025em",fontWeight:"600"}],"body-md":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"-0.006em",fontWeight:"400"}],"label-sm":["0.6875rem",{lineHeight:"0.875rem",letterSpacing:"0.04em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-gutter-desktop flex items-center justify-between border-b border-surface-container bg-surface-container-lowest"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">account_balance</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface leading-none">Apex OS</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold mt-0.5">PARENT PORTAL</span></div></div></div><div class="px-gutter-desktop py-space-sm"><div class="px-space-sm py-space-xs mb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">WARD ACADEMICS & LIFE</span></div><nav class="space-y-1 mb-space-lg" data-active-classes="bg-surface-container-high text-on-surface font-semibold"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg transition-all bg-surface-container-high text-on-surface font-semibold" data-path="parent-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="parent-academic-monitoring" href="#"><span class="material-symbols-outlined text-[20px]">school</span><span>Academic Progress</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="parent-fees-&-communication" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Fees & Receipts</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="parent-profile-&-linked-students" href="#"><span class="material-symbols-outlined text-[20px]">supervised_user_circle</span><span>Linked Students & Account</span></a></nav><div class="px-space-sm py-space-xs mb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">CAMPUS SERVICES</span></div><nav class="space-y-1" data-active-classes="bg-surface-container-high text-on-surface font-semibold"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="college-notices-&-ptms" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span>College Notices & PTMs</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="hostel-&-transport-status" href="#"><span class="material-symbols-outlined text-[20px]">commute</span><span>Hostel & Transport Status</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="helpdesk-&-counseling-contact" href="#"><span class="material-symbols-outlined text-[20px]">contact_support</span><span>Helpdesk & Counseling</span></a></nav></div></div><div class="p-space-md m-space-md bg-surface-container-low rounded-lg border border-surface-container"><div class="flex items-center gap-space-xs mb-1.5"><span class="material-symbols-outlined text-error text-[18px]">emergency</span><span class="font-label-sm text-label-sm font-semibold text-on-surface">EMERGENCY & SUPPORT</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Campus Security: +1 (800) 555-0199</p><a class="font-label-sm text-label-sm text-secondary hover:text-on-secondary-fixed-variant font-medium flex items-center gap-1" href="#"><span>Institutional Helpdesk</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span></a></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-surface-container shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-2xl"><div class="hidden sm:flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-full"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-medium text-on-surface">AY 2024–2025 · Sem 1 Fall</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full h-9 pl-9 pr-4 bg-surface-container-low hover:bg-surface-container text-on-surface placeholder:text-on-surface-variant rounded-lg font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-secondary transition-all" placeholder="Quick search grades, invoices, faculty..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-sm bg-surface-container-low hover:bg-surface-container px-space-md py-1.5 rounded-lg border border-surface-container cursor-pointer transition-colors"><span class="material-symbols-outlined text-secondary text-[20px]">face</span><div class="flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Active Ward</span><span class="font-body-sm text-body-sm font-semibold text-on-surface leading-snug">Elena Rostova (B.Tech CSE Sem 5)</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></div><button class="relative w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="h-8 w-px bg-surface-container"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col items-end text-right hidden lg:flex"><span class="font-body-sm text-body-sm font-semibold text-on-surface leading-tight">Dr. Konstantin S. Rostova</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Parent/Guardian</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 flex-1 px-gutter-desktop py-space-lg bg-background"><div class="flex flex-col w-full">
+<!-- GUARDIAN COMMAND COCKPIT BANNER -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mb-space-lg relative overflow-hidden">
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-secondary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Verified Guardian Telemetry</span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-code-metric text-code-metric text-on-surface-variant font-medium">SYS-AUTH ID: PRNT-ROST-9104</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Guardian Monitoring Cockpit</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Active monitoring session for authenticated ward academics, biometric registry, and statutory clearance.</p>
+</div>
+<!-- Action Cluster -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="h-9 px-space-md bg-secondary text-on-secondary rounded-lg font-label-md text-label-md font-medium hover:bg-secondary-container transition-colors shadow-sm flex items-center gap-1.5" id="ptmBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_add_on</span>
+<span>Schedule PTM</span>
+</button>
+<button class="h-9 px-space-md bg-surface-container text-on-surface rounded-lg font-label-md text-label-md font-medium hover:bg-surface-container-high transition-colors flex items-center gap-1.5" id="dossierBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Academic Dossier</span>
+</button>
+<button class="h-9 px-space-md bg-surface-container-low text-error rounded-lg font-label-md text-label-md font-medium hover:bg-error-container transition-colors flex items-center gap-1.5" id="absenceBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">event_busy</span>
+<span>Report Absence</span>
+</button>
+</div>
+</div>
+<!-- Ward Meta Ribbon & Selector Bar -->
+<div class="pt-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md bg-surface-container-low/60 rounded-lg p-space-md">
+<div class="flex flex-wrap items-center gap-space-md">
+<!-- Interactive Ward Switcher -->
+<div class="relative inline-block text-left">
+<button class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-1.5 rounded-lg shadow-sm hover:bg-surface-container transition-all text-left" id="wardDropdownBtn" type="button">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-secondary-fixed"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Primary Linked Ward</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface leading-tight">Elena Rostova • B.Tech CSE Sem 5</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] ml-1">unfold_more</span>
+</button>
+<!-- Dropdown Menu -->
+<div class="hidden absolute left-0 mt-1 w-80 rounded-xl bg-surface-container-lowest shadow-xl z-30 p-1.5" id="wardDropdownMenu">
+<div class="px-space-sm py-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Linked Dependents</span>
+</div>
+<button class="w-full text-left p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm transition-colors">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">school</span>
+<div>
+<p class="font-body-sm text-body-sm font-semibold text-on-surface">Elena Rostova (Active)</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Roll #2024-CSE-042 • B.Tech CSE & AI</p>
+<span class="inline-block mt-1 px-1.5 py-0.5 rounded bg-surface-container-high text-secondary font-code-metric text-label-sm">Apex Inst. of Technology</span>
+</div>
+</button>
+<button class="w-full text-left p-space-sm rounded-lg hover:bg-surface-container-low flex items-start gap-space-sm transition-colors mt-1">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] mt-0.5">backpack</span>
+<div>
+<p class="font-body-sm text-body-sm font-semibold text-on-surface">Vikram Rostova</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Class 11 Science • Roll #2024-PU-118</p>
+<span class="inline-block mt-1 px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric text-label-sm">Apex Int. Pre-University</span>
+</div>
+</button>
+</div>
+</div>
+<div class="hidden sm:block h-6 w-px bg-surface-container-high"></div>
+<!-- Metric micro chips -->
+<div class="flex items-center gap-space-xs px-2.5 py-1 bg-surface-container-lowest rounded-full shadow-sm">
+<span class="material-symbols-outlined text-on-tertiary-container text-[16px]">fingerprint</span>
+<span class="font-label-md text-label-md font-medium text-on-surface">Biometric Attendance:</span>
+<span class="font-code-metric text-code-metric font-semibold text-on-tertiary-container">95.2% Live</span>
+</div>
+<div class="flex items-center gap-space-xs px-2.5 py-1 bg-surface-container-lowest rounded-full shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span class="font-label-md text-label-md font-medium text-on-surface">Term 1 Dues:</span>
+<span class="font-code-metric text-code-metric font-semibold text-secondary">Cleared (₹0.00 Bal)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">history</span>
+<span class="font-label-sm text-label-sm font-code-metric">Telemetry Sync: Just now via Cloud-Campus Core</span>
+</div>
+</div>
+</section>
+<!-- TELEMETRY OVERVIEW CARDS (4 METRICS) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Card 1: Attendance -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Attendance Velocity</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Statutory Ok
+          </span>
+</div>
+<div class="flex items-baseline gap-space-sm mt-1">
+<span class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-semibold">95.2%</span>
+<span class="font-code-metric text-code-metric text-on-tertiary-container font-semibold">+3.2%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">vs batch average of 92.0% (Mandate ≥75%)</p>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-low/70 -mx-space-md -mb-space-md p-space-md rounded-b-xl">
+<div class="flex items-center justify-between text-on-surface-variant mb-1.5">
+<span class="font-label-sm text-label-sm">Unexcused Streak</span>
+<span class="font-code-metric text-code-metric font-semibold text-on-surface">38 Consecutive Days</span>
+</div>
+<!-- Micro sparkline streak -->
+<div class="flex items-center gap-1 h-2">
+<div class="flex-1 bg-secondary rounded-full h-1.5"></div>
+<div class="flex-1 bg-secondary rounded-full h-1.5"></div>
+<div class="flex-1 bg-secondary rounded-full h-1.5"></div>
+<div class="flex-1 bg-secondary rounded-full h-1.5"></div>
+<div class="flex-1 bg-secondary rounded-full h-1.5"></div>
+<div class="flex-1 bg-secondary rounded-full h-1.5"></div>
+<div class="flex-1 bg-secondary rounded-full h-1.5"></div>
+<div class="flex-1 bg-secondary rounded-full h-1.5"></div>
+</div>
+</div>
+</div>
+<!-- Card 2: Academic CGPA -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Academic Merit Index</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+            Dean's Honor
+          </span>
+</div>
+<div class="flex items-baseline gap-space-sm mt-1">
+<span class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-semibold">8.84</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">/ 10.0 CGPA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Top 5% in CSE cohort • Prev Sem SGPA: 8.92</p>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-low/70 -mx-space-md -mb-space-md p-space-md rounded-b-xl">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Program Credit Pacing</span>
+<span class="font-code-metric text-code-metric font-semibold text-on-surface">112 / 160 Credits Completed</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-2 overflow-hidden">
+<div class="bg-secondary h-1.5 rounded-full" style="width: 70%"></div>
+</div>
+</div>
+</div>
+<!-- Card 3: Fee Balance -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Accounts & Bursar</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+            Term 1 Settled
+          </span>
+</div>
+<div class="flex items-baseline gap-space-sm mt-1">
+<span class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-semibold">₹0.00</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Balance</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Next cycle: ₹1,85,000 due Jan 15, 2025</p>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-low/70 -mx-space-md -mb-space-md p-space-md rounded-b-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Auto-Debit e-Mandate</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            HDFC • Active
+          </span>
+</div>
+<div class="flex items-center justify-between mt-1 text-on-surface-variant">
+<span class="font-body-sm text-body-sm">Last Receipt</span>
+<a class="font-code-metric text-code-metric text-secondary hover:underline" href="#">#REC-2024-8841 →</a>
+</div>
+</div>
+</div>
+<!-- Card 4: Upcoming Milestones -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Academic Calendar</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+            Exam Phase
+          </span>
+</div>
+<div class="flex items-baseline gap-space-sm mt-1">
+<span class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-semibold">3</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Critical Deadlines</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Next: CoE Hall Ticket release in 3 days</p>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-low/70 -mx-space-md -mb-space-md p-space-md rounded-b-xl">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Sem-5 Exams Begin</span>
+<span class="font-code-metric text-code-metric font-semibold text-error">Nov 25, 2024</span>
+</div>
+<div class="flex items-center justify-between mt-1 text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Fall PTM Session</span>
+<span class="font-code-metric text-code-metric font-semibold text-on-surface">Dec 07, 2024</span>
+</div>
+</div>
+</div>
+</section>
+<!-- MAIN 2-COLUMN SPLIT: TELEMETRY & ATTENDANCE + ACADEMIC PERFORMANCE -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- LEFT 7 COLS: Real-Time Attendance Pulse & Subject Matrix -->
+<div class="lg:col-span-7 space-y-space-lg">
+<!-- Live Biometric & Session Feed -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">sensors</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Today's Class Biometric Pulse</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time turnstile verification at Department of Computing block</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-code-metric text-label-sm flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+            Turnstile Feed: ONLINE
+          </span>
+</div>
+<!-- Schedule Timeline Log -->
+<div class="space-y-space-sm">
+<!-- Session 1 -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest shadow-sm flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">dns</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase font-code-metric px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-semibold">CS-501</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Distributed Operating Systems</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Faculty: Dr. Aris Thorne • Lecture Hall C-204</p>
+</div>
+</div>
+<div class="flex items-center sm:flex-col sm:items-end justify-between sm:justify-center gap-1 border-t sm:border-t-0 pt-2 sm:pt-0">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+                Marked Present
+              </span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">09:30 AM • RFID Gate 3</span>
+</div>
+</div>
+<!-- Session 2 -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest shadow-sm flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">memory</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase font-code-metric px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-semibold">CS-702</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Parallel Computer Architecture</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Faculty: Prof. Meenakshi Sundaram • Computing Lab 4</p>
+</div>
+</div>
+<div class="flex items-center sm:flex-col sm:items-end justify-between sm:justify-center gap-1 border-t sm:border-t-0 pt-2 sm:pt-0">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+                Marked Present
+              </span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">11:00 AM • Biometric Console #2</span>
+</div>
+</div>
+<!-- Session 3 -->
+<div class="p-space-md rounded-lg bg-surface-container-low/50 flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest shadow-sm flex items-center justify-center text-on-surface-variant flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">terminal</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase font-code-metric px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-semibold">CS-304</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Kernel Hacking & OS Lab</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Faculty: Asst. Prof. Tanvi Rao • Systems Sandbox C-101</p>
+</div>
+</div>
+<div class="flex items-center sm:flex-col sm:items-end justify-between sm:justify-center gap-1 border-t sm:border-t-0 pt-2 sm:pt-0">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+                Scheduled (02:00 PM)
+              </span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Window opens in 45m</span>
+</div>
+</div>
+</div>
+<!-- Subject Attendance Breakdown Grid -->
+<div class="mt-space-lg pt-space-md">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Coursewise Cumulative Attendance</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">All courses above 75% threshold</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Course 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between text-on-surface mb-1">
+<span class="font-body-sm text-body-sm font-medium">CS-501 Distributed Systems</span>
+<span class="font-code-metric text-code-metric font-semibold">94.2%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-1.5 rounded-full" style="width: 94.2%"></div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">49 attended of 52 conducted lectures</p>
+</div>
+<!-- Course 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between text-on-surface mb-1">
+<span class="font-body-sm text-body-sm font-medium">CS-502 Deep Learning & AI</span>
+<span class="font-code-metric text-code-metric font-semibold">96.0%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-1.5 rounded-full" style="width: 96.0%"></div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">48 attended of 50 conducted lectures</p>
+</div>
+<!-- Course 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between text-on-surface mb-1">
+<span class="font-body-sm text-body-sm font-medium">CS-503 High Perf Database Systems</span>
+<span class="font-code-metric text-code-metric font-semibold">92.0%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-1.5 rounded-full" style="width: 92.0%"></div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">46 attended of 50 conducted lectures</p>
+</div>
+<!-- Course 4 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between text-on-surface mb-1">
+<span class="font-body-sm text-body-sm font-medium">MA-501 Discrete Optimization</span>
+<span class="font-code-metric text-code-metric font-semibold">98.0%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-1.5 rounded-full" style="width: 98.0%"></div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">49 attended of 50 conducted lectures</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Institutional Advisor Remark & Dossier Notice -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm relative overflow-hidden">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary flex-shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up portrait photograph of an Indian computer science professor with spectacles and formal academic blazer in a high tech university laboratory setting, calm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB6wsvt8pKkuO3zuq3NRhD5IJpRQFS9YiO40gTySj8rRYkkg0yG3k5j1kfM6KCXZF7JdgAD8heZwz7t1h-qUYgKvndqbUvaatpfL139XNRcVdYHFJifAzMIfkSeUl0_Q6-OzH-un_ICsMJBkQtlY5yBPGK1SUQqi4ZtLwBBqHV7lzIwazx90aYOf_Grbx03lDOQi6r79ezYWwqkErzH3PAOqiLZfi6HzJfAFy8fwU"/>
+</div>
+<div class="flex-1 space-y-2">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Faculty Advisor Academic Assessment</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Prof. Rajesh Nambiar, Ph.D. • Head of Algorithms Division</p>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-code-metric text-label-sm">Nov 14, 2024</span>
+</div>
+<blockquote class="p-space-md rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface leading-relaxed italic">
+              “Elena demonstrates exemplary engagement in advanced algorithms and system design. Nominated for Department Research Fellowship on distributed fault-tolerance. Her IA-1 and IA-2 submissions reflect postgraduate-level rigor.”
+            </blockquote>
+<div class="flex flex-wrap items-center justify-between pt-1 text-on-surface-variant">
+<span class="font-label-sm text-label-sm flex items-center gap-1 text-secondary font-medium">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+                Verified by Board of Studies Assessment Portal
+              </span>
+<a class="font-label-sm text-label-sm text-secondary hover:underline font-semibold flex items-center gap-1" href="#">
+<span>View Full Term Evaluation</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT 5 COLS: Assessments, PTM Portal & Institutional Circulars -->
+<div class="lg:col-span-5 space-y-space-lg">
+<!-- Internal Assessment Results (IA-1 & IA-2) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md pb-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Internal Assessments</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Aggregated continuous evaluation scorecards</p>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-code-metric text-label-sm font-semibold">
+            Sem 5 Mid-Term
+          </span>
+</div>
+<div class="space-y-space-sm">
+<!-- Row 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div>
+<span class="font-body-md text-body-md font-semibold text-on-surface block">CS-501: Distributed Systems</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">IA-1 (24/25) + IA-2 (22/25)</span>
+</div>
+<div class="text-right">
+<span class="font-code-metric text-body-md font-bold text-on-surface">46 / 50</span>
+<span class="block font-label-sm text-label-sm text-on-tertiary-container font-semibold">92% • Grade S</span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div>
+<span class="font-body-md text-body-md font-semibold text-on-surface block">CS-502: Deep Learning & AI</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">IA-1 (25/25) + IA-2 (23/25)</span>
+</div>
+<div class="text-right">
+<span class="font-code-metric text-body-md font-bold text-on-surface">48 / 50</span>
+<span class="block font-label-sm text-label-sm text-on-tertiary-container font-semibold">96% • Grade S</span>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div>
+<span class="font-body-md text-body-md font-semibold text-on-surface block">CS-503: High Perf Databases</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">IA-1 (21/25) + IA-2 (23/25)</span>
+</div>
+<div class="text-right">
+<span class="font-code-metric text-body-md font-bold text-on-surface">44 / 50</span>
+<span class="block font-label-sm text-label-sm text-secondary font-semibold">88% • Grade A+</span>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div>
+<span class="font-body-md text-body-md font-semibold text-on-surface block">MA-501: Discrete Optimization</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">IA-1 (25/25) + IA-2 (24/25)</span>
+</div>
+<div class="text-right">
+<span class="font-code-metric text-body-md font-bold text-on-surface">49 / 50</span>
+<span class="block font-label-sm text-label-sm text-on-tertiary-container font-semibold">98% • Top Score</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Internal Cumulative Average</span>
+<span class="font-code-metric text-body-md font-bold text-on-surface">93.5% (Weighted 30% to finals)</span>
+</div>
+</section>
+<!-- PTM Desk & Slot Confirmation Card -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm border-l-4 border-secondary relative">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Parent-Faculty Consultation</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Hybrid Format</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Odd-Semester PTM Desk 2024</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Mandatory consultation session with the Dean of Academic Affairs and Department Class Committee.
+        </p>
+<div class="p-space-sm rounded-lg bg-surface-container-low mb-space-md space-y-1">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">calendar_today</span>
+<span class="font-body-md text-body-md font-semibold">Saturday, Dec 07, 2024</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+<span>Allocated Slot: 10:30 AM – 11:00 AM IST (Virtual Room 4)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex-1 h-9 bg-secondary text-on-secondary rounded-lg font-label-md text-label-md font-medium hover:bg-secondary-container transition-colors shadow-sm flex items-center justify-center gap-1.5" id="confirmSlotBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">check_box</span>
+<span>Confirm Slot (10:30 AM)</span>
+</button>
+<button class="h-9 px-space-md bg-surface-container text-on-surface rounded-lg font-label-md text-label-md font-medium hover:bg-surface-container-high transition-colors" id="rescheduleBtn" type="button">
+            Reschedule
+          </button>
+</div>
+</section>
+<!-- Institutional Circulars & Campus Notices -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md pb-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Institutional Circulars</h2>
+<span class="font-label-sm text-label-sm text-secondary font-medium cursor-pointer hover:underline">Archive</span>
+</div>
+<div class="space-y-space-sm">
+<!-- Circular 1 -->
+<a class="block p-space-sm rounded-lg hover:bg-surface-container-low transition-colors group" href="#">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-label-sm text-secondary font-semibold">#CIR-2024-89</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Nov 12, 2024</span>
+</div>
+<p class="font-body-md text-body-md font-semibold text-on-surface group-hover:text-secondary transition-colors mt-0.5">
+              Winter Break Hostel Vacating Protocol & Baggage Storage
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">
+              Mandatory inspection by Chief Warden before Dec 22, 2024, 18:00 hrs IST.
+            </p>
+</a>
+<!-- Circular 2 -->
+<a class="block p-space-sm rounded-lg hover:bg-surface-container-low transition-colors group" href="#">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-label-sm text-secondary font-semibold">#CIR-2024-84</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Nov 08, 2024</span>
+</div>
+<p class="font-body-md text-body-md font-semibold text-on-surface group-hover:text-secondary transition-colors mt-0.5">
+              CoE End-Semester Exam Examination Hall Security Guidelines
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">
+              Digital devices prohibition, biometric hall entry verification requirements.
+            </p>
+</a>
+</div>
+<!-- Emergency / Warden Direct Desk -->
+<div class="mt-space-md pt-space-md bg-surface-container-low rounded-lg p-space-md">
+<div class="flex items-center gap-space-sm mb-2">
+<span class="material-symbols-outlined text-error text-[20px]">support_agent</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Emergency & Direct Campus Desk</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<a class="p-space-xs rounded bg-surface-container-lowest text-center hover:bg-surface-container transition-colors shadow-sm block" href="tel:+918023456789">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">HOD Office</span>
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">+91 (80) 2345-6789</span>
+</a>
+<a class="p-space-xs rounded bg-surface-container-lowest text-center hover:bg-surface-container transition-colors shadow-sm block" href="tel:+918023456799">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Hostel Warden</span>
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">+91 (80) 2345-6799</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- INTERACTIVE TOAST POPUP NOTIFICATION -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="interactiveToast">
+<div class="bg-surface-container-lowest text-on-surface p-space-md rounded-xl shadow-xl flex items-center gap-space-md border-l-4 border-secondary max-w-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">task_alt</span>
+<div>
+<p class="font-body-md text-body-md font-semibold" id="toastTitle">Action Registered</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="toastMessage">Your guardian request has been transmitted to Apex OS Registry.</p>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initParentCockpit() {
+    // Ward Dropdown Toggle
+    const wardBtn = document.getElementById('wardDropdownBtn');
+    const wardMenu = document.getElementById('wardDropdownMenu');
+    
+    if (wardBtn && wardMenu) {
+      wardBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        wardMenu.classList.toggle('hidden');
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!wardMenu.contains(e.target) && !wardBtn.contains(e.target)) {
+          wardMenu.classList.add('hidden');
+        }
+      });
+    }
+
+    // Toast Utility
+    const toast = document.getElementById('interactiveToast');
+    const toastTitle = document.getElementById('toastTitle');
+    const toastMessage = document.getElementById('toastMessage');
+    let toastTimeout;
+
+    function showToast(title, msg) {
+      if (!toast) return;
+      clearTimeout(toastTimeout);
+      toastTitle.textContent = title;
+      toastMessage.textContent = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      toastTimeout = setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3500);
+    }
+
+    // Interactive Action Triggers
+    const ptmBtn = document.getElementById('ptmBtn');
+    if (ptmBtn) {
+      ptmBtn.addEventListener('click', () => {
+        showToast('PTM Scheduling Hub', 'Connecting with Dr. Aris Thorne and Faculty Advisors availability calendar.');
+      });
+    }
+
+    const dossierBtn = document.getElementById('dossierBtn');
+    if (dossierBtn) {
+      dossierBtn.addEventListener('click', () => {
+        showToast('Dossier Compiled', 'Generating cryptographically signed Semester-5 Academic Transcripts (PDF)...');
+      });
+    }
+
+    const absenceBtn = document.getElementById('absenceBtn');
+    if (absenceBtn) {
+      absenceBtn.addEventListener('click', () => {
+        showToast('Absence Portal', 'Statutory leave request modal dispatched to Academic Registrar.');
+      });
+    }
+
+    const confirmSlotBtn = document.getElementById('confirmSlotBtn');
+    if (confirmSlotBtn) {
+      confirmSlotBtn.addEventListener('click', () => {
+        confirmSlotBtn.classList.replace('bg-secondary', 'bg-surface-container-high');
+        confirmSlotBtn.classList.replace('text-on-secondary', 'text-on-surface');
+        confirmSlotBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-secondary">done_all</span><span>Slot Confirmed (Dec 07 • 10:30 AM)</span>';
+        showToast('PTM Slot Locked', 'Calendar invitation & Google Meet link dispatched to Dr. Konstantin Rostova.');
+      });
+    }
+
+    const rescheduleBtn = document.getElementById('rescheduleBtn');
+    if (rescheduleBtn) {
+      rescheduleBtn.addEventListener('click', () => {
+        showToast('Reschedule Requested', 'Alternate time window requests sent to Department Coordinator.');
+      });
+    }
+  })();
+</script></main></div></body></html>

@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-container":"#008cc7","on-tertiary-fixed-variant":"#004c6e","on-primary":"#ffffff","inverse-primary":"#bec6e0","secondary":"#4b41e1","on-primary-fixed-variant":"#3f465c","secondary-fixed-dim":"#c3c0ff","surface":"#f8f9ff","on-primary-container":"#7c839b","surface-container-low":"#eff4ff","on-error-container":"#93000a","tertiary-fixed":"#c9e6ff","on-secondary-container":"#fffbff","tertiary-fixed-dim":"#89ceff","primary-fixed-dim":"#bec6e0","tertiary-container":"#001e2f","outline":"#76777d","surface-dim":"#cbdbf5","surface-container-lowest":"#ffffff","on-surface":"#0b1c30","secondary-fixed":"#e2dfff","primary-fixed":"#dae2fd","primary-container":"#131b2e","surface-container":"#e5eeff","on-tertiary":"#ffffff","on-surface-variant":"#45464d","inverse-on-surface":"#eaf1ff","surface-container-highest":"#d3e4fe","secondary-container":"#645efb","tertiary":"#000000","inverse-surface":"#213145","surface-variant":"#d3e4fe","on-secondary-fixed-variant":"#3323cc","surface-bright":"#f8f9ff","on-primary-fixed":"#131b2e","error-container":"#ffdad6","on-secondary-fixed":"#0f0069","on-error":"#ffffff","error":"#ba1a1a","background":"#f8f9ff","primary":"#000000","on-tertiary-fixed":"#001e2f","on-background":"#0b1c30","surface-tint":"#565e74","outline-variant":"#c6c6cd","surface-container-high":"#dce9ff","on-secondary":"#ffffff"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{margin:"1rem","space-sm":"0.5rem","space-xl":"2rem","margin-desktop":"2rem","space-md":"0.75rem","gutter-desktop":"1.5rem","space-xs":"0.25rem",gutter:"1rem","space-lg":"1.25rem"},fontFamily:{"code-metric":["Geist"],"headline-xl-mobile":["Geist"],"body-lg":["Geist"],"body-md":["Geist"],"headline-xl":["Geist"],"label-md":["Geist"],"headline-lg":["Geist"],"label-sm":["Geist"],"body-sm":["Geist"],"headline-sm":["Geist"]},fontSize:{"code-metric":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"-0.02em",fontWeight:"500"}],"headline-xl-mobile":["1.75rem",{lineHeight:"2.25rem",letterSpacing:"-0.02em",fontWeight:"600"}],"body-lg":["1rem",{lineHeight:"1.5rem",letterSpacing:"-0.011em",fontWeight:"400"}],"body-md":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"-0.006em",fontWeight:"400"}],"headline-xl":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.025em",fontWeight:"600"}],"label-md":["0.8125rem",{lineHeight:"1.125rem",letterSpacing:"-0.005em",fontWeight:"500"}],"headline-lg":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.02em",fontWeight:"600"}],"label-sm":["0.6875rem",{lineHeight:"0.875rem",letterSpacing:"0.04em",fontWeight:"600"}],"body-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0em",fontWeight:"400"}],"headline-sm":["1.125rem",{lineHeight:"1.5rem",letterSpacing:"-0.015em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-hidden"><div class="flex flex-col flex-1 min-h-0"><div class="p-space-md pb-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs"><div class="flex items-center gap-space-sm"><img alt="College OS Brandmark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WvnlED1hU_M01PSO-1qyRpzBvkV84x7ViBFZQB5yKW-NwD75asiUHXNbwETf5DS5Bsd7AnUF3ffGaf9yE-s8GCUeHYzBYdzY57Wfz3A35MjIli7B6CqiIKcHCHGmw9klEmRNePyPGpmJ_1lOslWIlgP1VavS2gkS_MiNFOEh-YJJueoXdPJp9f3AXDyl246ophiOE8yuWLyGMNCp9gpgTnmT63nGfey8QLD6T4fNw"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">College OS</span></div><span class="px-space-xs py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase rounded">Enterprise</span></div><div class="mt-space-sm p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between cursor-pointer hover:bg-surface-container transition-colors"><div class="flex flex-col truncate"><span class="font-label-md text-label-md text-on-surface truncate">Apex Institute of Technology</span><div class="flex items-center gap-space-xs mt-0.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-code-metric text-label-sm text-on-surface-variant">#US-CAMPUS-01 • AY 2024-25</span></div></div><span class="material-symbols-outlined text-on-surface-variant text-base">unfold_more</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-xs"><div class="px-space-xs py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Institutional Modules</div><div class="flex flex-col gap-0.5"><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="academics" href="#">Academics</a></nav><div class="flex flex-col gap-0.5 mt-0.5"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md"><div class="flex items-center gap-space-xs"><span class="font-medium">Students</span><span class="px-1.5 py-0.5 bg-surface-container-high text-secondary font-code-metric text-label-sm rounded-full">14,820</span></div><span class="material-symbols-outlined text-base text-on-surface-variant">expand_more</span></div><div class="ml-space-sm pl-space-xs border-l border-surface-container-high flex flex-col gap-0.5 mt-0.5"><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-overview" href="#">Student Overview</a><a aria-current="page" class="px-space-sm py-1 transition-colors bg-surface-container text-secondary font-medium rounded-lg" data-path="student-directory" href="#">Student Directory</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admissions" href="#">Admissions</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="enrollment" href="#">Enrollment</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="id-cards" href="#">ID Cards</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="documents" href="#">Documents</a></nav></div></div><nav class="flex flex-col gap-0.5 mt-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="faculty-and-staff" href="#">Faculty &amp; Staff</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="finance" href="#">Finance</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="campus-management" href="#">Campus Management</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-life" href="#">Student Life</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="placements" href="#">Placements</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="communication" href="#">Communication</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports-and-analytics" href="#">Reports &amp; Analytics</a></nav></div><div class="mt-space-md px-space-xs py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">System Governance</div><div class="flex flex-col gap-0.5"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md"><span class="font-medium">Administration</span><span class="material-symbols-outlined text-base text-on-surface-variant">expand_more</span></div><div class="ml-space-sm pl-space-xs border-l border-surface-container-high flex flex-col gap-0.5 mt-0.5"><div class="px-space-xs py-0.5 font-label-sm text-label-sm text-on-surface-variant">College Setup</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="college-profile" href="#">College Profile</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="campuses-and-facilities" href="#">Campuses &amp; Facilities</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="departments" href="#">Departments</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="academic-years-and-terms" href="#">Academic Years &amp; Terms</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="degree-programs" href="#">Degree Programs</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="courses-and-subjects" href="#">Courses &amp; Subjects</a></nav></div><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#">Settings</a></nav></div></div></div><div class="p-space-sm bg-surface-container-low mx-space-sm mb-space-sm rounded-xl"><div class="flex items-center justify-between mb-1.5"><span class="font-label-sm text-label-sm text-on-surface font-medium">Enterprise Tier</span><span class="font-code-metric text-label-sm text-secondary font-medium">98.4% uptime</span></div><div class="w-full bg-surface-container rounded-full h-1 overflow-hidden"><div class="bg-secondary h-1 rounded-full w-[98.4%]"></div></div><a class="mt-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors pt-space-xs" href="#"><span>Institutional Support</span><span class="material-symbols-outlined text-sm">open_in_new</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-lg pointer-events-none">search</span><input class="w-72 h-9 pl-9 pr-14 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-secondary transition-all" placeholder="Search students, faculty, courses..." type="text"/><div class="absolute right-2.5 flex items-center pointer-events-none"><kbd class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-code-metric text-label-sm rounded">⌘K</kbd></div></div><nav class="hidden lg:flex items-center gap-space-xs ml-space-sm" data-active-classes="bg-surface-container-high text-on-surface font-semibold"><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="overview" href="#">Console</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="academics" href="#">Curriculum</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="reports-and-analytics" href="#">Accreditation BI</a></nav></div><div class="flex items-center gap-space-sm"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low rounded-full"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-md text-label-md text-on-surface">AY 2024–2025 • Semester 1 (Fall)</span><span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase rounded-full ml-1">Active Term</span></div><button class="flex items-center gap-1.5 px-space-sm py-1.5 bg-secondary text-on-secondary rounded-lg font-label-md text-label-md shadow-sm hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-base">add</span><span>Quick Action</span></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 bg-error text-on-error font-label-sm text-[0.625rem] flex items-center justify-center rounded-full">3</span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-xl">help_outline</span></button><div class="flex items-center gap-space-sm pl-space-xs ml-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgcnWk88Z5jMRXj0iv_dPWo3T7MrUH_81r_r7Cic1FPbgD5hbY4j7S4gEdT7Xv0WOh4qSn9IqwCfhEcq1Q8HJeal_gVWzGe3eRulvU3HgFTJfHhj_v51Jr6zrCqQH_lwSqbCTuO26BJL0LuiEEr5hGWBEj6N6_DheZ1oSfI3dzfrBVG6tJn_TZzdGKDm_T9rOSww_V0G8BkgMzRCHWYKePvT8sow2SqRSESXpRGIM"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-medium leading-none">Dr. Alistair Finch</span><span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5 leading-none">Dean of Academic Affairs</span></div><span class="hidden md:inline px-1.5 py-0.5 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm rounded uppercase">Dean</span></div></div></header><main class="w-full pt-16 bg-surface px-gutter-desktop py-space-lg min-h-screen"><div class="flex flex-col w-full gap-space-lg">
+<!-- Context Breadcrumbs & Action Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-1">
+<span>Institutional Management</span>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span>Students</span>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-secondary font-medium">Directory &amp; Rosters</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Student Directory &amp; Rosters</h1>
+<span class="hidden sm:inline-flex px-2 py-0.5 bg-surface-container text-on-surface-variant font-code-metric text-label-sm rounded-full">v4.8 Census Sync</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5 max-w-3xl">Search, filter, and govern 14,820 enrolled scholars across 8 academic departments, terms, and degree cohorts.</p>
+</div>
+<!-- Header Actions -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="h-9 px-space-md bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md rounded-lg shadow-sm flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-lg text-on-surface-variant">file_download</span>
+<span>Export Directory</span>
+<span class="text-on-surface-variant font-code-metric text-label-sm ml-0.5">(CSV/XLSX)</span>
+</button>
+<button class="h-9 px-space-md bg-secondary text-on-secondary hover:bg-secondary-container font-label-md text-label-md rounded-lg shadow-sm flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-lg">add</span>
+<span>Add Student</span>
+</button>
+</div>
+</div>
+<!-- Top KPI Ribbon -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Census Enrolled</span>
+<span class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight mt-1">14,820</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-xl">group</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-space-xs">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-base text-secondary">trending_up</span>
+<span class="font-code-metric">+420 this semester</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface font-label-sm text-label-sm">100% Synced</span>
+</div>
+<div class="absolute -bottom-6 -right-6 w-20 h-20 rounded-full bg-secondary/5 pointer-events-none"></div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Currently Active</span>
+<span class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight mt-1">14,180</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-code-metric">95.7% good standing</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-secondary font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Active
+        </span>
+</div>
+<div class="absolute -bottom-6 -right-6 w-20 h-20 rounded-full bg-secondary/5 pointer-events-none"></div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Newly Admitted</span>
+<span class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight mt-1">1,280</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-xl">person_add</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-code-metric">AY 2024–25 Fall Cohort</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">Freshmen</span>
+</div>
+<div class="absolute -bottom-6 -right-6 w-20 h-20 rounded-full bg-primary/5 pointer-events-none"></div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Leaves &amp; Inactive</span>
+<span class="font-headline-xl text-headline-xl text-error font-semibold tracking-tight mt-1">640</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-xl">warning</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-code-metric">210 Leave • 430 Suspended</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+          Audit Alert
+        </span>
+</div>
+<div class="absolute -bottom-6 -right-6 w-20 h-20 rounded-full bg-error/5 pointer-events-none"></div>
+</div>
+</div>
+<!-- Operational Filter Scaffolding & Dynamic Bulk Actions -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<!-- Search Input -->
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-lg pointer-events-none">search</span>
+<input class="w-full h-9 pl-9 pr-24 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-secondary transition-all" id="searchInput" placeholder="Search by student name, roll no, registration ID (e.g. AIT-2024-8841)..." type="text"/>
+<span class="absolute right-2.5 top-2 px-1.5 py-0.5 rounded bg-surface-container font-code-metric text-label-sm text-on-surface-variant pointer-events-none">14.8k Indexed</span>
+</div>
+<!-- Quick Selector Group -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<select class="h-9 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg cursor-pointer hover:bg-surface-container focus:outline-none transition-colors">
+<option>All Departments</option>
+<option>Computer Science &amp; Eng.</option>
+<option>AI &amp; Data Science</option>
+<option>Mech &amp; Mechatronics</option>
+<option>Business Admin &amp; FinTech</option>
+<option>Electrical &amp; Electronics</option>
+<option>Bioeng &amp; Nanotech</option>
+</select>
+<select class="h-9 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg cursor-pointer hover:bg-surface-container focus:outline-none transition-colors">
+<option>All Programs</option>
+<option>B.S. Computer Science</option>
+<option>M.S. Data Science</option>
+<option>MBA FinTech</option>
+<option>B.S. Robotics &amp; Mech</option>
+<option>B.S. Electrical Eng.</option>
+</select>
+<select class="h-9 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg cursor-pointer hover:bg-surface-container focus:outline-none transition-colors">
+<option>All Semesters</option>
+<option>Sem 1 (Freshmen)</option>
+<option>Sem 3 (Sophomore)</option>
+<option>Sem 5 (Junior)</option>
+<option>Sem 7 (Senior)</option>
+</select>
+<select class="h-9 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg cursor-pointer hover:bg-surface-container focus:outline-none transition-colors">
+<option>All Batches</option>
+<option>Cohort 2024–28</option>
+<option>Cohort 2023–27</option>
+<option>Cohort 2022–26</option>
+<option>Cohort 2021–25</option>
+</select>
+<select class="h-9 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg cursor-pointer hover:bg-surface-container focus:outline-none transition-colors">
+<option>Status: All</option>
+<option>Active</option>
+<option>On Leave</option>
+<option>Probation</option>
+<option>Inactive</option>
+</select>
+<button class="h-9 w-9 bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface rounded-lg flex items-center justify-center transition-colors" title="Clear Filters">
+<span class="material-symbols-outlined text-lg">filter_alt_off</span>
+</button>
+</div>
+</div>
+<!-- Active Selection Bulk Action Bar (Hidden or Activated dynamically) -->
+<div class="hidden flex-wrap items-center justify-between px-space-md py-space-xs bg-secondary-fixed/40 rounded-lg animate-fadeIn" id="bulkBar">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-md text-label-md text-secondary font-medium"><span id="selectedCount">2</span> Scholars Selected</span>
+<span class="text-on-surface-variant font-code-metric text-label-sm">| Targeted batch update ready</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="h-7 px-2.5 bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-sm text-label-sm rounded flex items-center gap-1 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-sm">edit_note</span>
+<span>Change Status</span>
+</button>
+<button class="h-7 px-2.5 bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-sm text-label-sm rounded flex items-center gap-1 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-sm">campaign</span>
+<span>Send Broadcast</span>
+</button>
+<button class="h-7 px-2.5 bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-sm text-label-sm rounded flex items-center gap-1 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-sm">badge</span>
+<span>Generate ID Cards</span>
+</button>
+<button class="h-7 px-2.5 bg-secondary text-on-secondary hover:bg-secondary-container font-label-sm text-label-sm rounded flex items-center gap-1 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-sm">file_download</span>
+<span>Export Records</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Primary Main Canvas Layout (Table + Right Context Dossier Inspector) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Table Container (8 cols on XL) -->
+<div class="xl:col-span-8 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider h-10 select-none">
+<th class="w-10 px-space-md py-2">
+<input class="w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer" id="selectAllCheckbox" type="checkbox"/>
+</th>
+<th class="px-space-sm py-2">Scholar &amp; ID</th>
+<th class="px-space-sm py-2">Department / Program</th>
+<th class="px-space-sm py-2">Term &amp; Cohort</th>
+<th class="px-space-sm py-2">Institutional Contact</th>
+<th class="px-space-sm py-2 text-center">Status</th>
+<th class="px-space-md py-2 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-md font-body-md text-on-surface">
+<!-- Row 1 (Inspected Student Elena Rostova) -->
+<tr class="hover:bg-surface-container-low/70 transition-colors bg-secondary-fixed/20 cursor-pointer group" onclick="selectStudentPreview('elena')">
+<td class="px-space-md py-space-sm">
+<input checked="" class="student-checkbox w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Professional female collegiate student portrait with soft studio lighting, navy institutional blazer, calm studious expression with dark brown hair and glasses." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI7RsYAFAevhc1RRQ__0vcdBRTGZpH32YNAwZl0j5p-6cLhGdQXWDMW7jIS_5HFPtB55q8aSQya5fQERFGG9vwEdyviSmuWlJOoc8rG-YUQTdCAgZbUR6L_uLPinynhivG_2o6yqtxijne0pP1YbkIUllZQHMaENg0HJ-r0NOfN6zRAphiawqgl8mjwBEkfqlnIEfgfzwzi6jUD9JDRMYVcfgWolU49CrbqgeDtmY"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col truncate">
+<span class="font-headline-sm text-body-lg text-on-surface font-semibold group-hover:text-secondary transition-colors">Elena Rostova</span>
+<div class="flex items-center gap-1 font-code-metric text-label-sm text-on-surface-variant">
+<span>AIT-2024-8841</span>
+<span>•</span>
+<span class="font-medium text-secondary">CS-24-042</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">B.S. Computer Science</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Computer Science &amp; Eng.</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric text-label-sm text-on-surface">AY 2024-25</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sem 3 (Fall)</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col font-code-metric text-body-sm text-on-surface">
+<span class="truncate hover:underline">elena.r@apex.edu</span>
+<span class="text-on-surface-variant">+1 (617) 555-0142</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-secondary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Active
+                </span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors" title="View Academic Dossier">
+<span class="material-symbols-outlined text-base">folder_shared</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Edit Student Record">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Quick Menu">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 (David Adebayo) -->
+<tr class="hover:bg-surface-container-low/70 transition-colors bg-surface-container-lowest cursor-pointer group" onclick="selectStudentPreview('david')">
+<td class="px-space-md py-space-sm">
+<input checked="" class="student-checkbox w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Portrait of young African male engineering scholar smiling confidently with clean-cut appearance wearing a dark grey textured sweater in an academic campus library setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEhDYo_j0Cg2iEoIZxpM5EgkcUAj38jG8XpaA4dniyD-nGUQMkZnWVQDtY0L9sEs9VIxqcQ_Tw3U4N_qdigXz2Y5De69WRvMKTy6iGm0tp7aZqSC3vDQQDmSbzQI6puL1WipDlONWdqvoigrAO0IHqxA8s1KkOurOGoHRVvc7pP0s3uxOBUbWon3Tt9mcsakCNUzn7IDI0gFhB8Kbl1gx_WL6WMFjV4RCfPGR3RzY"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col truncate">
+<span class="font-headline-sm text-body-lg text-on-surface font-semibold group-hover:text-secondary transition-colors">David Adebayo</span>
+<div class="flex items-center gap-1 font-code-metric text-label-sm text-on-surface-variant">
+<span>AIT-2024-7712</span>
+<span>•</span>
+<span class="font-medium text-on-surface">ME-24-118</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">B.S. Robotics &amp; Mech</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mech &amp; Mechatronics</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric text-label-sm text-on-surface">AY 2024-25</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sem 1 (Freshman)</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col font-code-metric text-body-sm text-on-surface">
+<span class="truncate hover:underline">d.adebayo@apex.edu</span>
+<span class="text-on-surface-variant">+1 (617) 555-0199</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-secondary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Active
+                </span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors" title="View Academic Dossier">
+<span class="material-symbols-outlined text-base">folder_shared</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Edit Student Record">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Quick Menu">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 (Maya Kapoor) -->
+<tr class="hover:bg-surface-container-low/70 transition-colors bg-surface-container-low/20 cursor-pointer group" onclick="selectStudentPreview('maya')">
+<td class="px-space-md py-space-sm">
+<input class="student-checkbox w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Headshot of South Asian graduate student with sleek hair pulled back, sophisticated deep blue blazer, warm indoor university architecture lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB-THhhiZKMA1A3TPqAzYfUoMq-XfO0huqW1yT-u0InUOPfkYL3FixufW5fcAXVvj1muZidyMO_V0CAlmn2m_1xnGtt5vi7Tp6bettK5CTe04IaShk1wKzGkS8PrsXH-yd_6aGA_1M0P2wajVtDo9rgTLKbR8FiYKUlCzqY9EzRAr5zI_xcLAFhkY3NIgbkcxyXt84T4CNryvzPPJwvxbkD_dHtlF2lzWv3OaUzBY"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col truncate">
+<span class="font-headline-sm text-body-lg text-on-surface font-semibold group-hover:text-secondary transition-colors">Maya Kapoor</span>
+<div class="flex items-center gap-1 font-code-metric text-label-sm text-on-surface-variant">
+<span>AIT-2023-9041</span>
+<span>•</span>
+<span class="font-medium text-on-surface">DS-23-015</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">M.S. Data Science</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">AI &amp; Data Science</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric text-label-sm text-on-surface">AY 2024-25</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sem 3 (Graduate)</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col font-code-metric text-body-sm text-on-surface">
+<span class="truncate hover:underline">m.kapoor@apex.edu</span>
+<span class="text-on-surface-variant">+1 (617) 555-0231</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-secondary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Active
+                </span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors" title="View Academic Dossier">
+<span class="material-symbols-outlined text-base">folder_shared</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Edit Student Record">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Quick Menu">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 (Julian Thorne) -->
+<tr class="hover:bg-surface-container-low/70 transition-colors bg-surface-container-lowest cursor-pointer group" onclick="selectStudentPreview('julian')">
+<td class="px-space-md py-space-sm">
+<input class="student-checkbox w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Professional studio portrait of Caucasian male in his late twenties wearing formal charcoal suit jacket, thoughtful neutral expression, clear lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ6fPJpFwRzGJy0A4rHAubQy7UJABPdVIOQ7zQrvMvIbZyJ_we29wyl2viiF_GGUjGWygvYiJE6VjMkAmSpAegIn9oVd_IOCRMbO6wd4Q1YgFwPPUGATR7E4CU4QxAB4eC2pvSQflsOnf_xxMKO5jcyKO_k2psWdq2E1QciR0UUI5VjNZCyx6G-UDZxQ95AXhb2eFwXkmt6AtjPpDH2Oa1S7in9ZbD9Yd1LnVap2s"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-outline-variant ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col truncate">
+<span class="font-headline-sm text-body-lg text-on-surface font-semibold group-hover:text-secondary transition-colors">Julian Thorne</span>
+<div class="flex items-center gap-1 font-code-metric text-label-sm text-on-surface-variant">
+<span>AIT-2022-3401</span>
+<span>•</span>
+<span class="font-medium text-on-surface">BA-22-088</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">MBA FinTech</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Business Admin &amp; FinTech</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric text-label-sm text-on-surface">AY 2024-25</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sem 5</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col font-code-metric text-body-sm text-on-surface">
+<span class="truncate hover:underline">j.thorne@apex.edu</span>
+<span class="text-on-surface-variant">+1 (617) 555-0382</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  On Leave (Med)
+                </span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors" title="View Academic Dossier">
+<span class="material-symbols-outlined text-base">folder_shared</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Edit Student Record">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Quick Menu">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 (Chloe Vance) -->
+<tr class="hover:bg-surface-container-low/70 transition-colors bg-surface-container-low/20 cursor-pointer group" onclick="selectStudentPreview('chloe')">
+<td class="px-space-md py-space-sm">
+<input class="student-checkbox w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Portrait of young female student researcher with short blonde hair, wearing cream knit crewneck sweater with bright daylight in laboratory classroom." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzQ2ETyZhvXA-kQ5Qf2uB_hZ73f-VdK1ga9enPvqLIHCvFnF2JyU2NSE0QM-zVtLsTRRjK4d2lQQqvxSx5SYTTkMhhqnaIBSqR4KKoDB-XDuKDucOdWmzsJvDWEOO1p60j37NhDmX0z_nOyJA17P3QjCypCiD_jpQFC03ub6s9LdY8I0EVN__rY0dCRPTVj2V6jPXBwFP5-Nybd5r8F8EZIvajLNvs0fiV252JH5o"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col truncate">
+<span class="font-headline-sm text-body-lg text-on-surface font-semibold group-hover:text-secondary transition-colors">Chloe Vance</span>
+<div class="flex items-center gap-1 font-code-metric text-label-sm text-on-surface-variant">
+<span>AIT-2024-9120</span>
+<span>•</span>
+<span class="font-medium text-on-surface">CS-24-004</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">B.S. Artificial Intelligence</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Computer Science &amp; Eng.</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric text-label-sm text-on-surface">AY 2024-25</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sem 1 (Fall)</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col font-code-metric text-body-sm text-on-surface">
+<span class="truncate hover:underline">c.vance@apex.edu</span>
+<span class="text-on-surface-variant">+1 (617) 555-0491</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-secondary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Active
+                </span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors" title="View Academic Dossier">
+<span class="material-symbols-outlined text-base">folder_shared</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Edit Student Record">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Quick Menu">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6 (Marcus Aurelius Chen) -->
+<tr class="hover:bg-surface-container-low/70 transition-colors bg-surface-container-lowest cursor-pointer group" onclick="selectStudentPreview('marcus')">
+<td class="px-space-md py-space-sm">
+<input class="student-checkbox w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Headshot of East Asian senior male college student with neat haircut, black buttoned shirt, clean professional university profile lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9BybUiiFEXG4nXgBU2nw8MCN5SZEH6W9p2HU-Rs7o6KyoILuLXlLks1pslsrg8SC0gpeTJrH2QDfOaCg6e-KpXdbWQLlN6kgLuLXDeRjizDY7zwUxBkuWQ2QgtRQNWiDT771ggk9MUsFFafOEk3fRPuRHV630IrOpXWRF2fifEIg_ISZS448UGWEa-lRn2jzL4A9x-uuGn33Kpms16aMhmkS4me5xTKxkwU-1Se8"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col truncate">
+<span class="font-headline-sm text-body-lg text-on-surface font-semibold group-hover:text-secondary transition-colors">Marcus Aurelius Chen</span>
+<div class="flex items-center gap-1 font-code-metric text-label-sm text-on-surface-variant">
+<span>AIT-2021-1209</span>
+<span>•</span>
+<span class="font-medium text-on-surface">EE-21-002</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">B.S. Electrical Eng.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Electrical &amp; Electronics</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric text-label-sm text-on-surface">AY 2024-25</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sem 7 (Senior)</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col font-code-metric text-body-sm text-on-surface">
+<span class="truncate hover:underline">m.chen@apex.edu</span>
+<span class="text-on-surface-variant">+1 (617) 555-0723</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-secondary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Active
+                </span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors" title="View Academic Dossier">
+<span class="material-symbols-outlined text-base">folder_shared</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Edit Student Record">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Quick Menu">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 7 (Sophia Al-Mansoor) -->
+<tr class="hover:bg-surface-container-low/70 transition-colors bg-surface-container-low/20 cursor-pointer group" onclick="selectStudentPreview('sophia')">
+<td class="px-space-md py-space-sm">
+<input class="student-checkbox w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Portrait photo of Middle Eastern female bioengineering student with silk dark headscarf, thoughtful gaze, wearing lab coat over collared shirt in contemporary medical research institute." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm8SChKgFonylFNXnzwHx2M0tDkI_guOj1kNzR9TFj7-jmSYA0HHQfPdrkGFEGGMzS9L8wIpGrp1iMAxKBuPtL8wThENVg26argJ4g5Zdfx1t0Npz6BMBDDZfIKL1_sFqL0tYeI7gW38O_0IOmJtDXHmYMCNZxtg4y4EaREu-GO_NkpNCGFvg_flC4qjUNKGbrmVSH6KBuQgBFKiAYylQLIn5uNMQPBIotg30iUSQ"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-error ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col truncate">
+<span class="font-headline-sm text-body-lg text-on-surface font-semibold group-hover:text-secondary transition-colors">Sophia Al-Mansoor</span>
+<div class="flex items-center gap-1 font-code-metric text-label-sm text-on-surface-variant">
+<span>AIT-2023-4590</span>
+<span>•</span>
+<span class="font-medium text-on-surface">BE-23-054</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">B.S. Bioengineering</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bioeng &amp; Nanotech</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col">
+<span class="font-code-metric text-label-sm text-on-surface">AY 2024-25</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sem 3</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex flex-col font-code-metric text-body-sm text-on-surface">
+<span class="truncate hover:underline">s.almansoor@apex.edu</span>
+<span class="text-on-surface-variant">+1 (617) 555-0812</span>
+</div>
+</td>
+<td class="px-space-sm py-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  Probation (GPA &lt; 2.5)
+                </span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors" title="View Academic Dossier">
+<span class="material-symbols-outlined text-base">folder_shared</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Edit Student Record">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Quick Menu">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Footer -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm select-none">
+<div class="flex items-center gap-space-md">
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            Showing <strong class="text-on-surface font-code-metric">1–7</strong> of <strong class="text-on-surface font-code-metric">14,820</strong> students
+          </span>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Per page:</span>
+<select class="h-7 px-1.5 bg-surface-container-lowest text-on-surface font-code-metric text-label-sm rounded focus:outline-none cursor-pointer">
+<option>7</option>
+<option selected="">25</option>
+<option>50</option>
+<option>100</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-code-metric text-label-sm text-on-surface-variant mr-space-sm">Page 1 of 2,118</span>
+<button class="h-8 px-2.5 rounded bg-surface-container-lowest text-outline-variant font-label-md text-label-md flex items-center justify-center cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-base">chevron_left</span>
+</button>
+<button class="h-8 w-8 rounded bg-secondary text-on-secondary font-code-metric text-label-sm flex items-center justify-center font-medium">1</button>
+<button class="h-8 w-8 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container font-code-metric text-label-sm flex items-center justify-center transition-colors">2</button>
+<button class="h-8 w-8 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container font-code-metric text-label-sm flex items-center justify-center transition-colors">3</button>
+<span class="px-1 text-on-surface-variant font-code-metric">...</span>
+<button class="h-8 px-2 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container font-code-metric text-label-sm flex items-center justify-center transition-colors">2,118</button>
+<button class="h-8 px-2.5 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-base">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Inspector / Contextual Dossier Card (4 cols on XL) -->
+<div class="xl:col-span-4 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col sticky top-20">
+<!-- Inspector Header -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">badge</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Scholar Dossier Inspector</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-secondary font-code-metric text-label-sm font-semibold">Active Roster</span>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container">
+<span class="material-symbols-outlined text-sm">fullscreen</span>
+</button>
+</div>
+</div>
+<!-- Dossier Hero Body -->
+<div class="p-space-md flex flex-col gap-space-md">
+<div class="flex items-start gap-space-md">
+<img class="w-16 h-16 rounded-xl object-cover shadow-sm shrink-0" data-alt="High-resolution portrait of Elena Rostova, academic scholar in Computer Science, wearing clean collegiate attire, neutral modern university backdrop." id="dossierAvatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg6Ihw-igzek3FHquftywk8ZE9UroKi9qKDOgnl4oi0uSPH6k7ZfNYQrMBehBGumjHZVM9-nBN7O4kBGoSIL2-7t9jj5pEc5XTrBa5ez1LlHJMbsdasjCEiWeNY1MRVZtAyXE_zW9e9-KO786tvR0me4zR6Cj5FOnw624ECDCru3D6FQm9ccY8IN3LKGyv0lpQP1i3Nj1gm9JvA1aFWEXhEDets0SHQKHiiE5ESok"/>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate leading-tight" id="dossierName">Elena Rostova</h2>
+<span class="font-label-md text-label-md text-secondary font-medium mt-0.5" id="dossierProgram">B.S. Computer Science</span>
+<div class="flex items-center gap-1.5 font-code-metric text-label-sm text-on-surface-variant mt-1">
+<span id="dossierReg">AIT-2024-8841</span>
+<span>•</span>
+<span id="dossierRoll">Roll: CS-24-042</span>
+</div>
+</div>
+</div>
+<!-- Academic Telemetry Matrix -->
+<div class="grid grid-cols-2 gap-space-xs p-space-sm bg-surface-container-low rounded-xl">
+<div class="p-space-xs flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Cumulative GPA</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold font-code-metric" id="dossierGpa">3.94</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 4.00</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium mt-0.5">Summa Cum Laude Track</span>
+</div>
+<div class="p-space-xs flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Attendance Ratio</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold font-code-metric" id="dossierAttendance">98.2%</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium mt-0.5">Exemplary Standing</span>
+</div>
+<div class="p-space-xs flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Degree Progress</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold font-code-metric" id="dossierCredits">64</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 128 credits</span>
+</div>
+<!-- Micro Progress Bar -->
+<div class="w-full bg-surface-container rounded-full h-1 mt-1.5 overflow-hidden">
+<div class="bg-secondary h-1 rounded-full w-[50%]"></div>
+</div>
+</div>
+<div class="p-space-xs flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Bursar &amp; Ledger</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold font-code-metric" id="dossierDues">$0.00</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium mt-0.5">Full Clearance</span>
+</div>
+</div>
+<!-- Faculty Advisor & Contact Snapshot -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Academic Advisory</span>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-base">school</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium leading-none">Dr. Marcus Vance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Chair, Distributed Systems</span>
+</div>
+</div>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors" title="Email Advisor">
+<span class="material-symbols-outlined text-base">mail</span>
+</button>
+</div>
+</div>
+<!-- Mini Term Enrollment Modules -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Enrolled Courses (Sem 3)</span>
+<span class="font-code-metric text-label-sm text-secondary font-semibold">18 SCH</span>
+</div>
+<div class="flex flex-col gap-1.5 font-body-sm text-body-sm">
+<div class="flex items-center justify-between p-1.5 rounded bg-surface-container-low">
+<span class="font-code-metric font-medium text-on-surface">CS-301: Advanced Data Structures</span>
+<span class="px-1 rounded bg-surface-container text-on-surface-variant font-code-metric text-label-sm">4.0 SCH</span>
+</div>
+<div class="flex items-center justify-between p-1.5 rounded bg-surface-container-low">
+<span class="font-code-metric font-medium text-on-surface">CS-324: Operating Systems Kernel Arch</span>
+<span class="px-1 rounded bg-surface-container text-on-surface-variant font-code-metric text-label-sm">4.0 SCH</span>
+</div>
+<div class="flex items-center justify-between p-1.5 rounded bg-surface-container-low">
+<span class="font-code-metric font-medium text-on-surface">MATH-280: Probability &amp; Stochastic</span>
+<span class="px-1 rounded bg-surface-container text-on-surface-variant font-code-metric text-label-sm">3.0 SCH</span>
+</div>
+<div class="flex items-center justify-between p-1.5 rounded bg-surface-container-low">
+<span class="font-code-metric font-medium text-on-surface">PHIL-110: Computing Ethics &amp; AI Law</span>
+<span class="px-1 rounded bg-surface-container text-on-surface-variant font-code-metric text-label-sm">3.0 SCH</span>
+</div>
+</div>
+</div>
+<!-- Dossier Action CTA Strip -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full h-9 bg-secondary text-on-secondary hover:bg-secondary-container rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-base">person</span>
+<span>Open Full Profile Dossier</span>
+</button>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="h-8 bg-surface-container-low text-on-surface hover:bg-surface-container rounded-lg font-label-sm text-label-sm flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-sm">print</span>
+<span>Print Dossier</span>
+</button>
+<button class="h-8 bg-surface-container-low text-on-surface hover:bg-surface-container rounded-lg font-label-sm text-label-sm flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-sm">chat</span>
+<span>Message Student</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Selection handling & dynamic dossier updates
+  const studentData = {
+    elena: {
+      name: "Elena Rostova",
+      reg: "AIT-2024-8841",
+      roll: "Roll: CS-24-042",
+      program: "B.S. Computer Science",
+      gpa: "3.94",
+      attendance: "98.2%",
+      credits: "64",
+      dues: "$0.00"
+    },
+    david: {
+      name: "David Adebayo",
+      reg: "AIT-2024-7712",
+      roll: "Roll: ME-24-118",
+      program: "B.S. Robotics & Mech",
+      gpa: "3.81",
+      attendance: "96.4%",
+      credits: "22",
+      dues: "$0.00"
+    },
+    maya: {
+      name: "Maya Kapoor",
+      reg: "AIT-2023-9041",
+      roll: "Roll: DS-23-015",
+      program: "M.S. Data Science",
+      gpa: "3.98",
+      attendance: "99.1%",
+      credits: "32",
+      dues: "$0.00"
+    },
+    julian: {
+      name: "Julian Thorne",
+      reg: "AIT-2022-3401",
+      roll: "Roll: BA-22-088",
+      program: "MBA FinTech",
+      gpa: "3.65",
+      attendance: "84.0%",
+      credits: "48",
+      dues: "$1,240.00"
+    },
+    chloe: {
+      name: "Chloe Vance",
+      reg: "AIT-2024-9120",
+      roll: "Roll: CS-24-004",
+      program: "B.S. Artificial Intelligence",
+      gpa: "4.00",
+      attendance: "100%",
+      credits: "18",
+      dues: "$0.00"
+    },
+    marcus: {
+      name: "Marcus Aurelius Chen",
+      reg: "AIT-2021-1209",
+      roll: "Roll: EE-21-002",
+      program: "B.S. Electrical Eng.",
+      gpa: "3.89",
+      attendance: "95.5%",
+      credits: "112",
+      dues: "$0.00"
+    },
+    sophia: {
+      name: "Sophia Al-Mansoor",
+      reg: "AIT-2023-4590",
+      roll: "Roll: BE-23-054",
+      program: "B.S. Bioengineering",
+      gpa: "2.42",
+      attendance: "78.4%",
+      credits: "42",
+      dues: "$450.00"
+    }
+  };
+
+  function selectStudentPreview(id) {
+    const data = studentData[id];
+    if (!data) return;
+    document.getElementById('dossierName').textContent = data.name;
+    document.getElementById('dossierReg').textContent = data.reg;
+    document.getElementById('dossierRoll').textContent = data.roll;
+    document.getElementById('dossierProgram').textContent = data.program;
+    document.getElementById('dossierGpa').textContent = data.gpa;
+    document.getElementById('dossierAttendance').textContent = data.attendance;
+    document.getElementById('dossierCredits').textContent = data.credits;
+    document.getElementById('dossierDues').textContent = data.dues;
+  }
+
+  // Interactive bulk action count updater
+  const checkboxes = document.querySelectorAll('.student-checkbox');
+  const bulkBar = document.getElementById('bulkBar');
+  const selectAll = document.getElementById('selectAllCheckbox');
+  const selectedCountText = document.getElementById('selectedCount');
+
+  function updateBulkState() {
+    let count = 0;
+    checkboxes.forEach(cb => { if(cb.checked) count++; });
+    if (selectedCountText) selectedCountText.textContent = count;
+    if (count > 0) {
+      bulkBar.classList.remove('hidden');
+      bulkBar.classList.add('flex');
+    } else {
+      bulkBar.classList.add('hidden');
+      bulkBar.classList.remove('flex');
+    }
+  }
+
+  checkboxes.forEach(cb => {
+    cb.addEventListener('change', (e) => {
+      e.stopPropagation();
+      updateBulkState();
+    });
+  });
+
+  if (selectAll) {
+    selectAll.addEventListener('change', (e) => {
+      checkboxes.forEach(cb => cb.checked = e.target.checked);
+      updateBulkState();
+    });
+  }
+
+  // Initial trigger for preview state
+  updateBulkState();
+</script></main></div></body></html>

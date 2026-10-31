@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-container":"#001e2f","primary-fixed-dim":"#bec6e0","error":"#ba1a1a","secondary-fixed-dim":"#c3c0ff","on-error-container":"#93000a","background":"#f8f9ff","on-primary-fixed":"#131b2e","on-primary-fixed-variant":"#3f465c","primary":"#000000","outline-variant":"#c6c6cd","on-tertiary":"#ffffff","outline":"#76777d","surface-dim":"#cbdbf5","on-error":"#ffffff","on-secondary-fixed-variant":"#3323cc","on-tertiary-container":"#008cc7","surface-container-lowest":"#ffffff","surface":"#f8f9ff","surface-container-high":"#dce9ff","primary-fixed":"#dae2fd","on-tertiary-fixed":"#001e2f","inverse-on-surface":"#eaf1ff","on-secondary-container":"#fffbff","primary-container":"#131b2e","on-background":"#0b1c30","on-surface":"#0b1c30","surface-container-highest":"#d3e4fe","on-surface-variant":"#45464d","secondary-fixed":"#e2dfff","inverse-surface":"#213145","surface-bright":"#f8f9ff","surface-container-low":"#eff4ff","on-primary-container":"#7c839b","surface-variant":"#d3e4fe","tertiary-fixed-dim":"#89ceff","on-secondary":"#ffffff","surface-container":"#e5eeff","error-container":"#ffdad6","inverse-primary":"#bec6e0","on-secondary-fixed":"#0f0069","tertiary":"#000000","surface-tint":"#565e74","tertiary-fixed":"#c9e6ff","secondary":"#4b41e1","on-primary":"#ffffff","on-tertiary-fixed-variant":"#004c6e","secondary-container":"#645efb"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-md":"0.75rem","margin-desktop":"2rem","gutter":"1rem","space-lg":"1.25rem","margin":"1rem","space-xs":"0.25rem","gutter-desktop":"1.5rem","space-xl":"2rem","space-sm":"0.5rem"},fontFamily:{"headline-xl":["Geist"],"body-md":["Geist"],"body-sm":["Geist"],"code-metric":["Geist"],"body-lg":["Geist"],"label-sm":["Geist"],"headline-sm":["Geist"],"headline-xl-mobile":["Geist"],"label-md":["Geist"],"headline-lg":["Geist"]},fontSize:{"headline-xl":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.025em",fontWeight:"600"}],"body-md":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"-0.006em",fontWeight:"400"}],"body-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0em",fontWeight:"400"}],"code-metric":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"-0.02em",fontWeight:"500"}],"body-lg":["1rem",{lineHeight:"1.5rem",letterSpacing:"-0.011em",fontWeight:"400"}],"label-sm":["0.6875rem",{lineHeight:"0.875rem",letterSpacing:"0.04em",fontWeight:"600"}],"headline-sm":["1.125rem",{lineHeight:"1.5rem",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-xl-mobile":["1.75rem",{lineHeight:"2.25rem",letterSpacing:"-0.02em",fontWeight:"600"}],"label-md":["0.8125rem",{lineHeight:"1.125rem",letterSpacing:"-0.005em",fontWeight:"500"}],"headline-lg":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.02em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-hidden"><div class="flex flex-col flex-1 min-h-0"><div class="p-space-md pb-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs"><div class="flex items-center gap-space-sm"><img alt="College OS Brandmark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WvnlED1hU_M01PSO-1qyRpzBvkV84x7ViBFZQB5yKW-NwD75asiUHXNbwETf5DS5Bsd7AnUF3ffGaf9yE-s8GCUeHYzBYdzY57Wfz3A35MjIli7B6CqiIKcHCHGmw9klEmRNePyPGpmJ_1lOslWIlgP1VavS2gkS_MiNFOEh-YJJueoXdPJp9f3AXDyl246ophiOE8yuWLyGMNCp9gpgTnmT63nGfey8QLD6T4fNw"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">College OS</span></div><span class="px-space-xs py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase rounded">Enterprise</span></div><div class="mt-space-sm p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between cursor-pointer hover:bg-surface-container transition-colors"><div class="flex flex-col truncate"><span class="font-label-md text-label-md text-on-surface truncate font-medium">Apex Institute of Technology</span><div class="flex items-center gap-space-xs mt-0.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-code-metric text-label-sm text-on-surface-variant">#US-CAMPUS-01 • AY 2024-25</span></div></div><span class="material-symbols-outlined text-on-surface-variant text-base">unfold_more</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-xs"><div class="px-space-xs py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Institutional Modules</div><div class="flex flex-col gap-0.5"><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a></nav><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors cursor-pointer"><nav class="flex items-center" data-active-classes="text-secondary font-medium"><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" data-path="academics" href="#">Academics</a></nav><span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-code-metric text-label-sm rounded-full">48</span></div><div class="flex flex-col gap-0.5"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors cursor-pointer"><div class="flex items-center gap-space-xs"><span class="font-label-md text-label-md">Students</span><span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-code-metric text-label-sm rounded-full">14,820</span></div><span class="material-symbols-outlined text-base text-on-surface-variant">expand_more</span></div><div class="ml-space-sm pl-space-xs border-l border-surface-container-high flex flex-col gap-0.5 mt-0.5"><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-overview" href="#">Student Overview</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-directory" href="#">Student Directory</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admissions" href="#">Admissions</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="enrollment" href="#">Enrollment</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="id-cards" href="#">ID Cards</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-documents" href="#">Student Documents</a></nav></div></div><div class="flex flex-col gap-0.5 mt-0.5"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md"><div class="flex items-center gap-space-xs"><span class="font-medium">Faculty &amp; Staff</span><span class="px-1.5 py-0.5 bg-surface-container-high text-secondary font-code-metric text-label-sm rounded-full">842</span></div><span class="material-symbols-outlined text-base text-secondary">expand_more</span></div><div class="ml-space-sm pl-space-xs border-l border-surface-container-high flex flex-col gap-0.5 mt-0.5"><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="faculty-directory" href="#">Faculty Directory</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="staff-directory" href="#">Staff Directory</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="faculty-profile" href="#">Faculty Profile</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="workload-management" href="#">Workload Management</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="leave-management" href="#">Leave Management</a><a aria-current="page" class="px-space-sm py-1 transition-colors bg-surface-container text-secondary font-medium rounded-lg" data-path="payroll" href="#">Payroll</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="performance-management" href="#">Performance Management</a></nav></div></div><nav class="flex flex-col gap-0.5 mt-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" data-path="finance" href="#">Finance</a><span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-code-metric text-label-sm rounded-full">$2.4M</span></div><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="campus-management" href="#">Campus Management</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-life" href="#">Student Life</a><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" data-path="placements" href="#">Placements</a><span class="px-1.5 py-0.5 bg-secondary-fixed text-on-secondary-fixed font-code-metric text-label-sm rounded-full">Live</span></div><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="communication" href="#">Communication</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports-and-analytics" href="#">Reports &amp; Analytics</a></nav></div><div class="mt-space-md px-space-xs py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">System Governance</div><div class="flex flex-col gap-0.5"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md"><span class="font-medium">Administration</span><span class="material-symbols-outlined text-base text-on-surface-variant">expand_more</span></div><div class="ml-space-sm pl-space-xs border-l border-surface-container-high flex flex-col gap-0.5 mt-0.5"><div class="px-space-xs py-0.5 font-label-sm text-label-sm text-on-surface-variant">College Setup</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="college-profile" href="#">College Profile</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="campuses-and-facilities" href="#">Campuses &amp; Facilities</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="departments" href="#">Departments</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="academic-years-and-terms" href="#">Academic Years &amp; Terms</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="degree-programs" href="#">Degree Programs</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="courses-and-subjects" href="#">Courses &amp; Subjects</a></nav></div><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#">Settings</a></nav></div></div></div><div class="p-space-sm bg-surface-container-low mx-space-sm mb-space-sm rounded-xl"><div class="flex items-center justify-between mb-1.5"><span class="font-label-sm text-label-sm text-on-surface font-medium">Enterprise Tier</span><span class="font-code-metric text-label-sm text-secondary font-medium">98.4% uptime</span></div><div class="w-full bg-surface-container rounded-full h-1 overflow-hidden"><div class="bg-secondary h-1 rounded-full w-[98.4%]"></div></div><a class="mt-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors pt-space-xs" href="#"><span>Institutional Support</span><span class="material-symbols-outlined text-sm">open_in_new</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-lg pointer-events-none">search</span><input class="w-72 h-9 pl-9 pr-14 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-secondary transition-all" placeholder="Search students, faculty, staff, courses..." type="text"/><div class="absolute right-2.5 flex items-center pointer-events-none"><kbd class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-code-metric text-label-sm rounded">⌘K</kbd></div></div><nav class="hidden lg:flex items-center gap-space-xs ml-space-sm" data-active-classes="bg-surface-container-high text-on-surface font-semibold"><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="overview" href="#">Console</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="academics" href="#">Curriculum</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="reports-and-analytics" href="#">Accreditation BI</a></nav></div><div class="flex items-center gap-space-sm"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low rounded-full"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-md text-label-md text-on-surface font-medium">AY 2024–2025 • Semester 1 (Fall)</span><span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase rounded-full ml-1">Active Term</span></div><button class="flex items-center gap-1.5 px-space-sm py-1.5 bg-secondary text-on-secondary rounded-lg font-label-md text-label-md shadow-sm hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-base">add</span><span>Quick Action</span></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 bg-error text-on-error font-label-sm text-[0.625rem] flex items-center justify-center rounded-full">3</span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-xl">help_outline</span></button><div class="flex items-center gap-space-sm pl-space-xs ml-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgcnWk88Z5jMRXj0iv_dPWo3T7MrUH_81r_r7Cic1FPbgD5hbY4j7S4gEdT7Xv0WOh4qSn9IqwCfhEcq1Q8HJeal_gVWzGe3eRulvU3HgFTJfHhj_v51Jr6zrCqQH_lwSqbCTuO26BJL0LuiEEr5hGWBEj6N6_DheZ1oSfI3dzfrBVG6tJn_TZzdGKDm_T9rOSww_V0G8BkgMzRCHWYKePvT8sow2SqRSESXpRGIM"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-medium leading-none">Dr. Alistair Finch</span><span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5 leading-none">Dean of Academic Affairs</span></div><span class="hidden md:inline px-1.5 py-0.5 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm rounded uppercase font-semibold">Dean</span></div></div></header><main class="w-full pt-16 bg-surface px-gutter-desktop py-space-lg min-h-screen"><div class="flex flex-col w-full gap-space-lg">
+<!-- Top Context Header & Institutional Meta -->
+<div class="flex flex-col gap-space-sm">
+<!-- Breadcrumb Line -->
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span>Institutional Modules</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span>Faculty &amp; Staff</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-secondary font-semibold">Payroll</span>
+</div>
+<!-- Title and Executive Action Strip -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">Faculty &amp; Staff Payroll &amp; Compensation Ledger</h1>
+<span class="px-space-xs py-0.5 bg-surface-container-high text-secondary font-code-metric text-label-sm rounded-full font-medium">Cycle #PR-2024-10-M</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl mt-0.5">
+          Govern monthly collegiate payroll processing, professorial compensation tiers, statutory tax withholdings, research stipends, and disbursement audits.
+        </p>
+</div>
+<!-- Action Cluster -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="flex items-center gap-1.5 px-space-md py-1.5 bg-surface-container-lowest text-on-surface hover:bg-surface-container-low font-label-md text-label-md rounded-lg shadow-sm transition-all">
+<span class="material-symbols-outlined text-base text-on-surface-variant">description</span>
+<span>Batch Generate (PDF)</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-1.5 bg-surface-container-lowest text-on-surface hover:bg-surface-container-low font-label-md text-label-md rounded-lg shadow-sm transition-all">
+<span class="material-symbols-outlined text-base text-on-surface-variant">account_balance</span>
+<span>Export NACHA/ACH</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-1.5 bg-surface-container-lowest text-on-surface hover:bg-surface-container-low font-label-md text-label-md rounded-lg shadow-sm transition-all">
+<span class="material-symbols-outlined text-base text-on-surface-variant">verified_user</span>
+<span>Audit Reports</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-1.5 bg-secondary text-on-secondary hover:bg-secondary-container font-label-md text-label-md rounded-lg shadow-sm transition-all">
+<span class="material-symbols-outlined text-base">play_arrow</span>
+<span>+ Initiate Monthly Run</span>
+</button>
+</div>
+</div>
+</div>
+<!-- KPI Ribbon: 6-Metric High-Density Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-space-sm">
+<!-- Metric 1: Total Gross -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant">Monthly Gross</span>
+<span class="material-symbols-outlined text-base text-secondary">payments</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">$4,842,500.00</div>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-code-metric text-body-sm text-on-surface-variant">October 2024 Cycle</span>
+</div>
+</div>
+</div>
+<!-- Metric 2: Net Disbursed -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant">Net Disbursed</span>
+<span class="px-1.5 py-0.5 bg-surface-container-high text-secondary font-code-metric text-label-sm rounded">75.0% Net</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">$3,631,875.00</div>
+<div class="w-full bg-surface-container rounded-full h-1 mt-2 overflow-hidden">
+<div class="bg-secondary h-1 rounded-full w-3/4"></div>
+</div>
+</div>
+</div>
+<!-- Metric 3: Total Withholdings -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant">Taxes &amp; Withholdings</span>
+<span class="material-symbols-outlined text-base text-on-surface-variant">shield_with_heart</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">$1,210,625.00</div>
+<span class="font-code-metric text-body-sm text-on-surface-variant">Fed, State, FICA, PF, Health</span>
+</div>
+</div>
+<!-- Metric 4: Headcount Processed -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant">Processed Staff</span>
+<span class="px-1.5 py-0.5 bg-surface-container text-on-surface font-code-metric text-label-sm rounded-full">100% Ready</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">842 / 842</div>
+<span class="font-code-metric text-body-sm text-on-surface-variant">412 Faculty • 430 Staff</span>
+</div>
+</div>
+<!-- Metric 5: Direct Deposit Batches -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant">Pending ACH/Disbursals</span>
+<span class="material-symbols-outlined text-base text-secondary animate-pulse">schedule</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">42 Batches</div>
+<span class="font-code-metric text-body-sm text-on-surface-variant">Scheduled release: Nov 01</span>
+</div>
+</div>
+<!-- Metric 6: Research Grants & Overload -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant">Grant &amp; Research Overload</span>
+<span class="material-symbols-outlined text-base text-on-surface-variant">science</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">$148,200.00</div>
+<span class="font-code-metric text-body-sm text-on-surface-variant">74 Active Sponsored Projects</span>
+</div>
+</div>
+</div>
+<!-- Sub-Navigation Ribbon (Contained Segmented Navigation) -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm p-1.5 bg-surface-container-low rounded-xl">
+<div class="flex flex-wrap items-center gap-1">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-secondary font-label-md text-label-md font-semibold shadow-sm transition-colors">
+        Current Payroll: October 2024 (Active)
+      </button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors">
+        Salary Structure &amp; Tiers
+      </button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors">
+        Tax &amp; Statutory Deductions
+      </button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors">
+        Payslip Vault
+      </button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors">
+        Historical Disbursements
+      </button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors">
+        Banking Gateways
+      </button>
+</div>
+<div class="flex items-center gap-2 px-space-sm">
+<span class="font-code-metric text-body-sm text-on-surface-variant">Cycle Period: Oct 01 – Oct 31, 2024</span>
+</div>
+</div>
+<!-- Formula Summary & Institutional Breakdown Banner -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<!-- Left: Formulaic Architecture -->
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-lg text-secondary">tune</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Institutional Formula &amp; Statutory Breakdown</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">UGC &amp; Federal FLSA Verified</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mt-1">
+<!-- Earnings Rules -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Gross Earnings Aggregate</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">[+] ADDITIVE</span>
+</div>
+<div class="font-code-metric text-body-sm text-on-surface leading-relaxed">
+            Base Salary + Academic Grade Pay (AGP) + House Rent Allowance (HRA 20%) + Dearness Allowance (DA) + Research &amp; HOD Stipends + Overload Teaching Allowance
+          </div>
+</div>
+<!-- Deduction Rules -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-error font-semibold uppercase tracking-wider">Mandatory Deductions</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">[-] SUBTRACTIVE</span>
+</div>
+<div class="font-code-metric text-body-sm text-on-surface leading-relaxed">
+            Federal Withholding + State Income Tax + FICA / Social Security (6.2%) + University Retirement 403(b) / Provident Fund (8.0%) + Health &amp; Dental Premiums
+          </div>
+</div>
+</div>
+</div>
+<!-- Right: Mini Distribution Visualizer -->
+<div class="lg:col-span-4 bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant">Outflow Allocation</span>
+<span class="font-code-metric text-label-sm text-secondary">October 2024</span>
+</div>
+<div class="flex items-center gap-space-md py-space-xs">
+<!-- Donut Mini Visualizer SVG -->
+<svg class="w-16 h-16 shrink-0" viewbox="0 0 36 36">
+<circle cx="18" cy="18" fill="none" r="14" stroke="#dce9ff" stroke-width="4"></circle>
+<circle cx="18" cy="18" fill="none" r="14" stroke="#4b41e1" stroke-dasharray="75 100" stroke-dashoffset="25" stroke-width="4"></circle>
+<circle cx="18" cy="18" fill="none" r="14" stroke="#7c839b" stroke-dasharray="25 100" stroke-dashoffset="50" stroke-width="4"></circle>
+</svg>
+<div class="flex flex-col gap-1 text-label-sm font-label-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-secondary"></span>
+<span class="text-on-surface font-medium">Net Disbursals: 75.0% ($3.63M)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-on-primary-container"></span>
+<span class="text-on-surface-variant">Tax / State Escrow: 16.5% ($798k)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-surface-container-high"></span>
+<span class="text-on-surface-variant">Retirement &amp; Ins: 8.5% ($412k)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-secondary pt-1">
+<span>Cycle Lock Status: Audit Certified</span>
+<span class="material-symbols-outlined text-sm">lock</span>
+</div>
+</div>
+</div>
+<!-- Master Payroll Register Workspace -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Filter and Search Header Bar -->
+<div class="p-space-md flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-sm bg-surface-container-low/50">
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-2.5 text-on-surface-variant text-base pointer-events-none">search</span>
+<input class="w-64 h-8 pl-8 pr-3 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:ring-1 focus:ring-secondary transition-all" placeholder="Filter faculty, ID, rank..." type="text"/>
+</div>
+<select class="h-8 px-2.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-lg focus:outline-none transition-all">
+<option>All Academic Departments</option>
+<option>Computer Science &amp; AI</option>
+<option>Mechanical Engineering</option>
+<option>Office of Academic Affairs</option>
+<option>High Performance Computing</option>
+</select>
+<select class="h-8 px-2.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-lg focus:outline-none transition-all">
+<option>Pay Grades: All Levels</option>
+<option>Tenured Faculty (Level 14-A)</option>
+<option>Associate Prof (Level 12-B)</option>
+<option>Lecturers &amp; Research Staff</option>
+<option>Technical Grade T-4 / SysOps</option>
+</select>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Displaying 7 of 842 Personnel</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 bg-surface-container text-on-surface hover:bg-surface-container-high rounded-lg font-label-sm text-label-sm flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-sm">tune</span>
+<span>Column Toggles</span>
+</button>
+<button class="px-space-sm py-1 bg-surface-container text-on-surface hover:bg-surface-container-high rounded-lg font-label-sm text-label-sm flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-sm">download</span>
+<span>Export Ledger</span>
+</button>
+</div>
+</div>
+<!-- Dense Ledger Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider h-10 select-none">
+<th class="px-space-md w-10">
+<input class="rounded" type="checkbox"/>
+</th>
+<th class="px-space-md">Employee &amp; ID</th>
+<th class="px-space-sm">Pay Band</th>
+<th class="px-space-sm text-right">Basic &amp; AGP</th>
+<th class="px-space-sm text-right">Allowances</th>
+<th class="px-space-sm text-right">Gross Pay</th>
+<th class="px-space-sm text-right">Deductions</th>
+<th class="px-space-md text-right">Net Payable</th>
+<th class="px-space-sm">Disbursement Channel</th>
+<th class="px-space-sm">Status</th>
+<th class="px-space-md text-center">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-md text-body-md text-on-surface">
+<!-- Row 1: Dr. Elena Rostova -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="px-space-md py-space-sm">
+<input checked="" class="rounded" type="checkbox"/>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-sm">
+<img alt="Elena Rostova portrait" class="w-9 h-9 rounded-full object-cover shrink-0" data-alt="Professional studio portrait of an experienced female computer science professor with glasses in an academic office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvOT2S2HDi4JMVoiWev6BT7USzt20REgCCesHVMi04xMh8IPXqO4s_GTTuLVNg4f-rshbV6cYz8x_u-I8i9c3WI3HSuJCBsJyuZ86N11viVnyId8GTy4CFUryENq3x-KD0Pkir5oB05kFQN07jGzxBCcA86x573F5D7pnT4HRV9MiISAA0NEaN4lCzV24bBdFghGp831Tw72KP1xvJQzd9IkVOBmN6Eqy8Hp7VsoM"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-medium text-on-surface truncate">Dr. Elena Rostova</span>
+<span class="px-1 py-0.2 bg-secondary-fixed text-on-secondary-fixed text-[0.625rem] font-code-metric rounded uppercase">Tenured</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">FAC-2018-0841 • CS Chair &amp; Prof</span>
+</div>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="font-label-md text-label-md">Prof Level 14-A</div>
+<span class="text-body-sm text-on-surface-variant font-code-metric">Index 9.4</span>
+</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric font-medium">$12,500.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric text-on-surface-variant">+$3,800.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric font-semibold">$16,300.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric text-error font-medium">-$4,075.00</td>
+<td class="px-space-md py-space-sm text-right">
+<span class="font-code-metric text-body-lg font-bold text-secondary">$12,225.00</span>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex items-center gap-1.5 font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">account_balance</span>
+<span>Direct Deposit</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Chase •••• 4821</span>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Ready for Release
+              </span>
+</td>
+<td class="px-space-md py-space-sm text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 text-secondary hover:bg-surface-container rounded transition-colors" onclick="document.getElementById('payslip-modal').classList.remove('hidden')" title="Inspect Detailed Payslip">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:bg-surface-container rounded transition-colors" title="Download Official Slip">
+<span class="material-symbols-outlined text-lg">download</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:bg-surface-container rounded transition-colors" title="Adjust Elements">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Dr. Alistair Finch -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="px-space-md py-space-sm">
+<input checked="" class="rounded" type="checkbox"/>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-sm">
+<img alt="Dr Alistair Finch Dean" class="w-9 h-9 rounded-full object-cover shrink-0" data-alt="Distinguished senior male academic dean in formal university attire with glasses in front of wood bookshelves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwY8Mi7_M-yWkhf3maVv3ySBfMXNrzj8qgaOWxrZ7V0VwEaamE-ZtnudCGc3gOGJwJ48NFA6gg2vHuyQsC_omAj6luYp-DaeJavyinjwA0Ct5hQsUGofG5X3XK7cWMW4Z2gW7_qH-GFaw4Y8YQp3Ds0Eyf847ehsOER-4mLU2p-OU0Hm_n2-3-YNbJgr6Me8PNBUN73PCufRkhPTAbDmp3MdbNnYk8bOQVNY-vz2Y"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-medium text-on-surface truncate">Dr. Alistair Finch</span>
+<span class="px-1 py-0.2 bg-secondary-fixed text-on-secondary-fixed text-[0.625rem] font-code-metric rounded uppercase">Dean</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">FAC-2015-0102 • Academic Affairs</span>
+</div>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="font-label-md text-label-md">Exec Level 16-D</div>
+<span class="text-body-sm text-on-surface-variant font-code-metric">Index 11.2</span>
+</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric font-medium">$14,000.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric text-on-surface-variant">+$4,500.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric font-semibold">$18,500.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric text-error font-medium">-$4,625.00</td>
+<td class="px-space-md py-space-sm text-right">
+<span class="font-code-metric text-body-lg font-bold text-secondary">$13,875.00</span>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex items-center gap-1.5 font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">account_balance</span>
+<span>Direct Deposit</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Wells Fargo •••• 9012</span>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Ready for Release
+              </span>
+</td>
+<td class="px-space-md py-space-sm text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 text-secondary hover:bg-surface-container rounded transition-colors" title="Inspect Detailed Payslip">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:bg-surface-container rounded transition-colors" title="Download Official Slip">
+<span class="material-symbols-outlined text-lg">download</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:bg-surface-container rounded transition-colors" title="Adjust Elements">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Prof. Marcus Vance -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="px-space-md py-space-sm">
+<input checked="" class="rounded" type="checkbox"/>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-sm">
+<img alt="Marcus Vance portrait" class="w-9 h-9 rounded-full object-cover shrink-0" data-alt="Portrait of an engineering professor wearing blazer with mechanical laboratory machinery softly blurred in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5df3Kps2_v3Tq_ElIlnAFwKFHJ0ZsIjYIpXQhHYIsyL2F4a2lPT5XLWkoEJMJEJc9BfsCzdVmw0pe0zhMgKoUeJXZY6Dk31m6DBdSemQddzAMpaMzJHw8tqx_S5brud3kqIqifBzwe9phUKw4vR8mhPbUO8CpuCZml5yNpi1TI11xdVbh5iyhPb56jD763Py_uqCGgXjws283POjoW7_5nu7rfrdrVFCdyCqjzTA"/>
+<div class="flex flex-col min-w-0">
+<span class="font-medium text-on-surface truncate">Prof. Marcus Vance</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">FAC-2017-0339 • Mech Eng Chair</span>
+</div>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="font-label-md text-label-md">Prof Level 14-B</div>
+<span class="text-body-sm text-on-surface-variant font-code-metric">Index 9.1</span>
+</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric font-medium">$11,800.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric text-on-surface-variant">+$3,100.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric font-semibold">$14,900.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric text-error font-medium">-$3,725.00</td>
+<td class="px-space-md py-space-sm text-right">
+<span class="font-code-metric text-body-lg font-bold text-secondary">$11,175.00</span>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex items-center gap-1.5 font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">account_balance</span>
+<span>Direct Deposit</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">BoA •••• 6632</span>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Ready for Release
+              </span>
+</td>
+<td class="px-space-md py-space-sm text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 text-secondary hover:bg-surface-container rounded transition-colors" title="Inspect Detailed Payslip">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:bg-surface-container rounded transition-colors" title="Download Official Slip">
+<span class="material-symbols-outlined text-lg">download</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:bg-surface-container rounded transition-colors" title="Adjust Elements">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Dr. Samantha Wei -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="px-space-md py-space-sm">
+<input checked="" class="rounded" type="checkbox"/>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed font-code-metric font-semibold flex items-center justify-center shrink-0">SW</div>
+<div class="flex flex-col min-w-0">
+<span class="font-medium text-on-surface truncate">Dr. Samantha Wei</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">FAC-2020-0582 • Assoc Prof AI</span>
+</div>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="font-label-md text-label-md">Assoc Prof 12-B</div>
+<span class="text-body-sm text-on-surface-variant font-code-metric">Index 7.8</span>
+</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric font-medium">$9,600.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric text-on-surface-variant">+$2,400.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric font-semibold">$12,000.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric text-error font-medium">-$3,000.00</td>
+<td class="px-space-md py-space-sm text-right">
+<span class="font-code-metric text-body-lg font-bold text-secondary">$9,000.00</span>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex items-center gap-1.5 font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">account_balance</span>
+<span>Direct Deposit</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Citibank •••• 1109</span>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Ready for Release
+              </span>
+</td>
+<td class="px-space-md py-space-sm text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 text-secondary hover:bg-surface-container rounded transition-colors" title="Inspect Detailed Payslip">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:bg-surface-container rounded transition-colors" title="Download Official Slip">
+<span class="material-symbols-outlined text-lg">download</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:bg-surface-container rounded transition-colors" title="Adjust Elements">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Marcus Reyes -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="px-space-md py-space-sm">
+<input checked="" class="rounded" type="checkbox"/>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container text-on-surface font-code-metric font-semibold flex items-center justify-center shrink-0">MR</div>
+<div class="flex flex-col min-w-0">
+<span class="font-medium text-on-surface truncate">Marcus Reyes</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">STF-2019-0114 • Lead HPC Engineer</span>
+</div>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="font-label-md text-label-md">Technical Grade T-4</div>
+<span class="text-body-sm text-on-surface-variant font-code-metric">Index 6.2</span>
+</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric font-medium">$7,500.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric text-on-surface-variant">+$1,800.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric font-semibold">$9,300.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric text-error font-medium">-$2,325.00</td>
+<td class="px-space-md py-space-sm text-right">
+<span class="font-code-metric text-body-lg font-bold text-secondary">$6,975.00</span>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex items-center gap-1.5 font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">account_balance</span>
+<span>Direct Deposit</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Chase •••• 7741</span>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Ready for Release
+              </span>
+</td>
+<td class="px-space-md py-space-sm text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 text-secondary hover:bg-surface-container rounded transition-colors" title="Inspect Detailed Payslip">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:bg-surface-container rounded transition-colors" title="Download Official Slip">
+<span class="material-symbols-outlined text-lg">download</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:bg-surface-container rounded transition-colors" title="Adjust Elements">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Sarah Jenkins -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="px-space-md py-space-sm">
+<input checked="" class="rounded" type="checkbox"/>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container text-on-surface font-code-metric font-semibold flex items-center justify-center shrink-0">SJ</div>
+<div class="flex flex-col min-w-0">
+<span class="font-medium text-on-surface truncate">Sarah Jenkins</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">STF-2016-0042 • Chief Sys Admin</span>
+</div>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="font-label-md text-label-md">Staff Admin Tier S-5</div>
+<span class="text-body-sm text-on-surface-variant font-code-metric">Index 6.8</span>
+</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric font-medium">$8,200.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric text-on-surface-variant">+$2,000.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric font-semibold">$10,200.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric text-error font-medium">-$2,550.00</td>
+<td class="px-space-md py-space-sm text-right">
+<span class="font-code-metric text-body-lg font-bold text-secondary">$7,650.00</span>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex items-center gap-1.5 font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">account_balance</span>
+<span>Direct Deposit</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">PNC •••• 3290</span>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Ready for Release
+              </span>
+</td>
+<td class="px-space-md py-space-sm text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 text-secondary hover:bg-surface-container rounded transition-colors" title="Inspect Detailed Payslip">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:bg-surface-container rounded transition-colors" title="Download Official Slip">
+<span class="material-symbols-outlined text-lg">download</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:bg-surface-container rounded transition-colors" title="Adjust Elements">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 7: Maya Patel -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="px-space-md py-space-sm">
+<input checked="" class="rounded" type="checkbox"/>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container text-on-surface font-code-metric font-semibold flex items-center justify-center shrink-0">MP</div>
+<div class="flex flex-col min-w-0">
+<span class="font-medium text-on-surface truncate">Maya Patel, M.S.</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">FAC-2022-0943 • CS Lecturer</span>
+</div>
+</div>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="font-label-md text-label-md">Lecturer Level 10-A</div>
+<span class="text-body-sm text-on-surface-variant font-code-metric">Index 4.9</span>
+</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric font-medium">$5,800.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric text-on-surface-variant">+$1,400.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric font-semibold">$7,200.00</td>
+<td class="px-space-sm py-space-sm text-right font-code-metric text-error font-medium">-$1,800.00</td>
+<td class="px-space-md py-space-sm text-right">
+<span class="font-code-metric text-body-lg font-bold text-secondary">$5,400.00</span>
+</td>
+<td class="px-space-sm py-space-sm">
+<div class="flex items-center gap-1.5 font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">account_balance</span>
+<span>Direct Deposit</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Capital One •••• 5518</span>
+</td>
+<td class="px-space-sm py-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Ready for Release
+              </span>
+</td>
+<td class="px-space-md py-space-sm text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 text-secondary hover:bg-surface-container rounded transition-colors" title="Inspect Detailed Payslip">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:bg-surface-container rounded transition-colors" title="Download Official Slip">
+<span class="material-symbols-outlined text-lg">download</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:bg-surface-container rounded transition-colors" title="Adjust Elements">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer Pagination & Batch Check -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-code-metric text-body-sm text-on-surface-variant">Selected 7 personnel • Total Net Scheduled: $65,250.00</span>
+<button class="text-secondary font-label-md text-label-md hover:underline">Select all 842 records</button>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2 py-1 bg-surface-container-lowest text-on-surface rounded font-label-sm text-label-sm hover:bg-surface-container transition-colors disabled:opacity-50" disabled="">Previous</button>
+<span class="px-2 py-1 font-code-metric text-label-sm text-on-surface">Page 1 of 121</span>
+<button class="px-2 py-1 bg-surface-container-lowest text-on-surface rounded font-label-sm text-label-sm hover:bg-surface-container transition-colors">Next</button>
+</div>
+</div>
+</div>
+<!-- Interactive Slide-out / Modal Inspector: Dr. Elena Rostova Payslip -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-xs p-4 hidden" id="payslip-modal">
+<div class="bg-surface-container-lowest w-full max-w-4xl max-h-[942px] overflow-y-auto rounded-xl shadow-xl flex flex-col p-space-lg relative">
+<!-- Modal Close Button -->
+<button class="absolute top-4 right-4 p-1 text-on-surface-variant hover:bg-surface-container-low rounded-lg transition-colors" onclick="document.getElementById('payslip-modal').classList.add('hidden')">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+<!-- Institutional Salary Statement Header -->
+<div class="flex flex-col pb-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 bg-secondary text-on-secondary rounded-lg flex items-center justify-center font-headline-sm text-headline-sm font-bold">
+              AIT
+            </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Apex Institute of Technology</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Office of Finance &amp; Collegiate Comptroller • AY 2024-25</span>
+</div>
+</div>
+<div class="text-right pr-8">
+<span class="font-code-metric text-label-sm text-secondary uppercase font-semibold">Official Payslip Statement</span>
+<div class="font-code-metric text-body-sm text-on-surface font-medium">Cycle: October 2024</div>
+</div>
+</div>
+<div class="mt-space-md p-space-sm bg-surface-container-low rounded-lg grid grid-cols-2 md:grid-cols-4 gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Faculty Name</span>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Dr. Elena Rostova</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">FAC-2018-0841</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Position &amp; Grade</span>
+<div class="font-label-md text-label-md text-on-surface">CS Chair &amp; Professor</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Pay Band Level 14-A</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Disbursement Bank</span>
+<div class="font-label-md text-label-md text-on-surface">JPMorgan Chase N.A.</div>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Routing: ••••4821</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">ACH Audit Token</span>
+<div class="font-code-metric text-label-sm font-medium text-secondary truncate">ACH-TRX-202410-8841-AIT</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Timestamp: 2024-10-31</span>
+</div>
+</div>
+</div>
+<!-- Granular Breakdown: Earnings vs Deductions Side-by-Side -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mt-space-sm">
+<!-- Earnings Column -->
+<div class="flex flex-col bg-surface-container-low/40 p-space-md rounded-xl">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface uppercase">Earnings Breakdown</span>
+<span class="font-code-metric text-label-sm text-secondary font-semibold">Gross Items</span>
+</div>
+<div class="flex flex-col divide-y divide-surface-container-low font-body-md text-body-md text-on-surface">
+<div class="flex items-center justify-between py-1.5">
+<span>Basic Academic Salary</span>
+<span class="font-code-metric font-medium">$10,000.00</span>
+</div>
+<div class="flex items-center justify-between py-1.5">
+<span>Academic Grade Pay (AGP Level 14)</span>
+<span class="font-code-metric font-medium">$2,500.00</span>
+</div>
+<div class="flex items-center justify-between py-1.5">
+<span>House Rent Allowance (HRA 20%)</span>
+<span class="font-code-metric font-medium">$2,000.00</span>
+</div>
+<div class="flex items-center justify-between py-1.5">
+<span>Department Chair (HOD) Stipend</span>
+<span class="font-code-metric font-medium">$1,000.00</span>
+</div>
+<div class="flex items-center justify-between py-1.5">
+<span>NSF AI Research Grant Stipend</span>
+<span class="font-code-metric font-medium">$800.00</span>
+</div>
+</div>
+<div class="mt-auto pt-space-sm flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Total Gross Earnings</span>
+<span class="font-code-metric text-body-lg font-bold text-on-surface">$16,300.00</span>
+</div>
+</div>
+<!-- Deductions Column -->
+<div class="flex flex-col bg-surface-container-low/40 p-space-md rounded-xl">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface uppercase">Statutory Deductions</span>
+<span class="font-code-metric text-label-sm text-error font-semibold">Taxes &amp; Benefits</span>
+</div>
+<div class="flex flex-col divide-y divide-surface-container-low font-body-md text-body-md text-on-surface">
+<div class="flex items-center justify-between py-1.5">
+<span>Federal Income Withholding (W-4)</span>
+<span class="font-code-metric font-medium text-error">-$2,100.00</span>
+</div>
+<div class="flex items-center justify-between py-1.5">
+<span>State Income Tax</span>
+<span class="font-code-metric font-medium text-error">-$680.00</span>
+</div>
+<div class="flex items-center justify-between py-1.5">
+<span>FICA / Social Security (6.2%)</span>
+<span class="font-code-metric font-medium text-error">-$450.00</span>
+</div>
+<div class="flex items-center justify-between py-1.5">
+<span>University Retirement 403(b) (8.0%)</span>
+<span class="font-code-metric font-medium text-error">-$525.00</span>
+</div>
+<div class="flex items-center justify-between py-1.5">
+<span>Faculty Comprehensive Health &amp; Dental</span>
+<span class="font-code-metric font-medium text-error">-$320.00</span>
+</div>
+</div>
+<div class="mt-auto pt-space-sm flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Total Deductions</span>
+<span class="font-code-metric text-body-lg font-bold text-error">-$4,075.00</span>
+</div>
+</div>
+</div>
+<!-- Net Payable Big Metric Card -->
+<div class="mt-space-md p-space-md bg-surface-container-low rounded-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Final Disbursed Net Salary</span>
+<span class="font-headline-lg text-headline-lg font-bold text-secondary">$12,225.00</span>
+<span class="font-code-metric text-label-sm text-on-surface-variant">Twelve Thousand Two Hundred Twenty-Five Dollars and 00/100</span>
+</div>
+<!-- Year-to-Date (YTD) Cumulative Grid -->
+<div class="flex items-center gap-space-md">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">YTD Gross Earnings</span>
+<span class="font-code-metric text-body-md font-semibold text-on-surface">$146,700.00</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">YTD Tax Escrow</span>
+<span class="font-code-metric text-body-md font-semibold text-error">$36,675.00</span>
+</div>
+</div>
+</div>
+<!-- Modal Action Cluster -->
+<div class="flex items-center justify-between mt-space-md pt-space-sm">
+<span class="font-code-metric text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">lock</span>
+          Cryptographically signed by Apex Comptroller Ledger
+        </span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 bg-surface-container text-on-surface hover:bg-surface-container-high rounded-lg font-label-md text-label-md transition-colors" onclick="document.getElementById('payslip-modal').classList.add('hidden')">
+            Close Inspector
+          </button>
+<button class="flex items-center gap-1.5 px-space-md py-1.5 bg-surface-container-lowest text-on-surface hover:bg-surface-container-low rounded-lg font-label-md text-label-md shadow-sm transition-colors">
+<span class="material-symbols-outlined text-base">forward_to_inbox</span>
+<span>Email Secure Copy</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-1.5 bg-secondary text-on-secondary hover:bg-secondary-container rounded-lg font-label-md text-label-md shadow-sm transition-colors">
+<span class="material-symbols-outlined text-base">picture_as_pdf</span>
+<span>Download Formatted PDF</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

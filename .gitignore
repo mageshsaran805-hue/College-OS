@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+build/
+
+# Environment files — everything except the documented template
+.env
+.env.*
+!.env.example
+
+# Uploaded files (the local storage driver's root)
+/storage/
+
+# Verification / audit artefacts
+audit-output/
+*.log
+
+# TypeScript incremental build info
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# Test / tooling output
+coverage/
+playwright-report/
+test-results/
+
+# Deployment
+.vercel/
+
+# Design screenshots are large; keep mockup source HTML in git, but
+# screenshots can be stored with Git LFS or outside version control.
+# design/mockups/**/screen.png
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

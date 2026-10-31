@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed": "#131b2e", "outline": "#76777d", "surface-tint": "#565e74", "on-primary-container": "#7c839b", "background": "#f8f9ff", "surface-container-high": "#dce9ff", "surface-container-highest": "#d3e4fe", "error": "#ba1a1a", "primary-container": "#131b2e", "on-tertiary-container": "#008cc7", "primary": "#000000", "on-primary-fixed-variant": "#3f465c", "inverse-primary": "#bec6e0", "on-tertiary-fixed-variant": "#004c6e", "inverse-on-surface": "#eaf1ff", "tertiary-fixed-dim": "#89ceff", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "outline-variant": "#c6c6cd", "surface-variant": "#d3e4fe", "on-secondary-container": "#fffbff", "primary-fixed-dim": "#bec6e0", "tertiary-fixed": "#c9e6ff", "tertiary": "#000000", "secondary-fixed": "#e2dfff", "on-surface-variant": "#45464d", "on-background": "#0b1c30", "on-surface": "#0b1c30", "on-secondary": "#ffffff", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "surface": "#f8f9ff", "primary-fixed": "#dae2fd", "tertiary-container": "#001e2f", "on-error-container": "#93000a", "surface-bright": "#f8f9ff", "on-secondary-fixed": "#0f0069", "on-primary": "#ffffff", "inverse-surface": "#213145", "on-tertiary-fixed": "#001e2f", "on-secondary-fixed-variant": "#3323cc", "surface-container": "#e5eeff", "secondary-fixed-dim": "#c3c0ff", "surface-container-low": "#eff4ff", "surface-dim": "#cbdbf5", "secondary": "#4b41e1", "secondary-container": "#645efb" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-lg": "1.25rem", "space-md": "0.75rem", "gutter": "1rem", "margin-desktop": "2rem", "margin": "1rem", "gutter-desktop": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-xl": "2rem" }, "fontFamily": { "body-lg": ["Geist"], "body-md": ["Geist"], "headline-lg": ["Geist"], "label-sm": ["Geist"], "headline-sm": ["Geist"], "code-metric": ["Geist"], "headline-xl": ["Geist"], "body-sm": ["Geist"], "headline-xl-mobile": ["Geist"], "label-md": ["Geist"] }, "fontSize": { "body-lg": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.011em", "fontWeight": "400" }], "body-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.006em", "fontWeight": "400" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "code-metric": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.02em", "fontWeight": "500" }], "headline-xl": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600" }], "body-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "400" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-md": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "-0.005em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary font-headline-sm text-headline-sm">A</div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-label-md text-on-surface truncate font-semibold">College OS</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Student Workspace</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">unfold_more</span></div><div class="px-space-md py-space-sm bg-surface-container-low"><div class="p-space-xs rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface truncate">B.Tech CSE · Sec 4</span></div><span class="font-code-metric text-code-metric text-on-surface-variant">v4.12</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Academic Operations</div><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="portal-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Portal Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="academics-and-courses" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-body-md text-body-md">Academics & Courses</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span class="font-body-md text-body-md">Attendance</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="examinations-and-results" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span><span class="font-body-md text-body-md">Examinations & Results</span></a></nav><div class="mt-space-md px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Campus Services</div><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fee-payments-and-dues" href="#"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span class="font-body-md text-body-md">Fee Payments & Dues</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="library-and-digital-resources" href="#"><span class="material-symbols-outlined text-[20px]">local_library</span><span class="font-body-md text-body-md">Library & Resources</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="communication-and-campus-life" href="#"><span class="material-symbols-outlined text-[20px]">forum</span><span class="font-body-md text-body-md">Communication & Life</span></a></nav><div class="mt-space-md px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Account & Access</div><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="student-profile-and-security" href="#"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span class="font-body-md text-body-md">Profile & Security</span></a></nav></div><div class="p-space-sm bg-surface-container"><div class="flex items-center gap-space-sm px-space-sm py-space-xs bg-surface-container-lowest rounded-lg"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-label-md text-on-surface truncate font-semibold">Elena Rostova</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">#2024-CSE-042</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">verified</span></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container"><span class="material-symbols-outlined text-secondary text-[20px]">school</span><span class="font-label-md text-label-md font-semibold text-on-surface">Apex Institute of Technology</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></div><div class="h-4 w-[1px] bg-outline-variant"></div><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px]">calendar_today</span><span class="font-body-sm text-body-sm text-on-surface-variant">AY 2024–2025 · Sem 1 Fall</span></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-sm px-space-sm py-space-xs bg-surface-container-low hover:bg-surface-container rounded-lg text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[18px]">search</span><span class="font-body-sm text-body-sm">Quick Find</span><kbd class="px-space-xs bg-surface-container-lowest font-code-metric text-code-metric text-on-surface-variant rounded shadow-[0_1px_8px_rgba(0,0,0,0.04)]">⌘K</kbd></button><div class="relative"><button class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button></div><div class="h-4 w-[1px] bg-outline-variant"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-md text-label-md font-semibold text-on-surface">Elena Rostova</span><span class="font-label-sm text-label-sm text-on-surface-variant">B.Tech CSE</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full pt-16 bg-surface px-gutter-desktop py-space-lg"><div class="flex flex-col w-full space-y-space-lg pb-space-xl">
+<!-- Top Command & Status Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span>Student Portal</span>
+<span class="text-outline-variant">/</span>
+<span class="text-secondary font-semibold">Library & Services</span>
+</div>
+<div class="flex items-center gap-space-md flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Library & Digital Resource Center</h1>
+<div class="flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container font-code-metric text-code-metric text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>RFID #LIB-9842 • ACTIVE</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Central Tech Library • S.R. Rangathan Memorial Block, Level 2</p>
+</div>
+<!-- Quick Stat + Universal Search -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm">
+<div class="flex items-center gap-space-sm px-space-md py-space-xs rounded-lg bg-surface-container-low shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Quota Tier</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">4 <span class="text-on-surface-variant text-body-sm">/ 6 Books</span></span>
+</div>
+<div class="w-12 h-12 flex items-center justify-center">
+<svg class="w-10 h-10 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="66.6, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+</div>
+</div>
+<div class="relative flex-1 sm:w-64">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full h-10 pl-9 pr-space-md rounded-lg bg-surface-container font-body-sm text-body-sm text-on-surface placeholder-on-surface-variant focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="lib-catalog-query" placeholder="OPAC Title, ISBN, Barcode..." type="text"/>
+</div>
+</div>
+</div>
+<!-- Metric Badges Mosaic -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Currently Issued</span>
+<div class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight">04 <span class="text-body-sm font-normal text-on-surface-variant">Titles</span></div>
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>Max 6 per UG Scholar</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">collections_bookmark</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-full bg-error/10 pointer-events-none"></div>
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm text-error uppercase tracking-wider font-semibold">Action Required</span>
+<div class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight">01 <span class="text-body-sm font-normal text-on-surface-variant">Book</span></div>
+<div class="flex items-center gap-space-xs text-error font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">timer</span>
+<span>Due within 48 Hours</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-lg bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">priority_high</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Hold Queue</span>
+<div class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight">02 <span class="text-body-sm font-normal text-on-surface-variant">Requests</span></div>
+<div class="flex items-center gap-space-xs text-on-tertiary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>1 Ready for pickup</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">book_online</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Circulation Dues</span>
+<div class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight">₹0.00</div>
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>No Due Certificate Clear</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">check_circle</span>
+</div>
+</div>
+</div>
+<!-- Main Grid: Issued Books + Immediate Stack -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Issued Books Table Shelf (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col space-y-space-md">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">auto_stories</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Currently Issued Physical Copies</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">4 volumes tracked under Elena Rostova (#2024-CSE-042)</p>
+</div>
+</div>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-secondary font-label-md text-label-md flex items-center gap-space-xs shadow-sm transition-all" onclick="renewAllLoans()">
+<span class="material-symbols-outlined text-[18px]">update</span>
+<span>Batch Renew (Eligible)</span>
+</button>
+</div>
+<!-- Books List -->
+<div class="space-y-space-sm">
+<!-- Item 1: High Priority Due -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md shadow-sm transition-transform hover:-translate-y-0.5">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-12 h-16 rounded bg-primary-container text-on-primary flex flex-col items-center justify-center flex-shrink-0 shadow-sm">
+<span class="font-label-sm text-label-sm font-semibold">DDIA</span>
+<span class="material-symbols-outlined text-[18px] text-surface-tint">storage</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-space-xs py-0.5 rounded bg-error-container text-error font-label-sm text-label-sm font-semibold">Due in 36 Hours</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">ACC-CSE-2023-8821</span>
+</div>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface truncate">Designing Data-Intensive Applications</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Martin Kleppmann • O'Reilly Media (1st Ed.)</p>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm mt-1">
+<span>Issued: 04 Dec 2024</span>
+<span class="text-error font-semibold">Due: 18 Dec 2024</span>
+<span>Renewals: 1 / 2 used</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto justify-end">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center gap-space-xs shadow-sm" onclick="openViewerModal('Designing Data-Intensive Applications')">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>e-Reader</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container font-label-md text-label-md flex items-center gap-space-xs shadow-sm" onclick="renewSingle('DDIA')">
+<span class="material-symbols-outlined text-[16px]">autorenew</span>
+<span>Renew (+14d)</span>
+</button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md shadow-sm transition-transform hover:-translate-y-0.5">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-12 h-16 rounded bg-primary text-on-primary flex flex-col items-center justify-center flex-shrink-0 shadow-sm">
+<span class="font-label-sm text-label-sm font-semibold">CLRS</span>
+<span class="material-symbols-outlined text-[18px] text-surface-tint">account_tree</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-secondary font-semibold">Regular Term</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">ACC-CSE-2022-0941</span>
+</div>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface truncate">Introduction to Algorithms (4th Edition)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cormen, Leiserson, Rivest, Stein • MIT Press</p>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm mt-1">
+<span>Issued: 28 Nov 2024</span>
+<span>Due: 26 Dec 2024</span>
+<span>Renewals: 0 / 2 used</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto justify-end">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center gap-space-xs shadow-sm" onclick="openViewerModal('Introduction to Algorithms')">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>e-Reader</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md flex items-center gap-space-xs shadow-sm" onclick="renewSingle('CLRS')">
+<span class="material-symbols-outlined text-[16px]">autorenew</span>
+<span>Renew</span>
+</button>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md shadow-sm transition-transform hover:-translate-y-0.5">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-12 h-16 rounded bg-surface-container-highest text-on-surface flex flex-col items-center justify-center flex-shrink-0 shadow-sm">
+<span class="font-label-sm text-label-sm font-semibold">CN</span>
+<span class="material-symbols-outlined text-[18px]">hub</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-secondary font-semibold">Regular Term</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">ACC-CSE-2024-1180</span>
+</div>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface truncate">Computer Networks: A Systems Approach</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Larry L. Peterson, Bruce S. Davie • Morgan Kaufmann</p>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm mt-1">
+<span>Issued: 02 Dec 2024</span>
+<span>Due: 30 Dec 2024</span>
+<span>Renewals: 0 / 2 used</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto justify-end">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center gap-space-xs shadow-sm" onclick="openViewerModal('Computer Networks')">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>e-Reader</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md flex items-center gap-space-xs shadow-sm" onclick="renewSingle('Peterson')">
+<span class="material-symbols-outlined text-[16px]">autorenew</span>
+<span>Renew</span>
+</button>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md shadow-sm transition-transform hover:-translate-y-0.5">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-12 h-16 rounded bg-surface-container-highest text-on-surface flex flex-col items-center justify-center flex-shrink-0 shadow-sm">
+<span class="font-label-sm text-label-sm font-semibold">DM</span>
+<span class="material-symbols-outlined text-[18px]">functions</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-secondary font-semibold">Regular Term</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">ACC-MAT-2021-4190</span>
+</div>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface truncate">Discrete Mathematics and Its Applications</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kenneth H. Rosen • McGraw-Hill Education</p>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm mt-1">
+<span>Issued: 10 Nov 2024</span>
+<span>Due: 05 Jan 2025</span>
+<span>Renewals: 1 / 2 used</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto justify-end">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center gap-space-xs shadow-sm" onclick="openViewerModal('Discrete Mathematics')">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>e-Reader</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md flex items-center gap-space-xs shadow-sm" onclick="renewSingle('Rosen')">
+<span class="material-symbols-outlined text-[16px]">autorenew</span>
+<span>Renew</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- College Book Catalogue & OPAC Browser -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Campus OPAC Catalog & Stacks</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live stack locator across Central Library & Dept. Reading Rooms</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Available Only</span>
+<button class="w-10 h-6 bg-secondary rounded-full p-1 transition-colors relative flex items-center" id="stockToggle" onclick="toggleStockOnly()">
+<span class="w-4 h-4 rounded-full bg-surface-container-lowest transform translate-x-4 transition-transform" id="stockKnob"></span>
+</button>
+</div>
+</div>
+<!-- Filter Pill Bar -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1">
+<button class="category-pill px-space-md py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm whitespace-nowrap shadow-sm" onclick="filterCategory('all', this)">All Stacks (14,280)</button>
+<button class="category-pill px-space-md py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm whitespace-nowrap shadow-sm" onclick="filterCategory('cs', this)">Computer Science (4,120)</button>
+<button class="category-pill px-space-md py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm whitespace-nowrap shadow-sm" onclick="filterCategory('math', this)">Mathematics & AI (2,840)</button>
+<button class="category-pill px-space-md py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm whitespace-nowrap shadow-sm" onclick="filterCategory('ee', this)">Electrical & VLSI (3,110)</button>
+<button class="category-pill px-space-md py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm whitespace-nowrap shadow-sm" onclick="filterCategory('hum', this)">Management & Humanities (1,210)</button>
+</div>
+<!-- Catalogue Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<!-- Catalog Item 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between space-y-space-sm">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric text-secondary font-semibold">QA76.76.C69 A48</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-tertiary-container font-label-sm text-label-sm font-semibold">Rack CSE-04-A</span>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-on-surface">Compilers: Principles, Techniques, & Tools</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Alfred V. Aho, Monica S. Lam, Ravi Sethi • Pearson</p>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span class="text-on-tertiary-container font-semibold">3 of 8 copies in shelf</span>
+<span>•</span>
+<span>8th Sem Core</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Immediate Loan Eligible</span>
+<button class="px-space-sm py-1 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container shadow-sm" onclick="openHoldModal('Compilers: Principles, Techniques, & Tools', 'Alfred V. Aho', 'QA76.76.C69')">
+                Reserve Volume
+              </button>
+</div>
+</div>
+<!-- Catalog Item 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between space-y-space-sm">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric text-secondary font-semibold">QA76.9.D3 S58</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-tertiary-container font-label-sm text-label-sm font-semibold">Rack CSE-02-C</span>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-on-surface">Database System Concepts (7th Ed.)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Abraham Silberschatz, Henry F. Korth • McGraw-Hill</p>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span class="text-on-tertiary-container font-semibold">5 of 12 copies in shelf</span>
+<span>•</span>
+<span>Lab Reference</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Immediate Loan Eligible</span>
+<button class="px-space-sm py-1 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container shadow-sm" onclick="openHoldModal('Database System Concepts', 'Silberschatz, Korth', 'QA76.9.D3')">
+                Reserve Volume
+              </button>
+</div>
+</div>
+<!-- Catalog Item 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between space-y-space-sm">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric text-secondary font-semibold">TK5105.8885.W43</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-outline font-label-sm text-label-sm">High Demand</span>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-on-surface">Deep Learning (Adaptive Computation Series)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ian Goodfellow, Yoshua Bengio, Aaron Courville • MIT</p>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span class="text-error font-semibold">0 of 4 copies available</span>
+<span>•</span>
+<span>Waitlist: 3 Scholars</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Est. Return: 22 Dec</span>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-surface-variant shadow-sm" onclick="openHoldModal('Deep Learning', 'Goodfellow, Bengio', 'TK5105.8885')">
+                Join Queue (#4)
+              </button>
+</div>
+</div>
+<!-- Catalog Item 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between space-y-space-sm">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric text-secondary font-semibold">QA76.64 .B67</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-tertiary-container font-label-sm text-label-sm font-semibold">Rack CSE-01-B</span>
+</div>
+<h4 class="font-body-md text-body-md font-semibold text-on-surface">Clean Architecture: A Craftsman's Guide</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Robert C. Martin ('Uncle Bob') • Prentice Hall</p>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span class="text-on-tertiary-container font-semibold">2 of 6 copies in shelf</span>
+<span>•</span>
+<span>Recommended Elective</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Immediate Loan Eligible</span>
+<button class="px-space-sm py-1 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container shadow-sm" onclick="openHoldModal('Clean Architecture', 'Robert C. Martin', 'QA76.64')">
+                Reserve Volume
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Institutional Vault & Queue Inspector (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col space-y-space-md">
+<!-- Digital Academic Repository Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">public</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Institutional E-Vault</h3>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-secondary font-code-metric text-code-metric">IP AUTH: ON</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct federated proxy SSO via NKN (National Knowledge Network) subnet.</p>
+<!-- Gateway links -->
+<div class="space-y-space-xs">
+<a class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors group" href="#">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-primary-container text-on-primary flex items-center justify-center font-semibold font-label-sm text-label-sm">
+                IEEE
+              </div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface group-hover:text-secondary transition-colors">IEEE Xplore Digital</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tier-1 Unlimited Full Text</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">launch</span>
+</a>
+<a class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors group" href="#">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-variant text-on-surface flex items-center justify-center font-semibold font-label-sm text-label-sm">
+                ACM
+              </div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface group-hover:text-secondary transition-colors">ACM Digital Library</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Conference Proceedings & SIGs</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">launch</span>
+</a>
+<a class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors group" href="#">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container-high text-secondary flex items-center justify-center font-semibold font-label-sm text-label-sm">
+                SPR
+              </div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface group-hover:text-secondary transition-colors">SpringerLink Nature</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">LNCS Lecture Notes & Journals</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">launch</span>
+</a>
+</div>
+<!-- PYQ & Faculty Notes Section -->
+<div class="pt-space-xs space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Semester PYQs & Bundles</span>
+<span class="font-label-sm text-label-sm text-secondary cursor-pointer hover:underline">View All (64)</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">description</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">CSE-402: Operating Systems PYQ (2019-2023)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PDF • 14.8 MB • Solved Papers</span>
+</div>
+</div>
+<button class="p-1 rounded bg-surface-container-lowest hover:bg-surface-container-high text-secondary">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">folder_zip</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">CSE-404: Algorithms Mid-Term Notes Pack</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ZIP • 32.1 MB • Prof. A. Banerjee</span>
+</div>
+</div>
+<button class="p-1 rounded bg-surface-container-lowest hover:bg-surface-container-high text-secondary">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Live Hold Counter & Desk Pickups -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">inbox</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Active Hold Shelf & Desk</h3>
+</div>
+<div class="space-y-space-sm">
+<!-- Ready Item -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">READY AT DESK</span>
+<span class="font-code-metric text-code-metric text-error font-semibold">Hold expires in 18h</span>
+</div>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Modern Operating Systems (Tanenbaum)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pickup Location: <strong>Counter #2 (Reservation Shelf B)</strong></p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Present RFID #LIB-9842</span>
+<button class="font-label-sm text-label-sm text-error hover:underline" onclick="cancelHold('Tanenbaum')">Release Hold</button>
+</div>
+</div>
+<!-- In transit hold -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col space-y-space-xs opacity-90">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-outline font-label-sm text-label-sm font-semibold">IN TRANSIT</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">Pos #1 in Line</span>
+</div>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Computer Architecture: A Quantitative Approach</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">From Dept. Library to Central Stack Desk</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Requested: 11 Dec</span>
+<button class="font-label-sm text-label-sm text-outline hover:underline" onclick="cancelHold('Hennessy')">Cancel</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Zero-Fine Clearance Pass & Policy Notice -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Academic Clearance Pass</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm">VALID</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Zero outstanding dues. Next audit check on 15 Jan 2025.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Historical Circulation & Fine Audit Ledger -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">history</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Recent Returns & Audit Ledger</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Immutable borrowing record compliant with AICTE & Institute Library Bylaws</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-space-xs shadow-sm">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Export Clearance Statement</span>
+</button>
+</div>
+</div>
+<!-- Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<tr>
+<th class="px-space-md py-space-sm rounded-l-lg">Accession ID</th>
+<th class="px-space-md py-space-sm">Volume / Title</th>
+<th class="px-space-md py-space-sm">Author(s)</th>
+<th class="px-space-md py-space-sm">Issued Date</th>
+<th class="px-space-md py-space-sm">Returned Date</th>
+<th class="px-space-md py-space-sm">Status & Fine</th>
+<th class="px-space-md py-space-sm rounded-r-lg text-right">Circulation Slip</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md py-space-sm font-code-metric text-code-metric text-on-surface-variant">ACC-CSE-2023-1092</td>
+<td class="px-space-md py-space-sm font-semibold text-on-surface">Artificial Intelligence: A Modern Approach</td>
+<td class="px-space-md py-space-sm text-on-surface-variant">Stuart Russell, Peter Norvig</td>
+<td class="px-space-md py-space-sm text-on-surface-variant">12 Oct 2024</td>
+<td class="px-space-md py-space-sm text-on-surface-variant">25 Oct 2024</td>
+<td class="px-space-md py-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">Returned • ₹0 Due</span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<button class="font-label-sm text-label-sm text-secondary hover:underline">Slip #RT-8921</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md py-space-sm font-code-metric text-code-metric text-on-surface-variant">ACC-MAT-2022-8711</td>
+<td class="px-space-md py-space-sm font-semibold text-on-surface">Linear Algebra and Its Applications</td>
+<td class="px-space-md py-space-sm text-on-surface-variant">Gilbert Strang</td>
+<td class="px-space-md py-space-sm text-on-surface-variant">05 Sep 2024</td>
+<td class="px-space-md py-space-sm text-on-surface-variant">22 Sep 2024</td>
+<td class="px-space-md py-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">Returned • ₹0 Due</span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<button class="font-label-sm text-label-sm text-secondary hover:underline">Slip #RT-7734</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md py-space-sm font-code-metric text-code-metric text-on-surface-variant">ACC-CSE-2021-3490</td>
+<td class="px-space-md py-space-sm font-semibold text-on-surface">Operating System Concepts (10th Ed.)</td>
+<td class="px-space-md py-space-sm text-on-surface-variant">Silberschatz, Galvin, Gagne</td>
+<td class="px-space-md py-space-sm text-on-surface-variant">14 Aug 2024</td>
+<td class="px-space-md py-space-sm text-on-surface-variant">29 Aug 2024</td>
+<td class="px-space-md py-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">Returned • ₹0 Due</span>
+</td>
+<td class="px-space-md py-space-sm text-right">
+<button class="font-label-sm text-label-sm text-secondary hover:underline">Slip #RT-6510</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Reservation Modal Backdrop -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 flex items-center justify-center p-gutter hidden" id="reservationModal">
+<div class="bg-surface-container-lowest max-w-lg w-full rounded-xl shadow-xl p-space-lg space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">bookmark_add</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Confirm Hold Reservation</h3>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant" onclick="closeHoldModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Selected Catalogue Item</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold" id="modalBookTitle">Book Title</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant" id="modalBookAuthor">Author Name</div>
+<div class="flex items-center gap-space-sm pt-2 text-on-surface-variant font-code-metric text-code-metric">
+<span id="modalBookCall">Call Number</span>
+<span>•</span>
+<span>Hold Shelf: 48h Retention</span>
+</div>
+</div>
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-semibold">Pickup Desk Location</label>
+<select class="w-full h-10 px-space-md rounded-lg bg-surface-container font-body-sm text-body-sm text-on-surface focus:outline-none">
+<option>Central Library - Main Circulation Desk (Level 1)</option>
+<option>CSE Departmental Reading Room (Block B - Level 3)</option>
+<option>24/7 Digital Hub Self-Service Kiosk</option>
+</select>
+</div>
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-semibold">Notification Channel</label>
+<div class="flex items-center gap-space-md">
+<label class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface cursor-pointer">
+<input checked="" class="rounded accent-secondary" type="checkbox"/>
+<span>Campus Email (elena.r@apex.edu)</span>
+</label>
+<label class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface cursor-pointer">
+<input checked="" class="rounded accent-secondary" type="checkbox"/>
+<span>SMS Alerts</span>
+</label>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md shadow-sm" onclick="closeHoldModal()">
+          Cancel
+        </button>
+<button class="px-space-md py-2 rounded-lg bg-secondary hover:bg-secondary-container text-on-secondary font-label-md text-label-md shadow-sm flex items-center gap-space-xs" onclick="submitHold()">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Confirm Hold Request</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Container -->
+<div class="fixed bottom-6 right-6 z-50 bg-primary-container text-on-primary px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-space-sm transition-all duration-300 opacity-0 pointer-events-none translate-y-4" id="toastNotification">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span class="font-body-sm text-body-sm font-semibold" id="toastMsg">Notification message</span>
+</div>
+</div>
+<script>
+  function showToast(message) {
+    const toast = document.getElementById('toastNotification');
+    const msg = document.getElementById('toastMsg');
+    msg.innerText = message;
+    toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+    toast.classList.add('opacity-100', 'translate-y-0');
+    setTimeout(() => {
+      toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+      toast.classList.remove('opacity-100', 'translate-y-0');
+    }, 3200);
+  }
+
+  function renewSingle(bookRef) {
+    showToast('Loan renewed successfully (+14 days added to ' + bookRef + ')');
+  }
+
+  function renewAllLoans() {
+    showToast('Renewed all eligible active book loans for Elena Rostova');
+  }
+
+  function openViewerModal(title) {
+    showToast('Opening Institutional e-Reader sandbox for: ' + title);
+  }
+
+  function cancelHold(title) {
+    showToast('Hold reservation released for: ' + title);
+  }
+
+  let inStockOnly = true;
+  function toggleStockOnly() {
+    inStockOnly = !inStockOnly;
+    const btn = document.getElementById('stockToggle');
+    const knob = document.getElementById('stockKnob');
+    if (inStockOnly) {
+      btn.classList.add('bg-secondary');
+      btn.classList.remove('bg-surface-container-highest');
+      knob.classList.add('translate-x-4');
+      knob.classList.remove('translate-x-0');
+      showToast('Filtering: In Stock Physical Copies Only');
+    } else {
+      btn.classList.remove('bg-secondary');
+      btn.classList.add('bg-surface-container-highest');
+      knob.classList.remove('translate-x-4');
+      knob.classList.add('translate-x-0');
+      showToast('Displaying full stack catalogue including issued books');
+    }
+  }
+
+  function filterCategory(cat, btn) {
+    document.querySelectorAll('.category-pill').forEach(el => {
+      el.classList.remove('bg-primary', 'text-on-primary');
+      el.classList.add('bg-surface-container', 'text-on-surface');
+    });
+    btn.classList.remove('bg-surface-container', 'text-on-surface');
+    btn.classList.add('bg-primary', 'text-on-primary');
+    showToast('Filtered catalogue view to category: ' + cat.toUpperCase());
+  }
+
+  function openHoldModal(title, author, callNo) {
+    document.getElementById('modalBookTitle').innerText = title;
+    document.getElementById('modalBookAuthor').innerText = author;
+    document.getElementById('modalBookCall').innerText = callNo;
+    document.getElementById('reservationModal').classList.remove('hidden');
+  }
+
+  function closeHoldModal() {
+    document.getElementById('reservationModal').classList.add('hidden');
+  }
+
+  function submitHold() {
+    closeHoldModal();
+    showToast('Hold request placed. You will receive an SMS when ready at desk.');
+  }
+</script></main><footer class="w-full bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] py-space-md px-gutter-desktop"><div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface font-semibold">System Operational</span><span class="font-code-metric text-code-metric text-on-surface-variant">(98.4% uptime)</span></div><span class="text-outline-variant">·</span><span class="font-body-sm text-body-sm text-on-surface-variant">Node ID: <code class="font-code-metric text-code-metric text-on-surface">cluster-us-east-apex-09</code></span></div><div class="flex items-center gap-space-md"><span class="font-body-sm text-body-sm text-on-surface-variant">FERPA & DPDP Compliant Data Vault</span><span class="text-outline-variant">·</span><span class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Apex Institute of Technology. All rights reserved.</span></div></div></footer></div></body></html>

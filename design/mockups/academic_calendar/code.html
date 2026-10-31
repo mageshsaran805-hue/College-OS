@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-container":"#001e2f","primary-fixed-dim":"#bec6e0","error":"#ba1a1a","secondary-fixed-dim":"#c3c0ff","on-error-container":"#93000a","background":"#f8f9ff","on-primary-fixed":"#131b2e","on-primary-fixed-variant":"#3f465c","primary":"#000000","outline-variant":"#c6c6cd","on-tertiary":"#ffffff","outline":"#76777d","surface-dim":"#cbdbf5","on-error":"#ffffff","on-secondary-fixed-variant":"#3323cc","on-tertiary-container":"#008cc7","surface-container-lowest":"#ffffff","surface":"#f8f9ff","surface-container-high":"#dce9ff","primary-fixed":"#dae2fd","on-tertiary-fixed":"#001e2f","inverse-on-surface":"#eaf1ff","on-secondary-container":"#fffbff","primary-container":"#131b2e","on-background":"#0b1c30","on-surface":"#0b1c30","surface-container-highest":"#d3e4fe","on-surface-variant":"#45464d","secondary-fixed":"#e2dfff","inverse-surface":"#213145","surface-bright":"#f8f9ff","surface-container-low":"#eff4ff","on-primary-container":"#7c839b","surface-variant":"#d3e4fe","tertiary-fixed-dim":"#89ceff","on-secondary":"#ffffff","surface-container":"#e5eeff","error-container":"#ffdad6","inverse-primary":"#bec6e0","on-secondary-fixed":"#0f0069","tertiary":"#000000","surface-tint":"#565e74","tertiary-fixed":"#c9e6ff","secondary":"#4b41e1","on-primary":"#ffffff","on-tertiary-fixed-variant":"#004c6e","secondary-container":"#645efb"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-md":"0.75rem","margin-desktop":"2rem","gutter":"1rem","space-lg":"1.25rem","margin":"1rem","space-xs":"0.25rem","gutter-desktop":"1.5rem","space-xl":"2rem","space-sm":"0.5rem"},fontFamily:{"headline-xl":["Geist"],"body-md":["Geist"],"body-sm":["Geist"],"code-metric":["Geist"],"body-lg":["Geist"],"label-sm":["Geist"],"headline-sm":["Geist"],"headline-xl-mobile":["Geist"],"label-md":["Geist"],"headline-lg":["Geist"]},fontSize:{"headline-xl":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.025em",fontWeight:"600"}],"body-md":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"-0.006em",fontWeight:"400"}],"body-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0em",fontWeight:"400"}],"code-metric":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"-0.02em",fontWeight:"500"}],"body-lg":["1rem",{lineHeight:"1.5rem",letterSpacing:"-0.011em",fontWeight:"400"}],"label-sm":["0.6875rem",{lineHeight:"0.875rem",letterSpacing:"0.04em",fontWeight:"600"}],"headline-sm":["1.125rem",{lineHeight:"1.5rem",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-xl-mobile":["1.75rem",{lineHeight:"2.25rem",letterSpacing:"-0.02em",fontWeight:"600"}],"label-md":["0.8125rem",{lineHeight:"1.125rem",letterSpacing:"-0.005em",fontWeight:"500"}],"headline-lg":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.02em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-hidden"><div class="flex flex-col flex-1 min-h-0"><div class="p-space-md pb-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs"><div class="flex items-center gap-space-sm"><img alt="College OS Brandmark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WvnlED1hU_M01PSO-1qyRpzBvkV84x7ViBFZQB5yKW-NwD75asiUHXNbwETf5DS5Bsd7AnUF3ffGaf9yE-s8GCUeHYzBYdzY57Wfz3A35MjIli7B6CqiIKcHCHGmw9klEmRNePyPGpmJ_1lOslWIlgP1VavS2gkS_MiNFOEh-YJJueoXdPJp9f3AXDyl246ophiOE8yuWLyGMNCp9gpgTnmT63nGfey8QLD6T4fNw"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">College OS</span></div><span class="px-space-xs py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase rounded">Enterprise</span></div><div class="mt-space-sm p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between cursor-pointer hover:bg-surface-container transition-colors"><div class="flex flex-col truncate"><span class="font-label-md text-label-md text-on-surface truncate font-medium">Apex Institute of Technology</span><div class="flex items-center gap-space-xs mt-0.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-code-metric text-label-sm text-on-surface-variant">#US-CAMPUS-01 • AY 2024-25</span></div></div><span class="material-symbols-outlined text-on-surface-variant text-base">unfold_more</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-xs"><div class="px-space-xs py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Institutional Modules</div><div class="flex flex-col gap-0.5"><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a></nav><div class="flex flex-col gap-0.5"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md cursor-pointer"><div class="flex items-center gap-space-xs"><span class="font-medium">Academics</span><span class="px-1.5 py-0.5 bg-surface-container-high text-secondary font-code-metric text-label-sm rounded-full">48</span></div><span class="material-symbols-outlined text-base text-secondary">expand_more</span></div><div class="ml-space-sm pl-space-xs border-l border-surface-container-high flex flex-col gap-0.5 mt-0.5"><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="academic-overview" href="#">Academic Overview</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="courses" href="#">Courses</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="subjects" href="#">Subjects</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="curriculum" href="#">Curriculum</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="timetable" href="#">Timetable</a><a aria-current="page" class="px-space-sm py-1 transition-colors bg-surface-container text-secondary font-medium rounded-lg" data-path="academic-calendar" href="#">Academic Calendar</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="course-registration" href="#">Course Registration</a></nav></div></div><div class="flex flex-col gap-0.5"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors cursor-pointer"><div class="flex items-center gap-space-xs"><span class="font-label-md text-label-md">Students</span><span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-code-metric text-label-sm rounded-full">14,820</span></div><span class="material-symbols-outlined text-base text-on-surface-variant">expand_more</span></div><div class="ml-space-sm pl-space-xs border-l border-surface-container-high flex flex-col gap-0.5 mt-0.5"><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-overview" href="#">Student Overview</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-directory" href="#">Student Directory</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="admissions" href="#">Admissions</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="enrollment" href="#">Enrollment</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="id-cards" href="#">ID Cards</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-documents" href="#">Student Documents</a></nav></div></div><div class="flex flex-col gap-0.5 mt-0.5"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors cursor-pointer"><div class="flex items-center gap-space-xs"><span class="font-medium font-label-md text-label-md">Faculty &amp; Staff</span><span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-code-metric text-label-sm rounded-full">842</span></div><span class="material-symbols-outlined text-base text-on-surface-variant">expand_more</span></div><div class="ml-space-sm pl-space-xs border-l border-surface-container-high flex flex-col gap-0.5 mt-0.5"><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="faculty-directory" href="#">Faculty Directory</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="staff-directory" href="#">Staff Directory</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="faculty-profile" href="#">Faculty Profile</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="workload-management" href="#">Workload Management</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="leave-management" href="#">Leave Management</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="payroll" href="#">Payroll</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="performance-management" href="#">Performance Management</a></nav></div></div><nav class="flex flex-col gap-0.5 mt-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" data-path="finance" href="#">Finance</a><span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-code-metric text-label-sm rounded-full">$2.4M</span></div><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="campus-management" href="#">Campus Management</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-life" href="#">Student Life</a><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" data-path="placements" href="#">Placements</a><span class="px-1.5 py-0.5 bg-secondary-fixed text-on-secondary-fixed font-code-metric text-label-sm rounded-full">Live</span></div><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="communication" href="#">Communication</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports-and-analytics" href="#">Reports &amp; Analytics</a></nav></div><div class="mt-space-md px-space-xs py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">System Governance</div><div class="flex flex-col gap-0.5"><div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md"><span class="font-medium">Administration</span><span class="material-symbols-outlined text-base text-on-surface-variant">expand_more</span></div><div class="ml-space-sm pl-space-xs border-l border-surface-container-high flex flex-col gap-0.5 mt-0.5"><div class="px-space-xs py-0.5 font-label-sm text-label-sm text-on-surface-variant">College Setup</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="college-profile" href="#">College Profile</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="campuses-and-facilities" href="#">Campuses &amp; Facilities</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="departments" href="#">Departments</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="academic-years-and-terms" href="#">Academic Years &amp; Terms</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="degree-programs" href="#">Degree Programs</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="courses-and-subjects" href="#">Courses &amp; Subjects</a></nav></div><nav class="flex flex-col gap-0.5 mt-1" data-active-classes="bg-surface-container text-secondary font-medium rounded-lg"><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#">Settings</a></nav></div></div></div><div class="p-space-sm bg-surface-container-low mx-space-sm mb-space-sm rounded-xl"><div class="flex items-center justify-between mb-1.5"><span class="font-label-sm text-label-sm text-on-surface font-medium">Enterprise Tier</span><span class="font-code-metric text-label-sm text-secondary font-medium">98.4% uptime</span></div><div class="w-full bg-surface-container rounded-full h-1 overflow-hidden"><div class="bg-secondary h-1 rounded-full w-[98.4%]"></div></div><a class="mt-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors pt-space-xs" href="#"><span>Institutional Support</span><span class="material-symbols-outlined text-sm">open_in_new</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-lg pointer-events-none">search</span><input class="w-72 h-9 pl-9 pr-14 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-secondary transition-all" placeholder="Search students, faculty, staff, courses..." type="text"/><div class="absolute right-2.5 flex items-center pointer-events-none"><kbd class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-code-metric text-label-sm rounded">⌘K</kbd></div></div><nav class="hidden lg:flex items-center gap-space-xs ml-space-sm" data-active-classes="bg-surface-container-high text-on-surface font-semibold"><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="overview" href="#">Console</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="academic-overview" href="#">Curriculum</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="reports-and-analytics" href="#">Accreditation BI</a></nav></div><div class="flex items-center gap-space-sm"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low rounded-full"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-md text-label-md text-on-surface font-medium">AY 2024–2025 • Semester 1 (Fall)</span><span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase rounded-full ml-1">Active Term</span></div><button class="flex items-center gap-1.5 px-space-sm py-1.5 bg-secondary text-on-secondary rounded-lg font-label-md text-label-md shadow-sm hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-base">add</span><span>Quick Action</span></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 bg-error text-on-error font-label-sm text-[0.625rem] flex items-center justify-center rounded-full">3</span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-xl">help_outline</span></button><div class="flex items-center gap-space-sm pl-space-xs ml-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgcnWk88Z5jMRXj0iv_dPWo3T7MrUH_81r_r7Cic1FPbgD5hbY4j7S4gEdT7Xv0WOh4qSn9IqwCfhEcq1Q8HJeal_gVWzGe3eRulvU3HgFTJfHhj_v51Jr6zrCqQH_lwSqbCTuO26BJL0LuiEEr5hGWBEj6N6_DheZ1oSfI3dzfrBVG6tJn_TZzdGKDm_T9rOSww_V0G8BkgMzRCHWYKePvT8sow2SqRSESXpRGIM"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-medium leading-none">Dr. Alistair Finch</span><span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5 leading-none">Dean of Academic Affairs</span></div><span class="hidden md:inline px-1.5 py-0.5 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm rounded uppercase font-semibold">Dean</span></div></div></header><main class="w-full pt-16 bg-surface px-gutter-desktop py-space-lg min-h-screen"><div class="flex flex-col w-full">
+<!-- BREADCRUMB & METADATA BAR -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="hover:text-on-surface transition-colors cursor-pointer">Institutional Modules</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="hover:text-on-surface transition-colors cursor-pointer">Academics</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-secondary font-semibold">Academic Calendar</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="flex items-center gap-1.5 px-space-sm py-1 bg-surface-container-low rounded-lg text-on-surface-variant font-code-metric text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>GAZETTE REF #AIT-CAL-2024-V2</span>
+</div>
+<span class="text-on-surface-variant font-code-metric text-label-sm px-2 py-1 bg-surface-container-lowest rounded shadow-sm">
+        LATENCY 14ms • SIS ENCLAVE SYNCED
+      </span>
+</div>
+</div>
+<!-- PAGE HEADER -->
+<div class="flex flex-col xl:flex-row xl:items-start justify-between gap-space-md mb-space-lg">
+<div class="max-w-4xl">
+<div class="flex items-center gap-space-sm mb-1">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Institutional Academic Calendar &amp; Milestone Governance</h1>
+<span class="px-2 py-0.5 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm rounded uppercase font-semibold">AY 2024–2025</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Official collegiate timeline governing instruction periods, examination moratoriums, add/drop dates, senate assemblies, gazetted holidays, and commencement schedules for Apex Institute of Technology.
+      </p>
+</div>
+<!-- HEADER ACTIONS -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="flex items-center gap-1.5 px-space-sm py-2 bg-surface-container-lowest hover:bg-surface-container-low text-on-surface rounded-lg font-label-md text-label-md shadow-sm transition-colors">
+<span class="material-symbols-outlined text-base text-secondary">sync</span>
+<span>Sync with LMS &amp; API</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-sm py-2 bg-surface-container-lowest hover:bg-surface-container-low text-on-surface rounded-lg font-label-md text-label-md shadow-sm transition-colors">
+<span class="material-symbols-outlined text-base text-on-surface-variant">picture_as_pdf</span>
+<span>Export Gazette (PDF)</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-2 bg-secondary text-on-secondary hover:bg-secondary-container rounded-lg font-label-md text-label-md shadow-sm transition-all transform active:scale-95" onclick="document.getElementById('quick-add-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-base">add</span>
+<span>Create Academic Event</span>
+</button>
+</div>
+</div>
+<!-- MILESTONE RIBBON & HORIZONTAL COUNTDOWN STACK -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-sm mb-space-lg">
+<!-- Milestone 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-1">
+<span>Active Term</span>
+<span class="px-1.5 py-0.5 bg-surface-container text-secondary font-code-metric rounded">Wk 10/16</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-snug">Fall Semester 2024</div>
+<div class="font-code-metric text-label-sm text-on-surface-variant mt-1">Aug 26 – Dec 20, 2024</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-medium">84 Instruct Days Remaining</span>
+<span class="material-symbols-outlined text-secondary text-sm">schedule</span>
+</div>
+</div>
+<!-- Milestone 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-error"></div>
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-1">
+<span>Priority Milestone</span>
+<span class="px-1.5 py-0.5 bg-error-container text-on-error-container font-code-metric rounded font-semibold">T-14 Days</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-snug">Mid-Term Exams</div>
+<div class="font-code-metric text-label-sm text-on-surface-variant mt-1">Nov 07 – Nov 17, 2024</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-error-container font-semibold">64 Halls • 318 Sections</span>
+<span class="material-symbols-outlined text-error text-sm">emergency</span>
+</div>
+</div>
+<!-- Milestone 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-outline-variant"></div>
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-1">
+<span>Statutory Recess</span>
+<span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-code-metric rounded">Campus Closed</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-snug">Thanksgiving Recess</div>
+<div class="font-code-metric text-label-sm text-on-surface-variant mt-1">Nov 27 – Nov 29, 2024</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Zero Operations Window</span>
+<span class="material-symbols-outlined text-on-surface-variant text-sm">cottage</span>
+</div>
+</div>
+<!-- Milestone 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary-container"></div>
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-1">
+<span>Senate Policy</span>
+<span class="px-1.5 py-0.5 bg-secondary-fixed text-on-secondary-fixed font-code-metric rounded">Zero Due</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-snug">Finals Moratorium</div>
+<div class="font-code-metric text-label-sm text-on-surface-variant mt-1">Dec 09 – Dec 19, 2024</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">No Non-Exam Submissions</span>
+<span class="material-symbols-outlined text-secondary text-sm">shield</span>
+</div>
+</div>
+<!-- Milestone 5 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-on-background"></div>
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-1">
+<span>Registrar Protocol</span>
+<span class="px-1.5 py-0.5 bg-surface-container-high text-on-surface font-code-metric rounded">Strict</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-snug">Grade Submission</div>
+<div class="font-code-metric text-label-sm text-on-surface-variant mt-1">Dec 23, 2024 • 23:59 EST</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-error font-medium">Hard SIS Lock After 24h</span>
+<span class="material-symbols-outlined text-on-surface text-sm">lock_clock</span>
+</div>
+</div>
+</div>
+<!-- CONTROL STRIP & FILTER TAXONOMY -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm mb-space-md flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<!-- View Switcher -->
+<div class="flex items-center bg-surface-container-low p-0.5 rounded-lg w-full lg:w-auto">
+<button class="flex items-center gap-1.5 px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors">
+<span class="material-symbols-outlined text-base">calendar_view_month</span>
+<span>Monthly Grid View</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors">
+<span class="material-symbols-outlined text-base">timeline</span>
+<span>Continuum View</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-sm py-1.5 rounded-lg bg-surface-container-lowest text-secondary font-semibold font-label-md text-label-md shadow-sm transition-all">
+<span class="material-symbols-outlined text-base">view_agenda</span>
+<span>Chronological Ledger</span>
+</button>
+</div>
+<!-- Event Category Filter Chips -->
+<div class="flex flex-wrap items-center gap-space-xs text-body-sm w-full lg:w-auto">
+<label class="flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-low hover:bg-surface-container rounded-md cursor-pointer transition-colors text-on-surface select-none">
+<input checked="" class="w-3.5 h-3.5 rounded accent-secondary cursor-pointer" type="checkbox"/>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm font-medium">Academic Deadlines</span>
+</label>
+<label class="flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-low hover:bg-surface-container rounded-md cursor-pointer transition-colors text-on-surface select-none">
+<input checked="" class="w-3.5 h-3.5 rounded accent-error cursor-pointer" type="checkbox"/>
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm font-medium">Examinations</span>
+</label>
+<label class="flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-low hover:bg-surface-container rounded-md cursor-pointer transition-colors text-on-surface select-none">
+<input checked="" class="w-3.5 h-3.5 rounded accent-outline cursor-pointer" type="checkbox"/>
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm font-medium">Recesses &amp; Holidays</span>
+</label>
+<label class="flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-low hover:bg-surface-container rounded-md cursor-pointer transition-colors text-on-surface select-none">
+<input checked="" class="w-3.5 h-3.5 rounded accent-primary-container cursor-pointer" type="checkbox"/>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm font-medium">Governance</span>
+</label>
+<label class="flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-low hover:bg-surface-container rounded-md cursor-pointer transition-colors text-on-surface select-none">
+<input class="w-3.5 h-3.5 rounded accent-tertiary-fixed-dim cursor-pointer" type="checkbox"/>
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+<span class="font-label-sm text-label-sm font-medium">Cultural &amp; Symposia</span>
+</label>
+</div>
+<!-- Department Selector Filter -->
+<div class="flex items-center gap-2 w-full lg:w-auto justify-end">
+<div class="relative">
+<select class="h-8 pl-3 pr-8 bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg appearance-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-secondary">
+<option>All Departments (University-wide)</option>
+<option>School of Computing &amp; Data Sciences</option>
+<option>Department of Mechanical &amp; Aerospace</option>
+<option>Apex College of Biomedical Engineering</option>
+<option>Division of Humanities &amp; Management</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2 text-on-surface-variant text-base pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- MAIN WORKSPACE LAYOUT: 65% MONTHLY GRID / 35% CHRONOLOGICAL LEDGER -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT PANEL: 65% (xl:col-span-8) MONTHLY INTERACTIVE CALENDAR -->
+<div class="xl:col-span-8 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col">
+<!-- Calendar Header Navigation -->
+<div class="flex flex-wrap items-center justify-between pb-space-sm mb-space-sm gap-2">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">November 2024</h2>
+<span class="px-2 py-0.5 bg-surface-container-high text-on-surface-variant font-code-metric text-label-sm rounded">Academic Term Q4</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-md transition-colors">Today</button>
+<div class="flex items-center bg-surface-container-low rounded-md">
+<button class="p-1 hover:bg-surface-container text-on-surface rounded-l-md transition-colors" title="Previous Month">
+<span class="material-symbols-outlined text-base">chevron_left</span>
+</button>
+<div class="w-[1px] h-4 bg-outline-variant/30"></div>
+<button class="p-1 hover:bg-surface-container text-on-surface rounded-r-md transition-colors" title="Next Month">
+<span class="material-symbols-outlined text-base">chevron_right</span>
+</button>
+</div>
+<div class="relative">
+<button class="flex items-center gap-1 px-2.5 py-1 bg-surface-container-low text-on-surface rounded-md font-label-md text-label-md hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-sm">tune</span>
+<span>Density</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 7-Column Day Header -->
+<div class="grid grid-cols-7 gap-1 text-center font-label-sm text-label-sm uppercase text-on-surface-variant py-2 bg-surface-container-low rounded-t-lg font-semibold tracking-wider">
+<div>Sun</div>
+<div>Mon</div>
+<div>Tue</div>
+<div>Wed</div>
+<div>Thu</div>
+<div>Fri</div>
+<div>Sat</div>
+</div>
+<!-- 7x5 Calendar Grid Container -->
+<div class="grid grid-cols-7 gap-1 bg-surface-container-low p-1 rounded-b-lg">
+<!-- Week 1: Oct 27 - Nov 02 -->
+<div class="min-h-[110px] bg-surface-container-lowest/60 rounded p-1.5 flex flex-col justify-between opacity-50">
+<span class="font-code-metric text-label-sm text-on-surface-variant">27</span>
+<div class="text-[0.65rem] text-on-surface-variant font-code-metric italic">October</div>
+</div>
+<div class="min-h-[110px] bg-surface-container-lowest/60 rounded p-1.5 flex flex-col justify-between opacity-50">
+<span class="font-code-metric text-label-sm text-on-surface-variant">28</span>
+<div class="text-[0.65rem] text-on-surface-variant font-code-metric italic">October</div>
+</div>
+<div class="min-h-[110px] bg-surface-container-lowest/60 rounded p-1.5 flex flex-col justify-between opacity-50">
+<span class="font-code-metric text-label-sm text-on-surface-variant">29</span>
+<div class="text-[0.65rem] text-on-surface-variant font-code-metric italic">October</div>
+</div>
+<div class="min-h-[110px] bg-surface-container-lowest/60 rounded p-1.5 flex flex-col justify-between opacity-50">
+<span class="font-code-metric text-label-sm text-on-surface-variant">30</span>
+<div class="text-[0.65rem] text-on-surface-variant font-code-metric italic">October</div>
+</div>
+<div class="min-h-[110px] bg-surface-container-lowest/60 rounded p-1.5 flex flex-col justify-between opacity-50">
+<span class="font-code-metric text-label-sm text-on-surface-variant">31</span>
+<div class="text-[0.65rem] text-on-surface-variant font-code-metric italic">October</div>
+</div>
+<!-- Nov 01 (Friday) -->
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors group">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">01</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<div class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface text-[0.6875rem] font-medium truncate" title="Cycle #PR-2024-10 Monthly Payroll Run">
+                #PR-2024-10 Payroll Run
+              </div>
+</div>
+</div>
+<!-- Nov 02 (Saturday) -->
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors group">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">02</span>
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<div class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed text-[0.6875rem] font-medium truncate" title="Apex Tech Symposium '24 (Innovation Hall 1-4)">
+                Tech Symposium '24
+              </div>
+</div>
+</div>
+<!-- Week 2: Nov 03 - Nov 09 -->
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">03</span>
+<div class="text-[0.65rem] text-on-surface-variant">Sunday Recess</div>
+</div>
+<!-- Nov 04 (Monday - Add/Drop Deadline) -->
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors relative">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-label-sm font-semibold text-secondary">04</span>
+<span class="px-1 py-0.2 bg-secondary-fixed text-on-secondary-fixed text-[0.6rem] font-bold rounded">DEADLINE</span>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<div class="px-1.5 py-1 rounded bg-secondary text-on-secondary text-[0.6875rem] font-semibold truncate shadow-sm" title="Course Add/Drop Final Deadline 17:00 EST">
+                Add/Drop Closes 17:00
+              </div>
+<span class="text-[0.625rem] text-on-surface-variant font-code-metric">Enclave Seal Active</span>
+</div>
+</div>
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">05</span>
+<div class="text-[0.65rem] text-on-surface-variant">Instruction Day 48</div>
+</div>
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">06</span>
+<div class="text-[0.65rem] text-on-surface-variant">Study Moratorium Eve</div>
+</div>
+<!-- Nov 07 (Thursday - Mid Terms Start) -->
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors relative">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-label-sm font-bold text-error">07</span>
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<div class="px-1.5 py-1 rounded bg-error text-on-error text-[0.6875rem] font-semibold truncate shadow-sm" title="Mid-Term Examination Phase I Commences">
+                Mid-Term Exams Begin
+              </div>
+<span class="text-[0.625rem] text-on-error-container font-code-metric">Phase 1: CS/ECE/Aero</span>
+</div>
+</div>
+<!-- Nov 08 (Friday - Mid Terms Continuum) -->
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-label-sm font-semibold text-error">08</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<div class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container text-[0.6875rem] font-medium truncate">
+                Mid-Terms Day 2
+              </div>
+</div>
+</div>
+<!-- Nov 09 (Saturday) -->
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-label-sm font-semibold text-error">09</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<div class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container text-[0.6875rem] font-medium truncate">
+                Mid-Terms Day 3 (Labs)
+              </div>
+</div>
+</div>
+<!-- Week 3: Nov 10 - Nov 16 -->
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">10</span>
+<div class="text-[0.65rem] text-on-surface-variant">Mid-Terms Study Break</div>
+</div>
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-code-metric text-label-sm font-semibold text-error">11</span>
+<div class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container text-[0.6875rem] font-medium truncate">
+              Mid-Terms Day 4
+            </div>
+</div>
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-code-metric text-label-sm font-semibold text-error">12</span>
+<div class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container text-[0.6875rem] font-medium truncate">
+              Mid-Terms Day 5
+            </div>
+</div>
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-code-metric text-label-sm font-semibold text-error">13</span>
+<div class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container text-[0.6875rem] font-medium truncate">
+              Mid-Terms Day 6
+            </div>
+</div>
+<!-- Nov 14 (Thursday - Senate Assembly) -->
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">14</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<div class="px-1.5 py-0.5 rounded bg-primary-container text-on-surface text-[0.6875rem] font-semibold text-white truncate" title="Senate Academic Council Q4 Assembly">
+                Senate Q4 Assembly
+              </div>
+<div class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container text-[0.6875rem] font-medium truncate">
+                Mid-Terms Day 7
+              </div>
+</div>
+</div>
+<!-- Nov 15 (Friday - Board of Regents) -->
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">15</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<div class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface text-[0.6875rem] font-semibold truncate" title="Board of Regents Q3 Meeting (Executive Boardroom)">
+                Board of Regents Q3
+              </div>
+<div class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container text-[0.6875rem] font-medium truncate">
+                Mid-Terms Day 8
+              </div>
+</div>
+</div>
+<!-- Nov 16 (Saturday) -->
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-code-metric text-label-sm font-semibold text-error">16</span>
+<div class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container text-[0.6875rem] font-medium truncate">
+              Mid-Terms Day 9
+            </div>
+</div>
+<!-- Week 4: Nov 17 - Nov 23 -->
+<!-- Nov 17 (Sunday - Mid Terms Close) -->
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-label-sm font-semibold text-error">17</span>
+<span class="px-1 py-0.2 bg-surface-container text-on-surface-variant text-[0.6rem] font-medium rounded">CONCLUDES</span>
+</div>
+<div class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container text-[0.6875rem] font-medium truncate">
+              Mid-Terms Final Day
+            </div>
+</div>
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">18</span>
+<div class="text-[0.65rem] text-on-surface-variant">Normal Lectures Resume</div>
+</div>
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">19</span>
+<div class="text-[0.65rem] text-on-surface-variant">Instruction Day 56</div>
+</div>
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">20</span>
+<div class="text-[0.65rem] text-on-surface-variant">Faculty Senate Review</div>
+</div>
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">21</span>
+<div class="text-[0.65rem] text-on-surface-variant">Instruction Day 58</div>
+</div>
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">22</span>
+<div class="text-[0.65rem] text-on-surface-variant">Instruction Day 59</div>
+</div>
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">23</span>
+<div class="text-[0.65rem] text-on-surface-variant">Saturday Lab Sessions</div>
+</div>
+<!-- Week 5: Nov 24 - Nov 30 -->
+<!-- Nov 24 (Sunday - Grade Cutoff) -->
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">24</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<div class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed text-[0.6875rem] font-medium truncate" title="Continuous Assessment Grade Cutoff (Faculty)">
+                CA Grade Cutoff (Faculty)
+              </div>
+</div>
+</div>
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">25</span>
+<div class="text-[0.65rem] text-on-surface-variant">Instruction Day 60</div>
+</div>
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">26</span>
+<div class="text-[0.65rem] text-on-surface-variant">Instruction Day 61</div>
+</div>
+<!-- Nov 27 (Wed - Thanksgiving Recess) -->
+<div class="min-h-[110px] bg-surface-container-low rounded p-1.5 flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface-variant">27</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<div class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant text-[0.6875rem] font-semibold truncate" title="Thanksgiving Recess Day 1">
+                Recess (Campus Closed)
+              </div>
+</div>
+</div>
+<!-- Nov 28 (Thu - Thanksgiving Recess) -->
+<div class="min-h-[110px] bg-surface-container-low rounded p-1.5 flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface-variant">28</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<div class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant text-[0.6875rem] font-semibold truncate" title="Thanksgiving Day Official Holiday">
+                Thanksgiving Day
+              </div>
+</div>
+</div>
+<!-- Nov 29 (Fri - Thanksgiving Recess) -->
+<div class="min-h-[110px] bg-surface-container-low rounded p-1.5 flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface-variant">29</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<div class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant text-[0.6875rem] font-semibold truncate" title="Day After Thanksgiving Recess">
+                Recess (Campus Closed)
+              </div>
+</div>
+</div>
+<!-- Nov 30 (Sat) -->
+<div class="min-h-[110px] bg-surface-container-lowest rounded p-1.5 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-code-metric text-label-sm font-semibold text-on-surface">30</span>
+<div class="text-[0.65rem] text-on-surface-variant">Campus Reopens 08:00</div>
+</div>
+</div>
+<!-- Legend and Synchronized Footnote -->
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between text-label-sm font-label-sm text-on-surface-variant gap-2">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm bg-secondary"></span> Academic Deadline</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm bg-error"></span> Examination Window</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm bg-surface-container-highest"></span> Campus Recess</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm bg-primary-container"></span> Senate Assembly</span>
+</div>
+<span class="font-code-metric text-[0.7rem]">Standard UTC-05:00 Eastern Time Zone</span>
+</div>
+</div>
+<!-- SEMESTER TIMELINE PROGRESS OVERVIEW (Micro Data Viz) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">linear_scale</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Fall 2024 Instruction Continuum &amp; Phase Gates</h3>
+</div>
+<span class="font-code-metric text-label-sm text-secondary font-medium">62.5% Term Completed</span>
+</div>
+<!-- Visual Multi-segment Progress Bar -->
+<div class="w-full bg-surface-container-low h-3 rounded-full overflow-hidden flex relative mb-2">
+<!-- Instruction Phase 1 (Aug 26 - Nov 06) -->
+<div class="bg-secondary h-full" style="width: 58%;" title="Completed Instruction Phase"></div>
+<!-- Mid-Terms (Nov 07 - Nov 17) -->
+<div class="bg-error h-full" style="width: 10%;" title="Mid-Term Exams Window"></div>
+<!-- Phase 2 (Nov 18 - Dec 08) -->
+<div class="bg-surface-container-high h-full" style="width: 15%;" title="Post Mid-Term Lectures"></div>
+<!-- Finals Moratorium (Dec 09 - Dec 19) -->
+<div class="bg-secondary-container h-full" style="width: 12%;" title="Finals Moratorium"></div>
+<!-- Grade Submission / Lockdown -->
+<div class="bg-primary-container h-full" style="width: 5%;" title="Grade Lockdown"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-2 text-center pt-1 font-label-sm text-label-sm">
+<div class="text-left">
+<div class="text-on-surface font-semibold">Phase I Lectures</div>
+<div class="text-on-surface-variant font-code-metric text-[0.6875rem]">Aug 26 – Nov 06 (10 Wks)</div>
+</div>
+<div class="text-left">
+<div class="text-error font-semibold">Mid-Term Exams</div>
+<div class="text-on-surface-variant font-code-metric text-[0.6875rem]">Nov 07 – Nov 17 (11 Days)</div>
+</div>
+<div class="text-left">
+<div class="text-on-surface font-semibold">Phase II Lectures</div>
+<div class="text-on-surface-variant font-code-metric text-[0.6875rem]">Nov 18 – Dec 08 (3 Wks)</div>
+</div>
+<div class="text-left">
+<div class="text-secondary-container font-semibold">Finals &amp; Moratorium</div>
+<div class="text-on-surface-variant font-code-metric text-[0.6875rem]">Dec 09 – Dec 19 (10 Days)</div>
+</div>
+<div class="text-left">
+<div class="text-on-surface font-semibold">Lockdown</div>
+<div class="text-on-surface-variant font-code-metric text-[0.6875rem]">Dec 23 • 23:59 EST</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT PANEL: 35% (xl:col-span-4) CHRONOLOGICAL MILESTONE LEDGER & QUICK EVENT ACTION -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<!-- UPCOMING COLLEGIATE MILESTONES (NEXT 30 DAYS) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">flag</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Upcoming Milestones</h2>
+</div>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant font-code-metric text-label-sm rounded-full">Next 30 Days</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1: Add/Drop Deadline -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors group">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<div class="px-2 py-1 bg-surface-container-lowest rounded text-center shadow-sm">
+<div class="font-code-metric text-label-sm uppercase text-secondary font-bold">Nov</div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-none">04</div>
+</div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-secondary transition-colors">
+                    Add/Drop Deadline &amp; Credit Seal
+                  </div>
+<div class="font-code-metric text-label-sm text-on-surface-variant">17:00 EST • SIS System Lockdown</div>
+</div>
+</div>
+<span class="px-1.5 py-0.5 bg-secondary-fixed text-on-secondary-fixed font-code-metric text-[0.6875rem] rounded font-medium">Academic</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex flex-col gap-1 text-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span>Target: Undergraduate &amp; PG Scholars</span>
+<span class="text-secondary font-medium font-code-metric text-[0.6875rem]">Enforced SIS Enclave</span>
+</div>
+<div class="flex items-center justify-between mt-1 text-[0.7rem]">
+<span class="text-on-surface-variant">Late drops require Dean signature</span>
+<button class="text-secondary hover:underline flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">notifications_active</span>
+<span>Alert Sent</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 2: Mid-Terms Phase 1 Commences -->
+<div class="p-space-sm rounded-lg bg-error-container/20 hover:bg-error-container/30 transition-colors group">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<div class="px-2 py-1 bg-surface-container-lowest rounded text-center shadow-sm">
+<div class="font-code-metric text-label-sm uppercase text-error font-bold">Nov</div>
+<div class="font-headline-sm text-headline-sm text-error leading-none">07</div>
+</div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-error transition-colors">
+                    Mid-Term Examination Phase I
+                  </div>
+<div class="font-code-metric text-label-sm text-on-surface-variant">09:00 EST • University-wide</div>
+</div>
+</div>
+<span class="px-1.5 py-0.5 bg-error-container text-on-error-container font-code-metric text-[0.6875rem] rounded font-medium">Exam</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex flex-col gap-1 text-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span>Target: 14,820 Students • 64 Exam Halls</span>
+<span class="text-error font-medium font-code-metric text-[0.6875rem]">Roster Sealed</span>
+</div>
+<div class="flex items-center justify-between mt-1 text-[0.7rem]">
+<span class="text-on-surface-variant">Invigilation: 214 Faculty Assigned</span>
+<a class="text-secondary hover:underline" href="#">View Roster →</a>
+</div>
+</div>
+</div>
+<!-- Item 3: Senate Academic Council -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors group">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<div class="px-2 py-1 bg-surface-container-lowest rounded text-center shadow-sm">
+<div class="font-code-metric text-label-sm uppercase text-on-surface-variant font-bold">Nov</div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-none">14</div>
+</div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-secondary transition-colors">
+                    Senate Curriculum Ratification
+                  </div>
+<div class="font-code-metric text-label-sm text-on-surface-variant">14:00 EST • Council Hall A</div>
+</div>
+</div>
+<span class="px-1.5 py-0.5 bg-surface-container-high text-on-surface font-code-metric text-[0.6875rem] rounded font-medium">Governance</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex flex-col gap-1 text-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span>Target: Deans, Department Heads, Senate Members</span>
+<span class="font-code-metric text-[0.6875rem]">Quorum: 48/52</span>
+</div>
+<div class="flex items-center justify-between mt-1 text-[0.7rem]">
+<span class="text-on-surface-variant">Agenda: AY25-26 Course Modularization</span>
+<span class="text-on-surface font-medium">Docket #SEN-42</span>
+</div>
+</div>
+</div>
+<!-- Item 4: Thanksgiving Recess -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors group">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<div class="px-2 py-1 bg-surface-container-lowest rounded text-center shadow-sm">
+<div class="font-code-metric text-label-sm uppercase text-on-surface-variant font-bold">Nov</div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-none">27</div>
+</div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">
+                    Thanksgiving Institutional Recess
+                  </div>
+<div class="font-code-metric text-label-sm text-on-surface-variant">Nov 27 – Nov 29 • 3 Full Days</div>
+</div>
+</div>
+<span class="px-1.5 py-0.5 bg-surface-container-highest text-on-surface-variant font-code-metric text-[0.6875rem] rounded font-medium">Recess</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex flex-col gap-1 text-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span>Status: Campus Gate Security Level 3</span>
+<span class="text-on-surface-variant font-code-metric text-[0.6875rem]">Official Holiday</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- QUICK ADD ACADEMIC EVENT FORM CARD -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">edit_calendar</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Quick Event Docket</h3>
+</div>
+<span class="text-on-surface-variant font-label-sm text-label-sm uppercase">Dean Authority</span>
+</div>
+<form class="flex flex-col gap-space-sm" onsubmit="event.preventDefault(); alert('Event scheduled and queued for Academic Senate approval docket.');">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Event Title / Milestone Name</label>
+<input class="w-full h-8 px-3 bg-surface-container-low rounded-lg text-body-md text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary transition-all" placeholder="e.g., Computer Science Capstone Showcase" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Category</label>
+<select class="w-full h-8 px-2 bg-surface-container-low rounded-lg text-body-md text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary cursor-pointer">
+<option>Academic Deadline</option>
+<option>Examination</option>
+<option>Campus Recess</option>
+<option>Senate Governance</option>
+<option>Symposium / Lecture</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Target Cohort</label>
+<select class="w-full h-8 px-2 bg-surface-container-low rounded-lg text-body-md text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary cursor-pointer">
+<option>All Students (Global)</option>
+<option>Undergraduates Only</option>
+<option>Postgraduates Only</option>
+<option>Faculty &amp; Staff</option>
+<option>Senate Members</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Start Date &amp; Time</label>
+<input class="w-full h-8 px-2 bg-surface-container-low rounded-lg text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary cursor-pointer" type="datetime-local" value="2024-11-20T09:00"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">End Date &amp; Time</label>
+<input class="w-full h-8 px-2 bg-surface-container-low rounded-lg text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary cursor-pointer" type="datetime-local" value="2024-11-20T17:00"/>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<input checked="" class="w-4 h-4 rounded accent-secondary cursor-pointer" id="broadcast" type="checkbox"/>
+<label class="font-label-md text-label-md text-on-surface cursor-pointer select-none" for="broadcast">
+              Broadcast via Institutional Push Notification &amp; SIS Banner
+            </label>
+</div>
+<button class="mt-2 w-full py-2 bg-secondary text-on-secondary hover:bg-secondary-container rounded-lg font-label-md text-label-md shadow-sm transition-colors flex items-center justify-center gap-1.5" type="submit">
+<span class="material-symbols-outlined text-base">save</span>
+<span>Record Official Academic Event</span>
+</button>
+</form>
+</div>
+<!-- REGULATORY COMPLIANCE CALLOUT -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Institutional Governance Seal</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Approved by University Academic Senate on July 18, 2024. Official Gazette Reference: <span class="font-code-metric text-on-surface font-medium">#AIT-CAL-2024-V2</span>. All modification commits are immutably logged to the collegiate audit ledger.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL: QUICK ADD ACADEMIC EVENT (LIGHTBOX) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/20 backdrop-blur-sm" id="quick-add-modal">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-lg p-space-lg flex flex-col gap-space-md animate-in fade-in zoom-in-95 duration-150">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-lg">event_available</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Create Academic Event</h3>
+<span class="font-code-metric text-label-sm text-on-surface-variant">SIS Protocol AIT-EP-104</span>
+</div>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="document.getElementById('quick-add-modal').classList.add('hidden')">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Official Event Title</label>
+<input class="w-full h-9 px-3 bg-surface-container-low rounded-lg text-body-md text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary" placeholder="e.g. Winter Term 2025 Course Registration Window" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Category Classification</label>
+<select class="w-full h-9 px-2 bg-surface-container-low rounded-lg text-body-md text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary cursor-pointer">
+<option>Academic Deadline</option>
+<option>Examination</option>
+<option>Holiday / Recess</option>
+<option>Governance / Senate</option>
+<option>Symposium</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Impact Level</label>
+<select class="w-full h-9 px-2 bg-surface-container-low rounded-lg text-body-md text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary cursor-pointer">
+<option>Level 1 - Campus Lockdown</option>
+<option>Level 2 - University-wide Deadline</option>
+<option>Level 3 - Department Specific</option>
+<option>Level 4 - Informational</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Commencement Date</label>
+<input class="w-full h-9 px-2 bg-surface-container-low rounded-lg text-body-md text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary cursor-pointer" type="date" value="2024-11-20"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Conclusion Date</label>
+<input class="w-full h-9 px-2 bg-surface-container-low rounded-lg text-body-md text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary cursor-pointer" type="date" value="2024-11-20"/>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Senate Docket Justification Note</label>
+<textarea class="w-full px-3 py-1.5 bg-surface-container-low rounded-lg text-body-md text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary" placeholder="State legislative precedent or committee resolution ID..." rows="2"></textarea>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-2 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg font-label-md text-label-md transition-colors" onclick="document.getElementById('quick-add-modal').classList.add('hidden')">
+          Cancel
+        </button>
+<button class="px-space-md py-2 bg-secondary text-on-secondary hover:bg-secondary-container rounded-lg font-label-md text-label-md shadow-sm transition-colors" onclick="document.getElementById('quick-add-modal').classList.add('hidden'); alert('Event published to Institutional Calendar.');">
+          Publish to Official Calendar
+        </button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

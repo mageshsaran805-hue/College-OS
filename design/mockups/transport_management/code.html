@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#000000", "on-tertiary": "#ffffff", "tertiary-container": "#001e2f", "outline": "#76777d", "surface-container-low": "#eff4ff", "surface-container": "#e5eeff", "surface-variant": "#d3e4fe", "error-container": "#ffdad6", "secondary-fixed-dim": "#c3c0ff", "on-secondary-fixed": "#0f0069", "background": "#f8f9ff", "on-tertiary-fixed-variant": "#004c6e", "surface-container-highest": "#d3e4fe", "inverse-surface": "#213145", "surface-bright": "#f8f9ff", "error": "#ba1a1a", "tertiary": "#000000", "secondary-container": "#645efb", "on-surface": "#0b1c30", "secondary": "#4b41e1", "surface-tint": "#565e74", "primary-fixed": "#dae2fd", "on-primary-fixed": "#131b2e", "on-secondary": "#ffffff", "on-background": "#0b1c30", "surface": "#f8f9ff", "on-error-container": "#93000a", "on-secondary-container": "#fffbff", "on-surface-variant": "#45464d", "surface-dim": "#cbdbf5", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#008cc7", "on-primary-fixed-variant": "#3f465c", "on-primary": "#ffffff", "tertiary-fixed": "#c9e6ff", "tertiary-fixed-dim": "#89ceff", "primary-fixed-dim": "#bec6e0", "on-tertiary-fixed": "#001e2f", "primary-container": "#131b2e", "outline-variant": "#c6c6cd", "on-error": "#ffffff", "on-secondary-fixed-variant": "#3323cc", "surface-container-high": "#dce9ff", "on-primary-container": "#7c839b", "inverse-primary": "#bec6e0", "secondary-fixed": "#e2dfff", "inverse-on-surface": "#eaf1ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1rem", "space-sm": "0.5rem", "margin-desktop": "2rem", "space-md": "0.75rem", "gutter-desktop": "1.5rem", "space-lg": "1.25rem", "space-xs": "0.25rem", "margin": "1rem", "space-xl": "2rem" }, "fontFamily": { "body-md": ["Geist"], "label-sm": ["Geist"], "headline-xl-mobile": ["Geist"], "headline-xl": ["Geist"], "label-md": ["Geist"], "body-lg": ["Geist"], "headline-sm": ["Geist"], "body-sm": ["Geist"], "code-metric": ["Geist"], "headline-lg": ["Geist"] }, "fontSize": { "body-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.006em", "fontWeight": "400" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-xl": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600" }], "label-md": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "-0.005em", "fontWeight": "500" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.011em", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "400" }], "code-metric": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.02em", "fontWeight": "500" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col h-full overflow-hidden"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Apex Institute</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-lg bg-surface-container text-on-surface font-semibold shrink-0">#US-01</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Institutional Workspace • AY 2024-25</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container text-on-surface font-semibold rounded-lg"><div class="px-space-sm pt-space-xs pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Academic Operations</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="academics" href="#">Academics</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="students" href="#">Students</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="faculty-staff" href="#">Faculty &amp; Staff</a><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">fact_check</span><span class="font-label-md text-label-md font-semibold text-on-surface">Attendance</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-overview" href="#">Attendance Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="mark-attendance" href="#">Mark Attendance</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-records" href="#">Attendance Records</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="shortage-defaulters" href="#">Shortage &amp; Defaulters</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance-settings" href="#">Attendance Settings</a></div></div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">assignment</span><span class="font-label-md text-label-md font-semibold text-on-surface">Examinations</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="examination-overview" href="#">Examination Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="exam-management" href="#">Exam Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="exam-timetable" href="#">Exam Timetable</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="hall-tickets" href="#">Hall Tickets</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="seating-arrangement" href="#">Seating Arrangement</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="marks-entry" href="#">Marks Entry</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="results-grades" href="#">Results &amp; Grades</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="revaluation-supplementary" href="#">Revaluation &amp; Supplementary</a></div></div><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Campus Operations &amp; Facilities</div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">domain</span><span class="font-label-md text-label-md font-semibold text-on-surface">Campus Operations</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="campus-overview" href="#">Campus Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="buildings-facilities" href="#">Buildings &amp; Facilities</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="room-booking" href="#">Room Booking</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="maintenance-management" href="#">Maintenance Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="hostel-management" href="#">Hostel Management</a><a aria-current="page" class="px-space-sm py-1 transition-colors bg-surface-container text-on-surface font-semibold rounded-lg" data-path="transport-management" href="#">Transport Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="security-visitor-management" href="#">Security &amp; Visitor Management</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="housekeeping-assets" href="#">Housekeeping &amp; Assets</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="operations-reports-settings" href="#">Operations Reports &amp; Settings</a></div></div><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Institutional Services</div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">payments</span><span class="font-label-md text-label-md font-semibold text-on-surface">Finance</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="finance-overview" href="#">Finance Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fee-structures" href="#">Fee Structures</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="student-fees" href="#">Student Fees</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fee-collection" href="#">Fee Collection</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="scholarships-aid" href="#">Scholarships &amp; Aid</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="expenses-vendors" href="#">Expenses &amp; Vendors</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="accounting-ledger" href="#">Accounting &amp; Ledger</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="financial-reports" href="#">Financial Reports</a></div></div><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">local_library</span><span class="font-label-md text-label-md font-semibold text-on-surface">Library</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="library-overview" href="#">Library Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="book-catalogue" href="#">Book Catalogue</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="book-inventory" href="#">Book Inventory</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="circulation" href="#">Circulation</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="reservations-requests" href="#">Reservations &amp; Requests</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fines-payments" href="#">Fines &amp; Payments</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="digital-library" href="#">Digital Library</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="library-reports-settings" href="#">Library Reports &amp; Settings</a></div></div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="student-life" href="#">Student Life</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="placements" href="#">Placements</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="communication" href="#">Communication</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports-analytics" href="#">Reports &amp; Analytics</a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">System Governance</div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="administration" href="#">Administration</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-sm bg-surface-container-low shrink-0"><div class="flex items-center justify-between text-on-surface-variant mb-space-xs"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-semibold text-on-surface">Apex Core 98.4% uptime</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v4.2</span></div><a class="flex items-center justify-between font-label-sm text-label-sm text-secondary hover:text-on-secondary-fixed transition-colors" data-path="institutional-support" href="#">Institutional Support Desk</a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="relative flex items-center w-80"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-on-surface-variant pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-14 bg-surface rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search students, facilities, staff..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-code-metric">⌘K</span></div><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container"><span class="material-symbols-outlined text-[16px] text-secondary">event_available</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">AY 2024–2025 • Semester 1 Fall</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary font-semibold uppercase">Active Term</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div></div><div class="flex items-center gap-space-md"><button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Action</span></button><div class="flex items-center gap-space-xs"><button class="relative w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-label-sm flex items-center justify-center font-code-metric">3</span></button><button class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button></div><div class="h-6 w-px bg-surface-container"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Alistair Finch</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Dean of Academic Affairs</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter-desktop pb-space-xl flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Control Banner -->
+<div class="flex flex-col gap-space-md mb-space-lg">
+<!-- Breadcrumb & Workspace Status Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span>Campus Operations</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Logistics &amp; Facilities</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-semibold text-on-surface">Transport Management</span>
+<span class="ml-space-xs px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold tracking-wide">STAGE 4 OPERATIONAL</span>
+</div>
+<!-- Campus Terminal Selector Pill -->
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-1.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">location_on</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Terminal Location:</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Apex Central Campus (North Wing Terminal)</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px] cursor-pointer">arrow_drop_down</span>
+</div>
+</div>
+<!-- Main Title & Operational Actions -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-1 max-w-3xl">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Fleet &amp; Campus Transport Management</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Institutional bus fleet operations, daily metropolitan commuter routes, statutory driver certifications, RFID pass subscriptions, and depot compliance.
+        </p>
+</div>
+<!-- Action Button Group -->
+<div class="flex flex-wrap items-center gap-space-xs shrink-0">
+<button class="h-9 px-space-md bg-secondary text-on-secondary hover:bg-on-secondary-fixed-variant rounded-lg font-label-md text-label-md font-semibold flex items-center gap-1.5 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">directions_bus</span>
+<span>+ Add Fleet Vehicle</span>
+</button>
+<button class="h-9 px-space-md bg-surface-container-low text-on-surface hover:bg-surface-container rounded-lg font-label-md text-label-md font-semibold flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">route</span>
+<span>+ Create Route</span>
+</button>
+<button class="h-9 px-space-md bg-surface-container-low text-on-surface hover:bg-surface-container rounded-lg font-label-md text-label-md font-semibold flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>Issue Bus Pass</span>
+</button>
+<button class="h-9 px-space-sm bg-surface-container-low text-on-surface hover:bg-surface-container rounded-lg font-label-md text-label-md flex items-center gap-1 transition-colors" title="Export Transport Audit CSV" type="button">
+<span class="material-symbols-outlined text-[18px]">sim_card_download</span>
+<span>Export CSV</span>
+</button>
+</div>
+</div>
+</div>
+<!-- KPI Telemetry Cards (5 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md mb-space-lg">
+<!-- KPI 1 -->
+<div class="flex flex-col justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm relative overflow-hidden group">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Total Fleet Vehicles</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">airport_shuttle</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-semibold text-on-surface">38</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">Units Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+          28 Buses (52s) • 6 Vans • 2 Med • 2 Patrol EVs
+        </p>
+</div>
+<div class="w-full bg-surface-container-low h-1 rounded-full mt-3 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="flex flex-col justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm relative overflow-hidden group">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Daily Active Routes</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">alt_route</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-semibold text-on-surface">24</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">Urban Corridors</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+          142 Designated Stops across 45km radius
+        </p>
+</div>
+<div class="w-full bg-surface-container-low h-1 rounded-full mt-3 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 96%;"></div>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="flex flex-col justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm relative overflow-hidden group">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Subscribers Commuting</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-semibold text-on-surface">2,460</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">Users</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+          92.4% Seat Capacity • 180 Staff &amp; Faculty
+        </p>
+</div>
+<div class="w-full bg-surface-container-low h-1 rounded-full mt-3 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 92.4%;"></div>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="flex flex-col justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm relative overflow-hidden group">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Certified Crew</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-semibold text-on-surface">44</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">Drivers &amp; Attend.</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+          100% Police Verified &amp; Medically Certified
+        </p>
+</div>
+<div class="w-full bg-surface-container-low h-1 rounded-full mt-3 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<!-- KPI 5 -->
+<div class="flex flex-col justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm relative overflow-hidden group">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Compliance &amp; AMC</span>
+<div class="w-8 h-8 rounded-lg bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-semibold text-on-surface">36 / 38</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-semibold">2 Due</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+          FC &amp; PUC Renewal required in 14 days
+        </p>
+</div>
+<div class="w-full bg-surface-container-low h-1 rounded-full mt-3 overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 94.7%;"></div>
+</div>
+</div>
+</div>
+<!-- Operational Filter Strip & Route Sorter -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-lowest p-space-sm rounded-xl mb-space-md shadow-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase px-space-xs">Status:</span>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold">All Routes (24)</button>
+<button class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low font-label-md text-label-md">On Schedule (21)</button>
+<button class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low font-label-md text-label-md flex items-center gap-1">
+<span>Delayed (2)</span>
+<span class="w-2 h-2 rounded-full bg-error"></span>
+</button>
+<button class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low font-label-md text-label-md">Depot / Standby (1)</button>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase">Filter Class:</span>
+<select class="h-8 px-space-sm bg-surface-container-low text-on-surface rounded-lg font-body-sm text-body-sm outline-none cursor-pointer">
+<option>All Types (38 Vehicles)</option>
+<option>Buses (52-Seater High Deck)</option>
+<option>Mini-Buses (24-Seater Staff)</option>
+<option>Campus Utility Vans</option>
+<option>Campus Ambulances</option>
+</select>
+</div>
+</div>
+<!-- Split Grid: Live Commuter Corridors & Terminal Hub Visualizer -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Left 7 Cols: Active Daily Route Schedules -->
+<div class="xl:col-span-7 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">departure_board</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Live Commuter Schedules &amp; Morning Transit</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">Real-time log: 08:14 AM IST</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Route 101 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-secondary font-code-metric text-label-md font-bold">ROUTE #101</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>On Schedule</span>
+</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-0.5">Tambaram ➔ Campus Main Gate</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Via Chromepet, Pallavaram, Guindy &amp; Airport Flyover</p>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1 text-on-surface font-body-sm text-body-sm mb-space-sm">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Assigned Vehicle:</span>
+<span class="font-code-metric font-semibold text-on-surface">TN-09-BK-4290 (Tata 52s)</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Pilot / Driver:</span>
+<span class="font-semibold text-on-surface">M. Shanmugam (+91 98401 22891)</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Departure / Stops:</span>
+<span class="font-semibold text-on-surface">07:10 AM • 12 Designated Stops</span>
+</div>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1 text-on-surface-variant">
+<span>Bus Capacity Allocation</span>
+<span class="font-code-metric font-semibold text-on-surface">50 / 52 Occupied (96%)</span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 96%;"></div>
+</div>
+</div>
+</div>
+<!-- Route 104 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-secondary font-code-metric text-label-md font-bold">ROUTE #104</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>On Schedule</span>
+</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-0.5">Velachery ➔ OMR IT Express</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Via SRP Tools, Thoraipakkam, Sholinganallur Junction</p>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1 text-on-surface font-body-sm text-body-sm mb-space-sm">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Assigned Vehicle:</span>
+<span class="font-code-metric font-semibold text-on-surface">TN-09-BK-4312 (Ashok Leyland)</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Pilot / Driver:</span>
+<span class="font-semibold text-on-surface">R. Govindasamy (+91 97910 44521)</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Departure / Stops:</span>
+<span class="font-semibold text-on-surface">07:25 AM • 8 Designated Stops</span>
+</div>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1 text-on-surface-variant">
+<span>Bus Capacity Allocation</span>
+<span class="font-code-metric font-semibold text-error font-bold">52 / 52 FULL (100%)</span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+</div>
+<!-- Route 108 (Delayed) -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-secondary font-code-metric text-label-md font-bold">ROUTE #108</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span>Delayed +12m</span>
+</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-0.5">Anna Nagar ➔ Central Metro Feeder</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Congestion at Guindy Kathipara flyover. ETA updated.</p>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1 text-on-surface font-body-sm text-body-sm mb-space-sm">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Assigned Vehicle:</span>
+<span class="font-code-metric font-semibold text-on-surface">TN-09-CL-1104 (Eicher Skyline)</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Pilot / Driver:</span>
+<span class="font-semibold text-on-surface">K. Anthony (+91 94440 98112)</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Departure / Stops:</span>
+<span class="font-semibold text-on-surface">06:50 AM • 15 Designated Stops</span>
+</div>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1 text-on-surface-variant">
+<span>Bus Capacity Allocation</span>
+<span class="font-code-metric font-semibold text-on-surface">48 / 52 Occupied (92%)</span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 92%;"></div>
+</div>
+</div>
+</div>
+<!-- Route 115 -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-secondary font-code-metric text-label-md font-bold">ROUTE #115</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>On Schedule</span>
+</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-0.5">Avadi ➔ Ambattur Industrial Line</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Via Thirumangalam, Koyambedu CMBT Bypass</p>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1 text-on-surface font-body-sm text-body-sm mb-space-sm">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Assigned Vehicle:</span>
+<span class="font-code-metric font-semibold text-on-surface">TN-09-BK-3882 (Tata 52s)</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Pilot / Driver:</span>
+<span class="font-semibold text-on-surface">G. Sundaram (+91 94441 55209)</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Departure / Stops:</span>
+<span class="font-semibold text-on-surface">07:05 AM • 14 Designated Stops</span>
+</div>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1 text-on-surface-variant">
+<span>Bus Capacity Allocation</span>
+<span class="font-code-metric font-semibold text-on-surface">45 / 52 Occupied (86%)</span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 86%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right 5 Cols: Campus Terminal Radar Map & Depot Bays -->
+<div class="xl:col-span-5 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">hub</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Depot Radar &amp; North Gate Terminal</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container font-semibold text-on-surface">BAY SLOTS 1-12</span>
+</div>
+<!-- Static Map Box Container -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col flex-1 justify-between">
+<!-- Visual Radar Map Representation -->
+<div class="relative w-full h-56 rounded-lg bg-surface-container-low overflow-hidden flex flex-col p-space-md justify-between">
+<!-- Background SVG Vector Grid -->
+<svg class="absolute inset-0 w-full h-full text-surface-container" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="32" id="radarGrid" patternunits="userSpaceOnUse" width="32">
+<path d="M 32 0 L 0 0 0 32" fill="none" stroke="currentColor" stroke-width="0.8"></path>
+</pattern>
+</defs>
+<rect fill="url(#radarGrid)" height="100%" width="100%"></rect>
+<!-- Transit Road Corridors -->
+<path d="M-20 60 C 120 70, 200 120, 480 110" fill="none" stroke="#cbd5e1" stroke-linecap="round" stroke-width="6"></path>
+<path d="M180 -20 C 190 80, 220 180, 250 260" fill="none" stroke="#cbd5e1" stroke-linecap="round" stroke-width="5"></path>
+<circle cx="210" cy="115" fill="#e2dfff" fill-opacity="0.6" r="28" stroke="#4b41e1" stroke-dasharray="3 3" stroke-width="1.5"></circle>
+</svg>
+<!-- Floating Badges / Geofence Nodes -->
+<div class="relative z-10 flex items-center justify-between">
+<div class="flex items-center gap-1.5 px-2 py-1 rounded bg-surface-container-lowest/90 backdrop-blur shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">North Gate Bays 1–12</span>
+</div>
+<span class="font-code-metric text-label-sm text-on-surface bg-surface-container-lowest/90 px-2 py-0.5 rounded shadow-sm">13.0827° N, 80.2707° E</span>
+</div>
+<div class="relative z-10 flex items-center justify-center">
+<div class="px-3 py-1.5 rounded-lg bg-primary text-on-primary text-center shadow-lg">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">Apex Central Bus Depot</div>
+<div class="font-body-sm text-body-sm font-semibold">18 Vehicles Parked in Bay • 4 on Maintenance</div>
+</div>
+</div>
+<div class="relative z-10 flex items-center justify-between text-body-sm">
+<div class="px-2 py-1 rounded bg-surface-container-lowest/90 backdrop-blur font-label-sm text-label-sm text-on-surface">
+              Speed Governor Check: <strong class="text-secondary">40 km/h Campus Limit</strong>
+</div>
+<div class="px-2 py-1 rounded bg-surface-container-lowest/90 backdrop-blur font-label-sm text-label-sm text-on-surface">
+              Diesel Depot: <strong>7,800L Reserve</strong>
+</div>
+</div>
+</div>
+<div class="mt-space-sm p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">info</span>
+<div>
+<strong class="text-on-surface font-semibold">Static Geofence Overview:</strong>
+            Fleet telemetry synced via Daily Trip Log Sheet and Depot RFID Scanners. Vehicles entering North Gate are logged automatically at Turnstile Bay #1.
+          </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Detailed Multi-Tab Data Tables & Operations Registers -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl shadow-sm mb-space-lg overflow-hidden">
+<!-- Tab Controls Header -->
+<div class="flex flex-wrap items-center justify-between border-b-0 bg-surface-container-low/60 px-space-md pt-space-sm gap-space-sm">
+<div class="flex items-center gap-space-xs" id="transport-tab-list">
+<button class="tab-btn active px-space-md py-2.5 font-label-md text-label-md font-semibold text-on-surface bg-surface-container-lowest rounded-t-lg shadow-sm flex items-center gap-2" data-tab="tab-fleet" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+<span>Vehicle Compliance &amp; AMC Register</span>
+<span class="px-1.5 py-0.2 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-code-metric">2 Due</span>
+</button>
+<button class="tab-btn px-space-md py-2.5 font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface rounded-t-lg flex items-center gap-2" data-tab="tab-passes" type="button">
+<span class="material-symbols-outlined text-[18px]">credit_card</span>
+<span>Student &amp; Staff Pass Subscriptions</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-code-metric">2,460</span>
+</button>
+<button class="tab-btn px-space-md py-2.5 font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface rounded-t-lg flex items-center gap-2" data-tab="tab-crew" type="button">
+<span class="material-symbols-outlined text-[18px]">airline_seat_recline_normal</span>
+<span>Pilot &amp; Crew Directory</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-code-metric">44 Staff</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs pb-space-xs">
+<div class="relative">
+<input class="h-8 pl-8 pr-3 bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none shadow-sm" placeholder="Search vehicle, reg no, student ID..." type="text"/>
+<span class="material-symbols-outlined absolute left-2 top-2 text-[16px] text-on-surface-variant pointer-events-none">search</span>
+</div>
+</div>
+</div>
+<!-- Tab 1: Vehicle Compliance, FC & Maintenance Register -->
+<div class="tab-panel p-space-md block" id="tab-fleet">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider h-9">
+<th class="px-space-md font-semibold">Reg Number</th>
+<th class="px-space-md font-semibold">Vehicle Model</th>
+<th class="px-space-md font-semibold">Class &amp; Seats</th>
+<th class="px-space-md font-semibold">Fitness Cert (FC)</th>
+<th class="px-space-md font-semibold">Insurance Policy</th>
+<th class="px-space-md font-semibold">PUC Emission</th>
+<th class="px-space-md font-semibold">Odometer</th>
+<th class="px-space-md font-semibold">Compliance Status</th>
+<th class="px-space-md font-semibold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-sm font-body-sm">
+<!-- Row 1 -->
+<tr class="h-12 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md font-code-metric font-semibold text-on-surface">TN-09-BK-4290</td>
+<td class="px-space-md text-on-surface">Tata Starbus Ultra</td>
+<td class="px-space-md text-on-surface-variant">52 Seater High Deck</td>
+<td class="px-space-md font-code-metric text-on-surface">18-Oct-2025</td>
+<td class="px-space-md font-code-metric text-on-surface">14-Jan-2026 (New India)</td>
+<td class="px-space-md font-code-metric text-on-surface">Valid (24-Nov-25)</td>
+<td class="px-space-md font-code-metric text-on-surface-variant">142,390 km</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Fully Compliant</span>
+</span>
+</td>
+<td class="px-space-md text-right">
+<button class="text-secondary hover:text-on-secondary-fixed font-label-sm text-label-sm font-semibold px-2 py-1 rounded bg-surface-container-low">Service Log</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="h-12 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md font-code-metric font-semibold text-on-surface">TN-09-BK-4312</td>
+<td class="px-space-md text-on-surface">Ashok Leyland Lynx</td>
+<td class="px-space-md text-on-surface-variant">52 Seater High Deck</td>
+<td class="px-space-md font-code-metric text-on-surface">02-Nov-2025</td>
+<td class="px-space-md font-code-metric text-on-surface">22-Mar-2026 (United India)</td>
+<td class="px-space-md font-code-metric text-on-surface">Valid (12-Dec-25)</td>
+<td class="px-space-md font-code-metric text-on-surface-variant">98,210 km</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Fully Compliant</span>
+</span>
+</td>
+<td class="px-space-md text-right">
+<button class="text-secondary hover:text-on-secondary-fixed font-label-sm text-label-sm font-semibold px-2 py-1 rounded bg-surface-container-low">Service Log</button>
+</td>
+</tr>
+<!-- Row 3 (Renewal Warning) -->
+<tr class="h-12 bg-error-container/20 hover:bg-error-container/30 transition-colors">
+<td class="px-space-md font-code-metric font-semibold text-error">TN-09-BK-5520</td>
+<td class="px-space-md text-on-surface">Eicher Skyline 2086</td>
+<td class="px-space-md text-on-surface-variant">42 Seater Standard</td>
+<td class="px-space-md font-code-metric text-error font-semibold">24-Oct-2024 (Expires in 12d)</td>
+<td class="px-space-md font-code-metric text-on-surface">30-Jun-2025 (Oriental)</td>
+<td class="px-space-md font-code-metric text-error font-semibold">Renewal Due</td>
+<td class="px-space-md font-code-metric text-on-surface-variant">189,450 km</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-error-container text-on-error-container">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span>FC Renewal Due</span>
+</span>
+</td>
+<td class="px-space-md text-right">
+<button class="text-error font-label-sm text-label-sm font-semibold px-2 py-1 rounded bg-error-container">Book RTO Slot</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="h-12 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md font-code-metric font-semibold text-on-surface">TN-09-CL-1104</td>
+<td class="px-space-md text-on-surface">Eicher Skyline Pro</td>
+<td class="px-space-md text-on-surface-variant">52 Seater High Deck</td>
+<td class="px-space-md font-code-metric text-on-surface">15-Feb-2026</td>
+<td class="px-space-md font-code-metric text-on-surface">11-Dec-2025 (National Ins)</td>
+<td class="px-space-md font-code-metric text-on-surface">Valid (30-Jan-26)</td>
+<td class="px-space-md font-code-metric text-on-surface-variant">112,500 km</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Fully Compliant</span>
+</span>
+</td>
+<td class="px-space-md text-right">
+<button class="text-secondary hover:text-on-secondary-fixed font-label-sm text-label-sm font-semibold px-2 py-1 rounded bg-surface-container-low">Service Log</button>
+</td>
+</tr>
+<!-- Row 5 (In Workshop) -->
+<tr class="h-12 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md font-code-metric font-semibold text-on-surface">TN-09-BK-3882</td>
+<td class="px-space-md text-on-surface">Tata Starbus Ultra</td>
+<td class="px-space-md text-on-surface-variant">52 Seater High Deck</td>
+<td class="px-space-md font-code-metric text-on-surface">09-Jul-2025</td>
+<td class="px-space-md font-code-metric text-on-surface">19-Sep-2025 (ICICI Lombard)</td>
+<td class="px-space-md font-code-metric text-on-surface">Valid (15-Nov-25)</td>
+<td class="px-space-md font-code-metric text-on-surface-variant">164,120 km</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Fully Compliant</span>
+</span>
+</td>
+<td class="px-space-md text-right">
+<button class="text-secondary hover:text-on-secondary-fixed font-label-sm text-label-sm font-semibold px-2 py-1 rounded bg-surface-container-low">Service Log</button>
+</td>
+</tr>
+<!-- Row 6 (Ambulance) -->
+<tr class="h-12 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md font-code-metric font-semibold text-error">TN-09-AM-108</td>
+<td class="px-space-md text-on-surface">Force Traveller Med-Care</td>
+<td class="px-space-md text-on-surface-variant">Critical ICU Transport</td>
+<td class="px-space-md font-code-metric text-on-surface">28-Aug-2026</td>
+<td class="px-space-md font-code-metric text-on-surface">15-Aug-2026 (Bajaj Allianz)</td>
+<td class="px-space-md font-code-metric text-on-surface">Valid (30-Aug-26)</td>
+<td class="px-space-md font-code-metric text-on-surface-variant">32,800 km</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Priority Fleet (Active)</span>
+</span>
+</td>
+<td class="px-space-md text-right">
+<button class="text-secondary hover:text-on-secondary-fixed font-label-sm text-label-sm font-semibold px-2 py-1 rounded bg-surface-container-low">Med Inspection</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Tab 2: Student & Staff Pass Subscriptions -->
+<div class="tab-panel p-space-md hidden" id="tab-passes">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider h-9">
+<th class="px-space-md font-semibold">Subscriber ID</th>
+<th class="px-space-md font-semibold">Full Name</th>
+<th class="px-space-md font-semibold">Department &amp; Year</th>
+<th class="px-space-md font-semibold">Route &amp; Stop</th>
+<th class="px-space-md font-semibold">Annual Bus Fee</th>
+<th class="px-space-md font-semibold">Fee Status</th>
+<th class="px-space-md font-semibold">Smart RFID UID</th>
+<th class="px-space-md font-semibold text-right">Pass Card</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-sm font-body-sm">
+<tr class="h-12 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md font-code-metric font-semibold text-on-surface">APEX-22-CS-104</td>
+<td class="px-space-md font-semibold text-on-surface">Pooja Sundararajan</td>
+<td class="px-space-md text-on-surface-variant">B.Tech CSE • Year III</td>
+<td class="px-space-md text-on-surface">#101 • Chromepet Flyover Bus Stop</td>
+<td class="px-space-md font-code-metric text-on-surface">₹28,000 / yr</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Paid Full</span>
+</span>
+</td>
+<td class="px-space-md font-code-metric text-on-surface-variant">04:A2:89:C1:99</td>
+<td class="px-space-md text-right">
+<button class="text-secondary hover:text-on-secondary-fixed font-label-sm text-label-sm font-semibold px-2 py-1 rounded bg-surface-container-low">View RFID Pass</button>
+</td>
+</tr>
+<tr class="h-12 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md font-code-metric font-semibold text-on-surface">APEX-23-ME-045</td>
+<td class="px-space-md font-semibold text-on-surface">S. Vignesh Kumar</td>
+<td class="px-space-md text-on-surface-variant">B.Tech Mech • Year II</td>
+<td class="px-space-md text-on-surface">#104 • Velachery Vijaya Nagar</td>
+<td class="px-space-md font-code-metric text-on-surface">₹28,000 / yr</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Paid Full</span>
+</span>
+</td>
+<td class="px-space-md font-code-metric text-on-surface-variant">04:FF:12:88:20</td>
+<td class="px-space-md text-right">
+<button class="text-secondary hover:text-on-secondary-fixed font-label-sm text-label-sm font-semibold px-2 py-1 rounded bg-surface-container-low">View RFID Pass</button>
+</td>
+</tr>
+<tr class="h-12 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md font-code-metric font-semibold text-on-surface">APEX-21-EC-089</td>
+<td class="px-space-md font-semibold text-on-surface">Ananya Rajesh</td>
+<td class="px-space-md text-on-surface-variant">B.Tech ECE • Year IV</td>
+<td class="px-space-md text-on-surface">#108 • Anna Nagar Roundtana</td>
+<td class="px-space-md font-code-metric text-on-surface">₹28,000 / yr</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-error-container text-on-error-container">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span>Installment 2 Due (₹14,000)</span>
+</span>
+</td>
+<td class="px-space-md font-code-metric text-on-surface-variant">04:33:DE:82:11</td>
+<td class="px-space-md text-right">
+<button class="text-secondary hover:text-on-secondary-fixed font-label-sm text-label-sm font-semibold px-2 py-1 rounded bg-surface-container-low">Send Reminder</button>
+</td>
+</tr>
+<tr class="h-12 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md font-code-metric font-semibold text-on-surface">APEX-FAC-014</td>
+<td class="px-space-md font-semibold text-on-surface">Dr. C. Ramanathan</td>
+<td class="px-space-md text-on-surface-variant">Professor, Dept of Physics</td>
+<td class="px-space-md text-on-surface">#115 • Koyambedu Metro Depot</td>
+<td class="px-space-md font-code-metric text-on-surface">Institutional Faculty Perk</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Staff Exemption</span>
+</span>
+</td>
+<td class="px-space-md font-code-metric text-on-surface-variant">04:FA:21:00:81</td>
+<td class="px-space-md text-right">
+<button class="text-secondary hover:text-on-secondary-fixed font-label-sm text-label-sm font-semibold px-2 py-1 rounded bg-surface-container-low">View Staff Pass</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Tab 3: Driver & Crew Directory -->
+<div class="tab-panel p-space-md hidden" id="tab-crew">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider h-9">
+<th class="px-space-md font-semibold">Crew Member</th>
+<th class="px-space-md font-semibold">Emp ID &amp; Role</th>
+<th class="px-space-md font-semibold">Heavy Vehicle License (HVC)</th>
+<th class="px-space-md font-semibold">Medical Fitness Cert</th>
+<th class="px-space-md font-semibold">Emergency Contact</th>
+<th class="px-space-md font-semibold">Assigned Route</th>
+<th class="px-space-md font-semibold text-right">Verification</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-sm font-body-sm">
+<tr class="h-12 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md font-semibold text-on-surface">M. Shanmugam</td>
+<td class="px-space-md text-on-surface-variant">APX-DRV-01 • Senior Pilot</td>
+<td class="px-space-md font-code-metric text-on-surface">TN-09-20040003189 (Exp 2028)</td>
+<td class="px-space-md text-on-surface">Dr. Mohan Eye Care • Passed (A1)</td>
+<td class="px-space-md font-code-metric text-on-surface">+91 98401 22891</td>
+<td class="px-space-md text-secondary font-semibold">Route #101 (Tambaram)</td>
+<td class="px-space-md text-right">
+<span class="inline-flex items-center gap-1 text-label-sm text-label-sm font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Police Verified</span>
+</span>
+</td>
+</tr>
+<tr class="h-12 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md font-semibold text-on-surface">R. Govindasamy</td>
+<td class="px-space-md text-on-surface-variant">APX-DRV-04 • Heavy Pilot</td>
+<td class="px-space-md font-code-metric text-on-surface">TN-09-20080011422 (Exp 2027)</td>
+<td class="px-space-md text-on-surface">Campus Health Center • Fit</td>
+<td class="px-space-md font-code-metric text-on-surface">+91 97910 44521</td>
+<td class="px-space-md text-secondary font-semibold">Route #104 (Velachery)</td>
+<td class="px-space-md text-right">
+<span class="inline-flex items-center gap-1 text-label-sm text-label-sm font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Police Verified</span>
+</span>
+</td>
+</tr>
+<tr class="h-12 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md font-semibold text-on-surface">K. Anthony</td>
+<td class="px-space-md text-on-surface-variant">APX-DRV-09 • Senior Pilot</td>
+<td class="px-space-md font-code-metric text-on-surface">TN-09-19990008431 (Exp 2026)</td>
+<td class="px-space-md text-on-surface">Apex Clinic • Fit with corrective specs</td>
+<td class="px-space-md font-code-metric text-on-surface">+91 94440 98112</td>
+<td class="px-space-md text-secondary font-semibold">Route #108 (Anna Nagar)</td>
+<td class="px-space-md text-right">
+<span class="inline-flex items-center gap-1 text-label-sm text-label-sm font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Police Verified</span>
+</span>
+</td>
+</tr>
+<tr class="h-12 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md font-semibold text-on-surface">G. Sundaram</td>
+<td class="px-space-md text-on-surface-variant">APX-DRV-12 • Heavy Pilot</td>
+<td class="px-space-md font-code-metric text-on-surface">TN-02-20120005231 (Exp 2029)</td>
+<td class="px-space-md text-on-surface">Campus Health Center • Fit</td>
+<td class="px-space-md font-code-metric text-on-surface">+91 94441 55209</td>
+<td class="px-space-md text-secondary font-semibold">Route #115 (Avadi)</td>
+<td class="px-space-md text-right">
+<span class="inline-flex items-center gap-1 text-label-sm text-label-sm font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Police Verified</span>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Emergency & Breakdown Protocol Strip -->
+<div class="bg-primary text-on-primary rounded-xl p-space-md shadow-md flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-error flex items-center justify-center text-on-error shrink-0 animate-pulse">
+<span class="material-symbols-outlined text-[28px]">emergency</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight">Campus 24/7 Transport Control Room Protocol</span>
+<span class="px-2 py-0.5 rounded bg-error font-label-sm text-label-sm uppercase font-semibold">Toll Free Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+          Immediate mechanical relief bus deployed within 15 minutes of reported breakdown along any approved Chennai metropolitan route.
+        </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<div class="px-3 py-1.5 rounded-lg bg-surface-container-highest/20 text-on-primary flex items-center gap-2 text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">airport_shuttle</span>
+<span>Standby Bus: <strong>TN-09-BK-9901</strong> (Central Depot Bay #1)</span>
+</div>
+<a class="h-9 px-space-md bg-error text-on-error hover:bg-error/90 rounded-lg font-label-md text-label-md font-semibold flex items-center gap-1.5 transition-colors shadow" href="tel:04427450000">
+<span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+<span>Hotline: +91 (044) 2745-9999</span>
+</a>
+<a class="h-9 px-space-md bg-surface-container-lowest text-primary hover:bg-surface-container rounded-lg font-label-md text-label-md font-semibold flex items-center gap-1.5 transition-colors shadow" href="tel:108">
+<span class="material-symbols-outlined text-[18px] text-error">medical_services</span>
+<span>Campus ICU Van #108</span>
+</a>
+</div>
+</div>
+<!-- Micro-interaction Script for Tab Switching -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const tabButtons = document.querySelectorAll('.tab-btn');
+      const tabPanels = document.querySelectorAll('.tab-panel');
+
+      tabButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          const targetTab = this.getAttribute('data-tab');
+
+          // Reset buttons
+          tabButtons.forEach(btn => {
+            btn.classList.remove('active', 'bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+            btn.classList.add('text-on-surface-variant');
+          });
+
+          // Activate clicked button
+          this.classList.add('active', 'bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+          this.classList.remove('text-on-surface-variant');
+
+          // Toggle tab panels
+          tabPanels.forEach(panel => {
+            if (panel.id === targetTab) {
+              panel.classList.remove('hidden');
+              panel.classList.add('block');
+            } else {
+              panel.classList.add('hidden');
+              panel.classList.remove('block');
+            }
+          });
+        });
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-sm px-gutter-desktop shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-space-sm font-label-sm text-label-sm"><span>Apex Institute of Technology • Institutional OS System</span><span>•</span><span>Enterprise Tier • 98.4% uptime</span></div><div class="flex items-center gap-space-md font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" data-path="institutional-support" href="#">Institutional Support</a><a class="hover:text-on-surface transition-colors" data-path="privacy-compliance" href="#">FERPA &amp; Privacy</a><span class="font-code-metric text-on-surface-variant">Apex-Node #US-CAMPUS-01</span></div></div></footer></div></body></html>

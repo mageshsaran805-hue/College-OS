@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error": "#ffffff", "on-tertiary": "#ffffff", "tertiary": "#000000", "on-surface-variant": "#45464d", "on-secondary-container": "#fffbff", "on-secondary-fixed-variant": "#3323cc", "secondary": "#4b41e1", "surface-variant": "#d3e4fe", "tertiary-container": "#001e2f", "outline-variant": "#c6c6cd", "tertiary-fixed": "#c9e6ff", "on-tertiary-container": "#008cc7", "on-primary": "#ffffff", "error-container": "#ffdad6", "inverse-surface": "#213145", "primary-container": "#131b2e", "on-secondary-fixed": "#0f0069", "on-tertiary-fixed": "#001e2f", "on-background": "#0b1c30", "error": "#ba1a1a", "surface-container": "#e5eeff", "on-tertiary-fixed-variant": "#004c6e", "tertiary-fixed-dim": "#89ceff", "surface": "#f8f9ff", "primary": "#000000", "on-secondary": "#ffffff", "primary-fixed-dim": "#bec6e0", "primary-fixed": "#dae2fd", "outline": "#76777d", "inverse-primary": "#bec6e0", "surface-dim": "#cbdbf5", "secondary-fixed-dim": "#c3c0ff", "on-primary-container": "#7c839b", "secondary-container": "#645efb", "on-primary-fixed": "#131b2e", "secondary-fixed": "#e2dfff", "inverse-on-surface": "#eaf1ff", "surface-container-low": "#eff4ff", "on-error-container": "#93000a", "surface-container-high": "#dce9ff", "background": "#f8f9ff", "surface-bright": "#f8f9ff", "on-surface": "#0b1c30", "surface-tint": "#565e74", "on-primary-fixed-variant": "#3f465c", "surface-container-lowest": "#ffffff", "surface-container-highest": "#d3e4fe" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "1rem", "space-xl": "2rem", "gutter": "1rem", "gutter-desktop": "1.5rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-lg": "1.25rem", "space-md": "0.75rem" }, "fontFamily": { "body-sm": ["Geist"], "headline-xl": ["Geist"], "headline-lg": ["Geist"], "body-lg": ["Geist"], "body-md": ["Geist"], "label-sm": ["Geist"], "headline-xl-mobile": ["Geist"], "label-md": ["Geist"], "headline-sm": ["Geist"], "code-metric": ["Geist"] }, "fontSize": { "body-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "400" }], "headline-xl": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.011em", "fontWeight": "400" }], "body-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.006em", "fontWeight": "400" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-md": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "-0.005em", "fontWeight": "500" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "code-metric": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.02em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between border-r border-outline-variant/30"><div class="flex flex-col h-full overflow-hidden"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest border-b border-outline-variant/20 shrink-0"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Apex Institute</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-lg bg-surface-container text-on-surface font-semibold shrink-0">#US-01</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Institutional Workspace • AY 2024-25</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container text-on-surface font-semibold rounded-lg"><div class="px-space-sm pt-space-xs pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Academic Operations</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="academics" href="#">Academics</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="students" href="#">Students</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="faculty-staff" href="#">Faculty &amp; Staff</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="attendance-overview" href="#">Attendance</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="examination-overview" href="#">Examinations</a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Institutional Services</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="finance-overview" href="#">Finance</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="campus-overview" href="#">Campus Operations</a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="events-activities" href="#">Student Life &amp; Activities</a><div class="flex flex-col rounded-lg bg-surface-container-low p-space-xs border border-outline-variant/30"><div class="flex items-center justify-between px-space-xs py-space-xs text-on-surface"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-secondary">workspace_premium</span><span class="font-label-md text-label-md font-semibold text-on-surface">Placements &amp; Alumni</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_less</span></div><div class="flex flex-col pl-6 pr-space-xs pt-space-xs gap-space-xs"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="placement-overview" href="#">Placement Overview</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="student-career-profiles" href="#">Student Career Profiles</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="companies-recruiters" href="#">Companies &amp; Recruiters</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="placement-drives" href="#">Placement Drives</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="jobs-internships" href="#">Jobs &amp; Internships</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="training-development" href="#">Training &amp; Development</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="placement-results-offers" href="#">Placement Results &amp; Offers</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="alumni-directory" href="#">Alumni Directory</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="alumni-engagement" href="#">Alumni Engagement</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="placement-alumni-reports" href="#">Placement &amp; Alumni Reports</a></div></div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="communication" href="#">Communication</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports-analytics" href="#">Reports &amp; Analytics</a><div class="px-space-sm pt-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">System Governance</div><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="administration" href="#">Administration</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-sm bg-surface-container-low border-t border-outline-variant/20 shrink-0"><div class="flex items-center justify-between text-on-surface-variant mb-space-xs"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-semibold text-on-surface">Apex Core 98.4% uptime</span></div><span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">v4.2</span></div><a class="flex items-center justify-between font-label-sm text-label-sm text-secondary hover:text-on-secondary-fixed transition-colors" data-path="institutional-support" href="#">Institutional Support Desk</a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="relative flex items-center w-80"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-on-surface-variant pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-14 bg-surface rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none border border-outline-variant/40 focus:border-secondary focus:bg-surface-container-lowest transition-colors" placeholder="Search students, companies, drives..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-code-metric">⌘K</span></div><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container border border-outline-variant/20"><span class="material-symbols-outlined text-[16px] text-secondary">event_available</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">AY 2024–2025 • Semester 1 Fall</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary font-semibold uppercase tracking-wider">Active Term</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div></div><div class="flex items-center gap-space-md"><button class="h-9 px-space-md flex items-center gap-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-on-surface transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Action</span></button><div class="flex items-center gap-space-xs"><button class="relative w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-label-sm flex items-center justify-center font-code-metric">3</span></button><button class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button></div><div class="h-6 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Alistair Finch</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Dean of Academic Affairs / Controller of Placements</span></div><div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter-desktop pb-space-xl flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb & Action Banner -->
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span class="hover:text-on-surface cursor-pointer">Placements &amp; Alumni</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-secondary font-semibold">Companies &amp; Recruiters</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface-variant font-code-metric">SYS-REGISTRY-CORP-V4</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pt-1">
+<div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Corporate Partnerships &amp; Recruiter Directory</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+          Manage institutional industry relationships, recruiter points of contact, historical campus hiring records, and partnership MOUs.
+        </p>
+</div>
+<!-- Action Toolbar -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="h-9 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">file_download</span>
+<span>Export Corporate Directory</span>
+</button>
+<button class="h-9 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary font-label-md text-label-md flex items-center gap-space-xs transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+<span>Send Placement Invite (2025)</span>
+</button>
+<button class="h-9 px-space-md rounded-lg bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-label-md text-label-md flex items-center gap-space-xs transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add_business</span>
+<span>+ Register Enterprise Partner</span>
+</button>
+</div>
+</div>
+</div>
+<!-- KPI Architecture Tiles -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md mb-space-lg">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Registered Companies</span>
+<span class="p-1 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">domain</span>
+</span>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-code-metric">284</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Corporate Partners</span>
+</div>
+<div class="flex items-center gap-space-xs mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="text-secondary font-semibold font-code-metric">+18</span> vs AY 2023-24 cohort
+        </div>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 82%"></div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Active Recruiters</span>
+<span class="p-1 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</span>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-code-metric">642</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">HR &amp; Tech Leads</span>
+</div>
+<div class="flex items-center gap-space-xs mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>94% validated points of contact</span>
+</div>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 94%"></div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Visited This Season</span>
+<span class="p-1 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">flight_land</span>
+</span>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-code-metric">148</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Organizations</span>
+</div>
+<div class="flex items-center gap-space-xs mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="font-code-metric text-on-surface font-semibold">52.1%</span> of target schedule
+        </div>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 52%"></div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">New Tier 1 Recruiters</span>
+<span class="p-1 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</span>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-code-metric">22</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">First-Time Partners</span>
+</div>
+<div class="flex items-center gap-space-xs mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>Target exceeded (+4 over Q3)</span>
+</div>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 100%"></div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Avg Offers / Company</span>
+<span class="p-1 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">group_add</span>
+</span>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-code-metric">10.4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Scholars</span>
+</div>
+<div class="flex items-center gap-space-xs mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="font-code-metric text-secondary font-semibold">Median CTC: ₹22.8 LPA</span>
+</div>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 68%"></div>
+</div>
+</div>
+</div>
+<!-- Filter & Taxonomy Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-space-sm top-2.5 text-[18px] text-on-surface-variant pointer-events-none">search</span>
+<input class="w-full h-10 pl-9 pr-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant outline-none focus:bg-surface-container transition-colors" placeholder="Search company by name, industry sector, recruiter email, headquarters..." type="text"/>
+</div>
+<!-- Segmented Relationship Tier Controls -->
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-lg shrink-0 overflow-x-auto">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold shadow-sm transition-all whitespace-nowrap">
+          All Tiers
+        </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all whitespace-nowrap">
+          Strategic Marquee
+        </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all whitespace-nowrap">
+          Regular Recruiter
+        </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all whitespace-nowrap">
+          New Partner
+        </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all whitespace-nowrap">
+          Under Review (6)
+        </button>
+</div>
+</div>
+<!-- Sector Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 text-label-sm font-label-sm">
+<span class="text-on-surface-variant uppercase tracking-wider font-semibold mr-1 shrink-0">Sectors:</span>
+<button class="px-2.5 py-1 rounded-lg bg-primary text-on-primary font-semibold shrink-0">All Industries (284)</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface shrink-0 transition-colors">Big Tech &amp; Cloud (46)</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface shrink-0 transition-colors">Banking &amp; FinTech (38)</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface shrink-0 transition-colors">Semiconductor &amp; Core Hardware (32)</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface shrink-0 transition-colors">Automotive &amp; EV (24)</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface shrink-0 transition-colors">Consulting &amp; Analytics (42)</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface shrink-0 transition-colors">High-Growth Startups (58)</button>
+</div>
+</div>
+<!-- Main Split Layout: Corporate Directory Ledger + Selected Partner Dossier -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT SIDE: Comprehensive Corporate Registry (7 Columns) -->
+<div class="xl:col-span-7 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Table Control Toolbar -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Registered Partner Ledger</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric text-label-sm font-semibold">284 entries</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Sort: Total Offers</span>
+<span class="material-symbols-outlined text-[16px]">arrow_drop_down</span>
+</div>
+</div>
+<!-- Ledger Entries -->
+<div class="divide-y divide-transparent">
+<!-- Entry 1: Microsoft India (ACTIVE SELECTION) -->
+<div class="p-space-md bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer relative">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary rounded-r"></div>
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px] text-secondary">window</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Microsoft India</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-secondary font-label-sm text-label-sm font-semibold uppercase tracking-wider">Strategic Marquee</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span>Big Tech • Cloud &amp; AI</span>
+<span>•</span>
+<span>Redmond / Hyderabad</span>
+<span>•</span>
+<span class="font-code-metric text-on-surface font-semibold">MOU Active</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<div class="font-headline-sm text-headline-sm text-secondary font-code-metric font-semibold">₹48.5 LPA</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Avg CTC</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-sm mt-space-sm pt-space-xs bg-surface-container-lowest/80 rounded-lg p-space-xs font-label-sm text-label-sm">
+<div>
+<span class="text-on-surface-variant block">Primary Recruiter:</span>
+<span class="font-semibold text-on-surface">Ananya Sengupta</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">Last Campus Visit:</span>
+<span class="font-semibold text-on-surface font-code-metric">October 2024</span>
+</div>
+<div class="text-right">
+<span class="text-on-surface-variant block">Total 2024 Offers:</span>
+<span class="font-semibold text-secondary font-code-metric">28 Selected (FTE+PPO)</span>
+</div>
+</div>
+</div>
+<!-- Entry 2: Google India -->
+<div class="p-space-md bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0 text-on-surface font-code-metric font-bold text-headline-sm">
+                  G
+                </div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Google India</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-secondary font-label-sm text-label-sm font-semibold uppercase tracking-wider">Strategic Marquee</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span>Big Tech • Search &amp; Cloud</span>
+<span>•</span>
+<span>Mountain View / Bangalore</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<div class="font-headline-sm text-headline-sm text-on-surface font-code-metric font-semibold">₹44.0 LPA</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Avg CTC</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-sm mt-space-sm pt-space-xs bg-surface-container-low/60 rounded-lg p-space-xs font-label-sm text-label-sm">
+<div>
+<span class="text-on-surface-variant block">Primary Recruiter:</span>
+<span class="font-semibold text-on-surface">R. K. Narayanan</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">Last Campus Visit:</span>
+<span class="font-semibold text-on-surface font-code-metric">November 2024</span>
+</div>
+<div class="text-right">
+<span class="text-on-surface-variant block">Total Offers:</span>
+<span class="font-semibold text-on-surface font-code-metric">18 Scholars</span>
+</div>
+</div>
+</div>
+<!-- Entry 3: Goldman Sachs -->
+<div class="p-space-md bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0 text-on-surface font-code-metric font-bold text-headline-sm">
+                  GS
+                </div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Goldman Sachs</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold uppercase tracking-wider">Dream Partner</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span>Investment Banking &amp; FinTech</span>
+<span>•</span>
+<span>New York / Bangalore</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<div class="font-headline-sm text-headline-sm text-on-surface font-code-metric font-semibold">₹31.5 LPA</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Avg CTC</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-sm mt-space-sm pt-space-xs bg-surface-container-low/60 rounded-lg p-space-xs font-label-sm text-label-sm">
+<div>
+<span class="text-on-surface-variant block">Primary Recruiter:</span>
+<span class="font-semibold text-on-surface">Priya Sharma</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">Last Campus Visit:</span>
+<span class="font-semibold text-on-surface font-code-metric">September 2024</span>
+</div>
+<div class="text-right">
+<span class="text-on-surface-variant block">Total Offers:</span>
+<span class="font-semibold text-on-surface font-code-metric">32 Scholars</span>
+</div>
+</div>
+</div>
+<!-- Entry 4: Texas Instruments -->
+<div class="p-space-md bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0 text-on-surface font-code-metric font-bold text-headline-sm">
+                  TI
+                </div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Texas Instruments</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-secondary font-label-sm text-label-sm font-semibold uppercase tracking-wider">Core Marquee</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span>Semiconductor &amp; VLSI Core</span>
+<span>•</span>
+<span>Dallas / Bangalore</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<div class="font-headline-sm text-headline-sm text-on-surface font-code-metric font-semibold">₹26.0 LPA</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Avg CTC</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-sm mt-space-sm pt-space-xs bg-surface-container-low/60 rounded-lg p-space-xs font-label-sm text-label-sm">
+<div>
+<span class="text-on-surface-variant block">Primary Recruiter:</span>
+<span class="font-semibold text-on-surface">Er. K. V. Raman</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">Last Campus Visit:</span>
+<span class="font-semibold text-on-surface font-code-metric">August 2024</span>
+</div>
+<div class="text-right">
+<span class="text-on-surface-variant block">Total Offers:</span>
+<span class="font-semibold text-on-surface font-code-metric">16 Scholars</span>
+</div>
+</div>
+</div>
+<!-- Entry 5: Qualcomm India -->
+<div class="p-space-md bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0 text-on-surface font-code-metric font-bold text-headline-sm">
+                  Q
+                </div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Qualcomm India</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-secondary font-label-sm text-label-sm font-semibold uppercase tracking-wider">Core Marquee</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span>Wireless &amp; 5G Telecom Core</span>
+<span>•</span>
+<span>San Diego / Hyderabad</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<div class="font-headline-sm text-headline-sm text-on-surface font-code-metric font-semibold">₹24.8 LPA</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Avg CTC</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-sm mt-space-sm pt-space-xs bg-surface-container-low/60 rounded-lg p-space-xs font-label-sm text-label-sm">
+<div>
+<span class="text-on-surface-variant block">Primary Recruiter:</span>
+<span class="font-semibold text-on-surface">Neha Mathur</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">Last Campus Visit:</span>
+<span class="font-semibold text-on-surface font-code-metric">August 2024</span>
+</div>
+<div class="text-right">
+<span class="text-on-surface-variant block">Total Offers:</span>
+<span class="font-semibold text-on-surface font-code-metric">14 Scholars</span>
+</div>
+</div>
+</div>
+<!-- Entry 6: Tata Consultancy Services -->
+<div class="p-space-md bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0 text-on-surface font-code-metric font-bold text-headline-sm">
+                  TCS
+                </div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Tata Consultancy Services</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-semibold uppercase tracking-wider">Mass Recruiter</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span>IT Consulting &amp; Digital Services</span>
+<span>•</span>
+<span>Mumbai / Pan-India</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<div class="font-headline-sm text-headline-sm text-on-surface font-code-metric font-semibold">₹9.2 LPA</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Avg CTC (Digital/Ninja)</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-sm mt-space-sm pt-space-xs bg-surface-container-low/60 rounded-lg p-space-xs font-label-sm text-label-sm">
+<div>
+<span class="text-on-surface-variant block">Primary Recruiter:</span>
+<span class="font-semibold text-on-surface">Sanjay Mehta</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">Last Campus Visit:</span>
+<span class="font-semibold text-on-surface font-code-metric">July 2024</span>
+</div>
+<div class="text-right">
+<span class="text-on-surface-variant block">Total Offers:</span>
+<span class="font-semibold text-on-surface font-code-metric">210 Scholars</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination Bar -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Showing 1–6 of 284 Corporate Organizations</span>
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-semibold shadow-sm">1</button>
+<button class="px-2 py-1 rounded hover:bg-surface-container transition-colors">2</button>
+<button class="px-2 py-1 rounded hover:bg-surface-container transition-colors">3</button>
+<span class="px-1">...</span>
+<button class="px-2 py-1 rounded hover:bg-surface-container transition-colors">48</button>
+</div>
+</div>
+</div>
+<!-- Quick Institutional Recruiter Intelligence Insight Banner -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[22px]">insights</span>
+</div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Automated Placement Drive Invitation Dispatch</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Batch 2025 cycle invitations scheduled for 38 Tier-1 organizations next Monday at 09:00 IST.</div>
+</div>
+</div>
+<button class="h-8 px-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md shrink-0 shadow-sm transition-colors">
+          Configure Dispatch
+        </button>
+</div>
+</div>
+<!-- RIGHT SIDE: Company Partner Profile Dossier (Microsoft India) (5 Columns) -->
+<div class="xl:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+<!-- Partner Profile Header Card -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[32px]">window</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Microsoft India</h2>
+<span class="material-symbols-outlined text-secondary text-[20px]" title="Verified Corporate Partner">verified</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Cloud &amp; Enterprise AI • Global Technology Leader</div>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="px-2 py-0.5 rounded-lg bg-surface-container text-secondary font-label-sm text-label-sm font-semibold uppercase tracking-wider">
+                Tier 1 Strategic
+              </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm font-code-metric mt-1">MOU-EXP: DEC 2027</span>
+</div>
+</div>
+<!-- Quick Metadata Matrix -->
+<div class="grid grid-cols-2 gap-space-sm p-space-sm rounded-lg bg-surface-container-low font-body-sm text-body-sm">
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm block uppercase tracking-wider font-semibold">Global Headquarters</span>
+<span class="text-on-surface font-medium">Redmond, Washington, USA</span>
+</div>
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm block uppercase tracking-wider font-semibold">India Campus Hubs</span>
+<span class="text-on-surface font-medium">Hyderabad &amp; Bangalore IDC</span>
+</div>
+</div>
+</div>
+<!-- Current Campus Drive Status Callout -->
+<div class="p-space-md rounded-xl bg-surface-container-high/60 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+              Current Drive Status • AY 2024–25
+            </span>
+<span class="font-label-sm text-label-sm font-code-metric text-on-surface font-semibold">Cycle Completed</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium">
+            Campus Drive Finished — 28 Offers Dispatched (24 Full-Time Engineers + 4 Research PPOs).
+          </p>
+<div class="flex items-center gap-space-md mt-1 font-label-sm text-label-sm text-on-surface-variant">
+<span>Acceptance Rate: <strong class="text-on-surface font-code-metric">100%</strong></span>
+<span>•</span>
+<span>Pre-Placement Talks: <strong class="text-on-surface">Auditorium 1 (Oct 12)</strong></span>
+</div>
+</div>
+<!-- Recruiter Contacts Section -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">
+              Recruiter Points of Contact (POCs)
+            </span>
+<button class="font-label-sm text-label-sm text-secondary hover:text-on-secondary-fixed transition-colors font-semibold">
+              + Add Lead Contact
+            </button>
+</div>
+<!-- POC 1: University Relations -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-surface-container text-secondary flex items-center justify-center font-bold font-code-metric shrink-0">
+                AS
+              </div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Ananya Sengupta</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-lowest text-secondary font-label-sm text-label-sm font-semibold">Primary POC</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Lead University Relations Specialist — India IDC</div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface mt-1 font-code-metric">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">mail</span>
+                    a.sengupta@microsoft.com
+                  </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">call</span>
+                    +91 98450 12984
+                  </span>
+</div>
+</div>
+</div>
+<button class="w-7 h-7 rounded-lg bg-surface-container-lowest hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" title="Message Recruiter">
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+<!-- POC 2: Engineering Liaison -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-surface-container text-on-surface flex items-center justify-center font-bold font-code-metric shrink-0">
+                VM
+              </div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Dr. Vikram Malhotra</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold">Tech Evaluator</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Partner Director of Engineering — Azure Core</div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface mt-1 font-code-metric">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">mail</span>
+                    v.malhotra@microsoft.com
+                  </span>
+</div>
+</div>
+</div>
+<button class="w-7 h-7 rounded-lg bg-surface-container-lowest hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" title="Message Recruiter">
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+</div>
+<!-- Hiring Track Record (Last 3 Years) with Micro Data Viz -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">
+              Campus Hiring Track Record (3-Year Longitudinal)
+            </span>
+<span class="font-label-sm text-label-sm font-code-metric text-secondary font-semibold">
+              +40% Volume Surge
+            </span>
+</div>
+<!-- Table-Card Records -->
+<div class="flex flex-col gap-1.5">
+<!-- Year 2024 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm font-code-metric text-on-surface font-semibold">2024</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">28 Offers Extended</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">24 SDE-1 Core • 4 Azure Systems Research</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-label-md text-label-md font-code-metric font-semibold text-secondary">Avg ₹48.5 LPA</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">Max ₹58.5 LPA</span>
+</div>
+</div>
+<!-- Year 2023 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm font-code-metric text-on-surface font-semibold">2023</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">24 Offers Extended</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">20 SDE-1 Core • 4 AI Research Interns</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-label-md text-label-md font-code-metric font-semibold text-on-surface">Avg ₹44.0 LPA</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">Max ₹52.0 LPA</span>
+</div>
+</div>
+<!-- Year 2022 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm font-code-metric text-on-surface font-semibold">2022</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">20 Offers Extended</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">18 SDE-1 Core • 2 Cloud Infra</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-label-md text-label-md font-code-metric font-semibold text-on-surface">Avg ₹41.2 LPA</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-code-metric">Max ₹46.5 LPA</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Corporate Feedback & Campus Caliber Evaluation -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">
+              Corporate Assessment &amp; Recruiter Review
+            </span>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="font-code-metric font-bold text-label-md text-label-md">4.9 / 5.0</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+            “Exceptional algorithmic and systems problem-solving caliber in Computer Science graduates. Candidates demonstrated rapid adaptability in distributed systems and systems-level debugging during round 3 interviews.”
+          </p>
+<div class="text-right font-label-sm text-label-sm text-on-surface-variant">
+            — Formal Evaluation logged by University Talent Team (Oct 24, 2024)
+          </div>
+</div>
+<!-- Partnership Dossier Action Buttons -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-xs">
+<button class="h-9 px-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">apartment</span>
+<span>Hospitality Log</span>
+</button>
+<button class="h-9 px-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">description</span>
+<span>View Signed MOU</span>
+</button>
+<button class="h-9 px-space-xs rounded-lg bg-primary hover:bg-on-surface text-on-primary font-label-md text-label-md flex items-center justify-center gap-1 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">post_add</span>
+<span>Log Interaction</span>
+</button>
+</div>
+</div>
+<!-- Historical Drive Artifacts & Notes Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Institutional Compliance &amp; Liaison Records</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">lock_open</span>
+</div>
+<div class="flex flex-col gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between py-1 bg-surface-container-low px-space-sm rounded-lg">
+<span>Corporate Non-Disclosure Agreement (NDA)</span>
+<span class="font-code-metric font-semibold text-secondary">Active • Signed</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low px-space-sm rounded-lg">
+<span>Special Tier 1 On-Campus Placement Slot</span>
+<span class="font-code-metric font-semibold text-on-surface">Slot Day 0 (Priority 1)</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low px-space-sm rounded-lg">
+<span>Apex Industry Academic Advisory Seat</span>
+<span class="font-code-metric font-semibold text-on-surface">Prof. Ananya S. (Invited)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-sm px-gutter-desktop border-t border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-space-sm font-label-sm text-label-sm"><span>Apex Institute of Technology • Institutional OS System</span><span>•</span><span>Enterprise Tier • 98.4% uptime</span></div><div class="flex items-center gap-space-md font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" data-path="institutional-support" href="#">Institutional Support</a><a class="hover:text-on-surface transition-colors" data-path="privacy-compliance" href="#">FERPA &amp; Privacy</a><span class="font-code-metric text-on-surface-variant">Apex-Node #US-CAMPUS-01</span></div></div></footer></div></body></html>

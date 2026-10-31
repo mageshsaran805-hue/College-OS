@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed": "#131b2e", "outline": "#76777d", "surface-tint": "#565e74", "on-primary-container": "#7c839b", "background": "#f8f9ff", "surface-container-high": "#dce9ff", "surface-container-highest": "#d3e4fe", "error": "#ba1a1a", "primary-container": "#131b2e", "on-tertiary-container": "#008cc7", "primary": "#000000", "on-primary-fixed-variant": "#3f465c", "inverse-primary": "#bec6e0", "on-tertiary-fixed-variant": "#004c6e", "inverse-on-surface": "#eaf1ff", "tertiary-fixed-dim": "#89ceff", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "outline-variant": "#c6c6cd", "surface-variant": "#d3e4fe", "on-secondary-container": "#fffbff", "primary-fixed-dim": "#bec6e0", "tertiary-fixed": "#c9e6ff", "tertiary": "#000000", "secondary-fixed": "#e2dfff", "on-surface-variant": "#45464d", "on-background": "#0b1c30", "on-surface": "#0b1c30", "on-secondary": "#ffffff", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "surface": "#f8f9ff", "primary-fixed": "#dae2fd", "tertiary-container": "#001e2f", "on-error-container": "#93000a", "surface-bright": "#f8f9ff", "on-secondary-fixed": "#0f0069", "on-primary": "#ffffff", "inverse-surface": "#213145", "on-tertiary-fixed": "#001e2f", "on-secondary-fixed-variant": "#3323cc", "surface-container": "#e5eeff", "secondary-fixed-dim": "#c3c0ff", "surface-container-low": "#eff4ff", "surface-dim": "#cbdbf5", "secondary": "#4b41e1", "secondary-container": "#645efb" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-lg": "1.25rem", "space-md": "0.75rem", "gutter": "1rem", "margin-desktop": "2rem", "margin": "1rem", "gutter-desktop": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-xl": "2rem" }, "fontFamily": { "body-lg": ["Geist"], "body-md": ["Geist"], "headline-lg": ["Geist"], "label-sm": ["Geist"], "headline-sm": ["Geist"], "code-metric": ["Geist"], "headline-xl": ["Geist"], "body-sm": ["Geist"], "headline-xl-mobile": ["Geist"], "label-md": ["Geist"] }, "fontSize": { "body-lg": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.011em", "fontWeight": "400" }], "body-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.006em", "fontWeight": "400" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "code-metric": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "-0.02em", "fontWeight": "500" }], "headline-xl": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600" }], "body-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "400" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-md": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "-0.005em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary font-headline-sm text-headline-sm">A</div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-label-md text-on-surface truncate font-semibold">College OS</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Student Workspace</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">unfold_more</span></div><div class="px-space-md py-space-sm bg-surface-container-low"><div class="p-space-xs rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface truncate">B.Tech CSE · Sec 4</span></div><span class="font-code-metric text-code-metric text-on-surface-variant">v4.12</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Academic Operations</div><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="portal-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Portal Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="academics-and-courses" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-body-md text-body-md">Academics & Courses</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="attendance" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span class="font-body-md text-body-md">Attendance</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="examinations-and-results" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span><span class="font-body-md text-body-md">Examinations & Results</span></a></nav><div class="mt-space-md px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Campus Services</div><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="fee-payments-and-dues" href="#"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span class="font-body-md text-body-md">Fee Payments & Dues</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="library-and-digital-resources" href="#"><span class="material-symbols-outlined text-[20px]">local_library</span><span class="font-body-md text-body-md">Library & Resources</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="communication-and-campus-life" href="#"><span class="material-symbols-outlined text-[20px]">forum</span><span class="font-body-md text-body-md">Communication & Life</span></a></nav><div class="mt-space-md px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Account & Access</div><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="student-profile-and-security" href="#"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span class="font-body-md text-body-md">Profile & Security</span></a></nav></div><div class="p-space-sm bg-surface-container"><div class="flex items-center gap-space-sm px-space-sm py-space-xs bg-surface-container-lowest rounded-lg"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-label-md text-on-surface truncate font-semibold">Elena Rostova</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">#2024-CSE-042</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">verified</span></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container"><span class="material-symbols-outlined text-secondary text-[20px]">school</span><span class="font-label-md text-label-md font-semibold text-on-surface">Apex Institute of Technology</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></div><div class="h-4 w-[1px] bg-outline-variant"></div><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px]">calendar_today</span><span class="font-body-sm text-body-sm text-on-surface-variant">AY 2024–2025 · Sem 1 Fall</span></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-sm px-space-sm py-space-xs bg-surface-container-low hover:bg-surface-container rounded-lg text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[18px]">search</span><span class="font-body-sm text-body-sm">Quick Find</span><kbd class="px-space-xs bg-surface-container-lowest font-code-metric text-code-metric text-on-surface-variant rounded shadow-[0_1px_8px_rgba(0,0,0,0.04)]">⌘K</kbd></button><div class="relative"><button class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button></div><div class="h-4 w-[1px] bg-outline-variant"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-md text-label-md font-semibold text-on-surface">Elena Rostova</span><span class="font-label-sm text-label-sm text-on-surface-variant">B.Tech CSE</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full pt-16 bg-surface px-gutter-desktop py-space-lg"><div class="flex flex-col w-full">
+<!-- Breadcrumbs & Tactical Command Header -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs text-on-surface-variant mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Student Portal</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Examinations & Results</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-md">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Examinations, Hall Tickets & Academic Results</h1>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface text-body-sm font-code-metric">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          AY 2024–2025 · Odd Semester (V)
+        </div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+        Candidate: <span class="text-on-surface font-semibold">Elena Rostova</span> · Reg: <span class="font-code-metric text-code-metric text-on-surface">STU-2024-042</span> · Dept: <span class="text-on-surface">B.Tech Computer Science & Engineering (Artificial Intelligence)</span>
+</p>
+</div>
+<!-- Action Bar -->
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container-highest hover:bg-surface-container-high text-on-surface rounded-lg shadow-sm transition-all font-label-md text-label-md" onclick="triggerRevaluationModal()">
+<span class="material-symbols-outlined text-[18px]">find_in_page</span>
+        Request Revaluation
+      </button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm bg-secondary hover:bg-primary-container text-on-secondary rounded-lg shadow-md transition-all font-label-md text-label-md font-semibold" onclick="downloadHallTicket()">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+        Download Hall Ticket (PDF)
+      </button>
+</div>
+</div>
+<!-- Metric Architecture Bento (5 Key Gauges) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md mb-space-xl">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute -right-2 -bottom-2 text-surface-container-highest text-opacity-40 select-none pointer-events-none">
+<span class="material-symbols-outlined text-[72px]">schedule</span>
+</div>
+<div class="flex items-center justify-between mb-space-sm z-10">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Upcoming Exams</span>
+<span class="px-space-xs py-[2px] rounded-full bg-surface-container-high text-on-surface font-code-metric text-body-sm">Sem V</span>
+</div>
+<div class="z-10">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-semibold">4</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Scheduled</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary font-medium mt-space-xs flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px]">event</span> Starts Nov 25, 2024
+        </p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute -right-2 -bottom-2 text-surface-container-highest text-opacity-40 select-none pointer-events-none">
+<span class="material-symbols-outlined text-[72px]">task_alt</span>
+</div>
+<div class="flex items-center justify-between mb-space-sm z-10">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Completed Papers</span>
+<span class="px-space-xs py-[2px] rounded-full bg-surface-container text-on-surface-variant font-code-metric text-body-sm">Sem I–IV</span>
+</div>
+<div class="z-10">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-semibold">18</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Total Courses</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+          100% Cleared on 1st Attempt
+        </p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute -right-2 -bottom-2 text-surface-container-highest text-opacity-40 select-none pointer-events-none">
+<span class="material-symbols-outlined text-[72px]">analytics</span>
+</div>
+<div class="flex items-center justify-between mb-space-sm z-10">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Latest SGPA</span>
+<span class="px-space-xs py-[2px] rounded-full bg-secondary-fixed text-on-secondary-fixed font-code-metric text-body-sm">Sem IV</span>
+</div>
+<div class="z-10">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-secondary font-semibold">8.92</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 10.0</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-space-xs overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 89.2%;"></div>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute -right-2 -bottom-2 text-surface-container-highest text-opacity-40 select-none pointer-events-none">
+<span class="material-symbols-outlined text-[72px]">workspace_premium</span>
+</div>
+<div class="flex items-center justify-between mb-space-sm z-10">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Cumulative CGPA</span>
+<span class="px-space-xs py-[2px] rounded bg-surface-container text-on-surface font-code-metric text-body-sm">76.4 Credits</span>
+</div>
+<div class="z-10">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-semibold">8.84</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 10.0</span>
+</div>
+<div class="mt-space-xs">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded text-[11px] bg-secondary text-on-secondary font-semibold tracking-wide">
+<span class="material-symbols-outlined text-[12px]">verified</span> 1st Class Dist.
+          </span>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute -right-2 -bottom-2 text-surface-container-highest text-opacity-40 select-none pointer-events-none">
+<span class="material-symbols-outlined text-[72px]">rule</span>
+</div>
+<div class="flex items-center justify-between mb-space-sm z-10">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Backlogs</span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<div class="z-10">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-semibold">0</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Standing</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span> Dean's Merit Eligible
+        </p>
+</div>
+</div>
+</div>
+<!-- Operational Grid: Exam Schedule + Hall Ticket Blueprint Card -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg mb-space-xl items-start">
+<!-- Left 7 Cols: Examination Schedule Data View -->
+<div class="xl:col-span-7 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">calendar_month</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">End-Semester Theory Examinations (Odd 2024)</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Apex Institute Controller of Examinations Central Notification #COE-2024/ES-09</p>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-secondary">domain</span>
+<span class="font-code-metric text-code-metric text-on-surface">Block-4 · Central Hall</span>
+</div>
+</div>
+<!-- Schedule Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md rounded-l-lg">Course & Module</th>
+<th class="py-space-sm px-space-sm">Date & Slot</th>
+<th class="py-space-sm px-space-sm">Lab / Room</th>
+<th class="py-space-sm px-space-sm">Seat Allocation</th>
+<th class="py-space-sm px-space-md text-right rounded-r-lg">Hall Ticket</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm">
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Distributed Systems</div>
+<div class="font-code-metric text-code-metric text-on-surface-variant">CS-501 · 4.0 Credits</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="text-on-surface font-semibold">25 Nov 2024</div>
+<div class="text-on-surface-variant font-code-metric">09:30 – 12:30 IST</div>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-code-metric">SH-204</span>
+</td>
+<td class="py-space-md px-space-sm font-code-metric font-semibold text-on-surface">
+                  SH-204-B14
+                </td>
+<td class="py-space-md px-space-md text-right">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Validated
+                  </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Deep Learning & Neural Nets</div>
+<div class="font-code-metric text-code-metric text-on-surface-variant">CS-502 · 4.0 Credits</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="text-on-surface font-semibold">28 Nov 2024</div>
+<div class="text-on-surface-variant font-code-metric">09:30 – 12:30 IST</div>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-code-metric">SH-204</span>
+</td>
+<td class="py-space-md px-space-sm font-code-metric font-semibold text-on-surface">
+                  SH-204-B14
+                </td>
+<td class="py-space-md px-space-md text-right">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Validated
+                  </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Compiler Design</div>
+<div class="font-code-metric text-code-metric text-on-surface-variant">CS-503 · 3.0 Credits</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="text-on-surface font-semibold">02 Dec 2024</div>
+<div class="text-on-surface-variant font-code-metric">09:30 – 12:30 IST</div>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-code-metric">LH-102</span>
+</td>
+<td class="py-space-md px-space-sm font-code-metric font-semibold text-on-surface">
+                  LH-102-A08
+                </td>
+<td class="py-space-md px-space-md text-right">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Validated
+                  </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="font-label-md text-label-md font-semibold text-on-surface">Numerical Optimization</div>
+<div class="font-code-metric text-code-metric text-on-surface-variant">MA-501 · 4.0 Credits</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="text-on-surface font-semibold">05 Dec 2024</div>
+<div class="text-on-surface-variant font-code-metric">14:00 – 17:00 IST</div>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-code-metric">SH-204</span>
+</td>
+<td class="py-space-md px-space-sm font-code-metric font-semibold text-on-surface">
+                  SH-204-B14
+                </td>
+<td class="py-space-md px-space-md text-right">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Validated
+                  </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Real-time Exam Hall Alert Banner -->
+<div class="mt-space-md p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">badge</span>
+<span class="font-body-sm text-body-sm text-on-surface">
+              Biometric entry closes <strong class="font-semibold text-on-surface">15 mins</strong> before session start. Smartwatches & programmable calculators strictly prohibited in SH-204.
+            </span>
+</div>
+<a class="font-label-sm text-label-sm text-secondary hover:underline whitespace-nowrap ml-space-xs" href="#rules">CoE Rulebook</a>
+</div>
+</div>
+<!-- Live Revaluation & Supplementary Tracking Docket -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">policy</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Revaluation & Answer-Script Tracking Docket</h2>
+</div>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high text-on-surface font-code-metric text-body-sm">1 Active Case</span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-xl">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-sm mb-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-code-metric font-semibold text-on-surface text-body-lg">Case #REV-2024-81</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">Sem IV Paper Photocopy</span>
+</div>
+<div class="text-body-sm text-on-surface-variant mt-0.5">Subject: <span class="font-semibold text-on-surface">CS-403 Computer Organization & Architecture</span> (Initial Score: 78/100, Grade: A)</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-md text-label-md font-semibold text-secondary">Under Blind Evaluation</span>
+</div>
+</div>
+<!-- Progress Stepper -->
+<div class="grid grid-cols-4 gap-space-xs pt-space-xs">
+<div class="flex flex-col gap-1">
+<div class="h-1.5 w-full bg-secondary rounded-full"></div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">1. Applied</span>
+<span class="font-code-metric text-[10px] text-on-surface-variant">14 Oct · ₹500 Paid</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="h-1.5 w-full bg-secondary rounded-full"></div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">2. Script Digitized</span>
+<span class="font-code-metric text-[10px] text-on-surface-variant">18 Oct · Anonymized</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="h-1.5 w-full bg-secondary rounded-full"></div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">3. External Review</span>
+<span class="font-code-metric text-[10px] text-secondary">In Progress (Valuer #2)</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="h-1.5 w-full bg-surface-container-high rounded-full"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4. Revised Gazette</span>
+<span class="font-code-metric text-[10px] text-on-surface-variant">Est. 22 Nov 2024</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right 5 Cols: Hall Ticket Preview Card (Security Hologram & Signatures) -->
+<div class="xl:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md relative overflow-hidden">
+<!-- Watermark / Security Crest Backdrop -->
+<div class="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none">
+<span class="material-symbols-outlined text-[320px]">verified_user</span>
+</div>
+<!-- Institutional Header Inside Card -->
+<div class="flex items-center justify-between pb-space-md mb-space-md bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[24px]">account_balance</span>
+</div>
+<div>
+<div class="font-label-md text-label-md font-bold uppercase tracking-wider text-on-surface">Apex Institute of Technology</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Office of the Controller of Examinations</div>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-code-metric text-label-sm font-semibold">E-ADMIT CARD</span>
+</div>
+<!-- Student Verification Block -->
+<div class="flex gap-space-md items-center mb-space-md">
+<div class="w-24 h-28 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Elena Rostova university candidate identification photo, female engineering scholar in smart collegiate blazer with high detail, neutral gray studio backdrop and natural academic profile lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA67lxtwnRp2dUQPgdUIL3Y8i9d79NbBuSPDVmgk04-uaTEDdDYsImTY2FuT-jtdmbmtOB-aAB_KWSiso3c6CAKG_E70CWf0Y1RcuZKqH0KrRLIn3CKVFlPoqQ4slu_u2xeIbnAGRv76VfAHjMvPrjVglD48D6u2n0Plo7zPjOD82l73t33yGhLS9SkAQavkMKcGD4WYLvgKm9zf58QTISU03M0ZOgSilmMzIN59U"/>
+<span class="absolute bottom-1 right-1 bg-surface-container-lowest/90 px-1 py-0.2 text-[9px] font-code-metric rounded text-on-surface">BIO-OK</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Candidate Particulars</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Elena Rostova</div>
+<div class="font-code-metric text-code-metric text-secondary font-semibold">Roll: STU-2024-042</div>
+<div class="text-body-sm text-on-surface-variant truncate mt-0.5">B.Tech CS & AI · Sem V</div>
+<div class="text-body-sm text-on-surface-variant font-code-metric">DOB: 12-08-2003 · Seat: SH-204-B14</div>
+</div>
+</div>
+<!-- Cryptographic Barcode / QR Section -->
+<div class="p-space-sm bg-surface-container-low rounded-lg mb-space-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<!-- Simulated QR SVG -->
+<div class="w-14 h-14 bg-surface-container-lowest p-1 rounded shadow-sm flex items-center justify-center">
+<svg class="w-full h-full text-on-surface fill-current" viewbox="0 0 24 24">
+<path d="M2 2h8v8H2V2zm2 2v4h4V4H4zm10-2h8v8h-8V2zm2 2v4h4V4h-4zM2 14h8v8H2v-8zm2 2v4h4v-4H4zm13-2h3v3h-3v-3zm0 5h3v3h-3v-3zm-3-5h2v2h-2v-2zm0 4h2v4h-2v-4zm-4-4h2v2h-2v-2zm0 3h2v3h-2v-3z"></path>
+</svg>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Verification Hash</div>
+<div class="font-code-metric text-[11px] text-on-surface-variant break-all">SHA-256: 0x9f1a8e2b...4c7d01</div>
+<div class="font-body-sm text-body-sm text-secondary font-medium">CoE Digital Signature Valid</div>
+</div>
+</div>
+<div class="hidden sm:flex flex-col items-end">
+<!-- Barcode Pattern -->
+<div class="flex items-center gap-[2px] h-9">
+<div class="w-1 h-full bg-on-surface"></div>
+<div class="w-0.5 h-full bg-on-surface"></div>
+<div class="w-1.5 h-full bg-on-surface"></div>
+<div class="w-0.5 h-full bg-on-surface"></div>
+<div class="w-2 h-full bg-on-surface"></div>
+<div class="w-1 h-full bg-on-surface"></div>
+<div class="w-0.5 h-full bg-on-surface"></div>
+<div class="w-1.5 h-full bg-on-surface"></div>
+<div class="w-1 h-full bg-on-surface"></div>
+<div class="w-2 h-full bg-on-surface"></div>
+</div>
+<span class="font-code-metric text-[9px] text-on-surface-variant tracking-widest mt-0.5">APX-V-2024-042</span>
+</div>
+</div>
+<!-- Examination Guidelines -->
+<div class="mb-space-md" id="rules">
+<div class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider mb-space-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">info</span>
+            Invigilator Instructions & Rules
+          </div>
+<ul class="text-body-sm text-on-surface-variant space-y-1 list-disc pl-4">
+<li>Physical college photo ID card mandatory alongside printed e-Hall Ticket.</li>
+<li>No candidate allowed inside center 30 minutes after commencement.</li>
+<li>Answer scripts must carry candidate signature matching biometric register.</li>
+</ul>
+</div>
+<!-- Institutional Signatures Block -->
+<div class="grid grid-cols-2 gap-space-md pt-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex flex-col items-center text-center">
+<div class="h-8 flex items-center text-on-surface font-headline-sm italic tracking-widest">
+              Elena Rostova
+            </div>
+<div class="w-full h-[1px] bg-outline-variant my-1"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Candidate Signature</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="h-8 flex items-center text-secondary font-headline-sm italic font-semibold">
+              Prof. K. Sharma
+            </div>
+<div class="w-full h-[1px] bg-outline-variant my-1"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Controller of Examinations</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Cumulative Grade History & Historical Performance Accordion -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm mb-space-xl">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">history_edu</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Semester-Wise Performance Ledger & Grade Cards</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Official cumulative record of academic achievements accredited under Autonomous CBCS</p>
+</div>
+<!-- Academic Trend Visual Indicator -->
+<div class="flex items-center gap-space-md bg-surface-container-low px-space-md py-space-xs rounded-lg">
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Trajectory</span>
+<div class="font-code-metric font-semibold text-secondary">Sem I: 8.64 → Sem IV: 8.92</div>
+</div>
+<svg class="w-20 h-6 text-secondary stroke-current" fill="none" viewbox="0 0 80 24">
+<path d="M4 18 L26 14 L48 10 L74 4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<circle class="fill-secondary" cx="74" cy="4" r="2.5"></circle>
+</svg>
+</div>
+</div>
+<!-- Accordion Stack -->
+<div class="space-y-space-sm" id="accordion-container">
+<!-- Semester 4 (Active / Expanded by Default) -->
+<div class="rounded-xl overflow-hidden bg-surface-container-low shadow-sm">
+<button class="w-full px-space-md py-space-md flex items-center justify-between hover:bg-surface-container transition-colors text-left" onclick="toggleSemester('sem-4')">
+<div class="flex items-center gap-space-md">
+<span class="w-8 h-8 rounded-lg bg-secondary text-on-secondary font-code-metric font-semibold flex items-center justify-center">IV</span>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Semester IV (Even Term 2023–24)</span>
+<div class="text-body-sm text-on-surface-variant">Cleared in May 2024 · Total Credits: 20.0</div>
+</div>
+</div>
+<div class="flex items-center gap-space-lg">
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">SGPA</span>
+<div class="font-headline-sm text-headline-sm font-semibold text-secondary">8.92</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] transition-transform duration-200 rotate-180" id="icon-sem-4">expand_more</span>
+</div>
+</button>
+<!-- Detailed Marks Breakdown for Sem 4 -->
+<div class="px-space-md pb-space-md pt-space-xs block" id="content-sem-4">
+<div class="overflow-x-auto bg-surface-container-lowest rounded-lg p-space-sm shadow-sm">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider bg-surface-container-low">
+<th class="py-space-sm px-space-sm rounded-l">Code</th>
+<th class="py-space-sm px-space-sm">Course Title</th>
+<th class="py-space-sm px-space-sm text-center">Internal (50)</th>
+<th class="py-space-sm px-space-sm text-center">External (50)</th>
+<th class="py-space-sm px-space-sm text-center">Total (100)</th>
+<th class="py-space-sm px-space-sm text-center">Grade</th>
+<th class="py-space-sm px-space-sm text-center">Credits</th>
+<th class="py-space-sm px-space-sm text-right rounded-r">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-space-sm px-space-sm font-code-metric font-semibold text-on-surface">CS-401</td>
+<td class="py-space-sm px-space-sm font-medium text-on-surface">Design & Analysis of Algorithms</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric text-on-surface">44</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric text-on-surface">47</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric font-semibold text-on-surface">91</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric font-bold text-secondary">O (10)</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric">4.0</td>
+<td class="py-space-sm px-space-sm text-right"><span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">PASS</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-space-sm px-space-sm font-code-metric font-semibold text-on-surface">CS-402</td>
+<td class="py-space-sm px-space-sm font-medium text-on-surface">Database Management Systems</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric text-on-surface">40</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric text-on-surface">46</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric font-semibold text-on-surface">86</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric font-bold text-secondary">A+ (9)</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric">4.0</td>
+<td class="py-space-sm px-space-sm text-right"><span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">PASS</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-space-sm px-space-sm font-code-metric font-semibold text-on-surface">CS-403</td>
+<td class="py-space-sm px-space-sm font-medium text-on-surface">Computer Organization & Arch.</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric text-on-surface">36</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric text-on-surface">42</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric font-semibold text-on-surface">78</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric font-bold text-on-surface">A (8)</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric">4.0</td>
+<td class="py-space-sm px-space-sm text-right"><span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">PASS</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-space-sm px-space-sm font-code-metric font-semibold text-on-surface">CS-404</td>
+<td class="py-space-sm px-space-sm font-medium text-on-surface">Operating Systems Internals</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric text-on-surface">42</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric text-on-surface">45</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric font-semibold text-on-surface">87</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric font-bold text-secondary">A+ (9)</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric">4.0</td>
+<td class="py-space-sm px-space-sm text-right"><span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">PASS</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-space-sm px-space-sm font-code-metric font-semibold text-on-surface">CS-405L</td>
+<td class="py-space-sm px-space-sm font-medium text-on-surface">Algorithms & Database Laboratory</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric text-on-surface">48</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric text-on-surface">47</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric font-semibold text-on-surface">95</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric font-bold text-secondary">O (10)</td>
+<td class="py-space-sm px-space-sm text-center font-code-metric">4.0</td>
+<td class="py-space-sm px-space-sm text-right"><span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">PASS</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Semester 3 -->
+<div class="rounded-xl overflow-hidden bg-surface-container-low shadow-sm">
+<button class="w-full px-space-md py-space-md flex items-center justify-between hover:bg-surface-container transition-colors text-left" onclick="toggleSemester('sem-3')">
+<div class="flex items-center gap-space-md">
+<span class="w-8 h-8 rounded-lg bg-surface-container-highest text-on-surface font-code-metric font-semibold flex items-center justify-center">III</span>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Semester III (Odd Term 2023–24)</span>
+<div class="text-body-sm text-on-surface-variant">Cleared in Dec 2023 · Total Credits: 20.0</div>
+</div>
+</div>
+<div class="flex items-center gap-space-lg">
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">SGPA</span>
+<div class="font-headline-sm text-headline-sm font-semibold text-on-surface">8.80</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] transition-transform duration-200" id="icon-sem-3">expand_more</span>
+</div>
+</button>
+<div class="px-space-md pb-space-md pt-space-xs hidden" id="content-sem-3">
+<div class="p-space-sm bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface-variant">
+            Data Structures & OOP, Discrete Mathematics, Digital Logic, Python for Scientific Computing. 20 Credits earned. Gazette Record Serial #GZ-23-O-4102.
+          </div>
+</div>
+</div>
+<!-- Semester 2 -->
+<div class="rounded-xl overflow-hidden bg-surface-container-low shadow-sm">
+<button class="w-full px-space-md py-space-md flex items-center justify-between hover:bg-surface-container transition-colors text-left" onclick="toggleSemester('sem-2')">
+<div class="flex items-center gap-space-md">
+<span class="w-8 h-8 rounded-lg bg-surface-container-highest text-on-surface font-code-metric font-semibold flex items-center justify-center">II</span>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Semester II (Even Term 2022–23)</span>
+<div class="text-body-sm text-on-surface-variant">Cleared in May 2023 · Total Credits: 18.0</div>
+</div>
+</div>
+<div class="flex items-center gap-space-lg">
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">SGPA</span>
+<div class="font-headline-sm text-headline-sm font-semibold text-on-surface">9.00</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] transition-transform duration-200" id="icon-sem-2">expand_more</span>
+</div>
+</button>
+<div class="px-space-md pb-space-md pt-space-xs hidden" id="content-sem-2">
+<div class="p-space-sm bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface-variant">
+            Linear Algebra, Engineering Physics, C Programming & UNIX Shell, Professional Communication. 18 Credits earned. Gazette Record Serial #GZ-23-E-1889.
+          </div>
+</div>
+</div>
+<!-- Semester 1 -->
+<div class="rounded-xl overflow-hidden bg-surface-container-low shadow-sm">
+<button class="w-full px-space-md py-space-md flex items-center justify-between hover:bg-surface-container transition-colors text-left" onclick="toggleSemester('sem-1')">
+<div class="flex items-center gap-space-md">
+<span class="w-8 h-8 rounded-lg bg-surface-container-highest text-on-surface font-code-metric font-semibold flex items-center justify-center">I</span>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Semester I (Odd Term 2022–23)</span>
+<div class="text-body-sm text-on-surface-variant">Cleared in Dec 2022 · Total Credits: 18.4</div>
+</div>
+</div>
+<div class="flex items-center gap-space-lg">
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">SGPA</span>
+<div class="font-headline-sm text-headline-sm font-semibold text-on-surface">8.64</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] transition-transform duration-200" id="icon-sem-1">expand_more</span>
+</div>
+</button>
+<div class="px-space-md pb-space-md pt-space-xs hidden" id="content-sem-1">
+<div class="p-space-sm bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface-variant">
+            Calculus & Analytical Geometry, Basic Electrical & Electronics, Engineering Mechanics, Environmental Studies. 18.4 Credits earned. Gazette Record Serial #GZ-22-O-0914.
+          </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Revaluation Request Sheet Modal (Interactive UI state) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-center justify-center p-space-md" id="reval-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg shadow-xl relative animate-in fade-in zoom-in-95 duration-150">
+<div class="flex items-center justify-between pb-space-sm mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">assignment_turned_in</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Lodge Examination Review</h3>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="triggerRevaluationModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="space-y-space-md">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface uppercase mb-1">Select Paper</label>
+<select class="w-full h-9 bg-surface-container-low text-on-surface text-body-md rounded-lg px-space-sm focus:outline-none focus:bg-surface-container">
+<option>CS-403 Computer Organization & Architecture (Sem IV)</option>
+<option>CS-401 Design & Analysis of Algorithms (Sem IV)</option>
+<option>CS-402 Database Management Systems (Sem IV)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface uppercase mb-1">Application Category</label>
+<div class="grid grid-cols-2 gap-space-sm">
+<label class="flex items-center gap-2 p-space-sm bg-surface-container-low rounded-lg cursor-pointer hover:bg-surface-container">
+<input checked="" class="text-secondary" name="reval_type" type="radio"/>
+<span class="text-body-sm font-medium">Revaluation & Re-totaling (₹600)</span>
+</label>
+<label class="flex items-center gap-2 p-space-sm bg-surface-container-low rounded-lg cursor-pointer hover:bg-surface-container">
+<input class="text-secondary" name="reval_type" type="radio"/>
+<span class="text-body-sm font-medium">Photocopy of Script (₹400)</span>
+</label>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface uppercase mb-1">Academic Grounds / Justification</label>
+<textarea class="w-full bg-surface-container-low text-on-surface text-body-md p-space-sm rounded-lg focus:outline-none focus:bg-surface-container resize-none" placeholder="Provide question-wise discrepancy notes according to the official answer key scheme..." rows="3"></textarea>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg text-body-sm text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">info</span>
+          Fees are non-refundable unless evaluation discrepancy exceeds 15% aggregate.
+        </div>
+</div>
+<div class="flex items-center justify-end gap-space-sm mt-space-lg">
+<button class="px-space-md py-space-xs bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg font-label-md text-label-md" onclick="triggerRevaluationModal()">
+          Cancel
+        </button>
+<button class="px-space-md py-space-xs bg-secondary text-on-secondary hover:bg-primary-container rounded-lg font-label-md text-label-md font-semibold" onclick="submitRevalForm()">
+          Pay ₹600 & Submit Docket
+        </button>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="toast">
+<div class="bg-primary-container text-on-primary px-space-md py-space-sm rounded-lg shadow-xl flex items-center gap-space-sm font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">check_circle</span>
+<span id="toast-message">Hall Ticket bundle generated & downloaded.</span>
+</div>
+</div>
+<!-- Micro-interactions Script -->
+<script>
+    function toggleSemester(semId) {
+      const content = document.getElementById('content-' + semId);
+      const icon = document.getElementById('icon-' + semId);
+      if (!content || !icon) return;
+
+      const isHidden = content.classList.contains('hidden');
+      if (isHidden) {
+        content.classList.remove('hidden');
+        content.classList.add('block');
+        icon.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        content.classList.remove('block');
+        icon.classList.remove('rotate-180');
+      }
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const msgEl = document.getElementById('toast-message');
+      if (!toast || !msgEl) return;
+      msgEl.innerText = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3500);
+    }
+
+    function downloadHallTicket() {
+      showToast('Downloading Hall Ticket: APX_HT_2024_042_ODD_SEM.pdf');
+    }
+
+    function triggerRevaluationModal() {
+      const modal = document.getElementById('reval-modal');
+      if (!modal) return;
+      if (modal.classList.contains('hidden')) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      } else {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    function submitRevalForm() {
+      triggerRevaluationModal();
+      showToast('Revaluation Request Docket filed successfully. Reference #REV-2024-94 generated.');
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] py-space-md px-gutter-desktop"><div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface font-semibold">System Operational</span><span class="font-code-metric text-code-metric text-on-surface-variant">(98.4% uptime)</span></div><span class="text-outline-variant">·</span><span class="font-body-sm text-body-sm text-on-surface-variant">Node ID: <code class="font-code-metric text-code-metric text-on-surface">cluster-us-east-apex-09</code></span></div><div class="flex items-center gap-space-md"><span class="font-body-sm text-body-sm text-on-surface-variant">FERPA & DPDP Compliant Data Vault</span><span class="text-outline-variant">·</span><span class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Apex Institute of Technology. All rights reserved.</span></div></div></footer></div></body></html>
