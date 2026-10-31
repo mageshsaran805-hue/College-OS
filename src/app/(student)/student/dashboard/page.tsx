@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { KPICard, PageHeader, StatusBadge, buttonStyles } from "@/components/ui";
-import { announcements, demoUsers, studentKpis, timetableToday } from "@/data/demo";
+import { announcements, studentKpis, timetableToday } from "@/data/demo";
+import { requireTenant } from "@/server/auth/tenant";
 
 export const metadata = { title: "Dashboard" };
 
-export default function DashboardPage() {
-  const firstName = demoUsers.student.name.split(" ")[0];
+export default async function DashboardPage() {
+  const tenant = await requireTenant();
+  const firstName = tenant.user.name.split(" ")[0] ?? "there";
 
   return (
     <div className="space-y-6">

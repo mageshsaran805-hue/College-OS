@@ -5,24 +5,29 @@ imported by a client component.
 
 ```text
 server/
-├── auth/          # session resolution, password reset, invitations
-├── db/            # Prisma client, tenant-scoped repositories
+├── auth/          # Auth.js config, tenant context, passwords, reset tokens
+├── db/            # Prisma client and tenant-scoped repositories
 ├── permissions/   # permission checks and role mappings
-├── audit/         # immutable audit-log writes
-├── storage/       # local and Supabase storage adapters
+├── audit/         # immutable audit-log writes and request metadata
 ├── email/         # SMTP and development log adapters
-└── payments/      # sandbox and gateway adapters
+├── storage/       # planned local and Supabase storage adapters
+└── payments/      # planned sandbox and gateway adapters
 ```
 
 ## Rules
 
 - Resolve the session and active college on the server for every protected
   request.
+- `requireTenant()` returns the database-verified user, membership, college, and
+  current term.
 - Every tenant-owned query receives a `TenantContext`; repository functions
   must not accept a college ID from the browser.
+- Server actions call `requirePermission()` before mutations.
 - Mutations run in a transaction when they touch multiple tables.
-- Every mutation writes an audit entry.
+- Regulated mutations write an audit entry in the same transaction.
 - Payment and email integrations sit behind interfaces; business logic depends
   on the interface, not a vendor SDK.
+- Do not import these modules from client components.
 
-These modules will be added as the backend foundation is implemented.
+The implemented boundary contract is documented in
+[`docs/BACKEND.md`](../../docs/BACKEND.md).

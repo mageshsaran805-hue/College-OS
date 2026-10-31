@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Button, Input, StatusBadge } from "@/components/ui";
+import { StatusBadge } from "@/components/ui";
+import { ForgotPasswordForm } from "@/features/auth/components/ForgotPasswordForm";
 
 export const metadata = { title: "Forgot password" };
 
@@ -15,25 +16,10 @@ export default function ForgotPasswordPage() {
             Enter your institutional email and we&apos;ll send a reset link.
           </p>
         </div>
-        <StatusBadge label="Demo scaffold" variant="info" />
+        <StatusBadge label="Account recovery" variant="info" />
       </div>
 
-      <form className="mt-6 space-y-4">
-        <Input
-          label="Institutional email"
-          name="email"
-          type="email"
-          autoComplete="email"
-          placeholder="you@institution.edu"
-          required
-        />
-        <Button type="submit" className="w-full" disabled>
-          Send reset link
-        </Button>
-        <p className="font-body-sm text-body-sm text-on-surface-variant">
-          Email delivery is not configured in this scaffold.
-        </p>
-      </form>
+      <ForgotPasswordForm />
 
       <Link
         href="/login"

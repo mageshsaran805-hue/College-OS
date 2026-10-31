@@ -14,9 +14,9 @@ export const roleHome: Record<UserRole, string> = {
   student: "/student/dashboard",
   faculty: "/faculty/dashboard",
   staff: "/faculty/dashboard",
-  parent: "/parent/dashboard",
+  parent: "/unauthorized",
   admin: "/admin",
-  "super-admin": "/platform",
+  "super-admin": "/admin",
   auditor: "/admin/audit",
 };
 

@@ -1,0 +1,155 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+enum CollegeStatus {
+  ACTIVE
+  INACTIVE
+  PENDING
+}
+
+enum MembershipStatus {
+  ACTIVE
+  INVITED
+  SUSPENDED
+}
+
+enum MembershipRole {
+  STUDENT
+  FACULTY
+  STAFF
+  PARENT
+  ADMIN
+  SUPER_ADMIN
+  AUDITOR
+}
+
+enum TermStatus {
+  UPCOMING
+  ACTIVE
+  COMPLETED
+}
+
+model User {
+  id                  String               @id @default(cuid())
+  name                String
+  email               String               @unique
+  emailVerified       DateTime?
+  image               String?
+  passwordHash        String?
+  sessionVersion      Int                  @default(0)
+  lastLoginAt         DateTime?
+  createdAt           DateTime             @default(now())
+  updatedAt           DateTime             @updatedAt
+  memberships         Membership[]
+  passwordResetTokens PasswordResetToken[]
+  auditLogs           AuditLog[]           @relation("AuditActor")
+  invitationsSent     Invitation[]         @relation("InvitationInviter")
+
+  @@index([email])
+}
+
+model College {
+  id          String         @id @default(cuid())
+  name        String
+  slug        String         @unique
+  code        String         @unique
+  status      CollegeStatus  @default(PENDING)
+  region      String?
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+  memberships Membership[]
+  terms       AcademicTerm[]
+  auditLogs   AuditLog[]
+  invitations Invitation[]
+}
+
+model AcademicTerm {
+  id        String     @id @default(cuid())
+  collegeId String
+  college   College    @relation(fields: [collegeId], references: [id], onDelete: Cascade)
+  name      String
+  code      String
+  startDate DateTime
+  endDate   DateTime
+  status    TermStatus @default(UPCOMING)
+  isCurrent Boolean    @default(false)
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+
+  @@unique([collegeId, code])
+  @@index([collegeId, isCurrent])
+}
+
+model Membership {
+  id             String           @id @default(cuid())
+  userId         String
+  collegeId      String
+  role           MembershipRole
+  status         MembershipStatus @default(INVITED)
+  department     String?
+  designation    String?
+  lastAccessedAt DateTime?
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+  user           User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  college        College          @relation(fields: [collegeId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, collegeId])
+  @@index([collegeId, role, status])
+  @@index([userId, status])
+}
+
+model PasswordResetToken {
+  id        String    @id @default(cuid())
+  userId    String
+  tokenHash String    @unique
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, expiresAt])
+}
+
+model Invitation {
+  id          String         @id @default(cuid())
+  collegeId   String
+  email       String
+  role        MembershipRole
+  tokenHash   String         @unique
+  expiresAt   DateTime
+  acceptedAt  DateTime?
+  invitedById String?
+  createdAt   DateTime       @default(now())
+  college     College        @relation(fields: [collegeId], references: [id], onDelete: Cascade)
+  invitedBy   User?          @relation("InvitationInviter", fields: [invitedById], references: [id], onDelete: SetNull)
+
+  @@index([collegeId, email])
+  @@index([expiresAt])
+}
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  collegeId  String?
+  actorId    String?
+  action     String
+  resource   String
+  resourceId String?
+  metadata   Json?
+  ipAddress  String?
+  userAgent  String?
+  createdAt  DateTime @default(now())
+  college    College? @relation(fields: [collegeId], references: [id], onDelete: SetNull)
+  actor      User?    @relation("AuditActor", fields: [actorId], references: [id], onDelete: SetNull)
+
+  @@index([collegeId, createdAt])
+  @@index([actorId, createdAt])
+  @@index([action, createdAt])
+}

@@ -5,16 +5,17 @@ permissions, states, and tests — not just screens.
 
 ## Phase 0 — Foundation
 
-- Git, LFS, CI, and repository conventions
-- Prisma, Supabase PostgreSQL, migrations, and seed data
-- Auth.js credentials, invitations, password reset, and sessions
-- Tenant context, RBAC, and audit logging
-- File, email, SMS, and payment adapters with development drivers
-- Shared data-table, form, and chart infrastructure
-- Two-college seed environment
+- ✅ Git, LFS, CI, and repository conventions
+- ✅ Prisma schema, initial migration, and two-college seed
+- ✅ Auth.js credentials, password reset, and JWT sessions
+- ✅ Tenant context, RBAC, and audit logging
+- 🟡 Email adapter (console/SMTP); file, SMS, and payment adapters pending
+- 🟡 Auth forms exist; shared data-table and chart infrastructure pending
+- 🟡 Invitation schema exists; delivery and acceptance flow pending
 
 **Exit:** authenticated users land in the correct workspace; cross-tenant access
-is denied and tested.
+is denied and tested. Role isolation is implemented and must gain automated
+cross-tenant tests before the phase is marked complete.
 
 ## Phase 1 — Academic core
 
@@ -74,5 +75,9 @@ the payment and download a receipt.
 
 ## Current status
 
-Phase 0 cleanup and structure is complete. Backend foundation work has not
-started. See `SCREEN_MAP.md` for screen-level status.
+Phase 0 core authentication, tenancy, RBAC, audit, migration, and seed work is
+in place. Remaining foundation items are the invitation flow, file/SMS/payment
+adapters, shared data-table/chart infrastructure, and automated cross-tenant
+tests. Phase 1 academic work starts after the Supabase environment is
+provisioned and the remaining foundation items are scheduled. See
+`SCREEN_MAP.md` for screen-level status.

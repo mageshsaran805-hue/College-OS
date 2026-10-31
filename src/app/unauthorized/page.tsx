@@ -20,8 +20,8 @@ export default function UnauthorizedPage() {
           Your role does not permit access to this area. Contact an administrator if you believe
           this is a mistake.
         </p>
-        <Link href="/student/dashboard" className={buttonStyles({ className: "mt-6" })}>
-          Return to workspace
+        <Link href="/" className={buttonStyles({ className: "mt-6" })}>
+          Return to my workspace
         </Link>
       </div>
     </main>

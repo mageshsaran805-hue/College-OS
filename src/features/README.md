@@ -23,6 +23,12 @@ features/<domain>/
 - A feature is not complete until it has loading, empty, error, and
   permission-denied states.
 
+## Implemented domains
+
+- `auth`: credentials schemas, server actions, login, and password-recovery
+  forms. Session configuration and reset-token services live in
+  `src/server/auth/`.
+
 ## Planned domains
 
 `academics`, `attendance`, `examinations`, `finance`, `people`, `institution`,

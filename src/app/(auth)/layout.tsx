@@ -19,10 +19,10 @@ export default function AuthLayout({ children }: Readonly<{ children: React.Reac
           </span>
         </Link>
         <Link
-          href="/student/dashboard"
+          href="/login"
           className="font-label-md text-label-md text-on-surface-variant transition-colors hover:text-on-surface"
         >
-          Demo workspace
+          Sign in
         </Link>
       </header>
 

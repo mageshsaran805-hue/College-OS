@@ -1,14 +1,18 @@
 import { AppShell } from "@/components/layout/AppShell";
 import { studentNavigation } from "@/config/navigation";
-import { demoCollege, demoTerm, demoUsers } from "@/data/demo";
+import { requireRole } from "@/server/auth/tenant";
 
-export default function StudentLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export const dynamic = "force-dynamic";
+
+export default async function StudentLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const tenant = await requireRole(["student"]);
+
   return (
     <AppShell
       navGroups={studentNavigation}
-      user={demoUsers.student}
-      college={demoCollege}
-      termLabel={demoTerm.label}
+      user={tenant.user}
+      college={tenant.college}
+      termLabel={tenant.term?.name ?? "No active term"}
     >
       {children}
     </AppShell>

@@ -166,14 +166,14 @@ export function Sidebar({ groups, college, homeHref, mobileOpen, onClose }: Side
         <div className="mx-3 mb-3 rounded-xl bg-surface-container-low p-3">
           <div className="flex items-center justify-between">
             <span className="font-label-sm text-label-sm font-medium text-on-surface">
-              Frontend scaffold
+              Secure workspace
             </span>
             <span className="rounded-full bg-secondary-fixed px-1.5 py-0.5 font-label-sm text-[10px] uppercase text-on-secondary-fixed">
-              Demo
+              Live
             </span>
           </div>
           <p className="mt-1 font-body-sm text-body-sm leading-snug text-on-surface-variant">
-            Auth, data, and permissions are not wired yet.
+            Access is scoped to your active college membership.
           </p>
         </div>
       </aside>

@@ -15,7 +15,7 @@ export default function NotFound() {
         <p className="mt-2 font-body-md text-body-md text-on-surface-variant">
           The route you requested does not exist in this workspace.
         </p>
-        <Link href="/student/dashboard" className={buttonStyles({ className: "mt-6" })}>
+        <Link href="/" className={buttonStyles({ className: "mt-6" })}>
           Return to dashboard
         </Link>
       </div>

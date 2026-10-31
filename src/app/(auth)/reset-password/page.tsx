@@ -1,9 +1,19 @@
 import Link from "next/link";
-import { Button, Input, StatusBadge } from "@/components/ui";
+import { StatusBadge } from "@/components/ui";
+import { ResetPasswordForm } from "@/features/auth/components/ResetPasswordForm";
+import { isPasswordResetTokenValid } from "@/server/auth/password-reset";
 
 export const metadata = { title: "Set a new password" };
 
-export default function ResetPasswordPage() {
+interface ResetPasswordPageProps {
+  searchParams: Promise<{ token?: string | string[] }>;
+}
+
+export default async function ResetPasswordPage({ searchParams }: ResetPasswordPageProps) {
+  const { token: tokenParam } = await searchParams;
+  const token = typeof tokenParam === "string" ? tokenParam : null;
+  const valid = token ? await isPasswordResetTokenValid(token) : false;
+
   return (
     <div className="w-full max-w-md rounded-xl bg-surface-container-lowest p-6 shadow-card sm:p-8">
       <div className="flex items-start justify-between gap-3">
@@ -15,33 +25,24 @@ export default function ResetPasswordPage() {
             Choose a strong password for your institutional account.
           </p>
         </div>
-        <StatusBadge label="Demo scaffold" variant="info" />
+        <StatusBadge label="Account recovery" variant="info" />
       </div>
 
-      <form className="mt-6 space-y-4">
-        <Input
-          label="New password"
-          name="password"
-          type="password"
-          autoComplete="new-password"
-          placeholder="At least 12 characters"
-          required
-        />
-        <Input
-          label="Confirm password"
-          name="confirmPassword"
-          type="password"
-          autoComplete="new-password"
-          placeholder="Repeat the new password"
-          required
-        />
-        <Button type="submit" className="w-full" disabled>
-          Update password
-        </Button>
-        <p className="font-body-sm text-body-sm text-on-surface-variant">
-          Password reset handling is not wired in this scaffold.
-        </p>
-      </form>
+      {valid && token ? (
+        <ResetPasswordForm token={token} />
+      ) : (
+        <div className="mt-6 space-y-5">
+          <p
+            role="alert"
+            className="rounded-lg border border-error/20 bg-error-container px-3 py-2 font-body-sm text-body-sm text-on-error-container"
+          >
+            This password reset link is invalid or has expired. Request a new link to continue.
+          </p>
+          <Link href="/forgot-password" className="font-label-md text-label-md text-secondary">
+            Request a new reset link
+          </Link>
+        </div>
+      )}
 
       <Link
         href="/login"

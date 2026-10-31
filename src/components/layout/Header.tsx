@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn, getInitials } from "@/lib/utils";
 import { roleLabels } from "@/lib/rbac";
+import { signOutAction } from "@/server/auth/sign-out-action";
 import type { NavGroup, User } from "@/types";
 
 interface HeaderProps {
@@ -140,6 +141,17 @@ export function Header({
             </span>
           </span>
         </Link>
+
+        <form action={signOutAction}>
+          <button
+            type="submit"
+            className="rounded-lg p-2 text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
+            aria-label="Sign out"
+            title="Sign out"
+          >
+            <span className="material-symbols-outlined text-xl">logout</span>
+          </button>
+        </form>
       </div>
     </header>
   );

@@ -1,9 +1,26 @@
 import Link from "next/link";
-import { Button, Input, StatusBadge, buttonStyles } from "@/components/ui";
+import { redirect } from "next/navigation";
+import { Button, StatusBadge } from "@/components/ui";
+import { LoginForm } from "@/features/auth/components/LoginForm";
+import { roleHome } from "@/lib/rbac";
+import { getTenantContext } from "@/server/auth/tenant";
 
 export const metadata = { title: "Sign in" };
+export const dynamic = "force-dynamic";
 
-export default function LoginPage() {
+interface LoginPageProps {
+  searchParams: Promise<{ reset?: string }>;
+}
+
+export default async function LoginPage({ searchParams }: LoginPageProps) {
+  const tenant = await getTenantContext();
+
+  if (tenant) {
+    redirect(roleHome[tenant.role]);
+  }
+
+  const { reset } = await searchParams;
+
   return (
     <div className="w-full max-w-md rounded-xl bg-surface-container-lowest p-6 shadow-card sm:p-8">
       <div className="flex items-start justify-between gap-3">
@@ -15,53 +32,24 @@ export default function LoginPage() {
             Use your institutional credentials to continue.
           </p>
         </div>
-        <StatusBadge label="Demo scaffold" variant="info" />
+        <StatusBadge label="Secure sign-in" variant="success" />
       </div>
 
-      <form className="mt-6 space-y-4">
-        <Input
-          label="Institutional email"
-          name="email"
-          type="email"
-          autoComplete="email"
-          placeholder="you@institution.edu"
-          required
-        />
-        <Input
-          label="Password"
-          name="password"
-          type="password"
-          autoComplete="current-password"
-          placeholder="Enter your password"
-          required
-        />
+      {reset === "success" ? (
+        <p
+          role="status"
+          className="mt-5 rounded-lg border border-success/20 bg-success-container px-3 py-2 font-body-sm text-body-sm text-on-success-container"
+        >
+          Password updated. Sign in with your new password.
+        </p>
+      ) : null}
 
-        <div className="flex items-center justify-between">
-          <label className="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
-            <input
-              type="checkbox"
-              name="remember"
-              className="h-4 w-4 rounded border-outline-variant text-secondary focus:ring-secondary"
-            />
-            Remember this device
-          </label>
-          <Link
-            href="/forgot-password"
-            className="font-label-md text-label-md text-secondary hover:text-secondary-container"
-          >
-            Forgot password?
-          </Link>
-        </div>
-
-        <Link href="/student/dashboard" className={buttonStyles({ className: "w-full" })}>
-          Continue to demo workspace
-        </Link>
-      </form>
+      <LoginForm />
 
       <div className="mt-6 rounded-lg bg-surface-container-low p-3">
         <p className="font-body-sm text-body-sm leading-relaxed text-on-surface-variant">
-          Authentication, session cookies, and role checks are not wired in this scaffold. The demo
-          workspace uses a fixed student identity until the auth layer is implemented.
+          Accounts are provisioned by your institution. Contact your administrator if you cannot
+          access your workspace.
         </p>
       </div>
 
@@ -76,6 +64,19 @@ export default function LoginPage() {
       <Button variant="secondary" className="mt-6 w-full" disabled>
         Institutional SSO (not configured)
       </Button>
+
+      <Link
+        href="/forgot-password"
+        className="mt-4 block text-center font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface"
+      >
+        Need help signing in?
+      </Link>
+
+      <p className="mt-6 text-center font-body-sm text-body-sm text-on-surface-variant">
+        <Link href="/" className="hover:text-on-surface">
+          Back to College OS
+        </Link>
+      </p>
     </div>
   );
 }
