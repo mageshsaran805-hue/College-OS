@@ -1,0 +1,15 @@
+import { ModulePlaceholder } from "@/components/scaffold/ModulePlaceholder";
+
+export const metadata = { title: "Timetable" };
+
+export default function TimetablePage() {
+  return (
+    <ModulePlaceholder
+      eyebrow="Workspace"
+      title="Timetable"
+      description="Weekly class schedule, room allocations, and session changes."
+      icon="calendar_month"
+      notes={["weekly grid", "room allocation", "faculty assignments", "schedule changes"]}
+    />
+  );
+}

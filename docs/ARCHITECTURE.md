@@ -2,64 +2,80 @@
 
 ## 1. Purpose
 
-College OS is a multi-role institutional platform. The current repository is a
-frontend foundation: a runnable Next.js App Router application with a shared
-design system, one application shell, route-level structure for the first
-module set, and the full 143-screen design reference preserved separately.
+College OS is a multi-college SaaS platform for academic and campus operations.
+The current repository is a frontend foundation: a runnable Next.js App Router
+application with role-specific shells, a shared design system, scaffolded
+module routes, and the complete 143-screen design reference.
 
-The architecture is intentionally **vertical-slice friendly**. Each module
-should be implemented end to end — schema, query, permission, page, and tests —
-rather than building all pages as static shells first.
+The architecture is intentionally **vertical-slice friendly**. Each module is
+implemented end to end — schema, query, permission, page, states, and tests —
+rather than building every page as a static shell first.
 
 ## 2. Repository layers
 
 ```text
 design/     Visual specification and reference mockups
-docs/       Architecture, audit, and delivery documentation
+docs/       Architecture, roadmap, screen map, and decisions
 src/        The application
+scripts/    Repository maintenance scripts
 ```
 
 ### `design/`
+
 - `DESIGN_SYSTEM.md` — canonical tokens mirrored in `tailwind.config.ts`.
 - `mockups/<screen>/code.html` — 143 static reference screens.
-- `mockups/<screen>/screen.png` — 142 screenshots.
+- `mockups/<screen>/screen.png` — 142 screenshots, stored with Git LFS.
 
-The mockups are **not imported by the application**. They exist for visual
-reference and are excluded from TypeScript and Tailwind content scanning.
+The mockups are **not imported by the application**. They are excluded from
+TypeScript, ESLint, Prettier, and Tailwind content scanning.
 
-### `src/`
-- `app/` — routes, layouts, metadata, route handlers.
-- `components/layout/` — the single application shell.
-- `components/ui/` — design-system primitives.
-- `components/shared/` — composed cross-module components.
-- `config/` — static configuration (site metadata, navigation).
-- `data/` — demo-only data for the scaffold.
-- `lib/` — utilities and RBAC helpers.
-- `types/` — shared domain types.
+## 3. Source structure
 
-## 3. Rendering model
+```text
+src/
+├── app/                 # routes, layouts, metadata, route handlers
+├── components/
+│   ├── layout/          # AppShell, Sidebar, Header
+│   ├── scaffold/        # temporary module placeholders
+│   ├── ui/              # design-system primitives
+│   ├── data-table/      # added with the first table
+│   ├── forms/           # added with the first form
+│   └── charts/          # added with the first chart
+├── features/            # domain modules, created per vertical slice
+├── server/              # auth, db, permissions, audit, storage, integrations
+├── config/              # site metadata and role navigation
+├── data/demo/           # temporary demo identities and dashboard data
+├── lib/                 # shared utilities and role helpers
+└── types/               # shared identity, navigation, and UI types
+```
+
+Feature and server folders contain a `README.md` describing their boundaries.
+Empty implementation folders are not created in advance.
+
+## 4. Rendering model
 
 - The App Router is used throughout.
-- Route group layouts (`(auth)`, `(portal)`, `(admin)`) own the page chrome.
+- Route group layouts own the page chrome.
 - `AppShell` is the only client-side shell. It owns mobile drawer state.
 - `Sidebar` and `Header` are client components because they use `usePathname`.
-- Pages are server components by default. Add `"use client"` only when a page
-  needs browser state or events.
+- Pages are server components by default. Add `"use client"` only for browser
+  state or events.
 - `metadata` is exported per page for titles.
 
 ### Route groups
 
-| Group | URL prefix | Layout |
-|---|---|---|
-| `(auth)` | `/login`, `/forgot-password`, `/reset-password` | Centered auth frame |
-| `(portal)` | `/dashboard`, `/academics`, ... | `AppShell` with portal navigation |
-| `(admin)` | `/admin`, `/admin/users`, ... | `AppShell` with admin navigation |
+| Group       | URL prefix                                      | Layout                             |
+| ----------- | ----------------------------------------------- | ---------------------------------- |
+| `(auth)`    | `/login`, `/forgot-password`, `/reset-password` | Centered auth frame                |
+| `(student)` | `/student/dashboard`, `/student/academics`, ... | `AppShell` with student navigation |
+| `(faculty)` | `/faculty/dashboard`, `/faculty/marks`, ...     | `AppShell` with faculty navigation |
+| `(admin)`   | `/admin`, `/admin/users`, ...                   | `AppShell` with admin navigation   |
 
-Route groups do not affect the URL. Keep admin routes under `(admin)/admin`
-and portal routes under `(portal)`. Do not create a second admin tree under
-`(portal)`.
+Route groups do not affect the URL. Keep admin routes under `(admin)/admin` and
+student routes under `(student)/student`. Parent and platform groups will be
+added when those workspaces enter implementation.
 
-## 4. Layout and component system
+## 5. Layout and component system
 
 ```text
 AppShell
@@ -70,29 +86,27 @@ AppShell
 ```
 
 - **`AppShell`** — the only page shell. Accepts `navGroups`, `user`, `college`,
-  and `termLabel`.
+  and `termLabel`, and derives role-specific links.
 - **`Sidebar`** — renders navigation groups from `src/config/navigation.ts`.
-- **`Header`** — derives breadcrumbs from the active navigation item and
-  `usePathname`.
+- **`Header`** — derives breadcrumbs from the active navigation item.
 - **`PageHeader`** — consistent page title, description, and actions.
-- **`ModulePage`** — temporary placeholder for scaffolded routes. Replace it
-  module by module with real content.
+- **`ModulePlaceholder`** — temporary placeholder for scaffolded routes.
 
 ### UI primitives
 
-| Component | Use |
-|---|---|
-| `Button` / `buttonStyles` | Actions and link-styled buttons |
-| `Input` | Labeled form fields with hint/error states |
-| `KPICard` | Dashboard metrics and progress |
-| `StatusBadge` | Semantic status chips |
-| `CircularProgress` | Radial progress |
-| `PageHeader` | Page-level heading |
-| `EmptyState` | Empty and scaffolded states |
+| Component                 | Use                                        |
+| ------------------------- | ------------------------------------------ |
+| `Button` / `buttonStyles` | Actions and link-styled buttons            |
+| `Input`                   | Labeled form fields with hint/error states |
+| `KPICard`                 | Dashboard metrics and progress             |
+| `StatusBadge`             | Semantic status chips                      |
+| `CircularProgress`        | Radial progress                            |
+| `PageHeader`              | Page-level heading                         |
+| `EmptyState`              | Empty and scaffolded states                |
 
 All primitives are server-compatible unless they explicitly need client state.
 
-## 5. Design tokens
+## 6. Design tokens
 
 `tailwind.config.ts` is the implementation source of truth. It mirrors the
 frontmatter in `design/DESIGN_SYSTEM.md`.
@@ -108,116 +122,126 @@ Key rules:
 - Keep numeric displays in `font-code-metric` and use `tabular-nums` where
   columns must align.
 
-## 6. Data and authentication plan
+## 7. Data and authentication plan
 
-The current app has **no database and no auth**. The intended stack, based on
-`.env.example` and the previous build artifact, is:
+The current app has **no database and no auth**. The committed stack is:
 
-- PostgreSQL (Supabase) via Prisma.
-- Supabase Auth or a cookie-backed session layer.
-- Private Supabase Storage or the local storage driver.
-- SMTP for transactional email.
+- Supabase PostgreSQL through Prisma.
+- Auth.js with credentials and secure sessions.
+- Private Supabase Storage in production; local storage in development.
+- SMTP for transactional email, console logging in development.
 - Zod for request and form validation.
-- RBAC enforced server-side, not in navigation.
+- Server-enforced RBAC and tenant isolation.
+
+### Tenant model
+
+- `College` is the tenant root.
+- `Membership` links a user to a college.
+- Roles are assigned through memberships.
+- The active college is resolved from the server session for v1. Subdomain
+  branding can be added later without changing the schema.
+- Every tenant-owned table carries `collegeId`.
+- Repository functions require a `TenantContext` and always scope queries to it.
+- Cross-tenant access tests are mandatory.
 
 ### Recommended data flow
 
 ```text
 Route (server component)
-  → session / RBAC guard
-  → server-side query (Prisma)
+  → session / tenant / permission guard
+  → feature service
+  → tenant-scoped Prisma query
   → serialisable view model
   → server-rendered page
   → client components only for interaction
 ```
 
-### First schema domains
-
-1. Identity: `User`, `Role`, `Permission`, `Session`, `AuditLog`.
-2. Institution: `College`, `Campus`, `Department`, `AcademicYear`, `Term`.
-3. Academics: `Program`, `Course`, `Subject`, `Section`, `Enrollment`.
-4. Attendance: `AttendanceSession`, `AttendanceRecord`, `AttendancePolicy`.
-5. Examinations: `Examination`, `ExamSchedule`, `Mark`, `Result`, `Revaluation`.
-6. Finance: `FeeStructure`, `Invoice`, `Payment`, `Scholarship`, `LedgerEntry`.
-7. Campus: `Hostel`, `Room`, `Allocation`, `TransportRoute`, `Booking`.
-8. Library: `Book`, `BookCopy`, `Loan`, `Reservation`, `Fine`.
-9. Placement: `Company`, `Drive`, `Application`, `Offer`.
-10. Communication: `Announcement`, `Notification`, `Message`, `Template`.
-
 ### RBAC
 
-`src/lib/rbac.ts` defines role labels, home routes, and admin/portal checks.
-The current demo layouts bypass auth. When auth is implemented:
+`src/lib/rbac.ts` defines role labels, role home routes, and role-specific links.
+The demo layouts bypass auth. When auth is implemented:
 
 - Resolve the session on the server.
 - Redirect unauthenticated users to `/login`.
 - Redirect unauthorised users to `/unauthorized`.
 - Enforce permissions in route handlers and server actions, not only in the UI.
-- Never trust a role supplied by the client.
+- Never trust a role or college ID supplied by the client.
 
-## 7. Module implementation pattern
+### First schema domains
+
+1. Identity: `User`, `Membership`, `Role`, `Permission`, `Invitation`, `AuditLog`.
+2. Institution: `College`, `Campus`, `AcademicYear`, `Term`.
+3. Academics: `Department`, `Program`, `Course`, `CourseOffering`, `Section`,
+   `Enrollment`.
+4. Attendance: `AttendanceSession`, `AttendanceRecord`, `AttendancePolicy`.
+5. Examinations: `Examination`, `ExamSchedule`, `AssessmentComponent`, `Mark`,
+   `Result`, `HallTicket`, `RevaluationRequest`.
+6. Finance: `FeeStructure`, `Invoice`, `Payment`, `Scholarship`, `LedgerEntry`.
+7. Communication: `Announcement`, `Notification`, `Message`, `Grievance`.
+
+## 8. Module implementation pattern
 
 For each module:
 
-1. Add the route under the correct route group.
-2. Define the data contract and validation schema.
+1. Add the route under the correct role group.
+2. Define the data contract and Zod schema.
 3. Add the Prisma model and migration.
-4. Implement server-side queries and mutations.
+4. Implement tenant-scoped queries and mutations.
 5. Enforce RBAC at the server boundary.
-6. Replace the `ModulePage` placeholder with real components.
-7. Add loading, empty, and error states.
-8. Add unit tests for logic and a Playwright flow for the primary task.
+6. Replace `ModulePlaceholder` with real components.
+7. Add loading, empty, error, and permission-denied states.
+8. Add unit tests and a Playwright flow for the primary task.
 9. Run `npm run check` and `npm run build`.
 
-## 8. Conventions
+## 9. Conventions
 
-- File names: PascalCase for components, kebab-case for route files as required
-  by the App Router, camelCase for utilities.
+- File names: PascalCase for components, lowercase route folders, camelCase for
+  utilities.
 - Imports: use the `@/` alias for `src/`.
 - Server/client boundary: keep `"use client"` as low in the tree as possible.
 - Accessibility: label every input, give icon-only buttons an `aria-label`, and
   keep focus-visible styles.
-- No hardcoded tenant, term, or user data outside `src/config/site.ts` (demo)
-  or the session layer.
+- No hardcoded tenant, term, or user data outside `src/data/demo/` or the
+  session layer.
 - No direct `fetch` in client components when a server component can query.
 - Do not add a second layout shell.
+- Add domain code to `src/features/<domain>/`, not to `src/lib/`.
 
-## 9. Testing and CI
+## 10. Testing and CI
 
-Recommended baseline:
+Current gate:
 
 ```bash
-npm run check      # TypeScript + ESLint
+npm run check      # Prettier + TypeScript + ESLint
 npm run build      # production build
 ```
 
-Add next:
+Run them sequentially because both touch `.next/types`.
 
-- Vitest + React Testing Library for UI logic.
-- Playwright for auth, attendance, marks entry, and fee payment flows.
-- A CI workflow that runs `npm ci`, `npm run check`, `npm run build`, and tests.
+Next:
 
-## 10. Known constraints
+- Vitest + React Testing Library for logic and component tests.
+- Playwright for authentication, attendance, marks entry, and fee payment.
+- Accessibility checks with axe on primary screens.
 
-- The pre-restructure `.next/` build was moved to
-  `/tmp/opencode/college-os-next-stale-20261027` for forensics. The current
-  `.next/` is a fresh build of this source tree.
-- `.env.example` documents a planned backend; the corresponding dependencies
-  and modules do not exist yet.
-- The demo identities in `src/config/site.ts` are for UI development only.
+CI runs formatting, lint, type-check, and build on every push and pull request.
+
+## 11. Design assets and version control
+
+- Mockup screenshots are tracked with Git LFS.
+- HTML mockups remain regular Git files.
+- Do not rename mockup folders; they are stable screen IDs.
+- Regenerate the inventory with `npm run screens:index`.
+
+## 12. Known constraints
+
+- `.env.example` documents a planned backend; those dependencies and modules do
+  not exist yet.
+- Demo identities in `src/data/demo/` are for UI development only.
 - The 143 mockups use Tailwind CDN, external images, and inline JavaScript.
   Treat them as visual references, not source code.
+- The pre-restructure build artifact is preserved at
+  `/tmp/opencode/college-os-next-stale-20261027` for forensics.
 
-## 11. Immediate roadmap
-
-1. Decide whether to restore the earlier full application or continue from this
-   scaffold. The stale `.next` output is evidence that a more complete app
-   existed previously.
-2. Put the repository under Git and commit the restructured baseline.
-3. Implement auth, session handling, and RBAC.
-4. Add Prisma and the identity/institution schema.
-5. Build the student portal vertical slice: dashboard → attendance →
-   examinations → fees.
-6. Add the faculty slice: classes → attendance → marks entry → materials.
-7. Add the admin slice: users → roles → audit → settings.
-8. Expand to finance, library, hostel, transport, placement, and communication.
+See [`ROADMAP.md`](ROADMAP.md) for delivery phases and [`SCREEN_MAP.md`](SCREEN_MAP.md)
+for the screen inventory.

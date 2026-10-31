@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { isAdminRole } from "@/lib/rbac";
+import { getRoleLinks } from "@/lib/rbac";
 import { Header } from "./Header";
 import { Sidebar } from "./Sidebar";
 import type { NavGroup, User } from "@/types";
@@ -16,10 +16,7 @@ interface AppShellProps {
 
 export function AppShell({ children, navGroups, user, college, termLabel }: AppShellProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const admin = isAdminRole(user.role);
-  const homeHref = admin ? "/admin" : "/dashboard";
-  const profileHref = admin ? "/admin/settings" : "/profile";
-  const notificationsHref = admin ? "/admin/notifications" : "/notifications";
+  const links = getRoleLinks(user.role);
 
   return (
     <div className="min-h-screen bg-surface">
@@ -32,7 +29,7 @@ export function AppShell({ children, navGroups, user, college, termLabel }: AppS
       <Sidebar
         groups={navGroups}
         college={college}
-        homeHref={homeHref}
+        homeHref={links.home}
         mobileOpen={mobileOpen}
         onClose={() => setMobileOpen(false)}
       />
@@ -41,9 +38,9 @@ export function AppShell({ children, navGroups, user, college, termLabel }: AppS
           user={user}
           navGroups={navGroups}
           termLabel={termLabel}
-          homeHref={homeHref}
-          profileHref={profileHref}
-          notificationsHref={notificationsHref}
+          homeHref={links.home}
+          profileHref={links.profile}
+          notificationsHref={links.notifications}
           onMenuClick={() => setMobileOpen(true)}
         />
         <main id="main-content" className="px-4 pb-10 pt-20 sm:px-6 lg:px-8">

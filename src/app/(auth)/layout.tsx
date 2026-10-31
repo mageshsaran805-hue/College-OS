@@ -19,7 +19,7 @@ export default function AuthLayout({ children }: Readonly<{ children: React.Reac
           </span>
         </Link>
         <Link
-          href="/dashboard"
+          href="/student/dashboard"
           className="font-label-md text-label-md text-on-surface-variant transition-colors hover:text-on-surface"
         >
           Demo workspace

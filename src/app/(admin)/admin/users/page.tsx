@@ -1,10 +1,10 @@
-import { ModulePage } from "@/components/shared/ModulePage";
+import { ModulePlaceholder } from "@/components/scaffold/ModulePlaceholder";
 
 export const metadata = { title: "User Management" };
 
 export default function AdminUsersPage() {
   return (
-    <ModulePage
+    <ModulePlaceholder
       eyebrow="People & access"
       title="User Management"
       description="Accounts, invitations, status, and role assignment across the institution."

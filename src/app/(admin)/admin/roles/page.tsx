@@ -1,10 +1,10 @@
-import { ModulePage } from "@/components/shared/ModulePage";
+import { ModulePlaceholder } from "@/components/scaffold/ModulePlaceholder";
 
 export const metadata = { title: "Roles & Permissions" };
 
 export default function AdminRolesPage() {
   return (
-    <ModulePage
+    <ModulePlaceholder
       eyebrow="People & access"
       title="Roles & Permissions"
       description="Role definitions, permission matrix, and periodic access reviews."

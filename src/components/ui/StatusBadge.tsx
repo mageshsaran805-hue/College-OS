@@ -1,4 +1,4 @@
-import { classNames } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 export type StatusVariant = "success" | "warning" | "error" | "info" | "neutral" | "live";
 
@@ -48,14 +48,14 @@ export function StatusBadge({
 
   return (
     <span
-      className={classNames(
+      className={cn(
         "inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 font-label-sm text-label-sm font-medium",
         style.classes,
         large && "px-2.5 py-1 text-label-md",
-        className
+        className,
       )}
     >
-      {dot && <span className={classNames("h-1.5 w-1.5 rounded-full", style.dot)} aria-hidden="true" />}
+      {dot && <span className={cn("h-1.5 w-1.5 rounded-full", style.dot)} aria-hidden="true" />}
       {label}
     </span>
   );

@@ -1,5 +1,5 @@
 import type { ButtonHTMLAttributes } from "react";
-import { classNames } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 export type ButtonVariant = "primary" | "secondary" | "ghost" | "danger";
 export type ButtonSize = "sm" | "md";
@@ -10,7 +10,11 @@ interface ButtonStyleOptions {
   className?: string;
 }
 
-export function buttonStyles({ variant = "primary", size = "md", className }: ButtonStyleOptions = {}) {
+export function buttonStyles({
+  variant = "primary",
+  size = "md",
+  className,
+}: ButtonStyleOptions = {}) {
   const variants: Record<ButtonVariant, string> = {
     primary: "bg-secondary text-on-secondary hover:bg-secondary-container",
     secondary:
@@ -24,13 +28,13 @@ export function buttonStyles({ variant = "primary", size = "md", className }: Bu
     md: "h-10 px-4 font-body-md text-body-md",
   };
 
-  return classNames(
+  return cn(
     "inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-colors",
     "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/40 focus-visible:ring-offset-2",
     "disabled:pointer-events-none disabled:opacity-50",
     variants[variant],
     sizes[size],
-    className
+    className,
   );
 }
 
@@ -39,6 +43,12 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   size?: ButtonSize;
 }
 
-export function Button({ variant = "primary", size = "md", className, type = "button", ...props }: ButtonProps) {
+export function Button({
+  variant = "primary",
+  size = "md",
+  className,
+  type = "button",
+  ...props
+}: ButtonProps) {
   return <button type={type} className={buttonStyles({ variant, size, className })} {...props} />;
 }

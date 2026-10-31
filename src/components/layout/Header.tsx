@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { classNames, getInitials } from "@/lib/utils";
+import { cn, getInitials } from "@/lib/utils";
 import { roleLabels } from "@/lib/rbac";
 import type { NavGroup, User } from "@/types";
 
@@ -28,7 +28,7 @@ export function Header({
   const pathname = usePathname();
 
   const items = navGroups.flatMap((group) =>
-    group.items.map((item) => ({ ...item, group: group.title }))
+    group.items.map((item) => ({ ...item, group: group.title })),
   );
 
   const activeItem = items
@@ -69,7 +69,10 @@ export function Header({
                 </span>
               )}
               {index < breadcrumbs.length - 1 && (
-                <span className="material-symbols-outlined text-sm text-outline-variant" aria-hidden="true">
+                <span
+                  className="material-symbols-outlined text-sm text-outline-variant"
+                  aria-hidden="true"
+                >
                   chevron_right
                 </span>
               )}
@@ -78,7 +81,10 @@ export function Header({
         </nav>
 
         <div className="relative hidden max-w-xs flex-1 items-center xl:flex">
-          <span className="material-symbols-outlined pointer-events-none absolute left-3 text-lg text-on-surface-variant" aria-hidden="true">
+          <span
+            className="material-symbols-outlined pointer-events-none absolute left-3 text-lg text-on-surface-variant"
+            aria-hidden="true"
+          >
             search
           </span>
           <input
@@ -96,7 +102,9 @@ export function Header({
       <div className="flex items-center gap-2">
         <div className="hidden items-center gap-2 rounded-full bg-surface-container-low px-3 py-1 2xl:flex">
           <span className="h-2 w-2 animate-pulse rounded-full bg-success" />
-          <span className="font-label-md text-label-md font-medium text-on-surface">{termLabel}</span>
+          <span className="font-label-md text-label-md font-medium text-on-surface">
+            {termLabel}
+          </span>
           <span className="rounded-full bg-surface-container px-1.5 py-0.5 font-label-sm text-[10px] uppercase text-on-surface-variant">
             Active term
           </span>
@@ -115,8 +123,8 @@ export function Header({
 
         <Link
           href={profileHref}
-          className={classNames(
-            "flex items-center gap-2 rounded-lg p-1.5 transition-colors hover:bg-surface-container-low"
+          className={cn(
+            "flex items-center gap-2 rounded-lg p-1.5 transition-colors hover:bg-surface-container-low",
           )}
           aria-label="Open profile"
         >

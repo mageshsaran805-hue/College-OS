@@ -10,6 +10,9 @@ This directory preserves the complete visual specification for College OS.
 | `mockups/<screen>/code.html` | 143 static HTML screens |
 | `mockups/<screen>/screen.png` | 142 screenshots (all except `communication_overview`) |
 
+See [`docs/SCREEN_MAP.md`](../docs/SCREEN_MAP.md) for the generated inventory,
+route mapping, and implementation phase of every screen.
+
 The mockups cover student, faculty, parent, admin, finance, library, campus
 operations, placement, alumni, communication, and analytics workflows.
 
@@ -52,8 +55,8 @@ http://localhost:8080/super_admin_dashboard/code.html
    from the HTML.
 5. Use tokens from `tailwind.config.ts` instead of the inline hex values.
 6. Replace mock data with server-provided data and proper permission checks.
-7. Delete the corresponding `ModulePage` placeholder only when the module has
-   real content and states.
+7. Delete the corresponding `ModulePlaceholder` only when the module has real
+   content and states.
 
 ## Screen inventory by domain
 

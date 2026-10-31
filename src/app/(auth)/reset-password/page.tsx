@@ -47,7 +47,9 @@ export default function ResetPasswordPage() {
         href="/login"
         className="mt-6 inline-flex items-center gap-1.5 font-label-md text-label-md text-secondary hover:text-secondary-container"
       >
-        <span className="material-symbols-outlined text-base" aria-hidden="true">arrow_back</span>
+        <span className="material-symbols-outlined text-base" aria-hidden="true">
+          arrow_back
+        </span>
         Back to sign in
       </Link>
     </div>

@@ -1,6 +1,6 @@
 import { AppShell } from "@/components/layout/AppShell";
 import { adminNavigation } from "@/config/navigation";
-import { demoCollege, demoTerm, demoUsers } from "@/config/site";
+import { demoCollege, demoTerm, demoUsers } from "@/data/demo";
 
 export default function AdminLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

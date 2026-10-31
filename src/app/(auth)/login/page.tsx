@@ -8,7 +8,9 @@ export default function LoginPage() {
     <div className="w-full max-w-md rounded-xl bg-surface-container-lowest p-6 shadow-card sm:p-8">
       <div className="flex items-start justify-between gap-3">
         <div>
-          <h1 className="font-headline-lg text-headline-lg tracking-tight text-on-surface">Sign in</h1>
+          <h1 className="font-headline-lg text-headline-lg tracking-tight text-on-surface">
+            Sign in
+          </h1>
           <p className="mt-1 font-body-md text-body-md text-on-surface-variant">
             Use your institutional credentials to continue.
           </p>
@@ -51,7 +53,7 @@ export default function LoginPage() {
           </Link>
         </div>
 
-        <Link href="/dashboard" className={buttonStyles({ className: "w-full" })}>
+        <Link href="/student/dashboard" className={buttonStyles({ className: "w-full" })}>
           Continue to demo workspace
         </Link>
       </form>
@@ -65,7 +67,9 @@ export default function LoginPage() {
 
       <div className="mt-6 flex items-center gap-3">
         <div className="h-px flex-1 bg-surface-container-high" />
-        <span className="font-label-sm text-label-sm uppercase tracking-wider text-outline">or</span>
+        <span className="font-label-sm text-label-sm uppercase tracking-wider text-outline">
+          or
+        </span>
         <div className="h-px flex-1 bg-surface-container-high" />
       </div>
 

@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { classNames } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 type KpiStatus = "safe" | "warning" | "critical" | "info";
 type IconTone = "secondary" | "success" | "warning" | "error" | "info" | "on-surface";
@@ -22,10 +22,7 @@ interface KPICardProps {
   className?: string;
 }
 
-const statusStyles: Record<
-  KpiStatus,
-  { chip: string; dot: string; bar: string; label: string }
-> = {
+const statusStyles: Record<KpiStatus, { chip: string; dot: string; bar: string; label: string }> = {
   safe: {
     chip: "bg-success-container text-on-success-container",
     dot: "bg-success",
@@ -81,15 +78,18 @@ export function KPICard({
 
   return (
     <div
-      className={classNames(
+      className={cn(
         "group flex flex-col justify-between rounded-xl bg-surface-container-lowest p-4 shadow-card transition-shadow hover:shadow-panel",
-        className
+        className,
       )}
     >
       <div className="flex items-center justify-between gap-2 font-label-sm text-label-sm text-on-surface-variant">
         <span className="uppercase tracking-wider">{label}</span>
         {icon && (
-          <span className={classNames("material-symbols-outlined text-base", iconTones[iconTone])} aria-hidden="true">
+          <span
+            className={cn("material-symbols-outlined text-base", iconTones[iconTone])}
+            aria-hidden="true"
+          >
             {icon}
           </span>
         )}
@@ -98,7 +98,11 @@ export function KPICard({
       <div className="mt-2">
         <div className="font-headline-lg text-headline-lg font-semibold tracking-tight text-on-surface">
           {value}
-          {unit && <span className="ml-1 font-body-md text-body-md font-normal text-on-surface-variant">{unit}</span>}
+          {unit && (
+            <span className="ml-1 font-body-md text-body-md font-normal text-on-surface-variant">
+              {unit}
+            </span>
+          )}
         </div>
 
         {(subtext || trendValue) && (
@@ -106,11 +110,11 @@ export function KPICard({
             {subtext && <span className="truncate">{subtext}</span>}
             {trendValue && (
               <span
-                className={classNames(
+                className={cn(
                   "shrink-0 font-code-metric text-label-sm font-medium",
                   trend === "up" && "text-success",
                   trend === "down" && "text-error",
-                  (!trend || trend === "neutral") && "text-on-surface-variant"
+                  (!trend || trend === "neutral") && "text-on-surface-variant",
                 )}
               >
                 {trend === "up" ? "↑ " : trend === "down" ? "↓ " : ""}
@@ -140,7 +144,7 @@ export function KPICard({
                 aria-label={`${label} progress`}
               >
                 <div
-                  className={classNames("h-full rounded-full", style?.bar ?? "bg-secondary")}
+                  className={cn("h-full rounded-full", style?.bar ?? "bg-secondary")}
                   style={{ width: `${Math.min(100, Math.max(0, progress))}%` }}
                 />
               </div>
@@ -148,12 +152,12 @@ export function KPICard({
           )}
           {status && style && (
             <span
-              className={classNames(
+              className={cn(
                 "inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 font-label-sm text-label-sm",
-                style.chip
+                style.chip,
               )}
             >
-              <span className={classNames("h-1.5 w-1.5 rounded-full", style.dot)} />
+              <span className={cn("h-1.5 w-1.5 rounded-full", style.dot)} />
               {style.label}
             </span>
           )}

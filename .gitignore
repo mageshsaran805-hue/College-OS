@@ -30,9 +30,7 @@ test-results/
 # Deployment
 .vercel/
 
-# Design screenshots are large; keep mockup source HTML in git, but
-# screenshots can be stored with Git LFS or outside version control.
-# design/mockups/**/screen.png
+# Design screenshots are tracked with Git LFS; see .gitattributes.
 
 # OS / editor noise
 .DS_Store

@@ -1,74 +1,52 @@
 import type { NavGroup } from "@/types";
 
-export const portalNavigation = {
-  student: [
-    {
-      title: "Workspace",
-      items: [
-        { label: "Overview", href: "/dashboard", icon: "dashboard" },
-        { label: "My Academics", href: "/academics", icon: "school" },
-        { label: "Attendance", href: "/attendance", icon: "fact_check" },
-        { label: "Exams & Results", href: "/examinations", icon: "assignment" },
-        { label: "Fees & Payments", href: "/fees", icon: "payments" },
-      ],
-    },
-    {
-      title: "Campus & Services",
-      items: [
-        { label: "Library", href: "/library", icon: "local_library" },
-        { label: "Documents", href: "/documents", icon: "folder" },
-        { label: "Placements", href: "/placements", icon: "work" },
-        { label: "Clubs & Events", href: "/clubs", icon: "groups" },
-      ],
-    },
-    {
-      title: "Account",
-      items: [
-        { label: "Notifications", href: "/notifications", icon: "notifications" },
-        { label: "Grievances", href: "/grievances", icon: "support_agent" },
-        { label: "Profile", href: "/profile", icon: "person" },
-      ],
-    },
-  ],
-  faculty: [
-    {
-      title: "Workspace",
-      items: [
-        { label: "Overview", href: "/dashboard", icon: "dashboard" },
-        { label: "My Academics", href: "/academics", icon: "school" },
-        { label: "Attendance", href: "/attendance", icon: "fact_check" },
-        { label: "Marks Entry", href: "/examinations/marks", icon: "edit_note" },
-        { label: "Course Materials", href: "/materials", icon: "menu_book" },
-      ],
-    },
-    {
-      title: "Account",
-      items: [
-        { label: "Notifications", href: "/notifications", icon: "notifications" },
-        { label: "Profile", href: "/profile", icon: "person" },
-      ],
-    },
-  ],
-  parent: [
-    {
-      title: "Monitoring",
-      items: [
-        { label: "Overview", href: "/dashboard", icon: "dashboard" },
-        { label: "Academic Monitoring", href: "/academics", icon: "school" },
-        { label: "Attendance", href: "/attendance", icon: "fact_check" },
-        { label: "Exams & Results", href: "/examinations", icon: "assignment" },
-        { label: "Fees", href: "/fees", icon: "payments" },
-      ],
-    },
-    {
-      title: "Account",
-      items: [
-        { label: "Notifications", href: "/notifications", icon: "notifications" },
-        { label: "Profile", href: "/profile", icon: "person" },
-      ],
-    },
-  ],
-} satisfies Record<"student" | "faculty" | "parent", NavGroup[]>;
+export const studentNavigation: NavGroup[] = [
+  {
+    title: "Workspace",
+    items: [
+      { label: "Overview", href: "/student/dashboard", icon: "dashboard" },
+      { label: "My Academics", href: "/student/academics", icon: "school" },
+      { label: "Attendance", href: "/student/attendance", icon: "fact_check" },
+      { label: "Exams & Results", href: "/student/examinations", icon: "assignment" },
+      { label: "Fees & Payments", href: "/student/fees", icon: "payments" },
+    ],
+  },
+  {
+    title: "Campus & Services",
+    items: [
+      { label: "Library", href: "/student/library", icon: "local_library" },
+      { label: "Documents", href: "/student/documents", icon: "folder" },
+      { label: "Placements", href: "/student/placements", icon: "work" },
+      { label: "Clubs & Events", href: "/student/clubs", icon: "groups" },
+    ],
+  },
+  {
+    title: "Account",
+    items: [
+      { label: "Notifications", href: "/student/notifications", icon: "notifications" },
+      { label: "Grievances", href: "/student/grievances", icon: "support_agent" },
+      { label: "Profile", href: "/student/profile", icon: "person" },
+    ],
+  },
+];
+
+export const facultyNavigation: NavGroup[] = [
+  {
+    title: "Workspace",
+    items: [
+      { label: "Overview", href: "/faculty/dashboard", icon: "dashboard" },
+      { label: "Marks Entry", href: "/faculty/marks", icon: "edit_note" },
+      { label: "Course Materials", href: "/faculty/materials", icon: "menu_book" },
+    ],
+  },
+  {
+    title: "Account",
+    items: [
+      { label: "Notifications", href: "/faculty/notifications", icon: "notifications" },
+      { label: "Profile", href: "/faculty/profile", icon: "person" },
+    ],
+  },
+];
 
 export const adminNavigation: NavGroup[] = [
   {
@@ -91,7 +69,3 @@ export const adminNavigation: NavGroup[] = [
     ],
   },
 ];
-
-export function getPortalNavigation(role: keyof typeof portalNavigation): NavGroup[] {
-  return portalNavigation[role] ?? portalNavigation.student;
-}

@@ -99,16 +99,40 @@ const config: Config = {
         "code-metric": ["Geist", "sans-serif"],
       },
       fontSize: {
-        "headline-xl": ["2.25rem", { lineHeight: "2.75rem", letterSpacing: "-0.025em", fontWeight: "600" }],
-        "headline-lg": ["1.5rem", { lineHeight: "2rem", letterSpacing: "-0.02em", fontWeight: "600" }],
-        "headline-sm": ["1.125rem", { lineHeight: "1.5rem", letterSpacing: "-0.015em", fontWeight: "600" }],
-        "headline-xl-mobile": ["1.75rem", { lineHeight: "2.25rem", letterSpacing: "-0.02em", fontWeight: "600" }],
+        "headline-xl": [
+          "2.25rem",
+          { lineHeight: "2.75rem", letterSpacing: "-0.025em", fontWeight: "600" },
+        ],
+        "headline-lg": [
+          "1.5rem",
+          { lineHeight: "2rem", letterSpacing: "-0.02em", fontWeight: "600" },
+        ],
+        "headline-sm": [
+          "1.125rem",
+          { lineHeight: "1.5rem", letterSpacing: "-0.015em", fontWeight: "600" },
+        ],
+        "headline-xl-mobile": [
+          "1.75rem",
+          { lineHeight: "2.25rem", letterSpacing: "-0.02em", fontWeight: "600" },
+        ],
         "body-lg": ["1rem", { lineHeight: "1.5rem", letterSpacing: "-0.011em", fontWeight: "400" }],
-        "body-md": ["0.875rem", { lineHeight: "1.25rem", letterSpacing: "-0.006em", fontWeight: "400" }],
+        "body-md": [
+          "0.875rem",
+          { lineHeight: "1.25rem", letterSpacing: "-0.006em", fontWeight: "400" },
+        ],
         "body-sm": ["0.75rem", { lineHeight: "1rem", letterSpacing: "0em", fontWeight: "400" }],
-        "label-md": ["0.8125rem", { lineHeight: "1.125rem", letterSpacing: "-0.005em", fontWeight: "500" }],
-        "label-sm": ["0.6875rem", { lineHeight: "0.875rem", letterSpacing: "0.04em", fontWeight: "600" }],
-        "code-metric": ["0.875rem", { lineHeight: "1.25rem", letterSpacing: "-0.02em", fontWeight: "500" }],
+        "label-md": [
+          "0.8125rem",
+          { lineHeight: "1.125rem", letterSpacing: "-0.005em", fontWeight: "500" },
+        ],
+        "label-sm": [
+          "0.6875rem",
+          { lineHeight: "0.875rem", letterSpacing: "0.04em", fontWeight: "600" },
+        ],
+        "code-metric": [
+          "0.875rem",
+          { lineHeight: "1.25rem", letterSpacing: "-0.02em", fontWeight: "500" },
+        ],
       },
       boxShadow: {
         soft: "0 1px 8px rgba(0, 0, 0, 0.04)",

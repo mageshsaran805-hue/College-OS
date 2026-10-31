@@ -8,12 +8,14 @@ export default function NotFound() {
         <span className="material-symbols-outlined text-5xl text-secondary" aria-hidden="true">
           explore_off
         </span>
-        <p className="mt-4 font-label-sm text-label-sm uppercase tracking-wider text-outline">404</p>
+        <p className="mt-4 font-label-sm text-label-sm uppercase tracking-wider text-outline">
+          404
+        </p>
         <h1 className="mt-1 font-headline-lg text-headline-lg text-on-surface">Page not found</h1>
         <p className="mt-2 font-body-md text-body-md text-on-surface-variant">
           The route you requested does not exist in this workspace.
         </p>
-        <Link href="/dashboard" className={buttonStyles({ className: "mt-6" })}>
+        <Link href="/student/dashboard" className={buttonStyles({ className: "mt-6" })}>
           Return to dashboard
         </Link>
       </div>

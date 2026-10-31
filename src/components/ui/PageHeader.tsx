@@ -16,7 +16,9 @@ export function PageHeader({ eyebrow, title, description, actions }: PageHeaderP
             {eyebrow}
           </p>
         )}
-        <h1 className="font-headline-lg text-headline-lg tracking-tight text-on-surface">{title}</h1>
+        <h1 className="font-headline-lg text-headline-lg tracking-tight text-on-surface">
+          {title}
+        </h1>
         {description && (
           <p className="mt-1 max-w-3xl font-body-md text-body-md text-on-surface-variant">
             {description}

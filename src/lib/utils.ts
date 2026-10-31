@@ -41,12 +41,9 @@ export function formatCurrency(value: number, currency = "INR"): string {
   }).format(value);
 }
 
-export function classNames(...classes: (string | undefined | false | null)[]): string {
+export function cn(...classes: (string | undefined | false | null)[]): string {
   return classes.filter(Boolean).join(" ");
 }
-
-/** Short alias used by newer components. */
-export const cn = classNames;
 
 export function getInitials(name: string): string {
   return name

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { classNames } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import type { NavGroup } from "@/types";
 
 interface SidebarProps {
@@ -17,7 +17,10 @@ export function Sidebar({ groups, college, homeHref, mobileOpen, onClose }: Side
   const pathname = usePathname();
 
   const hrefs = groups.flatMap((group) =>
-    group.items.flatMap((item) => [item.href, ...(item.children?.map((child) => child.href) ?? [])])
+    group.items.flatMap((item) => [
+      item.href,
+      ...(item.children?.map((child) => child.href) ?? []),
+    ]),
   );
 
   const activeHref = hrefs
@@ -29,18 +32,18 @@ export function Sidebar({ groups, college, homeHref, mobileOpen, onClose }: Side
   return (
     <>
       <div
-        className={classNames(
+        className={cn(
           "fixed inset-0 z-40 bg-inverse-surface/40 backdrop-blur-sm transition-opacity lg:hidden",
-          mobileOpen ? "opacity-100" : "pointer-events-none opacity-0"
+          mobileOpen ? "opacity-100" : "pointer-events-none opacity-0",
         )}
         onClick={onClose}
         aria-hidden="true"
       />
 
       <aside
-        className={classNames(
+        className={cn(
           "fixed inset-y-0 left-0 z-50 flex w-72 flex-col bg-surface-container-lowest shadow-soft transition-transform duration-200 lg:translate-x-0",
-          mobileOpen ? "translate-x-0" : "-translate-x-full"
+          mobileOpen ? "translate-x-0" : "-translate-x-full",
         )}
         aria-label="Primary navigation"
       >
@@ -78,7 +81,10 @@ export function Sidebar({ groups, college, homeHref, mobileOpen, onClose }: Side
               {college.code}
             </span>
           </div>
-          <span className="material-symbols-outlined text-base text-on-surface-variant" aria-hidden="true">
+          <span
+            className="material-symbols-outlined text-base text-on-surface-variant"
+            aria-hidden="true"
+          >
             unfold_more
           </span>
         </div>
@@ -100,26 +106,29 @@ export function Sidebar({ groups, college, homeHref, mobileOpen, onClose }: Side
                         href={item.href}
                         onClick={onClose}
                         aria-current={active ? "page" : undefined}
-                        className={classNames(
+                        className={cn(
                           "flex items-center gap-2.5 rounded-lg px-2.5 py-2 transition-colors",
                           active
                             ? "bg-secondary text-on-secondary shadow-sm"
-                            : "text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface"
+                            : "text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface",
                         )}
                       >
                         {item.icon && (
-                          <span className="material-symbols-outlined text-[20px]" aria-hidden="true">
+                          <span
+                            className="material-symbols-outlined text-[20px]"
+                            aria-hidden="true"
+                          >
                             {item.icon}
                           </span>
                         )}
                         <span className="flex-1 font-label-md text-label-md">{item.label}</span>
                         {item.badge !== undefined && (
                           <span
-                            className={classNames(
+                            className={cn(
                               "rounded-full px-1.5 py-0.5 font-code-metric text-[10px]",
                               active
                                 ? "bg-on-secondary/20 text-on-secondary"
-                                : "bg-surface-container text-on-surface-variant"
+                                : "bg-surface-container text-on-surface-variant",
                             )}
                           >
                             {item.badge}
@@ -134,11 +143,11 @@ export function Sidebar({ groups, college, homeHref, mobileOpen, onClose }: Side
                               key={child.href}
                               href={child.href}
                               onClick={onClose}
-                              className={classNames(
+                              className={cn(
                                 "rounded-lg px-2.5 py-1.5 font-body-sm text-body-sm transition-colors",
                                 isActive(child.href)
                                   ? "bg-surface-container text-on-surface"
-                                  : "text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface"
+                                  : "text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface",
                               )}
                             >
                               {child.label}

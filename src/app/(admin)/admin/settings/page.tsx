@@ -1,10 +1,10 @@
-import { ModulePage } from "@/components/shared/ModulePage";
+import { ModulePlaceholder } from "@/components/scaffold/ModulePlaceholder";
 
 export const metadata = { title: "Settings" };
 
 export default function AdminSettingsPage() {
   return (
-    <ModulePage
+    <ModulePlaceholder
       eyebrow="Governance"
       title="Settings"
       description="Institution profile, academic terms, branding, and platform preferences."

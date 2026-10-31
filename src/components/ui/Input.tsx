@@ -1,5 +1,5 @@
 import type { InputHTMLAttributes } from "react";
-import { classNames } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label: string;
@@ -22,7 +22,7 @@ export function Input({
   const describedBy = error ? `${inputId}-error` : hint ? `${inputId}-hint` : undefined;
 
   return (
-    <div className={classNames("space-y-1.5", containerClassName)}>
+    <div className={cn("space-y-1.5", containerClassName)}>
       <label htmlFor={inputId} className="block font-label-md text-label-md text-on-surface">
         {label}
       </label>
@@ -31,11 +31,11 @@ export function Input({
         name={name}
         aria-invalid={error ? true : undefined}
         aria-describedby={describedBy}
-        className={classNames(
+        className={cn(
           "h-10 w-full rounded-lg border border-outline-variant bg-surface-container-lowest px-3 font-body-md text-body-md text-on-surface",
           "placeholder:text-outline focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary/20",
           error && "border-error focus:border-error focus:ring-error/20",
-          className
+          className,
         )}
         {...props}
       />

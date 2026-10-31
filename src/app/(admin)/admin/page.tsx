@@ -41,7 +41,10 @@ export default function AdminPage() {
         actions={<StatusBadge label="All systems operational" variant="success" />}
       />
 
-      <section aria-label="Administrative metrics" className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+      <section
+        aria-label="Administrative metrics"
+        className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4"
+      >
         {adminKpis.map((kpi) => (
           <KPICard key={kpi.label} {...kpi} />
         ))}
@@ -59,12 +62,19 @@ export default function AdminPage() {
               className="group flex items-start gap-4 rounded-xl bg-surface-container-lowest p-5 shadow-card transition-shadow hover:shadow-panel"
             >
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-surface-container-low text-secondary">
-                <span className="material-symbols-outlined text-xl" aria-hidden="true">{link.icon}</span>
+                <span className="material-symbols-outlined text-xl" aria-hidden="true">
+                  {link.icon}
+                </span>
               </span>
               <span className="min-w-0 flex-1">
                 <span className="flex items-center justify-between gap-2">
-                  <span className="font-label-md text-label-md font-medium text-on-surface">{link.title}</span>
-                  <span className="material-symbols-outlined text-base text-outline transition-transform group-hover:translate-x-0.5" aria-hidden="true">
+                  <span className="font-label-md text-label-md font-medium text-on-surface">
+                    {link.title}
+                  </span>
+                  <span
+                    className="material-symbols-outlined text-base text-outline transition-transform group-hover:translate-x-0.5"
+                    aria-hidden="true"
+                  >
                     arrow_forward
                   </span>
                 </span>
